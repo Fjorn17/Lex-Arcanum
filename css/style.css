@@ -993,3 +993,248 @@
         border-left-color: var(--hair);
         opacity: .82
     }
+
+
+    /* ======== shared site navigation ======== */
+    .sitenav {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 4px 22px;
+        padding: 0 0 14px;
+        margin: 0 0 26px;
+        border-bottom: 1px solid var(--rule)
+    }
+
+    .sitenav a {
+        font-family: var(--display);
+        font-size: .74rem;
+        letter-spacing: .16em;
+        text-transform: uppercase;
+        color: var(--muted);
+        border-bottom: 1px solid transparent
+    }
+
+    .sitenav a:hover {
+        color: var(--link)
+    }
+
+    .sitenav a.brand {
+        color: var(--head);
+        font-size: .82rem;
+        letter-spacing: .2em;
+        margin-right: auto
+    }
+
+    .sitenav a.here {
+        color: var(--white);
+        border-bottom-color: var(--accent)
+    }
+
+    /* ======== spell pages ======== */
+    .spellpage {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 34px 24px 70px
+    }
+
+    .spellhead {
+        margin-bottom: 8px
+    }
+
+    .spellhead h1 {
+        font-size: clamp(2rem, 4.5vw, 2.9rem);
+        color: var(--white);
+        letter-spacing: .01em
+    }
+
+    .spellhead .spellkind {
+        margin: 4px 0 0;
+        color: var(--muted);
+        font-style: italic;
+        max-width: none
+    }
+
+    .spellbody {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: minmax(0, 1fr) 316px;
+        align-items: start
+    }
+
+    @media (max-width:900px) {
+        .spellbody {
+            grid-template-columns: minmax(0, 1fr)
+        }
+
+        .infobox {
+            order: -1
+        }
+    }
+
+    .spellbody h2 {
+        font-size: 1.32rem;
+        color: var(--head);
+        margin: 30px 0 10px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid var(--rule)
+    }
+
+    .spellbody section:first-child h2 {
+        margin-top: 0
+    }
+
+    .spellbody p {
+        max-width: 62ch
+    }
+
+    .quote {
+        border-left: 3px solid var(--rule);
+        padding: 2px 0 2px 16px;
+        margin: 0 0 14px;
+        color: #d9e5f0;
+        font-style: italic
+    }
+
+    /* ---- infobox ---- */
+    .infobox {
+        background: var(--panel);
+        border: 1px solid var(--rule);
+        border-radius: 3px;
+        overflow: hidden;
+        position: sticky;
+        top: 18px
+    }
+
+    .infobox .ibhead {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 16px 18px;
+        background: var(--panel-2);
+        border-bottom: 1px solid var(--rule)
+    }
+
+    .infobox .ibhead h2 {
+        font-size: 1.02rem;
+        color: var(--white);
+        margin: 0;
+        border: none;
+        padding: 0
+    }
+
+    .spell-icon {
+        flex: 0 0 56px;
+        width: 56px;
+        height: 56px;
+        border-radius: 3px;
+        object-fit: cover
+    }
+
+    .spell-icon.ph {
+        display: grid;
+        place-items: center;
+        border: 1px dashed var(--hair);
+        background: rgba(0, 168, 232, .05);
+        font-family: var(--display);
+        font-size: .5rem;
+        letter-spacing: .1em;
+        color: var(--muted);
+        text-align: center;
+        line-height: 1.15
+    }
+
+    .ibrows {
+        margin: 0;
+        padding: 6px 0
+    }
+
+    .ibrow {
+        display: flex;
+        gap: 12px;
+        padding: 7px 18px;
+        font-size: .88rem;
+        align-items: baseline
+    }
+
+    .ibrow+.ibrow {
+        border-top: 1px solid rgba(51, 65, 85, .55)
+    }
+
+    .ibrow .ibk {
+        flex: 0 0 6.6rem;
+        color: var(--subhead);
+        font-family: var(--display);
+        font-size: .64rem;
+        letter-spacing: .11em;
+        text-transform: uppercase
+    }
+
+    .ibrow .ibv {
+        flex: 1;
+        min-width: 0
+    }
+
+    .ibfoot {
+        padding: 12px 18px;
+        border-top: 1px solid var(--rule);
+        background: var(--panel-2);
+        font-size: .82rem;
+        color: var(--muted);
+        font-style: italic
+    }
+
+    /* ---- spell index table ---- */
+    .spelltable {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: .93rem
+    }
+
+    .spelltable thead th {
+        background: var(--panel-2);
+        color: var(--head);
+        font-family: var(--display);
+        font-size: .66rem;
+        letter-spacing: .13em;
+        text-transform: uppercase;
+        text-align: left;
+        padding: 10px 14px;
+        border-bottom: 1px solid var(--rule)
+    }
+
+    .spelltable td {
+        padding: 11px 14px;
+        border-bottom: 1px solid var(--hair);
+        vertical-align: top
+    }
+
+    .spelltable tbody tr:hover td {
+        background: rgba(0, 168, 232, .05)
+    }
+
+    .spelltable td.lvl {
+        white-space: nowrap;
+        color: var(--muted)
+    }
+
+    .spellbody ul.sendlist li {
+        position: relative;
+        padding-left: 1.15em
+    }
+
+    .spellbody ul.sendlist li::before {
+        content: "\2014";
+        position: absolute;
+        left: 0;
+        color: var(--rule)
+    }
+
+    ul.featlist li div p {
+        margin: 0 0 .6em;
+        max-width: none
+    }
+
+    ul.featlist li div p:last-child {
+        margin-bottom: 0
+    }
