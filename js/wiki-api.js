@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Memoria para no pedirle la misma imagen a la wiki dos veces
     const imageCache = {};
 
-    // Función que interroga a la API de la wiki por la URL directa
+    // Función genérica para consultar la API de la wiki
     async function getWikiImageUrl(filename) {
         if (imageCache[filename]) return imageCache[filename];
 
@@ -23,35 +23,56 @@ document.addEventListener("DOMContentLoaded", async () => {
         return "";
     }
 
-    // Buscamos todos los daños del documento
-    const elements = document.querySelectorAll('.dmg-calc');
+    // 1. Procesa cálculos con dados (.dmg-calc)
+    async function renderDamageCalculations() {
+        const elements = document.querySelectorAll('.dmg-calc');
 
-    for (const el of elements) {
-        let dice = el.getAttribute('data-dice');
-        let type = el.getAttribute('data-type');
+        for (const el of elements) {
+            let dice = el.getAttribute('data-dice');
+            let type = el.getAttribute('data-type');
+            if (!dice || !type) continue;
 
-        let [x, y] = dice.toLowerCase().split('d');
-        let typeCap = type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();
+            let [x, y] = dice.toLowerCase().split('d');
+            let typeCap = type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();
 
-        let isPhysical = ['Slashing', 'Piercing', 'Bludgeoning'].includes(typeCap);
-        let diceType = isPhysical ? 'Physical' : typeCap;
+            let isPhysical = ['Slashing', 'Piercing', 'Bludgeoning'].includes(typeCap);
+            let diceType = isPhysical ? 'Physical' : typeCap;
 
-        // Nombres exactos de los archivos
-        let diceName = `D${y}_${diceType}.png`;
-        let iconName = `${typeCap}_Damage_Icon.png`;
-        let fallbackName = `D${y}_Icon.png`; // Por si falla el color, carga el dorado
+            let diceName = `D${y}_${diceType}.png`;
+            let iconName = `${typeCap}_Damage_Icon.png`;
+            let fallbackName = `D${y}_Icon.png`;
 
-        // Preparamos la clase de color
-        el.className = `dmg d-${type.toLowerCase()}`;
+            el.className = `dmg d-${type.toLowerCase()}`;
 
-        // Buscamos las URLs reales
-        let diceUrl = await getWikiImageUrl(diceName);
-        let iconUrl = await getWikiImageUrl(iconName);
+            let diceUrl = await getWikiImageUrl(diceName);
+            let iconUrl = await getWikiImageUrl(iconName);
 
-        // Si el dado específico no existe en la wiki, usamos el genérico dorado
-        if (!diceUrl) diceUrl = await getWikiImageUrl(fallbackName);
+            if (!diceUrl) diceUrl = await getWikiImageUrl(fallbackName);
 
-        // Inyectamos el HTML final
-        el.innerHTML = `<img class="dice-ic" src="${diceUrl}" alt=""> ${dice} <img class="ic" src="${iconUrl}" alt=""> ${typeCap}`;
+            el.innerHTML = `<img class="dice-ic" src="${diceUrl}" alt=""> ${dice} <img class="ic" src="${iconUrl}" alt=""> ${typeCap}`;
+        }
     }
+
+    // 2. Procesa solo el tipo de daño sin dados (.dmg-type)
+    async function renderDamageTypes() {
+        const elements = document.querySelectorAll('.dmg-type');
+
+        for (const el of elements) {
+            let type = el.getAttribute('data-type');
+            if (!type) continue;
+
+            let typeCap = type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();
+            let iconName = `${typeCap}_Damage_Icon.png`;
+
+            el.className = `dmg d-${type.toLowerCase()}`;
+
+            let iconUrl = await getWikiImageUrl(iconName);
+
+            el.innerHTML = `<img class="ic" src="${iconUrl}" alt=""> <span>${typeCap}</span>`;
+        }
+    }
+
+    // Ejecutamos ambas funciones
+    await renderDamageCalculations();
+    await renderDamageTypes();
 });

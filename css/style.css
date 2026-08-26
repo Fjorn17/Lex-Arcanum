@@ -1238,3 +1238,187 @@
     ul.featlist li div p:last-child {
         margin-bottom: 0
     }
+
+    /* ======== subclass pages ======== */
+    .subfeat {
+        padding: 20px 0;
+        border-top: 1px solid var(--hair)
+    }
+
+    .subfeat h3 {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        gap: 12px;
+        font-size: 1.16rem;
+        color: var(--white);
+        margin-bottom: 12px
+    }
+
+    .lvltag {
+        font-family: var(--display);
+        font-size: .62rem;
+        letter-spacing: .14em;
+        text-transform: uppercase;
+        color: var(--head);
+        background: rgba(0, 168, 232, .12);
+        border: 1px solid var(--rule);
+        border-radius: 2px;
+        padding: 3px 9px
+    }
+
+    .subfeat p {
+        max-width: 68ch
+    }
+
+    /* ---- mini tables (bg3.wiki style) ---- */
+    table.mini {
+        width: auto;
+        min-width: 0;
+        margin: 4px 0 16px;
+        border: 1px solid var(--rule);
+        font-size: .9rem
+    }
+
+    table.mini.wide {
+        width: 100%
+    }
+
+    table.mini caption {
+        caption-side: top;
+        text-align: left;
+        font-family: var(--display);
+        font-size: .66rem;
+        letter-spacing: .13em;
+        text-transform: uppercase;
+        color: var(--subhead);
+        padding: 0 0 7px
+    }
+
+    table.mini th[scope=row] {
+        text-align: left;
+        font-family: var(--serif);
+        font-weight: 600;
+        color: var(--white);
+        padding: 9px 14px;
+        border-bottom: 1px solid var(--hair);
+        white-space: nowrap
+    }
+
+    table.mini thead th {
+        padding: 8px 14px
+    }
+
+    table.mini td {
+        padding: 9px 14px
+    }
+
+    table.mini tbody tr:last-child th[scope=row],
+    table.mini tbody tr:last-child td {
+        border-bottom: none
+    }
+
+    table.mini td.allgems {
+        color: var(--muted);
+        font-style: italic;
+        text-align: center;
+    }
+
+    .tw.auto {
+        width: max-content;
+        max-width: 100%
+    }
+
+    table.mini {
+        border: none
+    }
+
+    /* Tabla comparativa de subclases */
+    table.subclass-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        background-color: rgba(15, 15, 20, 0.4);
+        border: 1px solid var(--border, #3a3a42);
+        font-size: 0.9rem;
+    }
+
+    table.subclass-table th {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #e0a84e;
+        /* Título dorado estilo BG3 */
+        text-align: center;
+        padding: 10px 12px;
+        border: 1px solid var(--border, #3a3a42);
+        font-weight: 600;
+    }
+
+    /* Contenedor del escudo/emblema sobre el título */
+    .subclass-header-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    table.subclass-table td {
+        padding: 10px 12px;
+        border: 1px solid var(--border, #3a3a42);
+        text-align: left;
+        vertical-align: top;
+    }
+
+    table.subclass-table tbody tr:hover {
+        background-color: transparent;
+    }
+
+    /* Estilo para alinear icono de rasgo + texto dentro de la celda */
+    .subclass-feature {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 6px;
+    }
+
+    .subclass-feature:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Mini tabla anidada con líneas divisoras entre filas */
+    table.inner-gem-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0;
+        background: transparent !important;
+        font-size: 0.85rem;
+    }
+
+    table.inner-gem-table tr {
+        background: transparent !important;
+        border-bottom: 1px solid var(--border, #3a3a42);
+        /* Línea divisora entre filas */
+    }
+
+    /* Se elimina el borde inferior de la última fila para que no choque con el marco exterior */
+    table.inner-gem-table tr:last-child {
+        border-bottom: none;
+    }
+
+    table.inner-gem-table th,
+    table.inner-gem-table td {
+        border: none !important;
+        /* Evita bordes laterales adicionales */
+        padding: 6px 4px;
+        background: transparent !important;
+        vertical-align: middle;
+    }
+
+    table.inner-gem-table th {
+        color: #e0a84e;
+        font-weight: 600;
+        text-align: left;
+        white-space: nowrap;
+        width: 25%;
+    }
