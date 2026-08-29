@@ -481,7 +481,7 @@
         border-left-width: 3px
     }
 
-    ul.spells li.bg3 {
+    ul.spells li.phb {
         border-left-color: var(--accent)
     }
 
@@ -491,12 +491,6 @@
 
     ul.spells li.lex a {
         color: #e8c07d
-    }
-
-    ul.spells li.tt {
-        border-left-color: var(--hair);
-        color: var(--muted);
-        font-style: italic
     }
 
     p.legend {
@@ -519,16 +513,12 @@
         margin-right: .45em
     }
 
-    .key.k-bg3 {
+    .key.k-phb {
         background: var(--accent)
     }
 
     .key.k-lex {
         background: #e0a84e
-    }
-
-    .key.k-tt {
-        background: var(--hair)
     }
 
     .bladegrid {
@@ -1492,15 +1482,14 @@
     /* arte dentro de la ficha, arriba a la derecha */
     .statblock .sbart {
         float: right;
-        width: 280px;
+        width: 240px;
         margin: 0 0 16px 24px
     }
 
     .statblock .sbart img {
         display: block;
         width: 100%;
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
+        height: auto;
         border-radius: 3px;
         border: 1px solid rgba(184, 202, 219, .2);
         box-shadow: 0 8px 16px rgba(0, 0, 0, .4)
@@ -1535,15 +1524,11 @@
         padding: 4px 14px
     }
 
-    .statblock .sbclear {
-        clear: right
-    }
-
     @media (max-width: 720px) {
         .statblock .sbart {
             float: none;
             width: 100%;
-            max-width: 340px;
+            max-width: 260px;
             margin: 0 0 18px
         }
 
@@ -1555,4 +1540,32 @@
             width: 100%;
             max-width: none
         }
+    }
+
+    /* ---- aviso legal del pie ---- */
+    footer p.legal {
+        font-size: .78rem;
+        line-height: 1.55;
+        color: var(--muted);
+        max-width: 78ch;
+        margin: 0 0 8px
+    }
+
+    footer p.legal:last-child {
+        margin-bottom: 0
+    }
+
+    footer p.legal b {
+        color: var(--text);
+        font-weight: 600
+    }
+
+    footer p.legal a {
+        color: var(--muted);
+        text-decoration: underline;
+        text-decoration-color: var(--hair)
+    }
+
+    footer p.legal a:hover {
+        color: var(--link)
     }
