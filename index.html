@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Magister</title>
   <meta name="description"
-    content="Homebrew class for Baldur&rsquo;s Gate 3 and D&amp;D 5e: an Intelligence half-caster who casts through an Arcane Gauntlet while fencing with a finesse blade.">
+    content="Homebrew class for Baldur&rsquo;s Gate 3 and D&amp;D 5e: an Intelligence half-caster who fences with a finesse blade and weaves spells into his swordplay.">
   <link rel="canonical" href="https://fjorn17.github.io/Lex-Arcanum/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Lex Arcanum">
   <meta property="og:title" content="Magister &middot; Lex Arcanum">
   <meta property="og:description"
-    content="Homebrew class for Baldur&rsquo;s Gate 3 and D&amp;D 5e: an Intelligence half-caster who casts through an Arcane Gauntlet while fencing with a finesse blade.">
+    content="Homebrew class for Baldur&rsquo;s Gate 3 and D&amp;D 5e: an Intelligence half-caster who fences with a finesse blade and weaves spells into his swordplay.">
   <meta property="og:url" content="https://fjorn17.github.io/Lex-Arcanum/">
   <meta property="og:image" content="https://fjorn17.github.io/Lex-Arcanum/assets/img/magister_icon.png">
   <meta property="og:image:width" content="594">
@@ -60,7 +60,6 @@
             <li><a href="#info">Class Information</a></li>
             <li><a href="#features">Class Features</a></li>
             <li><a href="#spelllist">Spell list</a></li>
-            <li><a href="#schemas">Schemas</a></li>
           </ol>
         </nav>
       </aside>
@@ -105,9 +104,9 @@
               implemented for Baldur&rsquo;s Gate&nbsp;3.</p>
           </div>
 
-          <p>At Level&nbsp;3 a Magister chooses a subclass, gaining further features at Levels <b>5 and 9</b>
-            &mdash; three in total. Each one takes the Arcane Gauntlet in a different direction: what the Magister
-            <i>makes</i> with it, and what the law of the Lex Arcanum lets them do with what they made.
+          <p>At Level&nbsp;3 a Magister chooses a subclass, gaining further features at Levels
+            <b>5, 9, 13 and 17</b> &mdash; five in total. Each subclass also has its own table of spells that become
+            always prepared at those levels.
           </p>
 
           <div class="bladegrid">
@@ -120,7 +119,7 @@
               </header>
               <p class="bbody">Gematurges study the gem dragons and try to reproduce what makes them singular:
                 a body that is itself a conduit for one raw element. They cut and refine crystalline vessels &mdash;
-                amethyst, crystal, emerald, sapphire, topaz &mdash; and socket one of them into the Arcane Gauntlet,
+                amethyst, crystal, emerald, sapphire, topaz &mdash; and socket one of them into the Jewelled Gauntlet,
                 which recolours the magic that passes through it.</p>
               <p class="bbody">Mastery of the discipline bleeds into the body: scales of crystal, draconic wings, a
                 breath of pure energy. The Magister slowly becomes a partial imitation of the creature they studied.</p>
@@ -170,19 +169,17 @@
           <h2>Class Progression</h2>
           <div class="tw">
             <table class="prog">
-              <caption>Magister class progression, levels 1&ndash;12</caption>
               <thead>
                 <tr>
                   <th colspan="6">Magister Class Progression</th>
-                  <th colspan="5">Spell Slots per Spell Level</th>
+                  <th colspan="5">Spell Slots per<br> Spell Level</th>
                 </tr>
                 <tr class="sub">
                   <th scope="col">Level</th>
                   <th scope="col">Prof.</th>
                   <th scope="col">Features</th>
-                  <th scope="col">Schemas</th>
                   <th scope="col">Cantrips</th>
-                  <th scope="col">Spells</th>
+                  <th scope="col">Prepared<br>Spells</th>
                   <th scope="col">1st</th>
                   <th scope="col">2nd</th>
                   <th scope="col">3rd</th>
@@ -194,11 +191,15 @@
                 <tr class="lvl">
                   <th scope="row">1st</th>
                   <td class="prof" rowspan="4">+2</td>
-                  <td class="feat"><img class="ic" width="18" src="https://bg3.wiki/w/images/e/ef/Spell_Slot_Icon.png"
-                      alt=""> Spellcasting, Schemas</td>
+                  <td class="feat"><img class="ic" width="24" src="./assets/img/passives/en_guard.png" alt=""><a
+                      href="#f-en-garde">En Garde</a>,
+                    <img class="ic" width="24" src="https://bg3.wiki/w/images/e/ef/Spell_Slot_Icon.png" alt=""><a
+                      href="#f-spellcasting">Spellcasting</a>, <img class="ic" width="24"
+                      src="https://bg3.wiki/w/images/d/de/Weapon_Master_Icon.webp" alt=""><a
+                      href="#f-weapon-mastery">Weapon Mastery</a>
+                  </td>
                   <td>2</td>
-                  <td>2</td>
-                  <td class="edge">2</td>
+                  <td class="prep">2</td>
                   <td class="slot">2</td>
                   <td class="slot">&ndash;</td>
                   <td class="slot">&ndash;</td>
@@ -207,10 +208,13 @@
                 </tr>
                 <tr class="lvl">
                   <th scope="row">2nd</th>
-                  <td class="feat">Fighting Style, Cantrip Combat</td>
+                  <td class="feat"><img class="ic" width="24" src="./assets/img/passives/arcane_swordplay.png" alt=""><a
+                      href="#f-arcane-swordplay">Arcane Swordplay</a>,
+                    <img class="ic" width="24" src="https://bg3.wiki/w/images/2/2f/Martial_Adept_Icon.webp" alt=""><a
+                      href="#f-fighting-style">Fighting Style</a>
+                  </td>
                   <td>2</td>
-                  <td>2</td>
-                  <td class="edge">3</td>
+                  <td class="prep">3</td>
                   <td class="slot">2</td>
                   <td class="slot">&ndash;</td>
                   <td class="slot">&ndash;</td>
@@ -219,11 +223,10 @@
                 </tr>
                 <tr class="lvl">
                   <th scope="row">3rd</th>
-                  <td class="feat"><img class="ic" width="22" src="./assets/img/magister_icon_simplified.png"
-                      alt="">Choose a subclass</td>
+                  <td class="feat"><img class="ic" width="24" src="./assets/img/magister_icon_simplified.png" alt=""><a
+                      href="#f-magister-subclass">Choose a subclass</a></td>
                   <td>2</td>
-                  <td>2</td>
-                  <td class="edge">4</td>
+                  <td class="prep">4</td>
                   <td class="slot">3</td>
                   <td class="slot">&ndash;</td>
                   <td class="slot">&ndash;</td>
@@ -232,11 +235,11 @@
                 </tr>
                 <tr class="lvl">
                   <th scope="row">4th</th>
-                  <td class="feat"><img class="ic" width="18"
-                      src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> Feat</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td class="edge">5</td>
+                  <td class="feat"><img class="ic" width="24"
+                      src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> <a
+                      href="#f-feat-4">Feat</a></td>
+                  <td>3</td>
+                  <td class="prep">5</td>
                   <td class="slot">3</td>
                   <td class="slot">&ndash;</td>
                   <td class="slot">&ndash;</td>
@@ -246,13 +249,13 @@
                 <tr class="lvl band">
                   <th scope="row">5th</th>
                   <td class="prof" rowspan="4">+3</td>
-                  <td class="feat"><img class="ic" width="18"
-                      src="https://bg3.wiki/w/images/5/5a/Extra_Attack_Icon.webp" alt=""> Extra Attack, <img class="ic"
-                      width="22" src="./assets/img/magister_icon_simplified.png" alt="">Subclass feature
-                  </td>
+                  <td class="feat"><img class="ic" width="24"
+                      src="https://bg3.wiki/w/images/5/5a/Extra_Attack_Icon.webp" alt=""> <a
+                      href="#f-extra-attack">Extra Attack</a>, <img class="ic" width="22"
+                      src="./assets/img/magister_icon_simplified.png" alt=""><a href="#f-subclass-5">Subclass
+                      feature</a></td>
                   <td>3</td>
-                  <td>2</td>
-                  <td class="edge">6</td>
+                  <td class="prep">6</td>
                   <td class="slot">4</td>
                   <td class="slot">2</td>
                   <td class="slot">&ndash;</td>
@@ -261,10 +264,11 @@
                 </tr>
                 <tr class="lvl band">
                   <th scope="row">6th</th>
-                  <td class="feat">Spell Combat</td>
+                  <td class="feat"><img class="ic" width="24" src="./assets/img/passives/instinctive_trance.png" alt="">
+                    <a href="#f-instinctive-trance">Instinctive Trance</a>
+                  </td>
                   <td>3</td>
-                  <td>2</td>
-                  <td class="edge">6</td>
+                  <td class="prep">6</td>
                   <td class="slot">4</td>
                   <td class="slot">2</td>
                   <td class="slot">&ndash;</td>
@@ -273,10 +277,13 @@
                 </tr>
                 <tr class="lvl band">
                   <th scope="row">7th</th>
-                  <td class="feat">Intellectual Authority</td>
+                  <td class="feat"><img class="ic" width="24" src="./assets/img/passives/arcane_swordplay.png" alt=""><a
+                      href="#f-improved-arcane-swordplay">Improved Arcane Swordplay</a>,
+                    <img class="ic" width="24" src="https://bg3.wiki/w/images/c/c9/Expertise_Icon.png" alt=""><a
+                      href="#f-twofold-discipline">Twofold Discipline</a>
+                  </td>
                   <td>3</td>
-                  <td>2</td>
-                  <td class="edge">7</td>
+                  <td class="prep">7</td>
                   <td class="slot">4</td>
                   <td class="slot">3</td>
                   <td class="slot">&ndash;</td>
@@ -285,11 +292,11 @@
                 </tr>
                 <tr class="lvl band">
                   <th scope="row">8th</th>
-                  <td class="feat"><img class="ic" width="18"
-                      src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> Feat</td>
+                  <td class="feat"><img class="ic" width="24"
+                      src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> <a
+                      href="#f-feat-8">Feat</a></td>
                   <td>3</td>
-                  <td>2</td>
-                  <td class="edge">7</td>
+                  <td class="prep">7</td>
                   <td class="slot">4</td>
                   <td class="slot">3</td>
                   <td class="slot">&ndash;</td>
@@ -299,11 +306,10 @@
                 <tr class="lvl">
                   <th scope="row">9th</th>
                   <td class="prof" rowspan="4">+4</td>
-                  <td class="feat"><img class="ic" width="22" src="./assets/img/magister_icon_simplified.png"
-                      alt="">Subclass feature</td>
-                  <td>4</td>
-                  <td>2</td>
-                  <td class="edge">9</td>
+                  <td class="feat"><img class="ic" width="24" src="./assets/img/magister_icon_simplified.png" alt=""><a
+                      href="#f-subclass-9">Subclass feature</a></td>
+                  <td>3</td>
+                  <td class="prep">9</td>
                   <td class="slot">4</td>
                   <td class="slot">3</td>
                   <td class="slot">2</td>
@@ -312,10 +318,10 @@
                 </tr>
                 <tr class="lvl">
                   <th scope="row">10th</th>
-                  <td class="feat">Steel Mind</td>
+                  <td class="feat"><img class="ic" width="28" src="./assets/img/passives/armored_mind.png" alt=""><a
+                      href="#f-armored-mind">Armored Mind</a></td>
                   <td>4</td>
-                  <td>3</td>
-                  <td class="edge">9</td>
+                  <td class="prep">9</td>
                   <td class="slot">4</td>
                   <td class="slot">3</td>
                   <td class="slot">2</td>
@@ -324,10 +330,11 @@
                 </tr>
                 <tr class="lvl">
                   <th scope="row">11th</th>
-                  <td class="feat">Magic Swordsman</td>
+                  <td class="feat"><img class="ic" width="24" src="./assets/img/passives/arcane_swordplay.png" alt=""><a
+                      href="#f-superior-arcane-swordplay">Superior Arcane
+                      Swordplay</a></td>
                   <td>4</td>
-                  <td>3</td>
-                  <td class="edge">10</td>
+                  <td class="prep">10</td>
                   <td class="slot">4</td>
                   <td class="slot">3</td>
                   <td class="slot">3</td>
@@ -336,16 +343,123 @@
                 </tr>
                 <tr class="lvl">
                   <th scope="row">12th</th>
-                  <td class="feat"><img class="ic" width="18"
-                      src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> Feat</td>
+                  <td class="feat"><img class="ic" width="24"
+                      src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> <a
+                      href="#f-feat-12">Feat</a></td>
                   <td>4</td>
-                  <td>3</td>
-                  <td class="edge">10</td>
+                  <td class="prep">10</td>
                   <td class="slot">4</td>
                   <td class="slot">3</td>
                   <td class="slot">3</td>
                   <td class="slot">&ndash;</td>
                   <td class="slot">&ndash;</td>
+                </tr>
+                <tr class="lvl band">
+                  <th scope="row">13th</th>
+                  <td class="prof" rowspan="4">+5</td>
+                  <td class="feat"><img class="ic" width="24" src="./assets/img/magister_icon_simplified.png" alt=""><a
+                      href="#f-subclass-13">Subclass feature</a></td>
+                  <td>4</td>
+                  <td class="prep">11</td>
+                  <td class="slot">4</td>
+                  <td class="slot">3</td>
+                  <td class="slot">3</td>
+                  <td class="slot">1</td>
+                  <td class="slot">&ndash;</td>
+                </tr>
+                <tr class="lvl band">
+                  <th scope="row">14th</th>
+                  <td class="feat"><img class="ic" width="24" src="./assets/img/passives/en_guard.png" alt=""><a
+                      href="#f-touche">Touch&eacute;</a></td>
+                  <td>4</td>
+                  <td class="prep">11</td>
+                  <td class="slot">4</td>
+                  <td class="slot">3</td>
+                  <td class="slot">3</td>
+                  <td class="slot">1</td>
+                  <td class="slot">&ndash;</td>
+                </tr>
+                <tr class="lvl band">
+                  <th scope="row">15th</th>
+                  <td class="feat tbd"><img class="ic" width="24"
+                      src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> <a href="#f-tbd-15">To be
+                      written</a>
+                    <span class="tbd">&mdash; minor feature</span>
+                  </td>
+                  <td>4</td>
+                  <td class="prep">12</td>
+                  <td class="slot">4</td>
+                  <td class="slot">3</td>
+                  <td class="slot">3</td>
+                  <td class="slot">2</td>
+                  <td class="slot">&ndash;</td>
+                </tr>
+                <tr class="lvl band">
+                  <th scope="row">16th</th>
+                  <td class="feat"><img class="ic" width="24"
+                      src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> <a
+                      href="#f-feat-16">Feat</a></td>
+                  <td>4</td>
+                  <td class="prep">12</td>
+                  <td class="slot">4</td>
+                  <td class="slot">3</td>
+                  <td class="slot">3</td>
+                  <td class="slot">2</td>
+                  <td class="slot">&ndash;</td>
+                </tr>
+                <tr class="lvl">
+                  <th scope="row">17th</th>
+                  <td class="prof" rowspan="4">+6</td>
+                  <td class="feat"><img class="ic" width="24" src="./assets/img/magister_icon_simplified.png" alt=""><a
+                      href="#f-subclass-17">Subclass feature</a></td>
+                  <td>4</td>
+                  <td class="prep">14</td>
+                  <td class="slot">4</td>
+                  <td class="slot">3</td>
+                  <td class="slot">3</td>
+                  <td class="slot">3</td>
+                  <td class="slot">1</td>
+                </tr>
+                <tr class="lvl">
+                  <th scope="row">18th</th>
+                  <td class="feat tbd"><img class="ic" width="24"
+                      src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> <a href="#f-tbd-18">To be
+                      written</a>
+                    <span class="tbd">&mdash; concentration</span>
+                  </td>
+                  <td>4</td>
+                  <td class="prep">14</td>
+                  <td class="slot">4</td>
+                  <td class="slot">3</td>
+                  <td class="slot">3</td>
+                  <td class="slot">3</td>
+                  <td class="slot">1</td>
+                </tr>
+                <tr class="lvl">
+                  <th scope="row">19th</th>
+                  <td class="feat"><img class="ic" width="24"
+                      src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> <a href="#f-epic-boon">Epic
+                      Boon</a></td>
+                  <td>4</td>
+                  <td class="prep">15</td>
+                  <td class="slot">4</td>
+                  <td class="slot">3</td>
+                  <td class="slot">3</td>
+                  <td class="slot">3</td>
+                  <td class="slot">2</td>
+                </tr>
+                <tr class="lvl">
+                  <th scope="row">20th</th>
+                  <td class="feat tbd"><img class="ic" width="24"
+                      src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> <a
+                      href="#f-capstone">Capstone to be written</a></td>
+                  <td>4</td>
+                  <td class="prep">15</td>
+                  <td class="slot">4</td>
+                  <td class="slot">3</td>
+                  <td class="slot">3</td>
+                  <td class="slot">3</td>
+                  <td class="slot">2</td>
                 </tr>
               </tbody>
             </table>
@@ -358,26 +472,26 @@
             <div class="card">
               <h3>Hit Points</h3>
               <ul>
-                <li><span class="dt">Hit Point Dice</span> 1d10</li>
-                <li><span class="dt">At Level 1</span> 10 + <img class="ic" width="24"
+                <li><span class="dt">At Level 1:</span> 10 + <img class="ic" width="24"
                     src="https://bg3.wiki/w/images/6/6b/Constitution_Small_Icon.png" alt=""> Constitution modifier</li>
-                <li><span class="dt">On Level Up</span> 6 + <img class="ic" width="24"
+                <li><span class="dt">On Level Up:</span> 6 + <img class="ic" width="24"
                     src="https://bg3.wiki/w/images/6/6b/Constitution_Small_Icon.png" alt=""> Constitution modifier</li>
               </ul>
             </div>
             <div class="card">
               <h3>Key Ability Scores</h3>
               <ul>
-                <li><img class="ic" width="24" src="https://bg3.wiki/w/images/d/d1/Dexterity_Small_Icon.png" alt="">
-                  <span class="dt">Dexterity</span> attack rolls and <img class="ic" width="24"
-                    src="https://bg3.wiki/w/images/a/ae/Armour_Class_Icon.png" alt=""> Armour Class
+                <li><img class="ic" width="24" src="https://bg3.wiki/w/images/4/43/Strength_Small_Icon.png" alt="">
+                  <span class="dt">Strength</span> or <img class="ic" width="24"
+                    src="https://bg3.wiki/w/images/d/d1/Dexterity_Small_Icon.png" alt="">
+                  <span class="dt">Dexterity</span> for physical attacks
                 </li>
                 <li><img class="ic" width="24" src="https://bg3.wiki/w/images/7/7d/Intelligence_Small_Icon.png" alt="">
-                  <span class="dt">Intelligence</span> spellcasting, Initiative, weapon damage from Level&nbsp;11
+                  <span class="dt">Intelligence</span> for Spells.
                 </li>
                 <li><img class="ic" width="24" src="https://bg3.wiki/w/images/6/6b/Constitution_Small_Icon.png" alt="">
                   <span class="dt">Constitution</span> hit points and <img class="ic" width="24"
-                    src="https://bg3.wiki/w/images/8/83/Concentration_Icon.png" alt=""> Concentration
+                    src="https://bg3.wiki/w/images/8/83/Concentration_Icon.png" alt=""> Concentration checks.
                 </li>
               </ul>
             </div>
@@ -385,21 +499,21 @@
               <h3>Starting Proficiencies</h3>
               <ul>
                 <li>
-                  <span class="dt">Saving Throws</span>
+                  <span class="dt">Saving Throws:</span>
                   <img class="ic" width="24" src="https://bg3.wiki/w/images/6/6b/Constitution_Small_Icon.png" alt="">
                   Constitution,
                   <img class="ic" width="24" src="https://bg3.wiki/w/images/7/7d/Intelligence_Small_Icon.png" alt="">
                   Intelligence
                 </li>
                 <li>
-                  <span class="dt">Armour</span>
+                  <span class="dt">Armour:</span>
                   <img class="ic" width="24" src="https://bg3.wiki/w/images/1/17/Light_Armour_Icon.png" alt="">
                   <a href="https://bg3.wiki/wiki/Light_Armour">Light</a>&nbsp;and&nbsp;
                   <img class="ic" width="24" src="https://bg3.wiki/w/images/7/73/Medium_Armour_Icon.png" alt="">
                   <a href="https://bg3.wiki/wiki/Medium_Armour">Medium Armour</a>.
                 </li>
                 <li>
-                  <span class="dt">Weapons</span>
+                  <span class="dt">Weapons:</span>
                   <img class="ic" width="24" src="https://bg3.wiki/w/images/d/de/Simple_Weapon_Prof_Icon.png"
                     alt="">&nbsp;
                   <a href="https://bg3.wiki/wiki/Simple_Weapons">Simple weapons</a>, plus
@@ -408,9 +522,9 @@
                   <img class="ic" width="24" src="https://bg3.wiki/w/images/b/b3/Shortswords_Icon.png" alt=""><a
                     href="https://bg3.wiki/wiki/Shortsword">Shortsword</a>,&nbsp;
                   <img class="ic" width="24" src="https://bg3.wiki/w/images/b/b6/Longswords_Icon.png" alt=""><a
-                    href="https://bg3.wiki/wiki/Longsword">Longsword</a>,&nbsp;
+                    href="https://bg3.wiki/wiki/Longsword">Longsword</a>,&nbsp; and&nbsp;
                   <img class="ic" width="24" src="https://bg3.wiki/w/images/9/97/Rapiers_Icon.png" alt=""><a
-                    href="https://bg3.wiki/wiki/Rapier">Rapier</a>&nbsp;and Whip
+                    href="https://bg3.wiki/wiki/Rapier">Rapier</a>
                 </li>
               </ul>
             </div>
@@ -426,6 +540,10 @@
                   <a href="https://bg3.wiki/wiki/Arcana">Arcana</a>
                 </li>
                 <li>
+                  <img class="ic" width="24" src="https://bg3.wiki/w/images/3/30/Athletics_Icon.png" alt="">
+                  <a href="https://bg3.wiki/wiki/Insight">Athletics</a>
+                </li>
+                <li>
                   <img class="ic" width="24" src="https://bg3.wiki/w/images/c/c5/History_Icon.png" alt="">
                   <a href="https://bg3.wiki/wiki/History">History</a>
                 </li>
@@ -434,27 +552,22 @@
                   <a href="https://bg3.wiki/wiki/Investigation">Investigation</a>
                 </li>
                 <li>
-                  <img class="ic" width="24" src="https://bg3.wiki/w/images/4/46/Sleight_of_Hand_Icon.png" alt="">
-                  <a href="https://bg3.wiki/wiki/Sleight_of_Hand">Sleight of Hand</a>
-                </li>
-                <li>
                   <img class="ic" width="24" src="https://bg3.wiki/w/images/9/92/Perception_Icon.png" alt="">
                   <a href="https://bg3.wiki/wiki/Perception">Perception</a>
                 </li>
                 <li>
-                  <img class="ic" width="24" src="https://bg3.wiki/w/images/f/f9/Insight_Icon.png" alt="">
-                  <a href="https://bg3.wiki/wiki/Insight">Insight</a>
-                </li>
-                <li>
                   <img class="ic" width="24" src="https://bg3.wiki/w/images/f/f7/Persuasion_Icon.png" alt="">
                   <a href="https://bg3.wiki/wiki/Persuasion">Persuasion</a>
+                </li>
+                <li>
+                  <img class="ic" width="24" src="https://bg3.wiki/w/images/4/46/Sleight_of_Hand_Icon.png" alt="">
+                  <a href="https://bg3.wiki/wiki/Sleight_of_Hand">Sleight of Hand</a>
                 </li>
               </ul>
             </div>
             <div class="card">
               <h3>Starting Equipment</h3>
               <ul>
-                <li>Arcane Gauntlet</li>
                 <li>
                   <img class="ic" width="24" src="https://bg3.wiki/w/images/9/91/Rapier_Icon.png" alt="">
                   <a href="https://bg3.wiki/wiki/Rapier">Rapier</a>
@@ -466,6 +579,30 @@
                 <li>Leather Boots</li>
               </ul>
             </div>
+            <div class="card">
+              <h3>Multiclass Proficiencies</h3>
+              <ul>
+                <li>
+                  <span class="dt">Armour:</span>
+                  <img class="ic" width="24" src="https://bg3.wiki/w/images/1/17/Light_Armour_Icon.png" alt="">
+                  <a href="https://bg3.wiki/wiki/Light_Armour">Light</a>
+                </li>
+                <li>
+                  <span class="dt">Weapons:</span>
+                  <img class="ic" width="24" src="https://bg3.wiki/w/images/d/de/Simple_Weapon_Prof_Icon.png"
+                    alt="">&nbsp;
+                  <a href="https://bg3.wiki/wiki/Simple_Weapons">Simple weapons</a>, plus
+                  <img class="ic" width="24" src="https://bg3.wiki/w/images/b/be/Scimitars_Icon.png" alt=""><a
+                    href="https://bg3.wiki/wiki/Scimitar">Scimitar</a>,&nbsp;
+                  <img class="ic" width="24" src="https://bg3.wiki/w/images/b/b3/Shortswords_Icon.png" alt=""><a
+                    href="https://bg3.wiki/wiki/Shortsword">Shortsword</a>,&nbsp;
+                  <img class="ic" width="24" src="https://bg3.wiki/w/images/b/b6/Longswords_Icon.png" alt=""><a
+                    href="https://bg3.wiki/wiki/Longsword">Longsword</a>,&nbsp; and&nbsp;
+                  <img class="ic" width="24" src="https://bg3.wiki/w/images/9/97/Rapiers_Icon.png" alt=""><a
+                    href="https://bg3.wiki/wiki/Rapier">Rapier</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -474,57 +611,112 @@
           <section class="lvlblock" id="level-1">
             <h3 class="lvlhead"><span class="lvlnum">1</span> Level 1</h3>
             <ul class="featlist">
-              <li><img class="ic" width="20" src="https://bg3.wiki/w/images/e/ef/Spell_Slot_Icon.png" alt="">
+              <li><img class="ic" width="40" src="./assets/img/passives/en_guard.png" alt="">
                 <div>
-                  <p><span class="fname">Spellcasting</span> &mdash; You have learned to cast spells. The information
-                    below details how to use those rules as a Magister.</p>
-                  <p><b>Arcane Gauntlet required.</b> Unlike other spellcasters, you can only use an <a class="lexlink"
-                      href="https://nivel20.com/games/dnd-2024/rulebooks/2638-lex-arcanum/items/6038356-guante-arcano">Arcane
-                      Gauntlet</a> as the arcane focus for your Magister spells; you cannot use a staff, an orb or any
-                    other standard arcane focus. You must have the hand carrying the gauntlet completely free when you
-                    cast a Magister spell that requires somatic components, since you use that hand to make the gestures
-                    of those components. In practice this means <b>no shield, no two-handed weapon and no dual
-                      wielding</b> while you cast.</p>
-                  <p><b>Cantrips.</b> You know two Magister cantrips of your choice. Whenever you gain a Magister level,
-                    you can replace one of the cantrips from this feature with another Magister cantrip of your choice.
-                    When you reach Magister level 10, you learn another Magister cantrip of your choice, as shown in the
-                    Cantrips column of the <a href="#progression">Magister Class Progression</a> table.</p>
+                  <p><span class="fname" id="f-en-garde">En Garde</span> &mdash; You always have the <img class="ic"
+                      width="24" src="https://bg3.wiki/w/images/c/cf/Shield_spell_Icon.webp" alt=""><a
+                      href="https://bg3.wiki/wiki/Shield">Shield</a> spell prepared. Additionally, you can cast it
+                    without expending a <img class="ic" width="24"
+                      src="https://bg3.wiki/w/images/e/ef/Spell_Slot_Icon.png" alt=""><a
+                      href="https://bg3.wiki/wiki/Spells#Spell_slots">Spell Slot</a>, but you must finish a
+                    long rest before you can cast it in this way
+                    again.
+                  </p>
+                  <p>
+                    When you cast <img class="ic" width="24" src="https://bg3.wiki/w/images/c/cf/Shield_spell_Icon.webp"
+                      alt=""><a href="https://bg3.wiki/wiki/Shield">Shield</a> and the attack that triggered it misses
+                    you
+                    because of the spell, you can make one melee weapon attack against that attacker as part of the
+                    same <img class="ic" width="18" src="https://bg3.wiki/w/images/c/c1/Reaction_Icon.png" alt=""><a
+                      href="https://bg3.wiki/wiki/Resources#Reaction">Reaction</a>, provided it is within
+                    your reach.
+                  </p>
+                </div>
+              </li>
+              <li><img class="ic" width="40" src="https://bg3.wiki/w/images/e/ef/Spell_Slot_Icon.png" alt="">
+                <div>
+                  <p><span class="fname" id="f-spellcasting">Spellcasting</span> &mdash; As a student of arcane magic,
+                    you have learned to
+                    cast spells. The information below details how to use those rules with Magister spells, which you
+                    will find later in the Magister spell list within the class description.</p>
+
+                  <p><b>Cantrips.</b> You know two Magister cantrips of your choice. Whenever you finish a <a
+                      href="https://bg3.wiki/wiki/Long_Rest">Long Rest</a>, you can replace one of the cantrips from
+                    this feature with another Magister cantrip of your choice. When you reach Magister levels 4 and 10,
+                    you learn another Magister cantrip of your choice, as shown in the Cantrips column of the <a
+                      href="#progression">Magister Class Progression</a> table.</p>
+
+                  <p><b>Spellbook.</b> Your learning has culminated in the creation of a unique book: your spellbook. It
+                    is a Tiny object that weighs 3 pounds, contains 100 pages, and can be read only by you or someone
+                    casting <i>Identify</i>. You decide the book&rsquo;s appearance and materials; for example, it might
+                    be a volume bound in reinforced leather or a worn field journal. The book contains the level 1 and
+                    higher spells you know. You start with four level 1 Magister spells of your choice.</p>
+
+                  <p>Whenever you gain a Magister level after the 1st, add one Magister spell of your choice to your
+                    spellbook. This spell must be of a level for which you have spell slots, as shown on the <a
+                      href="#progression">Magister Class Progression</a> table. The spells are the result of your
+                    ongoing arcane research.</p>
+
                   <p><b>Spell Slots.</b> The <a href="#progression">Magister Class Progression</a> table shows how many
                     <img class="ic" width="18" src="https://bg3.wiki/w/images/e/ef/Spell_Slot_Icon.png" alt=""> spell
                     slots you have for casting your level 1 and higher spells. You regain all expended slots when you
                     finish a <a href="https://bg3.wiki/wiki/Long_Rest">Long Rest</a>.
                   </p>
-                  <p><b>Prepared Spells of Level 1+.</b> You prepare a number of level 1 and higher spells, which are
-                    the ones you can cast with this feature. To start, choose two level 1 Magister spells. The number of
-                    spells on your list increases as you gain Magister levels, as shown in the Spells column of the <a
+
+                  <p><b>Prepared Spells of Level 1+.</b> You prepare a list of level 1 and higher spells, which are the
+                    ones you can cast with this feature. To do so, choose two spells from your spellbook. These spells
+                    must be of a level for which you have spell slots. The number of spells on your list increases as
+                    you gain Magister levels, as shown in the Prepared Spells column of the <a
                       href="#progression">Magister Class Progression</a> table. Whenever that number increases, choose
                     additional Magister spells until the number of spells on your list matches the number in the table.
                     These spells must be of a level for which you have spell slots. If another Magister feature gives
-                    you spells that you always have prepared, those spells don&rsquo;t count against the number you can
+                    you spells that you always have prepared, those spells don&rsquo;t count against the total you can
                     prepare with this feature, but they do count as Magister spells for you.</p>
-                  <p><b>Changing Your Prepared Spells.</b> Whenever you gain a Magister level, you can replace one spell
-                    on your list with another Magister spell for which you have spell slots.</p>
+
+                  <p><b>Changing Your Prepared Spells.</b> Whenever you finish a <a
+                      href="https://bg3.wiki/wiki/Long_Rest">Long Rest</a>, you can change your list of prepared spells
+                    by substituting any of them with other spells from your spellbook.</p>
+
+                  <div class="rulebox">
+                    <h4>Expanding and replacing a spellbook</h4>
+                    <p>The spells you add to your spellbook as you gain levels reflect your ongoing arcane research,
+                      but you might find other spells during your adventures. You could discover a Magister spell on
+                      a <a href="https://bg3.wiki/wiki/Scrolls">Spell Scroll</a>, for example, and copy it into your
+                      spellbook.</p>
+
+                    <p><b>Copying a Spell into the Book.</b> When you find a Magister spell of level 1 or higher, you
+                      can copy it into your spellbook if it is of a level you can prepare and if you have time to
+                      transcribe it. For each level of the spell, the transcription takes 2 hours and costs 50 GP.
+                      Afterwards, you can prepare that spell like any other in your book.</p>
+
+                    <p><b>Copying the Book.</b> You can copy a spell from your spellbook into another book. This
+                      works like copying a new spell into your spellbook, but faster, since you already know how to
+                      cast the spell: you need spend only 1 hour and 10 GP for each level of the copied spell.</p>
+
+                    <p>If you lose your spellbook, you can use the same procedure to transcribe the Magister spells
+                      you have prepared at that moment into a new book. Filling out the rest of it requires finding
+                      new spells again. For this reason, many Magisters keep a spare spellbook.</p>
+                  </div>
+
                   <p><b>Spellcasting Ability.</b> <img class="ic" width="18"
                       src="https://bg3.wiki/w/images/7/7d/Intelligence_Small_Icon.png" alt=""> Intelligence is your
                     spellcasting ability for your Magister spells.</p>
+
+                  <p><b>Spellcasting Focus.</b> You can use an arcane focus, a Finesse weapon you are wielding, or your
+                    spellbook as a spellcasting focus for your Magister spells.</p>
                 </div>
               </li>
-              <li><img class="ic" width="20" src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt="">
+              <li><img class="ic" width="40" src="https://bg3.wiki/w/images/d/de/Weapon_Master_Icon.webp" alt="">
                 <div>
-                  <p><span class="fname">Schemas</span> &mdash; You have perfected combat patterns that interweave
-                    magical theory with physical mastery, called <b><a href="#schemas">Schemas</a></b>: specialised
-                    combat methods that let you execute a tactical manoeuvre when you cast a particular spell or
-                    cantrip. You gain two Schemas of your choice.</p>
-                  <p><b>Requirements.</b> Every Schema requires a specific spell or cantrip from the Magister spell list
-                    to be prepared. If at any point you stop having the required spell prepared, you cannot benefit from
-                    the Schema&rsquo;s effects until you prepare it again. Some Schemas have additional requirements,
-                    such as reaching a certain level in this class.</p>
-                  <p><b>Replacing and learning Schemas.</b> Whenever you gain a Magister level, you can replace one of
-                    your known Schemas with another one for which you meet all the requirements. You cannot replace a
-                    Schema if it is a requirement for another Schema you currently have.</p>
-                  <p>As you gain levels in this class you gain more Schemas, as shown in the Schemas column of the <a
-                      href="#progression">Magister Class Progression</a> table, up to a maximum of four at level 9. You
-                    cannot choose the same Schema more than once, unless its description says otherwise.</p>
+                  <p><span class="fname" id="f-weapon-mastery">Weapon Mastery</span> &mdash; Your tactical training
+                    allows you to use the
+                    mastery properties of certain weapons. You can use the mastery properties of two kinds of weapons of
+                    your choice with which you have <img class="ic" width="24"
+                      src="https://bg3.wiki/w/images/2/28/Proficiency.png" alt=""><a
+                      href="https://bg3.wiki/wiki/Proficiency">Proficiency</a>, such as rapiers or shortswords.</p>
+
+                  <p>Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon
+                    choices to a different eligible weapon.</p>
                 </div>
               </li>
             </ul>
@@ -532,34 +724,52 @@
           <section class="lvlblock" id="level-2">
             <h3 class="lvlhead"><span class="lvlnum">2</span> Level 2</h3>
             <ul class="featlist">
-              <li><img class="ic" width="20" src="https://bg3.wiki/w/images/a/ae/Duelling_Icon.webp" alt="">
+              <li><img class="ic" width="40" src="./assets/img/passives/arcane_swordplay.png" alt="">
                 <div>
-                  <p><span class="fname">Fighting Style</span> &mdash; You gain a Fighting Style feat of your choice.
-                    Instead of choosing one of those feats, you can choose <b>Arcane Warrior</b>.</p>
-                  <p><b>Arcane Warrior.</b> You learn two <a href="https://bg3.wiki/wiki/Wizard">Wizard</a> cantrips of
-                    your choice. Those cantrips count as Magister spells for you, and you use <img class="ic" width="18"
-                      src="https://bg3.wiki/w/images/7/7d/Intelligence_Small_Icon.png" alt=""> Intelligence as your
-                    spellcasting ability for them. Whenever you gain a Magister level, you can replace one of them with
-                    another Wizard cantrip of your choice.</p>
+                  <p><span class="fname" id="f-arcane-swordplay">Arcane Swordplay</span> — You learn to cast cantrips
+                    and attack with your
+                    weapon at the same time. After making an attack as part of your <a
+                      href="https://bg3.wiki/wiki/Attack">Attack action</a>, you can
+                    use a <img class="ic" width="20" src="https://bg3.wiki/w/images/c/c9/Bonus_Action_Icon.png"
+                      alt=""><b>Bonus Action</b> to cast a Magister cantrip with a casting time of 1 action. The cantrip
+                    must not require a weapon attack as part of its casting.</p>
+
+                  You need to be wielding a melee weapon with the <img class="ic" width="18"
+                    src="https://bg3.wiki/w/images/thumb/1/1b/Finesse_Icon.png/25px-Finesse_Icon.png.webp" alt=""><a
+                    href="https://bg3.wiki/wiki/Finesse">Finesse</a> property in your main hand and have your off-hand
+                  empty to use this feature.
                 </div>
               </li>
-              <li><img class="ic" width="20" src="https://bg3.wiki/w/images/c/c9/Bonus_Action_Icon.png" alt="">
+              <li>
+                <img class="ic" width="40" src="https://bg3.wiki/w/images/2/2f/Martial_Adept_Icon.webp" alt="">
                 <div>
-                  <p><span class="fname">Cantrip Combat</span> &mdash; You learn to cast cantrips and attack with your
-                    weapon at the same time. To use this feature you must be carrying your <a class="lexlink"
-                      href="https://nivel20.com/games/dnd-2024/rulebooks/2638-lex-arcanum/items/6038356-guante-arcano">Arcane
-                      Gauntlet</a> in one hand and wielding a melee weapon with the <img class="ic" width="18"
-                      src="https://bg3.wiki/w/images/thumb/1/1b/Finesse_Icon.png/25px-Finesse_Icon.png.webp" alt=""><a
-                      href="https://bg3.wiki/wiki/Finesse">Finesse</a> property in the other.</p>
-                  <p>When you take the <a href="https://bg3.wiki/wiki/Attack">Attack</a> action on your turn, you can
-                    choose <b>not to add your ability modifier to the damage</b> of each attack made as part of that
-                    action (unless the modifier is negative). If you do, you can use your <b>Bonus Action</b> that turn
-                    to take the Magic action and cast a Magister cantrip with a casting time of 1 action. If it requires
-                    a weapon attack as part of casting it, that attack also does not add your ability modifier to the
-                    damage.</p>
-                  <p>You can use this Bonus Action immediately after your <a
-                      href="https://bg3.wiki/wiki/Attack">Attack</a> action, or between the attacks of that action if
-                    you have more than one.</p>
+                  <p><span class="fname" id="f-fighting-style">Fighting Style</span> &mdash; You adopt a particular
+                    style of fighting as your specialty. Choose one of the following options.</p>
+
+                  <ul class="fighting-styles">
+                    <li>
+                      <img class="ic" width="32" src="https://bg3.wiki/w/images/e/e2/Defence_Icon.webp" alt="">
+                      <p><b>Defence.</b> You gain a +1 bonus to <img class="ic" width="18"
+                          src="https://bg3.wiki/w/images/a/ae/Armour_Class_Icon.png" alt="">Armour Class while wearing
+                        armour.</p>
+                    </li>
+                    <li>
+                      <img class="ic" width="32" src="https://bg3.wiki/w/images/a/ae/Duelling_Icon.webp" alt="">
+                      <p><b>Duelling.</b> When you are wielding a melee weapon that is not Two-Handed in one hand, and
+                        no weapon in the other, you deal an additional 2 damage with that weapon.</p>
+                    </li>
+                    <li>
+                      <img class="ic" width="32" src="https://bg3.wiki/w/images/7/73/Protection_Icon.webp" alt="">
+                      <p><b>Protection.</b> When you have a Shield, impose Disadvantage on an enemy who attacks one of
+                        your allies when you are within 1.5 m (5 ft). You must be able to see the enemy.</p>
+                    </li>
+                    <li>
+                      <img class="ic" width="32" src="https://bg3.wiki/w/images/5/54/Two-Weapon_Fighting_Icon.webp"
+                        alt="">
+                      <p><b>Two-Weapon Fighting.</b> When you make an offhand attack, you can add your Ability Score
+                        Modifier to the damage of the attack.</p>
+                    </li>
+                  </ul>
                 </div>
               </li>
             </ul>
@@ -567,10 +777,11 @@
           <section class="lvlblock" id="level-3">
             <h3 class="lvlhead"><span class="lvlnum">3</span> Level 3</h3>
             <ul class="featlist">
-              <li><img class="ic" width="22" src="./assets/img/magister_icon_simplified.png" alt="">
+              <li><img class="ic" width="40" src="./assets/img/magister_icon_simplified.png" alt="">
                 <div style="width: 100%;">
-                  <p><span class="fname">Magister Subclass</span> &mdash; You gain a Magister subclass of your choice: a
-                    specialisation that grants you features now and again at Magister levels 5 and 9. See <a
+                  <p><span class="fname" id="f-magister-subclass">Magister Subclass</span> &mdash; You gain a Magister
+                    subclass of your choice: a
+                    specialisation that grants you features again at Magister levels 5, 9, 13 and 17. See <a
                       href="#subclasses">Subclasses</a>.</p>
 
                   <h4 style="margin-top: 1.25rem; margin-bottom: 0.4rem; color: var(--white); font-size: 0.95rem;">
@@ -791,9 +1002,10 @@
           <section class="lvlblock" id="level-4">
             <h3 class="lvlhead"><span class="lvlnum">4</span> Level 4</h3>
             <ul class="featlist">
-              <li><img class="ic" width="20" src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt="">
+              <li><img class="ic" width="40" src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt="">
                 <div>
-                  <p><span class="fname">Feat</span> &mdash; You gain a <a href="https://bg3.wiki/wiki/Feats">Feat</a>
+                  <p><span class="fname" id="f-feat-4">Feat</span> &mdash; You gain a <a
+                      href="https://bg3.wiki/wiki/Feats">Feat</a>
                     of your choice. If you take an Ability Score Improvement, you can increase one ability score by 2,
                     or two ability scores by 1; you cannot raise an ability score above 20 this way.</p>
                 </div>
@@ -803,16 +1015,17 @@
           <section class="lvlblock" id="level-5">
             <h3 class="lvlhead"><span class="lvlnum">5</span> Level 5</h3>
             <ul class="featlist">
-              <li><img class="ic" width="20" src="https://bg3.wiki/w/images/5/5a/Extra_Attack_Icon.webp" alt="">
+              <li><img class="ic" width="40" src="https://bg3.wiki/w/images/5/5a/Extra_Attack_Icon.webp" alt="">
                 <div>
-                  <p><span class="fname">Extra Attack</span> &mdash; When you take the <a
+                  <p><span class="fname" id="f-extra-attack">Extra Attack</span> &mdash; When you take the <a
                       href="https://bg3.wiki/wiki/Attack">Attack</a> action on your turn, you can make two attacks
                     instead of one.</p>
                 </div>
               </li>
-              <li><img class="ic" width="22" src="./assets/img/magister_icon_simplified.png" alt="">
+              <li><img class="ic" width="40" src="./assets/img/magister_icon_simplified.png" alt="">
                 <div style="width: 100%;">
-                  <p><span class="fname">Subclass Feature</span> &mdash; You gain a feature from your chosen Magister
+                  <p><span class="fname" id="f-subclass-5">Subclass Feature</span> &mdash; You gain a feature from your
+                    chosen Magister
                     subclass. See <a href="#subclasses">Subclasses</a>.</p>
 
                   <h4 style="margin-top: 1.25rem; margin-bottom: 0.4rem; color: var(--white); font-size: 0.95rem;">
@@ -913,37 +1126,17 @@
                   </div>
                 </div>
               </li>
-              <li><img class="ic" width="20" src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt="">
-                <div>
-                  <p><span class="fname">Schema</span> &mdash; You learn one additional Schema, for three in total.</p>
-                </div>
-              </li>
             </ul>
           </section>
           <section class="lvlblock" id="level-6">
             <h3 class="lvlhead"><span class="lvlnum">6</span> Level 6</h3>
             <ul class="featlist">
-              <li><img class="ic" width="20" src="https://bg3.wiki/w/images/f/f2/Action_Icon.png" alt="">
+              <li><img class="ic" width="40" src="./assets/img/passives/instinctive_trance.png" alt="">
                 <div>
-                  <p><span class="fname">Spell Combat</span> &mdash; You are now able to weave more complex spells into
-                    your sword work. To use this feature you must be carrying your <a class="lexlink"
-                      href="https://nivel20.com/games/dnd-2024/rulebooks/2638-lex-arcanum/items/6038356-guante-arcano">Arcane
-                      Gauntlet</a> in one hand and wielding a melee weapon with the <img class="ic" width="18"
-                      src="https://bg3.wiki/w/images/thumb/1/1b/Finesse_Icon.png/25px-Finesse_Icon.png.webp" alt=""><a
-                      href="https://bg3.wiki/wiki/Finesse">Finesse</a> property in the other.</p>
-                  <p>When you take the <a href="https://bg3.wiki/wiki/Attack">Attack</a> action on your turn, you can
-                    choose <b>not to add your ability modifier to the damage</b> of each attack made as part of that
-                    action (unless the modifier is negative). If you do, you can use your <b>Bonus Action</b> that turn
-                    to take the Magic action and cast a Magister spell with a casting time of 1 action, spending the
-                    corresponding spell slot as normal. If it requires a weapon attack as part of casting it, that
-                    attack also does not add your ability modifier to the damage.</p>
-                  <p>You can use this Bonus Action immediately after your <a
-                      href="https://bg3.wiki/wiki/Attack">Attack</a> action, or between the attacks of that action if
-                    you have more than one.</p>
-                  <p>The maximum level of spell you can cast with this feature depends on your level in this class:
-                    <b>level 1</b> spells at Magister level 6, and <b>level 2</b> spells when you reach Magister level
-                    10.
-                  </p>
+                  <p><span class="fname" id="f-instinctive-trance">Instinctive Trance</span> &mdash; While you are
+                    concentrating on a spell, you
+                    enter a state of heightened tactical awareness. You gain an additional reaction per round, and enemy
+                    creatures have disadvantage on opportunity attacks made against you.</p>
                 </div>
               </li>
             </ul>
@@ -951,14 +1144,46 @@
           <section class="lvlblock" id="level-7">
             <h3 class="lvlhead"><span class="lvlnum">7</span> Level 7</h3>
             <ul class="featlist">
-              <li><img class="ic" width="20" src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt="">
+              <li><img class="ic" width="40" src="./assets/img/passives/arcane_swordplay.png" alt="">
                 <div>
-                  <p><span class="fname">Intellectual Authority</span> &mdash; Your intellect reinforces your ability to
-                    persuade and deceive those around you. Whenever you make a Charisma (<a
-                      href="https://bg3.wiki/wiki/Persuasion">Persuasion</a>) or Charisma (<a
-                      href="https://bg3.wiki/wiki/Deception">Deception</a>) ability check, you gain a bonus to the check
-                    equal to your <img class="ic" width="18"
-                      src="https://bg3.wiki/w/images/7/7d/Intelligence_Small_Icon.png" alt=""> Intelligence modifier.
+                  <p><span class="fname" id="f-improved-arcane-swordplay">Improved Arcane Swordplay</span> &mdash;
+                    Your blade has become a fit vessel for the spell itself.
+                    <a href="#f-arcane-swordplay">Arcane Swordplay</a> is no longer restricted to cantrips that do
+                    not require a weapon attack. When you cast one that does, its attack replaces one of the attacks
+                    you have left from your <a href="https://bg3.wiki/wiki/Attack">Attack action</a>.
+                  </p>
+
+                  <p>As with <a href="#f-arcane-swordplay">Arcane Swordplay</a>, you need to be wielding a melee
+                    weapon with the <img class="ic" width="18"
+                      src="https://bg3.wiki/w/images/thumb/1/1b/Finesse_Icon.png/25px-Finesse_Icon.png.webp" alt=""><a
+                      href="https://bg3.wiki/wiki/Finesse">Finesse</a> property in your main hand and have your
+                    off-hand empty to use this feature.</p>
+                </div>
+              </li>
+              <li><img class="ic" width="40" src="https://bg3.wiki/w/images/c/c9/Expertise_Icon.png" alt="">
+                <div>
+                  <p><span class="fname" id="f-twofold-discipline">Twofold Discipline</span> &mdash; While you studied
+                    magic, you drilled your
+                    body with the same rigour. Choose one of the following skills: <img class="ic" width="24"
+                      src="https://bg3.wiki/w/images/a/af/Arcana_Icon.png" alt="">
+                    <a href="https://bg3.wiki/wiki/Arcana">Arcana</a>, <img class="ic" width="24"
+                      src="https://bg3.wiki/w/images/c/c5/History_Icon.png" alt="">
+                    <a href="https://bg3.wiki/wiki/History">History</a>, or <img class="ic" width="24"
+                      src="https://bg3.wiki/w/images/5/57/Investigation_Icon.png" alt="">
+                    <a href="https://bg3.wiki/wiki/Investigation">Investigation</a>;
+                    and one of the following: <img class="ic" width="24"
+                      src="https://bg3.wiki/w/images/3/30/Athletics_Icon.png" alt="">
+                    <a href="https://bg3.wiki/wiki/Insight">Athletics</a>, <img class="ic" width="24"
+                      src="https://bg3.wiki/w/images/5/57/Acrobatics_Icon.png" alt="">
+                    <a href="https://bg3.wiki/wiki/Acrobatics">Acrobatics</a>, or <img class="ic" width="24"
+                      src="https://bg3.wiki/w/images/4/46/Sleight_of_Hand_Icon.png" alt="">
+                    <a href="https://bg3.wiki/wiki/Sleight_of_Hand">Sleight of Hand</a>. You gain <img class="ic"
+                      width="24" src="https://bg3.wiki/w/images/2/28/Proficiency.png" alt=""><a
+                      href="https://bg3.wiki/wiki/Proficiency">Proficiency</a> in each
+                    chosen skill you lack it in, and <img class="ic" width="24"
+                      src="https://bg3.wiki/w/images/b/b8/Expertise.png" alt=""><a
+                      href="https://bg3.wiki/wiki/Proficiency#Expertise">Expertise</a> in each one you were
+                    already proficient in.
                   </p>
                 </div>
               </li>
@@ -967,9 +1192,9 @@
           <section class="lvlblock" id="level-8">
             <h3 class="lvlhead"><span class="lvlnum">8</span> Level 8</h3>
             <ul class="featlist">
-              <li><img class="ic" width="20" src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt="">
+              <li><img class="ic" width="40" src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt="">
                 <div>
-                  <p><span class="fname">Feat</span> &mdash; You gain another <a
+                  <p><span class="fname" id="f-feat-8">Feat</span> &mdash; You gain another <a
                       href="https://bg3.wiki/wiki/Feats">Feat</a> of your choice.</p>
                 </div>
               </li>
@@ -978,9 +1203,10 @@
           <section class="lvlblock" id="level-9">
             <h3 class="lvlhead"><span class="lvlnum">9</span> Level 9</h3>
             <ul class="featlist">
-              <li><img class="ic" width="22" src="./assets/img/magister_icon_simplified.png" alt="">
+              <li><img class="ic" width="40" src="./assets/img/magister_icon_simplified.png" alt="">
                 <div style="width: 100%;">
-                  <p><span class="fname">Subclass Feature</span> &mdash; You gain a feature from your chosen Magister
+                  <p><span class="fname" id="f-subclass-9">Subclass Feature</span> &mdash; You gain a feature from your
+                    chosen Magister
                     subclass. See <a href="#subclasses">Subclasses</a>.</p>
 
                   <h4 style="margin-top: 1.25rem; margin-bottom: 0.4rem; color: var(--white); font-size: 0.95rem;">
@@ -1081,19 +1307,16 @@
                   </div>
                 </div>
               </li>
-              <li><img class="ic" width="20" src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt="">
-                <div>
-                  <p><span class="fname">Schema</span> &mdash; You learn one additional Schema, for four in total.</p>
-                </div>
-              </li>
             </ul>
           </section>
           <section class="lvlblock" id="level-10">
             <h3 class="lvlhead"><span class="lvlnum">10</span> Level 10</h3>
             <ul class="featlist">
-              <li><img class="ic" width="20" src="https://bg3.wiki/w/images/8/83/Concentration_Icon.png" alt="">
+              <li><img class="ic" width="40" src="./assets/img/passives/armored_mind.png" alt="">
                 <div>
-                  <p><span class="fname">Steel Mind</span> &mdash; Your experience on the front line lets you ignore the
+                  <p><span class="fname" id="f-armored-mind">Armored Mind</span> &mdash; Your experience on the front
+                    line lets you ignore
+                    the
                     pain of your wounds to keep your magical focus.</p>
                   <p>Whenever you make a <img class="ic" width="18"
                       src="https://bg3.wiki/w/images/6/6b/Constitution_Small_Icon.png" alt=""> Constitution saving throw
@@ -1107,13 +1330,28 @@
           <section class="lvlblock" id="level-11">
             <h3 class="lvlhead"><span class="lvlnum">11</span> Level 11</h3>
             <ul class="featlist">
-              <li><img class="ic" width="20" src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt="">
+              <li><img class="ic" width="40" src="./assets/img/passives/arcane_swordplay.png" alt="">
                 <div>
-                  <p><span class="fname">Magic Swordsman</span> &mdash; You no longer pay the full price for weaving
-                    magic into your swordplay.</p>
-                  <p>When you use <b>Cantrip Combat</b> or <b>Spell Combat</b>, you add your ability modifier to the
-                    damage of the <b>first weapon attack that hits</b> that turn, ignoring those features&rsquo; penalty
-                    for that attack.</p>
+                  <p><span class="fname" id="f-superior-arcane-swordplay">Superior Arcane Swordplay</span> &mdash;
+                    Your swordplay can now carry a whole spell without giving up a strike. After making the first
+                    attack as part of your <a href="https://bg3.wiki/wiki/Attack">Attack action</a>, you can use a
+                    <img class="ic" width="20" src="https://bg3.wiki/w/images/c/c9/Bonus_Action_Icon.png"
+                      alt=""><b>Bonus Action</b> to cast a Magister spell with a casting time of 1 action, spending
+                    the corresponding <img class="ic" width="18"
+                      src="https://bg3.wiki/w/images/e/ef/Spell_Slot_Icon.png" alt="">spell slot as normal.
+                  </p>
+
+                  <p>The highest level of spell you can cast this way is level 1, rising to level 2 at Magister
+                    level 15 and level 3 at Magister level 19.</p>
+
+                  <p>If the spell requires a weapon attack as part of its casting, that attack replaces one of the
+                    attacks you have left from your Attack action.</p>
+
+                  <p>You need to be wielding a melee weapon with the <img class="ic" width="18"
+                      src="https://bg3.wiki/w/images/thumb/1/1b/Finesse_Icon.png/25px-Finesse_Icon.png.webp" alt=""><a
+                      href="https://bg3.wiki/wiki/Finesse">Finesse</a> property in your main hand and have your off-hand
+                    empty to use this feature.
+                  </p>
                 </div>
               </li>
             </ul>
@@ -1121,10 +1359,307 @@
           <section class="lvlblock" id="level-12">
             <h3 class="lvlhead"><span class="lvlnum">12</span> Level 12</h3>
             <ul class="featlist">
-              <li><img class="ic" width="20" src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt="">
+              <li><img class="ic" width="40" src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt="">
                 <div>
-                  <p><span class="fname">Feat</span> &mdash; You gain another <a
+                  <p><span class="fname" id="f-feat-12">Feat</span> &mdash; You gain another <a
                       href="https://bg3.wiki/wiki/Feats">Feat</a> of your choice.</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="lvlblock" id="level-13">
+            <h3 class="lvlhead"><span class="lvlnum">13</span> Level 13</h3>
+            <ul class="featlist">
+              <li><img class="ic" width="40" src="./assets/img/magister_icon_simplified.png" alt="">
+                <div style="width: 100%;">
+                  <p><span class="fname" id="f-subclass-13">Subclass Feature</span> &mdash; You gain a feature from
+                    your chosen Magister subclass. See <a href="#subclasses">Subclasses</a>.</p>
+
+                  <h4 style="margin-top: 1.25rem; margin-bottom: 0.4rem; color: var(--white); font-size: 0.95rem;">
+                    Subclass features &mdash; <img class="ic" width="18" src="./assets/img/magister_icon_simplified.png"
+                      alt=""> <i>Magister specialisations</i></h4>
+                  <div class="tw">
+                    <table class="subclass-table">
+                      <thead>
+                        <tr>
+                          <th scope="col">
+                            <div class="subclass-header-title">
+                              <img class="ic" width="128" src="./assets/img/magister_icon.png" alt="Gematurge Shield">
+                              <span>Gematurge</span>
+                            </div>
+                          </th>
+                          <th scope="col">
+                            <div class="subclass-header-title">
+                              <img class="ic" width="128" src="./assets/img/magister_icon.png" alt="Weaver Shield">
+                              <span>Weaver (WIP)</span>
+                            </div>
+                          </th>
+                          <th scope="col">
+                            <div class="subclass-header-title">
+                              <img class="ic" width="128" src="./assets/img/magister_icon.png" alt="Sigilist Shield">
+                              <span>Sigilist (WIP)</span>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="subclass-feature"><img class="ic" width="20"
+                                src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> <a
+                                href="./pages/subclasses/gematurge.html#scaled-skin" class="feature-link">Scaled Skin</a>
+                            </div>
+                          </td>
+                          <td style="color: var(--muted);">
+                            <div class="subclass-feature"><img class="ic" width="20"
+                                src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> Weaver Feature
+                            </div>
+                          </td>
+                          <td style="color: var(--muted);">
+                            <div class="subclass-feature"><img class="ic" width="20"
+                                src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> Sigilist Feature
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <h4 style="margin-top: 1.25rem; margin-bottom: 0.4rem; color: var(--white); font-size: 0.95rem;">
+                    Subclass Spells (always prepared):</h4>
+                  <div class="tw">
+                    <table class="subclass-table">
+                      <thead>
+                        <tr>
+                          <th scope="col">
+                            <div class="subclass-header-title">
+                              <img class="ic" width="128" src="./assets/img/magister_icon.png" alt="Gematurge Shield">
+                              <span>Gematurge</span>
+                            </div>
+                          </th>
+                          <th scope="col">
+                            <div class="subclass-header-title">
+                              <img class="ic" width="128" src="./assets/img/magister_icon.png" alt="Weaver Shield">
+                              <span>Weaver (WIP)</span>
+                            </div>
+                          </th>
+                          <th scope="col">
+                            <div class="subclass-header-title">
+                              <img class="ic" width="128" src="./assets/img/magister_icon.png" alt="Sigilist Shield">
+                              <span>Sigilist (WIP)</span>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="subclass-feature"><img class="ic" width="20"
+                                src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> <i>Stoneskin</i>
+                            </div>
+                          </td>
+                          <td style="color: var(--muted);">
+                            <div class="subclass-feature"><img class="ic" width="20"
+                                src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> <i>TBD</i>
+                            </div>
+                          </td>
+                          <td style="color: var(--muted);">
+                            <div class="subclass-feature"><img class="ic" width="20"
+                                src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> <i>TBD</i>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="lvlblock" id="level-14">
+            <h3 class="lvlhead"><span class="lvlnum">14</span> Level 14</h3>
+            <ul class="featlist">
+              <li><img class="ic" width="40" src="./assets/img/passives/en_guard.png" alt="">
+                <div>
+                  <p><span class="fname" id="f-touche">Touch&eacute;</span> &mdash; You put the arcane energy your
+                    <img class="ic" width="24" src="https://bg3.wiki/w/images/c/cf/Shield_spell_Icon.webp" alt=""><a
+                      href="https://bg3.wiki/wiki/Shield">Shield</a> spell does not spend to work, wrapping it around
+                    your weapon as you answer the blow. The melee weapon attack granted by <a href="#f-en-garde">En
+                      Garde</a> deals extra <span class="dmg-type" data-type="force">Force</span> damage equal to your
+                    <img class="ic" width="18" src="https://bg3.wiki/w/images/7/7d/Intelligence_Small_Icon.png"
+                      alt="">Intelligence
+                    modifier.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="lvlblock" id="level-15">
+            <h3 class="lvlhead"><span class="lvlnum">15</span> Level 15</h3>
+            <ul class="featlist">
+              <li><img class="ic" width="40" src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt="">
+                <div>
+                  <p><span class="fname tbd" id="f-tbd-15">Feature to be written</span> &mdash;
+                    <span class="tbd">The Magister level 15 feature has not been designed yet. It will be a minor
+                      feature, outside combat.</span>
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="lvlblock" id="level-16">
+            <h3 class="lvlhead"><span class="lvlnum">16</span> Level 16</h3>
+            <ul class="featlist">
+              <li><img class="ic" width="40" src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt="">
+                <div>
+                  <p><span class="fname" id="f-feat-16">Feat</span> &mdash; You gain another <a
+                      href="https://bg3.wiki/wiki/Feats">Feat</a> of your choice.</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="lvlblock" id="level-17">
+            <h3 class="lvlhead"><span class="lvlnum">17</span> Level 17</h3>
+            <ul class="featlist">
+              <li><img class="ic" width="40" src="./assets/img/magister_icon_simplified.png" alt="">
+                <div style="width: 100%;">
+                  <p><span class="fname" id="f-subclass-17">Subclass Feature</span> &mdash; You gain a feature from
+                    your chosen Magister subclass. See <a href="#subclasses">Subclasses</a>.</p>
+
+                  <h4 style="margin-top: 1.25rem; margin-bottom: 0.4rem; color: var(--white); font-size: 0.95rem;">
+                    Subclass features &mdash; <img class="ic" width="18" src="./assets/img/magister_icon_simplified.png"
+                      alt=""> <i>Magister specialisations</i></h4>
+                  <div class="tw">
+                    <table class="subclass-table">
+                      <thead>
+                        <tr>
+                          <th scope="col">
+                            <div class="subclass-header-title">
+                              <img class="ic" width="128" src="./assets/img/magister_icon.png" alt="Gematurge Shield">
+                              <span>Gematurge</span>
+                            </div>
+                          </th>
+                          <th scope="col">
+                            <div class="subclass-header-title">
+                              <img class="ic" width="128" src="./assets/img/magister_icon.png" alt="Weaver Shield">
+                              <span>Weaver (WIP)</span>
+                            </div>
+                          </th>
+                          <th scope="col">
+                            <div class="subclass-header-title">
+                              <img class="ic" width="128" src="./assets/img/magister_icon.png" alt="Sigilist Shield">
+                              <span>Sigilist (WIP)</span>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="subclass-feature"><img class="ic" width="20"
+                                src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> <a
+                                href="./pages/subclasses/gematurge.html#gem-dragon-spirit" class="feature-link">Gem Dragon Spirit</a>
+                            </div>
+                          </td>
+                          <td style="color: var(--muted);">
+                            <div class="subclass-feature"><img class="ic" width="20"
+                                src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> Weaver Feature
+                            </div>
+                          </td>
+                          <td style="color: var(--muted);">
+                            <div class="subclass-feature"><img class="ic" width="20"
+                                src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> Sigilist Feature
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <h4 style="margin-top: 1.25rem; margin-bottom: 0.4rem; color: var(--white); font-size: 0.95rem;">
+                    Subclass Spells (always prepared):</h4>
+                  <div class="tw">
+                    <table class="subclass-table">
+                      <thead>
+                        <tr>
+                          <th scope="col">
+                            <div class="subclass-header-title">
+                              <img class="ic" width="128" src="./assets/img/magister_icon.png" alt="Gematurge Shield">
+                              <span>Gematurge</span>
+                            </div>
+                          </th>
+                          <th scope="col">
+                            <div class="subclass-header-title">
+                              <img class="ic" width="128" src="./assets/img/magister_icon.png" alt="Weaver Shield">
+                              <span>Weaver (WIP)</span>
+                            </div>
+                          </th>
+                          <th scope="col">
+                            <div class="subclass-header-title">
+                              <img class="ic" width="128" src="./assets/img/magister_icon.png" alt="Sigilist Shield">
+                              <span>Sigilist (WIP)</span>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="subclass-feature"><img class="ic" width="20"
+                                src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> <i>Summon Dragon</i>
+                            </div>
+                          </td>
+                          <td style="color: var(--muted);">
+                            <div class="subclass-feature"><img class="ic" width="20"
+                                src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> <i>TBD</i>
+                            </div>
+                          </td>
+                          <td style="color: var(--muted);">
+                            <div class="subclass-feature"><img class="ic" width="20"
+                                src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt=""> <i>TBD</i>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="lvlblock" id="level-18">
+            <h3 class="lvlhead"><span class="lvlnum">18</span> Level 18</h3>
+            <ul class="featlist">
+              <li><img class="ic" width="40" src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt="">
+                <div>
+                  <p><span class="fname tbd" id="f-tbd-18">Feature to be written</span> &mdash;
+                    <span class="tbd">The Magister level 18 feature has not been designed yet. It will build on <a
+                        href="#f-instinctive-trance">Instinctive Trance</a> and <a href="#f-armored-mind">Armored
+                        Mind</a>.</span>
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="lvlblock" id="level-19">
+            <h3 class="lvlhead"><span class="lvlnum">19</span> Level 19</h3>
+            <ul class="featlist">
+              <li><img class="ic" width="40" src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt="">
+                <div>
+                  <p><span class="fname" id="f-epic-boon">Epic Boon</span> &mdash; You gain an Epic Boon feat of
+                    your choice for which you qualify.</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="lvlblock" id="level-20">
+            <h3 class="lvlhead"><span class="lvlnum">20</span> Level 20</h3>
+            <ul class="featlist">
+              <li><img class="ic" width="40" src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt="">
+                <div>
+                  <p><span class="fname tbd" id="f-capstone">Capstone to be written</span> &mdash;
+                    <span class="tbd">The Magister level 20 feature has not been designed yet.</span>
+                  </p>
                 </div>
               </li>
             </ul>
@@ -1207,276 +1742,29 @@
               <li class="bg3"><a href="https://bg3.wiki/wiki/Fly">Fly</a></li>
             </ul>
           </div>
+          <div class="spellrow">
+            <h4>Level 4</h4>
+            <ul class="spells">
+              <li class="bg3"><a href="https://bg3.wiki/wiki/Banishment">Banishment</a></li>
+              <li class="bg3"><a href="https://bg3.wiki/wiki/Otiluke%27s_Resilient_Sphere">Otiluke&rsquo;s
+                  Resilient Sphere</a></li>
+              <li class="bg3"><a href="https://bg3.wiki/wiki/Greater_Invisibility">Greater Invisibility</a></li>
+              <li class="bg3"><a href="https://bg3.wiki/wiki/Freedom_of_Movement">Freedom of Movement</a></li>
+              <li class="tt">Arcane Eye</li>
+            </ul>
+          </div>
+          <div class="spellrow">
+            <h4>Level 5</h4>
+            <ul class="spells">
+              <li class="bg3"><a href="https://bg3.wiki/wiki/Dominate_Person">Dominate Person</a></li>
+              <li class="tt">Bigby&rsquo;s Hand</li>
+              <li class="tt">Wall of Force</li>
+              <li class="tt">Passwall</li>
+            </ul>
+          </div>
+          <p class="tnote">Level 4 spells unlock at Magister level 13; level 5 spells, at Magister level 17.</p>
         </section>
 
-        <section class="major" id="schemas">
-          <h2>Schemas</h2>
-          <p>A <b>Schema</b> is a perfected combat pattern that interweaves magical theory with physical mastery &mdash;
-            a specialised method that lets you execute a tactical manoeuvre when you cast a particular spell or cantrip.
-          </p>
-          <p><b>Requirements.</b> Every Schema requires a specific Magister spell or cantrip to be <b>prepared</b>. If
-            you stop having that spell prepared, the Schema does nothing until you prepare it again. Some Schemas carry
-            further requirements, such as a minimum Magister level or another Schema.</p>
-          <p><b>Learning and swapping.</b> You know 2 Schemas at Level&nbsp;1 and gain more at Levels 5 and 9,
-            to a maximum of 4. Each time you gain a Magister level you may replace one known Schema with another you
-            qualify for &mdash; but not one that another of your Schemas depends on. You cannot take the same Schema
-            twice unless it says otherwise.</p>
-          <h3 class="tier"><span class="tier-name">Cantrips</span></h3>
-          <div class="tw">
-            <table class="schema">
-              <colgroup>
-                <col class="c1">
-                <col class="c2">
-                <col class="c4">
-                <col class="c3">
-              </colgroup>
-              <thead>
-                <tr>
-                  <th>Schema</th>
-                  <th>Required spell</th>
-                  <th>Other requirements</th>
-                  <th>Effect</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Unerring Strike</th>
-                  <td class="trig">
-                    <img class="ic" width="32" src="https://bg3.wiki/w/images/f/ff/True_Strike.webp" alt="">
-                    <a href="https://bg3.wiki/wiki/True_Strike">True Strike</a>
-                  </td>
-                  <td class="trig">&mdash;</td>
-                  <td>When you make a weapon attack against a target affected by your <i><img class="ic" width="18"
-                        src="https://bg3.wiki/w/images/f/ff/True_Strike.webp" alt="">
-                      <a href="https://bg3.wiki/wiki/True_Strike">True Strike</a>
-                    </i>, you deal an additional <span class="dmg-calc" data-dice="1d6" data-type="Radiant">1d6
-                      Radiant</span>
-                    damage on a hit, or half as much damage on a miss. The extra damage
-                    increases to <span class="dmg-calc" data-dice="2d6" data-type="Radiant">2d6 Radiant</span> at
-                    Magister level 5,
-                    and <span class="dmg-calc" data-dice="3d6" data-type="Radiant">3d6 Radiant</span> at level 11.</td>
-                </tr>
-                <tr>
-                  <th scope="row">Concussive Blade</th>
-                  <td class="trig">
-                    <img class="ic" width="32" src="https://bg3.wiki/w/images/4/4b/Booming_Blade.webp" alt="">
-                    <a href="https://bg3.wiki/wiki/Booming_Blade">Booming Blade</a>
-                  </td>
-                  <td class="trig">&mdash;</td>
-                  <td>When you hit a creature with the weapon attack of your <i><img class="ic" width="18"
-                        src="https://bg3.wiki/w/images/4/4b/Booming_Blade.webp" alt="">
-                      <a href="https://bg3.wiki/wiki/Booming_Blade">Booming Blade</a></i>, the target must succeed on a
-                    <img class="ic"
-                      src="https://bg3.wiki/w/images/thumb/e/e7/Saving_Throw_Icon.png/25px-Saving_Throw_Icon.png.webp"
-                      alt=""> Constitution saving throw or become <img class="ic"
-                      src="https://bg3.wiki/w/images/thumb/a/a2/Dazed_Condition_Icon.webp/30px-Dazed_Condition_Icon.webp"
-                      alt=""> <a href="https://bg3.wiki/wiki/Dazed_(Condition)">Dazed</a> for 2 turns.
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Blinding Reflection</th>
-                  <td class="trig">
-                    <img class="ic" width="32" src="https://bg3.wiki/w/images/e/e2/Light.webp?20231106092823" alt="">
-                    <a href="https://bg3.wiki/wiki/Light">Light</a>
-                  </td>
-                  <td class="trig">&mdash;</td>
-                  <td>
-                    When you cast <i><img class="ic" width="18"
-                        src="https://bg3.wiki/w/images/e/e2/Light.webp?20231106092823" alt="">
-                      <a href="https://bg3.wiki/wiki/Light">Light</a></i> on a metallic object you are holding or
-                    wearing, you can unleash a sudden
-                    flash of brilliant illumination.
-                    <br><br>
-                    Each creature within 1.5 m / 5 ft of the object that can see you must succeed on a <img class="ic"
-                      src="https://bg3.wiki/w/images/thumb/e/e7/Saving_Throw_Icon.png/25px-Saving_Throw_Icon.png.webp"
-                      alt=""> Constitution saving throw or become <img class="ic" width="20"
-                      src="https://bg3.wiki/w/images/7/70/Blinded_Condition_Icon.webp" alt=""> <a
-                      href="https://bg3.wiki/wiki/Blinded_(Condition)">Blinded</a> for 2 turns.
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Hurled Blade</th>
-                  <td class="trig">
-                    <a class="lexlink" href="./pages/spells/arcane-slash.html">Arcane
-                      Slash</a>
-                  </td>
-                  <td class="trig">&mdash;</td>
-                  <td>
-                    When you cast <i><a class="lexlink" href="./pages/spells/arcane-slash.html">Arcane
-                        Slash</a></i>, you can hurl the conjured
-                    sword instead of sweeping it. Make a ranged spell attack against one creature within 18&nbsp;m /
-                    60&nbsp;ft. On a hit it takes <span class="dmg-calc" data-dice="1d6" data-type="Force">1d6
-                      Force</span> plus
-                    your <img class="ic" width="18" src="https://bg3.wiki/w/images/7/7d/Intelligence_Small_Icon.png"
-                      alt=""> Intelligence modifier,
-                    and the blade vanishes as normal. The damage rises with the spell &mdash;
-                    <span class="dmg-calc" data-dice="2d6" data-type="Force">2d6 Force</span> at Magister level 5 and
-                    <span class="dmg-calc" data-dice="3d6" data-type="Force">3d6 Force</span> at level 11.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h3 class="tier"><span class="tier-name">Level 1 Spells</span></h3>
-          <div class="tw">
-            <table class="schema">
-              <colgroup>
-                <col class="c1">
-                <col class="c2">
-                <col class="c4">
-                <col class="c3">
-              </colgroup>
-              <thead>
-                <tr>
-                  <th>Schema</th>
-                  <th>Required spell</th>
-                  <th>Other requirements</th>
-                  <th>Effect</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Arcane Counterstrike</th>
-                  <td class="trig">
-                    <img class="ic" width="32" src="https://bg3.wiki/w/images/e/e2/Shield_spell.webp" alt="">
-                    <a href="https://bg3.wiki/wiki/Shield_(spell)">Shield</a>
-                  </td>
-                  <td class="trig">&mdash;</td>
-                  <td>When you cast <i><img class="ic" width="18" src="https://bg3.wiki/w/images/e/e2/Shield_spell.webp"
-                        alt="">
-                      <a href="https://bg3.wiki/wiki/Shield_(spell)">Shield</a></i> in reaction to an attack, you may
-                    make one weapon attack against the
-                    attacker if it is within your reach.</td>
-                </tr>
-                <tr>
-                  <th scope="row">Resonant Shockwave</th>
-                  <td class="trig">
-                    <img class="ic" width="32" src="https://bg3.wiki/w/images/d/da/Thunderwave.webp" alt="">
-                    <a href="https://bg3.wiki/wiki/Thunderwave">Thunderwave</a>
-                  </td>
-                  <td class="trig">Magister level 5, Concussive Blade</td>
-                  <td>
-                    On a turn when you cast <i><img class="ic" width="18"
-                        src="https://bg3.wiki/w/images/4/4b/Booming_Blade.webp" alt="">
-                      <a href="https://bg3.wiki/wiki/Booming_Blade">Booming Blade</a></i> with your <img class="ic"
-                      width="18" src="https://bg3.wiki/w/images/f/f2/Action_Icon.png" alt=""> <b>Action</b>
-                    &mdash; not through <i>Cantrip Combat</i> &mdash; the resonance is left ringing in your gauntlet,
-                    and
-                    you can spend your <img class="ic" width="18"
-                      src="https://bg3.wiki/w/images/c/c9/Bonus_Action_Icon.png" alt=""> <b>Bonus Action</b> to cast
-                    <img class="ic" width="18" src="https://bg3.wiki/w/images/d/da/Thunderwave.webp" alt="">
-                    <a href="https://bg3.wiki/wiki/Thunderwave"><i>Thunderwave</i></a>, spending the spell slot as
-                    normal.
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Unfailing Bolt</th>
-                  <td class="trig">
-                    <img class="ic" width="32" src="https://bg3.wiki/w/images/b/b5/Guiding_Bolt.webp" alt="">
-                    <a href="https://bg3.wiki/wiki/Guiding_Bolt">Guiding Bolt</a>
-                  </td>
-                  <td class="trig">Magister level 5, Unerring Strike</td>
-                  <td>
-                    When you <b>miss</b> a creature affected by your <i><img class="ic" width="18"
-                        src="https://bg3.wiki/w/images/f/ff/True_Strike.webp" alt="">
-                      <a href="https://bg3.wiki/wiki/True_Strike">True Strike</a></i> with a weapon attack, you can
-                    expend a Level 1 Spell Slot or higher to immediately cast <img class="ic" width="18"
-                      src="https://bg3.wiki/w/images/b/b5/Guiding_Bolt.webp" alt="">
-                    <a href="https://bg3.wiki/wiki/Guiding_Bolt"><i>Guiding Bolt</i></a> at that creature as part of the
-                    same attack. The spell attack <b>hits automatically</b>; its damage and its Advantage apply as
-                    normal for the level of the slot you spent.
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Suspended Blades</th>
-                  <td class="trig">
-                    <img class="ic" width="32" src="https://bg3.wiki/w/images/d/d8/Magic_Missile.webp" alt="">
-                    <a href="https://bg3.wiki/wiki/Magic_Missile">Magic Missile</a>
-                  </td>
-                  <td class="trig">Magister level 5, Hurled Blade</td>
-                  <td>
-                    When you cast <img class="ic" width="18" src="https://bg3.wiki/w/images/d/d8/Magic_Missile.webp"
-                      alt="">
-                    <a href="https://bg3.wiki/wiki/Magic_Missile"><i>Magic Missile</i></a>, you can choose not to loose
-                    the darts. Instead they hang suspended around you as arcane swords &mdash; <b>one per dart, plus
-                      one</b> &mdash; until the end of your next turn.<br>
-                    Each blade you send <b>hits automatically</b>, dealing <img class="ic" width="18"
-                      src="https://bg3.wiki/w/images/d/d1/Force_Damage_Icon.png" alt=""> 1d4&nbsp;+&nbsp;1 Force damage,
-                    and
-                    is spent. You can send them two ways:
-                    <ul class="sendlist">
-                      <li><img class="ic" width="18" src="https://bg3.wiki/w/images/c/c9/Bonus_Action_Icon.png" alt="">
-                        <b>Bonus Action.</b> Send <b>one or two</b> blades at a creature within 3&nbsp;m.
-                      </li>
-                      <li><img class="ic" width="18" src="https://bg3.wiki/w/images/c/c1/Reaction_Icon.png" alt="">
-                        <b>Reaction.</b> Send <b>every remaining blade</b> at a hostile creature that enters the
-                        3&nbsp;m radius for the first time on its turn, or begins its turn inside it.
-                      </li>
-                    </ul>
-                    Any blades left at the end of your next turn are lost.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h3 class="tier"><span class="tier-name">Level 2 Spells</span></h3>
-          <div class="tw">
-            <table class="schema">
-              <colgroup>
-                <col class="c1">
-                <col class="c2">
-                <col class="c4">
-                <col class="c3">
-              </colgroup>
-              <thead>
-                <tr>
-                  <th>Schema</th>
-                  <th>Required spell</th>
-                  <th>Other requirements</th>
-                  <th>Effect</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row"><i>&hellip; your Schema here</i></th>
-                  <td class="trig"><i>Level 2 spell</i></td>
-                  <td class="trig">&mdash;</td>
-                  <td><i>Schema effect description goes here.</i></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h3 class="tier"><span class="tier-name">Level 3 Spells</span></h3>
-          <div class="tw">
-            <table class="schema">
-              <colgroup>
-                <col class="c1">
-                <col class="c2">
-                <col class="c4">
-                <col class="c3">
-              </colgroup>
-              <thead>
-                <tr>
-                  <th>Schema</th>
-                  <th>Required spell</th>
-                  <th>Other requirements</th>
-                  <th>Effect</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row"><i>... your Schema here</i></th>
-                  <td class="trig"><i>Level 3 spell</i></td>
-                  <td class="trig">&mdash;</td>
-                  <td><i>Schema effect description goes here.</i></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
 
         <footer>
           <p>Homebrew for Baldur&rsquo;s Gate 3 and D&amp;D 5e. Icons and rules links point to bg3.wiki. Nothing here is

@@ -281,20 +281,6 @@
         font-size: 1.08rem
     }
 
-    .note {
-        background: var(--panel);
-        border-left: 3px solid var(--accent);
-        border-radius: 0 3px 3px 0;
-        padding: 14px 20px;
-        margin: 0 0 22px;
-        max-width: none
-    }
-
-    .note p {
-        margin: 0;
-        max-width: none
-    }
-
     /* ---- progression table ---- */
     .tw {
         overflow-x: auto;
@@ -314,10 +300,6 @@
         min-width: 52rem
     }
 
-    table.schema {
-        min-width: 34rem
-    }
-
     table caption {
         caption-side: top;
         text-align: left;
@@ -333,7 +315,7 @@
         font-family: var(--display);
         font-weight: 600;
         letter-spacing: .06em;
-        padding: 10px 8px;
+        padding: 4px 4px;
         background: var(--panel-2);
         color: var(--head);
         border-bottom: 2px solid #0284c7;
@@ -365,7 +347,10 @@
     .prog td.feat {
         text-align: left;
         color: var(--text);
-        min-width: 15rem
+        min-width: 15rem;
+        min-width: 24rem;
+        width: 40%;
+        white-space: nowrap;
     }
 
     .prog td.prof {
@@ -375,7 +360,7 @@
         border-right: 1px solid var(--hair)
     }
 
-    .prog td.edge {
+    .prog td.prep {
         border-right: 1px solid var(--hair)
     }
 
@@ -407,68 +392,6 @@
         font-size: 1.12rem;
         color: var(--head);
         letter-spacing: .08em
-    }
-
-    .tier-unlock {
-        font-family: var(--serif);
-        font-style: italic;
-        font-size: .92rem;
-        color: var(--muted);
-        font-weight: 400
-    }
-
-    table.schema thead th {
-        font-family: var(--display);
-        font-size: .76rem;
-        letter-spacing: .12em;
-        text-transform: uppercase;
-        text-align: left;
-        padding: 10px 14px;
-        background: var(--panel-3);
-        color: var(--subhead);
-        border-bottom: 1px solid var(--hair)
-    }
-
-    table.schema td,
-    table.schema th[scope=row] {
-        padding: 12px 14px;
-        border-bottom: 1px solid var(--hair);
-        vertical-align: top;
-        text-align: left
-    }
-
-    table.schema tbody tr:last-child td,
-    table.schema tbody tr:last-child th {
-        border-bottom: none
-    }
-
-    table.schema th[scope=row] {
-        font-family: var(--display);
-        font-weight: 600;
-        color: var(--white)
-    }
-
-    table.schema col.c1 {
-        width: 22%
-    }
-
-    table.schema col.c2 {
-        width: 28%
-    }
-
-    table.schema col.c3 {
-        width: 50%
-    }
-
-    table.schema td.trig {
-        color: var(--muted);
-        font-style: italic;
-        min-width: 14rem
-    }
-
-    table.schema tbody tr:hover td,
-    table.schema tbody tr:hover th {
-        background: rgba(0, 168, 232, .07)
     }
 
     /* ---- info grid ---- */
@@ -608,32 +531,6 @@
         background: var(--hair)
     }
 
-    .minor {
-        color: var(--muted);
-        font-size: .92em
-    }
-
-    .flag {
-        color: #e8c07d;
-        font-weight: 600
-    }
-
-    .ladder {
-        display: inline-block;
-        margin-top: .35em;
-        padding: 5px 12px;
-        background: var(--panel);
-        border: 1px solid var(--rule);
-        border-left: 3px solid var(--accent);
-        border-radius: 0 2px 2px 0;
-        font-size: .92em;
-        font-variant-numeric: tabular-nums
-    }
-
-    .ladder b {
-        color: var(--head)
-    }
-
     .bladegrid {
         display: grid;
         gap: 18px;
@@ -716,36 +613,6 @@
         border: 1px solid rgba(224, 168, 78, .4)
     }
 
-    .bstats {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-        padding: 10px 0;
-        border-top: 1px solid var(--hair);
-        border-bottom: 1px solid var(--hair)
-    }
-
-    .brow {
-        display: flex;
-        gap: 10px;
-        font-size: .86rem;
-        align-items: baseline
-    }
-
-    .bk {
-        flex: 0 0 7.2rem;
-        color: var(--subhead);
-        font-family: var(--display);
-        font-size: .68rem;
-        letter-spacing: .11em;
-        text-transform: uppercase
-    }
-
-    .bv {
-        flex: 1;
-        min-width: 0
-    }
-
     .bbody {
         margin: 0;
         font-size: .94rem;
@@ -760,10 +627,6 @@
         max-width: none;
         padding-top: 8px;
         border-top: 1px dashed var(--hair)
-    }
-
-    table.schema col.c4 {
-        width: 16%
     }
 
     ul.spells li a {
@@ -828,33 +691,10 @@
         flex: 0 0 auto
     }
 
-    .ic-spacer {
-        display: block;
-        width: 20px;
-        flex: 0 0 auto
-    }
-
     .fname {
         font-family: var(--display);
         font-weight: 600;
         color: var(--white)
-    }
-
-    .cost {
-        font-family: var(--serif);
-        font-style: italic;
-        font-weight: 400;
-        color: var(--muted);
-        font-size: .9em;
-        margin-left: .5em
-    }
-
-    .cost::before {
-        content: "("
-    }
-
-    .cost::after {
-        content: ")"
     }
 
     footer {
@@ -994,7 +834,6 @@
         opacity: .82
     }
 
-
     /* ======== shared site navigation ======== */
     .sitenav {
         display: flex;
@@ -1086,14 +925,6 @@
 
     .spellbody p {
         max-width: 62ch
-    }
-
-    .quote {
-        border-left: 3px solid var(--rule);
-        padding: 2px 0 2px 16px;
-        margin: 0 0 14px;
-        color: #d9e5f0;
-        font-style: italic
     }
 
     /* ---- infobox ---- */
@@ -1329,10 +1160,6 @@
         max-width: 100%
     }
 
-    table.mini {
-        border: none
-    }
-
     /* Tabla comparativa de subclases */
     table.subclass-table {
         width: 100%;
@@ -1340,7 +1167,7 @@
         margin-top: 0.5rem;
         margin-bottom: 1rem;
         background-color: rgba(15, 15, 20, 0.4);
-        border: 1px solid var(--border, #3a3a42);
+        border: 1px solid var(--rule);
         font-size: 0.9rem;
     }
 
@@ -1350,7 +1177,7 @@
         /* Título dorado estilo BG3 */
         text-align: center;
         padding: 10px 12px;
-        border: 1px solid var(--border, #3a3a42);
+        border: 1px solid var(--rule);
         font-weight: 600;
     }
 
@@ -1365,7 +1192,7 @@
 
     table.subclass-table td {
         padding: 10px 12px;
-        border: 1px solid var(--border, #3a3a42);
+        border: 1px solid var(--rule);
         text-align: left;
         vertical-align: top;
     }
@@ -1397,7 +1224,7 @@
 
     table.inner-gem-table tr {
         background: transparent !important;
-        border-bottom: 1px solid var(--border, #3a3a42);
+        border-bottom: 1px solid var(--rule);
         /* Línea divisora entre filas */
     }
 
@@ -1421,4 +1248,311 @@
         text-align: left;
         white-space: nowrap;
         width: 25%;
+    }
+
+    .fighting-styles {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .fighting-styles>li {
+        display: grid;
+        grid-template-columns: 12px 20px 1fr;
+        column-gap: 6px;
+        align-items: start;
+        margin: 8px 0;
+    }
+
+    .fighting-styles>li::before {
+        content: "•";
+        grid-column: 1;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .fighting-styles>li>img {
+        grid-column: 2;
+        margin-top: 2px;
+    }
+
+    .fighting-styles>li>p {
+        grid-column: 3;
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    .fighting-styles .ic {
+        vertical-align: middle;
+    }
+    .prog td.feat a {
+        color: inherit;
+        border-bottom: 1px dotted var(--rule)
+    }
+
+    .prog td.feat a:hover,
+    .prog td.feat a:focus-visible {
+        color: var(--head);
+        border-bottom-color: var(--link)
+    }
+
+    .rulebox {
+        background: var(--panel-2);
+        border: 1px solid var(--rule);
+        border-radius: 3px;
+        padding: 16px 22px;
+        margin: 16px 0
+    }
+
+    .rulebox h4 {
+        font-family: var(--display);
+        font-size: .74rem;
+        font-weight: 600;
+        letter-spacing: .18em;
+        text-transform: uppercase;
+        color: var(--subhead);
+        margin: 0 0 10px
+    }
+
+    .rulebox p {
+        margin: 0;
+        max-width: none;
+        font-size: .95rem
+    }
+
+    .rulebox p+p {
+        margin-top: 10px
+    }
+
+    .rulebox b {
+        font-family: var(--display);
+        font-weight: 600;
+        color: var(--white)
+    }
+
+    .tbd,
+    .fname.tbd {
+        color: var(--muted);
+        font-style: italic;
+        font-weight: 400
+    }
+
+    .prog td.feat.tbd a {
+        color: var(--muted);
+        font-style: italic;
+        border-bottom-style: dashed
+    }
+
+    li.tbd {
+        color: var(--muted);
+        font-style: italic
+    }
+
+    .tnote {
+        margin: 10px 2px 0;
+        font-size: .85rem;
+        color: var(--muted);
+        font-style: italic
+    }
+    .feature-link {
+        color: var(--link);
+        border-bottom: 1px solid transparent
+    }
+
+    .feature-link:hover,
+    .feature-link:focus-visible {
+        border-bottom-color: var(--link)
+    }
+
+    /* ---- statblock ---- */
+    .statblock {
+        background: var(--panel);
+        border: 1px solid var(--rule);
+        border-left: 3px solid var(--accent);
+        border-radius: 0 3px 3px 0;
+        padding: 18px 22px;
+        margin: 18px 0
+    }
+
+    .statblock h4 {
+        font-family: var(--display);
+        font-size: 1.05rem;
+        color: var(--white);
+        margin: 0
+    }
+
+    .statblock .sbtype {
+        font-style: italic;
+        color: var(--muted);
+        font-size: .92rem;
+        margin: 2px 0 12px
+    }
+
+    .statblock .bstats {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 10px 0;
+        border-top: 1px solid var(--hair);
+        border-bottom: 1px solid var(--hair)
+    }
+
+    .statblock .brow {
+        display: flex;
+        gap: 10px;
+        font-size: .86rem;
+        align-items: baseline
+    }
+
+    .statblock .bk {
+        flex: 0 0 9.5rem;
+        color: var(--subhead);
+        font-family: var(--display);
+        font-size: .68rem;
+        letter-spacing: .11em;
+        text-transform: uppercase
+    }
+
+    .statblock .bv {
+        flex: 1;
+        min-width: 0
+    }
+
+    .statblock h5 {
+        font-family: var(--display);
+        font-size: .72rem;
+        letter-spacing: .18em;
+        text-transform: uppercase;
+        color: var(--subhead);
+        margin: 16px 0 8px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid var(--hair)
+    }
+
+    .statblock p {
+        margin: 0 0 8px;
+        font-size: .94rem
+    }
+
+    .statblock p b {
+        color: var(--white)
+    }
+
+    .statblock .abilities {
+        width: 100%;
+        min-width: 0;
+        margin: 12px 0;
+        border-collapse: collapse;
+        text-align: center;
+        font-size: .9rem
+    }
+
+    .statblock .abilities th {
+        font-family: var(--display);
+        font-size: .68rem;
+        letter-spacing: .11em;
+        text-transform: uppercase;
+        color: var(--subhead);
+        padding: 4px 6px;
+        text-align: center
+    }
+
+    .statblock .abilities td {
+        padding: 4px 6px;
+        font-variant-numeric: tabular-nums;
+        border-top: 1px solid var(--hair);
+        text-align: center
+    }
+
+
+    .statblock {
+        clear: both;
+        max-width: 780px
+    }
+
+    /* dentro de la ficha el texto llena la caja: si hereda la medida de
+       lectura del cuerpo, la mitad derecha del recuadro queda vacia */
+    .statblock p,
+    .statblock .bv {
+        max-width: none
+    }
+
+    .statblock .bk {
+        flex: 0 0 11rem
+    }
+
+    .statblock table th[scope=row] {
+        vertical-align: top
+    }
+
+    .statblock table thead th {
+        white-space: nowrap
+    }
+
+    /* arte dentro de la ficha, arriba a la derecha */
+    .statblock .sbart {
+        float: right;
+        width: 280px;
+        margin: 0 0 16px 24px
+    }
+
+    .statblock .sbart img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 3px;
+        border: 1px solid rgba(184, 202, 219, .2);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, .4)
+    }
+
+    .statblock .sbart .art-credit {
+        margin-top: 7px;
+        text-align: right;
+        font-size: .8rem;
+        font-style: italic;
+        color: var(--muted)
+    }
+
+    .statblock .sbart .art-credit a {
+        color: #b8cadb;
+        text-decoration: none
+    }
+
+    .statblock .sbart .art-credit a:hover {
+        color: var(--white);
+        text-decoration: underline
+    }
+
+    /* la tabla de caracteristicas se queda a la izquierda del arte */
+    .statblock .abilities {
+        width: auto;
+        max-width: 430px
+    }
+
+    .statblock .abilities th,
+    .statblock .abilities td {
+        padding: 4px 14px
+    }
+
+    .statblock .sbclear {
+        clear: right
+    }
+
+    @media (max-width: 720px) {
+        .statblock .sbart {
+            float: none;
+            width: 100%;
+            max-width: 340px;
+            margin: 0 0 18px
+        }
+
+        .statblock .sbart .art-credit {
+            text-align: left
+        }
+
+        .statblock .abilities {
+            width: 100%;
+            max-width: none
+        }
     }
