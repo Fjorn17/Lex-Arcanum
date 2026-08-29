@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gematurge</title>
   <meta name="description"
-    content="Gematurge, a Magister subclass from Lex Arcanum: cut draconic gems, set one in your Arcane Gauntlet and recolour every spell you cast through it.">
+    content="Gematurge, a Magister subclass from Lex Arcanum: cut draconic gems, set one in your Jewelled Gauntlet and recolour every spell you cast through it.">
   <link rel="canonical" href="https://fjorn17.github.io/Lex-Arcanum/pages/subclasses/gematurge.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Lex Arcanum">
   <meta property="og:title" content="Gematurge &middot; Lex Arcanum">
   <meta property="og:description"
-    content="Gematurge, a Magister subclass from Lex Arcanum: cut draconic gems, set one in your Arcane Gauntlet and recolour every spell you cast through it.">
+    content="Gematurge, a Magister subclass from Lex Arcanum: cut draconic gems, set one in your Jewelled Gauntlet and recolour every spell you cast through it.">
   <meta property="og:url" content="https://fjorn17.github.io/Lex-Arcanum/pages/subclasses/gematurge.html">
   <meta property="og:image" content="https://fjorn17.github.io/Lex-Arcanum/assets/img/magister_icon.png">
   <meta property="og:image:width" content="594">
@@ -44,8 +44,8 @@
     <div class="warn top" role="note">
       <h3>Work in progress</h3>
       <p>This is the <b>first subclass being written up</b>, and it is still a draft: numbers and wording are
-        being tested and will change. The tabletop version continues past level 12 with two further features
-        (Scaled Skin and Dragon Rider) which the Baldur&rsquo;s Gate&nbsp;3 version does not reach.</p>
+        being tested and will change. The features at Magister levels 13 and 17 are written but provisional, and the
+        Baldur&rsquo;s Gate&nbsp;3 version stops at level 12 and never reaches them.</p>
     </div>
 
     <p class="lede">The doctrine of the gematurges is founded on emulating the singular nature of the gem
@@ -53,19 +53,19 @@
       Mastery of the discipline allows the partial transmutation of the gematurge&rsquo;s own body, manifesting
       properties of those creatures such as scales of crystal or the ability to project bursts of pure energy.</p>
 
-    <p>A Gematurge gains features at Magister levels <b>3</b>, <b>5</b> and <b>9</b>, as shown in the
-      <a href="../../index.html#progression">Magister Class Progression</a> table.
+    <p>A Gematurge gains features at Magister levels <b>3</b>, <b>5</b>, <b>9</b>, <b>13</b> and <b>17</b>, as
+      shown in the <a href="../../index.html#progression">Magister Class Progression</a> table.
     </p>
 
     <section class="subfeat" id="jewelled-gauntlet">
       <h3><span class="lvltag">Level 3</span> Jewelled Gauntlet</h3>
       <p>You have learned to cut draconic gems capable of channelling elemental arcane energy through your <a
-          href="../../index.html#features">Arcane Gauntlet</a>.</p>
+          href="../../index.html#features">Jewelled Gauntlet</a>.</p>
       <p>To cut one of these gems you must use your jeweller&rsquo;s tools and work on a base gem worth at least
         100&nbsp;gp. The process requires 8 hours of work, which you can carry out as part of a <a
           href="https://bg3.wiki/wiki/Long_Rest">Long Rest</a>.</p>
-      <p>When you finish a Short or Long Rest, you can set one of your cut gems into your Arcane Gauntlet, replacing any
-        gem previously set. <b>You can only have one gem set in your Arcane Gauntlet at a time.</b></p>
+      <p>When you finish a Short or Long Rest, you can set one of your cut gems into your Jewelled Gauntlet, replacing any
+        gem previously set. <b>You can only have one gem set in your Jewelled Gauntlet at a time.</b></p>
       <div class="tw auto">
         <table class="spelltable mini">
           <thead>
@@ -82,7 +82,7 @@
                   <span>Amethyst</span>
                 </div>
               </th>
-              <td><span class="dmg-type" data-type="force"></span></td>
+              <td><span class="dmg-type" data-type="force">Force</span></td>
             </tr>
             <tr>
               <th scope="row">
@@ -91,7 +91,7 @@
                   <span>Crystal</span>
                 </div>
               </th>
-              <td><span class="dmg-type" data-type="radiant"></span></td>
+              <td><span class="dmg-type" data-type="radiant">Radiant</span></td>
             </tr>
             <tr>
               <th scope="row">
@@ -100,7 +100,7 @@
                   <span>Emerald</span>
                 </div>
               </th>
-              <td><span class="dmg-type" data-type="psychic"></span></td>
+              <td><span class="dmg-type" data-type="psychic">Psychic</span></td>
             </tr>
             <tr>
               <th scope="row">
@@ -109,7 +109,7 @@
                   <span>Sapphire</span>
                 </div>
               </th>
-              <td><span class="dmg-type" data-type="thunder"></span></td>
+              <td><span class="dmg-type" data-type="thunder">Thunder</span></td>
             </tr>
             <tr>
               <th scope="row">
@@ -118,7 +118,7 @@
                   <span>Topaz</span>
                 </div>
               </th>
-              <td><span class="dmg-type" data-type="necrotic"></span></td>
+              <td><span class="dmg-type" data-type="necrotic">Necrotic</span></td>
             </tr>
           </tbody>
         </table>
@@ -127,8 +127,9 @@
 
     <section class="subfeat" id="gem-resonance">
       <h3><span class="lvltag">Level 3</span> Gem Resonance</h3>
-      <p>The arcane energy you channel takes on the properties of the gem set in your Arcane Gauntlet. <b>Force</b>
-        damage dealt by your Magister spells becomes the damage type associated with your gem.</p>
+      <p>The arcane energy you channel takes on the properties of the gem set in your Jewelled Gauntlet. <span class="dmg-type"
+          data-type="force"></span> damage dealt by your Magister spells and by your Magister features becomes the damage type associated
+        with your gem.</p>
     </section>
 
     <section class="subfeat" id="draconic-jewellery">
@@ -142,7 +143,7 @@
 
     <section class="subfeat" id="gematurge-spells">
       <h3><span class="lvltag">Level 3</span> Gematurge Spells</h3>
-      <p>While you have a gem set in your Arcane Gauntlet, you gain the additional spells associated with it in the
+      <p>While you have a gem set in your Jewelled Gauntlet, you gain the additional spells associated with it in the
         table below. These count as Magister spells for you and do not count against the number of spells you can
         prepare. When you replace the gem, the spells granted change automatically to reflect the new gem.</p>
       <div class="tw auto">
@@ -255,6 +256,24 @@
                 </span> &mdash; any gem
               </td>
             </tr>
+            <tr>
+              <th scope="row">13</th>
+              <td colspan="5" class="allgems">
+                <span style="display: inline-flex; align-items: center; gap: 4px;">
+                  <img class="ic" width="18" src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt="">
+                  <i>Stoneskin</i>
+                </span> &mdash; any gem
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">17</th>
+              <td colspan="5" class="allgems">
+                <span style="display: inline-flex; align-items: center; gap: 4px;">
+                  <img class="ic" width="18" src="https://bg3.wiki/w/images/a/a9/Generic_Feature_Icon.webp" alt="">
+                  <i>Summon Dragon</i>
+                </span> &mdash; any gem
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -268,7 +287,7 @@
       <p>While you are under the effects of <a href="https://bg3.wiki/wiki/Dragon%27s_Breath"><i>Dragon's
             Breath</i></a>, you can use its exhalation as part of your <a href="https://bg3.wiki/wiki/Attack">Attack</a>
         action, replacing one of your attacks.</p>
-      <p>In addition, the spell takes on further properties according to the gem set in your Arcane Gauntlet:</p>
+      <p>In addition, the spell takes on further properties according to the gem set in your Jewelled Gauntlet:</p>
       <div class="tw">
         <table class="spelltable mini wide">
           <thead>
@@ -347,13 +366,129 @@
         with your gem&rsquo;s element sprout from your back.</p>
       <p>Once per turn, if you fly at least 6 metres straight down towards a creature immediately before hitting it with
         a melee attack roll, the attack deals an extra <b>2d6</b> damage of the type associated with the gem set in your
-        Arcane Gauntlet.</p>
+        Jewelled Gauntlet.</p>
       <p>Creatures within 3 metres of the target must make a Dexterity saving throw against your Magister spell save DC.
         On a failed save they take <b>2d6</b> damage of the type associated with the gem set in your Jewelled Gauntlet;
         on a successful one, half as much.</p>
       <p><b>With a higher-level spell slot.</b> The attack&rsquo;s extra damage and the area damage increase by
         <b>1d6</b> for each slot level above 3 used to cast <a href="https://bg3.wiki/wiki/Fly"><i>Fly</i></a>.
       </p>
+    </section>
+
+    <section class="subfeat" id="scaled-skin">
+      <h3><span class="lvltag">Level 13</span> Scaled Skin</h3>
+      <p>When you cast <i>Stoneskin</i> on yourself, your gem&rsquo;s energy fuses with the spell and crystalline
+        scales sprout across your body.</p>
+      <p>While you maintain your concentration on the spell, you gain resistance to the damage type associated with the
+        gem set in your Jewelled Gauntlet, and you have advantage on saving throws made to maintain that
+        concentration.</p>
+    </section>
+
+    <section class="subfeat" id="gem-dragon-spirit">
+      <h3><span class="lvltag">Level 17</span> Gem Dragon Spirit</h3>
+      <p>When you cast <i>Summon Dragon</i>, the spell summons a <b>Gem Draconic Spirit</b> instead of an ordinary
+        Draconic Spirit. The Gem Draconic Spirit uses the properties associated with the gem set in your Jewelled
+        Gauntlet at the moment you cast the spell.</p>
+
+      <div class="statblock">
+        <div class="sbart">
+          <a href="https://jsraphael.artstation.com/projects/d0r33w" target="_blank" rel="noopener"
+            title="View artwork by Joshua Raphael on ArtStation">
+            <img
+              src="https://cdna.artstation.com/p/assets/images/images/048/324/000/large/joshua-raphael-uplox.jpg?1649767245"
+              alt="Gem Draconic Spirit concept art" loading="lazy">
+          </a>
+          <div class="art-credit">
+            Art by <a href="https://jsraphael.artstation.com/projects/d0r33w" target="_blank"
+              rel="noopener">Joshua Raphael</a>
+          </div>
+        </div>
+        <h4>Gem Draconic Spirit</h4>
+        <p class="sbtype">Large Dragon (Gem), Neutral</p>
+
+        <div class="bstats">
+          <div class="brow"><span class="bk">Armour Class</span><span class="bv">14 plus the spell&rsquo;s level</span></div>
+          <div class="brow"><span class="bk">Hit Points</span><span class="bv">50 plus 10 for each spell level above 5</span></div>
+          <div class="brow"><span class="bk">Speed</span><span class="bv">9 m, Fly 18 m</span></div>
+        </div>
+
+        <table class="abilities">
+          <thead>
+            <tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>19 (+4)</td><td>14 (+2)</td><td>17 (+3)</td><td>14 (+2)</td><td>14 (+2)</td><td>16 (+3)</td></tr>
+          </tbody>
+        </table>
+
+        <div class="bstats sbclear">
+          <div class="brow"><span class="bk">Saving Throws</span><span class="bv">Dex +2 plus PB, Con +3 plus PB, Wis +2 plus PB</span></div>
+          <div class="brow"><span class="bk">Damage Immunities</span><span class="bv">the damage type associated with the gem summoned</span></div>
+          <div class="brow"><span class="bk">Condition Immunities</span><span class="bv">Frightened</span></div>
+          <div class="brow"><span class="bk">Senses</span><span class="bv">Blindsight 3 m, Darkvision 18 m, Passive Perception 12</span></div>
+          <div class="brow"><span class="bk">Languages</span><span class="bv">Draconic, understands the languages you speak</span></div>
+          <div class="brow"><span class="bk">CR</span><span class="bv">&mdash;</span></div>
+          <div class="brow"><span class="bk">Proficiency Bonus</span><span class="bv">equals your own</span></div>
+        </div>
+
+        <h5>Traits</h5>
+        <p><b>Draconic Mount.</b> The spirit is trained to serve you as a mount. When it appears, it also manifests an arcane saddle and harness fitted to you.</p>
+        <p><b>Gravity Field (Amethyst).</b> Hostile creatures treat the area within 3 metres of the spirit as Difficult Terrain.</p>
+        <p><b>Refracted Radiance (Crystal).</b> The spirit sheds Bright Light in a 6-metre radius and Dim Light for an additional 6 metres.</p>
+        <p><b>Tunneller (Emerald).</b> The spirit can burrow through solid rock at half its Speed, leaving a tunnel 4.5 metres in diameter behind it.</p>
+        <p><b>Spider Climb (Sapphire).</b> The spirit can climb difficult surfaces, including upside down on ceilings, without making an ability check.</p>
+        <p><b>Amphibious (Topaz).</b> The spirit can breathe air and water, and gains a Swim Speed of 9 metres.</p>
+
+        <h5>Actions</h5>
+        <p><b>Multiattack.</b> The spirit makes a number of Rend attacks equal to half the spell&rsquo;s level (rounded
+          down) and uses its Breath Weapon.</p>
+        <p><b>Rend.</b> <i>Melee Attack Roll:</i> bonus equals your spell attack modifier, reach 3 m. <i>Hit:</i> 1d6
+          plus 4 plus the spell&rsquo;s level Slashing damage, plus 1d6 damage of the type associated with the gem.</p>
+        <p><b>Breath Weapon.</b> The spirit exhales draconic energy in a 9-metre Cone. Each creature in that area makes
+          a saving throw determined by the gem against your Magister spell save DC, taking 2d6 damage of the gem&rsquo;s
+          type on a failed save or half as much damage on a successful one. A creature that is affected also suffers
+          the additional effect below.</p>
+
+        <div class="tw">
+          <table class="spelltable mini wide">
+            <thead>
+              <tr><th scope="col">Gem</th><th scope="col">Damage type</th><th scope="col">Save</th><th scope="col">Additional effect</th></tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th scope="row"><span style="display: inline-flex; align-items: center; gap: 6px;"><img class="ic" width="18" src="https://bg3.wiki/w/images/d/de/GEM_Amethyst_Faded.png" alt="">Amethyst</span></th>
+              <td><span class="dmg-type" data-type="force">Force</span></td>
+              <td>Strength</td>
+              <td>The creature&rsquo;s Speed becomes 0 until the start of the spirit&rsquo;s next turn.</td>
+            </tr>
+            <tr>
+              <th scope="row"><span style="display: inline-flex; align-items: center; gap: 6px;"><img class="ic" width="18" src="https://bg3.wiki/w/images/0/00/GEM_Jacinth_Faded.png" alt="">Crystal</span></th>
+              <td><span class="dmg-type" data-type="radiant">Radiant</span></td>
+              <td>Constitution</td>
+              <td>The spirit gains Temporary Hit Points equal to your Intelligence modifier plus the spell&rsquo;s level for each creature that fails the save.</td>
+            </tr>
+            <tr>
+              <th scope="row"><span style="display: inline-flex; align-items: center; gap: 6px;"><img class="ic" width="18" src="https://bg3.wiki/w/images/a/a7/GEM_Emerald_Faded.png" alt="">Emerald</span></th>
+              <td><span class="dmg-type" data-type="psychic">Psychic</span></td>
+              <td>Intelligence</td>
+              <td>The creature must subtract 1d6 from the next attack roll or ability check it makes before the end of its next turn.</td>
+            </tr>
+            <tr>
+              <th scope="row"><span style="display: inline-flex; align-items: center; gap: 6px;"><img class="ic" width="18" src="https://bg3.wiki/w/images/b/bb/GEM_Sapphire_Faded.png" alt="">Sapphire</span></th>
+              <td><span class="dmg-type" data-type="thunder">Thunder</span></td>
+              <td>Constitution</td>
+              <td>The creature is pushed up to 6 metres in a straight line away from the spirit and has the Prone condition.</td>
+            </tr>
+            <tr>
+              <th scope="row"><span style="display: inline-flex; align-items: center; gap: 6px;"><img class="ic" width="18" src="https://bg3.wiki/w/images/a/a1/GEM_Topaz_Faded.png" alt="">Topaz</span></th>
+              <td><span class="dmg-type" data-type="necrotic">Necrotic</span></td>
+              <td>Constitution</td>
+              <td>The creature has Disadvantage on Strength checks and Strength saving throws until the end of its next turn. In addition, the first time it hits with an attack before then, subtract 1d8 from that attack&rsquo;s damage.</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </section>
 
     <p class="ibfoot" style="border:none;padding-top:18px">Translated from the original Spanish text:

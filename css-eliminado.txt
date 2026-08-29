@@ -1,0 +1,173 @@
+Reglas CSS sin uso eliminadas de css/style.css
+(ninguna clase aparecia en las 8 paginas HTML ni la aplica js/wiki-api.js)
+
+.note {
+        background: var(--panel);
+        border-left: 3px solid var(--accent);
+        border-radius: 0 3px 3px 0;
+        padding: 14px 20px;
+        margin: 0 0 22px;
+        max-width: none
+    }
+
+.note p {
+        margin: 0;
+        max-width: none
+    }
+
+table.schema {
+        min-width: 34rem
+    }
+
+.tier-unlock {
+        font-family: var(--serif);
+        font-style: italic;
+        font-size: .92rem;
+        color: var(--muted);
+        font-weight: 400
+    }
+
+table.schema thead th {
+        font-family: var(--display);
+        font-size: .76rem;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+        text-align: left;
+        padding: 10px 14px;
+        background: var(--panel-3);
+        color: var(--subhead);
+        border-bottom: 1px solid var(--hair)
+    }
+
+table.schema td,
+    table.schema th[scope=row] {
+        padding: 12px 14px;
+        border-bottom: 1px solid var(--hair);
+        vertical-align: top;
+        text-align: left
+    }
+
+table.schema tbody tr:last-child td,
+    table.schema tbody tr:last-child th {
+        border-bottom: none
+    }
+
+table.schema th[scope=row] {
+        font-family: var(--display);
+        font-weight: 600;
+        color: var(--white)
+    }
+
+table.schema col.c1 {
+        width: 22%
+    }
+
+table.schema col.c2 {
+        width: 28%
+    }
+
+table.schema col.c3 {
+        width: 50%
+    }
+
+table.schema td.trig {
+        color: var(--muted);
+        font-style: italic;
+        min-width: 14rem
+    }
+
+table.schema tbody tr:hover td,
+    table.schema tbody tr:hover th {
+        background: rgba(0, 168, 232, .07)
+    }
+
+.minor {
+        color: var(--muted);
+        font-size: .92em
+    }
+
+.flag {
+        color: #e8c07d;
+        font-weight: 600
+    }
+
+.ladder {
+        display: inline-block;
+        margin-top: .35em;
+        padding: 5px 12px;
+        background: var(--panel);
+        border: 1px solid var(--rule);
+        border-left: 3px solid var(--accent);
+        border-radius: 0 2px 2px 0;
+        font-size: .92em;
+        font-variant-numeric: tabular-nums
+    }
+
+.ladder b {
+        color: var(--head)
+    }
+
+.bstats {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 10px 0;
+        border-top: 1px solid var(--hair);
+        border-bottom: 1px solid var(--hair)
+    }
+
+.brow {
+        display: flex;
+        gap: 10px;
+        font-size: .86rem;
+        align-items: baseline
+    }
+
+.bk {
+        flex: 0 0 7.2rem;
+        color: var(--subhead);
+        font-family: var(--display);
+        font-size: .68rem;
+        letter-spacing: .11em;
+        text-transform: uppercase
+    }
+
+.bv {
+        flex: 1;
+        min-width: 0
+    }
+
+table.schema col.c4 {
+        width: 16%
+    }
+
+.ic-spacer {
+        display: block;
+        width: 20px;
+        flex: 0 0 auto
+    }
+
+.cost {
+        font-family: var(--serif);
+        font-style: italic;
+        font-weight: 400;
+        color: var(--muted);
+        font-size: .9em;
+        margin-left: .5em
+    }
+
+.cost::before {
+        content: "("
+    }
+
+.cost::after {
+        content: ")"
+    }
+
+.quote {
+        border-left: 3px solid var(--rule);
+        padding: 2px 0 2px 16px;
+        margin: 0 0 14px;
+        color: #d9e5f0;
+        font-style: italic
+    }

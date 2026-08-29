@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     async function renderDamageCalculations() {
         const elements = document.querySelectorAll('.dmg-calc');
 
-        for (const el of elements) {
+        await Promise.all(Array.from(elements).map(async (el) => {
             let dice = el.getAttribute('data-dice');
             let type = el.getAttribute('data-type');
-            if (!dice || !type) continue;
+            if (!dice || !type) return;
 
             let [x, y] = dice.toLowerCase().split('d');
             let typeCap = type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();
@@ -44,32 +44,40 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             el.className = `dmg d-${type.toLowerCase()}`;
 
-            let diceUrl = await getWikiImageUrl(diceName);
-            let iconUrl = await getWikiImageUrl(iconName);
+            let [diceUrl, iconUrl] = await Promise.all([
+                getWikiImageUrl(diceName),
+                getWikiImageUrl(iconName)
+            ]);
 
             if (!diceUrl) diceUrl = await getWikiImageUrl(fallbackName);
 
-            el.innerHTML = `<img class="dice-ic" src="${diceUrl}" alt=""> ${dice} <img class="ic" src="${iconUrl}" alt=""> ${typeCap}`;
-        }
+            // Sin URL no se pinta la etiqueta: un <img src=""> hace que el navegador
+            // vuelva a pedir la propia página. El texto se mantiene siempre.
+            const diceImg = diceUrl ? `<img class="dice-ic" src="${diceUrl}" alt=""> ` : '';
+            const typeImg = iconUrl ? `<img class="ic" src="${iconUrl}" alt=""> ` : '';
+
+            el.innerHTML = `${diceImg}${dice} ${typeImg}${typeCap}`;
+        }));
     }
 
     // 2. Procesa solo el tipo de daño sin dados (.dmg-type)
     async function renderDamageTypes() {
         const elements = document.querySelectorAll('.dmg-type');
 
-        for (const el of elements) {
+        await Promise.all(Array.from(elements).map(async (el) => {
             let type = el.getAttribute('data-type');
-            if (!type) continue;
+            if (!type) return;
 
             let typeCap = type.charAt(0).toUpperCase() + type.slice(1).toLowerCase();
             let iconName = `${typeCap}_Damage_Icon.png`;
 
             el.className = `dmg d-${type.toLowerCase()}`;
 
-            let iconUrl = await getWikiImageUrl(iconName);
+            const iconUrl = await getWikiImageUrl(iconName);
+            const typeImg = iconUrl ? `<img class="ic" src="${iconUrl}" alt=""> ` : '';
 
-            el.innerHTML = `<img class="ic" src="${iconUrl}" alt=""> <span>${typeCap}</span>`;
-        }
+            el.innerHTML = `${typeImg}<span>${typeCap}</span>`;
+        }));
     }
 
     // Ejecutamos ambas funciones
