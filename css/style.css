@@ -88,9 +88,9 @@
     .class-portrait {
         float: right;
         /* Envía la imagen a la derecha */
-        width: 380px;
+        width: 340px;
         /* Ajusta este valor si la quieres más ancha o estrecha */
-        margin: 0 0 20px 40px;
+        margin: 0 0 20px 32px;
         /* Margen abajo (20px) y a la izquierda (40px) para separar el texto */
         text-align: right;
         /* Alinea los créditos a la derecha */
@@ -263,6 +263,15 @@
         padding-top: 44px
     }
 
+    main section.major:first-child {
+        padding-top: 8px
+    }
+
+    /* El retrato flota dentro de Overview y no invade la seccion siguiente. */
+    main section#overview {
+        display: flow-root
+    }
+
     main section.major>h2 {
         font-size: 1.72rem;
         color: var(--white);
@@ -360,6 +369,11 @@
         border-right: 1px solid var(--hair)
     }
 
+    .prog td.cantrips {
+        border-left: 1px solid var(--hair);
+        border-right: 1px solid var(--hair)
+    }
+
     .prog td.prep {
         border-right: 1px solid var(--hair)
     }
@@ -395,6 +409,62 @@
     }
 
     /* ---- info grid ---- */
+    /* ---- Core Traits (molde del manual 2024) ---- */
+    .coretraits {
+        width: 100%;
+        border-collapse: collapse;
+        background: var(--panel-2);
+        border: 1px solid var(--hair);
+        margin-bottom: 18px
+    }
+
+    .coretraits caption {
+        font-family: var(--display);
+        font-size: .76rem;
+        letter-spacing: .18em;
+        text-transform: uppercase;
+        color: var(--accent);
+        text-align: left;
+        padding: 12px 16px 10px
+    }
+
+    .coretraits th[scope=row] {
+        font-family: var(--display);
+        color: var(--white);
+        font-weight: 600;
+        font-size: .9rem;
+        text-align: left;
+        vertical-align: top;
+        white-space: nowrap;
+        padding: 9px 16px;
+        width: 1%;
+        border-top: 1px solid var(--hair);
+        border-right: 1px solid var(--hair)
+    }
+
+    .coretraits td {
+        padding: 9px 16px;
+        vertical-align: top;
+        border-top: 1px solid var(--hair)
+    }
+
+    .becoming p.dt {
+        font-family: var(--display);
+        color: var(--subhead);
+        font-size: .82rem;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        margin: 12px 0 6px
+    }
+
+    .becoming p.dt:first-of-type {
+        margin-top: 4px
+    }
+
+    .becoming ul {
+        margin: 0
+    }
+
     .infogrid {
         display: grid;
         gap: 18px;
@@ -521,11 +591,17 @@
         background: #e0a84e
     }
 
+    /* Las subclases siempre en una fila; si no caben, la fila se desplaza. */
     .bladegrid {
-        display: grid;
+        display: flex;
+        align-items: stretch;
         gap: 18px;
-        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-        margin: 18px 0 6px
+        margin: 18px 0 6px;
+        clear: right;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+        padding-bottom: 6px
     }
 
     .bcard {
@@ -536,7 +612,28 @@
         padding: 16px 18px;
         display: flex;
         flex-direction: column;
-        gap: 10px
+        gap: 10px;
+        flex: 1 0 260px;
+        min-width: 260px;
+        scroll-snap-align: start
+    }
+
+    .bladegrid::-webkit-scrollbar {
+        height: 8px
+    }
+
+    .bladegrid::-webkit-scrollbar-track {
+        background: var(--panel-2);
+        border-radius: 4px
+    }
+
+    .bladegrid::-webkit-scrollbar-thumb {
+        background: var(--rule);
+        border-radius: 4px
+    }
+
+    .bladegrid::-webkit-scrollbar-thumb:hover {
+        background: var(--hair)
     }
 
     .lexlink {
@@ -1568,4 +1665,14 @@
 
     footer p.legal a:hover {
         color: var(--link)
+    }
+
+    /* Conjuros sin pagina enlazada: mismo azul que los enlazados, para que
+       la lista no mezcle dos colores segun exista o no el enlace. */
+    ul.spells li.phb {
+        color: var(--head)
+    }
+
+    i.sp {
+        color: var(--head)
     }

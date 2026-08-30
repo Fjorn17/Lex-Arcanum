@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Las tres semilanzadoras &middot; Lex Arcanum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Spectral:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;display=swap">
+<style>
+:root{
+  --ground:#0a1420; --panel:#0d1b2a; --panel-2:#101f30; --panel-3:#16283c;
+  --rule:#1b4965; --hair:#27405a;
+  --text:#c7d5e3; --muted:#8ba3ba; --bright:#eaf2f9; --accent:#00a8e8;
+  --pal:#3987e5; --exp:#199e70; --mag:#d95926;
+  --bg-pal:rgba(57,135,229,.12); --bg-exp:rgba(25,158,112,.12); --bg-mag:rgba(217,89,38,.12);
+  --serif:"Spectral",Georgia,"Times New Roman",serif;
+  --display:"Cinzel","Trajan Pro",Georgia,serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){
+  --ground:#eef2f6; --panel:#ffffff; --panel-2:#f6f9fc; --panel-3:#e9eff5;
+  --rule:#c3d4e2; --hair:#d8e3ec;
+  --text:#22384a; --muted:#5e768c; --bright:#0b1a27; --accent:#0a6f9c;
+  --pal:#2a78d6; --exp:#1baf7a; --mag:#eb6834;
+  --bg-pal:rgba(42,120,214,.10); --bg-exp:rgba(27,175,122,.10); --bg-mag:rgba(235,104,52,.10);
+}}
+:root[data-theme="light"]{
+  --ground:#eef2f6; --panel:#ffffff; --panel-2:#f6f9fc; --panel-3:#e9eff5;
+  --rule:#c3d4e2; --hair:#d8e3ec;
+  --text:#22384a; --muted:#5e768c; --bright:#0b1a27; --accent:#0a6f9c;
+  --pal:#2a78d6; --exp:#1baf7a; --mag:#eb6834;
+  --bg-pal:rgba(42,120,214,.10); --bg-exp:rgba(27,175,122,.10); --bg-mag:rgba(235,104,52,.10);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--text);font-family:var(--serif);
+  font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem 6rem}
+.mast{padding:4rem 0 2.2rem;border-bottom:1px solid var(--rule)}
+.kicker{display:flex;flex-wrap:wrap;gap:1.2rem;margin-bottom:1.4rem}
+.eyebrow{font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-size:clamp(2rem,5vw,3.1rem);line-height:1.06;margin:0 0 .8rem;color:var(--bright);font-weight:600}
+.dek{font-size:1.12rem;color:var(--muted);margin:0;max-width:46rem}
+.col{padding:3.2rem 0 0}
+h2{font-family:var(--display);font-size:1.42rem;color:var(--bright);font-weight:600;
+  margin:0 0 1.1rem;padding-bottom:.6rem;border-bottom:1px solid var(--hair);display:flex;align-items:baseline;gap:.8rem}
+h2 .num{font-family:var(--mono);font-size:.72rem;color:var(--accent);letter-spacing:.1em}
+h3{font-family:var(--display);font-size:1.06rem;color:var(--bright);font-weight:600;margin:2rem 0 .7rem}
+p{margin:0 0 .9rem;max-width:44rem}
+em{color:var(--bright)}
+b,strong{color:var(--bright);font-weight:600}
+.lede{font-size:1.05rem}
+.note{color:var(--muted);font-size:.92rem}
+.scroller{overflow-x:auto;border:1px solid var(--hair);border-radius:3px;background:var(--panel-2);margin:1rem 0 1.6rem}
+table{border-collapse:collapse;width:100%;font-size:.93rem;min-width:44rem}
+th,td{text-align:left;padding:.62rem .9rem;border-bottom:1px solid var(--hair);vertical-align:top}
+thead th{font-family:var(--mono);font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);background:var(--panel-3)}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:none}
+td.k{color:var(--muted);white-space:nowrap}
+.legend{display:flex;flex-wrap:wrap;gap:1.4rem;margin:0 0 1.4rem;padding:.75rem 1rem;background:var(--panel-2);border:1px solid var(--hair);border-radius:3px}
+.lg{display:flex;align-items:center;gap:.5rem;font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.sw{width:11px;height:11px;border-radius:2px;flex:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(20rem,1fr));gap:1rem}
+.axis{background:var(--panel-2);border:1px solid var(--hair);border-radius:3px;padding:1rem 1.1rem 1.05rem}
+.axis.coste{border-left:3px solid var(--muted)}
+.axis h4{margin:0;font-family:var(--display);font-size:1rem;color:var(--bright);font-weight:600}
+.axis .q{margin:.25rem 0 .85rem;font-size:.86rem;color:var(--muted);max-width:none}
+.rows{display:flex;flex-direction:column;gap:6px;margin-bottom:.9rem}
+.row{display:grid;grid-template-columns:5.4rem 1fr 1.5rem;align-items:center;gap:.6rem}
+.who{font-family:var(--mono);font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.track{height:10px;background:var(--panel-3);border-radius:2px;overflow:hidden}
+.bar{height:10px;border-radius:0 4px 4px 0;width:calc(var(--v)/5*100%)}
+.b-pal{background:var(--pal)} .b-exp{background:var(--exp)} .b-mag{background:var(--mag)}
+.score{font-family:var(--mono);font-size:.8rem;color:var(--bright);text-align:right}
+.why{font-size:.87rem;margin:0 0 .5rem;padding-left:.8rem;border-left:1px solid var(--hair);color:var(--muted);max-width:none}
+.why:last-child{margin-bottom:0}
+.why b.c-pal{color:var(--pal)} .why b.c-exp{color:var(--exp)} .why b.c-mag{color:var(--mag)}
+.bars2{display:flex;flex-direction:column;gap:1.05rem;background:var(--panel-2);border:1px solid var(--hair);border-radius:3px;padding:1.15rem 1.2rem}
+.b2row .lb{font-family:var(--mono);font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:.4rem}
+.b2 {display:flex;align-items:center;gap:.55rem;margin-bottom:2px}
+.b2 .fill{height:12px;border-radius:0 4px 4px 0}
+.b2 .fill.ghost{opacity:.34}
+.b2 .v{font-family:var(--mono);font-size:.74rem;color:var(--muted)}
+.matrix td.s{font-family:var(--mono);text-align:center;width:5.5rem}
+.matrix td.name{color:var(--text)}
+.matrix td.best{color:var(--bright);font-weight:600;background:var(--panel-3)}
+.matrix td.s{white-space:nowrap}
+.hi{background:var(--panel-3);border-left:3px solid var(--accent);padding:1rem 1.2rem;border-radius:0 3px 3px 0;margin:1.2rem 0}
+.hi p:last-child{margin-bottom:0}
+.foot{margin-top:3.5rem;padding-top:1.4rem;border-top:1px solid var(--hair);color:var(--muted);font-size:.85rem}
+@media(max-width:620px){.row{grid-template-columns:4.6rem 1fr 1.4rem}table{min-width:34rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <div class="kicker">
+    <span class="eyebrow">Lex Arcanum &middot; Análisis interno</span>
+    <span class="eyebrow" style="color:var(--accent)">Manual del Jugador 2024</span>
+    <span class="eyebrow">Página sin enlazar</span>
+  </div>
+  <h1>Las tres semilanzadoras</h1>
+  <p class="dek">Paladín, Explorador y Magister medidos eje por eje: qué define bien a cada uno,
+  qué define mal, y dónde la clase de la casa se sale de la banda que marcan las dos oficiales.</p>
+</header>
+
+<section class="col">
+  <h2><span class="num">01</span>De qué va esto</h2>
+  <p class="lede">El Manual del Jugador 2024 tiene dos clases con progresión de semilanzador — paladín
+  y explorador —, y el Magister es la tercera. Comparar las tres no es un ejercicio de quién gana:
+  es la única forma de saber si la clase de la casa ocupa un hueco propio o repite el de otro.</p>
+  <p>Todo lo que hay aquí sale de dos fuentes que están en la carpeta: el texto de la clase Magister
+  con sus conjuros y su subclase, y el Manual del Jugador 2024 para las dos oficiales. No hay datos
+  de mesa, ni simulaciones, ni comparación con material de fuera del manual.</p>
+  <div class="hi">
+    <p><b>Cómo leer las puntuaciones.</b> Cada eje va de 0 a 5, donde <b>3 es lo normal en una clase
+    de este tipo</b> — no un aprobado raspado. Un 5 significa que la clase define ese eje para las demás;
+    un 1, que ahí no tiene nada que decir. Dos ejes son de coste, no de virtud, y van marcados: en ellos
+    más es peor.</p>
+    <p class="note" style="margin-top:.6rem">Las puntuaciones son un juicio razonado, no una medida.
+    Lo que sí es comprobable es la justificación que va debajo de cada barra: ahí están las reglas concretas.</p>
+  </div>
+</section>
+
+<section class="col">
+  <h2><span class="num">02</span>Los tres chasis</h2>
+  <p>Antes de puntuar nada, lo que es idéntico y lo que no. Las tres comparten el motor —
+  d10, la misma tabla de espacios y la misma cuenta de conjuros preparados — y se separan en todo lo demás.</p>
+  <div class="scroller">
+    <table>
+      <thead><tr><th></th><th style="color:var(--pal)">Paladín</th><th style="color:var(--exp)">Explorador</th><th style="color:var(--mag)">Magister</th></tr></thead>
+      <tbody><tr><td class="k">Dado de golpe</td><td>d10</td><td>d10</td><td>d10</td></tr><tr><td class="k">Aptitud mágica</td><td>Carisma</td><td>Sabiduría</td><td>Inteligencia</td></tr><tr><td class="k">Salvaciones</td><td>Sabiduría y Carisma</td><td>Fuerza y Destreza</td><td>Constitución e Inteligencia</td></tr><tr><td class="k">Armadura</td><td>Ligera, media, pesada y escudo</td><td>Ligera, media y escudo</td><td>Ligera y media, sin escudo</td></tr><tr><td class="k">Espacios en el nivel 20</td><td>4/3/3/3/2</td><td>4/3/3/3/2</td><td>4/3/3/3/2</td></tr><tr><td class="k">Conjuros preparados (1 → 20)</td><td>2 → 15</td><td>2 → 15</td><td>2 → 15</td></tr><tr><td class="k">Trucos</td><td>Ninguno, salvo el estilo Guerrero bendito</td><td>Ninguno, salvo el estilo Guerrero druídico</td><td>2 → 4, de serie</td></tr><tr><td class="k">Tamaño de la lista</td><td>51 conjuros</td><td>61 conjuros</td><td>91 huecos (80 con nivel + 11 trucos)</td></tr><tr><td class="k">Acceso a la lista</td><td>Total</td><td>Total</td><td>Libro: 23 conjuros en el nivel 20</td></tr><tr><td class="k">Rasgos de subclase</td><td>4 (niveles 3, 7, 15, 20)</td><td>4 (niveles 3, 7, 11, 15)</td><td>5 (niveles 3, 5, 9, 13, 17)</td></tr><tr><td class="k">Niveles sin rasgo propio</td><td>13 y 17</td><td>Ninguno</td><td>Ninguno</td></tr></tbody>
+    </table>
+  </div>
+  <p>Dos diferencias mandan sobre el resto. La primera: el Magister es el único que empieza con trucos
+  de serie, y no por adorno — su rasgo de nivel 2 los convierte en un ataque más cada asalto.
+  La segunda: es el único que no lo prepara todo de una lista abierta, sino de un libro que se llena
+  a razón de un conjuro por nivel.</p>
+</section>
+
+<section class="col">
+  <h2><span class="num">03</span>La lista que tiene y la que alcanza</h2>
+  <p>El taller mide la lista del Magister contra las dos oficiales como si fueran comparables, y en tamaño
+  lo son: 80 conjuros con nivel frente a 51 del paladín y 61 del explorador. En acceso no lo son en absoluto.
+  El paladín y el explorador preparan de su lista entera; el Magister prepara de su libro, y el libro
+  son cuatro conjuros de nivel 1 al empezar más uno por nivel.</p>
+  <div class="bars2"><div class="b2row"><div class="lb">Paladín</div><div class="b2"><div class="fill" style="background:var(--pal);width:56.7%"></div><span class="v">51 en la lista</span></div><div class="b2"><div class="fill ghost" style="background:var(--pal);width:56.7%"></div><span class="v">51 al alcance en el nivel 20</span></div></div><div class="b2row"><div class="lb">Explorador</div><div class="b2"><div class="fill" style="background:var(--exp);width:67.8%"></div><span class="v">61 en la lista</span></div><div class="b2"><div class="fill ghost" style="background:var(--exp);width:67.8%"></div><span class="v">61 al alcance en el nivel 20</span></div></div><div class="b2row"><div class="lb">Magister</div><div class="b2"><div class="fill" style="background:var(--mag);width:88.9%"></div><span class="v">80 en la lista</span></div><div class="b2"><div class="fill ghost" style="background:var(--mag);width:25.6%"></div><span class="v">23 al alcance en el nivel 20</span></div></div></div>
+  <p class="note" style="margin-top:1rem">Barra sólida: conjuros con nivel en la lista de clase.
+  Barra transparente: los que un personaje puede tener a mano en el nivel 20 sin gastar oro. Los trucos
+  quedan fuera de la cuenta porque las dos listas oficiales no tienen.</p>
+  <p>Un paladín de nivel 20 elige sus quince preparados entre 51. Un Magister los elige entre 23, y ampliar
+  esa cifra cuesta 50 po y dos horas por nivel de conjuro. La lista de 91 huecos es una carta, no un plato:
+  describe el espacio de diseño de la clase, no lo que un personaje concreto va a manejar nunca.
+  Merece la pena decidir si eso es lo buscado — es sabor de Mago, y el Magister lo lleva a propósito — o
+  un efecto colateral de haber copiado el libro de conjuros sin recalcular lo que cuesta.</p>
+</section>
+
+<section class="col">
+  <h2><span class="num">04</span>Los números</h2>
+  <p class="lede">Las notas de daño de las secciones siguientes salen de aquí. Esto es lo que pega cada clase
+  en cuatro niveles clave: el 3, donde ya está la subclase; el 5, con el ataque adicional; el 11, donde el
+  paladín estrena Golpes radiantes y el Magister Spellsword; y el 17, el techo antes del nivel épico.</p>
+
+  <div class="hi">
+    <p><b>Los supuestos, todos discutibles menos por ser los mismos para las tres.</b> Dados a su media,
+    sin críticos, sin objetos mágicos, sin dotes más allá del estilo de combate y sin rasgos de subclase.
+    Las tres empiezan con 16 en sus dos características principales y gastan las mejoras de los niveles 4, 8,
+    12 y 16 en subirlas. La CA del objetivo sube con el nivel: 14, 15, 17 y 18.</p>
+    <p class="note" style="margin-top:.6rem">Paladín con espada larga, escudo y estilo Duelo; explorador con
+    arco largo y estilo Arquería; Magister con estoque, mano libre y estilo Duelo, lanzando
+    <em>agarre electrizante</em> con la acción adicional de Arcane Swordplay.</p>
+  </div>
+
+  <h3>Daño sostenido por asalto, ya multiplicado por la probabilidad de acertar</h3>
+  <div class="scroller"><table class="matrix"><thead><tr><th></th><th style="color:var(--pal)">Paladín</th><th style="color:var(--exp)">Explorador</th><th style="color:var(--mag)">Magister</th></tr></thead><tbody><tr><td class="k">Nivel 3</td><td class="s">5,7</td><td class="s">7,7</td><td class="s best">8,4</td></tr><tr><td class="k">Nivel 5</td><td class="s">13,7</td><td class="s">18,0</td><td class="s best">19,1</td></tr><tr><td class="k">Nivel 11</td><td class="s">18,0</td><td class="s">16,8</td><td class="s best">20,7</td></tr><tr><td class="k">Nivel 17</td><td class="s">22,4</td><td class="s">25,0</td><td class="s best">28,7</td></tr></tbody></table></div>
+  <p class="note">Lo que pega de media un asalto cualquiera. El explorador cuenta con la marca puesta, que le cuesta uno de sus lanzamientos gratuitos del día.</p>
+  <h3>Máximo en un turno sin gastar ningún recurso</h3>
+  <div class="scroller"><table class="matrix"><thead><tr><th></th><th style="color:var(--pal)">Paladín</th><th style="color:var(--exp)">Explorador</th><th style="color:var(--mag)">Magister</th></tr></thead><tbody><tr><td class="k">Nivel 3</td><td class="s">9,5</td><td class="s">7,5</td><td class="s best">14,0</td></tr><tr><td class="k">Nivel 5</td><td class="s">21,0</td><td class="s">17,0</td><td class="s best">30,0</td></tr><tr><td class="k">Nivel 11</td><td class="s">30,0</td><td class="s">17,0</td><td class="s best">34,5</td></tr><tr><td class="k">Nivel 17</td><td class="s">32,0</td><td class="s">19,0</td><td class="s best">41,0</td></tr></tbody></table></div>
+  <p class="note">Todos los ataques aciertan, sin críticos y sin gastar nada: ni espacios, ni usos limitados. Aquí el explorador va sin marca, porque sus lanzamientos gratuitos tienen tope diario.</p>
+  <h3>Máximo en un turno gastando todo lo posible</h3>
+  <div class="scroller"><table class="matrix"><thead><tr><th></th><th style="color:var(--pal)">Paladín</th><th style="color:var(--exp)">Explorador</th><th style="color:var(--mag)">Magister</th></tr></thead><tbody><tr><td class="k">Nivel 3</td><td class="s best">18,5</td><td class="s">11,0</td><td class="s">14,0</td></tr><tr><td class="k">Nivel 5</td><td class="s best">34,5</td><td class="s">24,0</td><td class="s">30,0</td></tr><tr><td class="k">Nivel 11</td><td class="s best">48,0</td><td class="s">30,0</td><td class="s">34,5</td></tr><tr><td class="k">Nivel 17</td><td class="s best">59,0</td><td class="s">40,0</td><td class="s">41,0</td></tr></tbody></table></div>
+  <p class="note">Todo lo que cabe en un turno: la acción, la acción adicional y el espacio más alto disponible. Sin rasgos de subclase, que en el paladín subirían todavía más la cifra.</p>
+
+  <h3>Probabilidad de acertar</h3>
+  <div class="scroller"><table class="matrix">
+    <thead><tr><th></th><th style="color:var(--pal)">Paladín</th><th style="color:var(--exp)">Explorador</th><th style="color:var(--mag)">Magister · arma / conjuro</th></tr></thead>
+    <tbody><tr><td class="k">Nivel 3</td><td class="s">60%</td><td class="s">70%</td><td class="s">60% / 60%</td></tr><tr><td class="k">Nivel 5</td><td class="s">65%</td><td class="s">75%</td><td class="s">65% / 60%</td></tr><tr><td class="k">Nivel 11</td><td class="s">60%</td><td class="s">70%</td><td class="s">60% / 60%</td></tr><tr><td class="k">Nivel 17</td><td class="s">70%</td><td class="s">96%</td><td class="s">70% / 70%</td></tr></tbody></table></div>
+  <p class="note">El explorador compra puntería con el estilo Arquería, y en el nivel 17 <b>Cazador preciso</b>
+  le da Ventaja contra el objetivo marcado: ese es el salto del 70&nbsp;% al 96&nbsp;%. La columna doble del
+  Magister es su problema de características: el arma pega con Destreza y el truco con Inteligencia.</p>
+
+  <h3>Lo que dicen estos números</h3>
+  <p><b>El Magister es el mejor daño sostenido de las tres, y lo es gratis.</b> Gana al paladín en el 3, el 5
+  y el 17, y empata en el 11. Todo lo que suma por encima de sus dos ataques sale de un truco que no cuesta
+  nada y no se agota, así que la cifra de la primera tabla es también su cifra en el vigésimo asalto de un día
+  sin descansos. Por eso su nota de daño sostenido sube de 4 a 5 respecto a la primera versión de este documento.</p>
+  <p><b>Y es el peor convirtiendo recursos en daño, hasta el punto de que gastar le sale mal.</b> En el nivel 5
+  no tiene absolutamente nada en que gastar un espacio para pegar más en un turno. En el 11 sí, y es peor: el tope
+  de Arcane Swordplay es nivel 1, así que lo mejor que puede lanzar por ahí es <em>manos ardientes</em> — 10,5 de
+  media frente a los 13,5 del truco al que sustituiría. En el 17 el tope sube a nivel 2 y en su lista no hay ni un
+  solo conjuro de daño de ese nivel. Su columna «gastando todo» es idéntica a la de «sin gastar» en tres de los
+  cuatro niveles.</p>
+  <p><b>Spellsword no es una subida de daño.</b> Sustituir un ataque por <em>estocada arcana</em> añade 2d4 o 3d4;
+  el truco de la acción adicional al que obliga a renunciar vale 3d8 o 4d8. Y como los dos rasgos se excluyen en el
+  mismo turno, usar el del nivel 11 significa apagar el del nivel 2. Lo que compra Spellsword es el estado del
+  conjuro, no la cifra: conviene tenerlo claro, porque a primera vista parece un rasgo de daño.</p>
+  <p><b>El paladín sigue siendo el dueño del turno grande</b>: 59 frente a 41 en el nivel 17, y sin contar
+  Canalizar divinidad de la subclase. Su ventaja no está en pegar más veces, sino en poder soltar un espacio de
+  nivel 5 como daño instantáneo — que es justo lo que a las otras dos les falta.</p>
+  <p><b>El explorador es el único al que su propio equipo se estorba.</b> Su mejor sostenido y su mejor turno
+  compiten por la misma concentración: <em>carcaj veloz</em> le daría dos ataques más por asalto, pero apaga
+  <em>marca del cazador</em>. Y es la única de las tres cuyo daño sostenido depende de un recurso con tope diario.</p>
+
+  <div class="hi">
+    <p><b>Una duda de reglas que conviene cerrar.</b> Arcane Swordplay dice que desde el nivel 7 puedes lanzar así
+    «un conjuro de nivel 1 o inferior, gastando un espacio de conjuro como de costumbre». No dice si el tope es el
+    <em>nivel del conjuro</em> o el <em>nivel del espacio</em>. Si <em>manos ardientes</em> pudiera lanzarse ahí con
+    un espacio de nivel 3, el mejor turno del nivel 11 pasaría de 34,5 a 42 y el rasgo dejaría de ser una trampa.
+    Es una frase de texto y cambia entera la columna de daño explosivo.</p>
+  </div>
+
+  <p class="note">Un apunte que no cabe en las tablas porque no ocurre en tu turno: desde el nivel 14, <b>Touché</b>
+  convierte el contraataque de En Garde en 1d8 por nivel del espacio gastado en <em>escudo</em>, más Inteligencia.
+  Con un espacio de nivel 5 eso son unos 39 puntos sobre una reacción — más que el turno entero del propio Magister.
+  Es su único acceso real al daño explosivo, y depende de que un enemigo le ataque y falle.</p>
+</section>
+
+<section class="col">
+  <h2><span class="num">05</span>El daño en área</h2>
+  <p class="lede">La misma pregunta, pero contra tres enemigos en vez de uno. Aquí las tres cambian de
+  orden, y una de ellas simplemente no juega.</p>
+
+  <h3>Mejor turno de área</h3>
+  <div class="scroller"><table class="matrix">
+    <thead><tr><th></th><th style="color:var(--pal)">Paladín</th><th style="color:var(--exp)">Explorador</th><th style="color:var(--mag)">Magister</th></tr></thead>
+    <tbody><tr><td class="k">Nivel 3</td><td class="s">—</td><td class="s">5,5 <span class="note">× 3</span><br>27,5</td><td class="s best">10,5 <span class="note">× 3</span><br>31,5</td></tr><tr><td class="k">Nivel 5</td><td class="s">—</td><td class="s best">11,0 <span class="note">× 3</span><br>57,0</td><td class="s">14,0 <span class="note">× 3</span><br>42,0</td></tr><tr><td class="k">Nivel 11</td><td class="s">—</td><td class="s">16,5 <span class="note">× 3</span><br>73,5</td><td class="s best">22,5 <span class="note">× 3</span><br>87,0</td></tr><tr><td class="k">Nivel 17</td><td class="s">35,0 <span class="note">× 3</span><br>105,0</td><td class="s best">36,0 <span class="note">× 3</span><br>108,0</td><td class="s">33,0 <span class="note">× 3</span><br>99,0</td></tr></tbody></table></div>
+  <p class="note">Arriba, daño por objetivo si falla la salvación (o si acierta el ataque de conjuro) y a cuántos
+  alcanza en este supuesto de tres enemigos juntos; abajo, el total del turno, sumando los ataques con arma cuando
+  el conjuro no cuesta la acción. Los conjuros de salvación reparten la mitad al superarla, así que ninguna de estas
+  cifras baja a cero. El golpe de viento acerado del nivel 17 llega hasta cinco objetivos: contra cinco son 165.</p>
+
+  <p><b>El paladín no tiene daño en área hasta el nivel 17.</b> No es que lo tenga pequeño: en su lista de 51
+  conjuros no hay uno solo que reparta daño a varios objetivos por debajo de nivel 5. Todos sus castigos van a un
+  blanco. Su casilla en esta tabla está vacía en tres de los cuatro niveles, y eso es lo que compra con ser el rey
+  del turno grande contra un rival.</p>
+  <p><b>El explorador domina el tramo medio sin renunciar a nada</b>, y por un detalle de economía de acciones:
+  <em>tormenta de espinas</em> es acción adicional después de acertar, así que reparte su cono sin dejar de disparar.
+  Escala con el espacio — 1d10 más por nivel — y por eso al 11 rinde más que gastar la acción entera en
+  <em>conjurar descarga de proyectiles</em>.</p>
+  <p><b>El Magister no tiene ningún truco de área en su lista base</b> — el tirón gravitacional llega solo por el
+  Gematurgo —, así que hasta el nivel 7 repartir significa renunciar a atacar. A partir del 7 la cosa cambia por
+  completo: <em>manos ardientes</em> cabe en la acción adicional de Arcane Swordplay, y es la única de las tres que
+  suelta un cono <em>y</em> da sus dos golpes en el mismo turno. Y en el 17 tiene la cifra más alta de todo el
+  documento, aunque no aparezca en la tabla como tal: <em>golpe de viento acerado</em>, cinco criaturas a 6d10 cada
+  una, 165 puntos si las cinco caen.</p>
+  <div class="hi">
+    <p><b>La lectura que corrige a la sección anterior.</b> El Magister es malísimo convirtiendo espacios en daño
+    <em>contra un solo rival</em>, y de los tres el mejor haciéndolo <em>contra varios</em>. Su daño explosivo no es
+    que no exista: es que solo existe en forma de área. Que es exactamente el desajuste que el taller ya tenía anotado
+    en la regla de «objetivo único» — la clase rinde mejor contra un grupo que contra un duelo, al revés de su fantasía.</p>
+  </div>
+</section>
+
+<section class="col">
+  <h2><span class="num">06</span>Qué hace exactamente cada una</h2>
+  <p class="lede">Las cifras de las dos secciones anteriores no significan nada sin el turno que hay detrás.
+  Esto es lo que teclea cada jugador para llegar a ellas.</p>
+
+  <h3 style="color:var(--pal)">Paladín</h3>
+  <p><b>Asalto normal.</b> Acción de Atacar, dos golpes con la espada larga. Desde el nivel 11 cada impacto suma
+  1d8 radiante por <b>Golpes radiantes</b>, sin decidir nada y sin gastar nada. Es el turno más sencillo de las tres.</p>
+  <p><b>Turno grande.</b> Los mismos dos ataques y, en cuanto uno acierta, acción adicional para lanzar
+  <em>castigo divino</em> con el espacio más alto que tenga: 2d8 más 1d8 por nivel del espacio. Solo cabe uno por turno,
+  porque solo hay una acción adicional. Al nivel 17, con un espacio de 5, son 6d8 de un golpe.</p>
+  <p><b>Área.</b> Nada hasta el 17. Ahí, <em>ola destructora</em> con la acción entera: emanación de 9 m, 5d6 de
+  trueno más 5d6 radiantes o necróticos, y elige a quién incluye, así que no alcanza a los suyos.</p>
+
+  <h3 style="color:var(--exp)">Explorador</h3>
+  <p><b>Asalto normal.</b> Acción adicional del primer asalto para <em>marca del cazador</em> — gratis, de dos a seis
+  veces al día — y a partir de ahí dos flechas por asalto, cada impacto con 1d6 de más. La marca dura una hora y salta
+  al siguiente enemigo cuando el marcado cae, así que un lanzamiento cubre el combate entero. Desde el 17,
+  <b>Cazador preciso</b> le da Ventaja contra ese objetivo, que es lo que dispara su cifra.</p>
+  <p><b>Turno grande.</b> Dispara y, tras acertar, acción adicional para <em>flecha de relámpago</em>: el objetivo recibe
+  4d8 en vez del daño del arma, y todo lo que esté a 3 m se lleva 2d8.</p>
+  <p><b>Área.</b> Su herramienta buena es <em>tormenta de espinas</em>, también acción adicional tras acertar: 1d10 al
+  objetivo y a todo lo que esté a 1,5 m, más 1d10 por cada nivel de espacio por encima del primero. No renuncia a los
+  ataques. Con la acción entera puede cambiar a <em>conjurar descarga de proyectiles</em> (cono de 18 m, 5d8) o, al 17,
+  a <em>conjurar lluvia de flechas</em> (cilindro de 12 m de radio a 45 m de distancia, 8d8).</p>
+
+  <h3 style="color:var(--mag)">Magister</h3>
+  <p><b>Asalto normal.</b> Acción de Atacar con el estoque — dos golpes — y, por <b>Arcane Swordplay</b>, un truco como
+  acción adicional: <em>agarre electrizante</em>, que además impide ataques de oportunidad al que toca. Dos requisitos
+  permanentes: el arma de sutileza en una mano y la otra libre, así que nunca lleva escudo.</p>
+  <p><b>Turno grande.</b> El mismo. Hasta el nivel 7 no tiene en qué gastar un espacio para pegar más, y a partir del 7
+  lo que puede lanzar por Swordplay pega menos que el truco al que sustituye. Su conversión de espacios en daño llega
+  al 14 y ocurre fuera de su turno: <b>Touché</b> convierte el contraataque de <em>escudo</em> en 1d8 por nivel del
+  espacio más Inteligencia.</p>
+  <p><b>Área.</b> Antes del 7, gastar la acción en <em>manos ardientes</em> y renunciar a atacar. Desde el 7, el cono
+  cabe en la acción adicional de Swordplay: dos golpes y el cono en el mismo turno. Al 11, con la acción,
+  <em>hendidura arrasadora</em>: línea de 18 m, 5d8, más un ataque cuerpo a cuerpo opcional que añade 2d8 y le deja
+  Desventaja en la salvación a ese objetivo. Al 17, <em>golpe de viento acerado</em>: hasta cinco criaturas a 9 m,
+  un ataque de conjuro contra cada una, 6d10 a las que acierte, y acabas teletransportado junto a una de ellas.</p>
+</section>
+
+<section class="col">
+  <h2><span class="num">07</span>El marcador</h2>
+  <div class="legend"><span class="lg"><span class="sw" style="background:var(--pal)"></span>Paladín</span><span class="lg"><span class="sw" style="background:var(--exp)"></span>Explorador</span><span class="lg"><span class="sw" style="background:var(--mag)"></span>Magister</span><span class="lg" style="margin-left:auto">Escala 0-5 · 3 = lo normal en una clase de este tipo</span></div>
+  <div class="grid"><div class="axis">
+<h4>Daño sostenido</h4><p class="q">Lo que hace cada asalto sin gastar nada.</p><div class="rows">
+<div class="row"><span class="who">Paladín</span><div class="track" title="Paladín: 4 de 5"><div class="bar b-pal" style="--v:4"></div></div><span class="score">4</span></div>
+<div class="row"><span class="who">Explorador</span><div class="track" title="Explorador: 4 de 5"><div class="bar b-exp" style="--v:4"></div></div><span class="score">4</span></div>
+<div class="row"><span class="who">Magister</span><div class="track" title="Magister: 5 de 5"><div class="bar b-mag" style="--v:5"></div></div><span class="score">5</span></div>
+</div>
+<p class="why"><b class="c-pal">Paladín.</b> Dos ataques y, desde el nivel 11, <b>Golpes radiantes</b>: +1d8 radiante en <em>cada</em> impacto cuerpo a cuerpo, sin gasto ni límite de usos. Es el mejor daño gratuito de las tres.</p>
+<p class="why"><b class="c-exp">Explorador.</b> Dos ataques más 1d6 de <em>marca del cazador</em> por impacto, d10 en el nivel 20. Los usos gratuitos (de dos a seis al día) lo hacen casi gratis, pero cuesta concentración y una acción adicional de preparación.</p>
+<p class="why"><b class="c-mag">Magister.</b> Dos ataques más un truco como acción adicional cada asalto con <b>Arcane Swordplay</b>, sin gastar nada. Los números de la sección 04 lo ponen por delante de las otras dos en los niveles 3, 5 y 17, y empatado en el 11. El truco no puede exigir ataque con arma, así que el motor no son los filos sino <em>agarre electrizante</em>, que pega con Inteligencia mientras el arma pega con Destreza.</p>
+</div>
+<div class="axis">
+<h4>Daño explosivo</h4><p class="q">Lo que puede soltar de golpe cuando decide gastarlo todo.</p><div class="rows">
+<div class="row"><span class="who">Paladín</span><div class="track" title="Paladín: 5 de 5"><div class="bar b-pal" style="--v:5"></div></div><span class="score">5</span></div>
+<div class="row"><span class="who">Explorador</span><div class="track" title="Explorador: 2 de 5"><div class="bar b-exp" style="--v:2"></div></div><span class="score">2</span></div>
+<div class="row"><span class="who">Magister</span><div class="track" title="Magister: 2 de 5"><div class="bar b-mag" style="--v:2"></div></div><span class="score">2</span></div>
+</div>
+<p class="why"><b class="c-pal">Paladín.</b> <b>Castigo divino</b> 2d8 +1d8 por nivel de espacio, como acción adicional después de acertar, más un lanzamiento gratis al día y los castigos de nivel superior. Es la clase nova de referencia del juego.</p>
+<p class="why"><b class="c-exp">Explorador.</b> No tiene castigos. Su punta son <em>flecha de relámpago</em>, <em>conjurar descarga de proyectiles</em> y <em>golpe de viento acerado</em>: buenos contra grupos, nunca contra un rival.</p>
+<p class="why"><b class="c-mag">Magister.</b> No es que sea bajo: es que casi no existe. Su mejor turno gastándolo todo es el mismo que su mejor turno gratis — y en el nivel 11 gastar lo <em>empeora</em>, porque <em>manos ardientes</em> pega 10,5 y el truco al que sustituye pega 13,5. La única conversión real de espacios en daño contra un solo rival es <b>Touché</b>, y ocurre sobre una reacción, en el turno de otro. Contra varios es otra historia: la sección 05 le da la cifra más alta del documento.</p>
+</div>
+<div class="axis">
+<h4>Economía de recursos</h4><p class="q">Cuánto rinde entre descansos y con qué ritmo se rellena.</p><div class="rows">
+<div class="row"><span class="who">Paladín</span><div class="track" title="Paladín: 4 de 5"><div class="bar b-pal" style="--v:4"></div></div><span class="score">4</span></div>
+<div class="row"><span class="who">Explorador</span><div class="track" title="Explorador: 3 de 5"><div class="bar b-exp" style="--v:3"></div></div><span class="score">3</span></div>
+<div class="row"><span class="who">Magister</span><div class="track" title="Magister: 4 de 5"><div class="bar b-mag" style="--v:4"></div></div><span class="score">4</span></div>
+</div>
+<p class="why"><b class="c-pal">Paladín.</b> <b>Canalizar divinidad</b> recupera un uso en descanso corto, único de las tres. La reserva de Imponer las manos (cinco veces el nivel) y el castigo gratuito son de descanso largo.</p>
+<p class="why"><b class="c-exp">Explorador.</b> Casi todo es descanso largo: usos de <em>marca del cazador</em>, <b>Infatigable</b>, <b>Velo de la naturaleza</b>. A cambio la marca dura una hora y se traspasa al matar, así que un espacio cunde un combate entero.</p>
+<p class="why"><b class="c-mag">Magister.</b> Solo <b>En Garde</b> se rellena por descanso largo. Lo demás son espacios de semilanzador, pero su motor de cada asalto es un truco, que no cuesta nada: puede sostener el día sin tocar la reserva.</p>
+</div>
+<div class="axis">
+<h4>Economía de acciones</h4><p class="q">Cuántas cosas distintas puede hacer en un mismo turno.</p><div class="rows">
+<div class="row"><span class="who">Paladín</span><div class="track" title="Paladín: 2 de 5"><div class="bar b-pal" style="--v:2"></div></div><span class="score">2</span></div>
+<div class="row"><span class="who">Explorador</span><div class="track" title="Explorador: 3 de 5"><div class="bar b-exp" style="--v:3"></div></div><span class="score">3</span></div>
+<div class="row"><span class="who">Magister</span><div class="track" title="Magister: 5 de 5"><div class="bar b-mag" style="--v:5"></div></div><span class="score">5</span></div>
+</div>
+<p class="why"><b class="c-pal">Paladín.</b> Su acción adicional está saturada: castigo divino, Imponer las manos y hallar corcel compiten por ella, y en 2024 lanzar el castigo bloquea otro conjuro con espacio ese turno.</p>
+<p class="why"><b class="c-exp">Explorador.</b> La acción adicional se paga una vez, al poner la marca; después queda libre. La reacción está desocupada casi siempre.</p>
+<p class="why"><b class="c-mag">Magister.</b> Es su tesis entera. Acción de atacar más truco con la acción adicional, reacción para <em>escudo</em> con contraataque incluido, y desde el nivel 6 <b>Trance instintivo</b> le da una reacción extra por asalto mientras concentre. Ninguna otra semilanzadora usa los tres huecos del turno.</p>
+</div>
+<div class="axis">
+<h4>Defensa propia</h4><p class="q">Lo que aguanta antes de caer.</p><div class="rows">
+<div class="row"><span class="who">Paladín</span><div class="track" title="Paladín: 5 de 5"><div class="bar b-pal" style="--v:5"></div></div><span class="score">5</span></div>
+<div class="row"><span class="who">Explorador</span><div class="track" title="Explorador: 3 de 5"><div class="bar b-exp" style="--v:3"></div></div><span class="score">3</span></div>
+<div class="row"><span class="who">Magister</span><div class="track" title="Magister: 4 de 5"><div class="bar b-mag" style="--v:4"></div></div><span class="score">4</span></div>
+</div>
+<p class="why"><b class="c-pal">Paladín.</b> Armadura pesada y escudo, d10, curación propia a discreción y <b>Aura de protección</b>, que suma Carisma a todas sus salvaciones. No hay defensa mejor en el juego.</p>
+<p class="why"><b class="c-exp">Explorador.</b> d10, armadura media y escudo, y poco más: <b>Infatigable</b> da unos pocos temporales y <b>Velo de la naturaleza</b> una huida por invisibilidad. Aguanta lo que aguanta un guerrero ligero.</p>
+<p class="why"><b class="c-mag">Magister.</b> d10 pero sin escudo — y su rasgo central exige una mano libre, así que tampoco podría llevarlo. Lo compensa <em>escudo</em>: +5 a la CA como reacción, gratis una vez al día, y en el nivel 20 <b>Grande Parade</b> lo extiende a las salvaciones de Destreza.</p>
+</div>
+<div class="axis">
+<h4>Apoyo al grupo</h4><p class="q">Lo que hace por los otros cuatro de la mesa.</p><div class="rows">
+<div class="row"><span class="who">Paladín</span><div class="track" title="Paladín: 5 de 5"><div class="bar b-pal" style="--v:5"></div></div><span class="score">5</span></div>
+<div class="row"><span class="who">Explorador</span><div class="track" title="Explorador: 3 de 5"><div class="bar b-exp" style="--v:3"></div></div><span class="score">3</span></div>
+<div class="row"><span class="who">Magister</span><div class="track" title="Magister: 1 de 5"><div class="bar b-mag" style="--v:1"></div></div><span class="score">1</span></div>
+</div>
+<p class="why"><b class="c-pal">Paladín.</b> Cura, quita estados, y el aura reparte su Carisma a las salvaciones de todo el que esté cerca. Media clase existe para los demás.</p>
+<p class="why"><b class="c-exp">Explorador.</b> <em>Pasar sin rastro</em>, <em>silencio</em>, <em>potenciar característica</em>, <em>curar heridas</em>: apoyo discreto pero real, sobre todo fuera del combate.</p>
+<p class="why"><b class="c-mag">Magister.</b> Prácticamente nulo, y a propósito: de los seis conjuros de curación del fondo común no entró ninguno. Lo único que reparte es el estilo de combate Protección y el control que quite un turno al enemigo.</p>
+</div>
+<div class="axis">
+<h4>Control del campo</h4><p class="q">Cuánto decide dónde y cómo se pelea.</p><div class="rows">
+<div class="row"><span class="who">Paladín</span><div class="track" title="Paladín: 3 de 5"><div class="bar b-pal" style="--v:3"></div></div><span class="score">3</span></div>
+<div class="row"><span class="who">Explorador</span><div class="track" title="Explorador: 4 de 5"><div class="bar b-exp" style="--v:4"></div></div><span class="score">4</span></div>
+<div class="row"><span class="who">Magister</span><div class="track" title="Magister: 4 de 5"><div class="bar b-mag" style="--v:4"></div></div><span class="score">4</span></div>
+</div>
+<p class="why"><b class="c-pal">Paladín.</b> <em>Duelo forzado</em>, <em>orden imperiosa</em>, <b>Abjurar de los enemigos</b> y <em>destierro</em>. Controla pegándose a uno, no dominando el terreno.</p>
+<p class="why"><b class="c-exp">Explorador.</b> La mejor caja de herramientas de terreno de las tres: <em>enmarañar</em>, <em>crecimiento espinoso</em>, <em>muro de viento</em>, <em>golpe apresador</em>, <em>silencio</em>.</p>
+<p class="why"><b class="c-mag">Magister.</b> Control de lanzadores, que es un nicho que ninguna de las otras dos toca: es el único semilanzador con <em>contrahechizo</em>, y lo acompaña con <em>silencio</em>, <em>ralentizar</em>, <em>zona de la verdad</em> y <em>cadenas de custodia</em>.</p>
+</div>
+<div class="axis">
+<h4>Utilidad fuera de combate</h4><p class="q">Lo que aporta en exploración y en la mesa social.</p><div class="rows">
+<div class="row"><span class="who">Paladín</span><div class="track" title="Paladín: 3 de 5"><div class="bar b-pal" style="--v:3"></div></div><span class="score">3</span></div>
+<div class="row"><span class="who">Explorador</span><div class="track" title="Explorador: 5 de 5"><div class="bar b-exp" style="--v:5"></div></div><span class="score">5</span></div>
+<div class="row"><span class="who">Magister</span><div class="track" title="Magister: 4 de 5"><div class="bar b-mag" style="--v:4"></div></div><span class="score">4</span></div>
+</div>
+<p class="why"><b class="c-pal">Paladín.</b> <b>Sentidos divinos</b>, <em>hallar corcel</em>, <em>zona de la verdad</em> y un Carisma alto que resuelve escenas sociales sin conjuro.</p>
+<p class="why"><b class="c-exp">Explorador.</b> El pilar de exploración entero: <b>Explorador hábil</b>, dos pericias más en el 9, <b>Errante</b>, <b>Infatigable</b>, <b>Sentidos salvajes</b> y una lista llena de rituales.</p>
+<p class="why"><b class="c-mag">Magister.</b> Hereda la caja de herramientas del Mago: <em>alarma</em>, <em>identificar</em>, <em>encontrar familiar</em>, <em>boca mágica</em>, <em>aura mágica de Nystul</em>, <em>ojo arcano</em>, <em>círculo de teletransportación</em>. Y dos rasgos de mesa: <b>Doble disciplina</b> y <b>Autoridad intelectual</b>.</p>
+</div>
+<div class="axis">
+<h4>Acceso real a la magia</h4><p class="q">No cuántos conjuros tiene la lista, sino cuántos puede elegir de verdad.</p><div class="rows">
+<div class="row"><span class="who">Paladín</span><div class="track" title="Paladín: 4 de 5"><div class="bar b-pal" style="--v:4"></div></div><span class="score">4</span></div>
+<div class="row"><span class="who">Explorador</span><div class="track" title="Explorador: 5 de 5"><div class="bar b-exp" style="--v:5"></div></div><span class="score">5</span></div>
+<div class="row"><span class="who">Magister</span><div class="track" title="Magister: 3 de 5"><div class="bar b-mag" style="--v:3"></div></div><span class="score">3</span></div>
+</div>
+<p class="why"><b class="c-pal">Paladín.</b> 51 conjuros en la lista y acceso a los 51: prepara de la lista entera y la cambia en cada descanso largo. Además los conjuros de juramento siempre preparados.</p>
+<p class="why"><b class="c-exp">Explorador.</b> 61 conjuros, la lista oficial más ancha de las dos, y el mismo acceso total. Es la semilanzadora que más opciones distintas puede traer a una sesión.</p>
+<p class="why"><b class="c-mag">Magister.</b> Aquí está su punto ciego. La lista son 91 huecos, pero el acceso pasa por el libro de conjuros: cuatro de nivel 1 al empezar y uno por nivel, o sea <b>23 conjuros en el nivel 20</b> — menos de la mitad de lo que maneja un paladín. Ampliarlo cuesta 50 po y dos horas por nivel de conjuro.</p>
+</div>
+<div class="axis">
+<h4>Robustez de la concentración</h4><p class="q">Si su motor depende de concentrar, cuánto le cuesta mantenerla.</p><div class="rows">
+<div class="row"><span class="who">Paladín</span><div class="track" title="Paladín: 4 de 5"><div class="bar b-pal" style="--v:4"></div></div><span class="score">4</span></div>
+<div class="row"><span class="who">Explorador</span><div class="track" title="Explorador: 2 de 5"><div class="bar b-exp" style="--v:2"></div></div><span class="score">2</span></div>
+<div class="row"><span class="who">Magister</span><div class="track" title="Magister: 5 de 5"><div class="bar b-mag" style="--v:5"></div></div><span class="score">5</span></div>
+</div>
+<p class="why"><b class="c-pal">Paladín.</b> No tiene competencia en salvaciones de Constitución, pero su propia aura le suma Carisma a esa tirada y sus conjuros de castigo casi nunca concentran.</p>
+<p class="why"><b class="c-exp">Explorador.</b> El caso peor: su rasgo de nivel 1 es un conjuro de concentración de una hora, sin competencia en Constitución y sin ayuda ninguna hasta <b>Cazador persistente</b> en el nivel 13.</p>
+<p class="why"><b class="c-mag">Magister.</b> Competencia en Constitución de salida, <b>Mente acorazada</b> en el 10 — un 9 o menos cuenta como 10 frente al daño físico — y un rasgo, <b>Trance instintivo</b>, que solo funciona mientras concentra. Toda la clase está construida sobre esa tirada.</p>
+</div>
+<div class="axis">
+<h4>Curva de niveles</h4><p class="q">Cuántos niveles dan algo que se note.</p><div class="rows">
+<div class="row"><span class="who">Paladín</span><div class="track" title="Paladín: 3 de 5"><div class="bar b-pal" style="--v:3"></div></div><span class="score">3</span></div>
+<div class="row"><span class="who">Explorador</span><div class="track" title="Explorador: 4 de 5"><div class="bar b-exp" style="--v:4"></div></div><span class="score">4</span></div>
+<div class="row"><span class="who">Magister</span><div class="track" title="Magister: 5 de 5"><div class="bar b-mag" style="--v:5"></div></div><span class="score">5</span></div>
+</div>
+<p class="why"><b class="c-pal">Paladín.</b> Dos niveles muertos, el 13 y el 17, y un tramo 14-18 flojo salvo la expansión del aura. El grueso llega pronto: 6 y 11.</p>
+<p class="why"><b class="c-exp">Explorador.</b> Sin niveles muertos, pero varios muy pequeños: <b>Errante</b>, <b>Sentidos salvajes</b> y <b>Azote de enemigos</b> apenas cambian una partida.</p>
+<p class="why"><b class="c-mag">Magister.</b> Rasgo propio en todos los niveles que no son mejora de característica ni don épico, y cinco de subclase. Es la más densa de las tres — con el riesgo que eso trae de la mano.</p>
+</div>
+<div class="axis">
+<h4>Identidad y nicho</h4><p class="q">Si desaparece la clase, ¿queda un hueco que nadie llena?</p><div class="rows">
+<div class="row"><span class="who">Paladín</span><div class="track" title="Paladín: 5 de 5"><div class="bar b-pal" style="--v:5"></div></div><span class="score">5</span></div>
+<div class="row"><span class="who">Explorador</span><div class="track" title="Explorador: 3 de 5"><div class="bar b-exp" style="--v:3"></div></div><span class="score">3</span></div>
+<div class="row"><span class="who">Magister</span><div class="track" title="Magister: 4 de 5"><div class="bar b-mag" style="--v:4"></div></div><span class="score">4</span></div>
+</div>
+<p class="why"><b class="c-pal">Paladín.</b> Nadie más reparte un aura de salvaciones ni convierte espacios en daño instantáneo. El hueco sería enorme.</p>
+<p class="why"><b class="c-exp">Explorador.</b> Su problema histórico: el pícaro le disputa las pericias, el druida los conjuros y el guerrero los ataques. Lo que solo tiene él es la marca y el pilar de exploración.</p>
+<p class="why"><b class="c-mag">Magister.</b> Duelista antilanzador con economía de reacciones: nadie ocupa eso. El riesgo no son las otras dos semilanzadoras sino el Caballero Arcano y el Cantor de espadas, que arañan la misma fantasía desde el otro lado.</p>
+</div>
+<div class="axis">
+<h4>Independencia de la subclase</h4><p class="q">Cuánto se sostiene el chasis solo, sin lo que aporte la especialización.</p><div class="rows">
+<div class="row"><span class="who">Paladín</span><div class="track" title="Paladín: 4 de 5"><div class="bar b-pal" style="--v:4"></div></div><span class="score">4</span></div>
+<div class="row"><span class="who">Explorador</span><div class="track" title="Explorador: 3 de 5"><div class="bar b-exp" style="--v:3"></div></div><span class="score">3</span></div>
+<div class="row"><span class="who">Magister</span><div class="track" title="Magister: 2 de 5"><div class="bar b-mag" style="--v:2"></div></div><span class="score">2</span></div>
+</div>
+<p class="why"><b class="c-pal">Paladín.</b> Cuatro rasgos de subclase (3, 7, 15 y 20) sobre un chasis que ya trae aura, castigo y curación. El juramento pinta, no sostiene.</p>
+<p class="why"><b class="c-exp">Explorador.</b> Cuatro rasgos (3, 7, 11 y 15) sobre un chasis fino: entre el cazador y el señor de las bestias cambia media clase.</p>
+<p class="why"><b class="c-mag">Magister.</b> <b>Cinco</b> rasgos de subclase — 3, 5, 9, 13 y 17 —, uno más que las oficiales, y de las tres vías solo está escrita el Gematurgo; las otras dos están marcadas como probables descartes. Es la mayor deuda abierta de la clase.</p>
+</div>
+<div class="axis coste">
+<h4>Complejidad en mesa</h4><p class="q">Cuánto hay que tener en la cabeza para jugarla bien. Aquí más es peor.</p><div class="rows">
+<div class="row"><span class="who">Paladín</span><div class="track" title="Paladín: 3 de 5"><div class="bar b-pal" style="--v:3"></div></div><span class="score">3</span></div>
+<div class="row"><span class="who">Explorador</span><div class="track" title="Explorador: 2 de 5"><div class="bar b-exp" style="--v:2"></div></div><span class="score">2</span></div>
+<div class="row"><span class="who">Magister</span><div class="track" title="Magister: 5 de 5"><div class="bar b-mag" style="--v:5"></div></div><span class="score">5</span></div>
+</div>
+<p class="why"><b class="c-pal">Paladín.</b> Una decisión repetida — cuándo castigar — y un aura que se gestiona sola.</p>
+<p class="why"><b class="c-exp">Explorador.</b> La más sencilla de las tres: poner la marca y pegar.</p>
+<p class="why"><b class="c-mag">Magister.</b> Tres rasgos que se excluyen entre sí (Arcane Swordplay, Spellsword y la cláusula del ataque con arma), una reacción extra condicionada a concentrar, un libro de conjuros que administrar y la mano libre como requisito permanente.</p>
+</div></div>
+</section>
+
+<section class="col">
+  <h2><span class="num">08</span>El marcador en una tabla</h2>
+  <div class="scroller">
+    <table class="matrix">
+      <thead><tr><th>Eje</th><th style="color:var(--pal)">Paladín</th><th style="color:var(--exp)">Explorador</th><th style="color:var(--mag)">Magister</th></tr></thead>
+      <tbody><tr><td class="name">Daño sostenido</td><td class="s">4</td><td class="s">4</td><td class="s">5</td></tr><tr><td class="name">Daño explosivo</td><td class="s">5</td><td class="s">2</td><td class="s">2</td></tr><tr><td class="name">Economía de recursos</td><td class="s">4</td><td class="s">3</td><td class="s">4</td></tr><tr><td class="name">Economía de acciones</td><td class="s">2</td><td class="s">3</td><td class="s">5</td></tr><tr><td class="name">Defensa propia</td><td class="s">5</td><td class="s">3</td><td class="s">4</td></tr><tr><td class="name">Apoyo al grupo</td><td class="s">5</td><td class="s">3</td><td class="s">1</td></tr><tr><td class="name">Control del campo</td><td class="s">3</td><td class="s">4</td><td class="s">4</td></tr><tr><td class="name">Utilidad fuera de combate</td><td class="s">3</td><td class="s">5</td><td class="s">4</td></tr><tr><td class="name">Acceso real a la magia</td><td class="s">4</td><td class="s">5</td><td class="s">3</td></tr><tr><td class="name">Robustez de la concentración</td><td class="s">4</td><td class="s">2</td><td class="s">5</td></tr><tr><td class="name">Curva de niveles</td><td class="s">3</td><td class="s">4</td><td class="s">5</td></tr><tr><td class="name">Identidad y nicho</td><td class="s">5</td><td class="s">3</td><td class="s">4</td></tr><tr><td class="name">Independencia de la subclase</td><td class="s">4</td><td class="s">3</td><td class="s">2</td></tr><tr><td class="name">Complejidad en mesa <span class="note">(coste)</span></td><td class="s">3</td><td class="s">2</td><td class="s">5</td></tr></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="col">
+  <h2><span class="num">09</span>Qué define a cada una</h2>
+
+  <h3 style="color:var(--pal)">Paladín — la clase que reparte</h3>
+  <p><b>Lo que la define bien.</b> Es la única de las tres que hace algo por los demás en todo momento y sin
+  gastarlo: el aura de nivel 6 suma su Carisma a las salvaciones de todo el grupo, y eso no se apaga, no se
+  gasta y no requiere turno. Encima de esa base pone el mejor daño explosivo del juego y el mejor daño
+  sostenido gratuito a partir del 11. Es una clase que sabe exactamente lo que es.</p>
+  <p><b>Lo que la define mal.</b> Su turno está más apretado de lo que parece: castigar, curar e invocar
+  piden la misma acción adicional, y en 2024 lanzar el castigo cierra la puerta a otro conjuro con espacio
+  ese turno. Y tiene dos niveles vacíos, el 13 y el 17, en el tramo en que la mesa espera notar algo.</p>
+
+  <h3 style="color:var(--exp)">Explorador — la clase que llega</h3>
+  <p><b>Lo que la define bien.</b> El pilar de exploración es suyo de principio a fin, con pericias, velocidades,
+  aguante y una lista de rituales que ninguna otra semilanzadora tiene. Y es la más sencilla de jugar de las tres,
+  que es una virtud real y poco reconocida.</p>
+  <p><b>Lo que la define mal.</b> Su rasgo de nivel 1 es un conjuro de concentración de una hora en una clase sin
+  competencia en Constitución, y no recibe ninguna ayuda para mantenerlo hasta el nivel 13. Además su identidad se
+  la disputan tres clases a la vez: pericias con el pícaro, conjuros con el druida, ataques con el guerrero.
+  Es la peor definida de las tres, y no por falta de cosas buenas.</p>
+
+  <h3 style="color:var(--mag)">Magister — la clase que interrumpe</h3>
+  <p><b>Lo que la define bien.</b> Es la que mejor usa el turno completo: acción, acción adicional y reacción,
+  las tres con contenido propio, y desde el nivel 6 una reacción de más mientras concentre. Su chasis está
+  construido sobre la tirada de Constitución — competencia de salida y <b>Mente acorazada</b> en el 10 — que es
+  justo la tirada que sostiene esa forma de jugar. Y trae al grupo lo único que ninguna otra semilanzadora
+  puede traer: <em>contrahechizo</em>. El hueco existe y no se lo quita a nadie.</p>
+  <p><b>Lo que la define mal.</b> Tres cosas, y solo dos son decisiones.</p>
+  <p>La primera es su apoyo nulo, que sí es una decisión — cero curación, tomada a conciencia para no fabricar
+  un paladín de repuesto. La segunda es su daño explosivo bajo, otra decisión, esta vez para no pisar al Mago.
+  Las dos se defienden solas.</p>
+  <p>La tercera no es una decisión: <b>cinco rasgos de subclase, uno más que las oficiales, y solo una de las tres
+  vías escrita</b>. El chasis del paladín aguanta cualquier juramento porque el aura, el castigo y la curación ya
+  están puestos; el del Magister delega en la subclase en los niveles 3, 5, 9, 13 y 17, que son cinco de los seis
+  peldaños donde una clase se decide. Mientras el Gematurgo sea la única vía escrita, la clase es esa subclase.</p>
+  <p>Y un coste que conviene mirar de frente: es, con diferencia, la más difícil de jugar bien. <b>Arcane Swordplay</b>
+  y <b>Spellsword</b> se excluyen mutuamente, la cláusula del ataque con arma decide por cuál entra cada conjuro,
+  la reacción extra depende de estar concentrando y el libro hay que administrarlo. Cinco cosas que recordar
+  frente a la que tiene el explorador, que son cero.</p>
+</section>
+
+<section class="col">
+  <h2><span class="num">10</span>La forma del marcador</h2>
+  <p>Puestas las tres columnas una al lado de otra, lo que sale es que <b>el Magister es casi el negativo
+  del paladín</b>. Donde el paladín marca 5 — apoyo, defensa, daño explosivo — el Magister marca 1 o 2;
+  donde el Magister marca 5 — economía de acciones, concentración, densidad de niveles — el paladín marca
+  2 o 3. Para el criterio que gobierna todo el proyecto, que una clase nueva no pise a las que ya existen,
+  esa forma es exactamente la que se busca.</p>
+  <p>Con el explorador la relación es otra: comparten control y utilidad en cifras parecidas, pero por vías
+  que no se tocan — terreno y naturaleza frente a lanzadores y arcano. No hay solapamiento real.</p>
+  <p>Si el marcador señala un sitio donde mirar, no es el daño ni el equilibrio: es la <b>fila 13</b>.
+  La independencia de la subclase es el único eje donde el Magister queda por debajo de las dos oficiales
+  sin que exista una decisión de diseño que lo justifique.</p>
+</section>
+
+<section class="col">
+  <h2><span class="num">11</span>Lo que este análisis no puede decir</h2>
+  <p>No hay ninguna partida detrás. Las puntuaciones comparan reglas escritas, y las reglas escritas se
+  comportan de otra forma en una mesa concreta con un DM concreto.</p>
+  <p>Falta clase por escribir: veinte de los noventa y un conjuros del Magister no existen todavía, y dos de sus
+  tres subclases tampoco. Los ejes de daño, control y utilidad están puntuados sobre lo que hay, y las tres
+  familias que faltan pueden mover cualquiera de ellos.</p>
+  <p>Y las dos clases oficiales se juzgan aquí solo por el manual: sin subclases del propio manual salvo lo
+  citado, sin dotes y sin objetos mágicos, que en una campaña real cambian el reparto más que media clase.</p>
+</section>
+
+<p class="foot">Documento interno de trabajo. Página sin enlazar desde el índice ni desde ninguna otra,
+y marcada como no indexable. Contenido no oficial de fan; el material del Manual del Jugador 2024 es
+propiedad de Wizards of the Coast LLC.</p>
+
+</div>
+</body>
+</html>
