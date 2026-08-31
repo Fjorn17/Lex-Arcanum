@@ -1,554 +1,1565 @@
 <!DOCTYPE html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>El taller del Magister</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Spectral:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;display=swap">
-<style>
-:root{
-  --ground:#0a1420; --panel:#0d1b2a; --panel-2:#101f30; --panel-3:#16283c;
-  --rule:#1b4965; --hair:#27405a;
-  --text:#c7d5e3; --muted:#8ba3ba; --bright:#eaf2f9; --accent:#00a8e8;
-  --c-padre:#3987e5; --c-unico:#d95926; --c-otro:#199e70;
-  --bg-padre:rgba(57,135,229,.12); --bg-unico:rgba(217,89,38,.12); --bg-otro:rgba(25,158,112,.12);
-  --serif:"Spectral",Georgia,"Times New Roman",serif;
-  --display:"Cinzel","Trajan Pro",Georgia,serif;
-  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
-  --shadow:0 1px 0 rgba(255,255,255,.03) inset;
-}
-@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){
-  --ground:#eef2f6; --panel:#ffffff; --panel-2:#f6f9fc; --panel-3:#e9eff5;
-  --rule:#c3d4e2; --hair:#d8e3ec;
-  --text:#22384a; --muted:#5e768c; --bright:#0b1a27; --accent:#0a6f9c;
-  --c-padre:#2a78d6; --c-unico:#eb6834; --c-otro:#1baf7a;
-  --bg-padre:rgba(42,120,214,.10); --bg-unico:rgba(235,104,52,.10); --bg-otro:rgba(27,175,122,.10);
-  --shadow:0 1px 2px rgba(20,40,60,.05);
-}}
-:root[data-theme="light"]{
-  --ground:#eef2f6; --panel:#ffffff; --panel-2:#f6f9fc; --panel-3:#e9eff5;
-  --rule:#c3d4e2; --hair:#d8e3ec;
-  --text:#22384a; --muted:#5e768c; --bright:#0b1a27; --accent:#0a6f9c;
-  --c-padre:#2a78d6; --c-unico:#eb6834; --c-otro:#1baf7a;
-  --bg-padre:rgba(42,120,214,.10); --bg-unico:rgba(235,104,52,.10); --bg-otro:rgba(27,175,122,.10);
-  --shadow:0 1px 2px rgba(20,40,60,.05);
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--ground);color:var(--text);font-family:var(--serif);
-  font-weight:300;font-size:17px;line-height:1.68;-webkit-font-smoothing:antialiased}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
-.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem 6rem}
-.col{max-width:39rem}
-h1,h2,h3,h4{font-family:var(--display);color:var(--bright);text-wrap:balance;line-height:1.22;margin:0;font-weight:600}
-p{margin:0} strong{font-weight:600;color:var(--bright)} em{font-style:italic}
-.eyebrow{font-family:var(--mono);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:500}
-header.mast{border-bottom:1px solid var(--rule);padding:3.5rem 0 2rem;margin-bottom:2.5rem}
-header.mast .kicker{display:flex;gap:.9rem;align-items:baseline;flex-wrap:wrap;margin-bottom:1.3rem}
-header.mast h1{font-size:clamp(2.1rem,5.5vw,3.2rem)}
-header.mast .dek{margin-top:1rem;font-size:1.1rem;color:var(--muted);max-width:35rem}
-section{margin-top:4rem}
-section>h2{font-size:1.55rem;padding-bottom:.5rem;border-bottom:1px solid var(--rule);margin-bottom:1.4rem}
-section>h2 .num{font-family:var(--mono);font-size:.78rem;color:var(--accent);margin-right:.7rem;vertical-align:.18em;font-weight:500}
-h3{font-size:1.08rem;margin:1.9rem 0 .6rem}
-.stack{display:flex;flex-direction:column;gap:1rem}
-.verdict{background:var(--panel);border:1px solid var(--rule);border-left:3px solid var(--accent);
-  padding:1.4rem 1.5rem;display:flex;flex-direction:column;gap:.85rem;box-shadow:var(--shadow)}
-.verdict .lead{font-family:var(--display);font-size:1.2rem;color:var(--bright);line-height:1.36}
-/* ---- categorías ---- */
-.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(13.5rem,1fr));gap:1px;background:var(--hair);border:1px solid var(--hair);margin-bottom:1.6rem}
-.cats>div{background:var(--panel-2);padding:.95rem 1.05rem;display:flex;flex-direction:column;gap:.35rem}
-.cats .tag{font-family:var(--mono);font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;display:inline-flex;align-items:center;gap:.45rem}
-.cats .tag i{width:.8rem;height:.8rem;border-radius:2px;display:inline-block}
-.cats p{font-size:.88rem;color:var(--muted)}
-/* ---- rejilla de conjuros ---- */
-.lvblock{margin-bottom:1.1rem}
-.lvhead{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:.5rem}
-.chips{display:flex;flex-wrap:wrap;gap:5px}
-.chip{font-size:.84rem;padding:.22rem .55rem .24rem;border:1px solid var(--hair);border-radius:2px;
-  background:var(--panel-2);display:inline-flex;align-items:baseline;gap:.4rem;line-height:1.35}
-.chip b{font-family:var(--mono);font-size:.62rem;font-weight:600;letter-spacing:.04em;opacity:.9}
-.c-padre{border-color:var(--c-padre);background:var(--bg-padre)} .c-padre b{color:var(--c-padre)}
-.c-unico{border-color:var(--c-unico);background:var(--bg-unico)} .c-unico b{color:var(--c-unico)}
-.c-otro{border-color:var(--c-otro);background:var(--bg-otro)} .c-otro b{color:var(--c-otro)}
-.c-comun b{color:var(--muted)}
-.tally{display:flex;gap:1px;background:var(--hair);border:1px solid var(--hair);margin-top:1rem;flex-wrap:wrap}
-.tally>div{background:var(--panel-2);padding:.7rem .95rem;flex:1 1 8rem;display:flex;flex-direction:column;gap:.15rem}
-.tally .n{font-family:var(--mono);font-size:1.25rem;font-variant-numeric:tabular-nums;color:var(--bright)}
-.tally .l{font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.bar{height:8px;display:flex;gap:2px;margin-top:1rem}
-.bar>span{border-radius:2px}
-.scroller{overflow-x:auto;border:1px solid var(--hair);background:var(--panel-2);margin:1.2rem 0}
-table{border-collapse:collapse;width:100%;min-width:34rem;font-size:.92rem}
-th,td{text-align:left;padding:.6rem .8rem;border-bottom:1px solid var(--hair);vertical-align:top}
-thead th{font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
-  font-weight:500;background:var(--panel-3);border-bottom:1px solid var(--rule)}
-tbody tr:last-child td{border-bottom:none}
-td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
-.pull{border-left:2px solid var(--accent);padding:.1rem 0 .1rem 1.2rem;font-family:var(--display);
-  font-size:1.12rem;line-height:1.45;color:var(--bright);margin:1.8rem 0}
-.rule{border:1px solid var(--hair);background:var(--panel);padding:1.1rem 1.25rem;box-shadow:var(--shadow);
-  display:flex;flex-direction:column;gap:.5rem}
-.rule h4{font-size:1rem}
-ol,ul{margin:0;padding-left:1.15rem} li{margin:.28rem 0}
+<html lang="es">
 
-/* ---- lista en construcción ---- */
-.build{border:1px solid var(--hair);background:var(--panel-2)}
-.brow{display:grid;grid-template-columns:5.2rem 1fr 4.6rem;gap:0 1rem;align-items:center;
-  padding:.75rem 1.1rem;border-bottom:1px solid var(--hair)}
-.brow:last-child{border-bottom:none}
-.brow .lb{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.brow .slots{display:flex;flex-wrap:wrap;gap:5px;align-items:center;min-height:1.9rem}
-.brow .cnt{font-family:var(--mono);font-size:.74rem;font-variant-numeric:tabular-nums;color:var(--muted);text-align:right}
-.empty{display:inline-block;width:1.9rem;height:.55rem;border:1px dashed var(--hair);border-radius:2px;opacity:.7}
-.rx{font-family:var(--mono);font-size:.58rem;letter-spacing:.06em;color:var(--accent);
-  border:1px solid var(--accent);border-radius:2px;padding:0 .28em;margin-left:.15em}
-@media(max-width:640px){.brow{grid-template-columns:1fr;gap:.3rem}.brow .cnt{text-align:left}}
-.pools{display:flex;flex-direction:column;gap:1px;background:var(--hair);border:1px solid var(--hair);margin-top:1.4rem}
-.pool{background:var(--panel-2);padding:.9rem 1.1rem}
-.phead{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:.6rem;flex-wrap:wrap}
-.phead .lb{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.phead .cnt{font-family:var(--mono);font-size:.66rem;color:var(--muted)}
-.p-a{border-color:var(--c-padre);background:var(--bg-padre)}
-.p-b{border-color:var(--c-otro);background:var(--bg-otro)}
-.p-c{opacity:.5;text-decoration:line-through;text-decoration-color:var(--hair)}
-.p-a b,.p-b b{color:var(--accent)}
-.mk{color:var(--c-unico);font-weight:600}
-.c-newp{border-style:dashed;border-color:var(--c-padre);background:transparent}
-.c-newp b{color:var(--c-padre)}
-.c-newu{border-style:dashed;border-color:var(--c-unico);background:transparent}
-.c-newu b{color:var(--c-unico)}
-.c-newo{border-style:dashed;border-color:var(--c-otro);background:transparent}
-.c-newo b{color:var(--c-otro)}
-.brow .slots .chip{margin-right:0}
-.chip i{font-family:var(--mono);font-size:.58rem;font-style:normal;color:var(--muted);opacity:.75}
-.k-on{border-color:var(--accent);background:rgba(0,168,232,.10)} .k-on b{color:var(--accent)}
-.k-nomago{border-color:var(--c-otro);background:var(--bg-otro)}
-.briefs{display:flex;flex-direction:column;gap:1px;background:var(--hair);border:1px solid var(--hair);margin-top:1.2rem}
-.brief{background:var(--panel-2);padding:1.05rem 1.2rem;border-left:3px solid var(--hair)}
-.brief.b-mago{border-left-color:var(--c-padre)}
-.brief.b-mag{border-left-color:var(--c-unico)}
-.bhead{display:flex;align-items:baseline;gap:.8rem;margin-bottom:.5rem;flex-wrap:wrap}
-.blv{font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
-  border:1px solid var(--hair);border-radius:2px;padding:.1rem .4rem;white-space:nowrap}
-.brief h4{font-size:1.02rem}
-.brief p{font-size:.94rem}
-.spell{border:1px solid var(--rule);background:var(--panel);padding:1rem 1.1rem;margin:.9rem 0 .2rem;
-  display:flex;flex-direction:column;gap:.6rem}
-.sname{font-family:var(--display);font-size:1.05rem;color:var(--bright);font-weight:600;letter-spacing:.01em}
-.smeta{font-style:italic;color:var(--muted);font-size:.88rem;margin-top:-.45rem}
-.sstat{display:grid;grid-template-columns:auto 1fr;gap:.1rem .5rem;margin:0;font-size:.88rem;
-  padding:.5rem 0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
-.sstat dt{font-weight:600;color:var(--bright)} .sstat dd{margin:0;color:var(--text)}
-.spell p{font-size:.9rem;line-height:1.6}
-.bcon{margin-top:.55rem;padding-left:.85rem;border-left:1px solid var(--hair);color:var(--muted);font-size:.88rem}
-footer{margin-top:4.5rem;padding-top:1.4rem;border-top:1px solid var(--rule);font-size:.86rem;color:var(--muted);
-  display:flex;flex-direction:column;gap:.6rem}
-</style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>El taller del Magister</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Spectral:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;display=swap">
+  <style>
+    :root {
+      --ground: #0a1420;
+      --panel: #0d1b2a;
+      --panel-2: #101f30;
+      --panel-3: #16283c;
+      --rule: #1b4965;
+      --hair: #27405a;
+      --text: #c7d5e3;
+      --muted: #8ba3ba;
+      --bright: #eaf2f9;
+      --accent: #00a8e8;
+      --c-padre: #3987e5;
+      --c-unico: #d95926;
+      --c-otro: #199e70;
+      --bg-padre: rgba(57, 135, 229, .12);
+      --bg-unico: rgba(217, 89, 38, .12);
+      --bg-otro: rgba(25, 158, 112, .12);
+      --serif: "Spectral", Georgia, "Times New Roman", serif;
+      --display: "Cinzel", "Trajan Pro", Georgia, serif;
+      --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+      --shadow: 0 1px 0 rgba(255, 255, 255, .03) inset;
+    }
+
+    @media (prefers-color-scheme:light) {
+      :root:not([data-theme="dark"]) {
+        --ground: #eef2f6;
+        --panel: #ffffff;
+        --panel-2: #f6f9fc;
+        --panel-3: #e9eff5;
+        --rule: #c3d4e2;
+        --hair: #d8e3ec;
+        --text: #22384a;
+        --muted: #5e768c;
+        --bright: #0b1a27;
+        --accent: #0a6f9c;
+        --c-padre: #2a78d6;
+        --c-unico: #eb6834;
+        --c-otro: #1baf7a;
+        --bg-padre: rgba(42, 120, 214, .10);
+        --bg-unico: rgba(235, 104, 52, .10);
+        --bg-otro: rgba(27, 175, 122, .10);
+        --shadow: 0 1px 2px rgba(20, 40, 60, .05);
+      }
+    }
+
+    :root[data-theme="light"] {
+      --ground: #eef2f6;
+      --panel: #ffffff;
+      --panel-2: #f6f9fc;
+      --panel-3: #e9eff5;
+      --rule: #c3d4e2;
+      --hair: #d8e3ec;
+      --text: #22384a;
+      --muted: #5e768c;
+      --bright: #0b1a27;
+      --accent: #0a6f9c;
+      --c-padre: #2a78d6;
+      --c-unico: #eb6834;
+      --c-otro: #1baf7a;
+      --bg-padre: rgba(42, 120, 214, .10);
+      --bg-unico: rgba(235, 104, 52, .10);
+      --bg-otro: rgba(27, 175, 122, .10);
+      --shadow: 0 1px 2px rgba(20, 40, 60, .05);
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      background: var(--ground);
+      color: var(--text);
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 1.68;
+      -webkit-font-smoothing: antialiased
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      * {
+        transition: none !important
+      }
+    }
+
+    .wrap {
+      max-width: 62rem;
+      margin: 0 auto;
+      padding: 0 1.5rem 6rem
+    }
+
+    .col {
+      max-width: 39rem
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: var(--display);
+      color: var(--bright);
+      text-wrap: balance;
+      line-height: 1.22;
+      margin: 0;
+      font-weight: 600
+    }
+
+    p {
+      margin: 0
+    }
+
+    strong {
+      font-weight: 600;
+      color: var(--bright)
+    }
+
+    em {
+      font-style: italic
+    }
+
+    .eyebrow {
+      font-family: var(--mono);
+      font-size: .68rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 500
+    }
+
+    header.mast {
+      border-bottom: 1px solid var(--rule);
+      padding: 3.5rem 0 2rem;
+      margin-bottom: 2.5rem
+    }
+
+    header.mast .kicker {
+      display: flex;
+      gap: .9rem;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 1.3rem
+    }
+
+    header.mast h1 {
+      font-size: clamp(2.1rem, 5.5vw, 3.2rem)
+    }
+
+    header.mast .dek {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 35rem
+    }
+
+    section {
+      margin-top: 4rem
+    }
+
+    section>h2 {
+      font-size: 1.55rem;
+      padding-bottom: .5rem;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 1.4rem
+    }
+
+    section>h2 .num {
+      font-family: var(--mono);
+      font-size: .78rem;
+      color: var(--accent);
+      margin-right: .7rem;
+      vertical-align: .18em;
+      font-weight: 500
+    }
+
+    h3 {
+      font-size: 1.08rem;
+      margin: 1.9rem 0 .6rem
+    }
+
+    .stack {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem
+    }
+
+    .verdict {
+      background: var(--panel);
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--accent);
+      padding: 1.4rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: .85rem;
+      box-shadow: var(--shadow)
+    }
+
+    .verdict .lead {
+      font-family: var(--display);
+      font-size: 1.2rem;
+      color: var(--bright);
+      line-height: 1.36
+    }
+
+    /* ---- categorías ---- */
+    .cats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr));
+      gap: 1px;
+      background: var(--hair);
+      border: 1px solid var(--hair);
+      margin-bottom: 1.6rem
+    }
+
+    .cats>div {
+      background: var(--panel-2);
+      padding: .95rem 1.05rem;
+      display: flex;
+      flex-direction: column;
+      gap: .35rem
+    }
+
+    .cats .tag {
+      font-family: var(--mono);
+      font-size: .66rem;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem
+    }
+
+    .cats .tag i {
+      width: .8rem;
+      height: .8rem;
+      border-radius: 2px;
+      display: inline-block
+    }
+
+    .cats p {
+      font-size: .88rem;
+      color: var(--muted)
+    }
+
+    /* ---- rejilla de conjuros ---- */
+    .lvblock {
+      margin-bottom: 1.1rem
+    }
+
+    .lvhead {
+      font-family: var(--mono);
+      font-size: .66rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: .5rem
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px
+    }
+
+    .chip {
+      font-size: .84rem;
+      padding: .22rem .55rem .24rem;
+      border: 1px solid var(--hair);
+      border-radius: 2px;
+      background: var(--panel-2);
+      display: inline-flex;
+      align-items: baseline;
+      gap: .4rem;
+      line-height: 1.35
+    }
+
+    .chip b {
+      font-family: var(--mono);
+      font-size: .62rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      opacity: .9
+    }
+
+    .c-padre {
+      border-color: var(--c-padre);
+      background: var(--bg-padre)
+    }
+
+    .c-padre b {
+      color: var(--c-padre)
+    }
+
+    .c-unico {
+      border-color: var(--c-unico);
+      background: var(--bg-unico)
+    }
+
+    .c-unico b {
+      color: var(--c-unico)
+    }
+
+    .c-otro {
+      border-color: var(--c-otro);
+      background: var(--bg-otro)
+    }
+
+    .c-otro b {
+      color: var(--c-otro)
+    }
+
+    .c-comun b {
+      color: var(--muted)
+    }
+
+    .tally {
+      display: flex;
+      gap: 1px;
+      background: var(--hair);
+      border: 1px solid var(--hair);
+      margin-top: 1rem;
+      flex-wrap: wrap
+    }
+
+    .tally>div {
+      background: var(--panel-2);
+      padding: .7rem .95rem;
+      flex: 1 1 8rem;
+      display: flex;
+      flex-direction: column;
+      gap: .15rem
+    }
+
+    .tally .n {
+      font-family: var(--mono);
+      font-size: 1.25rem;
+      font-variant-numeric: tabular-nums;
+      color: var(--bright)
+    }
+
+    .tally .l {
+      font-family: var(--mono);
+      font-size: .62rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted)
+    }
+
+    .bar {
+      height: 8px;
+      display: flex;
+      gap: 2px;
+      margin-top: 1rem
+    }
+
+    .bar>span {
+      border-radius: 2px
+    }
+
+    .scroller {
+      overflow-x: auto;
+      border: 1px solid var(--hair);
+      background: var(--panel-2);
+      margin: 1.2rem 0
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 34rem;
+      font-size: .92rem
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: .6rem .8rem;
+      border-bottom: 1px solid var(--hair);
+      vertical-align: top
+    }
+
+    thead th {
+      font-family: var(--mono);
+      font-size: .64rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 500;
+      background: var(--panel-3);
+      border-bottom: 1px solid var(--rule)
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none
+    }
+
+    td.num {
+      font-family: var(--mono);
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+      white-space: nowrap
+    }
+
+    .pull {
+      border-left: 2px solid var(--accent);
+      padding: .1rem 0 .1rem 1.2rem;
+      font-family: var(--display);
+      font-size: 1.12rem;
+      line-height: 1.45;
+      color: var(--bright);
+      margin: 1.8rem 0
+    }
+
+    .rule {
+      border: 1px solid var(--hair);
+      background: var(--panel);
+      padding: 1.1rem 1.25rem;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: .5rem
+    }
+
+    .rule h4 {
+      font-size: 1rem
+    }
+
+    ol,
+    ul {
+      margin: 0;
+      padding-left: 1.15rem
+    }
+
+    li {
+      margin: .28rem 0
+    }
+
+    /* ---- lista en construcción ---- */
+    .build {
+      border: 1px solid var(--hair);
+      background: var(--panel-2)
+    }
+
+    .brow {
+      display: grid;
+      grid-template-columns: 5.2rem 1fr 4.6rem;
+      gap: 0 1rem;
+      align-items: center;
+      padding: .75rem 1.1rem;
+      border-bottom: 1px solid var(--hair)
+    }
+
+    .brow:last-child {
+      border-bottom: none
+    }
+
+    .brow .lb {
+      font-family: var(--mono);
+      font-size: .7rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted)
+    }
+
+    .brow .slots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      align-items: center;
+      min-height: 1.9rem
+    }
+
+    .brow .cnt {
+      font-family: var(--mono);
+      font-size: .74rem;
+      font-variant-numeric: tabular-nums;
+      color: var(--muted);
+      text-align: right
+    }
+
+    .empty {
+      display: inline-block;
+      width: 1.9rem;
+      height: .55rem;
+      border: 1px dashed var(--hair);
+      border-radius: 2px;
+      opacity: .7
+    }
+
+    .rx {
+      font-family: var(--mono);
+      font-size: .58rem;
+      letter-spacing: .06em;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      border-radius: 2px;
+      padding: 0 .28em;
+      margin-left: .15em
+    }
+
+    @media(max-width:640px) {
+      .brow {
+        grid-template-columns: 1fr;
+        gap: .3rem
+      }
+
+      .brow .cnt {
+        text-align: left
+      }
+    }
+
+    .pools {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      background: var(--hair);
+      border: 1px solid var(--hair);
+      margin-top: 1.4rem
+    }
+
+    .pool {
+      background: var(--panel-2);
+      padding: .9rem 1.1rem
+    }
+
+    .phead {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: .6rem;
+      flex-wrap: wrap
+    }
+
+    .phead .lb {
+      font-family: var(--mono);
+      font-size: .7rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted)
+    }
+
+    .phead .cnt {
+      font-family: var(--mono);
+      font-size: .66rem;
+      color: var(--muted)
+    }
+
+    .p-a {
+      border-color: var(--c-padre);
+      background: var(--bg-padre)
+    }
+
+    .p-b {
+      border-color: var(--c-otro);
+      background: var(--bg-otro)
+    }
+
+    .p-c {
+      opacity: .5;
+      text-decoration: line-through;
+      text-decoration-color: var(--hair)
+    }
+
+    .p-a b,
+    .p-b b {
+      color: var(--accent)
+    }
+
+    .mk {
+      color: var(--c-unico);
+      font-weight: 600
+    }
+
+    .c-newp {
+      border-style: dashed;
+      border-color: var(--c-padre);
+      background: transparent
+    }
+
+    .c-newp b {
+      color: var(--c-padre)
+    }
+
+    .c-newu {
+      border-style: dashed;
+      border-color: var(--c-unico);
+      background: transparent
+    }
+
+    .c-newu b {
+      color: var(--c-unico)
+    }
+
+    .c-newo {
+      border-style: dashed;
+      border-color: var(--c-otro);
+      background: transparent
+    }
+
+    .c-newo b {
+      color: var(--c-otro)
+    }
+
+    .brow .slots .chip {
+      margin-right: 0
+    }
+
+    .chip i {
+      font-family: var(--mono);
+      font-size: .58rem;
+      font-style: normal;
+      color: var(--muted);
+      opacity: .75
+    }
+
+    .k-on {
+      border-color: var(--accent);
+      background: rgba(0, 168, 232, .10)
+    }
+
+    .k-on b {
+      color: var(--accent)
+    }
+
+    .k-nomago {
+      border-color: var(--c-otro);
+      background: var(--bg-otro)
+    }
+
+    .briefs {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      background: var(--hair);
+      border: 1px solid var(--hair);
+      margin-top: 1.2rem
+    }
+
+    .brief {
+      background: var(--panel-2);
+      padding: 1.05rem 1.2rem;
+      border-left: 3px solid var(--hair)
+    }
+
+    .brief.b-mago {
+      border-left-color: var(--c-padre)
+    }
+
+    .brief.b-mag {
+      border-left-color: var(--c-unico)
+    }
+
+    .bhead {
+      display: flex;
+      align-items: baseline;
+      gap: .8rem;
+      margin-bottom: .5rem;
+      flex-wrap: wrap
+    }
+
+    .blv {
+      font-family: var(--mono);
+      font-size: .6rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border: 1px solid var(--hair);
+      border-radius: 2px;
+      padding: .1rem .4rem;
+      white-space: nowrap
+    }
+
+    .brief h4 {
+      font-size: 1.02rem
+    }
+
+    .brief p {
+      font-size: .94rem
+    }
+
+    .spell {
+      border: 1px solid var(--rule);
+      background: var(--panel);
+      padding: 1rem 1.1rem;
+      margin: .9rem 0 .2rem;
+      display: flex;
+      flex-direction: column;
+      gap: .6rem
+    }
+
+    .sname {
+      font-family: var(--display);
+      font-size: 1.05rem;
+      color: var(--bright);
+      font-weight: 600;
+      letter-spacing: .01em
+    }
+
+    .smeta {
+      font-style: italic;
+      color: var(--muted);
+      font-size: .88rem;
+      margin-top: -.45rem
+    }
+
+    .sstat {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: .1rem .5rem;
+      margin: 0;
+      font-size: .88rem;
+      padding: .5rem 0;
+      border-top: 1px solid var(--hair);
+      border-bottom: 1px solid var(--hair)
+    }
+
+    .sstat dt {
+      font-weight: 600;
+      color: var(--bright)
+    }
+
+    .sstat dd {
+      margin: 0;
+      color: var(--text)
+    }
+
+    .spell p {
+      font-size: .9rem;
+      line-height: 1.6
+    }
+
+    .bcon {
+      margin-top: .55rem;
+      padding-left: .85rem;
+      border-left: 1px solid var(--hair);
+      color: var(--muted);
+      font-size: .88rem
+    }
+
+    footer {
+      margin-top: 4.5rem;
+      padding-top: 1.4rem;
+      border-top: 1px solid var(--rule);
+      font-size: .86rem;
+      color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      gap: .6rem
+    }
+  </style>
 </head>
+
 <body>
-<div class="wrap">
-<header class="mast">
-  <div class="kicker"><span class="eyebrow">Lex Arcanum · Conjuros</span><span class="eyebrow" style="color:var(--accent)">Manual del Jugador 2024</span></div>
-  <h1>El taller del Magister</h1>
-  <p class="dek">La lista de 91 conjuros, hueco por hueco: lo colocado, lo escrito y lo que falta por escribir.</p>
-</header>
+  <div class="wrap">
+    <header class="mast">
+      <div class="kicker"><span class="eyebrow">Lex Arcanum · Conjuros</span><span class="eyebrow"
+          style="color:var(--accent)">Manual del Jugador 2024</span></div>
+      <h1>El taller del Magister</h1>
+      <p class="dek">La lista de 91 conjuros, hueco por hueco: lo colocado, lo escrito y lo que falta por escribir.</p>
+    </header>
 
-<section class="col">
-  <h2><span class="num">01</span>Dónde va la lista</h2>
-  <div class="tally">
-    <div><span class="n">71 / 91</span><span class="l">Colocados</span></div>
-    <div><span class="n" style="color:var(--c-padre)">29 / 34</span><span class="l">Del mago</span></div>
-    <div><span class="n">33 / 33</span><span class="l">Comunes</span></div>
-    <div><span class="n" style="color:var(--c-unico)">2 / 17</span><span class="l">Lex Arcanum</span></div>
-    <div><span class="n" style="color:var(--c-otro)">7 / 7</span><span class="l">Prestados</span></div>
-  </div>
-  <p style="color:var(--muted);font-size:.92rem;margin-top:1rem">Los huecos con borde discontinuo son conjuros por escribir: en <span style="color:var(--c-padre)">azul</span> los cinco que entrarán también en la lista del Mago, en <span style="color:var(--c-unico)">naranja</span> los quince exclusivos del Magister que quedan por escribir, repartidos entre las dos familias.</p>
-
-  <div class="build">
-    <div class="brow"><span class="lb">Trucos</span><span class="slots">
-      <span class="chip c-padre"><b>P</b>Agarre electrizante</span>
-      <span class="chip c-comun"><b>·</b>Amistad</span>
-      <span class="chip c-comun"><b>·</b>Guardia de cuchillas</span>
-      <span class="chip c-comun"><b>·</b>Impacto certero</span>
-      <span class="chip c-comun"><b>·</b>Luz</span>
-      <span class="chip c-comun"><b>·</b>Mano de mago</span>
-      <span class="chip c-unico"><b>L</b>Estocada arcana</span>
-      <span class="chip c-newp"><b>NUEVO</b></span><span class="chip c-newp"><b>NUEVO</b></span>
-      <span class="chip c-newu"><b>FILOS</b></span><span class="chip c-newu"><b>FILOS</b></span>
-    </span><span class="cnt">7 / 11</span></div>
-
-    <div class="brow"><span class="lb">Nivel 1</span><span class="slots">
-      <span class="chip c-padre"><b>P</b>Escudo<span class="rx">REACCIÓN</span></span>
-      <span class="chip c-comun"><b>·</b>Caída de pluma<span class="rx">REACCIÓN</span></span>
-      <span class="chip c-padre"><b>P</b>Armadura de mago</span>
-      <span class="chip c-padre"><b>P</b>Alarma</span>
-      <span class="chip c-padre"><b>P</b>Disco flotante de Tenser</span>
-      <span class="chip c-padre"><b>P</b>Encontrar familiar</span>
-      <span class="chip c-padre"><b>P</b>Identificar</span>
-      <span class="chip c-padre"><b>P</b>Manos ardientes</span>
-      <span class="chip c-otro"><b>O</b>Duelo forzado</span>
-      <span class="chip c-otro"><b>O</b>Heroísmo</span>
-      <span class="chip c-otro"><b>O</b>Orden imperiosa</span>
-      <span class="chip c-comun"><b>·</b>Detectar magia</span>
-      <span class="chip c-comun"><b>·</b>Entender idiomas</span>
-      <span class="chip c-comun"><b>·</b>Retirada expeditiva</span>
-      <span class="chip c-comun"><b>·</b>Rociada de color</span>
-      <span class="chip c-comun"><b>·</b>Salto</span>
-      <span class="chip c-comun"><b>·</b>Sirviente invisible</span>
-      <span class="chip c-comun"><b>·</b>Texto ilusorio</span>
-      <span class="chip c-comun"><b>·</b>Zancada prodigiosa</span>
-      <span class="chip c-newu"><b>FILOS</b></span><span class="chip c-newu"><b>OBJECIÓN</b></span><span class="chip c-newu"><b>LEX</b></span>
-    </span><span class="cnt">19 / 22</span></div>
-
-    <div class="brow"><span class="lb">Nivel 2</span><span class="slots">
-      <span class="chip c-padre"><b>P</b>Arma mágica</span>
-      <span class="chip c-padre"><b>P</b>Contorno borroso</span>
-      <span class="chip c-padre"><b>P</b>Vigor arcano</span>
-      <span class="chip c-padre"><b>P</b>Levitar</span>
-      <span class="chip c-padre"><b>P</b>Aura mágica de Nystul</span>
-      <span class="chip c-padre"><b>P</b>Boca mágica</span>
-      <span class="chip c-padre"><b>P</b>Cerradura arcana</span>
-      <span class="chip c-otro"><b>O</b>Arma espiritual</span>
-      <span class="chip c-otro"><b>O</b>Silencio</span>
-      <span class="chip c-otro"><b>O</b>Zona de la verdad</span>
-      <span class="chip c-comun"><b>·</b>Abrir</span>
-      <span class="chip c-comun"><b>·</b>Agrandar/reducir</span>
-      <span class="chip c-comun"><b>·</b>Imagen múltiple</span>
-      <span class="chip c-comun"><b>·</b>Paso brumoso</span>
-      <span class="chip c-comun"><b>·</b>Potenciar característica</span>
-      <span class="chip c-comun"><b>·</b>Ráfaga de viento</span>
-      <span class="chip c-comun"><b>·</b>Sugestión</span>
-      <span class="chip c-comun"><b>·</b>Ver invisibilidad</span>
-      <span class="chip c-newu"><b>FILOS</b></span><span class="chip c-newu"><b>OBJECIÓN</b></span><span class="chip c-newu"><b>LEX</b></span>
-    </span><span class="cnt">18 / 21</span></div>
-
-    <div class="brow"><span class="lb">Nivel 3</span><span class="slots">
-      <span class="chip c-comun"><b>·</b>Contrahechizo<span class="rx">REACCIÓN</span></span>
-      <span class="chip c-padre"><b>P</b>Acelerar</span>
-      <span class="chip c-padre"><b>P</b>Desplazamiento</span>
-      <span class="chip c-padre"><b>P</b>Indetectable</span>
-      <span class="chip c-padre"><b>P</b>Corcel fantasma</span>
-      <span class="chip c-padre"><b>P</b>Cadenas de custodia</span>
-      <span class="chip c-otro"><b>O</b>Arma elemental</span>
-      <span class="chip c-comun"><b>·</b>Disipar magia</span>
-      <span class="chip c-comun"><b>·</b>Don de lenguas</span>
-      <span class="chip c-comun"><b>·</b>Glifo custodio</span>
-      <span class="chip c-comun"><b>·</b>Protección contra energía</span>
-      <span class="chip c-comun"><b>·</b>Ralentizar</span>
-      <span class="chip c-comun"><b>·</b>Volar</span>
-      <span class="chip c-unico"><b>L</b>Hendidura arrasadora</span>
-      <span class="chip c-newp"><b>NUEVO</b></span><span class="chip c-newp"><b>NUEVO</b></span>
-      <span class="chip c-newu"><b>LEX</b></span><span class="chip c-newu"><b>LEX</b></span>
-    </span><span class="cnt">14 / 18</span></div>
-
-    <div class="brow"><span class="lb">Nivel 4</span><span class="slots">
-      <span class="chip c-padre"><b>P</b>Esfera elástica de Otiluke</span>
-      <span class="chip c-padre"><b>P</b>Cofre oculto de Leomund</span>
-      <span class="chip c-padre"><b>P</b>Ojo arcano</span>
-      <span class="chip c-padre"><b>P</b>Mastín fiel de Mordenkainen</span>
-      <span class="chip c-padre"><b>P</b>Contrato mágico</span>
-      <span class="chip c-comun"><b>·</b>Destierro</span>
-      <span class="chip c-comun"><b>·</b>Libertad de movimiento</span>
-      <span class="chip c-newu"><b>FILOS</b></span><span class="chip c-newu"><b>OBJECIÓN</b></span>
-    </span><span class="cnt">7 / 9</span></div>
-
-    <div class="brow"><span class="lb">Nivel 5</span><span class="slots">
-      <span class="chip c-padre"><b>P</b>Golpe de viento acerado</span>
-      <span class="chip c-padre"><b>P</b>Círculo de poder</span>
-      <span class="chip c-padre"><b>P</b>Telequinesis</span>
-      <span class="chip c-padre"><b>P</b>Pasamuros</span>
-      <span class="chip c-comun"><b>·</b>Atadura planar</span>
-      <span class="chip c-comun"><b>·</b>Círculo de teletransportación</span>
-      <span class="chip c-newp"><b>NUEVO</b></span>
-      <span class="chip c-newu"><b>FILOS</b></span><span class="chip c-newu"><b>OBJECIÓN</b></span><span class="chip c-newu"><b>LEX</b></span>
-    </span><span class="cnt">6 / 10</span></div>
-
-  </div>
-
-  <h3>El presupuesto</h3>
-  <div class="scroller">
-    <table>
-      <thead><tr><th>Nivel</th><th class="num">Total</th><th class="num" style="color:var(--c-padre)">Del mago</th><th class="num" style="color:var(--muted)">Comunes</th><th class="num" style="color:var(--c-unico)">Lex Arcanum</th><th class="num" style="color:var(--c-otro)">Prestados</th></tr></thead>
-      <tbody>
-        <tr><td>Trucos</td><td class="num">11</td><td class="num">1 <span class="mk">+2</span></td><td class="num">5</td><td class="num">3</td><td class="num">—</td></tr>
-        <tr><td>Nivel 1</td><td class="num">22</td><td class="num">7</td><td class="num">9</td><td class="num">3</td><td class="num">3</td></tr>
-        <tr><td>Nivel 2</td><td class="num">21</td><td class="num">7</td><td class="num">8</td><td class="num">3</td><td class="num">3</td></tr>
-        <tr><td>Nivel 3</td><td class="num">18</td><td class="num">5 <span class="mk">+2</span></td><td class="num">7</td><td class="num">3</td><td class="num">1</td></tr>
-        <tr><td>Nivel 4</td><td class="num">9</td><td class="num">5</td><td class="num">2</td><td class="num">2</td><td class="num">—</td></tr>
-        <tr><td>Nivel 5</td><td class="num">10</td><td class="num">4 <span class="mk">+1</span></td><td class="num">2</td><td class="num">3</td><td class="num">—</td></tr>
-        <tr><td><strong>Total</strong></td><td class="num"><strong>91</strong></td><td class="num"><strong>34</strong></td><td class="num"><strong>33</strong></td><td class="num"><strong>17</strong></td><td class="num"><strong>7</strong></td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p style="color:var(--muted);font-size:.92rem">Medido sobre los 80 conjuros con nivel — lo único comparable con las dos listas oficiales, que no tienen trucos — el reparto queda en padre 39&nbsp;%, comunes 35&nbsp;%, únicos 18&nbsp;% y prestados 9&nbsp;%. Las cuatro cifras caen dentro de las bandas medidas en el Paladín y el Explorador.</p>
-  <p style="color:var(--muted);font-size:.92rem;margin-top:.5rem">La cifra en <span class="mk">naranja</span> son conjuros <strong>nuevos que hay que escribir</strong> y que entran también en la lista del Mago. Sin ellos el techo del bloque azul son 29 y la forma se sale de la banda por los dos lados.</p>
-</section>
-
-<section class="col">
-  <h2><span class="num">02</span>Las reglas de la lista</h2>
-  <div class="stack" style="gap:.9rem">
-    <div class="rule"><h4>Si el Mago se sentiría robado, fuera</h4>
-      <p>Es la regla que las dos listas oficiales siguen sin excepción. Bola de fuego, muro de fuerza, dominar persona y mano de Bigby son la razón de ser del Mago; un semilanzador que los tiene no lo complementa, lo sustituye a media potencia.</p></div>
-    <div class="rule"><h4>El daño viaja por la hoja</h4>
-      <p>De los dieciocho conjuros de daño de las dos listas oficiales, quince necesitan un arma en el circuito y los tres restantes son control de zona. Ninguna tiene un solo conjuro de «gasta un espacio y sale daño a distancia».</p></div>
-    <div class="rule"><h4>Objetivo único</h4>
-      <p>El daño gratuito que la clase ya tiene — el truco de cada asalto con Arcane Swordplay — escala con el número de objetivos, y ése es su desajuste: rinde mejor contra grupos que contra un rival, al revés de su fantasía. <em>Manos ardientes</em> es la única excepción, y tiene precedente exacto en <em>ola destructora</em> del Paladín.</p></div>
-    <div class="rule"><h4>Cero curación</h4>
-      <p>De los seis conjuros de curación disponibles en el fondo común no entró ninguno. Es la diferencia más visible con el Paladín: sin aura ni imposición de manos, la batería entera lo habría convertido en un paladín de repuesto.</p></div>
-  </div>
-</section>
-
-<section class="col">
-  <h2><span class="num">03</span>Escritos</h2>
-  <p>Cinco conjuros cerrados. Los dos compartidos con el Mago ocupan huecos azules del presupuesto; <em>tirón gravitacional</em> no entra en la lista del Magister y llega sólo por el Gematurgo, y <em>hendidura arrasadora</em> y <em>estocada arcana</em> son los dos primeros de los diecisiete exclusivos, el filo de nivel 3 y el tercer truco de la Familia A.</p>
-  <div class="briefs">
-
-    <div class="brief b-mago">
-      <div class="bhead"><span class="blv">Nivel 3</span><h4>Cadenas de custodia</h4><span class="blv" style="color:var(--c-padre);border-color:var(--c-padre)">Escrito</span></div>
-      <p style="color:var(--muted);font-size:.9rem">Chains of Custody</p>
-      <div class="spell">
-        <div class="sname">Cadenas de custodia</div>
-        <div class="smeta">Conjuro de nivel 3 · Conjuración (Magister, Mago)</div>
-        <dl class="sstat"><dt>Tiempo de lanzamiento:</dt><dd>Acción</dd><dt>Alcance:</dt><dd>18 m</dd><dt>Componentes:</dt><dd>V, S</dd><dt>Duración:</dt><dd>Concentración, hasta 10 minutos</dd></dl>
-        <p>Unas cadenas espectrales brotan del suelo y apresan a una criatura que puedas ver dentro del alcance. El objetivo hace una tirada de salvación de Destreza. Si la falla, las cadenas lo sujetan en el lugar en el que está mientras dure el conjuro y, si estaba volando, cae y sufre el daño por caída habitual.</p>
-        <p>Mientras esté sujeto, el objetivo puede moverse con normalidad, pero no puede alejarse voluntariamente más de 4,5 m del espacio en el que prendieron las cadenas. Cada vez que lance un conjuro sufre 1d8 de daño de fuerza, más 1d8 por cada nivel del espacio de conjuro que haya gastado.</p>
-        <p>El objetivo, o una criatura que esté a 1,5 m de él, puede usar una acción para hacer una prueba de Fuerza (Atletismo) contra la CD de salvación de tus conjuros; si tiene éxito, el conjuro termina.</p>
-        <p><strong>Con un espacio de conjuro de nivel superior.</strong> Tu Concentración puede durar más con un espacio de nivel 4 (hasta 1 hora) o de nivel 5 o superior (hasta 8 horas).</p>
+    <section class="col">
+      <h2><span class="num">01</span>Dónde va la lista</h2>
+      <div class="tally">
+        <div><span class="n">71 / 91</span><span class="l">Colocados</span></div>
+        <div><span class="n" style="color:var(--c-padre)">29 / 34</span><span class="l">Del mago</span></div>
+        <div><span class="n">33 / 33</span><span class="l">Comunes</span></div>
+        <div><span class="n" style="color:var(--c-unico)">2 / 17</span><span class="l">Lex Arcanum</span></div>
+        <div><span class="n" style="color:var(--c-otro)">7 / 7</span><span class="l">Prestados</span></div>
       </div>
-    </div>
-    <div class="brief b-mago">
-      <div class="bhead"><span class="blv">Truco</span><h4>Tirón gravitacional</h4><span class="blv" style="color:var(--c-padre);border-color:var(--c-padre)">Escrito</span></div>
-      <p style="color:var(--muted);font-size:.9rem">Gravitational Pull</p>
-      <div class="spell">
-        <div class="sname">Tirón gravitacional</div>
-        <div class="smeta">Truco de Transmutación (Mago)</div>
-        <dl class="sstat"><dt>Tiempo de lanzamiento:</dt><dd>Acción</dd><dt>Alcance:</dt><dd>Personal (cono de 4,5 m)</dd><dt>Componentes:</dt><dd>V, S</dd><dt>Duración:</dt><dd>Instantáneo</dd></dl>
-        <p>Extiendes la mano y pliegas la gravedad por un instante. Cada criatura de tamaño Grande o menor que se encuentre en un cono de 4,5 m hace una tirada de salvación de Fuerza. Si la falla, sufre 1d4 de daño de fuerza y es arrastrada 1,5 m en línea recta hacia ti.</p>
-        <p>Los objetos sueltos del cono que pesen 5 kg o menos y que nadie lleve puestos ni transporte son arrastrados hasta tus pies. Si tienes una mano libre, puedes atrapar uno de ellos como parte de la misma acción.</p>
-        <p><strong>Mejora de truco.</strong> El daño aumenta en 1d4 al alcanzar los niveles 5 (2d4), 11 (3d4) y 17 (4d4). Ni el cono ni la distancia del tirón cambian nunca.</p>
+      <p style="color:var(--muted);font-size:.92rem;margin-top:1rem">Los huecos con borde discontinuo son conjuros por
+        escribir: en <span style="color:var(--c-padre)">azul</span> los cinco que entrarán también en la lista del Mago,
+        en <span style="color:var(--c-unico)">naranja</span> los quince exclusivos del Magister que quedan por escribir,
+        repartidos entre las dos familias.</p>
+
+      <div class="build">
+        <div class="brow"><span class="lb">Trucos</span><span class="slots">
+            <span class="chip c-padre"><b>P</b>Agarre electrizante</span>
+            <span class="chip c-comun"><b>·</b>Amistad</span>
+            <span class="chip c-comun"><b>·</b>Guardia de cuchillas</span>
+            <span class="chip c-comun"><b>·</b>Impacto certero</span>
+            <span class="chip c-comun"><b>·</b>Luz</span>
+            <span class="chip c-comun"><b>·</b>Mano de mago</span>
+            <span class="chip c-unico"><b>L</b>Estocada arcana</span>
+            <span class="chip c-newp"><b>NUEVO</b></span><span class="chip c-newp"><b>NUEVO</b></span>
+            <span class="chip c-newu"><b>FILOS</b></span><span class="chip c-newu"><b>FILOS</b></span>
+          </span><span class="cnt">7 / 11</span></div>
+
+        <div class="brow"><span class="lb">Nivel 1</span><span class="slots">
+            <span class="chip c-padre"><b>P</b>Escudo<span class="rx">REACCIÓN</span></span>
+            <span class="chip c-comun"><b>·</b>Caída de pluma<span class="rx">REACCIÓN</span></span>
+            <span class="chip c-padre"><b>P</b>Armadura de mago</span>
+            <span class="chip c-padre"><b>P</b>Alarma</span>
+            <span class="chip c-unico"><b>L</b>Arma Vinculada</b></span>
+            <span class="chip c-padre"><b>P</b>Disco flotante de Tenser</span>
+            <span class="chip c-padre"><b>P</b>Encontrar familiar</span>
+            <span class="chip c-padre"><b>P</b>Identificar</span>
+            <span class="chip c-padre"><b>P</b>Manos ardientes</span>
+            <span class="chip c-otro"><b>O</b>Duelo forzado</span>
+            <span class="chip c-otro"><b>O</b>Heroísmo</span>
+            <span class="chip c-otro"><b>O</b>Orden imperiosa</span>
+            <span class="chip c-comun"><b>·</b>Detectar magia</span>
+            <span class="chip c-comun"><b>·</b>Entender idiomas</span>
+            <span class="chip c-comun"><b>·</b>Retirada expeditiva</span>
+            <span class="chip c-comun"><b>·</b>Rociada de color</span>
+            <span class="chip c-comun"><b>·</b>Salto</span>
+            <span class="chip c-comun"><b>·</b>Sirviente invisible</span>
+            <span class="chip c-comun"><b>·</b>Texto ilusorio</span>
+            <span class="chip c-comun"><b>·</b>Zancada prodigiosa</span>
+            <span class="chip c-newu"><b>FILOS</b></span>
+            <span class="chip c-newu"><b>OBJECIÓN</b></span>
+
+          </span><span class="cnt">19 / 22</span></div>
+
+        <div class="brow"><span class="lb">Nivel 2</span><span class="slots">
+            <span class="chip c-padre"><b>P</b>Arma mágica</span>
+            <span class="chip c-padre"><b>P</b>Contorno borroso</span>
+            <span class="chip c-padre"><b>P</b>Vigor arcano</span>
+            <span class="chip c-padre"><b>P</b>Levitar</span>
+            <span class="chip c-padre"><b>P</b>Aura mágica de Nystul</span>
+            <span class="chip c-padre"><b>P</b>Boca mágica</span>
+            <span class="chip c-padre"><b>P</b>Cerradura arcana</span>
+            <span class="chip c-otro"><b>O</b>Arma espiritual</span>
+            <span class="chip c-otro"><b>O</b>Silencio</span>
+            <span class="chip c-otro"><b>O</b>Zona de la verdad</span>
+            <span class="chip c-comun"><b>·</b>Abrir</span>
+            <span class="chip c-comun"><b>·</b>Agrandar/reducir</span>
+            <span class="chip c-comun"><b>·</b>Imagen múltiple</span>
+            <span class="chip c-comun"><b>·</b>Paso brumoso</span>
+            <span class="chip c-comun"><b>·</b>Potenciar característica</span>
+            <span class="chip c-comun"><b>·</b>Ráfaga de viento</span>
+            <span class="chip c-comun"><b>·</b>Sugestión</span>
+            <span class="chip c-comun"><b>·</b>Ver invisibilidad</span>
+            <span class="chip c-newu"><b>FILOS</b></span><span class="chip c-newu"><b>OBJECIÓN</b></span><span
+              class="chip c-newu"><b>LEX</b></span>
+          </span><span class="cnt">18 / 21</span></div>
+
+        <div class="brow"><span class="lb">Nivel 3</span><span class="slots">
+            <span class="chip c-comun"><b>·</b>Contrahechizo<span class="rx">REACCIÓN</span></span>
+            <span class="chip c-padre"><b>P</b>Acelerar</span>
+            <span class="chip c-padre"><b>P</b>Desplazamiento</span>
+            <span class="chip c-padre"><b>P</b>Indetectable</span>
+            <span class="chip c-padre"><b>P</b>Corcel fantasma</span>
+            <span class="chip c-padre"><b>P</b>Cadenas de custodia</span>
+            <span class="chip c-otro"><b>O</b>Arma elemental</span>
+            <span class="chip c-comun"><b>·</b>Disipar magia</span>
+            <span class="chip c-comun"><b>·</b>Don de lenguas</span>
+            <span class="chip c-comun"><b>·</b>Glifo custodio</span>
+            <span class="chip c-comun"><b>·</b>Protección contra energía</span>
+            <span class="chip c-comun"><b>·</b>Ralentizar</span>
+            <span class="chip c-comun"><b>·</b>Volar</span>
+            <span class="chip c-unico"><b>L</b>Hendidura arrasadora</span>
+            <span class="chip c-newp"><b>NUEVO</b></span><span class="chip c-newp"><b>NUEVO</b></span>
+            <span class="chip c-newu"><b>LEX</b></span><span class="chip c-newu"><b>LEX</b></span>
+          </span><span class="cnt">14 / 18</span></div>
+
+        <div class="brow"><span class="lb">Nivel 4</span><span class="slots">
+            <span class="chip c-padre"><b>P</b>Esfera elástica de Otiluke</span>
+            <span class="chip c-padre"><b>P</b>Cofre oculto de Leomund</span>
+            <span class="chip c-padre"><b>P</b>Ojo arcano</span>
+            <span class="chip c-padre"><b>P</b>Mastín fiel de Mordenkainen</span>
+            <span class="chip c-padre"><b>P</b>Contrato mágico</span>
+            <span class="chip c-comun"><b>·</b>Destierro</span>
+            <span class="chip c-comun"><b>·</b>Libertad de movimiento</span>
+            <span class="chip c-newu"><b>FILOS</b></span><span class="chip c-newu"><b>OBJECIÓN</b></span>
+          </span><span class="cnt">7 / 9</span></div>
+
+        <div class="brow"><span class="lb">Nivel 5</span><span class="slots">
+            <span class="chip c-padre"><b>P</b>Golpe de viento acerado</span>
+            <span class="chip c-padre"><b>P</b>Círculo de poder</span>
+            <span class="chip c-padre"><b>P</b>Telequinesis</span>
+            <span class="chip c-padre"><b>P</b>Pasamuros</span>
+            <span class="chip c-comun"><b>·</b>Atadura planar</span>
+            <span class="chip c-comun"><b>·</b>Círculo de teletransportación</span>
+            <span class="chip c-newp"><b>NUEVO</b></span>
+            <span class="chip c-newu"><b>FILOS</b></span><span class="chip c-newu"><b>OBJECIÓN</b></span><span
+              class="chip c-newu"><b>LEX</b></span>
+          </span><span class="cnt">6 / 10</span></div>
+
       </div>
-    </div>
-    <div class="brief b-mago">
-      <div class="bhead"><span class="blv">Nivel 4</span><h4>Contrato mágico</h4><span class="blv" style="color:var(--c-padre);border-color:var(--c-padre)">Escrito</span></div>
-      <p style="color:var(--muted);font-size:.9rem">Binding Contract</p>
-      <div class="spell">
-        <div class="sname">Contrato mágico</div>
-        <div class="smeta">Conjuro de nivel 4 · Abjuración (Magister, Mago)</div>
-        <dl class="sstat"><dt>Tiempo de lanzamiento:</dt><dd>10 minutos</dd><dt>Alcance:</dt><dd>Toque</dd><dt>Componentes:</dt><dd>V, S, M (tinta dorada por valor de 200 po o más, que el conjuro consume)</dd><dt>Duración:</dt><dd>Hasta que se disipe o se rompa</dd></dl>
-        <p>Al lanzar este conjuro, dos criaturas voluntarias se dan la mano y recitan en voz alta los términos de un acuerdo entre ambas. Cada una debe entender el idioma en que se recita y aceptar los términos libremente; el conjuro falla si alguna de las dos está Encantada o coaccionada por magia de cualquier otro modo. Cuando termina el lanzamiento, una runa dorada destella un instante en la palma de ambos firmantes.</p>
-        <p>Como parte del lanzamiento de este conjuro, lanzas también un conjuro que tengas preparado, que queda almacenado en el contrato en lugar de surtir efecto. Lanzarlo así no gasta un espacio de conjuro propio, pero debes aportar sus componentes con normalidad, y cualquier componente material que consuma se consume al sellar el contrato. El conjuro almacenado no puede ser de nivel superior al del espacio que hayas usado para el contrato, debe tener un tiempo de lanzamiento de una acción o una acción adicional, y debe tener como objetivo a una sola criatura o a un área.</p>
-        <p>Si un firmante rompe a sabiendas un término del contrato, ocurren dos cosas a la vez.</p>
-        <p><strong>Aviso.</strong> Todos los demás firmantes saben al instante que el contrato se ha roto y quién lo ha roto, sin importar la distancia ni el plano de existencia.</p>
-        <p><strong>Cumplimiento.</strong> El conjuro almacenado surte efecto sobre el infractor, centrado en él si afecta a un área. El infractor firmó los términos, así que el conjuro no puede fallarle: una tirada de ataque contra él acierta automáticamente, y el infractor falla automáticamente cualquier tirada de salvación o prueba que el conjuro almacenado exija. Cualquier otra criatura alcanzada por el conjuro lo resuelve con normalidad, usando tu modificador de ataque de conjuro o la CD de salvación de tus conjuros del momento en que lanzaste el contrato. Después, el contrato termina.</p>
-        <p>El contrato también termina si todos los firmantes acuerdan disolverlo, o si es objetivo de <em>disipar magia</em> lanzado con un espacio de conjuro de nivel 4 o superior. El DM decide si un acto concreto rompe un término.</p>
-        <p><strong>Con un espacio de conjuro de nivel superior.</strong> Una criatura voluntaria más puede unirse al contrato por cada nivel del espacio por encima de 4. Todos los firmantes deben estar presentes, unir las manos en el círculo y recitar los términos.</p>
+
+      <h3>El presupuesto</h3>
+      <div class="scroller">
+        <table>
+          <thead>
+            <tr>
+              <th>Nivel</th>
+              <th class="num">Total</th>
+              <th class="num" style="color:var(--c-padre)">Del mago</th>
+              <th class="num" style="color:var(--muted)">Comunes</th>
+              <th class="num" style="color:var(--c-unico)">Lex Arcanum</th>
+              <th class="num" style="color:var(--c-otro)">Prestados</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Trucos</td>
+              <td class="num">11</td>
+              <td class="num">1 <span class="mk">+2</span></td>
+              <td class="num">5</td>
+              <td class="num">3</td>
+              <td class="num">—</td>
+            </tr>
+            <tr>
+              <td>Nivel 1</td>
+              <td class="num">22</td>
+              <td class="num">7</td>
+              <td class="num">9</td>
+              <td class="num">3</td>
+              <td class="num">3</td>
+            </tr>
+            <tr>
+              <td>Nivel 2</td>
+              <td class="num">21</td>
+              <td class="num">7</td>
+              <td class="num">8</td>
+              <td class="num">3</td>
+              <td class="num">3</td>
+            </tr>
+            <tr>
+              <td>Nivel 3</td>
+              <td class="num">18</td>
+              <td class="num">5 <span class="mk">+2</span></td>
+              <td class="num">7</td>
+              <td class="num">3</td>
+              <td class="num">1</td>
+            </tr>
+            <tr>
+              <td>Nivel 4</td>
+              <td class="num">9</td>
+              <td class="num">5</td>
+              <td class="num">2</td>
+              <td class="num">2</td>
+              <td class="num">—</td>
+            </tr>
+            <tr>
+              <td>Nivel 5</td>
+              <td class="num">10</td>
+              <td class="num">4 <span class="mk">+1</span></td>
+              <td class="num">2</td>
+              <td class="num">3</td>
+              <td class="num">—</td>
+            </tr>
+            <tr>
+              <td><strong>Total</strong></td>
+              <td class="num"><strong>91</strong></td>
+              <td class="num"><strong>34</strong></td>
+              <td class="num"><strong>33</strong></td>
+              <td class="num"><strong>17</strong></td>
+              <td class="num"><strong>7</strong></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </div>
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Nivel 3</span><h4>Hendidura arrasadora</h4><span class="blv" style="color:var(--c-unico);border-color:var(--c-unico)">Escrito</span></div>
-      <p style="color:var(--muted);font-size:.9rem">Ravaging Cleave · Filos, nivel 3</p>
-      <div class="spell">
-        <div class="sname">Hendidura arrasadora</div>
-        <div class="smeta">Conjuro de nivel 3 · Evocación (Magister)</div>
-        <dl class="sstat"><dt>Tiempo de lanzamiento:</dt><dd>Acción</dd><dt>Alcance:</dt><dd>Personal (línea de 18 m)</dd><dt>Componentes:</dt><dd>S, M (un arma cuerpo a cuerpo de sutileza con la que seas competente, valorada en 1 pp o más)</dd><dt>Duración:</dt><dd>Instantáneo</dd></dl>
-        <p>Canalizas una cantidad enorme de energía a través de tu arma y la liberas en un golpe devastador de fuerza. Al lanzar este conjuro puedes optar por hacer un ataque cuerpo a cuerpo con el arma empleada, como parte de la acción, contra una criatura que esté a tu alcance.</p>
-        <p><strong>Si haces el ataque:</strong> el objetivo alcanzado sufre el daño normal del arma más 2d8 de daño de fuerza. Además, esa criatura tiene Desventaja en la tirada de salvación de este conjuro. <strong>Si no haces el ataque:</strong> liberas la energía en su forma bruta.</p>
-        <p>Hagas o no el ataque, y aciertes o no, una estela de fuerza de 18 m de largo y 1,5 m de ancho brota de ti. Cada criatura que se encuentre en el área (incluido el objetivo del ataque, si lo hubo) hace una tirada de salvación de Destreza y sufre 5d8 de daño de fuerza si la falla, o la mitad si tiene éxito.</p>
-        <p><strong>Con un espacio de conjuro de nivel superior.</strong> El daño —tanto el del ataque como el de la línea— aumenta en 1d8 por cada nivel del espacio por encima de 3.</p>
-        <p><strong>Notas.</strong> El ataque cuerpo a cuerpo es opcional, y esa elección decide con qué rasgo se lanza: <strong>si haces el ataque</strong>, lo lanzas con Spellsword, sustituyendo uno de los ataques de tu acción de Atacar; <strong>si no lo haces</strong>, el conjuro no exige ataque con arma y lo lanzas con Arcane Swordplay.</p>
+      <p style="color:var(--muted);font-size:.92rem">Medido sobre los 80 conjuros con nivel — lo único comparable con
+        las dos listas oficiales, que no tienen trucos — el reparto queda en padre 39&nbsp;%, comunes 35&nbsp;%, únicos
+        18&nbsp;% y prestados 9&nbsp;%. Las cuatro cifras caen dentro de las bandas medidas en el Paladín y el
+        Explorador.</p>
+      <p style="color:var(--muted);font-size:.92rem;margin-top:.5rem">La cifra en <span class="mk">naranja</span> son
+        conjuros <strong>nuevos que hay que escribir</strong> y que entran también en la lista del Mago. Sin ellos el
+        techo del bloque azul son 29 y la forma se sale de la banda por los dos lados.</p>
+    </section>
+
+    <section class="col">
+      <h2><span class="num">02</span>Las reglas de la lista</h2>
+      <div class="stack" style="gap:.9rem">
+        <div class="rule">
+          <h4>Si el Mago se sentiría robado, fuera</h4>
+          <p>Es la regla que las dos listas oficiales siguen sin excepción. Bola de fuego, muro de fuerza, dominar
+            persona y mano de Bigby son la razón de ser del Mago; un semilanzador que los tiene no lo complementa, lo
+            sustituye a media potencia.</p>
+        </div>
+        <div class="rule">
+          <h4>El daño viaja por la hoja</h4>
+          <p>De los dieciocho conjuros de daño de las dos listas oficiales, quince necesitan un arma en el circuito y
+            los tres restantes son control de zona. Ninguna tiene un solo conjuro de «gasta un espacio y sale daño a
+            distancia».</p>
+        </div>
+        <div class="rule">
+          <h4>Objetivo único</h4>
+          <p>El daño gratuito que la clase ya tiene — el truco de cada asalto con Arcane Swordplay — escala con el
+            número de objetivos, y ése es su desajuste: rinde mejor contra grupos que contra un rival, al revés de su
+            fantasía. <em>Manos ardientes</em> es la única excepción, y tiene precedente exacto en <em>ola
+              destructora</em> del Paladín.</p>
+        </div>
+        <div class="rule">
+          <h4>Cero curación</h4>
+          <p>De los seis conjuros de curación disponibles en el fondo común no entró ninguno. Es la diferencia más
+            visible con el Paladín: sin aura ni imposición de manos, la batería entera lo habría convertido en un
+            paladín de repuesto.</p>
+        </div>
       </div>
-    </div>
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Truco</span><h4>Estocada arcana</h4><span class="blv" style="color:var(--c-unico);border-color:var(--c-unico)">Escrito</span></div>
-      <p style="color:var(--muted);font-size:.9rem">Arcane Thrust · Filos, truco</p>
-      <div class="spell">
-        <div class="sname">Estocada arcana</div>
-        <div class="smeta">Truco de Evocación (Magister)</div>
-        <dl class="sstat"><dt>Tiempo de lanzamiento:</dt><dd>Acción, con un ataque con arma incluido</dd><dt>Alcance:</dt><dd>Personal (tu alcance, +1,5 m)</dd><dt>Componentes:</dt><dd>S, M (un arma cuerpo a cuerpo de sutileza que inflija daño perforante, con la que seas competente, valorada en 1 pc o más)</dd><dt>Duración:</dt><dd>Instantáneo</dd></dl>
-        <p>Te lanzas a fondo y un hilo de fuerza arcana recorre la hoja y se prolonga más allá de la punta. Al lanzar este conjuro haces un ataque cuerpo a cuerpo con el arma empleada.</p>
-        <p>En ese ataque el arma gana la propiedad Alcance, que suma 1,5 m a tu alcance con ella.</p>
-        <p>Si aciertas, el objetivo sufre el daño normal del arma y debe superar una tirada de salvación de Fuerza o pierde el equilibrio hasta el final de su siguiente turno. Mientras esté desequilibrada, una criatura tiene Desventaja en las pruebas de Fuerza y de Destreza, y las tiradas de ataque contra ella tienen Ventaja.</p>
-        <p><strong>Mejora de truco.</strong> El ataque inflige 1d4 de daño de fuerza adicional al alcanzar el nivel 5, 2d4 en el 11 y 3d4 en el 17. Ni el alcance adicional ni la pérdida de equilibrio cambian nunca.</p>
+    </section>
+
+    <section class="col">
+      <h2><span class="num">03</span>Escritos</h2>
+      <p>Cinco conjuros cerrados. Los dos compartidos con el Mago ocupan huecos azules del presupuesto; <em>tirón
+          gravitacional</em> no entra en la lista del Magister y llega sólo por el Gematurgo, y <em>hendidura
+          arrasadora</em> y <em>estocada arcana</em> son los dos primeros de los diecisiete exclusivos, el filo de nivel
+        3 y el tercer truco de la Familia A.</p>
+      <div class="briefs">
+
+        <div class="brief b-mago">
+          <div class="bhead"><span class="blv">Nivel 3</span>
+            <h4>Cadenas de custodia</h4><span class="blv"
+              style="color:var(--c-padre);border-color:var(--c-padre)">Escrito</span>
+          </div>
+          <p style="color:var(--muted);font-size:.9rem">Chains of Custody</p>
+          <div class="spell">
+            <div class="sname">Cadenas de custodia</div>
+            <div class="smeta">Conjuro de nivel 3 · Conjuración (Magister, Mago)</div>
+            <dl class="sstat">
+              <dt>Tiempo de lanzamiento:</dt>
+              <dd>Acción</dd>
+              <dt>Alcance:</dt>
+              <dd>18 m</dd>
+              <dt>Componentes:</dt>
+              <dd>V, S</dd>
+              <dt>Duración:</dt>
+              <dd>Concentración, hasta 10 minutos</dd>
+            </dl>
+            <p>Unas cadenas espectrales brotan del suelo y apresan a una criatura que puedas ver dentro del alcance. El
+              objetivo hace una tirada de salvación de Destreza. Si la falla, las cadenas lo sujetan en el lugar en el
+              que está mientras dure el conjuro y, si estaba volando, cae y sufre el daño por caída habitual.</p>
+            <p>Mientras esté sujeto, el objetivo puede moverse con normalidad, pero no puede alejarse voluntariamente
+              más de 4,5 m del espacio en el que prendieron las cadenas. Cada vez que lance un conjuro sufre 1d8 de daño
+              de fuerza, más 1d8 por cada nivel del espacio de conjuro que haya gastado.</p>
+            <p>El objetivo, o una criatura que esté a 1,5 m de él, puede usar una acción para hacer una prueba de Fuerza
+              (Atletismo) contra la CD de salvación de tus conjuros; si tiene éxito, el conjuro termina.</p>
+            <p><strong>Con un espacio de conjuro de nivel superior.</strong> Tu Concentración puede durar más con un
+              espacio de nivel 4 (hasta 1 hora) o de nivel 5 o superior (hasta 8 horas).</p>
+          </div>
+        </div>
+        <div class="brief b-mago">
+          <div class="bhead"><span class="blv">Truco</span>
+            <h4>Tirón gravitacional</h4><span class="blv"
+              style="color:var(--c-padre);border-color:var(--c-padre)">Escrito</span>
+          </div>
+          <p style="color:var(--muted);font-size:.9rem">Gravitational Pull</p>
+          <div class="spell">
+            <div class="sname">Tirón gravitacional</div>
+            <div class="smeta">Truco de Transmutación (Mago)</div>
+            <dl class="sstat">
+              <dt>Tiempo de lanzamiento:</dt>
+              <dd>Acción</dd>
+              <dt>Alcance:</dt>
+              <dd>Personal (cono de 4,5 m)</dd>
+              <dt>Componentes:</dt>
+              <dd>V, S</dd>
+              <dt>Duración:</dt>
+              <dd>Instantáneo</dd>
+            </dl>
+            <p>Extiendes la mano y pliegas la gravedad por un instante. Cada criatura de tamaño Grande o menor que se
+              encuentre en un cono de 4,5 m hace una tirada de salvación de Fuerza. Si la falla, sufre 1d4 de daño de
+              fuerza y es arrastrada 1,5 m en línea recta hacia ti.</p>
+            <p>Los objetos sueltos del cono que pesen 5 kg o menos y que nadie lleve puestos ni transporte son
+              arrastrados hasta tus pies. Si tienes una mano libre, puedes atrapar uno de ellos como parte de la misma
+              acción.</p>
+            <p><strong>Mejora de truco.</strong> El daño aumenta en 1d4 al alcanzar los niveles 5 (2d4), 11 (3d4) y 17
+              (4d4). Ni el cono ni la distancia del tirón cambian nunca.</p>
+          </div>
+        </div>
+        <div class="brief b-mago">
+          <div class="bhead"><span class="blv">Nivel 4</span>
+            <h4>Contrato mágico</h4><span class="blv"
+              style="color:var(--c-padre);border-color:var(--c-padre)">Escrito</span>
+          </div>
+          <p style="color:var(--muted);font-size:.9rem">Binding Contract</p>
+          <div class="spell">
+            <div class="sname">Contrato mágico</div>
+            <div class="smeta">Conjuro de nivel 4 · Abjuración (Magister, Mago)</div>
+            <dl class="sstat">
+              <dt>Tiempo de lanzamiento:</dt>
+              <dd>10 minutos</dd>
+              <dt>Alcance:</dt>
+              <dd>Toque</dd>
+              <dt>Componentes:</dt>
+              <dd>V, S, M (tinta dorada por valor de 200 po o más, que el conjuro consume)</dd>
+              <dt>Duración:</dt>
+              <dd>Hasta que se disipe o se rompa</dd>
+            </dl>
+            <p>Al lanzar este conjuro, dos criaturas voluntarias se dan la mano y recitan en voz alta los términos de un
+              acuerdo entre ambas. Cada una debe entender el idioma en que se recita y aceptar los términos libremente;
+              el conjuro falla si alguna de las dos está Encantada o coaccionada por magia de cualquier otro modo.
+              Cuando termina el lanzamiento, una runa dorada destella un instante en la palma de ambos firmantes.</p>
+            <p>Como parte del lanzamiento de este conjuro, lanzas también un conjuro que tengas preparado, que queda
+              almacenado en el contrato en lugar de surtir efecto. Lanzarlo así no gasta un espacio de conjuro propio,
+              pero debes aportar sus componentes con normalidad, y cualquier componente material que consuma se consume
+              al sellar el contrato. El conjuro almacenado no puede ser de nivel superior al del espacio que hayas usado
+              para el contrato, debe tener un tiempo de lanzamiento de una acción o una acción adicional, y debe tener
+              como objetivo a una sola criatura o a un área.</p>
+            <p>Si un firmante rompe a sabiendas un término del contrato, ocurren dos cosas a la vez.</p>
+            <p><strong>Aviso.</strong> Todos los demás firmantes saben al instante que el contrato se ha roto y quién lo
+              ha roto, sin importar la distancia ni el plano de existencia.</p>
+            <p><strong>Cumplimiento.</strong> El conjuro almacenado surte efecto sobre el infractor, centrado en él si
+              afecta a un área. El infractor firmó los términos, así que el conjuro no puede fallarle: una tirada de
+              ataque contra él acierta automáticamente, y el infractor falla automáticamente cualquier tirada de
+              salvación o prueba que el conjuro almacenado exija. Cualquier otra criatura alcanzada por el conjuro lo
+              resuelve con normalidad, usando tu modificador de ataque de conjuro o la CD de salvación de tus conjuros
+              del momento en que lanzaste el contrato. Después, el contrato termina.</p>
+            <p>El contrato también termina si todos los firmantes acuerdan disolverlo, o si es objetivo de <em>disipar
+                magia</em> lanzado con un espacio de conjuro de nivel 4 o superior. El DM decide si un acto concreto
+              rompe un término.</p>
+            <p><strong>Con un espacio de conjuro de nivel superior.</strong> Una criatura voluntaria más puede unirse al
+              contrato por cada nivel del espacio por encima de 4. Todos los firmantes deben estar presentes, unir las
+              manos en el círculo y recitar los términos.</p>
+          </div>
+        </div>
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Nivel 1</span>
+            <h4>Arma vinculada</h4><span class="blv"
+              style="color:var(--c-unico);border-color:var(--c-unico)">Escrito</span>
+          </div>
+          <p style="color:var(--muted);font-size:.9rem">Bound Weapon · Magister, nivel 1</p>
+          <div class="spell">
+            <div class="sname">Arma vinculada</div>
+            <div class="smeta">Conjuro de nivel 1 · Conjuración</div>
+            <dl class="sstat">
+              <dt>Tiempo de lanzamiento:</dt>
+              <dd>Acción o ritual</dd>
+              <dt>Alcance:</dt>
+              <dd>Toque</dd>
+              <dt>Componentes:</dt>
+              <dd>V, S</dd>
+              <dt>Duración:</dt>
+              <dd>8 horas o Permanente</dd>
+            </dl>
+            <p>Forjas un vínculo irrompible con un arma, asegurando que siempre vuelva a tu mano cuando más la
+              necesitas.</p>
+            <p>Debes estar empuñando el arma durante todo el tiempo de lanzamiento y, cuando este acabe, forjas el
+              vínculo. El vínculo falla si otra persona ya está vinculada al arma o si el arma es un objeto mágico al
+              que esté sintonizado alguien más.</p>
+            <p>Cuando te hayas vinculado con el arma, no podrán desarmarte de ella salvo que tengas el estado de
+              incapacitado. Si está en el mismo plano de existencia, puedes invocar el arma como acción adicional y
+              teletransportarla de inmediato a tu mano vacía.</p>
+            <p>Puedes tener un número máximo de armas vinculadas simultáneamente igual a tu modificador de Inteligencia
+              (mínimo una). Si intentas vincular un arma nueva y superas este límite, el arma con el vínculo más antiguo
+              deja de estar vinculada.</p>
+            <p><strong>Ritual prolongado.</strong> Si lanzas este conjuro como ritual, puedes decidir extender el tiempo
+              de lanzamiento a 1 hora en lugar de los 10 minutos habituales. Si lo haces, la duración del vínculo sobre
+              el arma se vuelve permanente hasta que se lance <em>Disipar magia</em> sobre ella o el arma entre en una
+              zona de antimagia.</p>
+          </div>
+        </div>
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Nivel 3</span>
+            <h4>Hendidura arrasadora</h4><span class="blv"
+              style="color:var(--c-unico);border-color:var(--c-unico)">Escrito</span>
+          </div>
+          <p style="color:var(--muted);font-size:.9rem">Ravaging Cleave · Filos, nivel 3</p>
+          <div class="spell">
+            <div class="sname">Hendidura arrasadora</div>
+            <div class="smeta">Conjuro de nivel 3 · Evocación (Magister)</div>
+            <dl class="sstat">
+              <dt>Tiempo de lanzamiento:</dt>
+              <dd>Acción</dd>
+              <dt>Alcance:</dt>
+              <dd>Personal (línea de 18 m)</dd>
+              <dt>Componentes:</dt>
+              <dd>S, M (un arma cuerpo a cuerpo de sutileza con la que seas competente, valorada en 1 pp o más)</dd>
+              <dt>Duración:</dt>
+              <dd>Instantáneo</dd>
+            </dl>
+            <p>Canalizas una cantidad enorme de energía a través de tu arma y la liberas en un golpe devastador de
+              fuerza. Al lanzar este conjuro puedes optar por hacer un ataque cuerpo a cuerpo con el arma empleada, como
+              parte de la acción, contra una criatura que esté a tu alcance.</p>
+            <p><strong>Si haces el ataque:</strong> el objetivo alcanzado sufre el daño normal del arma más 2d8 de daño
+              de fuerza. Además, esa criatura tiene Desventaja en la tirada de salvación de este conjuro. <strong>Si no
+                haces el ataque:</strong> liberas la energía en su forma bruta.</p>
+            <p>Hagas o no el ataque, y aciertes o no, una estela de fuerza de 18 m de largo y 1,5 m de ancho brota de
+              ti. Cada criatura que se encuentre en el área (incluido el objetivo del ataque, si lo hubo) hace una
+              tirada de salvación de Destreza y sufre 5d8 de daño de fuerza si la falla, o la mitad si tiene éxito.</p>
+            <p><strong>Con un espacio de conjuro de nivel superior.</strong> El daño —tanto el del ataque como el de la
+              línea— aumenta en 1d8 por cada nivel del espacio por encima de 3.</p>
+            <p><strong>Notas.</strong> El ataque cuerpo a cuerpo es opcional, y esa elección decide con qué rasgo se
+              lanza: <strong>si haces el ataque</strong>, lo lanzas con Spellsword, sustituyendo uno de los ataques de
+              tu acción de Atacar; <strong>si no lo haces</strong>, el conjuro no exige ataque con arma y lo lanzas con
+              Arcane Swordplay.</p>
+          </div>
+        </div>
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Truco</span>
+            <h4>Estocada arcana</h4><span class="blv"
+              style="color:var(--c-unico);border-color:var(--c-unico)">Escrito</span>
+          </div>
+          <p style="color:var(--muted);font-size:.9rem">Arcane Thrust · Filos, truco</p>
+          <div class="spell">
+            <div class="sname">Estocada arcana</div>
+            <div class="smeta">Truco de Evocación (Magister)</div>
+            <dl class="sstat">
+              <dt>Tiempo de lanzamiento:</dt>
+              <dd>Acción, con un ataque con arma incluido</dd>
+              <dt>Alcance:</dt>
+              <dd>Personal (tu alcance, +1,5 m)</dd>
+              <dt>Componentes:</dt>
+              <dd>S, M (un arma cuerpo a cuerpo de sutileza que inflija daño perforante, con la que seas competente,
+                valorada en 1 pc o más)</dd>
+              <dt>Duración:</dt>
+              <dd>Instantáneo</dd>
+            </dl>
+            <p>Te lanzas a fondo y un hilo de fuerza arcana recorre la hoja y se prolonga más allá de la punta. Al
+              lanzar este conjuro haces un ataque cuerpo a cuerpo con el arma empleada.</p>
+            <p>En ese ataque el arma gana la propiedad Alcance, que suma 1,5 m a tu alcance con ella.</p>
+            <p>Si aciertas, el objetivo sufre el daño normal del arma y debe superar una tirada de salvación de Fuerza o
+              pierde el equilibrio hasta el final de su siguiente turno. Mientras esté desequilibrada, una criatura
+              tiene Desventaja en las pruebas de Fuerza y de Destreza, y las tiradas de ataque contra ella tienen
+              Ventaja.</p>
+            <p><strong>Mejora de truco.</strong> El ataque inflige 1d4 de daño de fuerza adicional al alcanzar el nivel
+              5, 2d4 en el 11 y 3d4 en el 17. Ni el alcance adicional ni la pérdida de equilibrio cambian nunca.</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section class="col">
+      <h2><span class="num">04</span>Balance de los tres nuevos</h2>
+
+      <div class="stack" style="gap:1.1rem">
+        <div class="rule" style="border-left:3px solid var(--c-otro)">
+          <h4>Contrato mágico — entra, con tres retoques</h4>
+          <p>El motor ya existe y se llama <strong>glifo custodio</strong>. Su opción «glifo de conjuro» dice, palabra
+            por palabra: <em>«Puedes almacenar un conjuro preparado de nivel 3 o inferior en el glifo si lo lanzas como
+              parte de la creación de dicho glifo. El conjuro debe tener como objetivo una sola criatura o un
+              área.»</em> Y al activarse: <em>«Si el conjuro tiene un objetivo, elige como dicho objetivo a la criatura
+              que haya activado el glifo. Si afecta a un área, la zona está centrada en esa criatura.»</em> Es
+            exactamente tu Némesis, y es de nivel 3.</p>
+          <p style="margin-top:.6rem"><strong>Tu propia corrección es la regla del manual.</strong> La mejora de glifo
+            custodio dice: <em>«puedes almacenar cualquier conjuro de hasta el mismo nivel que el espacio de conjuro que
+              hayas empleado para el glifo custodio»</em>. Así que sí: el Némesis no puede superar el espacio usado para
+            el contrato. Ya está escrito así.</p>
+          <p style="margin-top:.6rem">Y hasta el componente material coincide: glifo custodio pide 200 po de polvo de
+            diamante consumido; tu tinta dorada, 200 po. La cifra es la correcta.</p>
+          <p style="margin-top:.6rem"><strong>Nivel 4 está bien.</strong> Hace más que el glifo — viaja con la persona,
+            cruza planos, avisa — pero exige que <em>las dos partes consientan</em>, que es una restricción que el glifo
+            no tiene y que impide usarlo como arma contra un enemigo cualquiera. Un nivel por encima del glifo es el
+            precio justo.</p>
+          <p class="bcon" style="margin-top:.7rem"><b>Lo que cambié.</b> La cláusula de disipación pedía el
+            consentimiento de una parte <em>además</em> de un espacio de igual nivel; eso lo hacía más difícil de quitar
+            que un <em>geas</em>, que se va con levantar maldición, restablecimiento mayor o deseo. Lo dejé en dos vías:
+            que todos los firmantes acuerden disolverlo, o <em>disipar magia</em> con espacio de nivel 4 o superior.
+            También unifiqué el nombre — el texto lo llamaba «Contrato Mágico» arriba y «Vínculo Contractual» abajo — y
+            añadí la línea de que el DM decide qué rompe un término, que es lo que hace falta para que la mesa no
+            discuta.</p>
+          <p class="bcon" style="margin-top:.45rem"><b>El truco que va a aparecer en tu mesa.</b> Dos aliados firman
+            «prometo no atacar a X», y uno lo rompe a propósito rodeado de enemigos para que el Némesis estalle centrado
+            en él. Es un conjuro de área retardado que se dispara cuando tú quieres. No lo prohibiría — cuesta diez
+            minutos, 200 po de tinta y los componentes del conjuro guardado, y es el mismo truco que se hace con el
+            glifo sobre un objeto transportable — pero conviene saberlo de antemano, y ahora más: el firmante que rompe
+            el pacto no tira salvación.</p>
+          <p class="bcon" style="margin-top:.45rem"><b>Lo último que cambió.</b> Dos decisiones de diseño posteriores.
+            El conjuro guardado ya no cuesta un segundo espacio — se lanza dentro del contrato y lo que paga son sus
+            componentes, consumidos al firmar — y el cumplimiento no admite tirada <em>contra quien rompe el pacto</em>:
+            el ataque acierta y la salvación se falla, porque el infractor firmó los términos. Cualquier otra criatura
+            que caiga en el área resuelve con normalidad contra tu CD. El precedente del glifo custodio se rompe aquí a
+            conciencia: el glifo cae sobre un desconocido que lo pisa, el contrato sólo sobre quien juró.</p>
+          <p class="bcon" style="margin-top:.45rem"><b>Sobre las clases.</b> Lo dejé en Mago y Magister. Meter clérigo y
+            paladín no rompe nada — el clérigo ya tiene glifo custodio — pero le quita distintivo a Lex Arcanum y
+            descuadra el presupuesto, porque éste es uno de los cinco huecos azules.</p>
+        </div>
+
+        <div class="rule" style="border-left:3px solid var(--c-otro)">
+          <h4>Tirón gravitacional — entra tal cual</h4>
+          <p>El precedente es <strong>látigo de espinas</strong>: truco, arrastra 3 m hacia ti, 1d6 perforante, escalado
+            5/11/17. El tuyo cambia el reparto — cono en vez de objetivo único, salvación en vez de tirada de ataque,
+            1,5 m en vez de 3, y 1d4 en vez de 1d6 — y ese intercambio está bien medido: más objetivos a cambio de menos
+            daño y menos tirón.</p>
+          <p style="margin-top:.6rem">El daño es deliberadamente bajo y está bien que lo sea: 4d4 en el nivel 17 es la
+            mitad de lo que hace <em>tronar</em>. El conjuro no es de daño, es de posición.</p>
+          <p style="margin-top:.6rem"><strong>Y resuelve un problema de la clase en vez de agravarlo.</strong> El
+            desajuste del Magister es que su daño gratuito es un cono mientras su fantasía es un duelo. Éste también es
+            un cono — pero <em>trae a los enemigos hacia ti</em>, o sea que fabrica el duelo. Es la única forma de cono
+            que la clase debería tener.</p>
+          <p class="bcon" style="margin-top:.7rem"><b>Dos ajustes menores.</b> Bajé el peso de los objetos de 9 kg (20
+            lb) a 4,5 kg (10 lb), que es la cifra de <em>mano de mago</em>, para no tener dos números distintos para lo
+            mismo. Y «Grande, Mediano o Pequeño» pasa a «Grande o menor», que es el idioma del manual y el de látigo de
+            espinas.</p>
+          <p class="bcon" style="margin-top:.45rem"><b>Transmutación, no evocación.</b> Doblar la gravedad es alterar
+            una propiedad del espacio, no proyectar energía. <em>Telequinesis</em> y <em>levitar</em> son transmutación;
+            <em>látigo de espinas</em> también.
+          </p>
+        </div>
+
+        <div class="rule" style="border-left:3px solid var(--c-unico)">
+          <h4>Mordaza Ilusoria — no la metí, y no es por poco</h4>
+          <p><strong>No hay ningún truco en el juego que impida lanzar conjuros.</strong> Los trucos de estorbo más
+            fuertes son <em>fragmento mental</em>, que resta 1d4 a <em>una</em> salvación, y <em>burla dañina</em>, que
+            da desventaja a <em>un</em> ataque. El tuyo apaga los componentes verbales durante un minuto: contra un
+            lanzador es apagarlo entero, porque casi todo lleva V.</p>
+          <p style="margin-top:.6rem">La referencia de precio es <strong>silencio</strong>, que hace lo mismo y es de
+            <strong>nivel 2</strong> — y encima el tuyo es mejor en lo que importa, porque silencio es una zona de la
+            que se sale andando y el tuyo va pegado a la criatura.
+          </p>
+          <p style="margin-top:.6rem">Las mitigaciones que le pusiste son buenas y no bastan. La salvación de
+            Inteligencia es de las peores del juego para casi todo lo que no sea un mago o una aberración; con CD 15
+            contra un +3 típico falla el 60&nbsp;% de las veces, y con la repetición al inicio de cada turno salen cerca
+            de dos asaltos de silencio total. Por un truco, a voluntad, todos los asaltos.</p>
+          <p style="margin-top:.6rem">Un detalle de reglas aparte: <strong>Silenciado no es un estado en 2024.</strong>
+            La lista de estados no lo incluye, así que el efecto hay que escribirlo entero: no puede hablar ni lanzar
+            conjuros con componente verbal.</p>
+          <p class="bcon" style="margin-top:.7rem"><b>Mi propuesta: nivel 1.</b> El concepto encaja perfectamente — es
+            la misma identidad anti‑lanzador que contrahechizo, silencio y cadenas de custodia — pero tiene que costar
+            espacio. A nivel 1, con la salvación de Inteligencia, la repetición cada turno y la cancelación por un
+            aliado, queda bien pagado y sigue siendo un conjuro que nadie más tiene.</p>
+          <p class="bcon" style="margin-top:.45rem"><b>Dónde ponerlo.</b> El cupo azul del nivel 1 está lleno (7 de 7),
+            así que hay dos vías: que sea <strong>exclusivo del Magister</strong> y ocupe el hueco «Libre» naranja del
+            nivel 1, o que sea compartido con el Mago y le quite una plaza al cupo de comunes de ese nivel, que es el
+            bloque que va más sobrado. Dime cuál y lo coloco.</p>
+          <p class="bcon" style="margin-top:.45rem"><b>Si lo quieres truco sí o sí</b>, la versión que sí cabe es mucho
+            más corta: dura <em>hasta el final de tu siguiente turno</em>, sin concentración y sin repetición. Un asalto
+            de mordaza a voluntad ya es fuerte, y deja de ser un conjuro de nivel 2 disfrazado.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="col">
+      <h2><span class="num">05</span>Los cinco del Mago</h2>
+      <p>Conjuros nuevos que entran en <strong>las dos listas</strong>: el Magister los necesita <em>y</em> el Mago los
+        tendría. Eso descarta todo lo que pase por la hoja — el Mago no pelea con espada — y todo lo que se lance como
+        reacción.</p>
+      <div class="briefs">
+        <div class="brief b-mago">
+          <div class="bhead"><span class="blv">Truco</span>
+            <h4>Un truco de verificación</h4>
+          </div>
+          <p>El Mago no tiene ningún truco de adivinación salvo <em>impacto certero</em>, que es un ataque disfrazado. Y
+            lo que un magistrado hace veinte veces al día — tocar un sello, un documento o un objeto y saber si ha sido
+            alterado por magia — hoy cuesta un conjuro de nivel 1 con ritual.</p>
+          <p class="bcon">Acción, toque, sin tirada. Dice si algo está bajo un efecto o ha sido modificado mágicamente,
+            no <em>cuál</em>: eso sigue siendo trabajo de <em>identificar</em> y <em>detectar magia</em>.</p>
+        </div>
+        <div class="brief b-mago">
+          <div class="bhead"><span class="blv">Truco</span>
+            <h4>El segundo truco</h4>
+          </div>
+          <p>Libre. La fila de trucos es la más pobre de material del Mago — de sus cuatro exclusivos, tres son
+            artillería a distancia y sólo <em>agarre electrizante</em> sirve.</p>
+          <p class="bcon">Alcance de toque o emanación desde ti. Nada de artillería.</p>
+        </div>
+        <div class="brief b-mago">
+          <div class="bhead"><span class="blv">Nivel 3</span>
+            <h4>Lectura de residuo arcano</h4>
+          </div>
+          <p>Falta lo más obvio del oficio: saber <strong>qué magia se obró aquí</strong>. No existe ese conjuro en
+            ningún nivel del manual.</p>
+          <p class="bcon">Ritual. Revela los conjuros lanzados en un espacio durante las últimas horas, su escuela y su
+            nivel — no la identidad del lanzador, que sería demasiado. Hace bloque con <em>ojo arcano</em> y <em>mastín
+              fiel</em>.</p>
+        </div>
+        <div class="brief b-mago">
+          <div class="bhead"><span class="blv">Nivel 3</span>
+            <h4>El tercero del nivel 3</h4>
+          </div>
+          <p>El nivel 3 concentra dos de los cinco conjuros nuevos porque es donde el material exclusivo del Mago se
+            agota antes: de sus nueve exclusivos sólo cinco eran aprovechables.</p>
+          <p class="bcon">El requisito duro es el de todos: si el Mago no lo querría en su lista, pertenece a la sección
+            siguiente.</p>
+        </div>
+        <div class="brief b-mago">
+          <div class="bhead"><span class="blv">Nivel 5</span>
+            <h4>Un recinto de magia reglada</h4>
+          </div>
+          <p>El Mago tiene muros y campos antimagia, de nivel 6 y 8, que son un martillo. Falta el bisturí: una zona
+            donde la magia no se prohíbe, se <strong>regula</strong>.</p>
+          <p class="bcon">Emanación amplia, duración de minutos, concentración. Dentro, lanzar por encima de cierto
+            nivel exige algo — una salvación, una declaración, un permiso — o el conjuro se revela.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="col">
+      <h2><span class="num">06</span>Los diecisiete del Magister</h2>
+      <p>El material que sólo puede escribirse. No hay precedente de una clase con <strong>dos</strong> familias — el
+        Paladín tiene una sola, sus ocho castigos — pero es que el Paladín tiene una espina mecánica y el Magister tiene
+        dos: la esgrima a dos manos y la economía de reacciones.</p>
+
+      <h3>Familia A · Filos — ocho</h3>
+      <p style="color:var(--muted);font-size:.92rem;margin-bottom:.9rem">Se lanzan a través del arma. Tres trucos y uno
+        por nivel. Con una letra pequeña que decide su forma: Arcane Swordplay exige que el conjuro <em>no</em> requiera
+        un ataque con arma y Spellsword exige justo lo contrario, así que cada filo alimenta uno de los dos rasgos,
+        nunca los dos.</p>
+      <div class="briefs">
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Truco</span>
+            <h4>Filos · el filo que corta el aire</h4>
+          </div>
+          <p>Uno de los tres trucos propios. El truco es lo que el Magister lanza <em>todos los asaltos</em> con Arcane
+            Swordplay: su conjuro más usado con diferencia.</p>
+          <p class="bcon">Se lanza a través del arma. Objetivo único. Debe funcionar como acción adicional con Arcane
+            Swordplay y sustituyendo un ataque con Spellsword, lo que exige que su lanzamiento incluya un ataque con
+            arma.</p>
+        </div>
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Truco</span>
+            <h4>Filos · el látigo</h4>
+          </div>
+          <p>El segundo, y éste ya tiene forma. El único truco del juego que arrastra a una criatura hacia ti es
+            <em>látigo de espinas</em>, del druida. Un filo que devuelve al que huye a tu alcance es más tuyo que suyo.
+          </p>
+          <p class="bcon">Alcance corto, tira de la criatura hacia ti. Hace trío con <em>duelo forzado</em> y <em>orden
+              imperiosa</em>: los tres dicen que de este duelo no te vas.</p>
+        </div>
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Truco</span>
+            <h4>Filos · el tercero — Estocada arcana</h4><span class="blv"
+              style="color:var(--c-unico);border-color:var(--c-unico)">Escrito</span>
+          </div>
+          <p>Una estocada que proyecta fuerza más allá de la punta: se lanza con un arma de sutileza perforante, que
+            gana Alcance, y si el objetivo falla una salvación de Fuerza lo deja desequilibrado — Desventaja en pruebas
+            de Fuerza y Destreza, y Ventaja para quien le ataque — con 1d4 de fuerza más en los niveles 5, 11 y 17.</p>
+          <p class="bcon">Por el arma y objetivo único, con el ataque dentro del lanzamiento. Eso lo deja fuera de
+            Arcane Swordplay y lo mete por Spellsword a partir del nivel 11; antes se lanza con la acción, y lo que
+            compra frente a dos ataques normales es el alcance.</p>
+        </div>
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Nivel 1</span>
+            <h4>Filos · nivel 1</h4>
+          </div>
+          <p>Entra en Arcane Swordplay en el nivel 7 de clase y en Spellsword en el 11.</p>
+          <p class="bcon">Requiere un ataque con arma como parte del lanzamiento, con escalado por espacio superior.</p>
+        </div>
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Nivel 2</span>
+            <h4>Filos · nivel 2</h4>
+          </div>
+          <p>Accesible con Arcane Swordplay a partir del nivel 13.</p>
+          <p class="bcon">Que los cinco filos con nivel no sean cinco veces «más daño»: uno debería mover, otro imponer
+            un estado, otro negar algo.</p>
+        </div>
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Nivel 3</span>
+            <h4>Filos · nivel 3 — Hendidura arrasadora</h4><span class="blv"
+              style="color:var(--c-unico);border-color:var(--c-unico)">Escrito</span>
+          </div>
+          <p>El techo de Arcane Swordplay a partir del nivel 18: el filo que un Magister de nivel alto lanza como acción
+            adicional cada asalto.</p>
+          <p class="bcon">El que más cuidado pide. A nivel 18, con Extra Attack, un filo de nivel 3 todos los asaltos es
+            mucho: debe pagar espacio y no ser de concentración.</p>
+        </div>
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Nivel 4</span>
+            <h4>Filos · nivel 4</h4>
+          </div>
+          <p>Fuera del alcance de Arcane Swordplay: se lanza con acción, o con Spellsword sustituyendo un ataque.</p>
+          <p class="bcon">Aquí puede permitirse ser grande, precisamente porque cuesta la acción entera.</p>
+        </div>
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Nivel 5</span>
+            <h4>Filos · nivel 5</h4>
+          </div>
+          <p>Comparte nivel con <em>golpe de viento acerado</em>, el molde prestado del Mago: aparecerte junto a varios
+            enemigos y pegarles con el arma.</p>
+          <p class="bcon">Que no lo repita. Si aquél es amplitud, éste debería ser profundidad: un golpe que decide un
+            duelo.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:2.4rem">Familia B · Objeciones — cuatro</h3>
+      <p style="color:var(--muted);font-size:.92rem;margin-bottom:.9rem">Tiempo de lanzamiento: reacción. Alimentan En
+        Garde, Instinctive Trance, Perfect Concentration y Grande Parade.</p>
+      <div class="briefs">
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Nivel 1</span>
+            <h4>Objeciones · nivel 1</h4>
+          </div>
+          <p>Tiempo de lanzamiento: <strong>reacción</strong>. En todo el manual hay cuatro conjuros de reacción y la
+            lista ya tiene tres. Cada uno nuevo es un acontecimiento.</p>
+          <p class="bcon">El disparador debe ser estrecho y estar en la primera línea, como en <em>escudo</em> y
+            <em>contrahechizo</em>. A nivel 1, algo pequeño y frecuente.
+          </p>
+        </div>
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Nivel 2</span>
+            <h4>Objeciones · nivel 2</h4>
+          </div>
+          <p>El segundo de la familia.</p>
+          <p class="bcon">Ojo con el límite de una reacción por asalto: cada objeción compite con <em>escudo</em>, con
+            En Garde y con los ataques de oportunidad. Si nunca gana esa comparación, nace muerta.</p>
+        </div>
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Nivel 3</span>
+            <h4>Objeciones · nivel 3 — ocupado</h4>
+          </div>
+          <p>Lo ocupa <strong>contrahechizo</strong> como miembro prestado, igual que <em>arma mágica</em> es el hueco
+            prestado del Paladín entre sus castigos.</p>
+          <p class="bcon">Engancha con Perfect Concentration, del nivel 18: contrahechizo obliga a una salvación de
+            Constitución, y el rasgo da desventaja en las salvaciones contra efectos que creas con una reacción.</p>
+        </div>
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Nivel 4</span>
+            <h4>Objeciones · nivel 4</h4>
+          </div>
+          <p>A partir de aquí responden a cosas grandes.</p>
+          <p class="bcon">Un espacio de nivel 4 gastado en una reacción tiene que impedir algo que de verdad iba a
+            doler; si no, el jugador preferirá subir <em>escudo</em>.</p>
+        </div>
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Nivel 5</span>
+            <h4>Objeciones · nivel 5</h4>
+          </div>
+          <p>La última, y con un espacio de nivel 5 el Magister tiene <strong>uno solo</strong> en toda su carrera.</p>
+          <p class="bcon">Tiene que ser el momento de la partida. Alimenta Perfect Concentration y Grande Parade, los
+            rasgos de nivel 18 y 20.</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:2.4rem">Los cinco libres</h3>
+      <div class="briefs">
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Nivel 1</span>
+            <h4>Libre · nivel 1</h4>
+          </div>
+          <p class="bcon">El nivel 1 es el más cargado de la lista — 22 conjuros — y el que más se juega.</p>
+        </div>
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Nivel 2</span>
+            <h4>Libre · nivel 2</h4>
+          </div>
+          <p class="bcon">El nivel donde la lista deja de parecer un espadachín y empieza a parecer un notario armado.
+          </p>
+        </div>
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Nivel 3</span>
+            <h4>Libre · nivel 3</h4>
+          </div>
+          <p class="bcon">Dos huecos libres en el mismo nivel: el 3 es donde el Mago y el fondo prestado se quedan
+            cortos a la vez.</p>
+        </div>
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Nivel 3</span>
+            <h4>Libre · nivel 3, el segundo</h4>
+          </div>
+        </div>
+        <div class="brief b-mag">
+          <div class="bhead"><span class="blv">Nivel 5</span>
+            <h4>Libre · nivel 5</h4>
+          </div>
+          <p class="bcon">El cierre de la lista.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="col">
+      <p class="eyebrow">Método</p>
+      <p>Las listas de clase y los textos de conjuro salen del Manual del Jugador 2024 en español, extraídos del
+        capítulo 7 conjuro a conjuro: 378 entradas con su nivel y sus clases, cero fallos de lectura. La categoría de
+        cada conjuro se decide contando en cuántas listas de lanzador completo aparece — cero es único, tres o más es
+        común, y en medio se mira si está en la del Mago.</p>
+      <p>Contenido no oficial de fan. Nada de esto es definitivo.</p>
+    </footer>
   </div>
-</section>
 
-<section class="col">
-  <h2><span class="num">04</span>Balance de los tres nuevos</h2>
+</body>
 
-  <div class="stack" style="gap:1.1rem">
-    <div class="rule" style="border-left:3px solid var(--c-otro)">
-      <h4>Contrato mágico — entra, con tres retoques</h4>
-      <p>El motor ya existe y se llama <strong>glifo custodio</strong>. Su opción «glifo de conjuro» dice, palabra por palabra: <em>«Puedes almacenar un conjuro preparado de nivel 3 o inferior en el glifo si lo lanzas como parte de la creación de dicho glifo. El conjuro debe tener como objetivo una sola criatura o un área.»</em> Y al activarse: <em>«Si el conjuro tiene un objetivo, elige como dicho objetivo a la criatura que haya activado el glifo. Si afecta a un área, la zona está centrada en esa criatura.»</em> Es exactamente tu Némesis, y es de nivel 3.</p>
-      <p style="margin-top:.6rem"><strong>Tu propia corrección es la regla del manual.</strong> La mejora de glifo custodio dice: <em>«puedes almacenar cualquier conjuro de hasta el mismo nivel que el espacio de conjuro que hayas empleado para el glifo custodio»</em>. Así que sí: el Némesis no puede superar el espacio usado para el contrato. Ya está escrito así.</p>
-      <p style="margin-top:.6rem">Y hasta el componente material coincide: glifo custodio pide 200 po de polvo de diamante consumido; tu tinta dorada, 200 po. La cifra es la correcta.</p>
-      <p style="margin-top:.6rem"><strong>Nivel 4 está bien.</strong> Hace más que el glifo — viaja con la persona, cruza planos, avisa — pero exige que <em>las dos partes consientan</em>, que es una restricción que el glifo no tiene y que impide usarlo como arma contra un enemigo cualquiera. Un nivel por encima del glifo es el precio justo.</p>
-      <p class="bcon" style="margin-top:.7rem"><b>Lo que cambié.</b> La cláusula de disipación pedía el consentimiento de una parte <em>además</em> de un espacio de igual nivel; eso lo hacía más difícil de quitar que un <em>geas</em>, que se va con levantar maldición, restablecimiento mayor o deseo. Lo dejé en dos vías: que todos los firmantes acuerden disolverlo, o <em>disipar magia</em> con espacio de nivel 4 o superior. También unifiqué el nombre — el texto lo llamaba «Contrato Mágico» arriba y «Vínculo Contractual» abajo — y añadí la línea de que el DM decide qué rompe un término, que es lo que hace falta para que la mesa no discuta.</p>
-      <p class="bcon" style="margin-top:.45rem"><b>El truco que va a aparecer en tu mesa.</b> Dos aliados firman «prometo no atacar a X», y uno lo rompe a propósito rodeado de enemigos para que el Némesis estalle centrado en él. Es un conjuro de área retardado que se dispara cuando tú quieres. No lo prohibiría — cuesta diez minutos, 200 po de tinta y los componentes del conjuro guardado, y es el mismo truco que se hace con el glifo sobre un objeto transportable — pero conviene saberlo de antemano, y ahora más: el firmante que rompe el pacto no tira salvación.</p>
-      <p class="bcon" style="margin-top:.45rem"><b>Lo último que cambió.</b> Dos decisiones de diseño posteriores. El conjuro guardado ya no cuesta un segundo espacio — se lanza dentro del contrato y lo que paga son sus componentes, consumidos al firmar — y el cumplimiento no admite tirada <em>contra quien rompe el pacto</em>: el ataque acierta y la salvación se falla, porque el infractor firmó los términos. Cualquier otra criatura que caiga en el área resuelve con normalidad contra tu CD. El precedente del glifo custodio se rompe aquí a conciencia: el glifo cae sobre un desconocido que lo pisa, el contrato sólo sobre quien juró.</p>
-      <p class="bcon" style="margin-top:.45rem"><b>Sobre las clases.</b> Lo dejé en Mago y Magister. Meter clérigo y paladín no rompe nada — el clérigo ya tiene glifo custodio — pero le quita distintivo a Lex Arcanum y descuadra el presupuesto, porque éste es uno de los cinco huecos azules.</p>
-    </div>
-
-    <div class="rule" style="border-left:3px solid var(--c-otro)">
-      <h4>Tirón gravitacional — entra tal cual</h4>
-      <p>El precedente es <strong>látigo de espinas</strong>: truco, arrastra 3 m hacia ti, 1d6 perforante, escalado 5/11/17. El tuyo cambia el reparto — cono en vez de objetivo único, salvación en vez de tirada de ataque, 1,5 m en vez de 3, y 1d4 en vez de 1d6 — y ese intercambio está bien medido: más objetivos a cambio de menos daño y menos tirón.</p>
-      <p style="margin-top:.6rem">El daño es deliberadamente bajo y está bien que lo sea: 4d4 en el nivel 17 es la mitad de lo que hace <em>tronar</em>. El conjuro no es de daño, es de posición.</p>
-      <p style="margin-top:.6rem"><strong>Y resuelve un problema de la clase en vez de agravarlo.</strong> El desajuste del Magister es que su daño gratuito es un cono mientras su fantasía es un duelo. Éste también es un cono — pero <em>trae a los enemigos hacia ti</em>, o sea que fabrica el duelo. Es la única forma de cono que la clase debería tener.</p>
-      <p class="bcon" style="margin-top:.7rem"><b>Dos ajustes menores.</b> Bajé el peso de los objetos de 9 kg (20 lb) a 4,5 kg (10 lb), que es la cifra de <em>mano de mago</em>, para no tener dos números distintos para lo mismo. Y «Grande, Mediano o Pequeño» pasa a «Grande o menor», que es el idioma del manual y el de látigo de espinas.</p>
-      <p class="bcon" style="margin-top:.45rem"><b>Transmutación, no evocación.</b> Doblar la gravedad es alterar una propiedad del espacio, no proyectar energía. <em>Telequinesis</em> y <em>levitar</em> son transmutación; <em>látigo de espinas</em> también.</p>
-    </div>
-
-    <div class="rule" style="border-left:3px solid var(--c-unico)">
-      <h4>Mordaza Ilusoria — no la metí, y no es por poco</h4>
-      <p><strong>No hay ningún truco en el juego que impida lanzar conjuros.</strong> Los trucos de estorbo más fuertes son <em>fragmento mental</em>, que resta 1d4 a <em>una</em> salvación, y <em>burla dañina</em>, que da desventaja a <em>un</em> ataque. El tuyo apaga los componentes verbales durante un minuto: contra un lanzador es apagarlo entero, porque casi todo lleva V.</p>
-      <p style="margin-top:.6rem">La referencia de precio es <strong>silencio</strong>, que hace lo mismo y es de <strong>nivel 2</strong> — y encima el tuyo es mejor en lo que importa, porque silencio es una zona de la que se sale andando y el tuyo va pegado a la criatura.</p>
-      <p style="margin-top:.6rem">Las mitigaciones que le pusiste son buenas y no bastan. La salvación de Inteligencia es de las peores del juego para casi todo lo que no sea un mago o una aberración; con CD 15 contra un +3 típico falla el 60&nbsp;% de las veces, y con la repetición al inicio de cada turno salen cerca de dos asaltos de silencio total. Por un truco, a voluntad, todos los asaltos.</p>
-      <p style="margin-top:.6rem">Un detalle de reglas aparte: <strong>Silenciado no es un estado en 2024.</strong> La lista de estados no lo incluye, así que el efecto hay que escribirlo entero: no puede hablar ni lanzar conjuros con componente verbal.</p>
-      <p class="bcon" style="margin-top:.7rem"><b>Mi propuesta: nivel 1.</b> El concepto encaja perfectamente — es la misma identidad anti‑lanzador que contrahechizo, silencio y cadenas de custodia — pero tiene que costar espacio. A nivel 1, con la salvación de Inteligencia, la repetición cada turno y la cancelación por un aliado, queda bien pagado y sigue siendo un conjuro que nadie más tiene.</p>
-      <p class="bcon" style="margin-top:.45rem"><b>Dónde ponerlo.</b> El cupo azul del nivel 1 está lleno (7 de 7), así que hay dos vías: que sea <strong>exclusivo del Magister</strong> y ocupe el hueco «Libre» naranja del nivel 1, o que sea compartido con el Mago y le quite una plaza al cupo de comunes de ese nivel, que es el bloque que va más sobrado. Dime cuál y lo coloco.</p>
-      <p class="bcon" style="margin-top:.45rem"><b>Si lo quieres truco sí o sí</b>, la versión que sí cabe es mucho más corta: dura <em>hasta el final de tu siguiente turno</em>, sin concentración y sin repetición. Un asalto de mordaza a voluntad ya es fuerte, y deja de ser un conjuro de nivel 2 disfrazado.</p>
-    </div>
-  </div>
-</section>
-
-<section class="col">
-  <h2><span class="num">05</span>Los cinco del Mago</h2>
-  <p>Conjuros nuevos que entran en <strong>las dos listas</strong>: el Magister los necesita <em>y</em> el Mago los tendría. Eso descarta todo lo que pase por la hoja — el Mago no pelea con espada — y todo lo que se lance como reacción.</p>
-  <div class="briefs">
-    <div class="brief b-mago">
-      <div class="bhead"><span class="blv">Truco</span><h4>Un truco de verificación</h4></div>
-      <p>El Mago no tiene ningún truco de adivinación salvo <em>impacto certero</em>, que es un ataque disfrazado. Y lo que un magistrado hace veinte veces al día — tocar un sello, un documento o un objeto y saber si ha sido alterado por magia — hoy cuesta un conjuro de nivel 1 con ritual.</p>
-      <p class="bcon">Acción, toque, sin tirada. Dice si algo está bajo un efecto o ha sido modificado mágicamente, no <em>cuál</em>: eso sigue siendo trabajo de <em>identificar</em> y <em>detectar magia</em>.</p>
-    </div>
-    <div class="brief b-mago">
-      <div class="bhead"><span class="blv">Truco</span><h4>El segundo truco</h4></div>
-      <p>Libre. La fila de trucos es la más pobre de material del Mago — de sus cuatro exclusivos, tres son artillería a distancia y sólo <em>agarre electrizante</em> sirve.</p>
-      <p class="bcon">Alcance de toque o emanación desde ti. Nada de artillería.</p>
-    </div>
-    <div class="brief b-mago">
-      <div class="bhead"><span class="blv">Nivel 3</span><h4>Lectura de residuo arcano</h4></div>
-      <p>Falta lo más obvio del oficio: saber <strong>qué magia se obró aquí</strong>. No existe ese conjuro en ningún nivel del manual.</p>
-      <p class="bcon">Ritual. Revela los conjuros lanzados en un espacio durante las últimas horas, su escuela y su nivel — no la identidad del lanzador, que sería demasiado. Hace bloque con <em>ojo arcano</em> y <em>mastín fiel</em>.</p>
-    </div>
-    <div class="brief b-mago">
-      <div class="bhead"><span class="blv">Nivel 3</span><h4>El tercero del nivel 3</h4></div>
-      <p>El nivel 3 concentra dos de los cinco conjuros nuevos porque es donde el material exclusivo del Mago se agota antes: de sus nueve exclusivos sólo cinco eran aprovechables.</p>
-      <p class="bcon">El requisito duro es el de todos: si el Mago no lo querría en su lista, pertenece a la sección siguiente.</p>
-    </div>
-    <div class="brief b-mago">
-      <div class="bhead"><span class="blv">Nivel 5</span><h4>Un recinto de magia reglada</h4></div>
-      <p>El Mago tiene muros y campos antimagia, de nivel 6 y 8, que son un martillo. Falta el bisturí: una zona donde la magia no se prohíbe, se <strong>regula</strong>.</p>
-      <p class="bcon">Emanación amplia, duración de minutos, concentración. Dentro, lanzar por encima de cierto nivel exige algo — una salvación, una declaración, un permiso — o el conjuro se revela.</p>
-    </div>
-  </div>
-</section>
-
-<section class="col">
-  <h2><span class="num">06</span>Los diecisiete del Magister</h2>
-  <p>El material que sólo puede escribirse. No hay precedente de una clase con <strong>dos</strong> familias — el Paladín tiene una sola, sus ocho castigos — pero es que el Paladín tiene una espina mecánica y el Magister tiene dos: la esgrima a dos manos y la economía de reacciones.</p>
-
-  <h3>Familia A · Filos — ocho</h3>
-  <p style="color:var(--muted);font-size:.92rem;margin-bottom:.9rem">Se lanzan a través del arma. Tres trucos y uno por nivel. Con una letra pequeña que decide su forma: Arcane Swordplay exige que el conjuro <em>no</em> requiera un ataque con arma y Spellsword exige justo lo contrario, así que cada filo alimenta uno de los dos rasgos, nunca los dos.</p>
-  <div class="briefs">
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Truco</span><h4>Filos · el filo que corta el aire</h4></div>
-      <p>Uno de los tres trucos propios. El truco es lo que el Magister lanza <em>todos los asaltos</em> con Arcane Swordplay: su conjuro más usado con diferencia.</p>
-      <p class="bcon">Se lanza a través del arma. Objetivo único. Debe funcionar como acción adicional con Arcane Swordplay y sustituyendo un ataque con Spellsword, lo que exige que su lanzamiento incluya un ataque con arma.</p>
-    </div>
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Truco</span><h4>Filos · el látigo</h4></div>
-      <p>El segundo, y éste ya tiene forma. El único truco del juego que arrastra a una criatura hacia ti es <em>látigo de espinas</em>, del druida. Un filo que devuelve al que huye a tu alcance es más tuyo que suyo.</p>
-      <p class="bcon">Alcance corto, tira de la criatura hacia ti. Hace trío con <em>duelo forzado</em> y <em>orden imperiosa</em>: los tres dicen que de este duelo no te vas.</p>
-    </div>
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Truco</span><h4>Filos · el tercero — Estocada arcana</h4><span class="blv" style="color:var(--c-unico);border-color:var(--c-unico)">Escrito</span></div>
-      <p>Una estocada que proyecta fuerza más allá de la punta: se lanza con un arma de sutileza perforante, que gana Alcance, y si el objetivo falla una salvación de Fuerza lo deja desequilibrado — Desventaja en pruebas de Fuerza y Destreza, y Ventaja para quien le ataque — con 1d4 de fuerza más en los niveles 5, 11 y 17.</p>
-      <p class="bcon">Por el arma y objetivo único, con el ataque dentro del lanzamiento. Eso lo deja fuera de Arcane Swordplay y lo mete por Spellsword a partir del nivel 11; antes se lanza con la acción, y lo que compra frente a dos ataques normales es el alcance.</p>
-    </div>
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Nivel 1</span><h4>Filos · nivel 1</h4></div>
-      <p>Entra en Arcane Swordplay en el nivel 7 de clase y en Spellsword en el 11.</p>
-      <p class="bcon">Requiere un ataque con arma como parte del lanzamiento, con escalado por espacio superior.</p>
-    </div>
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Nivel 2</span><h4>Filos · nivel 2</h4></div>
-      <p>Accesible con Arcane Swordplay a partir del nivel 13.</p>
-      <p class="bcon">Que los cinco filos con nivel no sean cinco veces «más daño»: uno debería mover, otro imponer un estado, otro negar algo.</p>
-    </div>
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Nivel 3</span><h4>Filos · nivel 3 — Hendidura arrasadora</h4><span class="blv" style="color:var(--c-unico);border-color:var(--c-unico)">Escrito</span></div>
-      <p>El techo de Arcane Swordplay a partir del nivel 18: el filo que un Magister de nivel alto lanza como acción adicional cada asalto.</p>
-      <p class="bcon">El que más cuidado pide. A nivel 18, con Extra Attack, un filo de nivel 3 todos los asaltos es mucho: debe pagar espacio y no ser de concentración.</p>
-    </div>
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Nivel 4</span><h4>Filos · nivel 4</h4></div>
-      <p>Fuera del alcance de Arcane Swordplay: se lanza con acción, o con Spellsword sustituyendo un ataque.</p>
-      <p class="bcon">Aquí puede permitirse ser grande, precisamente porque cuesta la acción entera.</p>
-    </div>
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Nivel 5</span><h4>Filos · nivel 5</h4></div>
-      <p>Comparte nivel con <em>golpe de viento acerado</em>, el molde prestado del Mago: aparecerte junto a varios enemigos y pegarles con el arma.</p>
-      <p class="bcon">Que no lo repita. Si aquél es amplitud, éste debería ser profundidad: un golpe que decide un duelo.</p>
-    </div>
-  </div>
-
-  <h3 style="margin-top:2.4rem">Familia B · Objeciones — cuatro</h3>
-  <p style="color:var(--muted);font-size:.92rem;margin-bottom:.9rem">Tiempo de lanzamiento: reacción. Alimentan En Garde, Instinctive Trance, Perfect Concentration y Grande Parade.</p>
-  <div class="briefs">
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Nivel 1</span><h4>Objeciones · nivel 1</h4></div>
-      <p>Tiempo de lanzamiento: <strong>reacción</strong>. En todo el manual hay cuatro conjuros de reacción y la lista ya tiene tres. Cada uno nuevo es un acontecimiento.</p>
-      <p class="bcon">El disparador debe ser estrecho y estar en la primera línea, como en <em>escudo</em> y <em>contrahechizo</em>. A nivel 1, algo pequeño y frecuente.</p>
-    </div>
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Nivel 2</span><h4>Objeciones · nivel 2</h4></div>
-      <p>El segundo de la familia.</p>
-      <p class="bcon">Ojo con el límite de una reacción por asalto: cada objeción compite con <em>escudo</em>, con En Garde y con los ataques de oportunidad. Si nunca gana esa comparación, nace muerta.</p>
-    </div>
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Nivel 3</span><h4>Objeciones · nivel 3 — ocupado</h4></div>
-      <p>Lo ocupa <strong>contrahechizo</strong> como miembro prestado, igual que <em>arma mágica</em> es el hueco prestado del Paladín entre sus castigos.</p>
-      <p class="bcon">Engancha con Perfect Concentration, del nivel 18: contrahechizo obliga a una salvación de Constitución, y el rasgo da desventaja en las salvaciones contra efectos que creas con una reacción.</p>
-    </div>
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Nivel 4</span><h4>Objeciones · nivel 4</h4></div>
-      <p>A partir de aquí responden a cosas grandes.</p>
-      <p class="bcon">Un espacio de nivel 4 gastado en una reacción tiene que impedir algo que de verdad iba a doler; si no, el jugador preferirá subir <em>escudo</em>.</p>
-    </div>
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Nivel 5</span><h4>Objeciones · nivel 5</h4></div>
-      <p>La última, y con un espacio de nivel 5 el Magister tiene <strong>uno solo</strong> en toda su carrera.</p>
-      <p class="bcon">Tiene que ser el momento de la partida. Alimenta Perfect Concentration y Grande Parade, los rasgos de nivel 18 y 20.</p>
-    </div>
-  </div>
-
-  <h3 style="margin-top:2.4rem">Los cinco libres</h3>
-  <div class="briefs">
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Nivel 1</span><h4>Libre · nivel 1</h4></div>
-      <p class="bcon">El nivel 1 es el más cargado de la lista — 22 conjuros — y el que más se juega.</p>
-    </div>
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Nivel 2</span><h4>Libre · nivel 2</h4></div>
-      <p class="bcon">El nivel donde la lista deja de parecer un espadachín y empieza a parecer un notario armado.</p>
-    </div>
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Nivel 3</span><h4>Libre · nivel 3</h4></div>
-      <p class="bcon">Dos huecos libres en el mismo nivel: el 3 es donde el Mago y el fondo prestado se quedan cortos a la vez.</p>
-    </div>
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Nivel 3</span><h4>Libre · nivel 3, el segundo</h4></div>
-    </div>
-    <div class="brief b-mag">
-      <div class="bhead"><span class="blv">Nivel 5</span><h4>Libre · nivel 5</h4></div>
-      <p class="bcon">El cierre de la lista.</p>
-    </div>
-  </div>
-</section>
-
-<footer class="col">
-  <p class="eyebrow">Método</p>
-  <p>Las listas de clase y los textos de conjuro salen del Manual del Jugador 2024 en español, extraídos del capítulo 7 conjuro a conjuro: 378 entradas con su nivel y sus clases, cero fallos de lectura. La categoría de cada conjuro se decide contando en cuántas listas de lanzador completo aparece — cero es único, tres o más es común, y en medio se mira si está en la del Mago.</p>
-  <p>Contenido no oficial de fan. Nada de esto es definitivo.</p>
-</footer>
-</div>
-
-</body></html>
+</html>

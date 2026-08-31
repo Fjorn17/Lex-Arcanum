@@ -1372,6 +1372,7 @@
     .fighting-styles .ic {
         vertical-align: middle;
     }
+
     .prog td.feat a {
         color: inherit;
         border-bottom: 1px dotted var(--rule)
@@ -1441,6 +1442,7 @@
         color: var(--muted);
         font-style: italic
     }
+
     .feature-link {
         color: var(--link);
         border-bottom: 1px solid transparent
@@ -1675,4 +1677,37 @@
 
     i.sp {
         color: var(--head)
+    }
+
+    /* Coloración de Rareza de Objetos (Estilo BG3 / Lex Arcanum) */
+    .rarity-common,
+    td.rarity-common {
+        color: #c6f1ff !important;
+    }
+
+    .rarity-uncommon,
+    td.rarity-uncommon {
+        color: #00ff22 !important;
+    }
+
+    .rarity-rare,
+    td.rarity-rare {
+        color: #00bfff !important;
+    }
+
+    .rarity-very-rare,
+    .rarity-veryrare,
+    td.rarity-very-rare,
+    td.rarity-veryrare {
+        color: #ff007f !important;
+    }
+
+    .rarity-legendary,
+    td.rarity-legendary {
+        color: #e6b800 !important;
+    }
+
+    .rarity-artifact,
+    td.rarity-artifact {
+        color: #ff5500 !important;
     }
