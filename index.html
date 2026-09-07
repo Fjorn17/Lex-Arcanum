@@ -1,14 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang-root>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lex Arcanum</title>
   <meta name="description"
-    content="Lex Arcanum: a homebrew supplement for D&amp;D 2024 and Baldur's Gate 3 — the Magister class, its subclasses, original spells, items and crafting rules.">
+    content="Lex Arcanum: a homebrew supplement for D&amp;D 2024 and Baldur's Gate 3, in English and Spanish.">
   <meta name="theme-color" content="#0a1420">
-  <link rel="canonical" href="https://fjorn17.github.io/Lex-Arcanum/">
+  <link rel="canonical" href="https://fjorn17.github.io/Lex-Arcanum/en/">
+  <link rel="alternate" hreflang="en" href="https://fjorn17.github.io/Lex-Arcanum/en/">
+  <link rel="alternate" hreflang="es" href="https://fjorn17.github.io/Lex-Arcanum/es/">
+  <link rel="alternate" hreflang="x-default" href="https://fjorn17.github.io/Lex-Arcanum/en/">
   <link rel="icon" href="./assets/img/magister_icon_simplified.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Lex Arcanum">
@@ -26,120 +29,36 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Spectral:ital,wght@0,300;0,400;0,600;1,400&display=swap">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/lang.js"></script>
 </head>
 
 <body class="cover-page">
-  <a class="skip" href="#contents">Skip to contents</a>
-
   <header class="cover">
     <div class="cover-art" aria-hidden="true"></div>
     <div class="cover-veil" aria-hidden="true"></div>
 
     <div class="cover-inner">
       <img class="cover-crest" src="./assets/img/magister_icon_simplified.png" alt="" width="104" height="104">
-      <p class="cover-eyebrow">Homebrew supplement &middot; D&amp;D 2024 &amp; Baldur&rsquo;s Gate&nbsp;3</p>
       <h1 class="cover-title">Lex Arcanum</h1>
       <p class="cover-rule" aria-hidden="true"><span></span></p>
-      <p class="cover-tag">The written body of law by which the order holds magic to account &mdash; and the duelists
-        sworn to enforce it.</p>
+      <p class="cover-tag" lang="en">Choose a language.</p>
+      <p class="cover-tag" lang="es" style="margin-top:2px">Elige un idioma.</p>
 
-      <nav class="cover-menu" aria-label="Main">
-        <a href="./pages/classes/magister.html">
-          <span class="mi-name">The Magister</span>
-          <span class="mi-desc">Intelligence half-caster &mdash; finesse blade in one hand, spell in the other</span>
+      <nav class="cover-menu" aria-label="Language">
+        <a href="./es/index.html" hreflang="es" lang="es">
+          <span class="mi-name">Español</span>
+          <span class="mi-desc">Suplemento casero para D&amp;D 2024 y Baldur&rsquo;s Gate&nbsp;3</span>
         </a>
-        <a href="./pages/subclasses/index.html">
-          <span class="mi-name">Subclasses</span>
-          <span class="mi-desc">The disciplines of the order, chosen at level&nbsp;3</span>
-        </a>
-        <a href="./pages/spells/index.html">
-          <span class="mi-name">Spells</span>
-          <span class="mi-desc">Original spells written for the supplement</span>
-        </a>
-        <a href="./pages/items/index.html">
-          <span class="mi-name">Items</span>
-          <span class="mi-desc">Magic items, foci and adventuring gear</span>
-        </a>
-        <a href="./pages/craft/index.html">
-          <span class="mi-name">Crafting</span>
-          <span class="mi-desc">Schematics, costs and permanent enchantment</span>
+        <a href="./en/index.html" hreflang="en" lang="en">
+          <span class="mi-name">English</span>
+          <span class="mi-desc">Homebrew supplement for D&amp;D 2024 and Baldur&rsquo;s Gate&nbsp;3</span>
         </a>
       </nav>
 
-      <p class="cover-note">Everything here is a draft. Features, numbers, spell lists and names are still being
-        tested and rewritten, and may change or disappear between revisions.</p>
+      <p class="cover-note" lang="en">If you have JavaScript enabled, this page sends you straight to whichever
+        version you last read &mdash; or to the one your browser asks for.</p>
     </div>
-
-    <a class="cover-scroll" href="#contents">Contents</a>
   </header>
-
-  <div class="wrap">
-    <main class="cover-sections" id="contents">
-      <h2>The Supplement</h2>
-
-      <div class="cover-grid">
-        <a class="cover-card" href="./pages/classes/magister.html">
-          <h3>Magister</h3>
-          <p>The full class: core traits, the progression table, every feature from level&nbsp;1 to&nbsp;20 and the
-            complete spell list.</p>
-          <span class="status s-draft">Written &middot; balancing</span>
-        </a>
-
-        <a class="cover-card" href="./pages/subclasses/index.html">
-          <h3>Subclasses</h3>
-          <p>Forgeknight is the path being written up. Weaver and Sigilist are documented as concepts and will most
-            likely be reworked or dropped.</p>
-          <span class="status s-draft">One of three</span>
-        </a>
-
-        <a class="cover-card" href="./pages/spells/index.html">
-          <h3>Spells</h3>
-          <p>The spells created for Lex Arcanum, each with its own page. Everything else on the Magister list is an
-            existing Player&rsquo;s Handbook spell.</p>
-          <span class="status s-draft">In progress</span>
-        </a>
-
-        <a class="cover-card" href="./pages/items/index.html">
-          <h3>Items</h3>
-          <p>Arcane foci, adventuring gear and the magic items the order issues to its duelists.</p>
-          <span class="status s-idea">Just started</span>
-        </a>
-
-        <a class="cover-card" href="./pages/craft/index.html">
-          <h3>Crafting</h3>
-          <p>The Compendium of Arcane Artisanship: Schematics, tool and Arcana requirements, costs and time per
-            rarity.</p>
-          <span class="status s-idea">Provisional rules</span>
-        </a>
-
-        <a class="cover-card" href="https://nivel20.com/games/dnd-2024/rulebooks/2638-lex-arcanum" target="_blank"
-          rel="noopener">
-          <h3>The Rulebook &rarr;</h3>
-          <p>The complete original material, in Spanish, on Nivel20. This site is the English working copy of it.</p>
-          <span class="status">External</span>
-        </a>
-      </div>
-
-      <footer>
-        <p class="legal"><b>Unofficial fan content.</b> Not affiliated with, endorsed or sponsored by Wizards of
-          the Coast LLC or Larian Studios. Nothing on this site is final.</p>
-        <p class="legal">Unofficial Fan Content permitted under the Wizards of the Coast Fan Content Policy. Not
-          approved or endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast.
-          &copy;&nbsp;Wizards of the Coast LLC.</p>
-        <p class="legal">This work includes material from the System Reference Document 5.2
-          (&ldquo;SRD&nbsp;5.2&rdquo;) by Wizards of the Coast LLC, available at
-          <a href="https://www.dndbeyond.com/srd">dndbeyond.com/srd</a>. The SRD&nbsp;5.2 is licensed under the
-          Creative Commons Attribution 4.0 International License, available at
-          <a
-            href="https://creativecommons.org/licenses/by/4.0/legalcode">creativecommons.org/licenses/by/4.0/legalcode</a>.
-        </p>
-        <p class="legal">Cover artwork by <a href="https://www.artstation.com/artwork/QKJEo3" target="_blank"
-            rel="noopener">Hyunjung Im</a>. Icons are assets of <i>Baldur&rsquo;s Gate&nbsp;3</i>, property of Larian
-          Studios, sourced from <a href="https://bg3.wiki/">bg3.wiki</a> (CC&nbsp;BY-SA&nbsp;4.0) and used here for
-          identification only. Rules links also point to bg3.wiki.</p>
-      </footer>
-    </main>
-  </div>
 </body>
 
 </html>

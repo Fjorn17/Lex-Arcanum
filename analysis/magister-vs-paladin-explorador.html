@@ -1,0 +1,915 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Magistrado vs. paladín y explorador &middot; Lex Arcanum</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description"
+    content="Análisis de balance interno: el Magistrado con Caballero de la Forja medido contra el paladín y el explorador del Manual del Jugador 2024.">
+  <link rel="icon" href="../assets/img/magister_icon_simplified.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Spectral:ital,wght@0,300;0,400;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="analysis">
+
+    <nav class="sitenav" aria-label="Site">
+      <a class="brand" href="../es/index.html">Lex Arcanum</a>
+      <a href="../es/pages/classes/magister.html">Magistrado</a>
+      <a href="../es/pages/subclasses/index.html">Subclasses</a>
+      <a href="../es/pages/spells/index.html">Spells</a>
+      <a href="../es/pages/items/index.html">Items</a>
+      <a href="../es/pages/craft/index.html">Crafting</a>
+      <a class="here" aria-current="page" href="./index.html">Análisis</a>
+    </nav>
+
+    <header>
+      <p class="internal">Documento interno &middot; no enlazado</p>
+      <h1>El Magistrado frente al paladín y el explorador</h1>
+      <p class="dek">Tercera revisión. El Magistrado con Caballero de la Forja, medido contra las dos semilanzadoras
+        del <i>Manual del Jugador 2024</i> en daño, coste, defensa y utilidad, para responder a una sola
+        pregunta: ¿compite, o se pasa?</p>
+      <p class="meta">Fuentes: Manual del Jugador 2024 (paladín pp. 156&ndash;165, explorador pp. 102&ndash;111)
+        &middot; páginas de clase, subclase y conjuros de este sitio &middot; niveles 3, 5, 11 y 17</p>
+    </header>
+
+    <!-- ================================================================= -->
+    <section id="resumen">
+      <h2><span class="num">00</span>Respuesta corta</h2>
+
+      <div class="verdict hot">
+        <h4>Se pasa &mdash; pero por tres sitios concretos, no por todo el diseño</h4>
+        <p>El chasis del Magistrado está bien calibrado: d10, dos salvaciones, cuatro rasgos de subclase y dos
+          niveles vacíos, exactamente el reparto del paladín. El problema no es la estructura, es que la clase
+          <b>no paga por su mejor turno</b>. Del nivel 5 en adelante lidera el daño sostenido de las tres, y lo
+          hace gastando cero: ni espacios, ni concentración, ni usos diarios. El paladín compra su daño con
+          espacios y el explorador con concentración; el Magistrado no compra nada.</p>
+        <p>A eso se le suman dos cosas que no son de semilanzadora: una lista con <i>contrahechizo</i>,
+          <i>premura</i>, <i>volar</i> y <i>destierro</i>, y una economía de reacciones (reacción extra desde el
+          7, <i>escudo</i> siempre preparado y gratis una vez por descanso) que ninguna de las otras dos tiene.</p>
+        <p>Con tocar tres cosas &mdash; el truco de Esgrima arcana, el paquete del nivel 3 del Caballero de la Forja y
+          <i>contrahechizo</i> &mdash; la clase vuelve a la banda. No hace falta reescribir nada más.</p>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <section id="supuestos">
+      <h2><span class="num">01</span>Cómo se ha medido</h2>
+
+      <p>Todo lo que sigue sale de un mismo modelo, y el modelo es discutible. Se deja escrito para que
+        cualquiera pueda rehacerlo cambiando los supuestos.</p>
+
+      <h3>Las tres construcciones</h3>
+      <div class="tw">
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col" class="c-pal">Paladín</th>
+              <th scope="col" class="c-exp">Explorador</th>
+              <th scope="col" class="c-mag">Magistrado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Subclase</th>
+              <td>Juramento de entrega</td>
+              <td>Cazador</td>
+              <td>Caballero de la Forja</td>
+            </tr>
+            <tr>
+              <th scope="row">Arma</th>
+              <td>Espada larga y escudo</td>
+              <td>Arco largo</td>
+              <td>Espadón</td>
+            </tr>
+            <tr>
+              <th scope="row">Estilo de combate</th>
+              <td>Duelo</td>
+              <td>Arquería</td>
+              <td>&mdash; <span class="note">(ninguno aporta al modelo)</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Característica de ataque</th>
+              <td>Fuerza 16 → 18 (4) → 20 (8)</td>
+              <td>Destreza 16 → 18 (4) → 20 (8)</td>
+              <td>Fuerza 16 → 18 (4) → 20 (8)</td>
+            </tr>
+            <tr>
+              <th scope="row">Aptitud mágica</th>
+              <td>Carisma 14</td>
+              <td>Sabiduría 14</td>
+              <td>Inteligencia 16 → 18 (12) → 20 (16)</td>
+            </tr>
+            <tr>
+              <th scope="row">Rasgos de daño contados</th>
+              <td>Golpes radiantes (11)</td>
+              <td>Marca del cazador + Azote de colosos</td>
+              <td>Esgrima arcana con <i>toque electrizante</i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="note">El Magistrado va con espadón porque el Caballero de la Forja se lo permite: <i>Heavy Metal</i> le da
+        armas marciales y <i>Brutish Fencing</i> le quita a Esgrima arcana el requisito de arma de finura. Es
+        la construcción más fuerte que admite la subclase escrita, y por eso es la que se mide.</p>
+
+      <h3>Objetivo y probabilidad de acertar</h3>
+      <div class="tw">
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th scope="col">Nivel</th>
+              <th scope="col">CA del objetivo</th>
+              <th scope="col" class="c-pal">Paladín</th>
+              <th scope="col" class="c-exp">Explorador</th>
+              <th scope="col" class="c-mag">Magistrado (arma)</th>
+              <th scope="col" class="c-mag">Magistrado (truco)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">3</th>
+              <td>15</td>
+              <td class="s">55&nbsp;%</td>
+              <td class="s">65&nbsp;%</td>
+              <td class="s">55&nbsp;%</td>
+              <td class="s">55&nbsp;%</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>16</td>
+              <td class="s">60&nbsp;%</td>
+              <td class="s">70&nbsp;%</td>
+              <td class="s">60&nbsp;%</td>
+              <td class="s">55&nbsp;%</td>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td>18</td>
+              <td class="s">60&nbsp;%</td>
+              <td class="s">70&nbsp;%</td>
+              <td class="s">60&nbsp;%</td>
+              <td class="s">55&nbsp;%</td>
+            </tr>
+            <tr>
+              <th scope="row">17</th>
+              <td>19</td>
+              <td class="s">65&nbsp;%</td>
+              <td class="s">94&nbsp;%</td>
+              <td class="s">65&nbsp;%</td>
+              <td class="s">65&nbsp;%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Las CA son las de un monstruo de VD parecida al nivel del grupo. El 94&nbsp;% del explorador
+        de nivel 17 es Cazador preciso, que le da ventaja contra el objetivo marcado. Sin críticos y sin ventaja
+        salvo donde un rasgo la conceda.</p>
+    </section>
+
+    <!-- ================================================================= -->
+    <section id="chasis">
+      <h2><span class="num">02</span>Los tres chasis</h2>
+      <p>Antes de los números, lo que cada clase es sobre el papel.</p>
+
+      <div class="tw">
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col" class="c-pal">Paladín</th>
+              <th scope="col" class="c-exp">Explorador</th>
+              <th scope="col" class="c-mag">Magistrado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Dado de golpe</th>
+              <td>d10</td>
+              <td>d10</td>
+              <td>d10</td>
+            </tr>
+            <tr>
+              <th scope="row">Aptitud mágica</th>
+              <td>Carisma</td>
+              <td>Sabiduría</td>
+              <td>Inteligencia</td>
+            </tr>
+            <tr>
+              <th scope="row">Salvaciones</th>
+              <td>Sabiduría y Carisma</td>
+              <td>Fuerza y Destreza</td>
+              <td>Constitución e Inteligencia</td>
+            </tr>
+            <tr>
+              <th scope="row">Armadura</th>
+              <td>Ligera, media, pesada y escudo</td>
+              <td>Ligera, media y escudo</td>
+              <td>Ligera y media, sin escudo <span class="note">(el Caballero de la Forja añade pesada, escudo y armas
+                  marciales en el nivel 3)</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Trucos</th>
+              <td>Ninguno, salvo el estilo Guerrero bendito</td>
+              <td>Ninguno, salvo el estilo Guerrero druídico</td>
+              <td><b>2 → 4, de serie</b></td>
+            </tr>
+            <tr>
+              <th scope="row">Espacios en el nivel 20</th>
+              <td>4/3/3/3/2</td>
+              <td>4/3/3/3/2</td>
+              <td>4/3/3/3/2</td>
+            </tr>
+            <tr>
+              <th scope="row">Conjuros preparados (1 → 20)</th>
+              <td>2 → 15</td>
+              <td>2 → 15</td>
+              <td>2 → 15</td>
+            </tr>
+            <tr>
+              <th scope="row">Tamaño de la lista</th>
+              <td>51 conjuros</td>
+              <td>61 conjuros</td>
+              <td>73 colocados <span class="note">(7 trucos + 66 con nivel)</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Acceso a la lista</th>
+              <td>Total</td>
+              <td>Total</td>
+              <td><b>Libro:</b> 23 conjuros en el nivel 20, más los 10 siempre preparados de la subclase</td>
+            </tr>
+            <tr>
+              <th scope="row">Rasgos de subclase</th>
+              <td>4 &mdash; niveles 3, 7, 15 y 20</td>
+              <td>4 &mdash; niveles 3, 7, 11 y 15</td>
+              <td>4 &mdash; niveles 3, 7, 15 y 20</td>
+            </tr>
+            <tr>
+              <th scope="row">Niveles sin rasgo propio</th>
+              <td>13 y 17</td>
+              <td>Ninguno</td>
+              <td>13 y 17</td>
+            </tr>
+            <tr>
+              <th scope="row">Características que necesita</th>
+              <td>Fuerza y Carisma</td>
+              <td>Destreza y Sabiduría</td>
+              <td>Fuerza o Destreza, e Inteligencia</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="verdict ok">
+        <h4>El esqueleto está bien</h4>
+        <p>Espacios, conjuros preparados, reparto de subclase y niveles vacíos son los del paladín, clavados.
+          La deuda estructural que arrastraba la revisión anterior está cerrada: aquí ya no hay nada que
+          corregir.</p>
+        <p>Las dos diferencias reales son a favor y en contra. A favor: cuatro trucos de serie, que ninguna de
+          las otras dos tiene. En contra: el libro, que reduce a 23 los conjuros que puede llegar a preparar de
+          una lista de 66. Es un techo real, y es lo que impide que la lista, que es la más potente de las tres,
+          se traduzca en tenerlo todo a la vez.</p>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <section id="sostenido">
+      <h2><span class="num">03</span>Daño sostenido, sin gastar nada</h2>
+      <p class="lede">Lo que pega un asalto cualquiera, ya multiplicado por la probabilidad de acertar, sin
+        gastar espacios ni usos diarios. Es la medida que más pesa, porque es la que se repite en todos los
+        combates del día.</p>
+
+      <div class="legend">
+        <span><i style="background:var(--c-pal)"></i>Paladín</span>
+        <span><i style="background:var(--c-exp)"></i>Explorador</span>
+        <span><i style="background:var(--c-mag)"></i>Magistrado</span>
+      </div>
+
+      <div class="chart">
+        <p class="panel-title">Nivel 3 &mdash; daño por asalto</p>
+        <div class="bar">
+          <div class="lb">Paladín</div>
+          <div class="vrow"><div class="track"><div class="fill" style="width:17.3%;background:var(--c-pal)"></div></div><div class="val">5,2</div></div>
+        </div>
+        <div class="bar">
+          <div class="lb">Explorador</div>
+          <div class="vrow"><div class="track"><div class="fill" style="width:33.7%;background:var(--c-exp)"></div></div><div class="val">10,1</div></div>
+        </div>
+        <div class="bar">
+          <div class="lb">Magistrado</div>
+          <div class="vrow"><div class="track"><div class="fill" style="width:26.7%;background:var(--c-mag)"></div></div><div class="val">8,0</div></div>
+        </div>
+
+        <p class="panel-title">Nivel 5 &mdash; daño por asalto</p>
+        <div class="bar">
+          <div class="lb">Paladín</div>
+          <div class="vrow"><div class="track"><div class="fill" style="width:42%;background:var(--c-pal)"></div></div><div class="val">12,6</div></div>
+        </div>
+        <div class="bar">
+          <div class="lb">Explorador</div>
+          <div class="vrow"><div class="track"><div class="fill" style="width:64%;background:var(--c-exp)"></div></div><div class="val">19,2</div></div>
+        </div>
+        <div class="bar">
+          <div class="lb">Magistrado</div>
+          <div class="vrow"><div class="track"><div class="fill" style="width:60.5%;background:var(--c-mag)"></div></div><div class="val">18,2</div></div>
+        </div>
+
+        <p class="panel-title">Nivel 11 &mdash; daño por asalto</p>
+        <div class="bar">
+          <div class="lb">Paladín</div>
+          <div class="vrow"><div class="track"><div class="fill" style="width:64%;background:var(--c-pal)"></div></div><div class="val">19,2</div></div>
+        </div>
+        <div class="bar">
+          <div class="lb">Explorador</div>
+          <div class="vrow"><div class="track"><div class="fill" style="width:68.7%;background:var(--c-exp)"></div></div><div class="val">20,6</div></div>
+        </div>
+        <div class="bar">
+          <div class="lb">Magistrado</div>
+          <div class="vrow"><div class="track"><div class="fill" style="width:72.7%;background:var(--c-mag)"></div></div><div class="val">21,8</div></div>
+        </div>
+
+        <p class="panel-title">Nivel 17 &mdash; daño por asalto</p>
+        <div class="bar">
+          <div class="lb">Paladín</div>
+          <div class="vrow"><div class="track"><div class="fill" style="width:69.3%;background:var(--c-pal)"></div></div><div class="val">20,8</div></div>
+        </div>
+        <div class="bar">
+          <div class="lb">Explorador</div>
+          <div class="vrow"><div class="track"><div class="fill" style="width:86%;background:var(--c-exp)"></div></div><div class="val">25,8</div></div>
+        </div>
+        <div class="bar">
+          <div class="lb">Magistrado</div>
+          <div class="vrow"><div class="track"><div class="fill" style="width:91%;background:var(--c-mag)"></div></div><div class="val">27,3</div></div>
+        </div>
+      </div>
+
+      <p class="note" style="margin-top:22px">Escala común a los cuatro paneles: 0 a 30 puntos de daño. El
+        explorador incluye marca del cazador y Azote de colosos, una vez por turno, ponderados por la
+        probabilidad de que al menos un ataque acierte.</p>
+
+      <h3>De dónde sale cada cifra del Magistrado</h3>
+      <div class="tw">
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th scope="col">Nivel</th>
+              <th scope="col">Ataques con espadón</th>
+              <th scope="col">Truco de acción adicional</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">3</th>
+              <td>1 × 0,55 × 10 = 5,5</td>
+              <td>1d8 × 0,55 = 2,5</td>
+              <td class="s best">8,0</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>2 × 0,60 × 11 = 13,2</td>
+              <td>2d8 × 0,55 = 5,0</td>
+              <td class="s best">18,2</td>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td>2 × 0,60 × 12 = 14,4</td>
+              <td>3d8 × 0,55 = 7,4</td>
+              <td class="s best">21,8</td>
+            </tr>
+            <tr>
+              <th scope="row">17</th>
+              <td>2 × 0,65 × 12 = 15,6</td>
+              <td>4d8 × 0,65 = 11,7</td>
+              <td class="s best">27,3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="verdict hot">
+        <h4>El truco de la acción adicional es la mitad del problema</h4>
+        <p>En el nivel 17, Esgrima arcana aporta <b>11,7 puntos por asalto</b>, todos los asaltos, sin gastar
+          nada. Eso es más de lo que aporta Golpes radiantes al paladín (4,5 por impacto, 5,9 ponderados) y más
+          que la marca del cazador y Azote de colosos juntos en el explorador (8,0 antes de ponderar). Es una
+          acción adicional de ataque permanente, sin concentración y sin tope diario, que además escala con los
+          escalones de truco.</p>
+        <p>Y hay un detalle que agrava el diagnóstico: en la lista actual solo hay <b>un</b> truco que sirva para
+          esto. <i>Toque electrizante</i> es el único truco de daño con tiempo de lanzamiento de acción que no
+          exige un ataque con arma. Esgrima arcana es, en la práctica, un rasgo con una única carga útil, y
+          esa carga vale más que el rasgo de nivel 11 del paladín.</p>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <section id="gasto">
+      <h2><span class="num">04</span>El mejor turno: gratis contra pagado</h2>
+      <p class="lede">Aquí está el hallazgo central del documento. La barra sólida es el mejor turno sin gastar
+        ningún recurso; la barra tenue es el mejor turno gastando el espacio más alto disponible. Todos los
+        ataques aciertan y todas las salvaciones se fallan: es un techo, no una media, y se aplica igual a los
+        tres.</p>
+
+      <div class="legend">
+        <span><i style="background:var(--c-pal)"></i>Paladín</span>
+        <span><i style="background:var(--c-exp)"></i>Explorador</span>
+        <span><i style="background:var(--c-mag)"></i>Magistrado</span>
+        <span><i style="background:var(--muted);opacity:.34"></i>Barra tenue = gastando</span>
+      </div>
+
+      <div class="chart">
+        <p class="panel-title">Nivel 5 &mdash; techo en un turno</p>
+        <div class="bar pair">
+          <div class="lb">Paladín</div>
+          <div class="stack">
+            <div class="vrow"><div class="track"><div class="fill" style="width:35%;background:var(--c-pal)"></div></div><div class="val">21,0 gratis</div></div>
+            <div class="vrow"><div class="track"><div class="fill ghost" style="width:57.5%;background:var(--c-pal)"></div></div><div class="val">34,5 gastando</div></div>
+          </div>
+        </div>
+        <div class="bar pair">
+          <div class="lb">Explorador</div>
+          <div class="stack">
+            <div class="vrow"><div class="track"><div class="fill" style="width:41.7%;background:var(--c-exp)"></div></div><div class="val">25,0 gratis</div></div>
+            <div class="vrow"><div class="track"><div class="fill ghost" style="width:41.7%;background:var(--c-exp)"></div></div><div class="val">25,0 gastando</div></div>
+          </div>
+        </div>
+        <div class="bar pair">
+          <div class="lb">Magistrado</div>
+          <div class="stack">
+            <div class="vrow"><div class="track"><div class="fill" style="width:51.7%;background:var(--c-mag)"></div></div><div class="val">31,0 gratis</div></div>
+            <div class="vrow"><div class="track"><div class="fill ghost" style="width:51.7%;background:var(--c-mag)"></div></div><div class="val">31,0 gastando</div></div>
+          </div>
+        </div>
+
+        <p class="panel-title">Nivel 11 &mdash; techo en un turno</p>
+        <div class="bar pair">
+          <div class="lb">Paladín</div>
+          <div class="stack">
+            <div class="vrow"><div class="track"><div class="fill" style="width:53.3%;background:var(--c-pal)"></div></div><div class="val">32,0 gratis</div></div>
+            <div class="vrow"><div class="track"><div class="fill ghost" style="width:83.3%;background:var(--c-pal)"></div></div><div class="val">50,0 gastando</div></div>
+          </div>
+        </div>
+        <div class="bar pair">
+          <div class="lb">Explorador</div>
+          <div class="stack">
+            <div class="vrow"><div class="track"><div class="fill" style="width:45%;background:var(--c-exp)"></div></div><div class="val">27,0 gratis</div></div>
+            <div class="vrow"><div class="track"><div class="fill ghost" style="width:45%;background:var(--c-exp)"></div></div><div class="val">27,0 gastando</div></div>
+          </div>
+        </div>
+        <div class="bar pair">
+          <div class="lb">Magistrado</div>
+          <div class="stack">
+            <div class="vrow"><div class="track"><div class="fill" style="width:62.5%;background:var(--c-mag)"></div></div><div class="val">37,5 gratis</div></div>
+            <div class="vrow"><div class="track"><div class="fill ghost" style="width:62.5%;background:var(--c-mag)"></div></div><div class="val">37,5 gastando</div></div>
+          </div>
+        </div>
+
+        <p class="panel-title">Nivel 17 &mdash; techo en un turno</p>
+        <div class="bar pair">
+          <div class="lb">Paladín</div>
+          <div class="stack">
+            <div class="vrow"><div class="track"><div class="fill" style="width:53.3%;background:var(--c-pal)"></div></div><div class="val">32,0 gratis</div></div>
+            <div class="vrow"><div class="track"><div class="fill ghost" style="width:98.3%;background:var(--c-pal)"></div></div><div class="val">59,0 gastando</div></div>
+          </div>
+        </div>
+        <div class="bar pair">
+          <div class="lb">Explorador</div>
+          <div class="stack">
+            <div class="vrow"><div class="track"><div class="fill" style="width:45%;background:var(--c-exp)"></div></div><div class="val">27,0 gratis</div></div>
+            <div class="vrow"><div class="track"><div class="fill ghost" style="width:60%;background:var(--c-exp)"></div></div><div class="val">36,0 gastando</div></div>
+          </div>
+        </div>
+        <div class="bar pair">
+          <div class="lb">Magistrado</div>
+          <div class="stack">
+            <div class="vrow"><div class="track"><div class="fill" style="width:70%;background:var(--c-mag)"></div></div><div class="val">42,0 gratis</div></div>
+            <div class="vrow"><div class="track"><div class="fill ghost" style="width:95%;background:var(--c-mag)"></div></div><div class="val">57,0 gastando</div></div>
+          </div>
+        </div>
+      </div>
+
+      <p class="note" style="margin-top:22px">Escala común: 0 a 60. Paladín: dos ataques más castigo divino con
+        el espacio más alto. Explorador: dos ataques con sus rasgos de una vez por turno; en el 17, andanada
+        conjurada con espacio de nivel 5 contra un solo blanco. Magistrado: dos ataques más el truco; en el 17,
+        hendidura arrasadora con espacio de nivel 5, que además golpea en línea de 18&nbsp;m.</p>
+
+      <h3>Lo que compra el gasto</h3>
+      <div class="tw">
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col" class="c-pal">Paladín</th>
+              <th scope="col" class="c-exp">Explorador</th>
+              <th scope="col" class="c-mag">Magistrado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Nivel 5</th>
+              <td class="s best">+13,5</td>
+              <td class="s">0</td>
+              <td class="s">0</td>
+            </tr>
+            <tr>
+              <th scope="row">Nivel 11</th>
+              <td class="s best">+18,0</td>
+              <td class="s">0</td>
+              <td class="s">0</td>
+            </tr>
+            <tr>
+              <th scope="row">Nivel 17</th>
+              <td class="s best">+27,0</td>
+              <td class="s">+9,0</td>
+              <td class="s">+15,0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="verdict hot">
+        <h4>El turno gratis del Magistrado es su turno bueno</h4>
+        <p>Hasta el nivel 14 el Magistrado no tiene <em>nada</em> que hacer con un espacio de conjuro que mejore
+          su turno de ataque. No es un defecto: es que su daño ya está todo en la parte gratuita. En el nivel
+          11 su mejor turno sin gastar nada (37,5) supera al del paladín gastando (50 solo si el paladín quema
+          un espacio de nivel 3, y el paladín tiene tres al día).</p>
+        <p>En el nivel 17 la comparación es la que más habla: el Magistrado <b>sin gastar nada</b> hace 42, un
+          31&nbsp;% más que el paladín sin gastar nada, y se queda a 17 puntos del paladín quemando su espacio
+          de nivel 5. El paladín paga cada punto de esa diferencia; el Magistrado no paga ninguno.</p>
+        <p>Esto invierte el reparto de las semilanzadoras del manual. El paladín está diseñado como una clase de
+          picos: turnos normales flojos, turnos comprados enormes. El Magistrado no tiene picos, tiene una meseta
+          alta, y una meseta alta es mucho mejor en un día de aventura de seis combates que dos picos y cuatro
+          turnos malos.</p>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <section id="defensa">
+      <h2><span class="num">05</span>Defensa y economía de reacciones</h2>
+
+      <div class="tw">
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col" class="c-pal">Paladín</th>
+              <th scope="col" class="c-exp">Explorador</th>
+              <th scope="col" class="c-mag">Magistrado (Caballero de la Forja)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">CA base en el nivel 11</th>
+              <td>20 <span class="note">(placas y escudo)</span></td>
+              <td>17 <span class="note">(media y Destreza)</span></td>
+              <td>18 <span class="note">(placas, espadón a dos manos)</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Pico de CA</th>
+              <td>20</td>
+              <td>17</td>
+              <td><b>23</b> <span class="note">(con <i>escudo</i> activo)</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Reacciones por asalto</th>
+              <td>1</td>
+              <td>1</td>
+              <td><b>2 desde el nivel 7</b> <span class="note">(Trance instintivo, concentrando)</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Defensa de grupo</th>
+              <td><b>Aura de protección: +Car a todas las salvaciones, aliados incluidos</b></td>
+              <td>Ninguna</td>
+              <td>Ninguna</td>
+            </tr>
+            <tr>
+              <th scope="row">Curación</th>
+              <td><b>Imponer las manos: 5 × nivel PG por descanso largo</b></td>
+              <td><i>Curar heridas</i>, PG temporales desde el 10</td>
+              <td><b>Ninguna</b></td>
+            </tr>
+            <tr>
+              <th scope="row">Concentración</th>
+              <td>Aura, sin concentrar</td>
+              <td>Cazador persistente (13): el daño no rompe la marca</td>
+              <td>Mente acorazada (10): trata el d20 de 9 o menos como 10</td>
+            </tr>
+            <tr>
+              <th scope="row">PG temporales</th>
+              <td>&mdash;</td>
+              <td>1d8 + Sab, varias veces al día</td>
+              <td>Nivel del espacio + Int, cada vez que lanza un conjuro <span class="note">(Runefire
+                  Temper, nivel 7)</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="verdict">
+        <h4>Aquí el paladín gana, y con margen</h4>
+        <p>El Aura de protección es probablemente el mejor rasgo defensivo del manual, y no tiene equivalente en
+          ninguna de las otras dos. Sumada a Imponer las manos, el paladín aporta al grupo algo que el Magistrado
+          no aporta en absoluto: el Magistrado no cura, no da salvaciones y no levanta a nadie.</p>
+        <p>La defensa del Magistrado es <em>personal</em> y es excelente: <i>escudo</i> siempre preparado, gratis
+          una vez por descanso largo, con una reacción de sobra desde el nivel 7 para lanzarlo sin renunciar a
+          los ataques de oportunidad. El Caballero de la Forja además convierte esa reacción en algo que no debería poder
+          hacer: <i>Rune Shield</i> le deja lanzar <i>escudo</i> <b>como parte de</b> cualquier reacción que
+          exija llevar escudo, y contar como que lo lleva aunque vaya a dos manos con un espadón.</p>
+        <p>El resultado es un personaje que va con CA de placas, sube a 23 cuando le hace falta, tiene dos
+          reacciones y no se le rompe la concentración. Es defensivamente más sólido que el explorador y, en lo
+          personal, tan sólido como el paladín. Lo que le falta es todo lo que el paladín reparte a los demás,
+          y eso sí es un contrapeso legítimo.</p>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <section id="utilidad">
+      <h2><span class="num">06</span>Fuera del combate</h2>
+      <p>Esta es la comparación que menos se suele hacer y la que más desnivelada está.</p>
+
+      <div class="tw">
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th scope="col">Herramienta</th>
+              <th scope="col" class="c-pal">Paladín</th>
+              <th scope="col" class="c-exp">Explorador</th>
+              <th scope="col" class="c-mag">Magistrado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Anular magia enemiga</th>
+              <td>&mdash;</td>
+              <td>&mdash;</td>
+              <td><b><i>contrahechizo</i>, <i>disipar magia</i></b></td>
+            </tr>
+            <tr>
+              <th scope="row">Movilidad</th>
+              <td><i>hallar corcel</i></td>
+              <td>Trepar y nadar, +3&nbsp;m</td>
+              <td><b><i>volar</i>, <i>paso brumoso</i>, <i>premura</i>, <i>atravesar muros</i></b></td>
+            </tr>
+            <tr>
+              <th scope="row">Control</th>
+              <td><i>orden</i>, Abjurar de los enemigos</td>
+              <td><i>golpe apresador</i>, <i>crecimiento espinoso</i></td>
+              <td><b><i>destierro</i>, <i>ralentizar</i>, <i>telequinesis</i>, <i>esfera resistente</i></b></td>
+            </tr>
+            <tr>
+              <th scope="row">Investigación</th>
+              <td>Sentidos divinos</td>
+              <td>Pericia ×3, rastreo</td>
+              <td><b>Pericia ×2, <i>ojo arcano</i>, <i>zona de la verdad</i>, <i>identificar</i>, Int a
+                  Persuasión y Engaño</b></td>
+            </tr>
+            <tr>
+              <th scope="row">Crecimiento del repertorio</th>
+              <td>Fijo</td>
+              <td>Fijo</td>
+              <td><b>Pergaminos, y desde el 14 también de la lista de mago</b></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="verdict hot">
+        <h4>La lista no es de semilanzadora</h4>
+        <p>Un paladín de nivel 9 con espacios de nivel 3 tiene <i>revivir</i> y <i>luz del día</i>. Un explorador
+          tiene <i>protección contra energía</i> y <i>invocar animales</i>. Un Magistrado de nivel 9 tiene
+          <b><i>contrahechizo</i>, <i>premura</i>, <i>volar</i> y <i>disipar magia</i></b>. No es que sea un poco
+          mejor: es que son conjuros de otra categoría de clase.</p>
+        <p><i>Contrahechizo</i> es el caso más claro. Ninguna semilanzadora del manual lo tiene, y por una razón:
+          convierte a la clase en el seguro antimagia del grupo con una reacción &mdash; y este personaje, desde
+          el nivel 7, tiene dos reacciones.</p>
+        <p>El límite del libro (23 conjuros preparables en el nivel 20) amortigua esto de verdad, y es el mejor
+          freno que tiene el diseño. Pero amortigua la <em>anchura</em>, no la <em>altura</em>: nadie va a
+          quedarse sin apuntar <i>contrahechizo</i> en el libro.</p>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <section id="forgeknight">
+      <h2><span class="num">07</span>El Caballero de la Forja, aparte</h2>
+      <p>Merece su propia sección porque no es una subclase que dé cosas: es una subclase que <b>borra los costes
+          del chasis</b>.</p>
+
+      <div class="tw">
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th scope="col">Coste de diseño de la clase base</th>
+              <th scope="col">Qué hace el Caballero de la Forja</th>
+              <th scope="col">Nivel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="k">Solo ligera y media, sin escudo</td>
+              <td>Da pesada y escudo</td>
+              <td class="s">3</td>
+            </tr>
+            <tr>
+              <td class="k">Armas limitadas, y de finura para su rasgo clave</td>
+              <td>Da todas las marciales cuerpo a cuerpo y quita el requisito de finura</td>
+              <td class="s">3</td>
+            </tr>
+            <tr>
+              <td class="k">Necesita Destreza para atacar y CA</td>
+              <td>Permite ir de Fuerza e Inteligencia, con placas</td>
+              <td class="s">3</td>
+            </tr>
+            <tr>
+              <td class="k">Trance instintivo no funciona con armadura pesada</td>
+              <td>Lodestone Ember: la armadura cuenta como una categoría más ligera</td>
+              <td class="s">15</td>
+            </tr>
+            <tr>
+              <td class="k">Sin escudo en la mano si va a dos manos</td>
+              <td>Rune Shield: cuenta como que lo lleva mientras <i>escudo</i> esté activo</td>
+              <td class="s">3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="verdict hot">
+        <h4>Todo el paquete llega en el nivel 3, y no cuesta nada</h4>
+        <p>Las cinco líneas de arriba son <em>ganancias sin contrapartida</em>. Una subclase de semilanzadora
+          suele cambiar una cosa por otra: el Cazador elige entre Azote de colosos y Destructor de hordas; el
+          Juramento de entrega gasta Canalizar divinidad para su arma sagrada. El Caballero de la Forja no elige y no
+          gasta: apila competencias.</p>
+        <p>El efecto neto es que la clase base se calibró para un duelista de armadura media sin escudo, y la
+          única subclase escrita convierte a ese duelista en un frontal de placas con espadón que conserva
+          intactos todos los rasgos pensados para el duelista. Los dos rasgos posteriores &mdash; Runefire Temper
+          y Walking Fortress &mdash; están bien; el problema es el bloque del nivel 3.</p>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <section id="veredicto">
+      <h2><span class="num">08</span>Veredicto por tramos</h2>
+
+      <div class="tw">
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th scope="col">Tramo</th>
+              <th scope="col">Situación</th>
+              <th scope="col">Juicio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1&ndash;2</th>
+              <td>Sin subclase, sin ataque adicional, un solo truco de daño. <i>Escudo</i> gratis y En Garde ya
+                pesan, pero el paladín pega más al gastar.</td>
+              <td>En banda</td>
+            </tr>
+            <tr>
+              <th scope="row">3&ndash;4</th>
+              <td>Entra el Caballero de la Forja con placas, escudo y marciales. Sostenido por debajo del explorador,
+                techo por debajo del paladín, pero el chasis defensivo ya iguala al del paladín.</td>
+              <td>Alto en defensa</td>
+            </tr>
+            <tr>
+              <th scope="row">5&ndash;10</th>
+              <td>Ataque adicional más truco escalado: el sostenido se pone a la par del explorador sin pagar
+                nada. En el 7 llegan la reacción extra y el rasgo de subclase.</td>
+              <td><b>Se pasa</b></td>
+            </tr>
+            <tr>
+              <th scope="row">11&ndash;16</th>
+              <td>Lidera el sostenido. Espacios de nivel 3 con <i>contrahechizo</i>, <i>premura</i> y
+                <i>volar</i>. Su turno gratis supera al turno gratis de las otras dos.</td>
+              <td><b>Se pasa</b></td>
+            </tr>
+            <tr>
+              <th scope="row">17&ndash;20</th>
+              <td>27,3 sostenido y 42 de techo gratis. El paladín solo lo adelanta quemando espacios de nivel 5,
+                de los que tiene dos.</td>
+              <td><b>Se pasa</b></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="verdict">
+        <h4>Dónde queda respecto de la pregunta</h4>
+        <p><b>Compite, y por encima.</b> No es una clase rota &mdash; no hace nada que multiplique por dos a las
+          otras dos, y le faltan cosas de verdad: curación, apoyo al grupo y anchura de repertorio. Pero está
+          consistentemente por delante en la métrica que más se repite, el daño sostenido, y lo está sin pagar,
+          que es lo que rompe la comparación.</p>
+        <p>Si el objetivo es que las tres puedan sentarse en la misma mesa sin que se note quién es de fuera del
+          manual, hay que bajarla. La buena noticia es que casi todo el exceso está en tres sitios.</p>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <section id="ajustes">
+      <h2><span class="num">09</span>Qué tocar</h2>
+      <p>Por orden de impacto. Los tres primeros bastan; el resto son afinados.</p>
+
+      <div class="findings">
+        <div class="finding">
+          <span class="n">1</span>
+          <h4>Acoplar Esgrima arcana a un impacto <span class="tag sev">alto impacto</span></h4>
+          <p>Hoy el truco sale gratis aunque falles todos los ataques, y aporta 11,7 puntos por asalto en el
+            nivel 17. La corrección más limpia y menos invasiva es exigir que <b>al menos uno de los ataques del
+              turno haya acertado</b> para poder lanzarlo.</p>
+          <p>Eso lo alinea con castigo divino, que también exige un impacto, sin quitarle a la clase su identidad.
+            Baja el sostenido del nivel 17 de 27,3 a unos 23,5, entre el paladín y el explorador, que es
+            exactamente donde debería estar. Si se quiere apretar más, limitar el escalón del truco a 3d8.</p>
+        </div>
+
+        <div class="finding">
+          <span class="n">2</span>
+          <h4>Partir el bloque del nivel 3 del Caballero de la Forja <span class="tag sev">alto impacto</span></h4>
+          <p><i>Heavy Metal</i> da armadura pesada, escudos y todas las armas marciales cuerpo a cuerpo en una
+            sola línea, y <i>Brutish Fencing</i> quita además el requisito de finura. Son cuatro concesiones
+            gratis en el mismo nivel.</p>
+          <p>Repartirlas: armadura pesada y escudos en el 3; armas marciales y <i>Brutish Fencing</i> en el 7.
+            O bien dejarlo todo en el 3 pero pedir Fuerza 15, como hace el propio manual con las placas. El
+            objetivo es que la subclase siga siendo la del herrero sin ser un ascenso de chasis gratuito.</p>
+        </div>
+
+        <div class="finding">
+          <span class="n">3</span>
+          <h4>Sacar <i>contrahechizo</i> de la lista <span class="tag sev">alto impacto</span></h4>
+          <p>Es el único conjuro de la lista que no tiene defensa posible en una comparación con semilanzadoras:
+            ninguna lo tiene, y aquí además se combina con dos reacciones por asalto desde el nivel 7.</p>
+          <p>Si se quiere conservar el concepto de guardián de la ley arcana, moverlo a una subclase futura
+            &mdash; el Sigilista era el candidato natural &mdash; o dejarlo como conjuro que solo se puede añadir
+            al libro encontrándolo. <i>Disipar magia</i> puede quedarse: es reactivo pero no instantáneo.</p>
+        </div>
+
+        <div class="finding">
+          <span class="n">4</span>
+          <h4>Poner tope a Trance instintivo <span class="tag med">medio</span></h4>
+          <p>Una reacción extra <em>todos</em> los asaltos, desde el nivel 7 y mientras concentres, es una
+            ganancia de economía de acciones que no tiene precedente en una semilanzadora. Limitarla a
+            Inteligencia veces por descanso largo, o a los asaltos en los que hayas lanzado <i>escudo</i>, la
+            deja fuerte sin ser permanente.</p>
+        </div>
+
+        <div class="finding">
+          <span class="n">5</span>
+          <h4>Ampliar los trucos de daño de la lista <span class="tag med">medio</span></h4>
+          <p>Suena contradictorio en un documento que dice que la clase se pasa, pero es un problema de diseño
+            aparte: con un solo truco válido para Esgrima arcana, todos los Magistrados juegan igual. Si el
+            ajuste&nbsp;1 se aplica, hay sitio para dos o tres trucos más con perfiles distintos &mdash; uno de
+            control, uno a distancia &mdash; sin subir el techo.</p>
+        </div>
+
+        <div class="finding">
+          <span class="n">6</span>
+          <h4>Revisar Touché, pero no por el daño <span class="tag med">medio</span></h4>
+          <p>1d8 por nivel de espacio más Inteligencia en una reacción parece mucho, pero solo dispara cuando
+            <i>escudo</i> hace fallar un ataque: el disparador es caro y poco fiable, y eso lo justifica. Lo que
+            sí conviene mirar es la pila completa &mdash; <i>escudo</i> gratis, más Rune Shield, más reacción
+            extra, más Touché &mdash; que concentra demasiado valor en un solo conjuro. Si se aplican los
+            ajustes 3 y 4, se descomprime solo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <section id="limites">
+      <h2><span class="num">10</span>Límites de este análisis</h2>
+      <ul>
+        <li>Los números son un modelo de un solo blanco, sin críticos, sin ventaja salvo donde un rasgo la dé,
+          sin objetos mágicos y sin dotes más allá de las mejoras de característica. Cambiar cualquiera de esas
+          cosas mueve las cifras, aunque no el orden.</li>
+        <li>El paladín va con Juramento de entrega y el explorador con Cazador. Otras subclases dan otros
+          resultados: Juramento de venganza sube el techo del paladín, y Señor de las bestias cambia por completo
+          el perfil del explorador.</li>
+        <li>El daño sostenido supone que el Magistrado siempre tiene un objetivo a distancia de <i>toque
+            electrizante</i>, que es cuerpo a cuerpo. Un Magistrado obligado a moverse pierde la parte gratuita del
+          turno, y eso no está descontado.</li>
+        <li>No se ha medido nada por debajo del nivel 3 ni el tramo 18&ndash;20 en detalle. En el 20, Arcane
+          Swordplay alcanza nivel 3 y permite <i>hendidura arrasadora</i> como acción adicional tras dos ataques:
+          conviene medir ese turno aparte antes de dar el nivel 20 por bueno.</li>
+        <li>Ninguna de estas cifras se ha probado en mesa. Son aritmética, y la aritmética no sabe de posiciones,
+          de terreno ni de a quién le toca ir delante.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p class="legal"><b>Documento interno.</b> Análisis de balance sin publicar, escrito sobre borradores que
+        cambian. Nada de lo que hay aquí es definitivo.</p>
+      <p class="legal">Los datos del paladín y del explorador proceden del <i>Manual del Jugador 2024</i> de
+        Wizards of the Coast, y se citan únicamente como valores de juego con fines de comparación. Contenido
+        de fan no oficial: no está afiliado, avalado ni patrocinado por Wizards of the Coast LLC.</p>
+      <p class="legal"><a href="./index.html">&larr; Volver al índice de análisis</a></p>
+    </footer>
+  </div>
+</body>
+
+</html>
