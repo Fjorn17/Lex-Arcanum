@@ -1,0 +1,134 @@
+== Mirror Image
+components: V, S
+body:
+Aparecen en tu espacio tres duplicados ilusorios de ti mismo. Hasta que el conjuro termine, los duplicados se mueven contigo e imitan tus acciones, cambiando de posición de modo que resulta imposible seguir cuál de las imágenes es la real.
+Cada vez que una criatura te acierta con una tirada de ataque mientras dure el conjuro, tira 1d6 por cada duplicado que te quede. Si alguno de esos d6 saca 3 o más, el ataque acierta a uno de los duplicados en vez de a ti y ese duplicado queda destruido. Por lo demás, los duplicados ignoran cualquier otro daño y efecto. El conjuro termina cuando los tres duplicados quedan destruidos.
+Una criatura no se ve afectada por este conjuro si tiene el estado de cegada, visión ciega o visión verdadera.
+
+== Mislead
+components: S
+body:
+Obtienes el estado de invisible al mismo tiempo que aparece un doble ilusorio de ti donde estás. El doble dura lo que dure el conjuro, pero la invisibilidad termina justo después de que hagas una tirada de ataque, causes daño o lances un conjuro.
+Como acción de magia puedes mover el doble ilusorio hasta el doble de tu velocidad y hacer que gesticule, hable y se comporte como quieras. Es intangible e invulnerable.
+Puedes ver por sus ojos y oír por sus oídos como si estuvieras donde está él.
+
+== Misty Step
+components: V
+body:
+Rodeado un instante por una bruma plateada, te teletransportas hasta 30 pies a un espacio sin ocupar que puedas ver.
+
+== Modify Memory
+components: V, S
+body:
+Intentas remodelar los recuerdos de otra criatura. Una criatura que puedas ver dentro del alcance hace una tirada de salvación de Sabiduría, con ventaja si estás luchando contra ella. Si la falla, tiene el estado de hechizada mientras dure el conjuro. Mientras esté hechizada así, tiene además el estado de incapacitada y no es consciente de lo que la rodea, aunque puede oírte. Si recibe cualquier daño o es objetivo de otro conjuro, este conjuro termina y no se modifica ningún recuerdo.
+Mientras dure este encantamiento puedes afectar al recuerdo que el objetivo tenga de un suceso que haya vivido en las últimas 24 horas y que no durara más de 10 minutos. Puedes eliminar de forma permanente todo recuerdo del suceso, permitir que el objetivo lo recuerde con total claridad, cambiar su recuerdo de los detalles o crear el recuerdo de otro suceso distinto.
+Debes hablarle al objetivo para describirle cómo se ven afectados sus recuerdos, y él debe entender tu idioma para que los recuerdos modificados arraiguen. Su mente rellena los huecos que deje tu descripción. Si el conjuro termina antes de que acabes de describir los recuerdos modificados, la memoria de la criatura no se altera. En caso contrario, los recuerdos modificados arraigan cuando el conjuro termina.
+Un recuerdo modificado no cambia necesariamente el comportamiento de una criatura, sobre todo si contradice sus inclinaciones naturales, su alineamiento o sus creencias. Un recuerdo modificado ilógico, como el recuerdo falso de lo mucho que disfrutó nadando en ácido, se descarta como una pesadilla. El DM puede considerar que un recuerdo modificado es demasiado absurdo para afectar a una criatura.
+Un conjuro de *levantar maldición* o de *restablecimiento mayor* lanzado sobre el objetivo restaura su memoria verdadera.
+**Con un espacio de conjuro de nivel superior.** Puedes alterar los recuerdos del objetivo sobre un suceso ocurrido hace hasta 7 días (espacio de nivel 6), 30 días (nivel 7), 365 días (nivel 8) o en cualquier momento de su pasado (nivel 9).
+
+== Moonbeam
+components: V, S, M (una hoja de menispermo)
+body:
+Un haz plateado de luz pálida brilla desde lo alto en un cilindro de 5 pies de radio y 40 pies de alto centrado en un punto dentro del alcance. Hasta que el conjuro termine, la luz tenue llena el cilindro y puedes llevar a cabo una acción de magia en turnos posteriores para moverlo hasta 60 pies.
+Cuando el cilindro aparece, cada criatura que esté en él hace una tirada de salvación de Constitución. Si la falla, recibe {{2d10|Radiant}} de daño y, si está transformada (por ejemplo, por el conjuro *polimorfar*), vuelve a su forma verdadera y no puede transformarse hasta que salga del cilindro. Si la supera, recibe la mitad del daño y nada más. Una criatura hace también esa tirada cuando la zona del conjuro se mueve a su espacio, cuando entra en ella y cuando termina allí su turno. Cada criatura hace la tirada una sola vez por turno.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d10 por cada nivel por encima de 2 que tenga el espacio.
+
+== Move Earth
+components: V, S, M (una pala en miniatura)
+body:
+Elige una zona de terreno de no más de 40 pies de lado dentro del alcance. Puedes remodelar la tierra, la arena o la arcilla de esa zona como quieras mientras dure el conjuro. Puedes elevar o rebajar el terreno, abrir o rellenar una zanja, levantar o allanar un muro o formar un pilar. La magnitud de esos cambios no puede superar la mitad de la dimensión mayor de la zona. Por ejemplo, si afectas a un cuadrado de 40 pies de lado, puedes crear un pilar de hasta 20 pies de alto, elevar o rebajar el terreno hasta 20 pies, cavar una zanja de hasta 20 pies de profundidad, etcétera. Esos cambios tardan 10 minutos en completarse. Como la transformación del terreno ocurre despacio, las criaturas de la zona no suelen poder quedar atrapadas ni resultar heridas por el movimiento del suelo.
+Al final de cada 10 minutos que pases concentrado en el conjuro puedes elegir una zona de terreno nueva dentro del alcance.
+Este conjuro no puede manipular la piedra natural ni la construcción de piedra. Las rocas y las estructuras se desplazan para acomodarse al nuevo terreno. Si la forma que le das al terreno dejara inestable una estructura, esta podría derrumbarse.
+Del mismo modo, este conjuro no afecta directamente al crecimiento de las plantas: la tierra desplazada se lleva consigo las plantas que haya.
+
+== Nondetection
+components: V, S, M (una pizca de polvo de diamante por valor de 25 po o más, que el conjuro consume)
+body:
+Mientras dure el conjuro, ocultas de los conjuros de adivinación a un objetivo que toques. El objetivo puede ser una criatura voluntaria, o bien un lugar o un objeto que no midan más de 10 pies en ninguna dimensión. El objetivo no puede ser objetivo de ningún conjuro de adivinación ni percibirse mediante sensores mágicos de escrutinio.
+
+== Passwall
+components: V, S, M (una pizca de semillas de sésamo)
+body:
+Aparece un pasadizo en un punto que puedas ver sobre una superficie de madera, yeso o piedra (como un muro, un techo o un suelo) dentro del alcance, y dura lo que dure el conjuro. Tú eliges las dimensiones de la abertura: hasta 5 pies de ancho, 8 pies de alto y 20 pies de profundidad. El pasadizo no genera ninguna inestabilidad en la estructura que lo rodea.
+Cuando la abertura desaparece, las criaturas u objetos que sigan en el pasadizo creado por el conjuro son expulsados sin daño al espacio sin ocupar más cercano a la superficie sobre la que lanzaste el conjuro.
+
+== Pass without Trace
+components: V, S, M (cenizas de muérdago quemado)
+body:
+Irradias un aura que oculta en una emanación de 30 pies mientras dure el conjuro. Dentro del aura, tú y cada criatura que elijas tenéis un bonificador de +10 a las pruebas de Destreza (Sigilo) y no dejáis rastro.
+
+== Phantasmal Force
+components: V, S, M (un poco de lana)
+body:
+Intentas crear una ilusión en la mente de una criatura que puedas ver dentro del alcance. El objetivo hace una tirada de salvación de Inteligencia. Si la falla, creas un objeto, una criatura u otro fenómeno fantasmales, de no más de un cubo de 10 pies de lado, que solo el objetivo percibe mientras dure el conjuro. El fantasma incluye sonido, temperatura y otros estímulos.
+El objetivo puede llevar a cabo la acción de estudiar para examinar el fantasma con una prueba de Inteligencia (Investigación) contra tu CD de salvación de conjuros. Si la supera, se da cuenta de que el fantasma es una ilusión y el conjuro termina.
+Mientras esté afectado por el conjuro, el objetivo trata al fantasma como si fuera real y racionaliza cualquier resultado ilógico de interactuar con él. Por ejemplo, si el objetivo cruza un puente fantasmal y sobrevive a la caída, cree que el puente existe y que fue otra cosa lo que le hizo caer.
+Un objetivo afectado puede incluso recibir daño de la ilusión si el fantasma representa una criatura o un peligro dañinos. En cada uno de tus turnos, un fantasma así puede causar {{2d8|Psychic}} de daño al objetivo si este está en su zona o a 5 pies o menos de él. El objetivo percibe ese daño como de un tipo acorde con la ilusión.
+
+== Phantasmal Killer
+components: V, S
+body:
+Te asomas a las pesadillas de una criatura que puedas ver dentro del alcance y creas una ilusión de sus miedos más profundos, visible solo para ella. El objetivo hace una tirada de salvación de Sabiduría. Si la falla, recibe {{4d10|Psychic}} de daño y tiene desventaja en las pruebas de característica y en las tiradas de ataque mientras dure el conjuro. Si la supera, recibe la mitad del daño y el conjuro termina.
+Mientras dure el conjuro, el objetivo hace una tirada de salvación de Sabiduría al final de cada uno de sus turnos. Si la falla, vuelve a recibir el daño psíquico. Si la supera, el conjuro termina.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d10 por cada nivel por encima de 4 que tenga el espacio.
+
+== Phantom Steed
+components: V, S
+body:
+Una criatura Grande, casi real y con forma de caballo aparece en el suelo, en un espacio sin ocupar que elijas dentro del alcance. Tú decides su aspecto, y viene equipada con silla, bocado y brida. Cualquier pieza del equipo creado por el conjuro se desvanece en una nube de humo si se lleva a más de 10 pies del corcel.
+Mientras dure el conjuro, tú o una criatura que elijas podéis montar el corcel. El corcel usa el perfil de caballo de monta, salvo que tiene una velocidad de 100 pies y puede recorrer 13 millas en una hora. Cuando el conjuro termina, el corcel se desvanece poco a poco y le da al jinete 1 minuto para desmontar. El conjuro termina antes de tiempo si el corcel recibe cualquier daño.
+
+== Planar Ally
+components: V, S
+body:
+Imploras ayuda a una entidad de otro mundo. Debes conocer a ese ser: un dios, un príncipe demoníaco o algún otro ser de poder cósmico. Esa entidad envía a un celestial, a un elemental o a un infernal leal a ella para ayudarte, y la criatura aparece en un espacio sin ocupar dentro del alcance. Si conoces el nombre de una criatura concreta, puedes decirlo al lanzar el conjuro para pedir que venga, aunque puede venir otra distinta de todos modos (a elección del DM).
+Cuando la criatura aparece, nada la obliga a comportarse de una manera concreta. Puedes pedirle que preste un servicio a cambio de un pago, pero no está obligada a aceptar. La tarea puede ir de lo sencillo (llévanos volando al otro lado del abismo, ayúdanos en una batalla) a lo complejo (espía a nuestros enemigos, protégenos durante nuestra incursión en la mazmorra). Debes poder comunicarte con la criatura para negociar sus servicios.
+El pago puede adoptar formas muy diversas. Un celestial puede exigir una donación considerable de oro o de objetos mágicos a un templo aliado, mientras que un infernal puede exigir un sacrificio vivo o un regalo en forma de tesoro. Algunas criaturas cambian su servicio por una misión que emprendas tú.
+Una tarea que se mida en minutos exige un pago de 100 po por minuto. Una que se mida en horas, 1.000 po por hora. Y una que se mida en días (hasta 10 días), 10.000 po por día. El DM puede ajustar estos pagos según las circunstancias en las que lances el conjuro. Si la tarea encaja con el ideario de la criatura, el pago puede reducirse a la mitad o incluso perdonarse. Las tareas sin peligro suelen exigir solo la mitad del pago sugerido, mientras que las especialmente peligrosas pueden exigir un regalo mayor. Rara vez aceptan tareas que parezcan suicidas.
+Cuando la criatura termina la tarea, o cuando expira la duración de servicio acordada, vuelve a su plano natal después de informarte, si le es posible. Si no llegáis a un acuerdo sobre el precio de su servicio, la criatura vuelve de inmediato a su plano natal.
+
+== Planar Binding
+components: V, S, M (una joya por valor de 1.000 po o más, que el conjuro consume)
+body:
+Intentas vincular a tu servicio a un celestial, un elemental, un feérico o un infernal. La criatura debe permanecer dentro del alcance durante todo el lanzamiento del conjuro. (Lo habitual es invocarla primero en el centro de la versión invertida del conjuro *círculo mágico* para atraparla mientras se lanza este). Al terminar el lanzamiento, el objetivo hace una tirada de salvación de Carisma. Si la falla, queda vinculado a tu servicio mientras dure el conjuro. Si la criatura fue invocada o creada por otro conjuro, la duración de aquel se amplía para igualar la de este.
+Una criatura vinculada debe cumplir tus órdenes lo mejor que pueda. Puedes ordenarle que te acompañe en una aventura, que vigile un lugar o que entregue un mensaje. Si la criatura es hostil, se esforzará por retorcer tus órdenes para lograr sus propios fines. Si cumple tus órdenes por completo antes de que el conjuro termine, viaja hasta ti para informarte si estáis en el mismo plano de existencia. Si estás en otro plano, vuelve al lugar donde la vinculaste y allí permanece hasta que el conjuro termine.
+**Con un espacio de conjuro de nivel superior.** La duración aumenta con un espacio de nivel 6 (10 días), 7 (30 días), 8 (180 días) y 9 (366 días).
+
+== Plane Shift
+components: V, S, M (una vara metálica bifurcada por valor de 250 po o más y sintonizada con un plano de existencia)
+body:
+Tú y hasta ocho criaturas voluntarias que se den la mano formando un círculo sois transportados a otro plano de existencia. Puedes indicar el destino en términos generales, como una ciudad concreta del plano Elemental del Fuego o un palacio del segundo nivel de los Nueve Infiernos, y aparecéis en ese destino o cerca de él, según decida el DM.
+También puedes usar este conjuro para llegar a un círculo de teletransportación de otro plano si conoces su secuencia de sigilos. Si el círculo es demasiado pequeño para todas las criaturas transportadas, estas aparecen en los espacios sin ocupar más cercanos al círculo.
+
+== Plant Growth
+components: V, S
+casting: Acción (crecimiento) u 8 horas (enriquecimiento)
+body:
+Este conjuro canaliza vitalidad hacia las plantas. El tiempo de lanzamiento que uses determina si el conjuro tiene el efecto de crecimiento o el de enriquecimiento, descritos debajo.
+**Crecimiento.** Elige un punto dentro del alcance. Todas las plantas normales que haya en una esfera de 100 pies de radio centrada en ese punto se vuelven espesas y frondosas. Una criatura que se mueva por esa zona debe gastar 4 pies de movimiento por cada pie que avance. Puedes excluir del efecto una o varias zonas de cualquier tamaño dentro de la zona del conjuro.
+**Enriquecimiento.** Todas las plantas que haya en un radio de media milla centrado en un punto dentro del alcance quedan enriquecidas durante 365 días. Esas plantas dan el doble de comida de lo normal al cosecharlas. Solo pueden beneficiarse de un *crecimiento vegetal* al año.
+
+== Poison Spray
+components: V, S
+body:
+Rocías una bruma tóxica sobre una criatura que esté dentro del alcance. Haz un ataque de conjuro a distancia contra el objetivo. Si aciertas, recibe {{1d12|Poison}} de daño.
+**Mejora de truco.** El daño aumenta en 1d12 cuando alcanzas los niveles 5 (2d12), 11 (3d12) y 17 (4d12).
+
+== Polymorph
+components: V, S, M (el capullo de una oruga)
+body:
+Intentas transformar en bestia a una criatura que puedas ver dentro del alcance. El objetivo hace una tirada de salvación de Sabiduría. Si la falla, se transforma en una forma de bestia mientras dure el conjuro. Esa forma puede ser cualquier bestia que elijas cuyo valor de desafío sea igual o inferior al del objetivo (o a su nivel, si no tiene valor de desafío). Las puntuaciones de juego del objetivo se sustituyen por el perfil de la bestia elegida, pero conserva su alineamiento, su personalidad, su tipo de criatura, sus puntos de golpe y sus dados de golpe.
+El objetivo obtiene una cantidad de puntos de golpe temporales igual a los puntos de golpe de la forma de bestia. Esos puntos de golpe temporales desaparecen si le queda alguno cuando el conjuro termina. El conjuro termina antes de tiempo para el objetivo si se queda sin puntos de golpe temporales.
+Las acciones que el objetivo puede llevar a cabo quedan limitadas por la anatomía de su nueva forma, y no puede hablar ni lanzar conjuros.
+El equipo del objetivo se funde con la nueva forma. La criatura no puede usarlo ni beneficiarse de él de ninguna manera.
+
+== Power Word Heal
+components: V
+body:
+Una oleada de energía curativa envuelve a una criatura que puedas ver dentro del alcance. El objetivo recupera todos sus puntos de golpe. Si tiene los estados de hechizada, asustada, paralizada, envenenada o aturdida, esos estados terminan. Si tiene el estado de derribada, puede usar su reacción para levantarse.
+
+== Power Word Kill
+components: V
+body:
+Obligas a morir a una criatura que puedas ver dentro del alcance. Si el objetivo tiene 100 puntos de golpe o menos, muere. En caso contrario, recibe {{12d12|Psychic}} de daño.

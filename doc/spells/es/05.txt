@@ -1,0 +1,136 @@
+== Daylight
+components: V, S
+body:
+Mientras dure el conjuro, una luz solar se extiende desde un punto dentro del alcance y llena una esfera de 60 pies de radio. La zona de esa luz solar es luz brillante y emite luz tenue otros 60 pies más.
+También puedes lanzar el conjuro sobre un objeto que nadie lleve ni vista, con lo que la luz solar llena una emanación de 60 pies que parte de ese objeto. Tapar el objeto con algo opaco, como un cuenco o un yelmo, bloquea la luz solar.
+Si alguna parte de la zona de este conjuro se superpone con una zona de oscuridad creada por un conjuro de nivel 3 o inferior, ese otro conjuro queda disipado.
+
+== Death Ward
+components: V, S
+body:
+Tocas a una criatura y le concedes cierta protección contra la muerte. La primera vez que los puntos de golpe del objetivo fueran a reducirse a 0 antes de que el conjuro termine, se reducen a 1 en su lugar y el conjuro termina.
+Si el conjuro sigue activo cuando el objetivo se ve sometido a un efecto que lo mataría al instante sin causarle daño, ese efecto queda anulado contra él y el conjuro termina.
+
+== Delayed Blast Fireball
+components: V, S, M (una bola de guano de murciélago y azufre)
+body:
+Un haz de luz amarilla sale de ti y se condensa en un punto que elijas dentro del alcance, formando una cuenta luminosa que dura lo que dure el conjuro. Cuando el conjuro termina, la cuenta estalla y cada criatura que esté en una esfera de 20 pies de radio centrada en ese punto hace una tirada de salvación de Destreza. La criatura recibe una cantidad de {{Fire}} de daño igual al daño total acumulado si la falla, o la mitad si la supera.
+El daño base del conjuro es {{12d6|Fire}}, y aumenta en 1d6 cada vez que tu turno termina sin que el conjuro haya terminado.
+Si una criatura toca la cuenta luminosa antes de que el conjuro termine, hace una tirada de salvación de Destreza. Si la falla, el conjuro termina y la cuenta estalla. Si la supera, la criatura puede lanzar la cuenta hasta 40 pies. Si la cuenta lanzada entra en el espacio de una criatura o choca con un objeto sólido, el conjuro termina y la cuenta estalla.
+Cuando la cuenta estalla, los objetos inflamables de la explosión que nadie lleve ni vista empiezan a arder.
+**Con un espacio de conjuro de nivel superior.** El daño base aumenta en 1d6 por cada nivel por encima de 7 que tenga el espacio.
+
+== Demiplane
+components: S
+body:
+Creas una puerta Mediana y sombría sobre una superficie sólida y plana que puedas ver dentro del alcance. Esa puerta se puede abrir y cerrar, y lleva a un semiplano que es una sala vacía de 30 pies en cada dimensión, hecha de madera o de piedra (a tu elección).
+Cuando el conjuro termina, la puerta desaparece y los objetos que haya dentro del semiplano se quedan allí. Las criaturas que haya dentro también se quedan, salvo que decidan salir empujadas por la puerta mientras se desvanece, en cuyo caso caen con el estado de derribadas en los espacios sin ocupar más cercanos al lugar que ocupaba la puerta.
+Cada vez que lanzas este conjuro puedes crear un semiplano nuevo o conectar la puerta sombría con uno que hayas creado en un lanzamiento anterior. Además, si conoces la naturaleza y el contenido de un semiplano creado por otra criatura con este conjuro, puedes conectar la puerta con ese semiplano.
+
+== Detect Evil and Good
+components: V, S
+body:
+Mientras dure el conjuro percibes la ubicación de cualquier aberración, celestial, elemental, feérico, infernal o muerto viviente que esté a 30 pies o menos de ti. También percibes si el conjuro *consagrar* está activo allí y, en tal caso, dónde.
+El conjuro queda bloqueado por 1 pie de piedra, tierra o madera, por 1 pulgada de metal o por una fina lámina de plomo.
+
+== Detect Magic
+components: V, S
+body:
+Mientras dure el conjuro percibes la presencia de efectos mágicos a 30 pies o menos de ti. Si percibes alguno, puedes llevar a cabo la acción de magia para ver un aura tenue alrededor de cualquier criatura u objeto visible de la zona que sea la fuente de esa magia; y si el efecto lo creó un conjuro, averiguas su escuela de magia.
+El conjuro queda bloqueado por 1 pie de piedra, tierra o madera, por 1 pulgada de metal o por una fina lámina de plomo.
+
+== Detect Poison and Disease
+components: V, S, M (una hoja de tejo)
+body:
+Mientras dure el conjuro percibes la ubicación de los venenos, de las criaturas venenosas o ponzoñosas y de los contagios mágicos que estén a 30 pies o menos de ti. En cada caso percibes de qué clase de veneno, criatura o contagio se trata.
+El conjuro queda bloqueado por 1 pie de piedra, tierra o madera, por 1 pulgada de metal o por una fina lámina de plomo.
+
+== Detect Thoughts
+components: V, S, M (1 pieza de cobre)
+body:
+Activas uno de los efectos siguientes. Hasta que el conjuro termine puedes activar cualquiera de los dos como acción de magia en tus turnos posteriores.
+**Percibir pensamientos.** Percibes la presencia de pensamientos a 30 pies o menos de ti que pertenezcan a criaturas que conozcan idiomas o sean telepáticas. No los lees, pero sabes que hay una criatura pensante presente.
+El conjuro queda bloqueado por 1 pie de piedra, tierra o madera, por 1 pulgada de metal o por una fina lámina de plomo.
+**Leer pensamientos.** Haz objetivo a una criatura que puedas ver a 30 pies o menos de ti, o a una criatura que esté a 30 pies o menos de ti y hayas detectado con la opción de percibir pensamientos. Averiguas qué es lo que más ocupa su mente en ese momento. Si el objetivo no conoce ningún idioma y no es telepático, no averiguas nada.
+Como acción de magia en tu siguiente turno puedes intentar sondear más a fondo la mente del objetivo. Si lo haces, el objetivo hace una tirada de salvación de Sabiduría. Si la falla, discurres su razonamiento, sus emociones y algo que ocupa un lugar destacado en su mente (una preocupación, un amor, un odio). Si la supera, el conjuro termina. En cualquier caso, el objetivo sabe que estás sondeando su mente y, hasta que apartes tu atención de ella, puede llevar a cabo una acción en su turno para hacer una prueba de Inteligencia (Arcanos) contra tu CD de salvación de conjuros; el conjuro termina si la supera.
+
+== Dimension Door
+components: V
+body:
+Te teletransportas a un lugar dentro del alcance. Llegas exactamente al punto deseado. Puede ser un lugar que veas, uno que puedas visualizar o uno que puedas describir indicando distancia y dirección, como «200 pies en línea recta hacia abajo» o «300 pies hacia arriba en dirección noroeste, con un ángulo de 45 grados».
+También puedes teletransportar a una criatura voluntaria. La criatura debe estar a 5 pies o menos de ti cuando te teletransportas y aparece en un espacio a 5 pies o menos de tu espacio de destino.
+Si tú, la otra criatura o ambos fuerais a llegar a un espacio ocupado por una criatura o completamente lleno de objetos, tú y cualquier criatura que viaje contigo recibís {{4d6|Force}} de daño y el teletransporte falla.
+
+== Disguise Self
+components: V, S
+body:
+Haces que tu aspecto, incluidos tu ropa, tu armadura, tus armas y las demás pertenencias que lleves encima, sea distinto hasta que el conjuro termine. Puedes parecer 1 pie más bajo o más alto y aparentar más o menos peso. Debes adoptar una forma con la misma disposición básica de miembros que la tuya. Por lo demás, el alcance de la ilusión lo decides tú.
+Los cambios que provoca este conjuro no resisten una inspección física. Por ejemplo, si lo usas para añadir un sombrero a tu atuendo, los objetos atraviesan el sombrero y quien lo tocara no notaría nada.
+Para darse cuenta de que vas disfrazado, una criatura debe llevar a cabo la acción de estudiar para examinar tu aspecto y superar una prueba de Inteligencia (Investigación) contra tu CD de salvación de conjuros.
+
+== Disintegrate
+components: V, S, M (una piedra imán y polvo)
+body:
+Lanzas un rayo verde contra un objetivo que puedas ver dentro del alcance. El objetivo puede ser una criatura, un objeto no mágico o una creación de fuerza mágica, como el muro que crea *muro de fuerza*.
+Una criatura que sea objetivo de este conjuro hace una tirada de salvación de Destreza. Si la falla, recibe {{10d6|Force}} + 40 de daño. Si ese daño la reduce a 0 puntos de golpe, ella y todo lo no mágico que lleve o vista quedan desintegrados y reducidos a polvo gris. El objetivo solo puede revivirse con *resurrección verdadera* o con *deseo*.
+Este conjuro desintegra automáticamente un objeto no mágico de tamaño Grande o menor, o una creación de fuerza mágica. Si ese objetivo es de tamaño Enorme o mayor, el conjuro desintegra una porción suya equivalente a un cubo de 10 pies de lado.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 3d6 por cada nivel por encima de 6 que tenga el espacio.
+
+== Dispel Evil and Good
+components: V, S, M (plata y hierro en polvo)
+body:
+Mientras dure el conjuro, los celestiales, elementales, feéricos, infernales y muertos vivientes tienen desventaja en las tiradas de ataque contra ti. Puedes terminar el conjuro antes de tiempo usando cualquiera de estas dos funciones especiales.
+**Romper el encantamiento.** Como acción de magia, tocas a una criatura que esté poseída o que tenga el estado de hechizada o de asustada por causa de una o varias criaturas de los tipos anteriores. El objetivo deja de estar poseído, hechizado o asustado por esas criaturas.
+**Expulsión.** Como acción de magia, haces objetivo a una criatura que puedas ver a 5 pies o menos de ti y que sea de uno de los tipos anteriores. El objetivo hace una tirada de salvación de Carisma. Si la falla, es enviado de vuelta a su plano natal, si no está ya en él. Si no están en su plano natal, los muertos vivientes son enviados a la Tierra de las Sombras y los feéricos a la Tierra Feérica.
+
+== Dispel Magic
+components: V, S
+body:
+Elige una criatura, un objeto o un efecto mágico dentro del alcance. Cualquier conjuro de nivel 3 o inferior que esté activo sobre el objetivo termina. Por cada conjuro de nivel 4 o superior que esté activo sobre él, haz una prueba de característica con tu característica de lanzamiento de conjuros (CD 10 más el nivel de ese conjuro). Si la superas, el conjuro termina.
+**Con un espacio de conjuro de nivel superior.** Terminas automáticamente un conjuro del objetivo si su nivel es igual o inferior al del espacio de conjuro que gastas.
+
+== Dissonant Whispers
+components: V
+body:
+Una criatura que elijas y puedas ver dentro del alcance oye una melodía discordante en su mente. El objetivo hace una tirada de salvación de Sabiduría. Si la falla, recibe {{3d6|Psychic}} de daño y debe usar de inmediato su reacción, si la tiene disponible, para alejarse de ti todo lo que pueda por la ruta más segura. Si la supera, recibe la mitad del daño y nada más.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 1 que tenga el espacio.
+
+== Divination
+components: V, S, M (incienso por valor de 25 po o más, que el conjuro consume)
+body:
+Este conjuro te pone en contacto con un dios o con sus sirvientes. Haces una pregunta sobre un objetivo, un suceso o una actividad concretos que vayan a ocurrir en los próximos 7 días. El DM ofrece una respuesta veraz, que puede ser una frase corta o una rima críptica. El conjuro no tiene en cuenta las circunstancias que pudieran cambiar la respuesta, como el lanzamiento de otros conjuros.
+Si lanzas el conjuro más de una vez antes de terminar un descanso largo, hay una probabilidad acumulativa del 25 % por cada lanzamiento después del primero de que no recibas respuesta.
+
+== Divine Favor
+components: V, S
+body:
+Hasta que el conjuro termine, tus ataques con armas causan {{1d4|Radiant}} de daño adicional cuando aciertan.
+
+== Divine Smite
+components: V
+casting: Acción adicional, que llevas a cabo justo después de acertar a un objetivo con un arma cuerpo a cuerpo o con un ataque sin armas
+body:
+El objetivo recibe {{2d8|Radiant}} de daño adicional del ataque. El daño aumenta en 1d8 si el objetivo es un infernal o un muerto viviente.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 1 que tenga el espacio.
+
+== Divine Word
+components: V
+body:
+Pronuncias una palabra imbuida del poder de los planos Superiores. Cada criatura que elijas y esté dentro del alcance hace una tirada de salvación de Carisma. Si la falla, un objetivo que tenga 50 puntos de golpe o menos sufre un efecto según sus puntos de golpe actuales, indicado en la tabla de efectos de palabra divina. Sean cuales sean sus puntos de golpe, un objetivo celestial, elemental, feérico o infernal que falle la tirada es devuelto por la fuerza a su plano de origen (si no está ya en él) y no puede volver al plano actual durante 24 horas por ningún medio que no sea el conjuro *deseo*.
+Divine Word Effects Hit Points Effect 0–20
+
+== Dominate Beast
+components: V, S
+body:
+Una bestia que puedas ver dentro del alcance hace una tirada de salvación de Sabiduría. Si la falla, tiene el estado de hechizada mientras dure el conjuro. El objetivo tiene ventaja en la tirada si tus aliados o tú estáis luchando contra él. Siempre que el objetivo recibe daño, repite la tirada y el conjuro termina para él si la supera.
+Tienes un vínculo telepático con el objetivo hechizado mientras los dos estéis en el mismo plano de existencia. En tu turno puedes usar ese vínculo para darle órdenes (no requiere acción), como «ataca a esa criatura», «muévete allí» o «tráeme ese objeto». El objetivo hace todo lo posible por obedecer en su turno. Si termina una orden y no recibe más indicaciones tuyas, actúa y se mueve como quiere, centrado en protegerse.
+Puedes ordenarle que lleve a cabo una reacción, pero para ello debes gastar tu propia reacción.
+**Con un espacio de conjuro de nivel superior.** Tu concentración puede durar más con un espacio de nivel 5 (hasta 10 minutos), 6 (hasta 1 hora) o 7 o superior (hasta 8 horas).
+
+== Dominate Monster
+components: V, S
+body:
+Una criatura que puedas ver dentro del alcance hace una tirada de salvación de Sabiduría. Si la falla, tiene el estado de hechizada mientras dure el conjuro. El objetivo tiene ventaja en la tirada si tus aliados o tú estáis luchando contra él. Siempre que el objetivo recibe daño, repite la tirada y el conjuro termina para él si la supera.
+Tienes un vínculo telepático con el objetivo hechizado mientras los dos estéis en el mismo plano de existencia. En tu turno puedes usar ese vínculo para darle órdenes (no requiere acción), como «ataca a esa criatura», «muévete allí» o «tráeme ese objeto». El objetivo hace todo lo posible por obedecer en su turno. Si termina una orden y no recibe más indicaciones tuyas, actúa y se mueve como quiere, centrado en protegerse.
+Puedes ordenarle que lleve a cabo una reacción, pero para ello debes gastar tu propia reacción.
+**Con un espacio de conjuro de nivel superior.** Tu concentración puede durar más con un espacio de nivel 9 (hasta 8 horas).

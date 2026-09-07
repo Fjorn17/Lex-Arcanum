@@ -1,0 +1,339 @@
+Acid Arrow	Flecha ácida
+Acid Splash	Salpicadura ácida
+Aid	Auxilio
+Alarm	Alarma
+Alter Self	Alterar el propio aspecto
+Animal Friendship	Encantar animal
+Animal Messenger	Mensajero animal
+Animal Shapes	Aspectos animales
+Animate Dead	Animar a los muertos
+Animate Objects	Animar objetos
+Antilife Shell	Caparazón antivida
+Antimagic Field	Campo antimagia
+Antipathy/Sympathy	Antipatía/simpatía
+Arcane Eye	Ojo arcano
+Arcane Hand	Mano arcana
+Arcane Lock	Cerradura arcana
+Arcane Sword	Espada arcana
+Arcanist’s Magic Aura	Aura mágica del arcanista
+Astral Projection	Proyección astral
+Augury	Augurio
+Aura of Life	Aura de vida
+Awaken	Despertar
+Bane	Perdición
+Banishment	Destierro
+Barkskin	Piel robliza
+Beacon of Hope	Señal de esperanza
+Befuddlement	Ofuscación
+Bestow Curse	Imponer maldición
+Black Tentacles	Tentáculos negros
+Blade Barrier	Barrera de cuchillas
+Bless	Bendición
+Blight	Marchitar
+Blindness/Deafness	Sordera/ceguera
+Blink	Desplazamiento
+Blur	Contorno borroso
+Burning Hands	Manos ardientes
+Call Lightning	Llamar al relámpago
+Calm Emotions	Calmar emociones
+Chain Lightning	Relámpago en cadena
+Charm Monster	Hechizar monstruo
+Charm Person	Hechizar persona
+Chill Touch	Toque helado
+Chromatic Orb	Orbe cromático
+Circle of Death	Círculo de muerte
+Clairvoyance	Clarividencia
+Clone	Clon
+Cloudkill	Nube aniquiladora
+Color Spray	Rociada de color
+Command	Orden imperiosa
+Commune	Comunión
+Commune with Nature	Comunión con la naturaleza
+Comprehend Languages	Entender idiomas
+Compulsion	Compulsión
+Cone of Cold	Cono de frío
+Confusion	Confusión
+Conjure Animals	Conjurar animales
+Conjure Celestial	Conjurar celestial
+Conjure Elemental	Conjurar elemental
+Conjure Fey	Conjurar feérico
+Conjure Minor Elementals	Conjurar elementales menores
+Conjure Woodland Beings	Conjurar seres del bosque
+Contact Other Plane	Contactar con otro plano
+Contagion	Contagio
+Contingency	Contingencia
+Continual Flame	Llama permanente
+Control Water	Controlar agua
+Control Weather	Controlar el clima
+Counterspell	Contrahechizo
+Create Food and Water	Crear comida y agua
+Create or Destroy Water	Crear o destruir agua
+Create Undead	Crear muerto viviente
+Creation	Creación
+Cure Wounds	Curar heridas
+Dancing Lights	Luces danzantes
+Darkness	Oscuridad
+Darkvision	Visión en la oscuridad
+Daylight	Luz del día
+Death Ward	Guarda contra la muerte
+Delayed Blast Fireball	Bola de fuego de explosión retardada
+Demiplane	Semiplano
+Detect Evil and Good	Detectar el bien y el mal
+Detect Magic	Detectar magia
+Detect Poison and Disease	Detectar venenos y enfermedades
+Detect Thoughts	Detectar pensamientos
+Dimension Door	Puerta dimensional
+Disguise Self	Disfrazarse
+Disintegrate	Desintegrar
+Dispel Evil and Good	Disipar el bien y el mal
+Dispel Magic	Disipar magia
+Dissonant Whispers	Susurros discordantes
+Divination	Adivinación
+Divine Favor	Favor divino
+Divine Smite	Castigo divino
+Divine Word	Palabra divina
+Dominate Beast	Dominar bestia
+Dominate Monster	Dominar monstruo
+Dominate Person	Dominar persona
+Dragon’s Breath	Aliento de dragón
+Dream	Ensueño
+Druidcraft	Saber druídico
+Earthquake	Terremoto
+Eldritch Blast	Descarga sobrenatural
+Elementalism	Elementalismo
+Enhance Ability	Potenciar característica
+Enlarge/Reduce	Agrandar/reducir
+Ensnaring Strike	Golpe apresador
+Entangle	Enmarañar
+Enthrall	Embelesar
+Etherealness	Excursión etérea
+Expeditious Retreat	Retirada expeditiva
+Eyebite	Mal de ojo
+Fabricate	Fabricar
+Faerie Fire	Fuego feérico
+Faithful Hound	Mastín fiel
+False Life	Falsa vida
+Fear	Terror
+Feather Fall	Caída de pluma
+Find Familiar	Encontrar familiar
+Find Steed	Hallar corcel
+Find the Path	Encontrar el camino
+Find Traps	Detectar trampas
+Finger of Death	Dedo de la muerte
+Fireball	Bola de fuego
+Fire Bolt	Descarga de fuego
+Fire Shield	Escudo de fuego
+Fire Storm	Tormenta de fuego
+Flame Blade	Hoja de fuego
+Flame Strike	Golpe flamígero
+Flaming Sphere	Esfera de llamas
+Flesh to Stone	De la carne a la piedra
+Floating Disk	Disco flotante
+Fly	Volar
+Fog Cloud	Nube de oscurecimiento
+Forbiddance	Prohibición
+Forcecage	Jaula de fuerza
+Foresight	Presciencia
+Freedom of Movement	Libertad de movimiento
+Freezing Sphere	Esfera congelante
+Gaseous Form	Forma gaseosa
+Gate	Portal
+Geas	Geas
+Gentle Repose	Dulce descanso
+Giant Insect	Insecto gigante
+Glibness	Labia
+Globe of Invulnerability	Globo de invulnerabilidad
+Glyph of Warding	Glifo custodio
+Goodberry	Buenas bayas
+Grease	Grasa
+Greater Invisibility	Invisibilidad mejorada
+Greater Restoration	Restablecimiento mayor
+Guardian of Faith	Guardián de la fe
+Guards and Wards	Guardas y guardias
+Guidance	Guía
+Guiding Bolt	Saeta guía
+Gust of Wind	Ráfaga de viento
+Hallow	Consagrar
+Hallucinatory Terrain	Terreno alucinatorio
+Harm	Dañar
+Haste	Acelerar
+Heal	Curar
+Healing Word	Palabra de curación
+Heat Metal	Calentar metal
+Hellish Rebuke	Reprensión infernal
+Heroes’ Feast	Festín de héroes
+Heroism	Heroísmo
+Hex	Maleficio
+Hideous Laughter	Risa horrible
+Hold Monster	Inmovilizar monstruo
+Hold Person	Inmovilizar persona
+Holy Aura	Aura sagrada
+Hunter’s Mark	Marca del cazador
+Hypnotic Pattern	Patrón hipnótico
+Ice Knife	Cuchillo de hielo
+Ice Storm	Tormenta de hielo
+Identify	Identificar
+Illusory Script	Texto ilusorio
+Imprisonment	Cautiverio
+Incendiary Cloud	Nube incendiaria
+Inflict Wounds	Infligir heridas
+Insect Plague	Plaga de insectos
+Instant Summons	Invocación instantánea
+Irresistible Dance	Baile irresistible
+Invisibility	Invisibilidad
+Jump	Salto
+Knock	Abrir
+Legend Lore	Conocer las leyendas
+Lesser Restoration	Restablecimiento menor
+Levitate	Levitar
+Light	Luz
+Lightning Bolt	Relámpago
+Locate Animals or Plants	Localizar animales o plantas
+Locate Creature	Localizar criatura
+Locate Object	Localizar objeto
+Longstrider	Zancada prodigiosa
+Mage Armor	Armadura de mago
+Mage Hand	Mano de mago
+Magic Circle	Círculo mágico
+Magic Jar	Urna mágica
+Magic Missile	Proyectil mágico
+Magic Mouth	Boca mágica
+Magic Weapon	Arma mágica
+Magnificent Mansion	Mansión magnífica
+Major Image	Imagen mayor
+Mass Cure Wounds	Curar heridas en masa
+Mass Heal	Curar en masa
+Mass Healing Word	Palabra de curación en masa
+Mass Suggestion	Sugestión en masa
+Maze	Laberinto
+Meld into Stone	Fundirse con la piedra
+Mending	Reparar
+Message	Mensaje
+Meteor Swarm	Tormenta de meteoritos
+Mind Blank	Mente en blanco
+Mind Spike	Clavo mental
+Minor Illusion	Ilusión menor
+Mirage Arcane	Espejismo arcano
+Mirror Image	Imagen múltiple
+Mislead	Engañar
+Misty Step	Paso brumoso
+Modify Memory	Alterar los recuerdos
+Moonbeam	Rayo de luna
+Move Earth	Mover la tierra
+Nondetection	Indetectable
+Passwall	Pasamuros
+Pass without Trace	Pasar sin rastro
+Phantasmal Force	Fuerza fantasmal
+Phantasmal Killer	Asesino fantasmal
+Phantom Steed	Corcel fantasma
+Planar Ally	Aliado planar
+Planar Binding	Atadura planar
+Plane Shift	Desplazamiento entre planos
+Plant Growth	Crecimiento vegetal
+Poison Spray	Rociada venenosa
+Polymorph	Polimorfar
+Power Word Heal	Palabra de poder: sanar
+Power Word Kill	Palabra de poder: matar
+Power Word Stun	Palabra de poder: aturdir
+Prayer of Healing	Plegaria de curación
+Prestidigitation	Prestidigitación
+Prismatic Spray	Rociada prismática
+Prismatic Wall	Muro prismático
+Private Sanctum	Sanctasanctórum privado
+Produce Flame	Crear llama
+Programmed Illusion	Ilusión programada
+Project Image	Proyectar imagen
+Protection from Energy	Protección contra energía
+Protection from Evil and Good	Protección contra el bien y el mal
+Protection from Poison	Protección contra veneno
+Purify Food and Drink	Purificar comida y bebida
+Raise Dead	Alzar a los muertos
+Ray of Enfeeblement	Rayo debilitador
+Ray of Frost	Rayo de escarcha
+Regenerate	Regenerar
+Ray of Sickness	Rayo nauseabundo
+Reincarnate	Reencarnar
+Remove Curse	Levantar maldición
+Resilient Sphere	Esfera elástica
+Resistance	Resistencia
+Resurrection	Resurrección
+Reverse Gravity	Invertir la gravedad
+Revivify	Revivir
+Rope Trick	Truco de la cuerda
+Sacred Flame	Llama sagrada
+Sanctuary	Santuario
+Scorching Ray	Rayo abrasador
+Scrying	Escudriñar
+Searing Smite	Castigo abrasador
+Secret Chest	Cofre oculto
+See Invisibility	Ver invisibilidad
+Seeming	Apariencia
+Sending	Recado
+Sequester	Recluir
+Shapechange	Cambiar de forma
+Shatter	Hacer añicos
+Shield	Escudo
+Shield of Faith	Escudo de fe
+Shillelagh	Shillelagh
+Shining Smite	Castigo brillante
+Shocking Grasp	Agarre electrizante
+Silence	Silencio
+Silent Image	Imagen silenciosa
+Simulacrum	Simulacro
+Sleep	Dormir
+Sleet Storm	Tormenta de aguanieve
+Slow	Ralentizar
+Sorcerous Burst	Estallido mágico
+Spare the Dying	Piedad con los moribundos
+Speak with Animals	Hablar con los animales
+Speak with Dead	Hablar con los muertos
+Speak with Plants	Hablar con las plantas
+Spider Climb	Trepar cual arácnido
+Spike Growth	Crecimiento espinoso
+Spirit Guardians	Espíritus guardianes
+Spiritual Weapon	Arma espiritual
+Starry Wisp	Voluta estelar
+Stinking Cloud	Nube apestosa
+Stone Shape	Moldear la piedra
+Stoneskin	Piel pétrea
+Storm of Vengeance	Tormenta de la venganza
+Suggestion	Sugestión
+Summon Dragon	Invocar dragón
+Sunbeam	Rayo solar
+Sunburst	Explosión solar
+Symbol	Símbolo
+Telekinesis	Telequinesis
+Telepathic Bond	Enlace telepático
+Teleport	Teletransporte
+Teleportation Circle	Círculo de teletransportación
+Thaumaturgy	Taumaturgia
+Thunderwave	Ola atronadora
+Time Stop	Parar el tiempo
+Tiny Hut	Pequeña choza
+Tongues	Don de lenguas
+Transport via Plants	Viajar mediante plantas
+Tree Stride	Paso arbóreo
+True Polymorph	Polimorfar verdadero
+True Resurrection	Resurrección verdadera
+True Seeing	Visión veraz
+True Strike	Impacto certero
+Tsunami	Tsunami
+Unseen Servant	Sirviente invisible
+Vampiric Touch	Toque vampírico
+Vicious Mockery	Burla dañina
+Vitriolic Sphere	Esfera vitriólica
+Wall of Fire	Muro de fuego
+Wall of Force	Muro de fuerza
+Wall of Ice	Muro de hielo
+Wall of Stone	Muro de piedra
+Wall of Thorns	Muro de espinas
+Warding Bond	Vínculo protector
+Water Breathing	Respirar bajo el agua
+Water Walk	Caminar sobre el agua
+Web	Telaraña
+Weird	Terror abyecto
+Wind Walk	Viajar con el viento
+Wind Wall	Muro de viento
+Wish	Deseo
+Word of Recall	Palabra de regreso
+Zone of Truth	Zona de la verdad

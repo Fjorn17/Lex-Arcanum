@@ -1,0 +1,129 @@
+== Resilient Sphere
+components: V, S, M (una esfera de vidrio)
+body:
+Una esfera reluciente encierra a una criatura u objeto de tamaño Grande o menor que estén dentro del alcance. Una criatura no voluntaria hace una tirada de salvación de Destreza y queda encerrada si la falla, mientras dure el conjuro.
+Nada (ni objetos físicos, ni energía, ni otros efectos de conjuro) puede atravesar la barrera en ningún sentido, aunque una criatura que esté dentro sí puede respirar. La esfera es inmune a todo el daño, y una criatura u objeto que estén dentro no pueden recibir daño de ataques o efectos originados fuera, ni una criatura de dentro puede dañar nada de fuera.
+La esfera no pesa nada y es justo lo bastante grande para contener a la criatura u objeto de su interior. Una criatura encerrada puede llevar a cabo una acción para empujar contra las paredes de la esfera y hacerla rodar así a hasta la mitad de su velocidad. Del mismo modo, otras criaturas pueden coger el globo y moverlo.
+Un conjuro de *desintegrar* que tenga el globo como objetivo lo destruye sin dañar nada de lo que haya dentro.
+
+== Resistance
+components: V, S
+body:
+Tocas a una criatura voluntaria y eliges un tipo de daño: {{Acid}}, {{Bludgeoning}}, {{Cold}}, {{Fire}}, {{Lightning}}, {{Necrotic}}, {{Piercing}}, {{Poison}}, {{Radiant}}, {{Slashing}} o {{Thunder}}. Cuando la criatura reciba daño del tipo elegido antes de que el conjuro termine, reduce el daño total recibido en 1d4. Una criatura solo puede beneficiarse de este conjuro una vez por turno.
+
+== Resurrection
+components: V, S, M (un diamante por valor de 1.000 po o más, que el conjuro consume)
+body:
+Con un toque devuelves la vida a una criatura muerta que no lleve muerta más de un siglo, que no muriera de vieja y que no fuera un muerto viviente al morir.
+La criatura vuelve a la vida con todos sus puntos de golpe. Este conjuro neutraliza además cualquier veneno que la afectara en el momento de su muerte, cierra todas las heridas mortales y le restaura las partes del cuerpo que le faltaran.
+Volver de entre los muertos es un trance duro. El objetivo recibe un penalizador de −4 a las pruebas con d20. Cada vez que termina un descanso largo, ese penalizador se reduce en 1 hasta llegar a 0.
+Lanzar este conjuro para devolver la vida a una criatura que lleve muerta 365 días o más te pasa factura: hasta que termines un descanso largo no puedes volver a lanzar conjuros y tienes desventaja en las pruebas con d20.
+
+== Reverse Gravity
+components: V, S, M (una piedra imán y limaduras de hierro)
+body:
+Este conjuro invierte la gravedad en un cilindro de 50 pies de radio y 100 pies de alto centrado en un punto dentro del alcance. Todas las criaturas y objetos de esa zona que no estén anclados al suelo caen hacia arriba y llegan a lo alto del cilindro. Una criatura puede hacer una tirada de salvación de Destreza para agarrarse a un objeto fijo que tenga a su alcance y evitar así la caída hacia arriba.
+Si en esa caída hacia arriba se topan con un techo o con un objeto anclado, las criaturas y objetos chocan contra él igual que lo harían en una caída hacia abajo. Si una criatura u objeto afectados llegan a lo alto del cilindro sin chocar con nada, se quedan allí suspendidos mientras dure el conjuro. Cuando el conjuro termina, los objetos y criaturas afectados caen hacia abajo.
+
+== Revivify
+components: V, S, M (un diamante por valor de 300 po o más, que el conjuro consume)
+body:
+Tocas a una criatura que haya muerto en el último minuto. Esa criatura revive con 1 punto de golpe. Este conjuro no puede revivir a una criatura que haya muerto de vieja, ni le restaura las partes del cuerpo que le falten.
+
+== Rope Trick
+components: V, S, M (un trozo de cuerda)
+body:
+Tocas una cuerda. Uno de sus extremos se eleva hasta que la cuerda queda perpendicular al suelo o llega a un techo. En el extremo superior de la cuerda se abre un portal invisible de 3 por 5 pies que da a un espacio extradimensional y que dura lo que dure el conjuro. A ese espacio se llega trepando por la cuerda, que se puede subir o dejar caer desde él.
+El espacio puede albergar hasta ocho criaturas de tamaño Mediano o menor. Los ataques, los conjuros y los demás efectos no pueden entrar en él ni salir, pero las criaturas de dentro pueden ver a través del portal. Todo lo que haya dentro cae fuera cuando el conjuro termina.
+
+== Sacred Flame
+components: V, S
+body:
+Un resplandor parecido a una llama desciende sobre una criatura que puedas ver dentro del alcance. El objetivo hace una tirada de salvación de Destreza y recibe {{1d8|Radiant}} de daño si la falla. El objetivo no se beneficia de la cobertura media ni de la cobertura de tres cuartos en esta tirada.
+**Mejora de truco.** El daño aumenta en 1d8 cuando alcanzas los niveles 5 (2d8), 11 (3d8) y 17 (4d8).
+
+== Sanctuary
+components: V, S, M (una esquirla de vidrio de un espejo)
+body:
+Proteges a una criatura que esté dentro del alcance. Hasta que el conjuro termine, cualquier criatura que haga objetivo a la criatura protegida con una tirada de ataque o con un conjuro que cause daño hace una tirada de salvación de Sabiduría; si la falla, debe elegir un objetivo nuevo o perder el ataque o el conjuro. Este conjuro no protege a la criatura de las áreas de efecto. El conjuro termina si la criatura protegida hace una tirada de ataque, lanza un conjuro o causa daño.
+
+== Scorching Ray
+components: V, S
+body:
+Arrojas tres rayos de fuego. Puedes lanzarlos contra un solo objetivo dentro del alcance o contra varios. Haz un ataque de conjuro a distancia por cada rayo. Si aciertas, el objetivo recibe {{2d6|Fire}} de daño.
+**Con un espacio de conjuro de nivel superior.** Creas un rayo más por cada nivel por encima de 2 que tenga el espacio.
+
+== Scrying
+components: V, S, M (un foco por valor de 1.000 po o más, como una bola de cristal, un espejo o una pila llena de agua)
+body:
+Puedes ver y oír a una criatura que elijas y esté en tu mismo plano de existencia. El objetivo hace una tirada de salvación de Sabiduría, modificada (según las tablas siguientes) por lo bien que lo conozcas y por el tipo de conexión física que tengas con él. El objetivo no sabe contra qué está haciendo la tirada, solo que se siente incómodo.
+Your Knowledge of the Target Is
+Si la falla, el conjuro crea un sensor invisible e intangible a 10 pies o menos del objetivo. Puedes ver y oír a través de él como si estuvieras allí. El sensor se mueve con el objetivo y se mantiene a 10 pies o menos de él mientras dure el conjuro. Si algo puede ver el sensor, lo percibe como un orbe luminoso del tamaño de tu puño.
+En lugar de una criatura puedes hacer objetivo a un lugar que hayas visto. Si lo haces, el sensor aparece en ese lugar y no se mueve.
+
+== Searing Smite
+components: V
+casting: Acción adicional, que llevas a cabo justo después de acertar a un objetivo con un arma cuerpo a cuerpo o con un ataque sin armas
+body:
+Al acertar al objetivo, este recibe {{1d6|Fire}} de daño adicional del ataque. Al principio de cada uno de sus turnos, hasta que el conjuro termine, el objetivo recibe {{1d6|Fire}} de daño y después hace una tirada de salvación de Constitución. Si la falla, el conjuro continúa. Si la supera, el conjuro termina.
+**Con un espacio de conjuro de nivel superior.** Todo el daño aumenta en 1d6 por cada nivel por encima de 1 que tenga el espacio.
+
+== Secret Chest
+components: V, S, M (un cofre de 3 por 2 por 2 pies construido con materiales raros por valor de 5.000 po o más, y una réplica Diminuta del cofre hecha con los mismos materiales por valor de 50 po o más)
+body:
+Escondes un cofre y todo su contenido en el plano Etéreo. Debes tocar el cofre y la réplica en miniatura que sirven de componentes materiales del conjuro. El cofre puede contener hasta 12 pies cúbicos de material no vivo (3 por 2 por 2 pies).
+Mientras el cofre siga en el plano Etéreo, puedes llevar a cabo una acción de magia y tocar la réplica para hacerlo volver. Aparece en un espacio sin ocupar del suelo a 5 pies o menos de ti. Puedes devolverlo al plano Etéreo llevando a cabo una acción de magia para tocar el cofre y la réplica.
+Al cabo de 60 días hay una probabilidad acumulativa del 5 % al final de cada día de que el conjuro termine. El conjuro también termina si vuelves a lanzarlo o si la réplica Diminuta se destruye. Si el conjuro termina y el cofre grande está en el plano Etéreo, allí se queda para que lo encuentres tú u otra persona.
+
+== See Invisibility
+components: V, S, M (una pizca de talco)
+body:
+Mientras dure el conjuro ves como si fueran visibles a las criaturas y objetos que tengan el estado de invisible, y puedes ver el plano Etéreo. Las criaturas y objetos que haya allí se ven fantasmales.
+
+== Seeming
+components: V, S
+body:
+Das un aspecto ilusorio a cada criatura que elijas y puedas ver dentro del alcance. Un objetivo no voluntario puede hacer una tirada de salvación de Carisma y, si la supera, no se ve afectado por este conjuro.
+Puedes darles a los objetivos el mismo aspecto o aspectos distintos. El conjuro puede cambiar el aspecto de sus cuerpos y de su equipo. Puedes hacer que cada criatura parezca 1 pie más baja o más alta y que aparente más o menos peso. El nuevo aspecto de un objetivo debe tener la misma disposición básica de miembros que él; por lo demás, el alcance de la ilusión lo decides tú. El conjuro dura lo que dure.
+Los cambios que provoca este conjuro no resisten una inspección física. Por ejemplo, si lo usas para añadir un sombrero al atuendo de una criatura, los objetos atraviesan el sombrero.
+Una criatura que lleve a cabo la acción de estudiar para examinar a un objetivo puede hacer una prueba de Inteligencia (Investigación) contra tu CD de salvación de conjuros. Si la supera, se da cuenta de que el objetivo va disfrazado.
+
+== Sending
+components: V, S, M (un hilo de cobre)
+body:
+Envías un mensaje corto de 25 palabras o menos a una criatura que hayas conocido, o a una que te haya descrito alguien que la conociera. El objetivo oye el mensaje en su mente, te reconoce como remitente si te conoce y puede responder de la misma manera de inmediato. El conjuro permite a los objetivos entender el significado de tu mensaje.
+Puedes enviar el mensaje a cualquier distancia, incluso a otros planos de existencia, pero si el objetivo está en un plano distinto del tuyo hay un 5 % de probabilidades de que el mensaje no llegue. Sabes si la entrega falla.
+Al recibir tu mensaje, una criatura puede bloquear tu capacidad de alcanzarla otra vez con este conjuro durante 8 horas. Si intentas enviarle otro mensaje en ese tiempo, sabes que estás bloqueado y el conjuro falla.
+
+== Sequester
+components: V, S, M (polvo de gemas por valor de 5.000 po o más, que el conjuro consume)
+body:
+Con un toque recluyes por medios mágicos un objeto o a una criatura voluntaria. Mientras dure el conjuro, el objetivo tiene el estado de invisible y no puede ser objetivo de conjuros de adivinación, ni detectarse por medios mágicos, ni observarse a distancia con magia.
+Si el objetivo es una criatura, entra en animación suspendida: tiene el estado de inconsciente, no envejece y no necesita comida, agua ni aire.
+Puedes fijar una condición para que el conjuro termine antes de tiempo. Puede ser cualquiera que elijas, pero debe ocurrir o ser visible a 1 milla o menos del objetivo. Por ejemplo: «dentro de 1.000 años» o «cuando la tarrasca despierte». Este conjuro termina también si el objetivo recibe cualquier daño.
+
+== Shapechange
+components: V, S, M (una diadema de jade por valor de 1.500 po o más)
+body:
+Te transformas en otra criatura mientras dure el conjuro, o hasta que lleves a cabo una acción de magia para transformarte en otra forma admisible. La nueva forma debe ser la de una criatura cuyo valor de desafío no sea superior a tu nivel o a tu valor de desafío. Debes haber visto antes esa clase de criatura, y no puede ser un constructo ni un muerto viviente.
+Al lanzar el conjuro obtienes una cantidad de puntos de golpe temporales igual a los puntos de golpe de la primera forma que adoptes. Esos puntos de golpe temporales desaparecen si te queda alguno cuando el conjuro termina.
+Tus puntuaciones de juego se sustituyen por el perfil de la forma elegida, pero conservas tu tipo de criatura, tu alineamiento, tu personalidad, tus puntuaciones de Inteligencia, Sabiduría y Carisma, tus puntos de golpe, tus dados de golpe, tus competencias y tu capacidad de comunicarte. Si tienes el rasgo de lanzamiento de conjuros, también lo conservas.
+Al transformarte decides si tu equipo cae al suelo o si cambia de tamaño y de forma para adaptarse a la nueva forma mientras estés en ella.
+
+== Shatter
+components: V, S, M (una lámina de mica)
+body:
+Un ruido atronador estalla en un punto que elijas dentro del alcance. Cada criatura que esté en una esfera de 10 pies de radio centrada allí hace una tirada de salvación de Constitución y recibe {{3d8|Thunder}} de daño si la falla, o la mitad si la supera. Un constructo tiene desventaja en esa tirada.
+Un objeto no mágico que nadie lleve ni vista recibe también el daño si está en la zona del conjuro.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 2 que tenga el espacio.
+
+== Shield
+components: V, S
+casting: Reacción, que llevas a cabo cuando te acierta una tirada de ataque o eres objetivo del conjuro *proyectil mágico*
+body:
+Una barrera imperceptible de fuerza mágica te protege. Hasta el principio de tu siguiente turno tienes un bonificador de +5 a la CA, también contra el ataque que ha disparado el conjuro, y no recibes daño de *proyectil mágico*.
+
+== Shield of Faith
+components: V, S, M (un pergamino de oraciones)
+body:
+Un campo reluciente rodea a una criatura que elijas dentro del alcance y le concede un bonificador de +2 a la CA mientras dure el conjuro.

@@ -1,0 +1,139 @@
+== Feather Fall
+components: V, M (una plumita o un poco de plumón)
+casting: Reacción, que llevas a cabo cuando tú o una criatura que puedas ver a 60 pies o menos de ti caéis
+body:
+Elige hasta cinco criaturas que estén cayendo dentro del alcance. La velocidad de caída de cada una se reduce a 60 pies por asalto hasta que el conjuro termine. Si una criatura toma tierra antes de que el conjuro termine, no recibe daño por la caída y el conjuro termina para ella.
+
+== Find Familiar
+components: V, S, M (incienso encendido por valor de 10 po o más, que el conjuro consume)
+body:
+Obtienes el servicio de un familiar, un espíritu que adopta la forma animal que elijas: murciélago, gato, rana, halcón, lagarto, pulpo, búho, rata, cuervo, araña, comadreja u otra bestia con valor de desafío 0. El familiar aparece en un espacio sin ocupar dentro del alcance y tiene las puntuaciones de la forma elegida, aunque es un celestial, un feérico o un infernal (a tu elección) en lugar de una bestia. Tu familiar actúa con independencia de ti, pero obedece tus órdenes.
+**Conexión telepática.** Mientras tu familiar esté a 100 pies o menos de ti, puedes comunicarte con él telepáticamente. Además, como acción adicional, puedes ver por sus ojos y oír lo que él oye hasta el principio de tu siguiente turno, con lo que obtienes los beneficios de cualquier sentido especial que tenga.
+Por último, cuando lanzas un conjuro con alcance de toque, tu familiar puede entregar ese toque. Debe estar a 100 pies o menos de ti y gastar una reacción para entregarlo cuando lanzas el conjuro.
+**Combate.** El familiar es aliado tuyo y de tus aliados. Tira su propia iniciativa y actúa en su turno. Un familiar no puede atacar, pero sí llevar a cabo las demás acciones con normalidad.
+**Desaparición del familiar.** Cuando los puntos de golpe del familiar se reducen a 0, desaparece. Vuelve a aparecer cuando lanzas de nuevo este conjuro. Como acción de magia puedes enviarlo temporalmente a una dimensión de bolsillo, o bien despedirlo para siempre. Como acción de magia mientras está despedido temporalmente, puedes hacer que reaparezca en un espacio sin ocupar a 30 pies o menos de ti. Siempre que el familiar se reduce a 0 puntos de golpe o desaparece en la dimensión de bolsillo, deja en su espacio todo lo que llevara o vistiera.
+**Un solo familiar.** No puedes tener más de un familiar a la vez. Si lanzas este conjuro teniendo uno, lo que haces es que adopte una forma nueva de las permitidas.
+
+== Find Steed
+components: V, S
+body:
+Invocas a un ser de otro mundo que aparece como un corcel leal en un espacio sin ocupar que elijas dentro del alcance. Esa criatura usa el perfil de corcel de otro mundo. Si ya tienes un corcel de este conjuro, el nuevo lo sustituye.
+El corcel se parece a un animal Grande y montable que elijas, como un caballo, un camello, un lobo gigante o un alce. Cada vez que lanzas el conjuro eliges su tipo de criatura (celestial, feérico o infernal), lo que determina ciertos rasgos del perfil.
+**Combate.** El corcel es aliado tuyo y de tus aliados. En combate comparte tu puesto de iniciativa y funciona como una montura controlada mientras lo montas. Si tienes el estado de incapacitado, el corcel actúa justo después de ti y por su cuenta, centrado en protegerte.
+**Desaparición del corcel.** El corcel desaparece si sus puntos de golpe se reducen a 0 o si mueres. Al desaparecer deja atrás todo lo que llevara o vistiera. Si vuelves a lanzar el conjuro, decides si invocas al corcel que desapareció o a otro distinto.
+**Con un espacio de conjuro de nivel superior.** Usa el nivel del espacio como nivel del conjuro en el perfil.
+Otherworldly Steed Large Celestial, Fey, or Fiend
+
+== Find the Path
+components: V, S, M (un juego de herramientas de adivinación, como cartas o runas, por valor de 100 po o más)
+body:
+Percibes por medios mágicos la ruta física más directa hasta un lugar que nombres. Debes conocer ese lugar, y el conjuro falla si nombras un destino de otro plano de existencia, un destino que se mueva (como una fortaleza móvil) o un destino inconcreto (como «la guarida de un dragón verde»).
+Mientras dure el conjuro, y siempre que estés en el mismo plano de existencia que el destino, sabes a qué distancia está y en qué dirección. Siempre que tengas que elegir entre varios caminos, sabes cuál es el más directo.
+
+== Find Traps
+components: V, S
+body:
+Percibes cualquier trampa que esté dentro del alcance y en tu línea de visión. A efectos de este conjuro, una trampa es cualquier objeto o mecanismo creado para causar daño u otro peligro. Así, el conjuro percibiría los conjuros *alarma* o *glifo custodio*, o un foso con trampa mecánica, pero no revelaría una debilidad natural del suelo, un techo inestable o una dolina oculta.
+Este conjuro revela que hay una trampa, pero no dónde está. Sí averiguas la naturaleza general del peligro que supone la trampa que percibes.
+
+== Finger of Death
+components: V, S
+body:
+Desatas energía negativa contra una criatura que puedas ver dentro del alcance. El objetivo hace una tirada de salvación de Constitución y recibe {{7d8|Necrotic}} + 30 de daño si la falla, o la mitad si la supera.
+Un humanoide muerto por este conjuro se levanta al principio de tu siguiente turno como un zombi que obedece tus órdenes verbales.
+
+== Fireball
+components: V, S, M (una bola de guano de murciélago y azufre)
+body:
+Un destello brillante sale de ti hacia un punto que elijas dentro del alcance y allí florece con un rugido sordo en una explosión de fuego. Cada criatura que esté en una esfera de 20 pies de radio centrada en ese punto hace una tirada de salvación de Destreza y recibe {{8d6|Fire}} de daño si la falla, o la mitad si la supera.
+Los objetos inflamables de la zona que nadie lleve ni vista empiezan a arder.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 3 que tenga el espacio.
+
+== Fire Bolt
+components: V, S
+body:
+Arrojas una mota de fuego contra una criatura o un objeto que estén dentro del alcance. Haz un ataque de conjuro a distancia contra el objetivo. Si aciertas, el objetivo recibe {{1d10|Fire}} de daño. Un objeto inflamable alcanzado por este conjuro empieza a arder si nadie lo lleva ni lo viste.
+**Mejora de truco.** El daño aumenta en 1d10 cuando alcanzas los niveles 5 (2d10), 11 (3d10) y 17 (4d10).
+
+== Fire Shield
+components: V, S, M (un poco de fósforo o una luciérnaga)
+body:
+Unas llamas tenues envuelven tu cuerpo mientras dure el conjuro y emiten luz brillante en un radio de 10 pies y luz tenue otros 10 pies más.
+Las llamas te proporcionan un escudo cálido o un escudo gélido, a tu elección. El escudo cálido te da resistencia al daño {{Cold}} y el escudo gélido te da resistencia al daño {{Fire}}.
+Además, siempre que una criatura que esté a 5 pies o menos de ti te acierte con una tirada de ataque cuerpo a cuerpo, el escudo estalla en llamas. El atacante recibe {{2d8|Fire}} de daño con el escudo cálido o {{2d8|Cold}} de daño con el escudo gélido.
+
+== Fire Storm
+components: V, S
+body:
+Aparece una tormenta de fuego dentro del alcance. Su zona se compone de hasta diez cubos de 10 pies de lado que colocas como quieras. Cada cubo debe ser contiguo al menos a otro. Cada criatura que esté en la zona hace una tirada de salvación de Destreza y recibe {{7d10|Fire}} de daño si la falla, o la mitad si la supera.
+Los objetos inflamables de la zona que nadie lleve ni vista empiezan a arder.
+
+== Flame Blade
+components: V, S, M (una hoja de zumaque)
+body:
+Evocas una hoja de fuego en tu mano libre. Tiene un tamaño y una forma parecidos a los de una cimitarra y dura lo que dure el conjuro. Si sueltas la hoja, desaparece, pero puedes volver a evocarla como acción adicional.
+Como acción de magia puedes hacer un ataque de conjuro cuerpo a cuerpo con la hoja de fuego. Si aciertas, el objetivo recibe una cantidad de {{Fire}} de daño igual a 3d6 más tu modificador por característica de lanzamiento de conjuros.
+La hoja llameante emite luz brillante en un radio de 10 pies y luz tenue otros 10 pies más.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 2 que tenga el espacio.
+
+== Flame Strike
+components: V, S, M (una pizca de azufre)
+body:
+Una columna vertical de fuego brillante ruge desde lo alto. Cada criatura que esté en un cilindro de 10 pies de radio y 40 pies de alto centrado en un punto dentro del alcance hace una tirada de salvación de Destreza y recibe {{5d6|Fire}} de daño y {{5d6|Radiant}} de daño si la falla, o la mitad si la supera.
+**Con un espacio de conjuro de nivel superior.** El daño de fuego y el daño radiante aumentan en 1d6 por cada nivel por encima de 5 que tenga el espacio.
+
+== Flaming Sphere
+components: V, S, M (una bola de cera)
+body:
+Creas una esfera de fuego de 5 pies de diámetro en un espacio sin ocupar del suelo dentro del alcance. Dura lo que dure el conjuro. Cualquier criatura que termine su turno a 5 pies o menos de la esfera hace una tirada de salvación de Destreza y recibe {{2d6|Fire}} de daño si la falla, o la mitad si la supera.
+Como acción adicional puedes mover la esfera hasta 30 pies haciéndola rodar por el suelo. Si la mueves al espacio de una criatura, esa criatura hace la tirada contra la esfera y la esfera deja de moverse ese turno.
+Al mover la esfera puedes hacerla pasar por encima de barreras de hasta 5 pies de alto y saltar fosos de hasta 10 pies de ancho. Los objetos inflamables que nadie lleve ni vista empiezan a arder si la esfera los toca, y la esfera emite luz brillante en un radio de 20 pies y luz tenue otros 20 pies más.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 2 que tenga el espacio.
+
+== Flesh to Stone
+components: V, S, M (una pluma de cocatriz)
+body:
+Intentas convertir en piedra a una criatura que puedas ver dentro del alcance. El objetivo hace una tirada de salvación de Constitución. Si la falla, tiene el estado de apresado mientras dure el conjuro. Si la supera, su velocidad es 0 hasta el principio de tu siguiente turno. Los constructos superan la tirada automáticamente.
+Un objetivo apresado hace otra tirada de salvación de Constitución al final de cada uno de sus turnos. Si supera tres tiradas contra este conjuro, el conjuro termina. Si falla tres, queda convertido en piedra y tiene el estado de petrificado mientras dure el conjuro. Los éxitos y los fallos no tienen que ser consecutivos: lleva la cuenta de ambos hasta que el objetivo acumule tres de uno de los dos.
+Si mantienes la concentración en este conjuro toda la duración posible, el objetivo queda petrificado hasta que ese estado termine con *restablecimiento mayor* o con una magia similar.
+
+== Floating Disk
+components: V, S, M (una gota de mercurio)
+body:
+Este conjuro crea un plano de fuerza circular y horizontal, de 3 pies de diámetro y 1 pulgada de grosor, que flota 3 pies por encima del suelo en un espacio sin ocupar que elijas y puedas ver dentro del alcance. El disco permanece mientras dure el conjuro y puede soportar hasta 500 libras. Si se le pone más peso, el conjuro termina y todo lo que haya encima cae al suelo.
+El disco está inmóvil mientras estés a 20 pies o menos de él. Si te alejas más de 20 pies, el disco te sigue para mantenerse a 20 pies o menos de ti. Puede desplazarse por terreno irregular, subir y bajar escaleras, rampas y demás, pero no puede salvar un desnivel de 10 pies o más. Por ejemplo, no puede cruzar un foso de 10 pies de profundidad, ni salir de él si se creó en el fondo.
+Si te alejas más de 100 pies del disco (normalmente porque no puede rodear un obstáculo para seguirte), el conjuro termina.
+
+== Fly
+components: V, S, M (una pluma)
+body:
+Tocas a una criatura voluntaria. Mientras dure el conjuro, el objetivo obtiene una velocidad volando de 60 pies y puede quedarse suspendido en el aire. Cuando el conjuro termina, el objetivo cae si sigue en el aire, salvo que pueda detener la caída.
+**Con un espacio de conjuro de nivel superior.** Puedes hacer objetivo a una criatura más por cada nivel por encima de 3 que tenga el espacio.
+
+== Fog Cloud
+components: V, S
+body:
+Creas una esfera de niebla de 20 pies de radio centrada en un punto dentro del alcance. La esfera está muy oscurecida. Dura lo que dure el conjuro o hasta que un viento fuerte (como el que crea *ráfaga de viento*) la disperse.
+**Con un espacio de conjuro de nivel superior.** El radio de la niebla aumenta en 20 pies por cada nivel por encima de 1 que tenga el espacio.
+
+== Forbiddance
+components: V, S, M (polvo de rubí por valor de 1.000 po o más)
+body:
+Creas una protección contra los viajes mágicos que cubre hasta 40.000 pies cuadrados de superficie y hasta una altura de 30 pies sobre el suelo. Mientras dure el conjuro, las criaturas no pueden teletransportarse a la zona ni usar portales, como los que crea el conjuro *portal*, para entrar en ella. El conjuro blinda la zona contra los viajes entre planos y, por tanto, impide acceder a ella a través del plano Astral, del plano Etéreo, de la Tierra Feérica, de la Tierra de las Sombras o del conjuro *desplazamiento entre planos*.
+Además, el conjuro daña a los tipos de criatura que elijas al lanzarlo. Elige uno o varios de estos: aberraciones, celestiales, elementales, feéricos, infernales y muertos vivientes. Cuando una criatura de un tipo elegido entra en la zona del conjuro por primera vez en un turno o termina allí su turno, recibe {{5d10|Radiant}} o {{5d10|Necrotic}} de daño (a tu elección al lanzar el conjuro).
+Puedes fijar una contraseña al lanzar el conjuro. Una criatura que la diga al entrar en la zona no recibe daño del conjuro.
+La zona del conjuro no se puede superponer con la de otro conjuro de *prohibición*. Si lanzas *prohibición* todos los días durante 30 días en el mismo lugar, el conjuro dura hasta que se disipe y los componentes materiales se consumen en el último lanzamiento.
+
+== Forcecage
+components: V, S, M (polvo de rubí por valor de 1.500 po o más, que el conjuro consume)
+body:
+Una prisión inmóvil, invisible y con forma de cubo, compuesta de fuerza mágica, aparece alrededor de una zona que elijas dentro del alcance. La prisión puede ser una jaula o una caja maciza, a tu elección.
+Una prisión con forma de jaula puede medir hasta 20 pies de lado y está hecha de barrotes de media pulgada de diámetro separados media pulgada entre sí. Una prisión con forma de caja puede medir hasta 10 pies de lado y crea una barrera maciza que impide el paso de cualquier materia y bloquea los conjuros lanzados hacia dentro o hacia fuera de la zona.
+Al lanzar el conjuro, cualquier criatura que esté completamente dentro de la zona de la jaula queda atrapada. Las criaturas que estén solo parcialmente dentro, o que sean demasiado grandes para caber, son empujadas desde el centro de la zona hasta quedar completamente fuera.
+Una criatura que esté dentro de la jaula no puede salir por medios no mágicos. Si intenta usar teletransporte o viaje entre planos para salir, antes debe hacer una tirada de salvación de Carisma. Si la supera, puede usar esa magia para salir. Si la falla, no sale y gasta el conjuro o el efecto en vano. La jaula se extiende también al plano Etéreo y bloquea el viaje etéreo.
+Este conjuro no se puede disipar con *disipar magia*.
+
+== Foresight
+components: V, S, M (una pluma de colibrí)
+body:
+Tocas a una criatura voluntaria y le concedes una capacidad limitada de ver el futuro inmediato. Mientras dure el conjuro, el objetivo tiene ventaja en las pruebas con d20 y las demás criaturas tienen desventaja en las tiradas de ataque contra él. El conjuro termina antes de tiempo si vuelves a lanzarlo.

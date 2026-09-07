@@ -1,0 +1,140 @@
+== Magic Circle
+components: V, S, M (sal y plata en polvo por valor de 100 po o más, que el conjuro consume)
+body:
+Creas un cilindro de energía mágica de 10 pies de radio y 20 pies de alto centrado en un punto del suelo que puedas ver dentro del alcance. Aparecen runas luminosas allí donde el cilindro corta el suelo u otra superficie.
+Elige uno o varios de estos tipos de criatura: celestiales, elementales, feéricos, infernales o muertos vivientes. El círculo afecta a una criatura del tipo elegido de las maneras siguientes:
+• La criatura no puede entrar en el cilindro por voluntad propia mediante medios no mágicos. Si intenta usar teletransporte o viaje entre planos para hacerlo, antes debe superar una tirada de salvación de Carisma.
+• La criatura tiene desventaja en las tiradas de ataque contra objetivos que estén dentro del cilindro.
+• Los objetivos que estén dentro del cilindro no pueden ser poseídos por la criatura ni recibir de ella los estados de hechizado o de asustado.
+Cada vez que lanzas este conjuro puedes hacer que su magia funcione en sentido inverso, de modo que impida salir del cilindro a una criatura del tipo indicado y proteja a los objetivos de fuera.
+**Con un espacio de conjuro de nivel superior.** La duración aumenta en 1 hora por cada nivel por encima de 3 que tenga el espacio.
+
+== Magic Jar
+components: V, S, M (una gema, un cristal o un relicario por valor de 500 po o más)
+body:
+Tu cuerpo cae en estado catatónico mientras tu alma lo abandona y entra en el recipiente que has usado como componente material del conjuro. Mientras tu alma habita el recipiente, eres consciente de lo que te rodea como si estuvieras en el espacio del recipiente. No puedes moverte ni llevar a cabo reacciones. La única acción que puedes llevar a cabo es proyectar tu alma hasta 100 pies fuera del recipiente, ya sea para volver a tu cuerpo vivo (con lo que el conjuro termina) o para intentar poseer el cuerpo de un humanoide.
+Puedes intentar poseer a cualquier humanoide que puedas ver a 100 pies o menos de ti (las criaturas protegidas por *protección contra el bien y el mal* o por *círculo mágico* no pueden ser poseídas). El objetivo hace una tirada de salvación de Carisma. Si la falla, tu alma entra en su cuerpo y el alma del objetivo queda atrapada en el recipiente. Si la supera, resiste tus esfuerzos y no puedes volver a intentarlo durante 24 horas.
+Una vez posees el cuerpo de una criatura, lo controlas. Tus puntos de golpe, tus dados de golpe, tu Fuerza, tu Destreza, tu Constitución, tu velocidad y tus sentidos se sustituyen por los suyos. Por lo demás, conservas tus puntuaciones de juego.
+Mientras tanto, el alma de la criatura poseída puede percibir desde el recipiente con sus propios sentidos, pero no puede moverse y tiene el estado de incapacitada.
+Mientras posees un cuerpo, puedes llevar a cabo una acción de magia para volver del cuerpo anfitrión al recipiente si está a 100 pies o menos de ti, con lo que el alma de la criatura anfitriona vuelve a su cuerpo. Si el cuerpo anfitrión muere mientras estás en él, la criatura muere y tú haces una tirada de salvación de Carisma contra tu propia CD de lanzamiento de conjuros. Si la superas, vuelves al recipiente si está a 100 pies o menos de ti. En caso contrario, mueres.
+Si el recipiente se destruye o el conjuro termina, tu alma vuelve a tu cuerpo. Si tu cuerpo está a más de 100 pies de ti o si está muerto, mueres. Si el alma de otra criatura está en el recipiente cuando se destruye, vuelve a su cuerpo si este sigue vivo y está a 100 pies o menos; en caso contrario, esa criatura muere.
+Cuando el conjuro termina, el recipiente queda destruido.
+
+== Magic Missile
+components: V, S
+body:
+Creas tres dardos luminosos de fuerza mágica. Cada dardo alcanza a una criatura que elijas y puedas ver dentro del alcance. Cada dardo causa {{1d4|Force}} + 1 de daño a su objetivo. Los dardos impactan todos a la vez y puedes dirigirlos contra una sola criatura o contra varias.
+**Con un espacio de conjuro de nivel superior.** El conjuro crea un dardo más por cada nivel por encima de 1 que tenga el espacio.
+
+== Magic Mouth
+components: V, S, M (polvo de jade por valor de 10 po o más, que el conjuro consume)
+body:
+Implantas un mensaje dentro de un objeto que esté dentro del alcance, un mensaje que se pronuncia cuando se cumple una condición disparadora. Elige un objeto que puedas ver y que no lleve ni vista otra criatura. Después pronuncia el mensaje, que debe tener 25 palabras o menos, aunque se puede recitar a lo largo de hasta 10 minutos. Por último, determina la circunstancia que hará que el conjuro entregue tu mensaje.
+Cuando ese disparador ocurre, aparece una boca mágica en el objeto y recita el mensaje con tu voz y al mismo volumen con el que lo dijiste. Si el objeto elegido tiene boca o algo que parezca una boca (por ejemplo, la boca de una estatua), la boca mágica aparece allí, de modo que las palabras parecen salir de la boca del objeto. Al lanzar el conjuro puedes hacer que termine tras entregar el mensaje una vez, o que permanezca y lo repita cada vez que ocurra el disparador.
+El disparador puede ser tan general o tan detallado como quieras, pero debe basarse en condiciones visuales o audibles que ocurran a 30 pies o menos del objeto. Por ejemplo, puedes indicar que la boca hable cuando cualquier criatura se acerque a 30 pies o menos del objeto, o cuando suene una campanilla de plata a 30 pies o menos de él.
+
+== Magic Weapon
+components: V, S
+body:
+Tocas un arma no mágica. Hasta que el conjuro termine, esa arma se convierte en un arma mágica con un bonificador de +1 a las tiradas de ataque y a las tiradas de daño. El conjuro termina antes de tiempo si vuelves a lanzarlo.
+**Con un espacio de conjuro de nivel superior.** El bonificador aumenta a +2 con un espacio de nivel 3 a 5, y a +3 con un espacio de nivel 6 o superior.
+
+== Magnificent Mansion
+components: V, S, M (una puerta en miniatura por valor de 15 po o más)
+body:
+Conjuras una puerta reluciente dentro del alcance, que dura lo que dure el conjuro. La puerta lleva a una vivienda extradimensional y mide 5 pies de ancho y 10 pies de alto. Tú y cualquier criatura que designes al lanzar el conjuro podéis entrar en la vivienda mientras la puerta siga abierta. Puedes abrirla o cerrarla (no requiere acción) si estás a 30 pies o menos de ella. Mientras está cerrada, la puerta es imperceptible.
+Al otro lado hay un magnífico vestíbulo con numerosas estancias más allá. La atmósfera de la vivienda es limpia, fresca y cálida.
+Puedes darle a la vivienda la distribución que quieras, pero no puede superar los 50 cubos contiguos de 10 pies de lado. El lugar está amueblado y decorado a tu gusto. Contiene comida suficiente para servir un banquete de nueve platos a hasta 100 personas. El mobiliario y los demás objetos creados por este conjuro se disipan en humo si se sacan de allí.
+Un servicio de 100 sirvientes casi transparentes atiende a todo el que entra. Tú decides su aspecto y su atuendo. Son invulnerables y obedecen tus órdenes. Cada sirviente puede hacer tareas que podría hacer un humano, pero no pueden atacar ni llevar a cabo ninguna acción que dañe directamente a otra criatura. Así, pueden traer cosas, limpiar, remendar, doblar ropa, encender fuegos, servir comida, escanciar vino y demás. Los sirvientes no pueden salir de la vivienda.
+Cuando el conjuro termina, las criaturas u objetos que queden dentro del espacio extradimensional son expulsados a los espacios sin ocupar más cercanos a la entrada.
+
+== Major Image
+components: V, S, M (un poco de lana)
+body:
+Creas la imagen de un objeto, de una criatura o de algún otro fenómeno visible que no sea mayor que un cubo de 20 pies de lado. La imagen aparece en un punto que puedas ver dentro del alcance y dura lo que dure el conjuro. Parece real, con los sonidos, los olores y la temperatura propios de lo que representa, pero no puede causar daño ni provocar estados.
+Si estás dentro del alcance de la ilusión, puedes llevar a cabo una acción de magia para moverla a cualquier otro punto del alcance. Al cambiar de sitio puedes alterar su aspecto para que sus movimientos parezcan naturales. Por ejemplo, si creas la imagen de una criatura y la mueves, puedes alterarla para que parezca que camina. Del mismo modo, puedes hacer que la ilusión emita sonidos distintos en momentos distintos, e incluso que mantenga una conversación.
+La interacción física con la imagen revela que es una ilusión, porque las cosas la atraviesan. Una criatura que lleve a cabo la acción de estudiar para examinarla puede determinar que es una ilusión si supera una prueba de Inteligencia (Investigación) contra tu CD de salvación de conjuros. Si una criatura discierne lo que es, puede ver a través de la imagen y las demás cualidades sensoriales se le vuelven tenues.
+**Con un espacio de conjuro de nivel superior.** Con un espacio de nivel 4 o superior, el conjuro dura hasta que se disipe y no requiere concentración.
+
+== Mass Cure Wounds
+components: V, S
+body:
+Una oleada de energía curativa se extiende desde un punto que puedas ver dentro del alcance. Elige hasta seis criaturas que estén en una esfera de 30 pies de radio centrada en ese punto. Cada objetivo recupera una cantidad de puntos de golpe igual a 5d8 más tu modificador por característica de lanzamiento de conjuros.
+**Con un espacio de conjuro de nivel superior.** La curación aumenta en 1d8 por cada nivel por encima de 5 que tenga el espacio.
+
+== Mass Heal
+components: V, S
+body:
+Un torrente de energía curativa fluye de ti hacia las criaturas que te rodean. Restauras hasta 700 puntos de golpe, repartidos como quieras entre cualquier número de criaturas que puedas ver dentro del alcance. A las criaturas curadas por este conjuro se les terminan además los estados de cegada, ensordecida y envenenada.
+
+== Mass Healing Word
+components: V
+body:
+Hasta seis criaturas que elijas y puedas ver dentro del alcance recuperan una cantidad de puntos de golpe igual a 2d4 más tu modificador por característica de lanzamiento de conjuros.
+**Con un espacio de conjuro de nivel superior.** La curación aumenta en 1d4 por cada nivel por encima de 3 que tenga el espacio.
+
+== Mass Suggestion
+components: V, M (la lengua de una serpiente)
+body:
+Sugieres un curso de actividad, descrito en no más de 25 palabras, a doce criaturas o menos que puedas ver dentro del alcance y que puedan oírte y entenderte. La sugerencia debe sonar factible y no puede implicar nada que fuera a causar daño de forma evidente a los objetivos o a sus aliados. Por ejemplo, podrías decir: «Id al pueblo que hay camino abajo y ayudad a los aldeanos con la cosecha hasta el anochecer». O bien: «No es momento para la violencia. Soltad las armas y bailad. Parad dentro de una hora».
+Cada objetivo hace una tirada de salvación de Sabiduría. Si la falla, tiene el estado de hechizado mientras dure el conjuro o hasta que tus aliados o tú le causéis daño. Cada objetivo hechizado persigue la sugerencia lo mejor que puede. La actividad sugerida puede continuar toda la duración, pero si se puede completar en menos tiempo, el conjuro termina para ese objetivo al completarla.
+**Con un espacio de conjuro de nivel superior.** La duración es mayor con un espacio de nivel 7 (10 días), 8 (30 días) o 9 (366 días).
+
+== Maze
+components: V, S
+body:
+Destierras a una criatura que puedas ver dentro del alcance a un semiplano laberíntico. El objetivo permanece allí mientras dure el conjuro o hasta que escape del laberinto.
+El objetivo puede llevar a cabo la acción de estudiar para intentar escapar: hace una prueba de Inteligencia (Investigación) con CD 20 y, si la supera, escapa y el conjuro termina.
+Cuando el conjuro termina, el objetivo reaparece en el espacio que dejó o, si está ocupado, en el espacio sin ocupar más cercano.
+
+== Meld into Stone
+components: V, S
+body:
+Entras en un objeto o una superficie de piedra lo bastante grandes para contener tu cuerpo entero, y te fusionas con la piedra junto con tu equipo mientras dure el conjuro. Debes tocar la piedra para hacerlo. Nada de tu presencia queda visible ni detectable por sentidos no mágicos.
+Mientras estás fusionado con la piedra no puedes ver lo que ocurre fuera, y cualquier prueba de Sabiduría (Percepción) que hagas para oír sonidos del exterior se hace con desventaja. Sigues siendo consciente del paso del tiempo y puedes lanzarte conjuros a ti mismo mientras estés dentro. Puedes gastar 5 pies de movimiento para salir de la piedra por donde entraste, lo que termina el conjuro. Por lo demás, no puedes moverte.
+Un daño físico menor a la piedra no te hace nada, pero su destrucción parcial o un cambio de forma tal que ya no quepas dentro te expulsan y te causan {{6d6|Force}} de daño. Su destrucción completa (o su transmutación en otra sustancia) te expulsa y te causa 50 de {{Force}} de daño. Si eres expulsado, te desplazas al espacio sin ocupar más cercano al lugar por donde entraste y tienes el estado de derribado.
+
+== Mending
+components: V, S, M (dos piedras imán)
+body:
+Este conjuro repara una sola rotura o desgarro de un objeto que toques, como un eslabón de cadena roto, las dos mitades de una llave partida, una capa rasgada o un odre que gotea. Siempre que la rotura o el desgarro no midan más de 1 pie en ninguna dimensión, los reparas sin dejar rastro del daño anterior.
+Este conjuro puede reparar físicamente un objeto mágico, pero no puede devolverle la magia.
+
+== Message
+components: S, M (un hilo de cobre)
+body:
+Señalas hacia una criatura que esté dentro del alcance y susurras un mensaje. El objetivo, y solo él, oye el mensaje y puede responder con un susurro que solo tú oyes.
+Puedes lanzar este conjuro a través de objetos sólidos si conoces al objetivo y sabes que está al otro lado de la barrera. El silencio mágico, 1 pie de piedra, metal o madera, o una fina lámina de plomo bloquean el conjuro.
+
+== Meteor Swarm
+components: V, S
+body:
+Unos orbes de fuego ardiente caen a plomo sobre cuatro puntos distintos que puedas ver dentro del alcance. Cada criatura que esté en una esfera de 40 pies de radio centrada en cada uno de esos puntos hace una tirada de salvación de Destreza y recibe {{20d6|Fire}} de daño y {{20d6|Bludgeoning}} de daño si la falla, o la mitad si la supera. Una criatura que esté en la zona de más de una esfera de fuego solo se ve afectada una vez.
+Un objeto no mágico que nadie lleve ni vista recibe también el daño si está en la zona del conjuro, y empieza a arder si es inflamable.
+
+== Mind Blank
+components: V, S
+body:
+Hasta que el conjuro termine, una criatura voluntaria a la que toques tiene inmunidad al daño {{Psychic}} y al estado de hechizada. El objetivo tampoco se ve afectado por nada que fuera a percibir sus emociones o su alineamiento, leer sus pensamientos o detectar su ubicación por medios mágicos, y ningún conjuro, ni siquiera *deseo*, puede reunir información sobre él, observarlo a distancia ni controlar su mente.
+
+== Mind Spike
+components: S
+body:
+Clavas una púa de energía psiónica en la mente de una criatura que puedas ver dentro del alcance. El objetivo hace una tirada de salvación de Sabiduría y recibe {{3d8|Psychic}} de daño si la falla, o la mitad si la supera. Si la falla, además sabes siempre dónde está hasta que el conjuro termine, pero solo mientras los dos estéis en el mismo plano de existencia. Mientras lo sepas, el objetivo no puede esconderse de ti y, si tiene el estado de invisible, ese estado no le sirve de nada contra ti.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 2 que tenga el espacio.
+
+== Minor Illusion
+components: S, M (un poco de lana)
+body:
+Creas un sonido o la imagen de un objeto dentro del alcance, que dura lo que dure el conjuro. Consulta debajo los efectos de cada uno. La ilusión termina si vuelves a lanzar este conjuro.
+Si una criatura lleva a cabo la acción de estudiar para examinar el sonido o la imagen, puede determinar que es una ilusión si supera una prueba de Inteligencia (Investigación) contra tu CD de salvación de conjuros. Si discierne lo que es, la ilusión se le vuelve tenue.
+**Sonido.** Si creas un sonido, su volumen puede ir del susurro al grito. Puede ser tu voz, la de otra persona, el rugido de un león, un redoble de tambores o cualquier otro sonido que elijas. El sonido continúa sin interrupción toda la duración, o puedes emitir sonidos sueltos en momentos distintos antes de que el conjuro termine.
+**Imagen.** Si creas la imagen de un objeto, como una silla, unas huellas de barro o un cofrecillo, no puede ser mayor que un cubo de 5 pies de lado. La imagen no puede crear sonido, luz, olor ni ningún otro efecto sensorial. La interacción física con ella revela que es una ilusión, porque las cosas la atraviesan.
+
+== Mirage Arcane
+components: V, S
+body:
+Haces que el terreno de una zona de hasta 1 milla cuadrada parezca otra clase de terreno a la vista, al oído, al olfato e incluso al tacto. Un campo abierto o un camino pueden parecer un pantano, una colina, una grieta o algún otro terreno abrupto o infranqueable. Un estanque puede parecer un prado de hierba, un precipicio una cuesta suave o un barranco pedregoso un camino ancho y liso.
+Del mismo modo, puedes alterar el aspecto de las estructuras o añadirlas donde no las haya. El conjuro no disfraza, oculta ni añade criaturas.
+La ilusión incluye elementos auditivos, visuales, táctiles y olfativos, así que puede convertir un suelo despejado en terreno difícil (o al revés) o dificultar de otro modo el movimiento por la zona. Cualquier trozo del terreno ilusorio (como una roca o un palo) que se saque de la zona del conjuro desaparece de inmediato.
+Las criaturas con visión verdadera ven a través de la ilusión la forma real del terreno; ahora bien, los demás elementos de la ilusión siguen ahí, así que, aunque la criatura sepa que la ilusión existe, puede seguir interactuando físicamente con ella.

@@ -1,0 +1,142 @@
+== Call Lightning
+components: V, S
+body:
+Aparece una nube de tormenta en un punto que puedas ver dentro del alcance y por encima de ti. Tiene forma de cilindro de 10 pies de alto y 60 pies de radio.
+Cuando lanzas el conjuro, elige un punto que puedas ver bajo la nube. Un rayo sale disparado de la nube hacia ese punto. Cada criatura que esté a 5 pies o menos de ese punto hace una tirada de salvación de Destreza y recibe {{3d10|Lightning}} de daño si la falla, o la mitad si la supera.
+Hasta que el conjuro termine puedes llevar a cabo una acción de magia para volver a invocar un rayo de la misma manera, hacia el mismo punto o hacia otro.
+Si estás al aire libre y hay tormenta cuando lanzas el conjuro, este te da el control de esa tormenta en vez de crear una nueva. En esas condiciones, el daño del conjuro aumenta en 1d10.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d10 por cada nivel por encima de 3 que tenga el espacio.
+
+== Calm Emotions
+components: V, S
+body:
+Cada humanoide que esté en una esfera de 20 pies de radio centrada en un punto que elijas dentro del alcance hace una tirada de salvación de Carisma. Si la falla, se ve afectado por uno de los efectos siguientes (elige para cada criatura):
+• La criatura tiene inmunidad a los estados de hechizada y de asustada hasta que el conjuro termine. Si ya estaba hechizada o asustada, esos estados quedan anulados mientras dure el conjuro.
+• La criatura pasa a ser indiferente hacia las criaturas que elijas y con las que sea hostil. Esa indiferencia termina si el objetivo recibe daño o presencia cómo sus aliados lo reciben. Cuando el conjuro termina, la actitud de la criatura vuelve a la normalidad.
+
+== Chain Lightning
+components: V, S, M (tres alfileres de plata)
+body:
+Lanzas un rayo hacia un objetivo que puedas ver dentro del alcance. De ese objetivo saltan luego tres rayos hacia hasta otros tres objetivos que elijas, cada uno de los cuales debe estar a 30 pies o menos del primero. Un objetivo puede ser una criatura o un objeto, y solo puede ser alcanzado por uno de los rayos.
+Cada objetivo hace una tirada de salvación de Destreza y recibe {{10d8|Lightning}} de daño si la falla, o la mitad si la supera.
+**Con un espacio de conjuro de nivel superior.** Salta un rayo más del primer objetivo hacia otro objetivo por cada nivel por encima de 6 que tenga el espacio.
+
+== Charm Monster
+components: V, S
+body:
+Una criatura que puedas ver dentro del alcance hace una tirada de salvación de Sabiduría, con ventaja si tus aliados o tú estáis luchando contra ella. Si la falla, tiene el estado de hechizada hasta que el conjuro termine o hasta que tus aliados o tú le causéis daño. La criatura hechizada es amistosa contigo. Cuando el conjuro termina, el objetivo sabe que lo has hechizado.
+**Con un espacio de conjuro de nivel superior.** Puedes hacer objetivo a una criatura más por cada nivel por encima de 4 que tenga el espacio.
+
+== Charm Person
+components: V, S
+body:
+Un humanoide que puedas ver dentro del alcance hace una tirada de salvación de Sabiduría, con ventaja si tus aliados o tú estáis luchando contra él. Si la falla, tiene el estado de hechizado hasta que el conjuro termine o hasta que tus aliados o tú le causéis daño. La criatura hechizada es amistosa contigo. Cuando el conjuro termina, el objetivo sabe que lo has hechizado.
+**Con un espacio de conjuro de nivel superior.** Puedes hacer objetivo a una criatura más por cada nivel por encima de 1 que tenga el espacio.
+
+== Chill Touch
+components: V, S
+body:
+Canalizas el frío de la tumba y haces un ataque de conjuro cuerpo a cuerpo contra un objetivo que esté a tu alcance. Si aciertas, el objetivo recibe {{1d10|Necrotic}} de daño y no puede recuperar puntos de golpe hasta el final de tu siguiente turno.
+**Mejora de truco.** El daño aumenta en 1d10 cuando alcanzas los niveles 5 (2d10), 11 (3d10) y 17 (4d10).
+
+== Chromatic Orb
+components: V, S, M (un diamante por valor de 50 po o más)
+body:
+Arrojas un orbe de energía contra un objetivo que esté dentro del alcance. Elige {{Acid}}, {{Cold}}, {{Fire}}, {{Lightning}}, {{Poison}} o {{Thunder}} como tipo del orbe que creas y luego haz un ataque de conjuro a distancia contra el objetivo. Si aciertas, el objetivo recibe 3d8 de daño del tipo elegido.
+Si sacas el mismo número en dos o más de los d8, el orbe salta hacia otro objetivo que elijas y esté a 30 pies o menos del anterior. Haz una tirada de ataque contra el nuevo objetivo y tira el daño de nuevo. El orbe no puede volver a saltar salvo que lances el conjuro con un espacio de nivel 2 o superior.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 1 que tenga el espacio. El orbe puede saltar como máximo tantas veces como el nivel del espacio gastado, y cada criatura solo puede ser objetivo una vez por lanzamiento.
+
+== Circle of Death
+components: V, S, M (el polvo de una perla negra machacada por valor de 500 po o más)
+body:
+Una onda de energía negativa se extiende en una esfera de 60 pies de radio desde un punto que elijas dentro del alcance. Cada criatura que esté en esa zona hace una tirada de salvación de Constitución y recibe {{8d8|Necrotic}} de daño si la falla, o la mitad si la supera.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 2d8 por cada nivel por encima de 6 que tenga el espacio.
+
+== Clairvoyance
+components: V, S, M (un foco por valor de 100 po o más: un cuerno enjoyado para oír o un ojo de cristal para ver)
+body:
+Creas un sensor invisible dentro del alcance, en un lugar que te resulte familiar (uno que hayas visitado o visto antes) o en un lugar evidente que no conozcas (como detrás de una puerta, al doblar una esquina o en una arboleda). El sensor, intangible e invulnerable, se queda donde está mientras dure el conjuro.
+Al lanzar el conjuro elige vista u oído. Puedes usar el sentido elegido a través del sensor como si estuvieras en su espacio. Como acción adicional puedes cambiar de la vista al oído y viceversa.
+Una criatura que vea el sensor (por ejemplo, una que se beneficie de *ver invisibilidad* o de visión verdadera) percibe un orbe luminoso del tamaño de tu puño.
+
+== Clone
+components: V, S, M (un diamante por valor de 1.000 po o más, que el conjuro consume, y un recipiente sellable por valor de 2.000 po o más y lo bastante grande para contener a la criatura clonada)
+body:
+Tocas a una criatura o al menos 1 pulgada cúbica de su carne. Dentro del recipiente usado al lanzar el conjuro se forma un duplicado inerte de esa criatura, que termina de crecer al cabo de 120 días; eliges si el clon acabado tiene la misma edad que la criatura o es más joven. El clon permanece inerte y se conserva indefinidamente mientras nadie moleste al recipiente.
+Si la criatura original muere después de que el clon se haya terminado de formar, su alma se traslada al clon siempre que esté libre y quiera volver. El clon es físicamente idéntico al original y tiene su misma personalidad, sus recuerdos y sus capacidades, pero nada de su equipo. Los restos originales de la criatura, si los hay, quedan inertes y no se pueden revivir, porque el alma está en otra parte.
+
+== Cloudkill
+components: V, S
+body:
+Creas una esfera de 20 pies de radio de niebla amarillenta centrada en un punto que esté dentro del alcance. La niebla dura lo que dure el conjuro o hasta que un viento fuerte (como el que crea *ráfaga de viento*) la disperse, lo que termina el conjuro. Su zona está muy oscurecida.
+Cada criatura que esté en la esfera hace una tirada de salvación de Constitución y recibe {{5d8|Poison}} de daño si la falla, o la mitad si la supera. Una criatura hace también esa tirada cuando la esfera se mueve a su espacio, cuando entra en la esfera y cuando termina su turno en ella. Cada criatura hace la tirada una sola vez por turno.
+La esfera se aleja 10 pies de ti al principio de cada uno de tus turnos.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 5 que tenga el espacio.
+
+== Color Spray
+components: V, S, M (una pizca de arena de colores)
+body:
+Lanzas una deslumbrante ráfaga de luces de colores. Cada criatura que esté en un cono de 15 pies que parta de ti hace una tirada de salvación de Constitución. Si la falla, tiene el estado de cegada hasta el final de tu siguiente turno.
+
+== Command
+components: V
+body:
+Le dices una orden de una sola palabra a una criatura que puedas ver dentro del alcance. El objetivo hace una tirada de salvación de Sabiduría. Si la falla, obedece la orden en su siguiente turno. Elige la orden entre estas opciones:
+**Acércate.** El objetivo se mueve hacia ti por la ruta más corta y directa, y termina su turno si llega a 5 pies o menos de ti.
+**Suelta.** El objetivo suelta lo que tenga en las manos y después termina su turno.
+**Huye.** El objetivo emplea su turno en alejarse de ti por el medio más rápido de que disponga.
+**Arrástrate.** El objetivo tiene el estado de derribado y después termina su turno.
+**Alto.** En su turno, el objetivo no se mueve ni lleva a cabo ninguna acción ni acción adicional.
+**Con un espacio de conjuro de nivel superior.** Puedes afectar a una criatura más por cada nivel por encima de 1 que tenga el espacio.
+
+== Commune
+components: V, S, M (incienso)
+body:
+Contactas con una deidad o con un intermediario divino y haces hasta tres preguntas que se puedan responder con un sí o un no. Debes hacerlas antes de que el conjuro termine. Recibes una respuesta correcta a cada una.
+Los seres divinos no son necesariamente omniscientes, así que puedes recibir un «no está claro» si una pregunta se refiere a algo que escapa al conocimiento de la deidad. Si una respuesta de una sola palabra pudiera resultar engañosa o contraria a los intereses de la deidad, el DM puede ofrecer una frase corta en su lugar.
+Si lanzas el conjuro más de una vez antes de terminar un descanso largo, hay una probabilidad acumulativa del 25 % por cada lanzamiento después del primero de que no recibas respuesta.
+
+== Commune with Nature
+components: V, S
+body:
+Te comunicas con los espíritus de la naturaleza y obtienes información sobre lo que te rodea. Al aire libre, el conjuro te da información de la zona que hay a 3 millas o menos de ti. En cuevas y otros entornos naturales subterráneos, el radio se limita a 300 pies. El conjuro no funciona donde la naturaleza ha sido sustituida por construcciones, como en castillos y poblaciones.
+Elige tres de los datos siguientes; los aprendes tal y como se aplican a la zona del conjuro:
+• Ubicación de los asentamientos.
+• Ubicación de los portales a otros planos de existencia.
+• Ubicación de una criatura de valor de desafío 10 o superior (a elección del DM) que sea celestial, elemental, feérica, infernal o muerta viviente.
+• El tipo de planta, mineral o bestia más abundante (eliges cuál de los tres).
+• Ubicación de las masas de agua.
+Por ejemplo, podrías averiguar dónde está un monstruo poderoso de la zona, dónde están las masas de agua y dónde están las poblaciones.
+
+== Comprehend Languages
+components: V, S, M (una pizca de hollín y sal)
+body:
+Mientras dure el conjuro entiendes el significado literal de cualquier idioma que oigas o que veas signar. También entiendes cualquier idioma escrito que veas, pero debes estar tocando la superficie sobre la que están escritas las palabras. Leer una página de texto lleva alrededor de 1 minuto. Este conjuro no descifra símbolos ni mensajes secretos.
+
+== Compulsion
+components: V, S
+body:
+Cada criatura que elijas y puedas ver dentro del alcance hace una tirada de salvación de Sabiduría. Si la falla, tiene el estado de hechizada hasta que el conjuro termine.
+Mientras dure el conjuro puedes llevar a cabo una acción adicional para señalar una dirección horizontal respecto a ti. Cada objetivo hechizado debe usar todo el movimiento que pueda para desplazarse en esa dirección en su siguiente turno, por la ruta más segura. Después de moverse así, el objetivo repite la tirada y el conjuro termina para él si la supera.
+
+== Cone of Cold
+components: V, S, M (un pequeño cono de cristal o de vidrio)
+body:
+Desatas una ráfaga de aire helado. Cada criatura que esté en un cono de 60 pies que parta de ti hace una tirada de salvación de Constitución y recibe {{8d8|Cold}} de daño si la falla, o la mitad si la supera. Una criatura muerta por este conjuro se convierte en una estatua congelada hasta que se descongela.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 5 que tenga el espacio.
+
+== Confusion
+components: V, S, M (tres cáscaras de nuez)
+body:
+Cada criatura que esté en una esfera de 10 pies de radio centrada en un punto que elijas dentro del alcance hace una tirada de salvación de Sabiduría. Si la falla, no puede llevar a cabo acciones adicionales ni reacciones y debe tirar 1d10 al principio de cada uno de sus turnos para determinar su comportamiento en ese turno, según la tabla siguiente.
+1d10 Behavior for the Turn
+Al final de cada uno de sus turnos, un objetivo afectado repite la tirada y el conjuro termina para él si la supera.
+**Con un espacio de conjuro de nivel superior.** El radio de la esfera aumenta en 5 pies por cada nivel por encima de 4 que tenga el espacio.
+
+== Conjure Animals
+components: V, S
+body:
+Conjuras espíritus de la naturaleza que aparecen como una manada Grande de animales espectrales e intangibles en un espacio sin ocupar que puedas ver dentro del alcance. La manada dura lo que dure el conjuro y tú eliges la forma animal de los espíritus: lobos, serpientes, aves…
+Tienes ventaja en las tiradas de salvación de Fuerza mientras estés a 5 pies o menos de la manada y, cuando te muevas en tu turno, puedes moverla también hasta 30 pies a un espacio sin ocupar que puedas ver.
+Siempre que la manada se mueva a 10 pies o menos de una criatura que puedas ver, y siempre que una criatura que puedas ver entre en un espacio a 10 pies o menos de la manada o termine allí su turno, puedes obligar a esa criatura a hacer una tirada de salvación de Destreza. Si la falla, recibe {{3d10|Slashing}} de daño. Cada criatura hace la tirada una sola vez por turno.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d10 por cada nivel por encima de 3 que tenga el espacio.

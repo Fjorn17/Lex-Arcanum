@@ -1,0 +1,153 @@
+== True Strike
+components: S, M (un arma con la que tengas competencia y que valga 1 pc o más)
+body:
+Guiado por un destello de intuición mágica, haces un ataque con el arma usada al lanzar el conjuro. El ataque usa tu característica de lanzamiento de conjuros en las tiradas de ataque y de daño en lugar de Fuerza o Destreza. Si el ataque causa daño, puede ser {{Radiant}} o el tipo de daño normal del arma, a tu elección.
+**Mejora de truco.** Tanto si causas daño radiante como el tipo normal del arma, el ataque causa daño radiante adicional cuando alcanzas los niveles 5 (1d6), 11 (2d6) y 17 (3d6).
+
+== Tsunami
+components: V, S
+body:
+Un muro de agua aparece en un punto que elijas dentro del alcance. Puedes hacerlo de hasta 300 pies de largo, 300 pies de alto y 50 pies de grosor. El muro dura lo que dure el conjuro.
+Cuando el muro aparece, cada criatura que esté en su zona hace una tirada de salvación de Fuerza y recibe {{6d10|Bludgeoning}} de daño si la falla, o la mitad si la supera.
+Al principio de cada uno de tus turnos después de que el muro aparezca, el muro se aleja 50 pies de ti junto con las criaturas que haya en él. Cualquier criatura de tamaño Enorme o menor que esté dentro del muro, o en cuyo espacio entre el muro al moverse, hace una tirada de salvación de Fuerza y recibe {{5d10|Bludgeoning}} de daño si la falla. Cada criatura solo puede recibir ese daño una vez por asalto. Al final del turno, la altura del muro se reduce en 50 pies y el daño que causa en asaltos posteriores se reduce en 1d10. Cuando el muro llega a 0 pies de altura, el conjuro termina.
+Una criatura atrapada en el muro puede moverse nadando. Ahora bien, por la fuerza de la ola debe superar una prueba de Fuerza (Atletismo) contra tu CD de salvación de conjuros para moverse siquiera. Si la falla, no puede moverse. Una criatura que salga del muro cae al suelo.
+
+== Unseen Servant
+components: V, S, M (un poco de cuerda y de madera)
+body:
+Este conjuro crea una fuerza invisible, sin mente, informe y de tamaño Mediano que lleva a cabo tareas sencillas a tu orden hasta que el conjuro termine. El sirviente aparece en un espacio sin ocupar del suelo dentro del alcance. Tiene CA 10, 1 punto de golpe y una Fuerza de 2, y no puede atacar. Si sus puntos de golpe se reducen a 0, el conjuro termina.
+Una vez en cada uno de tus turnos, como acción adicional, puedes ordenarle mentalmente que se mueva hasta 15 pies e interactúe con un objeto. El sirviente puede llevar a cabo tareas sencillas que podría hacer un humano, como traer cosas, limpiar, remendar, doblar ropa, encender fuegos, servir comida y escanciar bebidas. Una vez le das la orden, lleva a cabo la tarea lo mejor que puede hasta terminarla y luego espera tu siguiente orden.
+Si le ordenas una tarea que lo alejara más de 60 pies de ti, el conjuro termina.
+
+== Vampiric Touch
+components: V, S
+body:
+El toque de tu mano envuelta en sombras puede drenar la fuerza vital de otros para curar tus heridas. Haz un ataque de conjuro cuerpo a cuerpo contra una criatura que esté a tu alcance. Si aciertas, el objetivo recibe {{3d6|Necrotic}} de daño y tú recuperas una cantidad de puntos de golpe igual a la mitad del daño necrótico causado.
+Hasta que el conjuro termine puedes repetir el ataque en cada uno de tus turnos como acción de magia, contra la misma criatura o contra otra.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 3 que tenga el espacio.
+
+== Vicious Mockery
+components: V
+body:
+Sueltas una sarta de insultos aderezados con encantamientos sutiles contra una criatura que puedas ver u oír dentro del alcance. El objetivo hace una tirada de salvación de Sabiduría. Si la falla, recibe {{1d6|Psychic}} de daño y tiene desventaja en la siguiente tirada de ataque que haga antes del final de su siguiente turno.
+**Mejora de truco.** El daño aumenta en 1d6 cuando alcanzas los niveles 5 (2d6), 11 (3d6) y 17 (4d6).
+
+== Vitriolic Sphere
+components: V, S, M (una gota de bilis)
+body:
+Señalas un lugar dentro del alcance y una bola de ácido luminosa de 1 pie de diámetro sale disparada hacia allí y estalla en una esfera de 20 pies de radio. Cada criatura que esté en esa zona hace una tirada de salvación de Destreza. Si la falla, recibe {{10d4|Acid}} de daño y otros {{5d4|Acid}} de daño al final de su siguiente turno. Si la supera, recibe la mitad del daño inicial y nada más.
+**Con un espacio de conjuro de nivel superior.** El daño inicial aumenta en 2d4 por cada nivel por encima de 4 que tenga el espacio.
+
+== Wall of Fire
+components: V, S, M (un trozo de carbón)
+body:
+Creas un muro de fuego sobre una superficie sólida dentro del alcance. Puedes hacerlo de hasta 60 pies de largo, 20 pies de alto y 1 pie de grosor, o un muro anular de hasta 20 pies de diámetro, 20 pies de alto y 1 pie de grosor. El muro es opaco y dura lo que dure el conjuro.
+Cuando el muro aparece, cada criatura que esté en su zona hace una tirada de salvación de Destreza y recibe {{5d8|Fire}} de daño si la falla, o la mitad si la supera.
+Uno de los lados del muro, que eliges al lanzar el conjuro, causa {{5d8|Fire}} de daño a cada criatura que termine su turno a 10 pies o menos de ese lado o dentro del muro. Una criatura recibe el mismo daño cuando entra en el muro por primera vez en un turno o termina allí su turno. El otro lado del muro no causa daño.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 4 que tenga el espacio.
+
+== Wall of Force
+components: V, S, M (una esquirla de vidrio)
+body:
+Un muro invisible de fuerza aparece en un punto que elijas dentro del alcance. El muro aparece con la orientación que elijas: como barrera horizontal o vertical, o en ángulo. Puede flotar libre o apoyarse sobre una superficie sólida. Puedes darle forma de cúpula hemisférica o de globo con un radio de hasta 10 pies, o bien de superficie plana compuesta por diez paneles de 10 por 10 pies. Cada panel debe ser contiguo a otro. Sea cual sea la forma, el muro tiene un cuarto de pulgada de grosor y dura lo que dure el conjuro. Si al aparecer corta el espacio de una criatura, esta es empujada a uno de los lados del muro (tú eliges cuál).
+Nada puede atravesar físicamente el muro. Es inmune a todo el daño y no se puede disipar con *disipar magia*. Ahora bien, un conjuro de *desintegrar* lo destruye al instante. El muro se extiende también al plano Etéreo y bloquea el viaje etéreo a través de él.
+
+== Wall of Ice
+components: V, S, M (un trozo de cuarzo)
+body:
+Creas un muro de hielo sobre una superficie sólida dentro del alcance. Puedes darle forma de cúpula hemisférica o de globo con un radio de hasta 10 pies, o bien de superficie plana compuesta por diez paneles cuadrados de 10 pies de lado. Cada panel debe ser contiguo a otro. Sea cual sea la forma, el muro tiene 1 pie de grosor y dura lo que dure el conjuro.
+Si al aparecer corta el espacio de una criatura, esta es empujada a uno de los lados del muro (tú eliges cuál) y hace una tirada de salvación de Destreza, y recibe {{10d6|Cold}} de daño si la falla, o la mitad si la supera.
+El muro es un objeto que se puede dañar y, por tanto, abrir. Tiene CA 12 y 30 puntos de golpe por cada sección de 10 pies, e inmunidad al daño {{Cold}}, {{Poison}} y {{Psychic}}, y vulnerabilidad al daño {{Fire}}. Reducir una sección de 10 pies a 0 puntos de golpe la destruye y deja atrás una lámina de aire gélido en el espacio que ocupaba.
+Una criatura que atraviese esa lámina de aire gélido por primera vez en un turno hace una tirada de salvación de Constitución y recibe {{5d6|Cold}} de daño si la falla, o la mitad si la supera.
+**Con un espacio de conjuro de nivel superior.** El daño que causa el muro al aparecer aumenta en 2d6 y el de atravesar la lámina de aire gélido aumenta en 1d6 por cada nivel por encima de 6 que tenga el espacio.
+
+== Wall of Stone
+components: V, S, M (un cubo de granito)
+body:
+Un muro no mágico de piedra maciza aparece en un punto que elijas dentro del alcance. El muro tiene 6 pulgadas de grosor y se compone de diez paneles de 10 por 10 pies. Cada panel debe ser contiguo a otro. También puedes crear paneles de 10 por 20 pies que solo tengan 3 pulgadas de grosor.
+Si al aparecer corta el espacio de una criatura, esta es empujada a uno de los lados del muro (tú eliges cuál). Si una criatura fuera a quedar rodeada por completo por el muro (o por el muro y otra superficie sólida), puede hacer una tirada de salvación de Destreza; si la supera, puede usar su reacción para moverse hasta su velocidad y dejar de estar encerrada.
+El muro puede tener la forma que quieras, aunque no puede ocupar el mismo espacio que una criatura o un objeto. No necesita ser vertical ni descansar sobre unos cimientos firmes, pero sí debe fundirse con piedra existente y apoyarse sólidamente en ella. Así, puedes usar este conjuro para tender un puente sobre un abismo o para crear una rampa.
+Si creas un tramo de más de 20 pies de longitud, debes reducir a la mitad el tamaño de cada panel para crear apoyos. Puedes dar forma tosca al muro para crear almenas y cosas por el estilo.
+El muro es un objeto de piedra que se puede dañar y, por tanto, abrir. Cada panel tiene CA 15 y 30 puntos de golpe por pulgada de grosor, e inmunidad al daño {{Poison}} y {{Psychic}}. Reducir un panel a 0 puntos de golpe lo destruye y puede hacer que los paneles conectados se derrumben, a criterio del DM.
+Si mantienes la concentración en este conjuro toda su duración, el muro se vuelve permanente y no se puede disipar. En caso contrario, desaparece cuando el conjuro termina.
+
+== Wall of Thorns
+components: V, S, M (un puñado de espinas)
+body:
+Creas un muro de maleza enmarañada erizado de espinas afiladas como agujas. El muro aparece dentro del alcance sobre una superficie sólida y dura lo que dure el conjuro. Eliges hacerlo de hasta 60 pies de largo, 10 pies de alto y 5 pies de grosor, o bien un círculo de 20 pies de diámetro, hasta 20 pies de alto y 5 pies de grosor. El muro bloquea la línea de visión.
+Cuando el muro aparece, cada criatura que esté en su zona hace una tirada de salvación de Destreza y recibe {{7d8|Piercing}} de daño si la falla, o la mitad si la supera.
+Una criatura puede atravesar el muro, aunque despacio y con dolor: por cada pie que avance a través de él debe gastar 4 pies de movimiento. Además, la primera vez que una criatura entra en un espacio del muro en un turno o termina allí su turno, hace una tirada de salvación de Destreza y recibe {{7d8|Slashing}} de daño si la falla, o la mitad si la supera. Cada criatura hace la tirada una sola vez por turno.
+**Con un espacio de conjuro de nivel superior.** Los dos tipos de daño aumentan en 1d8 por cada nivel por encima de 6 que tenga el espacio.
+
+== Warding Bond
+components: V, S, M (un par de anillos de platino por valor de 50 po o más cada uno, que el objetivo y tú debéis llevar puestos mientras dure el conjuro)
+body:
+Tocas a otra criatura voluntaria y creas una conexión mística entre el objetivo y tú hasta que el conjuro termine. Mientras el objetivo esté a 60 pies o menos de ti, obtiene un bonificador de +1 a la CA y a las tiradas de salvación, y tiene resistencia a todo el daño. Además, cada vez que recibe daño, tú recibes la misma cantidad.
+El conjuro termina si tus puntos de golpe se reducen a 0 o si el objetivo y tú os separáis más de 60 pies. Termina también si se vuelve a lanzar sobre cualquiera de las dos criaturas conectadas.
+
+== Water Breathing
+components: V, S, M (una caña corta)
+body:
+Este conjuro concede a hasta diez criaturas voluntarias que elijas dentro del alcance la capacidad de respirar bajo el agua hasta que el conjuro termine. Las criaturas afectadas conservan además su forma de respiración normal.
+
+== Water Walk
+components: V, S, M (un trozo de corcho)
+body:
+Este conjuro concede la capacidad de moverse por cualquier superficie líquida (agua, ácido, barro, nieve, arenas movedizas o lava) como si fuera suelo sólido e inofensivo (las criaturas que crucen lava fundida sí pueden recibir daño por el calor). Hasta diez criaturas voluntarias que elijas dentro del alcance obtienen esa capacidad mientras dure el conjuro.
+Un objetivo afectado debe llevar a cabo una acción adicional para pasar de la superficie del líquido al líquido mismo y viceversa; ahora bien, si el objetivo cae al líquido, atraviesa la superficie y se hunde.
+
+== Web
+components: V, S, M (un poco de tela de araña)
+body:
+Conjuras una masa de telarañas pegajosas en un punto dentro del alcance. Las telarañas llenan allí un cubo de 20 pies de lado mientras dure el conjuro. Son terreno difícil y su interior está ligeramente oscurecido.
+Si las telarañas no están ancladas entre dos masas sólidas (como muros o árboles) o extendidas sobre un suelo, un muro o un techo, se vienen abajo y el conjuro termina al principio de tu siguiente turno. Las telarañas extendidas sobre una superficie plana tienen 5 pies de profundidad.
+La primera vez que una criatura entra en las telarañas en un turno o empieza allí su turno, hace una tirada de salvación de Destreza. Si la falla, tiene el estado de apresada mientras siga en ellas o hasta que se libere.
+Una criatura apresada por las telarañas puede llevar a cabo una acción para hacer una prueba de Fuerza (Atletismo) contra tu CD de salvación de conjuros; si la supera, deja de estar apresada.
+Las telarañas son inflamables. Cualquier cubo de telarañas de 5 pies de lado expuesto al fuego se quema por completo en 1 asalto y causa {{2d4|Fire}} de daño a cualquier criatura que empiece su turno en el incendio.
+
+== Weird
+components: V, S
+body:
+Intentas crear terrores ilusorios en la mente de los demás. Cada criatura que elijas y esté en una esfera de 30 pies de radio centrada en un punto dentro del alcance hace una tirada de salvación de Sabiduría. Si la falla, recibe {{10d10|Psychic}} de daño y tiene el estado de asustada mientras dure el conjuro. Si la supera, recibe la mitad del daño y nada más.
+Un objetivo asustado hace una tirada de salvación de Sabiduría al final de cada uno de sus turnos. Si la falla, recibe {{5d10|Psychic}} de daño. Si la supera, el conjuro termina para él.
+
+== Wind Walk
+components: V, S, M (una vela)
+body:
+Tú y hasta diez criaturas voluntarias que elijas dentro del alcance adoptáis forma gaseosa mientras dure el conjuro, con aspecto de volutas de nube. En esa forma de nube, un objetivo tiene una velocidad volando de 300 pies y puede quedarse suspendido en el aire, tiene inmunidad al estado de derribado y tiene resistencia al daño {{Bludgeoning}}, {{Piercing}} y {{Slashing}}. Las únicas acciones que puede llevar a cabo en esa forma son la acción de correr o una acción de magia para empezar a volver a su forma normal. Volver lleva 1 minuto, durante el cual el objetivo tiene el estado de aturdido. Hasta que el conjuro termine, el objetivo puede volver a la forma de nube, lo que exige también una acción de magia seguida de una transformación de 1 minuto.
+Si un objetivo está en forma de nube y volando cuando el efecto termina, desciende 60 pies por asalto durante 1 minuto hasta tomar tierra, cosa que hace sin daño. Si no puede tomar tierra al cabo de 1 minuto, cae la distancia restante.
+
+== Wind Wall
+components: V, S, M (un abanico y una pluma)
+body:
+Un muro de viento fuerte se alza del suelo en un punto que elijas dentro del alcance. Puedes hacerlo de hasta 50 pies de largo, 15 pies de alto y 1 pie de grosor. Puedes darle la forma que quieras siempre que trace un recorrido continuo por el suelo. El muro dura lo que dure el conjuro.
+Cuando el muro aparece, cada criatura que esté en su zona hace una tirada de salvación de Fuerza y recibe {{4d8|Bludgeoning}} de daño si la falla, o la mitad si la supera.
+El viento fuerte mantiene a raya la niebla, el humo y otros gases. Las criaturas u objetos voladores de tamaño Pequeño o menor no pueden atravesar el muro. Los materiales sueltos y ligeros que lleguen al muro salen volando hacia arriba. Las flechas, virotes y demás proyectiles corrientes lanzados contra objetivos que estén detrás del muro se desvían hacia arriba y fallan automáticamente. Las rocas arrojadas por gigantes o por máquinas de asedio, y los proyectiles similares, no se ven afectados. Las criaturas en forma gaseosa no pueden atravesarlo.
+
+== Wish
+components: V
+body:
+*Deseo* es el conjuro más poderoso que puede lanzar un mortal. Con solo hablar en voz alta puedes alterar la realidad misma.
+El uso básico de este conjuro es duplicar cualquier otro conjuro de nivel 8 o inferior. Si lo usas así, no necesitas cumplir ningún requisito para lanzar ese conjuro, ni siquiera sus componentes caros: el conjuro sencillamente surte efecto.
+También puedes crear uno de los efectos siguientes, a tu elección:
+**Crear un objeto.** Creas un objeto de hasta 25.000 po de valor que no sea un objeto mágico. El objeto no puede medir más de 300 pies en ninguna dimensión y aparece en un espacio sin ocupar del suelo que puedas ver.
+**Salud instantánea.** Haces que tú y hasta veinte criaturas que puedas ver recuperéis todos vuestros puntos de golpe, y les terminas todos los efectos que enumera el conjuro *restablecimiento mayor*.
+**Resistencia.** Concedes a hasta diez criaturas que puedas ver resistencia a un tipo de daño que elijas. Esa resistencia es permanente.
+**Inmunidad a un conjuro.** Concedes a hasta diez criaturas que puedas ver inmunidad a un solo conjuro u otro efecto mágico durante 8 horas.
+**Aprendizaje súbito.** Sustituyes una de tus dotes por otra a la que puedas optar. Pierdes todos los beneficios de la dote antigua y obtienes los de la nueva. No puedes sustituir una dote que sea requisito de otra de tus dotes o rasgos.
+**Repetir una tirada.** Deshaces un suceso reciente obligando a repetir cualquier tirada de dados hecha en el último asalto (incluido tu último turno). La realidad se remodela para acomodar el nuevo resultado. Por ejemplo, un *deseo* podría deshacer la tirada de salvación fallida de un aliado o el crítico de un enemigo. Puedes obligar a que la repetición se haga con ventaja o con desventaja, y eliges si se usa la repetición o la tirada original.
+**Remodelar la realidad.** Puedes desear algo que no esté incluido en ninguno de los demás efectos. Para ello, expresa tu deseo al DM con toda la precisión posible. El DM tiene mucha libertad para dictaminar qué ocurre en ese caso: cuanto mayor sea el deseo, mayor será la probabilidad de que algo salga mal. El conjuro puede sencillamente fallar, el efecto deseado puede lograrse solo en parte o puedes sufrir una consecuencia imprevista por cómo hayas formulado el deseo. Por ejemplo, desear que un villano estuviera muerto podría impulsarte hacia delante en el tiempo, a una época en la que ese villano ya no vive, lo que en la práctica te saca de la partida.
+Del mismo modo, desear un objeto mágico legendario o un artefacto podría transportarte al instante ante su dueño actual. Si tu deseo se concede y sus efectos tienen consecuencias para toda una comunidad, región o mundo, es probable que atraigas a enemigos poderosos. Si tu deseo afectara a un dios, sus sirvientes divinos podrían intervenir al instante para impedirlo o para animarte a formular el deseo de otra manera. Si tu deseo deshiciera el multiverso mismo, el deseo falla.
+El esfuerzo de lanzar *deseo* para producir cualquier efecto que no sea duplicar otro conjuro te debilita. Después de soportar ese esfuerzo, cada vez que lances un conjuro hasta que termines un descanso largo recibes {{1d10|Necrotic}} de daño por cada nivel de ese conjuro. Ese daño no se puede reducir ni evitar de ninguna manera. Además, tu puntuación de Fuerza pasa a ser 3 durante 2d4 días. Por cada uno de esos días que pases descansando y sin hacer más que actividad ligera, el tiempo de recuperación restante se reduce en 2 días. Por último, hay un 33 % de probabilidades de que no puedas volver a lanzar *deseo* nunca más si sufres ese esfuerzo.
+
+== Word of Recall
+components: V
+body:
+Tú y hasta cinco criaturas voluntarias que estén a 5 pies o menos de ti os teletransportáis al instante a un santuario designado de antemano. Tú y las criaturas que se teletransporten contigo aparecéis en el espacio sin ocupar más cercano al punto que designaste al preparar tu santuario (ver debajo). Si lanzas este conjuro sin haber preparado antes un santuario, el conjuro no tiene efecto.
+Debes designar un lugar, como un templo, como santuario lanzando este conjuro allí.
+
+== Zone of Truth
+components: V, S
+body:
+Creas una zona mágica que protege contra el engaño en una esfera de 15 pies de radio centrada en un punto dentro del alcance. Hasta que el conjuro termine, una criatura que entre en la zona por primera vez en un turno o empiece allí su turno hace una tirada de salvación de Carisma. Si la falla, no puede decir una mentira deliberada mientras esté dentro del radio. Tú sabes si una criatura supera o falla esa tirada.
+Una criatura afectada es consciente del conjuro y puede evitar responder a preguntas a las que normalmente respondería con una mentira. Esa criatura puede ser evasiva, pero debe ser sincera.

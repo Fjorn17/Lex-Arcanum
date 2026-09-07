@@ -1,0 +1,163 @@
+== Freedom of Movement
+components: V, S, M (una correa de cuero)
+body:
+Tocas a una criatura voluntaria. Mientras dure el conjuro, el terreno difícil no afecta al movimiento del objetivo, y los conjuros y demás efectos mágicos no pueden reducir su velocidad ni hacer que tenga los estados de paralizado o de apresado. El objetivo obtiene además una velocidad nadando igual a su velocidad.
+Además, el objetivo puede gastar 5 pies de movimiento para escapar automáticamente de ataduras no mágicas, como unas esposas, o de una criatura que le imponga el estado de agarrado.
+**Con un espacio de conjuro de nivel superior.** Puedes hacer objetivo a una criatura más por cada nivel por encima de 4 que tenga el espacio.
+
+== Freezing Sphere
+components: V, S, M (una esfera de cristal en miniatura)
+body:
+Un globo gélido sale disparado de ti hacia un punto que elijas dentro del alcance, donde estalla en una esfera de 60 pies de radio. Cada criatura que esté en esa zona hace una tirada de salvación de Constitución y recibe {{10d6|Cold}} de daño si la falla, o la mitad si la supera.
+Si el globo alcanza una masa de agua, la congela hasta una profundidad de 6 pulgadas en una zona de 30 pies de lado. Ese hielo dura 1 minuto. Las criaturas que estuvieran nadando en la superficie del agua congelada quedan atrapadas en el hielo y tienen el estado de apresadas. Una criatura atrapada puede llevar a cabo una acción para hacer una prueba de Fuerza (Atletismo) contra tu CD de salvación de conjuros y liberarse.
+Puedes abstenerte de disparar el globo una vez terminado el lanzamiento. Si lo haces, aparece en tu mano un globo del tamaño de una bala de honda, frío al tacto. En cualquier momento, tú o una criatura a la que se lo des podéis lanzarlo (hasta un alcance de 40 pies) o dispararlo con una honda (hasta el alcance normal del arma). Se hace añicos al impactar, con el mismo efecto que un lanzamiento normal del conjuro. También puedes dejarlo en el suelo sin romperlo. Al cabo de 1 minuto, si no se ha roto ya, el globo estalla.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 6 que tenga el espacio.
+
+== Gaseous Form
+components: V, S, M (un poco de gasa)
+body:
+Una criatura voluntaria a la que toques se transforma, junto con todo lo que lleve y vista, en una nube de bruma mientras dure el conjuro. El conjuro termina para el objetivo si sus puntos de golpe se reducen a 0 o si lleva a cabo una acción de magia para terminarlo.
+Mientras está en esa forma, el único movimiento del objetivo es una velocidad volando de 10 pies, y puede quedarse suspendido en el aire. Puede entrar en el espacio de otra criatura y ocuparlo. El objetivo tiene resistencia al daño {{Bludgeoning}}, {{Piercing}} y {{Slashing}}, inmunidad al estado de derribado y ventaja en las tiradas de salvación de Fuerza, Destreza y Constitución. Puede pasar por aberturas estrechas, pero trata los líquidos como si fueran superficies sólidas.
+El objetivo no puede hablar ni manipular objetos, y no puede soltar, usar ni interactuar de ninguna forma con los objetos que llevara o tuviera en las manos. Por último, no puede atacar ni lanzar conjuros.
+**Con un espacio de conjuro de nivel superior.** Puedes hacer objetivo a una criatura más por cada nivel por encima de 3 que tenga el espacio.
+
+== Gate
+components: V, S, M (un diamante por valor de 5.000 po o más)
+body:
+Conjuras un portal que une un espacio sin ocupar que puedas ver dentro del alcance con un lugar concreto de otro plano de existencia. El portal es una abertura circular a la que puedes dar de 5 a 20 pies de diámetro, y puedes orientarlo en la dirección que quieras. El portal dura lo que dure el conjuro y su destino se ve a través de él.
+El portal tiene una cara delantera y una trasera en cada plano en el que aparece. Solo se puede viajar a través de él atravesando su cara delantera. Todo lo que lo haga es transportado al instante al otro plano y aparece en el espacio sin ocupar más cercano al portal.
+Las deidades y otros señores planares pueden impedir que los portales creados con este conjuro se abran en su presencia o en cualquier lugar de sus dominios.
+Al lanzar el conjuro puedes decir el nombre de una criatura concreta (un seudónimo, un título o un apodo no sirven). Si esa criatura está en un plano distinto del tuyo, el portal se abre junto a ella y la transporta al espacio sin ocupar más cercano de tu lado del portal. No obtienes ningún poder especial sobre ella, que es libre de actuar como el DM considere apropiado: puede irse, atacarte o ayudarte.
+
+== Geas
+components: V
+body:
+Le das una orden verbal a una criatura que puedas ver dentro del alcance para que preste algún servicio o se abstenga de una acción o de un curso de actividad, según decidas. El objetivo hace una tirada de salvación de Sabiduría. Si la falla, tiene el estado de hechizado mientras dure el conjuro. El objetivo supera la tirada automáticamente si no entiende tu orden.
+Mientras esté hechizado, la criatura recibe {{5d10|Psychic}} de daño si actúa de forma directamente contraria a tu orden. Recibe ese daño una vez al día como mucho.
+Puedes dar cualquier orden que quieras, salvo una actividad que llevara a una muerte segura. Si das una orden suicida, el conjuro termina.
+Los conjuros *levantar maldición*, *restablecimiento mayor* o *deseo* terminan este conjuro.
+**Con un espacio de conjuro de nivel superior.** Con un espacio de nivel 7 u 8, la duración es de 365 días. Con uno de nivel 9, el conjuro dura hasta que lo termine alguno de los conjuros mencionados arriba.
+
+== Gentle Repose
+components: V, S, M (2 piezas de cobre, que el conjuro consume)
+body:
+Tocas un cadáver u otros restos. Mientras dure el conjuro, el objetivo queda protegido de la descomposición y no puede convertirse en muerto viviente.
+El conjuro amplía además, en la práctica, el plazo para devolver la vida al objetivo, ya que los días pasados bajo su efecto no cuentan para el límite de tiempo de conjuros como *alzar a los muertos*.
+
+== Giant Insect
+components: V, S
+body:
+Invocas un ciempiés, una araña o una avispa gigantes (eliges cuál al lanzar el conjuro). Se manifiesta en un espacio sin ocupar que puedas ver dentro del alcance y usa el perfil de insecto gigante. La forma que elijas determina ciertos detalles del perfil. La criatura desaparece cuando sus puntos de golpe se reducen a 0 o cuando el conjuro termina.
+La criatura es aliada tuya y de tus aliados. En combate comparte tu puesto de iniciativa, pero actúa justo después de ti. Obedece tus órdenes verbales (no te requiere ninguna acción). Si no le das ninguna, lleva a cabo la acción de esquivar y usa su movimiento para evitar el peligro.
+**Con un espacio de conjuro de nivel superior.** Usa el nivel del espacio como nivel del conjuro en el perfil.
+Giant Insect Large Beast, Unaligned
+
+== Glibness
+components: V
+body:
+Hasta que el conjuro termine, cuando haces una prueba de Carisma puedes sustituir el resultado de la tirada por un 15. Además, digas lo que digas, la magia que determinaría si dices la verdad indica que estás siendo sincero.
+
+== Globe of Invulnerability
+components: V, S, M (una cuenta de vidrio)
+body:
+Aparece a tu alrededor una barrera inmóvil y reluciente en una emanación de 10 pies, que permanece mientras dure el conjuro.
+Ningún conjuro de nivel 5 o inferior lanzado desde fuera de la barrera puede afectar a nada que esté dentro. Un conjuro así puede hacer objetivo a criaturas y objetos de dentro de la barrera, pero no les hace nada. Del mismo modo, la zona interior de la barrera queda excluida de las áreas de efecto creadas por esos conjuros.
+**Con un espacio de conjuro de nivel superior.** La barrera bloquea conjuros de 1 nivel más por cada nivel por encima de 6 que tenga el espacio.
+
+== Glyph of Warding
+components: V, S, M (diamante en polvo por valor de 200 po o más, que el conjuro consume)
+body:
+Inscribes un glifo que más adelante desata un efecto mágico. Lo inscribes sobre una superficie (como una mesa o un tramo de suelo) o dentro de un objeto que se pueda cerrar (como un libro o un cofre) para ocultarlo. El glifo puede cubrir una zona de no más de 10 pies de diámetro. Si la superficie o el objeto se mueven más de 10 pies del lugar donde lanzaste el conjuro, el glifo se rompe y el conjuro termina sin activarse.
+El glifo es casi imperceptible: para verlo hay que superar una prueba de Sabiduría (Percepción) contra tu CD de salvación de conjuros.
+Al inscribir el glifo fijas su disparador y eliges si es una runa explosiva o un glifo de conjuro, según se explica debajo.
+**Fijar el disparador.** Decides qué activa el glifo al lanzar el conjuro. En los glifos inscritos sobre una superficie, los disparadores habituales son tocar el glifo o pisarlo, retirar otro objeto que lo tapara o acercarse a cierta distancia. En los glifos inscritos dentro de un objeto, los disparadores habituales son abrir ese objeto o ver el glifo. Una vez el glifo se activa, el conjuro termina.
+Puedes afinar el disparador para que solo lo activen criaturas de ciertos tipos (por ejemplo, que el glifo afecte solo a las aberraciones). También puedes fijar condiciones para las criaturas que no lo activen, como decir una contraseña.
+**Runa explosiva.** Al activarse, el glifo estalla en energía mágica en una esfera de 20 pies de radio centrada en él. Cada criatura que esté en la zona hace una tirada de salvación de Destreza y recibe {{5d8|Acid}}, {{5d8|Cold}}, {{5d8|Fire}}, {{5d8|Lightning}} o {{5d8|Thunder}} de daño (a tu elección al crear el glifo) si la falla, o la mitad si la supera.
+**Glifo de conjuro.** Puedes almacenar en el glifo un conjuro preparado de nivel 3 o inferior lanzándolo como parte de la creación del glifo. Ese conjuro debe hacer objetivo a una sola criatura o a una zona. El conjuro almacenado no produce ningún efecto inmediato al lanzarse así.
+Cuando el glifo se activa, el conjuro almacenado surte efecto. Si tiene objetivo, hace objetivo a la criatura que activó el glifo. Si afecta a una zona, la zona se centra en esa criatura. Si el conjuro invoca criaturas hostiles o crea objetos o trampas dañinas, aparecen lo más cerca posible del intruso y lo atacan. Si el conjuro requiere concentración, dura toda su duración completa.
+**Con un espacio de conjuro de nivel superior.** El daño de una runa explosiva aumenta en 1d8 por cada nivel por encima de 3 que tenga el espacio. Si creas un glifo de conjuro, puedes almacenar cualquier conjuro de nivel igual o inferior al del espacio que gastes en *glifo custodio*.
+
+== Goodberry
+components: V, S, M (una ramita de muérdago)
+body:
+Aparecen diez bayas en tu mano, imbuidas de magia mientras dure el conjuro. Una criatura puede llevar a cabo una acción adicional para comerse una baya. Comerse una baya restaura 1 punto de golpe y alimenta a la criatura durante un día.
+Las bayas que nadie se coma desaparecen cuando el conjuro termina.
+
+== Grease
+components: V, S, M (un poco de corteza de cerdo o de mantequilla)
+body:
+Una grasa no inflamable cubre el suelo en un cuadrado de 10 pies de lado centrado en un punto dentro del alcance y lo convierte en terreno difícil mientras dure el conjuro.
+Cuando la grasa aparece, cada criatura que esté en su zona hace una tirada de salvación de Destreza. Si la falla, tiene el estado de derribada. Una criatura que entre en la zona o termine allí su turno hace también esa tirada y cae derribada si la falla.
+
+== Greater Invisibility
+components: V, S
+body:
+Una criatura a la que toques tiene el estado de invisible hasta que el conjuro termine.
+
+== Greater Restoration
+components: V, S, M (polvo de diamante por valor de 100 po o más, que el conjuro consume)
+body:
+Tocas a una criatura y le quitas por medios mágicos uno de los efectos siguientes:
+• 1 grado de agotamiento.
+• El estado de hechizada o el de petrificada.
+• Una maldición, incluida la sintonización del objetivo con un objeto mágico maldito.
+• Cualquier reducción de una de sus puntuaciones de característica.
+• Cualquier reducción de sus puntos de golpe máximos.
+
+== Guardian of Faith
+components: V
+body:
+Un guardián espectral Grande aparece y flota mientras dure el conjuro en un espacio sin ocupar que puedas ver dentro del alcance. El guardián ocupa ese espacio, es invulnerable y tiene una forma acorde con tu deidad o tu panteón.
+Cualquier enemigo que se mueva a un espacio a 10 pies o menos del guardián por primera vez en un turno, o que empiece allí su turno, hace una tirada de salvación de Destreza y recibe 20 de {{Radiant}} de daño si la falla, o la mitad si la supera. El guardián se desvanece cuando ha causado 60 de daño en total.
+
+== Guards and Wards
+components: V, S, M (una vara de plata por valor de 10 po o más)
+body:
+Creas una protección que cubre hasta 2.500 pies cuadrados de superficie. La zona protegida puede tener hasta 20 pies de alto y le das forma de un cuadrado de 50 pies de lado, de cien cuadrados contiguos de 5 pies de lado o de veinticinco cuadrados contiguos de 10 pies de lado.
+Al lanzar el conjuro puedes indicar qué individuos no se ven afectados por sus efectos. También puedes fijar una contraseña que, dicha en voz alta a 5 pies o menos de la zona protegida, haga inmune a quien la diga.
+El conjuro crea los efectos siguientes dentro de la zona protegida. *Disipar magia* no afecta a *guardas y guardias* en sí, pero sí puede disipar cada uno de los efectos siguientes. Si se disipan los cuatro, *guardas y guardias* termina. Si lanzas el conjuro todos los días durante 365 días sobre la misma zona, a partir de entonces dura hasta que se disipen todos sus efectos.
+**Pasillos.** La niebla llena todos los pasillos protegidos y los deja muy oscurecidos. Además, en cada cruce o bifurcación que ofrezca elegir dirección, hay un 50 % de probabilidades de que una criatura que no seas tú crea que va en la dirección contraria a la que ha elegido.
+**Puertas.** Todas las puertas de la zona protegida quedan cerradas por medios mágicos, como si las hubiera sellado el conjuro *cerradura arcana*. Además, puedes cubrir hasta diez puertas con una ilusión para que parezcan tramos de muro liso.
+**Escaleras.** Las telarañas llenan todas las escaleras de la zona protegida de arriba abajo, como con el conjuro *telaraña*. Esas hebras vuelven a crecer en 10 minutos si se destruyen mientras dure *guardas y guardias*.
+**Otro efecto de conjuro.** Coloca uno de estos efectos mágicos dentro de la zona protegida:
+• *Luces danzantes* en cuatro pasillos, con un programa sencillo que las luces repiten mientras dure *guardas y guardias*.
+• *Boca mágica* en dos lugares.
+• *Nube apestosa* en dos lugares (los vapores vuelven en 10 minutos si se dispersan mientras dure *guardas y guardias*).
+• *Ráfaga de viento* en un pasillo o una sala (el viento sopla sin parar mientras dure el conjuro).
+• *Sugestión* en un cuadrado de 5 pies de lado; cualquier criatura que entre en ese cuadrado recibe la sugestión mentalmente.
+
+== Guidance
+components: V, S
+body:
+Tocas a una criatura voluntaria y eliges una habilidad. Hasta que el conjuro termine, la criatura suma 1d4 a cualquier prueba de característica que use esa habilidad.
+
+== Guiding Bolt
+components: V, S
+body:
+Arrojas una saeta de luz hacia una criatura que esté dentro del alcance. Haz un ataque de conjuro a distancia contra el objetivo. Si aciertas, recibe {{4d6|Radiant}} de daño y la siguiente tirada de ataque que se haga contra él antes del final de tu siguiente turno tiene ventaja.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 1 que tenga el espacio.
+
+== Gust of Wind
+components: V, S, M (una semilla de legumbre)
+body:
+Una línea de viento fuerte de 60 pies de largo y 10 pies de ancho sale de ti en la dirección que elijas y dura lo que dure el conjuro. Cada criatura que esté en la línea hace una tirada de salvación de Fuerza. Si la falla, es empujada 15 pies lejos de ti siguiendo la línea. Una criatura que termine su turno en la línea hace también esa tirada.
+Cualquier criatura que esté en la línea debe gastar 2 pies de movimiento por cada pie que avance cuando se acerque hacia ti.
+La ráfaga dispersa gases y vapores y apaga las velas y llamas desprotegidas parecidas que haya en la zona. Hace que las llamas protegidas, como las de las linternas, bailen con violencia, y tiene un 50 % de probabilidades de apagarlas.
+Como acción adicional en tus turnos posteriores puedes cambiar la dirección en la que la línea sale de ti.
+
+== Hallow
+components: V, S, M (incienso por valor de 1.000 po o más, que el conjuro consume)
+body:
+Tocas un punto e imbuyes la zona que lo rodea de poder sagrado o profano. La zona puede tener hasta 60 pies de radio, y el conjuro falla si ese radio incluye una zona que ya esté bajo el efecto de *consagrar*. La zona afectada recibe los efectos siguientes.
+**Protección consagrada.** Elige cualquiera de estos tipos de criatura: aberración, celestial, elemental, feérico, infernal o muerto viviente. Las criaturas de los tipos elegidos no pueden entrar en la zona por voluntad propia, y cualquier criatura que esté poseída o que tenga el estado de hechizada o de asustada por causa de esas criaturas deja de estarlo mientras esté en la zona.
+**Efecto adicional.** Vinculas a la zona un efecto adicional de la lista siguiente:
+**Valor.** Las criaturas de los tipos que elijas no pueden recibir el estado de asustadas mientras estén en la zona.
+**Oscuridad.** La oscuridad llena la zona. Ni la luz normal ni la luz mágica creada por conjuros de nivel inferior a este pueden iluminarla.
+**Luz del día.** La luz brillante llena la zona. La oscuridad mágica creada por conjuros de nivel inferior a este no puede apagar esa luz.
+**Descanso en paz.** Los cadáveres enterrados en la zona no se pueden convertir en muertos vivientes.
+**Interferencia extradimensional.** Las criaturas de los tipos que elijas no pueden entrar en la zona ni salir de ella mediante teletransporte ni viaje entre planos.
+**Miedo.** Las criaturas de los tipos que elijas tienen el estado de asustadas mientras estén en la zona.
+**Resistencia.** Las criaturas de los tipos que elijas tienen resistencia a un tipo de daño que elijas mientras estén en la zona.
+**Silencio.** Ningún sonido puede salir de la zona ni entrar en ella.
+**Don de lenguas.** Las criaturas de los tipos que elijas pueden comunicarse con cualquier otra criatura de la zona aunque no compartan ningún idioma.
+**Vulnerabilidad.** Las criaturas de los tipos que elijas tienen vulnerabilidad a un tipo de daño que elijas mientras estén en la zona.

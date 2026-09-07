@@ -1,0 +1,144 @@
+== Dominate Person
+components: V, S
+body:
+Un humanoide que puedas ver dentro del alcance hace una tirada de salvación de Sabiduría. Si la falla, tiene el estado de hechizado mientras dure el conjuro. El objetivo tiene ventaja en la tirada si tus aliados o tú estáis luchando contra él. Siempre que el objetivo recibe daño, repite la tirada y el conjuro termina para él si la supera.
+Tienes un vínculo telepático con el objetivo hechizado mientras los dos estéis en el mismo plano de existencia. En tu turno puedes usar ese vínculo para darle órdenes (no requiere acción), como «ataca a esa criatura», «muévete allí» o «tráeme ese objeto». El objetivo hace todo lo posible por obedecer en su turno. Si termina una orden y no recibe más indicaciones tuyas, actúa y se mueve como quiere, centrado en protegerse.
+Puedes ordenarle que lleve a cabo una reacción, pero para ello debes gastar tu propia reacción.
+**Con un espacio de conjuro de nivel superior.** Tu concentración puede durar más con un espacio de nivel 6 (hasta 10 minutos), 7 (hasta 1 hora) u 8 o superior (hasta 8 horas).
+
+== Dragon’s Breath
+components: V, S, M (un pimiento picante)
+body:
+Tocas a una criatura voluntaria y eliges {{Acid}}, {{Cold}}, {{Fire}}, {{Lightning}} o {{Poison}}. Hasta que el conjuro termine, el objetivo puede llevar a cabo una acción de magia para exhalar un cono de 15 pies. Cada criatura que esté en esa zona hace una tirada de salvación de Destreza y recibe 3d6 de daño del tipo elegido si la falla, o la mitad si la supera.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 2 que tenga el espacio.
+
+== Dream
+components: V, S, M (un puñado de arena)
+body:
+Haces objetivo a una criatura que conozcas y esté en tu mismo plano de existencia. Tú, o una criatura voluntaria a la que toques, entráis en trance para hacer de mensajero onírico. Mientras está en trance, el mensajero tiene el estado de incapacitado y una velocidad de 0.
+Si el objetivo está dormido, el mensajero aparece en sus sueños y puede conversar con él mientras siga dormido, hasta que el conjuro termine. El mensajero también puede dar forma al entorno del sueño y crear paisajes, objetos y otras imágenes. Puede salir del trance cuando quiera, con lo que el conjuro termina. El objetivo recuerda el sueño a la perfección al despertar.
+Si el objetivo está despierto cuando lanzas el conjuro, el mensajero lo sabe y puede terminar el trance (y el conjuro) o esperar a que el objetivo se duerma, momento en que entra en sus sueños.
+Puedes hacer que el mensajero le resulte aterrador al objetivo. Si lo haces, el mensajero puede entregar un mensaje de diez palabras como mucho y después el objetivo hace una tirada de salvación de Sabiduría. Si la falla, no obtiene ningún beneficio de su descanso y recibe {{3d6|Psychic}} de daño al despertar.
+
+== Druidcraft
+components: V, S
+body:
+Susurras a los espíritus de la naturaleza y creas uno de los efectos siguientes dentro del alcance.
+**Sensor meteorológico.** Creas un efecto sensorial Diminuto e inofensivo que predice qué tiempo hará en tu posición durante las próximas 24 horas. El efecto puede manifestarse como un orbe dorado para el cielo despejado, una nube para la lluvia, copos cayendo para la nieve, etcétera. Persiste durante 1 asalto.
+**Floración.** Haces que una flor se abra, que una vaina de semillas se abra o que brote una yema de hoja, al instante.
+**Efecto sensorial.** Creas un efecto sensorial inofensivo, como hojas cayendo, hadas espectrales bailando, una brisa suave, el sonido de un animal o el leve olor de una mofeta. El efecto debe caber en un cubo de 5 pies de lado.
+**Juego de fuego.** Enciendes o apagas una vela, una antorcha o una hoguera.
+
+== Earthquake
+components: V, S, M (una roca agrietada)
+body:
+Elige un punto del suelo que puedas ver dentro del alcance. Mientras dure el conjuro, un temblor intenso recorre el suelo en un círculo de 100 pies de radio centrado en ese punto. El suelo de esa zona es terreno difícil.
+Cuando lanzas el conjuro y al final de cada uno de tus turnos mientras dure, cada criatura que esté en el suelo dentro de la zona hace una tirada de salvación de Destreza. Si la falla, tiene el estado de derribada y pierde la concentración.
+También puedes provocar los efectos siguientes.
+**Grietas.** Al final del turno en que lanzas el conjuro se abren 1d6 grietas en la zona. Tú eliges dónde, pero no pueden abrirse bajo estructuras. Cada grieta tiene 1d10 × 10 pies de profundidad y 10 pies de ancho, y va de un borde a otro de la zona del conjuro. Una criatura que esté en el mismo espacio que una grieta hace una tirada de salvación de Destreza. Si la falla, cae dentro; si la supera, se mueve con el borde de la grieta mientras se abre.
+**Estructuras.** El temblor causa 50 de {{Bludgeoning}} de daño a cualquier estructura que esté en contacto con el suelo de la zona, tanto al lanzar el conjuro como al final de cada uno de tus turnos hasta que termine. Si los puntos de golpe de una estructura se reducen a 0, se derrumba. Una criatura que esté a una distancia de la estructura que se derrumba igual o menor que la mitad de su altura hace una tirada de salvación de Destreza. Si la falla, recibe {{12d6|Bludgeoning}} de daño, tiene el estado de derribada y queda sepultada bajo los escombros, de los que solo puede salir superando una prueba de Fuerza (Atletismo) con CD 20 como acción. Si la supera, recibe la mitad del daño y nada más.
+
+== Eldritch Blast
+components: V, S
+body:
+Arrojas un haz de energía crepitante. Haz un ataque de conjuro a distancia contra una criatura o un objeto que estén dentro del alcance. Si aciertas, el objetivo recibe {{1d10|Force}} de daño.
+**Mejora de truco.** El conjuro crea dos haces en el nivel 5, tres en el nivel 11 y cuatro en el nivel 17. Puedes dirigirlos al mismo objetivo o a objetivos distintos. Haz una tirada de ataque por cada haz.
+
+== Elementalism
+components: V, S
+body:
+Ejerces control sobre los elementos y creas uno de los efectos siguientes dentro del alcance.
+**Llamar al aire.** Creas una brisa lo bastante fuerte para ondear telas, levantar polvo, hacer crujir hojas y cerrar puertas y postigos abiertos, todo ello en un cubo de 5 pies de lado. Las puertas y postigos que alguien o algo mantenga abiertos no se ven afectados.
+**Llamar a la tierra.** Creas un fino manto de polvo o de arena que cubre las superficies de una zona cuadrada de 5 pies de lado, o haces que aparezca una sola palabra con tu letra sobre un trecho de tierra o de arena.
+**Llamar al fuego.** Creas una fina nube de ascuas inofensivas y de humo aromático y de colores en un cubo de 5 pies de lado. Eliges el color y el aroma, y las ascuas pueden encender velas, antorchas o lámparas de esa zona. El aroma del humo permanece 1 minuto.
+**Llamar al agua.** Creas una rociada de bruma fresca que humedece ligeramente a las criaturas y objetos de un cubo de 5 pies de lado. También puedes crear 1 taza de agua limpia en un recipiente abierto o sobre una superficie; esa agua se evapora en 1 minuto.
+**Esculpir el elemento.** Haces que tierra, arena, fuego, humo, bruma o agua que quepan en un cubo de 1 pie de lado adopten una forma tosca (como la de una criatura) durante 1 hora.
+
+== Enhance Ability
+components: V, S, M (pelaje o una pluma)
+body:
+Tocas a una criatura y eliges Fuerza, Destreza, Inteligencia, Sabiduría o Carisma. Mientras dure el conjuro, el objetivo tiene ventaja en las pruebas de característica que usen la característica elegida.
+**Con un espacio de conjuro de nivel superior.** Puedes hacer objetivo a una criatura más por cada nivel por encima de 2 que tenga el espacio. Puedes elegir una característica distinta para cada objetivo.
+
+== Enlarge/Reduce
+components: V, S, M (una pizca de hierro en polvo)
+body:
+Mientras dure el conjuro, este agranda o reduce a una criatura o un objeto que puedas ver dentro del alcance (según el efecto elegido, descrito debajo). Un objeto que sea objetivo no puede ser llevado ni vestido por nadie. Si el objetivo es una criatura no voluntaria, puede hacer una tirada de salvación de Constitución; si la supera, el conjuro no tiene efecto.
+Todo lo que lleve o vista una criatura objetivo cambia de tamaño con ella. Cualquier objeto que suelte recupera su tamaño normal de inmediato. Un arma arrojadiza o una munición recuperan su tamaño normal justo después de acertar o fallar a un objetivo.
+**Agrandar.** El tamaño del objetivo aumenta una categoría; por ejemplo, de Mediano a Grande. Además, el objetivo tiene ventaja en las pruebas y en las tiradas de salvación de Fuerza. Sus ataques con las armas agrandadas o con ataques sin armas causan 1d4 de daño adicional cuando aciertan.
+**Reducir.** El tamaño del objetivo disminuye una categoría; por ejemplo, de Mediano a Pequeño. Además, el objetivo tiene desventaja en las pruebas y en las tiradas de salvación de Fuerza. Sus ataques con las armas reducidas o con ataques sin armas causan 1d4 de daño menos cuando aciertan (esto no puede reducir el daño por debajo de 1).
+
+== Ensnaring Strike
+components: V
+casting: Acción adicional, que llevas a cabo justo después de acertar a una criatura con un arma
+body:
+Al acertar al objetivo aparecen sobre él unas enredaderas que lo atenazan y hace una tirada de salvación de Fuerza. Una criatura de tamaño Grande o mayor tiene ventaja en esta tirada. Si la falla, tiene el estado de apresada hasta que el conjuro termine. Si la supera, las enredaderas se marchitan y el conjuro termina.
+Mientras esté apresado, el objetivo recibe {{1d6|Piercing}} de daño al principio de cada uno de sus turnos. El objetivo, o una criatura que lo tenga a su alcance, puede llevar a cabo una acción para hacer una prueba de Fuerza (Atletismo) contra tu CD de salvación de conjuros; si la supera, el conjuro termina.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 1 que tenga el espacio.
+
+== Entangle
+components: V, S
+body:
+Del suelo brotan plantas que atenazan en un cuadrado de 20 pies de lado dentro del alcance. Mientras dure el conjuro, esas plantas convierten el suelo de la zona en terreno difícil. Desaparecen cuando el conjuro termina.
+Cada criatura que no seas tú y esté en la zona cuando lanzas el conjuro hace una tirada de salvación de Fuerza. Si la falla, tiene el estado de apresada hasta que el conjuro termine. Una criatura apresada puede llevar a cabo una acción para hacer una prueba de Fuerza (Atletismo) contra tu CD de salvación de conjuros; si la supera, se libera de las plantas y deja de estar apresada por ellas.
+
+== Enthrall
+components: V, S
+body:
+Tejes una sarta de palabras que distraen y haces que las criaturas que elijas y puedas ver dentro del alcance hagan una tirada de salvación de Sabiduría. Cualquier criatura contra la que estéis luchando tus compañeros o tú supera la tirada automáticamente. Si la falla, el objetivo tiene un penalizador de −10 a las pruebas de Sabiduría (Percepción) y a la Percepción pasiva hasta que el conjuro termine.
+
+== Etherealness
+components: V, S
+body:
+Entras en las regiones fronterizas del plano Etéreo, allí donde se solapa con tu plano actual. Permaneces en el Etéreo Fronterizo mientras dure el conjuro. Durante ese tiempo puedes moverte en cualquier dirección; si subes o bajas, cada pie de movimiento cuesta un pie adicional. Percibes el plano que has dejado, que se ve gris, y no ves nada que esté a más de 60 pies.
+Mientras estás en el plano Etéreo, solo puedes afectar y ser afectado por criaturas, objetos y efectos de ese plano. Las criaturas que no estén en el plano Etéreo no pueden percibirte ni interactuar contigo salvo que algún rasgo se lo permita.
+Cuando el conjuro termina, vuelves al plano que dejaste, en el punto que corresponde a tu espacio en el Etéreo Fronterizo. Si apareces en un espacio ocupado, eres desplazado al espacio sin ocupar más cercano y recibes una cantidad de {{Force}} de daño igual al doble del número de pies que te hayan desplazado.
+Este conjuro termina de inmediato si lo lanzas estando en el plano Etéreo o en un plano que no linde con él, como uno de los planos Exteriores.
+**Con un espacio de conjuro de nivel superior.** Puedes hacer objetivo a hasta tres criaturas voluntarias más (incluido tú) por cada nivel por encima de 7 que tenga el espacio. Las criaturas deben estar a 10 pies o menos de ti cuando lanzas el conjuro.
+
+== Expeditious Retreat
+components: V, S
+body:
+Llevas a cabo la acción de correr y, hasta que el conjuro termine, puedes volver a llevarla a cabo como acción adicional.
+
+== Eyebite
+components: V, S
+body:
+Mientras dure el conjuro, tus ojos se convierten en un vacío de tinta. Una criatura que elijas, que puedas ver y que esté a 60 pies o menos de ti hace una tirada de salvación de Sabiduría. Si la falla, se ve afectada por uno de los efectos siguientes, a tu elección, mientras dure el conjuro.
+En cada uno de tus turnos, hasta que el conjuro termine, puedes llevar a cabo una acción de magia para hacer objetivo a otra criatura, pero no puedes volver a hacer objetivo a una criatura que ya haya superado una tirada contra este lanzamiento.
+**Dormida.** El objetivo tiene el estado de inconsciente. Despierta si recibe cualquier daño o si otra criatura lleva a cabo una acción para zarandearlo.
+**Aterrada.** El objetivo tiene el estado de asustado. En cada uno de sus turnos debe llevar a cabo la acción de correr y alejarse de ti por la ruta más segura y corta de que disponga. Si llega a un espacio que esté a 60 pies o más de ti y desde el que no pueda verte, este efecto termina.
+**Enferma.** El objetivo tiene el estado de envenenado.
+
+== Fabricate
+components: V, S
+body:
+Conviertes materias primas en productos del mismo material. Por ejemplo, puedes fabricar un puente de madera a partir de un grupo de árboles, una cuerda a partir de una mata de cáñamo o ropa a partir de lino o de lana.
+Elige materias primas que puedas ver dentro del alcance. Puedes fabricar un objeto de tamaño Grande o menor (que quepa en un cubo de 10 pies de lado o en ocho cubos conectados de 5 pies de lado) si hay material suficiente. Ahora bien, si trabajas con metal, piedra u otra sustancia mineral, el objeto fabricado no puede ser mayor que Mediano (que quepa en un cubo de 5 pies de lado). La calidad de los objetos fabricados depende de la calidad de las materias primas.
+Este conjuro no puede crear criaturas ni objetos mágicos. Tampoco puedes usarlo para crear objetos que exijan un alto grado de destreza, como armas y armaduras, salvo que tengas competencia con el tipo de herramientas de artesano que se usan para fabricarlos.
+
+== Faerie Fire
+components: V
+body:
+Los objetos que haya en un cubo de 20 pies de lado dentro del alcance quedan perfilados con luz azul, verde o violeta (a tu elección). Cada criatura que esté en el cubo queda perfilada también si falla una tirada de salvación de Destreza. Mientras dure el conjuro, los objetos y las criaturas afectadas emiten luz tenue en un radio de 10 pies y no pueden beneficiarse del estado de invisible.
+Las tiradas de ataque contra una criatura o un objeto afectados tienen ventaja si el atacante puede verlos.
+
+== Faithful Hound
+components: V, S, M (un silbato de plata)
+body:
+Conjuras un perro guardián fantasmal en un espacio sin ocupar que puedas ver dentro del alcance. El perro permanece mientras dure el conjuro o hasta que os separéis más de 300 pies.
+Nadie salvo tú puede ver al perro, que es intangible e invulnerable. Cuando una criatura de tamaño Pequeño o mayor llega a 30 pies o menos de él sin decir antes la contraseña que fijas al lanzar el conjuro, el perro empieza a ladrar con fuerza. El perro tiene visión verdadera con un alcance de 30 pies.
+Al principio de cada uno de tus turnos, el perro intenta morder a un enemigo que esté a 5 pies o menos de él. Ese enemigo hace una tirada de salvación de Destreza y recibe {{4d8|Force}} de daño si la falla.
+En tus turnos posteriores puedes llevar a cabo una acción de magia para mover al perro hasta 30 pies.
+
+== False Life
+components: V, S, M (una gota de alcohol)
+body:
+Obtienes 2d4 + 4 puntos de golpe temporales.
+**Con un espacio de conjuro de nivel superior.** Obtienes 5 puntos de golpe temporales más por cada nivel por encima de 1 que tenga el espacio.
+
+== Fear
+components: V, S, M (una pluma blanca)
+body:
+Cada criatura que esté en un cono de 30 pies hace una tirada de salvación de Sabiduría. Si la falla, suelta lo que tenga en las manos y tiene el estado de asustada mientras dure el conjuro.
+Una criatura asustada lleva a cabo la acción de correr y se aleja de ti por la ruta más segura en cada uno de sus turnos, salvo que no tenga adónde ir. Si termina su turno en un espacio desde el que no tiene línea de visión hacia ti, hace una tirada de salvación de Sabiduría; si la supera, el conjuro termina para ella.

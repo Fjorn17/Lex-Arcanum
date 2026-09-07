@@ -1,0 +1,135 @@
+== Power Word Stun
+components: V
+body:
+Abrumas la mente de una criatura que puedas ver dentro del alcance. Si el objetivo tiene 150 puntos de golpe o menos, tiene el estado de aturdido. En caso contrario, su velocidad es 0 hasta el principio de tu siguiente turno.
+El objetivo aturdido hace una tirada de salvación de Constitución al final de cada uno de sus turnos y el estado termina si la supera.
+
+== Prayer of Healing
+components: V
+body:
+Hasta cinco criaturas que elijas y permanezcan dentro del alcance durante todo el lanzamiento del conjuro obtienen los beneficios de un descanso corto y recuperan además 2d8 puntos de golpe. Una criatura no puede volver a verse afectada por este conjuro hasta que termine un descanso largo.
+**Con un espacio de conjuro de nivel superior.** La curación aumenta en 1d8 por cada nivel por encima de 2 que tenga el espacio.
+
+== Prestidigitation
+components: V, S
+body:
+Creas un efecto mágico dentro del alcance. Elígelo entre las opciones siguientes. Si lanzas este conjuro varias veces, puedes tener hasta tres de sus efectos no instantáneos activos a la vez.
+**Efecto sensorial.** Creas un efecto sensorial instantáneo e inofensivo, como una lluvia de chispas, una bocanada de viento, unas notas musicales tenues o un olor extraño.
+**Juego de fuego.** Enciendes o apagas al instante una vela, una antorcha o una hoguera pequeña.
+**Limpiar o ensuciar.** Limpias o ensucias al instante un objeto de no más de 1 pie cúbico.
+**Sensación menor.** Enfrías, calientas o das sabor a hasta 1 pie cúbico de material no vivo durante 1 hora.
+**Marca mágica.** Haces que aparezca un color, una pequeña marca o un símbolo sobre un objeto o una superficie durante 1 hora.
+**Creación menor.** Creas una baratija no mágica o una imagen ilusoria que quepan en tu mano. Duran hasta el final de tu siguiente turno. Una baratija no puede causar daño y no tiene valor monetario.
+
+== Prismatic Spray
+components: V, S
+body:
+Ocho rayos de luz destellan desde ti en un cono de 60 pies. Cada criatura que esté en el cono hace una tirada de salvación de Destreza. Por cada objetivo, tira 1d8 para determinar qué rayo de color lo afecta, según la tabla de rayos prismáticos.
+Prismatic Rays 1d8 Ray
+
+== Prismatic Wall
+components: V, S
+body:
+Un plano de luz reluciente y multicolor forma un muro vertical y opaco (de hasta 90 pies de largo, 30 pies de alto y 1 pulgada de grosor) centrado en un punto dentro del alcance. También puedes darle al muro forma de globo de hasta 30 pies de diámetro centrado en un punto dentro del alcance. El muro dura lo que dure el conjuro. Si lo colocas en un espacio ocupado por una criatura, el conjuro termina de inmediato sin efecto.
+El muro emite luz brillante hasta 100 pies y luz tenue otros 100 pies más. Tú y las criaturas que designes al lanzar el conjuro podéis atravesarlo y estar cerca de él sin sufrir daño. Si otra criatura que pueda ver el muro se acerca a 20 pies o menos de él o empieza allí su turno, hace una tirada de salvación de Constitución; si la falla, tiene el estado de cegada durante 1 minuto.
+El muro consta de siete capas, cada una de un color. Cuando una criatura mete la mano en el muro o lo atraviesa, lo hace capa por capa a través de todas ellas. Cada capa obliga a la criatura a hacer una tirada de salvación de Destreza o a verse afectada por las propiedades de esa capa, descritas en la tabla de capas prismáticas.
+El muro, que tiene CA 10, se puede destruir capa por capa, en orden del rojo al violeta, por medios propios de cada capa. Si una capa se destruye, desaparece mientras dure el conjuro. *Campo antimagia* no afecta al muro, y *disipar magia* solo puede afectar a la capa violeta.
+Prismatic Layers Order Effects
+
+== Private Sanctum
+components: V, S, M (una fina lámina de plomo)
+body:
+Haces que una zona dentro del alcance quede protegida por medios mágicos. La zona es un cubo que puede medir de 5 a 100 pies de lado. El conjuro dura lo que dure.
+Al lanzar el conjuro decides qué clase de protección proporciona, y eliges cualquiera de estas propiedades:
+• El sonido no puede atravesar la barrera del borde de la zona protegida.
+• La barrera de la zona protegida se ve oscura y brumosa, lo que impide la visión a través de ella (incluida la visión en la oscuridad).
+• Los sensores creados por conjuros de adivinación no pueden aparecer dentro de la zona protegida ni atravesar la barrera de su perímetro.
+• Las criaturas de la zona no pueden ser objetivo de conjuros de adivinación.
+• Nada puede teletransportarse dentro de la zona protegida ni fuera de ella.
+• El viaje entre planos queda bloqueado dentro de la zona protegida.
+Lanzar este conjuro en el mismo lugar todos los días durante 365 días hace que dure hasta que se disipe.
+**Con un espacio de conjuro de nivel superior.** Puedes aumentar el tamaño del cubo en 100 pies por cada nivel por encima de 4 que tenga el espacio.
+
+== Produce Flame
+components: V, S
+body:
+Aparece una llama titilante en tu mano y permanece allí mientras dure el conjuro. Mientras esté ahí, la llama no emite calor ni prende nada, y emite luz brillante en un radio de 20 pies y luz tenue otros 20 pies más. El conjuro termina si vuelves a lanzarlo.
+Hasta que el conjuro termine puedes llevar a cabo una acción de magia para arrojar fuego contra una criatura o un objeto que estén a 60 pies o menos de ti. Haz un ataque de conjuro a distancia. Si aciertas, el objetivo recibe {{1d8|Fire}} de daño.
+**Mejora de truco.** El daño aumenta en 1d8 cuando alcanzas los niveles 5 (2d8), 11 (3d8) y 17 (4d8).
+
+== Programmed Illusion
+components: V, S, M (polvo de jade por valor de 25 po o más)
+body:
+Creas dentro del alcance la ilusión de un objeto, de una criatura o de algún otro fenómeno visible que se activa cuando ocurre un disparador concreto. Hasta entonces, la ilusión es imperceptible. No puede ser mayor que un cubo de 30 pies de lado, y al lanzar el conjuro decides cómo se comporta y qué sonidos emite. Esa representación programada puede durar hasta 5 minutos.
+Cuando ocurre el disparador que has indicado, la ilusión aparece y actúa como la has descrito. Al terminar su representación desaparece y queda inactiva 10 minutos, tras los cuales se puede volver a activar.
+El disparador puede ser tan general o tan detallado como quieras, pero debe basarse en fenómenos visuales o audibles que ocurran a 30 pies o menos de la zona. Por ejemplo, podrías crear una ilusión de ti mismo que aparezca y advierta a quienes intenten abrir una puerta con trampa.
+La interacción física con la imagen revela que es ilusoria, porque las cosas la atraviesan. Una criatura que lleve a cabo la acción de estudiar para examinarla puede determinar que es una ilusión si supera una prueba de Inteligencia (Investigación) contra tu CD de salvación de conjuros. Si discierne lo que es, puede ver a través de la imagen y cualquier ruido que emita le suena hueco.
+
+== Project Image
+components: V, S, M (una estatuilla de ti mismo por valor de 5 po o más)
+body:
+Creas una copia ilusoria de ti mismo que dura lo que dure el conjuro. La copia puede aparecer en cualquier lugar dentro del alcance que hayas visto antes, sin importar los obstáculos que haya de por medio. La ilusión tiene tu aspecto y tu voz, pero es intangible. Si recibe cualquier daño, desaparece y el conjuro termina.
+Puedes ver por sus ojos y oír por sus oídos como si estuvieras en su espacio. Como acción de magia puedes moverla hasta 60 pies y hacer que gesticule, hable y se comporte como quieras. Imita tus gestos a la perfección.
+La interacción física con la imagen revela que es ilusoria, porque las cosas la atraviesan. Una criatura que lleve a cabo la acción de estudiar para examinarla puede determinar que es una ilusión si supera una prueba de Inteligencia (Investigación) contra tu CD de salvación de conjuros. Si discierne lo que es, puede ver a través de la imagen y cualquier ruido que emita le suena hueco.
+
+== Protection from Energy
+components: V, S
+body:
+Mientras dure el conjuro, la criatura voluntaria a la que toques tiene resistencia a un tipo de daño que elijas: {{Acid}}, {{Cold}}, {{Fire}}, {{Lightning}} o {{Thunder}}.
+
+== Protection from Evil and Good
+components: V, S, M (un frasco de agua bendita por valor de 25 po o más, que el conjuro consume)
+body:
+Hasta que el conjuro termine, una criatura voluntaria a la que toques queda protegida contra las criaturas que sean aberraciones, celestiales, elementales, feéricos, infernales o muertos vivientes. La protección concede varios beneficios. Las criaturas de esos tipos tienen desventaja en las tiradas de ataque contra el objetivo. El objetivo tampoco puede ser poseído por ellas ni recibir de ellas los estados de hechizado o de asustado. Si ya está poseído, hechizado o asustado por una criatura así, tiene ventaja en cualquier tirada de salvación nueva contra el efecto correspondiente.
+
+== Protection from Poison
+components: V, S
+body:
+Tocas a una criatura y le terminas el estado de envenenada. Mientras dure el conjuro, el objetivo tiene ventaja en las tiradas de salvación para evitar o terminar el estado de envenenado, y tiene resistencia al daño {{Poison}}.
+
+== Purify Food and Drink
+components: V, S
+body:
+Eliminas el veneno y la podredumbre de la comida y la bebida no mágicas que haya en una esfera de 5 pies de radio centrada en un punto dentro del alcance.
+
+== Raise Dead
+components: V, S, M (un diamante por valor de 500 po o más, que el conjuro consume)
+body:
+Con un toque devuelves la vida a una criatura muerta si no lleva muerta más de 10 días y no era un muerto viviente al morir.
+La criatura vuelve a la vida con 1 punto de golpe. Este conjuro neutraliza además cualquier veneno que la afectara en el momento de su muerte.
+Este conjuro cierra todas las heridas mortales, pero no restaura las partes del cuerpo que falten. Si a la criatura le faltan partes u órganos imprescindibles para su supervivencia, como la cabeza, el conjuro falla automáticamente.
+Volver de entre los muertos es un trance duro. El objetivo recibe un penalizador de −4 a las pruebas con d20. Cada vez que termina un descanso largo, ese penalizador se reduce en 1 hasta llegar a 0.
+
+== Ray of Enfeeblement
+components: V, S
+body:
+Un haz de energía debilitante sale de ti hacia una criatura que esté dentro del alcance. El objetivo hace una tirada de salvación de Constitución. Si la supera, tiene desventaja en la siguiente tirada de ataque que haga antes del principio de tu siguiente turno.
+Si la falla, tiene desventaja en las pruebas con d20 basadas en Fuerza mientras dure el conjuro. Durante ese tiempo, resta además 1d8 a todas sus tiradas de daño. El objetivo repite la tirada al final de cada uno de sus turnos y el conjuro termina si la supera.
+
+== Ray of Frost
+components: V, S
+body:
+Un haz gélido de luz blanquiazul sale disparado hacia una criatura que esté dentro del alcance. Haz un ataque de conjuro a distancia contra el objetivo. Si aciertas, recibe {{1d8|Cold}} de daño y su velocidad se reduce en 10 pies hasta el principio de tu siguiente turno.
+**Mejora de truco.** El daño aumenta en 1d8 cuando alcanzas los niveles 5 (2d8), 11 (3d8) y 17 (4d8).
+
+== Regenerate
+components: V, S, M (una rueda de oraciones)
+body:
+Una criatura a la que toques recupera 4d8 + 15 puntos de golpe. Mientras dure el conjuro, el objetivo recupera 1 punto de golpe al principio de cada uno de sus turnos, y cualquier parte del cuerpo que le hayan cercenado vuelve a crecer al cabo de 2 minutos.
+
+== Ray of Sickness
+components: V, S
+body:
+Disparas un rayo verdoso contra una criatura que esté dentro del alcance. Haz un ataque de conjuro a distancia contra el objetivo. Si aciertas, recibe {{2d8|Poison}} de daño y tiene el estado de envenenado hasta el final de tu siguiente turno.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 1 que tenga el espacio.
+
+== Reincarnate
+components: V, S, M (aceites raros por valor de 1.000 po o más, que el conjuro consume)
+body:
+Tocas el cadáver de un humanoide o un trozo de él. Si la criatura no lleva muerta más de 10 días, el conjuro le forma un cuerpo nuevo y llama a su alma para que entre en él. Tira 1d10 y consulta la tabla siguiente para determinar la especie del cuerpo, o bien el DM elige otra especie jugable.
+1d10 Species 1 Roll again.
+
+== Remove Curse
+components: V, S
+body:
+A tu toque terminan todas las maldiciones que afecten a una criatura o a un objeto. Si el objeto es un objeto mágico maldito, su maldición permanece, pero el conjuro rompe la sintonización de su dueño con él para que se pueda quitar o desechar.

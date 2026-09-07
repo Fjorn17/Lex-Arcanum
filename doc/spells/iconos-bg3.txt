@@ -1,0 +1,186 @@
+Acid Arrow	https://bg3.wiki/w/images/6/67/Melf%27s_Acid_Arrow_Icon.webp
+Acid Splash	https://bg3.wiki/w/images/9/99/Acid_Splash_Icon.webp
+Aid	https://bg3.wiki/w/images/5/50/Aid_Icon.webp
+Animal Friendship	https://bg3.wiki/w/images/3/36/Animal_Friendship_Icon.webp
+Animate Dead	https://bg3.wiki/w/images/2/2f/Animate_Dead_Icon.webp
+Arcane Eye	https://bg3.wiki/w/images/8/8e/Arcane_Eye_Icon.webp
+Arcane Lock	https://bg3.wiki/w/images/7/79/Arcane_Lock_Icon.webp
+Bane	https://bg3.wiki/w/images/3/35/Bane_Icon.png
+Banishment	https://bg3.wiki/w/images/6/6d/Banishment_Icon.webp
+Barkskin	https://bg3.wiki/w/images/8/8b/Barkskin_Icon.webp
+Beacon of Hope	https://bg3.wiki/w/images/5/5d/Beacon_of_Hope_Icon.webp
+Bestow Curse	https://bg3.wiki/w/images/0/00/Bestow_Curse_Icon.webp
+Black Tentacles	https://bg3.wiki/w/images/d/d6/Evard%27s_Black_Tentacles_Icon.webp
+Blade Barrier	https://bg3.wiki/w/images/b/bb/Blade_Barrier_Icon.webp
+Bless	https://bg3.wiki/w/images/c/c4/Bless_Icon.webp
+Blight	https://bg3.wiki/w/images/e/e0/Blight_Icon.webp
+Blink	https://bg3.wiki/w/images/b/b3/Blink_Icon.webp
+Blur	https://bg3.wiki/w/images/0/0d/Blur_Icon.webp
+Burning Hands	https://bg3.wiki/w/images/c/cf/Burning_Hands_Icon.webp
+Call Lightning	https://bg3.wiki/w/images/9/99/Call_Lightning_Icon.webp
+Calm Emotions	https://bg3.wiki/w/images/d/d9/Calm_Emotions_Icon.webp
+Chain Lightning	https://bg3.wiki/w/images/c/c9/Chain_Lightning_Icon.webp
+Charm Person	https://bg3.wiki/w/images/b/bc/Charm_Person_Icon.webp
+Chromatic Orb	https://bg3.wiki/w/images/8/8e/Chromatic_Orb_Icon.webp
+Circle of Death	https://bg3.wiki/w/images/f/f2/Circle_of_Death_Icon.webp
+Cloudkill	https://bg3.wiki/w/images/7/74/Cloudkill_Icon.webp
+Color Spray	https://bg3.wiki/w/images/a/a8/Color_Spray_Icon.png
+Comprehend Languages	https://bg3.wiki/w/images/9/99/Comprehend_Languages_Icon.webp
+Cone of Cold	https://bg3.wiki/w/images/e/ef/Cone_of_Cold_Icon.webp
+Confusion	https://bg3.wiki/w/images/7/7b/Confusion_Icon.webp
+Conjure Animals	https://bg3.wiki/w/images/3/35/Conjure_Animals_Icon.webp
+Conjure Elemental	https://bg3.wiki/w/images/e/e6/Conjure_Elemental_Icon.webp
+Contagion	https://bg3.wiki/w/images/e/ef/Contagion_Icon.png
+Counterspell	https://bg3.wiki/w/images/5/50/Counterspell_Icon.webp
+Create Undead	https://bg3.wiki/w/images/d/da/Create_Undead_Icon.webp
+Cure Wounds	https://bg3.wiki/w/images/4/40/Cure_Wounds_Icon.webp
+Dancing Lights	https://bg3.wiki/w/images/b/ba/Dancing_Lights_Icon.webp
+Darkness	https://bg3.wiki/w/images/b/bf/Darkness_Icon.webp
+Darkvision	https://bg3.wiki/w/images/0/0d/Darkvision_Icon.webp
+Daylight	https://bg3.wiki/w/images/6/6e/Daylight_Icon.webp
+Death Ward	https://bg3.wiki/w/images/8/84/Death_Ward_Icon.webp
+Detect Evil and Good	https://bg3.wiki/w/images/e/ef/Detect_Evil_and_Good_Icon.webp
+Detect Thoughts	https://bg3.wiki/w/images/b/b6/Detect_Thoughts_Icon.webp
+Dimension Door	https://bg3.wiki/w/images/d/da/Dimension_Door_Icon.webp
+Disguise Self	https://bg3.wiki/w/images/8/8d/Disguise_Self_Icon.webp
+Disintegrate	https://bg3.wiki/w/images/8/8a/Disintegrate_Icon.webp
+Dispel Evil and Good	https://bg3.wiki/w/images/a/a5/Dispel_Evil_And_Good_Icon.webp
+Dissonant Whispers	https://bg3.wiki/w/images/4/40/Dissonant_Whispers_Icon.webp
+Divine Favor	https://bg3.wiki/w/images/4/44/Divine_Favour_Icon.webp
+Divine Smite	https://bg3.wiki/w/images/4/4b/Divine_Smite_Icon.webp
+Dominate Beast	https://bg3.wiki/w/images/8/83/Dominate_Beast_Icon.webp
+Dominate Person	https://bg3.wiki/w/images/1/1d/Dominate_Person_Icon.webp
+Eldritch Blast	https://bg3.wiki/w/images/d/db/Eldritch_Blast_Icon.webp
+Enhance Ability	https://bg3.wiki/w/images/6/65/Enhance_Ability_Icon.webp
+Enlarge/Reduce	https://bg3.wiki/w/images/c/c6/Enlarge_Reduce_Icon.webp
+Ensnaring Strike	https://bg3.wiki/w/images/a/a7/Ensnaring_Strike_Icon.png
+Entangle	https://bg3.wiki/w/images/d/d9/Entangle_Icon.webp
+Enthrall	https://bg3.wiki/w/images/9/90/Enthrall_Icon.webp
+Expeditious Retreat	https://bg3.wiki/w/images/d/d6/Expeditious_Retreat_Icon.webp
+Eyebite	https://bg3.wiki/w/images/7/70/Eyebite_Icon.png
+Faerie Fire	https://bg3.wiki/w/images/a/a1/Faerie_Fire_Icon.webp
+False Life	https://bg3.wiki/w/images/f/f2/False_Life_Icon.webp
+Fear	https://bg3.wiki/w/images/a/ad/Fear_Icon.webp
+Feather Fall	https://bg3.wiki/w/images/0/00/Feather_Fall_Icon.webp
+Find Familiar	https://bg3.wiki/w/images/8/8a/Find_Familiar_Icon.png
+Fire Bolt	https://bg3.wiki/w/images/2/23/Fire_Bolt_Icon.webp
+Fire Shield	https://bg3.wiki/w/images/e/e0/Fire_Shield_Icon.webp
+Fireball	https://bg3.wiki/w/images/c/cb/Fireball_Icon.webp
+Flame Blade	https://bg3.wiki/w/images/c/c8/Flame_Blade_Icon.webp
+Flame Strike	https://bg3.wiki/w/images/b/b8/Flame_Strike_Icon.webp
+Flaming Sphere	https://bg3.wiki/w/images/6/66/Flaming_Sphere_Icon.webp
+Flesh to Stone	https://bg3.wiki/w/images/7/72/Flesh_to_Stone_Icon.webp
+Fly	https://bg3.wiki/w/images/f/f3/Fly_Icon.webp
+Fog Cloud	https://bg3.wiki/w/images/c/c0/Fog_Cloud_Icon.webp
+Freedom of Movement	https://bg3.wiki/w/images/f/f0/Freedom_of_Movement_Icon.webp
+Freezing Sphere	https://bg3.wiki/w/images/a/af/Otiluke%27s_Freezing_Sphere_Icon.webp
+Gaseous Form	https://bg3.wiki/w/images/6/62/Gaseous_Form_Icon.webp
+Globe of Invulnerability	https://bg3.wiki/w/images/7/7a/Globe_of_Invulnerability_Icon.webp
+Glyph of Warding	https://bg3.wiki/w/images/8/88/Glyph_of_Warding_Icon.webp
+Goodberry	https://bg3.wiki/w/images/4/42/Goodberry_Icon.webp
+Grease	https://bg3.wiki/w/images/7/7a/Grease_Icon.webp
+Greater Invisibility	https://bg3.wiki/w/images/2/28/Greater_Invisibility_Icon.webp
+Greater Restoration	https://bg3.wiki/w/images/e/ee/Greater_Restoration_Icon.webp
+Guardian of Faith	https://bg3.wiki/w/images/7/7d/Guardian_of_Faith_Icon.webp
+Guidance	https://bg3.wiki/w/images/7/7f/Guidance_Icon.webp
+Guiding Bolt	https://bg3.wiki/w/images/2/2c/Guiding_Bolt_Icon.webp
+Gust of Wind	https://bg3.wiki/w/images/5/58/Gust_of_Wind_Icon.webp
+Harm	https://bg3.wiki/w/images/0/09/Harm_Icon.webp
+Haste	https://bg3.wiki/w/images/1/11/Haste_Icon.webp
+Heal	https://bg3.wiki/w/images/d/d3/Heal_Icon.webp
+Healing Word	https://bg3.wiki/w/images/e/ef/Healing_Word_Icon.webp
+Heat Metal	https://bg3.wiki/w/images/a/a3/Heat_Metal_Icon.webp
+Hellish Rebuke	https://bg3.wiki/w/images/8/82/Hellish_Rebuke_Icon.webp
+Heroes’ Feast	https://bg3.wiki/w/images/a/a0/Heroes%27_Feast_Icon.webp
+Heroism	https://bg3.wiki/w/images/1/19/Heroism_Icon.webp
+Hex	https://bg3.wiki/w/images/9/9f/Hex_Icon.webp
+Hideous Laughter	https://bg3.wiki/w/images/2/27/Tasha%27s_Hideous_Laughter_Icon.webp
+Hold Monster	https://bg3.wiki/w/images/c/cf/Hold_Monster_Icon.webp
+Hold Person	https://bg3.wiki/w/images/7/75/Hold_Person_Icon.webp
+Hunter’s Mark	https://bg3.wiki/w/images/f/f6/Hunter%27s_Mark_Icon.webp
+Hypnotic Pattern	https://bg3.wiki/w/images/2/28/Hypnotic_Pattern_Icon.webp
+Ice Knife	https://bg3.wiki/w/images/1/17/Ice_Knife_Icon.webp
+Ice Storm	https://bg3.wiki/w/images/9/9b/Ice_Storm_Icon.webp
+Identify	https://bg3.wiki/w/images/5/5e/Identify_Icon.webp
+Inflict Wounds	https://bg3.wiki/w/images/3/3d/Inflict_Wounds_Icon.webp
+Insect Plague	https://bg3.wiki/w/images/a/a2/Insect_Plague_Icon.webp
+Invisibility	https://bg3.wiki/w/images/b/b7/Invisibility_Icon.png
+Irresistible Dance	https://bg3.wiki/w/images/8/8c/Otto%27s_Irresistible_Dance_Icon.webp
+Jump	https://bg3.wiki/w/images/2/28/Jump_Icon.webp
+Knock	https://bg3.wiki/w/images/a/a4/Knock_Icon.webp
+Lesser Restoration	https://bg3.wiki/w/images/e/e4/Lesser_Restoration_Icon.webp
+Levitate	https://bg3.wiki/w/images/4/46/Levitate_Icon.webp
+Light	https://bg3.wiki/w/images/5/5c/Light_Icon.webp
+Lightning Bolt	https://bg3.wiki/w/images/c/cb/Lightning_Bolt_Icon.webp
+Longstrider	https://bg3.wiki/w/images/3/35/Longstrider_Icon.webp
+Mage Armor	https://bg3.wiki/w/images/0/0d/Mage_Armour_Icon.webp
+Mage Hand	https://bg3.wiki/w/images/f/f9/Mage_Hand_Icon.webp
+Magic Circle	https://bg3.wiki/w/images/c/ce/Magic_Circle_Icon.webp
+Magic Jar	https://bg3.wiki/w/images/c/c3/Magic_Jar_Icon.webp
+Magic Missile	https://bg3.wiki/w/images/d/d4/Magic_Missile_Icon.webp
+Magic Weapon	https://bg3.wiki/w/images/9/9c/Magic_Weapon_Icon.webp
+Mass Cure Wounds	https://bg3.wiki/w/images/3/32/Mass_Cure_Wounds_Icon.webp
+Mass Healing Word	https://bg3.wiki/w/images/f/f8/Mass_Healing_Word_Icon.webp
+Mending	https://bg3.wiki/w/images/b/ba/Mending_Icon.webp
+Mind Spike	https://bg3.wiki/w/images/7/7f/Mind_Spike_Icon.webp
+Minor Illusion	https://bg3.wiki/w/images/9/9d/Minor_Illusion_Icon.webp
+Mirror Image	https://bg3.wiki/w/images/4/41/Mirror_Image_Icon.webp
+Misty Step	https://bg3.wiki/w/images/1/1f/Misty_Step_Icon.webp
+Moonbeam	https://bg3.wiki/w/images/8/8b/Moonbeam_Icon.webp
+Phantasmal Force	https://bg3.wiki/w/images/a/ac/Phantasmal_Force_Icon.webp
+Phantasmal Killer	https://bg3.wiki/w/images/d/da/Phantasmal_Killer_Icon.webp
+Planar Ally	https://bg3.wiki/w/images/f/f3/Planar_Ally_Icon.webp
+Planar Binding	https://bg3.wiki/w/images/f/fa/Planar_Binding_Icon.webp
+Plant Growth	https://bg3.wiki/w/images/a/ad/Plant_Growth_Icon.webp
+Poison Spray	https://bg3.wiki/w/images/1/1d/Poison_Spray_Icon.webp
+Polymorph	https://bg3.wiki/w/images/f/f6/Polymorph_Icon.webp
+Power Word Kill	https://bg3.wiki/w/images/1/1e/Power_Word_Kill_Icon.webp
+Prayer of Healing	https://bg3.wiki/w/images/e/e0/Prayer_of_Healing_Icon.webp
+Produce Flame	https://bg3.wiki/w/images/e/ec/Produce_Flame_Icon.webp
+Protection from Energy	https://bg3.wiki/w/images/1/15/Protection_from_Energy_Icon.webp
+Protection from Evil and Good	https://bg3.wiki/w/images/3/35/Protection_from_Evil_and_Good_Icon.webp
+Protection from Poison	https://bg3.wiki/w/images/3/3b/Protection_from_Poison_Icon.webp
+Ray of Enfeeblement	https://bg3.wiki/w/images/7/7b/Ray_of_Enfeeblement_Icon.webp
+Ray of Frost	https://bg3.wiki/w/images/f/f9/Ray_of_Frost_Icon.webp
+Ray of Sickness	https://bg3.wiki/w/images/7/74/Ray_of_Sickness_Icon.webp
+Remove Curse	https://bg3.wiki/w/images/7/7f/Remove_Curse_Icon.webp
+Resilient Sphere	https://bg3.wiki/w/images/8/82/Otiluke%27s_Resilient_Sphere_Icon.webp
+Resistance	https://bg3.wiki/w/images/3/35/Resistance_Icon.png
+Revivify	https://bg3.wiki/w/images/5/59/Revivify_Icon.webp
+Sacred Flame	https://bg3.wiki/w/images/1/16/Sacred_Flame_Icon.webp
+Sanctuary	https://bg3.wiki/w/images/c/c1/Sanctuary_Icon.webp
+Scorching Ray	https://bg3.wiki/w/images/8/8e/Scorching_Ray_Icon.webp
+Searing Smite	https://bg3.wiki/w/images/5/50/Searing_Smite_Icon.webp
+See Invisibility	https://bg3.wiki/w/images/c/c3/See_Invisibility_Icon.webp
+Seeming	https://bg3.wiki/w/images/f/f4/Seeming_Icon.webp
+Shatter	https://bg3.wiki/w/images/c/c5/Shatter_Icon.webp
+Shield	https://bg3.wiki/w/images/c/cf/Shield_spell_Icon.webp
+Shield of Faith	https://bg3.wiki/w/images/8/83/Shield_of_Faith_Icon.webp
+Shillelagh	https://bg3.wiki/w/images/6/68/Shillelagh_Icon.webp
+Shocking Grasp	https://bg3.wiki/w/images/2/2f/Shocking_Grasp_Icon.webp
+Silence	https://bg3.wiki/w/images/7/78/Silence_Icon.webp
+Sleep	https://bg3.wiki/w/images/a/ae/Sleep_Icon.webp
+Sleet Storm	https://bg3.wiki/w/images/5/50/Sleet_Storm_Icon.webp
+Slow	https://bg3.wiki/w/images/b/be/Slow_Icon.webp
+Speak with Animals	https://bg3.wiki/w/images/2/24/Speak_with_Animals_Icon.webp
+Speak with Dead	https://bg3.wiki/w/images/8/8c/Speak_with_Dead_Icon.webp
+Spike Growth	https://bg3.wiki/w/images/d/d4/Spike_Growth_Icon.webp
+Spirit Guardians	https://bg3.wiki/w/images/d/d6/Spirit_Guardians_Icon.webp
+Spiritual Weapon	https://bg3.wiki/w/images/2/26/Spiritual_Weapon_Icon.webp
+Stinking Cloud	https://bg3.wiki/w/images/b/b7/Stinking_Cloud_Icon.webp
+Stoneskin	https://bg3.wiki/w/images/c/c3/Stoneskin_Icon.webp
+Sunbeam	https://bg3.wiki/w/images/6/63/Sunbeam_Icon.webp
+Telekinesis	https://bg3.wiki/w/images/c/c7/Telekinesis_Icon.webp
+Thaumaturgy	https://bg3.wiki/w/images/3/3f/Thaumaturgy_Icon.webp
+Thunderwave	https://bg3.wiki/w/images/0/04/Thunderwave_Icon.webp
+True Seeing	https://bg3.wiki/w/images/b/b1/True_Seeing_Icon.webp
+True Strike	https://bg3.wiki/w/images/4/47/True_Strike_Icon.webp
+Vampiric Touch	https://bg3.wiki/w/images/8/85/Vampiric_Touch_Icon.webp
+Vicious Mockery	https://bg3.wiki/w/images/6/66/Vicious_Mockery_Icon.webp
+Wall of Fire	https://bg3.wiki/w/images/c/ca/Wall_of_Fire_Icon.webp
+Wall of Ice	https://bg3.wiki/w/images/d/d2/Wall_of_Ice_Icon.webp
+Wall of Stone	https://bg3.wiki/w/images/e/e2/Wall_of_Stone_Icon.webp
+Wall of Thorns	https://bg3.wiki/w/images/6/6e/Wall_of_Thorns_Icon.webp
+Warding Bond	https://bg3.wiki/w/images/e/ea/Warding_Bond_Icon.webp
+Web	https://bg3.wiki/w/images/8/8b/Web_Icon.webp
+Wind Walk	https://bg3.wiki/w/images/0/06/Wind_Walk_Icon.webp

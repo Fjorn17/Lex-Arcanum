@@ -1,7 +1,8 @@
 # Lex Arcanum
 
 Wiki estática de un suplemento casero para D&D 2024 / Baldur's Gate 3. Sin build, sin dependencias:
-HTML plano, un CSS y dos JS. Se publica con GitHub Pages.
+HTML plano, un CSS y tres JS (`lang.js`, `wiki-api.js` y `spell-filter.js`). Se publica con
+GitHub Pages.
 
 ## Antes de escribir o tocar cualquier regla
 
@@ -45,6 +46,25 @@ preguntar**: puede haber otra sesión escribiendo ahí a la vez.
 
 Si vas a tocar `en/pages/spells/` o `es/pages/spells/`, comprueba antes si hay trabajo en curso en
 `doc/spells/`, porque esas páginas son justo lo que se genera desde ahí.
+
+**Las páginas de conjuros del SRD no se editan a mano: se generan.** Todo `en/pages/spells/*.html` y
+`es/pages/spells/*.html` (menos los siete conjuros propios del suplemento) sale de
+`perl doc/spells/build-pages.pl`. Si hay que cambiar el texto de un conjuro, se cambia el dato y se
+vuelve a generar:
+
+| Qué cambiar | Dónde |
+| --- | --- |
+| Texto inglés | `doc/spells/srd-en.txt` (lo regenera `extract-srd.pl`) |
+| Traducción | `doc/spells/es/NN.txt` |
+| Nombre en español | `doc/spells/nombres-es.txt` |
+| Tablas y perfiles | `doc/spells/arreglos-en.txt` y `arreglos-es.txt` |
+| Iconos | `doc/spells/iconos-bg3.txt` (lo regeneran los `iconos-bg3*.sh`) |
+| Lista del Magistrado | `doc/spells/magister.txt` |
+| Molde de la página | `doc/spells/build-pages.pl` |
+
+`doc/spells/listas.pl` es lo que repasa las listas `<ul class="spells">` de la clase y las subclases:
+pone el nombre del SRD en inglés, el del *Manual del Jugador* en español, el enlace a la página local
+y el icono de bg3.wiki.
 
 ## Comprobaciones útiles
 

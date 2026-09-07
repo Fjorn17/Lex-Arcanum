@@ -1102,7 +1102,88 @@
         font-style: italic
     }
 
+    /* ---- spell index filter (js/spell-filter.js) ---- */
+    .spellfilter {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        margin: 18px 0 14px;
+        padding: 14px 16px;
+        background: var(--panel-2);
+        border: 1px solid var(--rule);
+        border-radius: 3px
+    }
+
+    .spellfilter input[type="search"],
+    .spellfilter select,
+    .spellfilter button {
+        font: inherit;
+        font-size: .88rem;
+        color: var(--white);
+        background: var(--panel);
+        border: 1px solid var(--rule);
+        border-radius: 3px;
+        padding: 7px 10px
+    }
+
+    .spellfilter input[type="search"] {
+        flex: 1 1 14rem;
+        min-width: 10rem
+    }
+
+    .spellfilter button {
+        cursor: pointer;
+        font-family: var(--display);
+        font-size: .68rem;
+        letter-spacing: .11em;
+        text-transform: uppercase
+    }
+
+    .spellfilter button:hover {
+        border-color: var(--accent)
+    }
+
+    .spellfilter .sf-count {
+        flex: 0 0 auto;
+        margin: 0;
+        color: var(--muted);
+        font-size: .82rem
+    }
+
+    .spellfilter .sf-help {
+        flex: 1 0 100%;
+        margin: 0;
+        color: var(--muted);
+        font-size: .78rem;
+        font-style: italic
+    }
+
+    .sf-empty {
+        margin: 18px 0;
+        color: var(--muted);
+        font-style: italic
+    }
+
     /* ---- spell index table ---- */
+    .spelltable thead th.sortable {
+        cursor: pointer;
+        user-select: none
+    }
+
+    .spelltable thead th.sortable:hover {
+        color: var(--accent)
+    }
+
+    .spelltable thead th[aria-sort]::after {
+        content: " \2191";
+        color: var(--accent)
+    }
+
+    .spelltable thead th[aria-sort="descending"]::after {
+        content: " \2193"
+    }
+
     .spelltable {
         width: 100%;
         border-collapse: collapse;
