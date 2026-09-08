@@ -1,0 +1,140 @@
+== Conjure Celestial
+components: V, S
+body:
+Conjuras un espíritu de los planos Superiores, que se manifiesta como una columna de luz en un cilindro de 10 pies de radio y 40 pies de alto centrado en un punto dentro del alcance. Por cada criatura que puedas ver en el cilindro, elige cuál de estas luces la ilumina:
+**Luz sanadora.** El objetivo recupera una cantidad de puntos de golpe igual a 4d12 más tu modificador por característica de lanzamiento de conjuros.
+**Luz abrasadora.** El objetivo hace una tirada de salvación de Destreza y recibe {{6d12|Radiant}} de daño si la falla, o la mitad si la supera.
+Hasta que el conjuro termine, el cilindro está lleno de luz brillante y, cuando te mueves en tu turno, puedes moverlo también hasta 30 pies.
+Siempre que el cilindro se mueva al espacio de una criatura que puedas ver, y siempre que una criatura que puedas ver entre en el cilindro o termine allí su turno, puedes bañarla en una de las luces. Cada criatura solo puede verse afectada por este conjuro una vez por turno.
+**Con un espacio de conjuro de nivel superior.** La curación y el daño aumentan en 1d12 por cada nivel por encima de 7 que tenga el espacio.
+
+== Conjure Elemental
+components: V, S
+body:
+Conjuras un espíritu Grande e intangible de los planos Elementales, que aparece en un espacio sin ocupar dentro del alcance. Elige el elemento del espíritu, que determina su tipo de daño: aire ({{Lightning}}), tierra ({{Thunder}}), fuego ({{Fire}}) o agua ({{Cold}}). El espíritu dura lo que dure el conjuro.
+Siempre que una criatura que puedas ver entre en el espacio del espíritu o empiece su turno a 5 pies o menos de él, puedes obligarla a hacer una tirada de salvación de Destreza, siempre que el espíritu no tenga ya a ninguna criatura apresada. Si la falla, el objetivo recibe 8d8 de daño del tipo del espíritu y tiene el estado de apresado hasta que el conjuro termine. Al principio de cada uno de sus turnos, el objetivo apresado repite la tirada.
+Si la falla, el objetivo recibe 4d8 de daño del tipo del espíritu. Si la supera, el espíritu deja de tenerlo apresado.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 5 que tenga el espacio.
+
+== Conjure Fey
+components: V, S
+body:
+Conjuras un espíritu Mediano de la Tierra Feérica en un espacio sin ocupar que puedas ver dentro del alcance. El espíritu dura lo que dure el conjuro y tiene el aspecto de una criatura feérica que elijas. Cuando aparece, puedes hacer un ataque de conjuro cuerpo a cuerpo contra una criatura que esté a 5 pies o menos de él. Si aciertas, el objetivo recibe una cantidad de {{Psychic}} de daño igual a 3d12 más tu modificador por característica de lanzamiento de conjuros y tiene el estado de asustado hasta el principio de tu siguiente turno, siendo tú y el espíritu la fuente del miedo.
+Como acción adicional en tus turnos posteriores puedes teletransportar al espíritu a un espacio sin ocupar que puedas ver y esté a 30 pies o menos del espacio que dejó, y hacer el ataque contra una criatura que esté a 5 pies o menos de él.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d12 por cada nivel por encima de 6 que tenga el espacio.
+
+== Conjure Minor Elementals
+components: V, S
+body:
+Conjuras espíritus de los planos Elementales que revolotean a tu alrededor en una emanación de 15 pies mientras dure el conjuro. Hasta que el conjuro termine, cualquier ataque que hagas causa 2d8 de daño adicional cuando aciertas a una criatura que esté en la emanación. Ese daño es {{Acid}}, {{Cold}}, {{Fire}} o {{Lightning}}, a tu elección al hacer el ataque.
+Además, el suelo de la emanación es terreno difícil para tus enemigos.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 4 que tenga el espacio.
+
+== Conjure Woodland Beings
+components: V, S
+body:
+Conjuras espíritus de la naturaleza que revolotean a tu alrededor en una emanación de 10 pies mientras dure el conjuro. Siempre que la emanación entre en el espacio de una criatura que puedas ver, y siempre que una criatura que puedas ver entre en la emanación o termine allí su turno, puedes obligarla a hacer una tirada de salvación de Sabiduría. La criatura recibe {{5d8|Force}} de daño si la falla, o la mitad si la supera. Cada criatura hace la tirada una sola vez por turno.
+Además, puedes llevar a cabo la acción de destrabarse como acción adicional mientras dure el conjuro.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 4 que tenga el espacio.
+
+== Contact Other Plane
+components: V
+body:
+Contactas mentalmente con un semidiós, con el espíritu de un sabio muerto hace mucho o con alguna otra entidad sabia de otro plano. Contactar con esa inteligencia de otro mundo puede romperte la mente. Cuando lanzas el conjuro, haz una tirada de salvación de Inteligencia con CD 15.
+*Éxito:* Puedes hacerle hasta cinco preguntas a la entidad. Debes hacerlas antes de que el conjuro termine. El DM responde a cada una con una palabra, como «sí», «no», «quizá», «nunca», «irrelevante» o «no está claro» (si la entidad no sabe la respuesta). Si una respuesta de una sola palabra resultara engañosa, el DM puede ofrecer una frase corta en su lugar.
+*Fallo:* Recibes {{6d6|Psychic}} de daño y tienes el estado de incapacitado hasta que termines un descanso largo. Un conjuro de *restablecimiento mayor* lanzado sobre ti termina este efecto.
+
+== Contagion
+components: V, S
+body:
+Tu toque inflige un contagio mágico. El objetivo hace una tirada de salvación de Constitución. Si la falla, recibe {{11d8|Necrotic}} de daño y tiene el estado de envenenado. Además, elige una característica al lanzar el conjuro: mientras esté envenenado, el objetivo tiene desventaja en las tiradas de salvación que usen esa característica.
+El objetivo repite la tirada de salvación al final de cada uno de sus turnos hasta que acumule tres éxitos o tres fallos. Si supera tres de estas tiradas, el conjuro termina para él. Si falla tres, el conjuro le dura 7 días.
+Siempre que el objetivo envenenado reciba un efecto que terminaría el estado de envenenado, hace una tirada de salvación de Constitución. Si la falla, el estado no termina.
+
+== Contingency
+components: V, S, M (una estatuilla de ti mismo con gemas incrustadas, por valor de 1.500 po o más)
+body:
+Elige un conjuro de nivel 5 o inferior que sepas lanzar, cuyo tiempo de lanzamiento sea una acción y que pueda tenerte a ti como objetivo. Lanzas ese conjuro, llamado conjuro contingente, como parte del lanzamiento de *contingencia*, y gastas los espacios de conjuro de los dos, pero el conjuro contingente no llega a producir efecto. En su lugar, se activa cuando ocurre un disparador determinado, que describes al lanzar los dos conjuros. Por ejemplo, una *contingencia* lanzada con *respirar bajo el agua* podría estipular que este último se active cuando quedes sumergido en agua o en un líquido parecido.
+El conjuro contingente se activa justo después de que el disparador ocurra por primera vez, tanto si quieres como si no, y entonces *contingencia* termina.
+El conjuro contingente solo te afecta a ti, aunque normalmente pueda afectar a otros. Solo puedes tener un conjuro de *contingencia* activo a la vez: si vuelves a lanzarlo, el efecto del anterior termina. *Contingencia* termina también si en algún momento no llevas encima su componente material.
+
+== Continual Flame
+components: V, S, M (polvo de rubí por valor de 50 po o más, que el conjuro consume)
+body:
+Brota una llama de un objeto que tocas. El efecto emite luz brillante en un radio de 20 pies y luz tenue otros 20 pies más. Parece una llama corriente, pero no genera calor ni consume combustible. La llama se puede tapar u ocultar, pero no sofocar ni apagar.
+
+== Control Water
+components: V, S, M (una mezcla de agua y polvo)
+body:
+Hasta que el conjuro termine controlas toda el agua que haya dentro de una zona que elijas, un cubo de hasta 100 pies de lado, mediante uno de los efectos siguientes. Como acción de magia en tus turnos posteriores puedes repetir el mismo efecto o elegir otro.
+**Inundar.** Haces que el nivel de toda el agua estancada de la zona suba hasta 20 pies. Si eliges una zona en una gran masa de agua, en su lugar creas una ola de 20 pies de alto que recorre la zona de un lado a otro y rompe. Cualquier vehículo de tamaño Enorme o menor que esté en su camino es arrastrado con ella hasta el otro lado. Cualquier vehículo de tamaño Enorme o menor golpeado por la ola tiene un 25 % de probabilidades de volcar.
+El nivel del agua se mantiene alto hasta que el conjuro termine o elijas otro efecto. Si este efecto ha producido una ola, la ola se repite al principio de tu siguiente turno mientras dure la inundación.
+**Separar las aguas.** Separas el agua de la zona y creas una zanja. La zanja atraviesa toda la zona del conjuro y el agua separada forma un muro a cada lado. La zanja se mantiene hasta que el conjuro termine o elijas otro efecto. Después el agua la va llenando poco a poco a lo largo del siguiente asalto hasta recuperar el nivel normal.
+**Desviar la corriente.** Haces que el agua que corre por la zona se mueva en la dirección que elijas, aunque tenga que fluir sobre obstáculos, subir por muros o ir en otras direcciones improbables. El agua de la zona se mueve como tú indicas, pero en cuanto sale de la zona del conjuro vuelve a fluir según el terreno. El agua sigue moviéndose en la dirección elegida hasta que el conjuro termine o elijas otro efecto.
+**Remolino.** Haces que se forme un remolino en el centro de la zona, que debe medir al menos 50 pies de lado y 25 pies de profundidad. El remolino dura hasta que elijas otro efecto o el conjuro termine. Mide 5 pies de ancho en la base, hasta 50 pies de ancho en la superficie y 25 pies de alto. Cualquier criatura que esté en el agua a 25 pies o menos del remolino es arrastrada 10 pies hacia él. Cuando una criatura entra en el remolino por primera vez en un turno o termina allí su turno, hace una tirada de salvación de Fuerza y recibe {{2d8|Bludgeoning}} de daño si la falla, o la mitad si la supera. Una criatura solo puede alejarse nadando del remolino si antes lleva a cabo una acción para zafarse y supera una prueba de Fuerza (Atletismo) contra tu CD de salvación de conjuros.
+
+== Control Weather
+components: V, S, M (incienso encendido)
+body:
+Tomas el control del clima a 5 millas o menos de ti mientras dure el conjuro. Debes estar al aire libre para lanzarlo y termina antes de tiempo si te metes bajo techo.
+Al lanzar el conjuro cambias las condiciones climáticas actuales, que determina el DM. Puedes cambiar las precipitaciones, la temperatura y el viento. Las nuevas condiciones tardan 1d4 × 10 minutos en llegar. Una vez lo hacen, puedes volver a cambiarlas. Cuando el conjuro termina, el clima vuelve poco a poco a la normalidad.
+Cuando cambias las condiciones, busca la condición actual en las tablas siguientes y cambia su grado en uno, hacia arriba o hacia abajo. Al cambiar el viento puedes cambiar también su dirección.
+Precipitation Stage Condition 1 Clear
+
+== Counterspell
+components: S
+casting: Reacción, que llevas a cabo cuando ves a una criatura a 60 pies o menos de ti lanzando un conjuro con componentes verbales, somáticos o materiales
+body:
+Intentas interrumpir a una criatura que está lanzando un conjuro. La criatura hace una tirada de salvación de Constitución. Si la falla, el conjuro se disipa sin efecto y se pierde la acción, la acción adicional o la reacción usada para lanzarlo. Si ese conjuro se lanzó con un espacio de conjuro, el espacio no se gasta.
+
+== Create Food and Water
+components: V, S
+body:
+Creas 45 libras de comida y 30 galones de agua fresca en el suelo o en recipientes dentro del alcance, útiles para hacer frente a la desnutrición y a la deshidratación. La comida es sosa pero nutritiva y tiene el aspecto de un alimento que elijas; el agua está limpia. La comida se echa a perder al cabo de 24 horas si nadie se la come.
+
+== Create or Destroy Water
+components: V, S, M (una mezcla de agua y arena)
+body:
+Haces una de estas dos cosas:
+**Crear agua.** Creas hasta 10 galones de agua limpia dentro del alcance, en un recipiente abierto. También puedes hacer que el agua caiga como lluvia en un cubo de 30 pies de lado dentro del alcance, lo que apaga las llamas expuestas que haya allí.
+**Destruir agua.** Destruyes hasta 10 galones de agua de un recipiente abierto dentro del alcance. También puedes destruir la niebla que haya en un cubo de 30 pies de lado dentro del alcance.
+**Con un espacio de conjuro de nivel superior.** Creas o destruyes 10 galones más de agua, o el cubo aumenta 5 pies de lado, por cada nivel por encima de 1 que tenga el espacio.
+
+== Create Undead
+components: V, S, M (una piedra de ónice negro por valor de 150 po o más por cada cadáver)
+body:
+Solo puedes lanzar este conjuro de noche. Elige hasta tres cadáveres de humanoides Medianos o Pequeños que estén dentro del alcance. Cada uno se convierte en un necrófago bajo tu control.
+Como acción adicional en cada uno de tus turnos puedes dar una orden mental a cualquier criatura que hayas animado con este conjuro y esté a 120 pies o menos de ti (si controlas varias criaturas, puedes darles la orden a todas a la vez, y será la misma para cada una). Decides qué acción llevará a cabo la criatura y adónde se moverá en su siguiente turno, o puedes darle una orden general, como vigilar un lugar concreto. Si no le das ninguna orden, la criatura lleva a cabo la acción de esquivar y solo se mueve para evitar el peligro. Una vez recibe una orden, la sigue hasta terminarla.
+La criatura está bajo tu control durante 24 horas, tras las cuales deja de obedecer cualquier orden que le hayas dado. Para mantener el control durante otras 24 horas debes volver a lanzarle el conjuro antes de que termine el periodo actual. Ese lanzamiento reafirma tu control sobre hasta tres criaturas que hayas animado con este conjuro en lugar de animar otras nuevas.
+**Con un espacio de conjuro de nivel superior.** Con un espacio de nivel 7 puedes animar o reafirmar el control sobre cuatro necrófagos. Con uno de nivel 8, sobre cinco necrófagos o dos demacrados o espectros de tumba. Con uno de nivel 9, sobre seis necrófagos, tres demacrados o espectros de tumba, o dos momias.
+
+== Creation
+components: V, S, M (un pincel)
+body:
+Extraes jirones de materia sombría de la Tierra de las Sombras para crear un objeto dentro del alcance. Es un objeto de materia vegetal (géneros blandos, cuerda, madera y demás) o de materia mineral (piedra, cristal, metal y demás). El objeto no puede ser mayor que un cubo de 5 pies de lado y debe tener una forma y un material que hayas visto antes.
+La duración del conjuro depende del material del objeto, según la tabla de materiales. Si el objeto se compone de varios materiales, usa la duración más corta. Usar un objeto creado con este conjuro como componente material de otro conjuro hace que ese otro conjuro falle.
+Materials Material Vegetable matter
+
+== Cure Wounds
+components: V, S
+body:
+Una criatura a la que toques recupera una cantidad de puntos de golpe igual a 2d8 más tu modificador por característica de lanzamiento de conjuros.
+**Con un espacio de conjuro de nivel superior.** La curación aumenta en 2d8 por cada nivel por encima de 1 que tenga el espacio.
+
+== Dancing Lights
+components: V, S, M (un poco de fósforo)
+body:
+Creas hasta cuatro luces del tamaño de una antorcha dentro del alcance, con el aspecto de antorchas, linternas u orbes luminosos que flotan mientras dure el conjuro. También puedes combinar las cuatro luces en una sola forma luminosa Mediana vagamente humanoide. Elijas la forma que elijas, cada luz emite luz tenue en un radio de 10 pies.
+Como acción adicional puedes mover las luces hasta 60 pies a un espacio dentro del alcance. Cada luz debe estar a 20 pies o menos de otra luz creada por este conjuro, y una luz desaparece si sale del alcance del conjuro.
+
+== Darkness
+components: V, M (pelo de murciélago y un trozo de carbón)
+body:
+Mientras dure el conjuro, una oscuridad mágica se extiende desde un punto dentro del alcance y llena una esfera de 15 pies de radio. La visión en la oscuridad no la atraviesa y la luz no mágica no la ilumina.
+También puedes lanzar el conjuro sobre un objeto que nadie lleve ni vista, con lo que la oscuridad llena una emanación de 15 pies que parte de ese objeto. Tapar el objeto con algo opaco, como un cuenco o un yelmo, bloquea la oscuridad.
+Si alguna parte de la zona de este conjuro se superpone con una zona de luz brillante o de luz tenue creada por un conjuro de nivel 2 o inferior, ese otro conjuro queda disipado.
+
+== Darkvision
+components: V, S, M (una zanahoria seca)
+body:
+Mientras dure el conjuro, una criatura voluntaria a la que toques tiene visión en la oscuridad con un alcance de 150 pies.

@@ -1,0 +1,116 @@
+== Astral Projection
+components: V, S, M (por cada objetivo del conjuro, un jacinto por valor de 1.000 po o más y un lingote de plata por valor de 100 po o más; el conjuro los consume todos)
+body:
+Tú y hasta ocho criaturas voluntarias que estén dentro del alcance proyectáis vuestros cuerpos astrales al plano Astral (el conjuro termina de inmediato si ya estás en ese plano). El cuerpo de cada objetivo se queda atrás en animación suspendida: tiene el estado de inconsciente, no necesita comida ni aire y no envejece.
+La forma astral de un objetivo se parece a su cuerpo en casi todo y reproduce sus puntuaciones de juego y sus posesiones. La diferencia principal es un cordón plateado que sale de entre los omóplatos de la forma astral. El cordón se pierde de vista al cabo de 1 pie. Si se corta el cordón, cosa que solo ocurre cuando un efecto lo indica, tanto el cuerpo como la forma astral del objetivo mueren.
+La forma astral de un objetivo puede viajar por el plano Astral. En cuanto una forma astral sale de ese plano, el cuerpo y las posesiones del objetivo viajan por el cordón plateado y el objetivo vuelve a entrar en su cuerpo en el nuevo plano.
+El daño y demás efectos que se apliquen a una forma astral no afectan al cuerpo del objetivo, ni al revés. Si los puntos de golpe del cuerpo o de la forma astral de un objetivo se reducen a 0, el conjuro termina para ese objetivo. El conjuro termina para todos los objetivos si llevas a cabo una acción de magia para cancelarlo.
+Cuando el conjuro termina para un objetivo que no ha muerto, este reaparece en su cuerpo y sale de la animación suspendida.
+
+== Augury
+components: V, S, M (palos, huesos, cartas u otras fichas de adivinación con marcas especiales, por valor de 25 po o más)
+body:
+Recibes un augurio de una entidad de otro mundo sobre el resultado de un curso de acción que pienses emprender en los próximos 30 minutos. El DM elige el augurio de la tabla de augurios.
+Omens Omen Weal Woe Weal and woe Indifference
+Si lanzas el conjuro más de una vez antes de terminar un descanso largo, hay una probabilidad acumulativa del 25 % por cada lanzamiento después del primero de que no recibas respuesta.
+
+== Aura of Life
+components: V
+body:
+Un aura irradia de ti en una emanación de 30 pies mientras dure el conjuro. Dentro del aura, tus aliados y tú tenéis resistencia al daño {{Necrotic}} y vuestros puntos de golpe máximos no se pueden reducir. Si un aliado con 0 puntos de golpe empieza su turno en el aura, recupera 1 punto de golpe.
+
+== Awaken
+components: V, S, M (un ágata por valor de 1.000 po o más, que el conjuro consume)
+body:
+Empleas el tiempo de lanzamiento en trazar caminos mágicos dentro de una gema preciosa y después tocas al objetivo. El objetivo debe ser una bestia o una criatura vegetal con una Inteligencia de 3 o menos, o bien una planta natural que no sea una criatura. El objetivo obtiene una Inteligencia de 10 y la capacidad de hablar un idioma que tú conozcas. Si el objetivo es una planta natural, se convierte en una criatura vegetal y obtiene la capacidad de mover sus ramas, raíces, lianas, zarcillos y demás, además de sentidos parecidos a los de un humano. El DM elige unas puntuaciones apropiadas para la planta despertada.
+El objetivo despertado tiene el estado de hechizado durante 30 días o hasta que tus aliados o tú le causéis daño. Cuando ese estado termina, la criatura despertada decide qué actitud tiene hacia ti.
+
+== Bane
+components: V, S, M (una gota de sangre)
+body:
+Hasta tres criaturas que elijas y puedas ver dentro del alcance hacen una tirada de salvación de Carisma. Siempre que un objetivo que la haya fallado haga una tirada de ataque o una tirada de salvación antes de que el conjuro termine, debe restarle 1d4.
+**Con un espacio de conjuro de nivel superior.** Puedes hacer objetivo a una criatura más por cada nivel por encima de 1 que tenga el espacio.
+
+== Banishment
+components: V, S, M (un pentáculo)
+body:
+Una criatura que puedas ver dentro del alcance hace una tirada de salvación de Carisma. Si la falla, es transportada a un semiplano inofensivo mientras dure el conjuro. Allí tiene el estado de incapacitada. Cuando el conjuro termina, el objetivo reaparece en el espacio que dejó, o en el espacio sin ocupar más cercano si aquel está ocupado.
+Si el objetivo es una aberración, un celestial, un elemental, un feérico o un infernal, no vuelve si el conjuro dura 1 minuto. En su lugar es transportado a un lugar al azar de un plano asociado a su tipo de criatura (a elección del DM).
+**Con un espacio de conjuro de nivel superior.** Puedes hacer objetivo a una criatura más por cada nivel por encima de 4 que tenga el espacio.
+
+== Barkskin
+components: V, S, M (un puñado de corteza)
+body:
+Tocas a una criatura voluntaria. Hasta que el conjuro termine, la piel del objetivo adopta el aspecto de la corteza y su clase de armadura pasa a ser 17 si la tenía más baja.
+
+== Beacon of Hope
+components: V, S
+body:
+Elige cualquier número de criaturas dentro del alcance. Mientras dure el conjuro, cada objetivo tiene ventaja en las tiradas de salvación de Sabiduría y en las tiradas de salvación contra muerte, y recupera la cantidad máxima posible de puntos de golpe con cualquier curación.
+
+== Befuddlement
+components: V, S, M (un llavero sin llaves)
+body:
+Arrasas la mente de una criatura que puedas ver dentro del alcance. El objetivo hace una tirada de salvación de Inteligencia.
+*Fallo:* El objetivo recibe {{10d12|Psychic}} de daño y no puede lanzar conjuros ni llevar a cabo la acción de magia. Al final de cada periodo de 30 días repite la tirada y el efecto termina si la supera. El efecto también se puede terminar con los conjuros *restablecimiento mayor*, *curar* o *deseo*.
+*Éxito:* El objetivo recibe la mitad del daño y nada más.
+
+== Bestow Curse
+components: V, S
+body:
+Tocas a una criatura, que hace una tirada de salvación de Sabiduría. Si la falla, queda maldita mientras dure el conjuro. Hasta que la maldición termine, el objetivo sufre uno de los efectos siguientes, a tu elección:
+• Elige una característica. El objetivo tiene desventaja en las pruebas de característica y en las tiradas de salvación que usen esa característica.
+• El objetivo tiene desventaja en las tiradas de ataque contra ti.
+• En combate, el objetivo hace una tirada de salvación de Sabiduría al principio de cada uno de sus turnos. Si la falla, se ve obligado a llevar a cabo la acción de esquivar en ese turno.
+• Si causas daño al objetivo con una tirada de ataque o con un conjuro, el objetivo recibe {{1d8|Necrotic}} de daño adicional.
+**Con un espacio de conjuro de nivel superior.** Si lanzas el conjuro con un espacio de nivel 4, puedes mantener la concentración hasta 10 minutos. Con un espacio de nivel 5 o superior el conjuro no requiere concentración y su duración pasa a ser de 8 horas (espacio de nivel 5 o 6) o de 24 horas (espacio de nivel 7 u 8). Con un espacio de nivel 9, el conjuro dura hasta que se disipe.
+
+== Black Tentacles
+components: V, S, M (un tentáculo)
+body:
+Unos tentáculos negros y retorcidos llenan un cuadrado de 20 pies de lado sobre un suelo que puedas ver dentro del alcance. Mientras dure el conjuro, los tentáculos convierten el suelo de esa zona en terreno difícil.
+Cada criatura que esté en la zona hace una tirada de salvación de Fuerza. Si la falla, recibe {{3d6|Bludgeoning}} de daño y tiene el estado de apresada hasta que el conjuro termine. Una criatura hace también esa tirada si entra en la zona o termina su turno en ella. Cada criatura hace la tirada una sola vez por turno.
+Una criatura apresada puede llevar a cabo una acción para hacer una prueba de Fuerza (Atletismo) contra tu CD de salvación de conjuros; si la supera, deja de estar apresada.
+
+== Blade Barrier
+components: V, S
+body:
+Creas un muro de hojas giratorias hechas de energía mágica. El muro aparece dentro del alcance y dura lo que dure el conjuro. Puedes hacer un muro recto de hasta 100 pies de largo, 20 pies de alto y 5 pies de grosor, o un muro anular de hasta 60 pies de diámetro, 20 pies de alto y 5 pies de grosor. El muro proporciona cobertura de tres cuartos y su espacio es terreno difícil.
+Cualquier criatura que esté en el espacio del muro hace una tirada de salvación de Destreza y recibe {{6d10|Force}} de daño si la falla, o la mitad si la supera. Una criatura hace también esa tirada si entra en el espacio del muro o termina su turno en él. Cada criatura hace la tirada una sola vez por turno.
+
+== Bless
+components: V, S, M (un símbolo sagrado por valor de 5 po o más)
+body:
+Bendices hasta a tres criaturas dentro del alcance. Siempre que un objetivo haga una tirada de ataque o una tirada de salvación antes de que el conjuro termine, le suma 1d4.
+**Con un espacio de conjuro de nivel superior.** Puedes hacer objetivo a una criatura más por cada nivel por encima de 1 que tenga el espacio.
+
+== Blight
+components: V, S
+body:
+Una criatura que puedas ver dentro del alcance hace una tirada de salvación de Constitución y recibe {{8d8|Necrotic}} de daño si la falla, o la mitad si la supera. Una criatura vegetal falla la tirada automáticamente.
+También puedes hacer objetivo a una planta no mágica que no sea una criatura, como un árbol o un arbusto. No hace tirada: sencillamente se marchita y muere.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 4 que tenga el espacio.
+
+== Blindness/Deafness
+components: V
+body:
+Una criatura que puedas ver dentro del alcance hace una tirada de salvación de Constitución. Si la falla, tiene el estado de cegada o el de ensordecida (a tu elección) mientras dure el conjuro. Al final de cada uno de sus turnos repite la tirada y el conjuro termina para ella si la supera.
+**Con un espacio de conjuro de nivel superior.** Puedes hacer objetivo a una criatura más por cada nivel por encima de 2 que tenga el espacio.
+
+== Blink
+components: V, S
+body:
+Tira 1d6 al final de cada uno de tus turnos mientras dure el conjuro. Con un resultado de 4 a 6 desapareces de tu plano de existencia actual y apareces en el plano Etéreo (el conjuro termina de inmediato si ya estás en ese plano). Mientras estás en el plano Etéreo percibes el plano que has dejado, teñido de tonos grises, pero no ves nada que esté a más de 60 pies. Solo puedes afectar a otras criaturas del plano Etéreo y solo ellas pueden afectarte a ti; las criaturas del otro plano no pueden percibirte salvo que tengan alguna capacidad especial que les permita percibir cosas del plano Etéreo.
+Vuelves al otro plano al principio de tu siguiente turno, y también cuando el conjuro termina si estás en el plano Etéreo. Vuelves a un espacio sin ocupar que elijas, que puedas ver y que esté a 10 pies o menos del espacio que dejaste. Si no hay ningún espacio sin ocupar dentro de ese alcance, apareces en el espacio sin ocupar más cercano.
+
+== Blur
+components: V
+body:
+Tu cuerpo se vuelve borroso. Mientras dure el conjuro, cualquier criatura tiene desventaja en las tiradas de ataque contra ti. Un atacante es inmune a este efecto si te percibe con visión ciega o con visión verdadera.
+
+== Burning Hands
+components: V, S
+body:
+Una fina lámina de llamas sale disparada de ti. Cada criatura que esté en un cono de 15 pies hace una tirada de salvación de Destreza y recibe {{3d6|Fire}} de daño si la falla, o la mitad si la supera.
+Los objetos inflamables que estén en el cono y nadie lleve ni vista empiezan a arder.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 1 que tenga el espacio.

@@ -2,6 +2,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Memoria para no pedirle la misma imagen a la wiki dos veces
     const imageCache = {};
 
+    // Los nombres de archivo de la wiki son siempre ingleses, pero la etiqueta
+    // que acaba leyendo el visitante depende del idioma de la página.
+    const DAMAGE_ES = {
+        Acid: "ácido", Bludgeoning: "contundente", Cold: "frío", Fire: "fuego",
+        Force: "fuerza", Lightning: "relámpago", Necrotic: "necrótico",
+        Piercing: "perforante", Poison: "veneno", Psychic: "psíquico",
+        Radiant: "radiante", Slashing: "cortante", Thunder: "trueno"
+    };
+    const isSpanish = (document.documentElement.lang || "").toLowerCase().startsWith("es");
+    const label = (typeCap) => (isSpanish && DAMAGE_ES[typeCap]) || typeCap;
+
     // Función genérica para consultar la API de la wiki
     async function getWikiImageUrl(filename) {
         if (imageCache[filename]) return imageCache[filename];
@@ -56,7 +67,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             const diceImg = diceUrl ? `<img class="dice-ic" src="${diceUrl}" alt=""> ` : '';
             const typeImg = iconUrl ? `<img class="ic" src="${iconUrl}" alt=""> ` : '';
 
-            el.innerHTML = `${diceImg}${dice} ${typeImg}${typeCap}`;
+            el.innerHTML = `${diceImg}${dice} ${typeImg}${label(typeCap)}`;
         }));
     }
 
@@ -76,7 +87,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             const iconUrl = await getWikiImageUrl(iconName);
             const typeImg = iconUrl ? `<img class="ic" src="${iconUrl}" alt=""> ` : '';
 
-            el.innerHTML = `${typeImg}<span>${typeCap}</span>`;
+            el.innerHTML = `${typeImg}<span>${label(typeCap)}</span>`;
         }));
     }
 

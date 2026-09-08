@@ -1,0 +1,385 @@
+# Conjuros del SRD que traen una tabla o un bloque de caracteristicas. pdftotext
+# los devuelve como un parrafo aplastado, asi que aqui se dice que parrafo hay
+# que sustituir (match:) y por que (html: / text:).
+#
+# El texto es el del SRD 5.2.1; lo unico que cambia es la forma.
+
+== Animate Objects
+match: Animated Object Huge or Smaller Construct, Unaligned
+html:
+<h3>Animated Object</h3>
+          <p><i>Huge or Smaller Construct, Unaligned</i></p>
+          <div class="tw">
+            <table class="spelltable">
+              <tbody>
+                <tr><th scope="row">AC</th><td>15</td></tr>
+                <tr><th scope="row">HP</th><td>10 (Medium or smaller), 20 (Large), 40 (Huge)</td></tr>
+                <tr><th scope="row">Speed</th><td>9&nbsp;m (30&nbsp;ft)</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+match: MOD SAVE MOD SAVE MOD SAVE Str 16
+html:
+<div class="tw">
+            <table class="spelltable">
+              <thead>
+                <tr><th scope="col">Ability</th><th scope="col">Score</th><th scope="col">Mod</th><th scope="col">Save</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Str</td><td>16</td><td>+3</td><td>+3</td></tr>
+                <tr><td>Dex</td><td>10</td><td>+0</td><td>+0</td></tr>
+                <tr><td>Con</td><td>10</td><td>+0</td><td>+0</td></tr>
+                <tr><td>Int</td><td>3</td><td>&minus;4</td><td>&minus;4</td></tr>
+                <tr><td>Wis</td><td>3</td><td>&minus;4</td><td>&minus;4</td></tr>
+                <tr><td>Cha</td><td>1</td><td>&minus;5</td><td>&minus;5</td></tr>
+              </tbody>
+            </table>
+          </div>
+text: Immunities. Poison, Psychic; Charmed, Exhaustion, Frightened, Paralyzed, Poisoned.
+text: Senses. Blindsight 30 feet; Passive Perception 6.
+text: Languages. Understands the languages you know.
+text: CR. None (XP 0; PB equals your Proficiency Bonus).
+text: Slam (Action). Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 feet. Hit: Force damage equal to 1d4 + 3 (Medium or smaller), 2d6 + 3 + your spellcasting ability modifier (Large), or 2d12 + 3 + your spellcasting ability modifier (Huge).
+
+== Augury
+match: Omens Omen Weal Woe Weal and woe Indifference
+html:
+<div class="tw">
+            <table class="spelltable">
+              <caption>Omens</caption>
+              <thead>
+                <tr><th scope="col">Omen</th><th scope="col">For results that will be&hellip;</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Weal</td><td>Good</td></tr>
+                <tr><td>Woe</td><td>Bad</td></tr>
+                <tr><td>Weal and woe</td><td>Good and bad</td></tr>
+                <tr><td>Indifference</td><td>Neither good nor bad</td></tr>
+              </tbody>
+            </table>
+          </div>
+text: The spell doesn’t account for circumstances, such as other spells, that might change the results.
+
+== Confusion
+match: 1d10 Behavior for the Turn
+html:
+<div class="tw">
+            <table class="spelltable">
+              <thead>
+                <tr><th scope="col">1d10</th><th scope="col">Behavior for the turn</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>The target doesn’t take an action, and it uses all its movement to move. Roll 1d4 for the direction: 1, north; 2, east; 3, south; or 4, west.</td></tr>
+                <tr><td>2&ndash;6</td><td>The target doesn’t move or take actions.</td></tr>
+                <tr><td>7&ndash;8</td><td>The target doesn’t move, and it takes the Attack action to make one melee attack against a random creature within reach. If none are within reach, the target takes no action.</td></tr>
+                <tr><td>9&ndash;10</td><td>The target chooses its behavior.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+== Control Weather
+match: Precipitation Stage Condition 1 Clear
+html:
+<div class="tw">
+            <table class="spelltable">
+              <caption>Precipitation</caption>
+              <thead><tr><th scope="col">Stage</th><th scope="col">Condition</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>Clear</td></tr>
+                <tr><td>2</td><td>Light clouds</td></tr>
+                <tr><td>3</td><td>Overcast or ground fog</td></tr>
+                <tr><td>4</td><td>Rain, hail, or snow</td></tr>
+                <tr><td>5</td><td>Torrential rain, driving hail, or blizzard</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tw">
+            <table class="spelltable">
+              <caption>Temperature</caption>
+              <thead><tr><th scope="col">Stage</th><th scope="col">Condition</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>Heat wave</td></tr>
+                <tr><td>2</td><td>Hot</td></tr>
+                <tr><td>3</td><td>Warm</td></tr>
+                <tr><td>4</td><td>Cool</td></tr>
+                <tr><td>5</td><td>Cold</td></tr>
+                <tr><td>6</td><td>Freezing</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tw">
+            <table class="spelltable">
+              <caption>Wind</caption>
+              <thead><tr><th scope="col">Stage</th><th scope="col">Condition</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>Calm</td></tr>
+                <tr><td>2</td><td>Moderate wind</td></tr>
+                <tr><td>3</td><td>Strong wind</td></tr>
+                <tr><td>4</td><td>Gale</td></tr>
+                <tr><td>5</td><td>Storm</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+== Creation
+match: Materials Material Vegetable matter
+html:
+<div class="tw">
+            <table class="spelltable">
+              <caption>Materials</caption>
+              <thead><tr><th scope="col">Material</th><th scope="col">Duration</th></tr></thead>
+              <tbody>
+                <tr><td>Vegetable matter</td><td>24 hours</td></tr>
+                <tr><td>Stone or crystal</td><td>12 hours</td></tr>
+                <tr><td>Precious metals</td><td>1 hour</td></tr>
+                <tr><td>Gems</td><td>10 minutes</td></tr>
+                <tr><td>Adamantine or mithral</td><td>1 minute</td></tr>
+              </tbody>
+            </table>
+          </div>
+text: Using a Higher-Level Spell Slot. The Cube increases by 5 feet for each spell slot level above 5.
+
+== Divine Word
+match: Divine Word Effects Hit Points Effect
+html:
+<div class="tw">
+            <table class="spelltable">
+              <caption>Divine Word effects</caption>
+              <thead><tr><th scope="col">Hit Points</th><th scope="col">Effect</th></tr></thead>
+              <tbody>
+                <tr><td>0&ndash;20</td><td>The target dies.</td></tr>
+                <tr><td>21&ndash;30</td><td>The target has the Blinded, Deafened, and Stunned conditions for 1 hour.</td></tr>
+                <tr><td>31&ndash;40</td><td>The target has the Blinded and Deafened conditions for 10 minutes.</td></tr>
+                <tr><td>41&ndash;50</td><td>The target has the Deafened condition for 1 minute.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+== Find Steed
+match: Otherworldly Steed Large Celestial, Fey, or Fiend
+html:
+<h3>Otherworldly Steed</h3>
+          <p><i>Large Celestial, Fey, or Fiend (your choice), Neutral</i></p>
+          <div class="tw">
+            <table class="spelltable">
+              <tbody>
+                <tr><th scope="row">AC</th><td>10 + 1 per spell level</td></tr>
+                <tr><th scope="row">HP</th><td>5 + 10 per spell level (the steed has a number of Hit Dice [d10s] equal to the spell’s level)</td></tr>
+                <tr><th scope="row">Speed</th><td>18&nbsp;m (60&nbsp;ft), Fly 18&nbsp;m (60&nbsp;ft) (requires a level 4+ spell slot)</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tw">
+            <table class="spelltable">
+              <thead>
+                <tr><th scope="col">Ability</th><th scope="col">Score</th><th scope="col">Mod</th><th scope="col">Save</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Str</td><td>18</td><td>+4</td><td>+4</td></tr>
+                <tr><td>Dex</td><td>12</td><td>+1</td><td>+1</td></tr>
+                <tr><td>Con</td><td>14</td><td>+2</td><td>+2</td></tr>
+                <tr><td>Int</td><td>6</td><td>&minus;2</td><td>&minus;2</td></tr>
+                <tr><td>Wis</td><td>12</td><td>+1</td><td>+1</td></tr>
+                <tr><td>Cha</td><td>8</td><td>&minus;1</td><td>&minus;1</td></tr>
+              </tbody>
+            </table>
+          </div>
+text: Senses. Passive Perception 11.
+text: Languages. Telepathy 1 mile (works only with you).
+text: CR. None (XP 0; PB equals your Proficiency Bonus).
+text: Life Bond (Trait). When you regain Hit Points from a level 1+ spell, the steed regains the same number of Hit Points if you’re within 5 feet of it.
+text: Otherworldly Slam (Action). Melee Attack Roll: Bonus equals your spell attack modifier, reach 5 feet. Hit: 1d8 plus the spell’s level of Radiant (Celestial), Psychic (Fey), or Necrotic (Fiend) damage.
+text: Fell Glare (Bonus Action, Fiend only; recharges after a Long Rest). Wisdom Saving Throw: DC equals your spell save DC, one creature within 60 feet the steed can see. Failure: The target has the Frightened condition until the end of your next turn.
+text: Fey Step (Bonus Action, Fey only; recharges after a Long Rest). The steed teleports, along with its rider, to an unoccupied space of your choice up to 60 feet away from itself.
+text: Healing Touch (Bonus Action, Celestial only; recharges after a Long Rest). One creature within 5 feet of the steed regains a number of Hit Points equal to 2d8 plus the spell’s level.
+
+== Giant Insect
+match: Giant Insect Large Beast, Unaligned
+html:
+<h3>Giant Insect</h3>
+          <p><i>Large Beast, Unaligned</i></p>
+          <div class="tw">
+            <table class="spelltable">
+              <tbody>
+                <tr><th scope="row">AC</th><td>11 + the spell’s level</td></tr>
+                <tr><th scope="row">HP</th><td>30 + 10 for each spell level above 4</td></tr>
+                <tr><th scope="row">Speed</th><td>12&nbsp;m (40&nbsp;ft), Climb 12&nbsp;m (40&nbsp;ft), Fly 12&nbsp;m (40&nbsp;ft) (Wasp only)</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tw">
+            <table class="spelltable">
+              <thead>
+                <tr><th scope="col">Ability</th><th scope="col">Score</th><th scope="col">Mod</th><th scope="col">Save</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Str</td><td>17</td><td>+3</td><td>+3</td></tr>
+                <tr><td>Dex</td><td>13</td><td>+1</td><td>+1</td></tr>
+                <tr><td>Con</td><td>15</td><td>+2</td><td>+2</td></tr>
+                <tr><td>Int</td><td>4</td><td>&minus;3</td><td>&minus;3</td></tr>
+                <tr><td>Wis</td><td>14</td><td>+2</td><td>+2</td></tr>
+                <tr><td>Cha</td><td>3</td><td>&minus;4</td><td>&minus;4</td></tr>
+              </tbody>
+            </table>
+          </div>
+text: Senses. Darkvision 60 feet; Passive Perception 12.
+text: Languages. Understands the languages you know.
+text: CR. None (XP 0; PB equals your Proficiency Bonus).
+text: Spider Climb (Trait). The insect can climb difficult surfaces, including along ceilings, without needing to make an ability check.
+text: Multiattack (Action). The insect makes a number of attacks equal to half this spell’s level (round down).
+text: Poison Jab (Action). Melee Attack Roll: Bonus equals your spell attack modifier, reach 10 feet. Hit: 1d6 + 3 plus the spell’s level Piercing damage plus 1d4 Poison damage.
+text: Web Bolt (Action, Spider only). Ranged Attack Roll: Bonus equals your spell attack modifier, range 60 feet. Hit: 1d10 + 3 plus the spell’s level Bludgeoning damage, and the target’s Speed is reduced to 0 until the start of the insect’s next turn.
+text: Venomous Spew (Bonus Action, Centipede only). Constitution Saving Throw: Your spell save DC, one creature the insect can see within 10 feet. Failure: The target has the Poisoned condition until the start of the insect’s next turn.
+
+== Prismatic Spray
+match: Prismatic Rays 1d8 Ray
+html:
+<div class="tw">
+            <table class="spelltable">
+              <caption>Prismatic rays</caption>
+              <thead><tr><th scope="col">1d8</th><th scope="col">Ray</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td><b>Red.</b> <i>Failed Save:</i> 12d6 Fire damage. <i>Successful Save:</i> Half as much damage.</td></tr>
+                <tr><td>2</td><td><b>Orange.</b> <i>Failed Save:</i> 12d6 Acid damage. <i>Successful Save:</i> Half as much damage.</td></tr>
+                <tr><td>3</td><td><b>Yellow.</b> <i>Failed Save:</i> 12d6 Lightning damage. <i>Successful Save:</i> Half as much damage.</td></tr>
+                <tr><td>4</td><td><b>Green.</b> <i>Failed Save:</i> 12d6 Poison damage. <i>Successful Save:</i> Half as much damage.</td></tr>
+                <tr><td>5</td><td><b>Blue.</b> <i>Failed Save:</i> 12d6 Cold damage. <i>Successful Save:</i> Half as much damage.</td></tr>
+                <tr><td>6</td><td><b>Indigo.</b> <i>Failed Save:</i> The target has the Restrained condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the Petrified condition until it is freed by an effect like the Greater Restoration spell. The successes and failures needn’t be consecutive; keep track of both until the target collects three of a kind.</td></tr>
+                <tr><td>7</td><td><b>Violet.</b> <i>Failed Save:</i> The target has the Blinded condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (GM’s choice).</td></tr>
+                <tr><td>8</td><td><b>Special.</b> The target is struck by two rays. Roll twice, rerolling any 8.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+== Prismatic Wall
+match: Prismatic Layers Order Effects
+html:
+<div class="tw">
+            <table class="spelltable">
+              <caption>Prismatic layers</caption>
+              <thead><tr><th scope="col">Order</th><th scope="col">Effects</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td><b>Red.</b> <i>Failed Save:</i> 12d6 Fire damage. <i>Successful Save:</i> Half as much damage. <i>Additional Effects:</i> Nonmagical ranged attacks can’t pass through this layer, which is destroyed if it takes at least 25 Cold damage.</td></tr>
+                <tr><td>2</td><td><b>Orange.</b> <i>Failed Save:</i> 12d6 Acid damage. <i>Successful Save:</i> Half as much damage. <i>Additional Effects:</i> Magical ranged attacks can’t pass through this layer, which is destroyed by a strong wind (such as the one created by Gust of Wind).</td></tr>
+                <tr><td>3</td><td><b>Yellow.</b> <i>Failed Save:</i> 12d6 Lightning damage. <i>Successful Save:</i> Half as much damage. <i>Additional Effects:</i> The layer is destroyed if it takes at least 60 Force damage.</td></tr>
+                <tr><td>4</td><td><b>Green.</b> <i>Failed Save:</i> 12d6 Poison damage. <i>Successful Save:</i> Half as much damage. <i>Additional Effects:</i> A Passwall spell, or another spell of equal or greater level that can open a portal on a solid surface, destroys this layer.</td></tr>
+                <tr><td>5</td><td><b>Blue.</b> <i>Failed Save:</i> 12d6 Cold damage. <i>Successful Save:</i> Half as much damage. <i>Additional Effects:</i> The layer is destroyed if it takes at least 25 Fire damage.</td></tr>
+                <tr><td>6</td><td><b>Indigo.</b> <i>Failed Save:</i> The target has the Restrained condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the Petrified condition until it is freed by an effect like the Greater Restoration spell. The successes and failures needn’t be consecutive; keep track of both until the target collects three of a kind. <i>Additional Effects:</i> Spells can’t be cast through this layer, which is destroyed by Bright Light shed by the Daylight spell.</td></tr>
+                <tr><td>7</td><td><b>Violet.</b> <i>Failed Save:</i> The target has the Blinded condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (GM’s choice). <i>Additional Effects:</i> This layer is destroyed by Dispel Magic.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+== Reincarnate
+match: 1d10 Species 1 Roll again.
+html:
+<div class="tw">
+            <table class="spelltable">
+              <thead><tr><th scope="col">1d10</th><th scope="col">Species</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>Roll again.</td></tr>
+                <tr><td>2</td><td>Dragonborn</td></tr>
+                <tr><td>3</td><td>Dwarf</td></tr>
+                <tr><td>4</td><td>Elf</td></tr>
+                <tr><td>5</td><td>Gnome</td></tr>
+                <tr><td>6</td><td>Goliath</td></tr>
+                <tr><td>7</td><td>Halfling</td></tr>
+                <tr><td>8</td><td>Human</td></tr>
+                <tr><td>9</td><td>Orc</td></tr>
+                <tr><td>10</td><td>Tiefling</td></tr>
+              </tbody>
+            </table>
+          </div>
+text: The reincarnated creature makes any choices that a species’ description offers, and the creature recalls its former life. It retains the capabilities it had in its original form, except it loses the traits of its previous species and gains the traits of its new one.
+
+== Scrying
+match: Your Knowledge of the Target Is
+html:
+<div class="tw">
+            <table class="spelltable">
+              <thead><tr><th scope="col">Your knowledge of the target is&hellip;</th><th scope="col">Save modifier</th></tr></thead>
+              <tbody>
+                <tr><td>Secondhand (heard of the target)</td><td>+5</td></tr>
+                <tr><td>Firsthand (met the target)</td><td>+0</td></tr>
+                <tr><td>Extensive (know the target well)</td><td>&minus;5</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tw">
+            <table class="spelltable">
+              <thead><tr><th scope="col">You have the target’s&hellip;</th><th scope="col">Save modifier</th></tr></thead>
+              <tbody>
+                <tr><td>Picture or other likeness</td><td>&minus;2</td></tr>
+                <tr><td>Garment or other possession</td><td>&minus;4</td></tr>
+                <tr><td>Body part, lock of hair, or bit of nail</td><td>&minus;10</td></tr>
+              </tbody>
+            </table>
+          </div>
+text: On a successful save, the target isn’t affected, and you can’t use this spell on it again for 24 hours.
+
+== Summon Dragon
+match: Draconic Spirit Large Dragon, Neutral
+html:
+<h3>Draconic Spirit</h3>
+          <p><i>Large Dragon, Neutral</i></p>
+          <div class="tw">
+            <table class="spelltable">
+              <tbody>
+                <tr><th scope="row">AC</th><td>14 + the spell’s level</td></tr>
+                <tr><th scope="row">HP</th><td>50 + 10 for each spell level above 5</td></tr>
+                <tr><th scope="row">Speed</th><td>9&nbsp;m (30&nbsp;ft), Fly 18&nbsp;m (60&nbsp;ft), Swim 9&nbsp;m (30&nbsp;ft)</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+match: MOD SAVE MOD SAVE MOD SAVE Str 19
+html:
+<div class="tw">
+            <table class="spelltable">
+              <thead>
+                <tr><th scope="col">Ability</th><th scope="col">Score</th><th scope="col">Mod</th><th scope="col">Save</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Str</td><td>19</td><td>+4</td><td>+4</td></tr>
+                <tr><td>Dex</td><td>14</td><td>+2</td><td>+2</td></tr>
+                <tr><td>Con</td><td>17</td><td>+3</td><td>+3</td></tr>
+                <tr><td>Int</td><td>10</td><td>+0</td><td>+0</td></tr>
+                <tr><td>Wis</td><td>14</td><td>+2</td><td>+2</td></tr>
+                <tr><td>Cha</td><td>14</td><td>+2</td><td>+2</td></tr>
+              </tbody>
+            </table>
+          </div>
+text: Resistances. Acid, Cold, Fire, Lightning, Poison.
+text: Immunities. Charmed, Frightened, Poisoned.
+text: Senses. Blindsight 30 feet, Darkvision 60 feet; Passive Perception 12.
+text: Languages. Draconic, understands the languages you know.
+text: CR. None (XP 0; PB equals your Proficiency Bonus).
+text: Shared Resistances (Trait). When you summon the spirit, choose one of its Resistances. You have Resistance to the chosen damage type until the spell ends.
+text: Multiattack (Action). The spirit makes a number of Rend attacks equal to half the spell’s level (round down), and it uses Breath Weapon.
+text: Rend (Action). Melee Attack Roll: Bonus equals your spell attack modifier, reach 10 feet. Hit: 1d6 + 4 + the spell’s level Piercing damage.
+text: Breath Weapon (Action). Dexterity Saving Throw: DC equals your spell save DC, each creature in a 30-foot Cone. Failure: 2d6 damage of a type this spirit has Resistance to (your choice when you cast the spell). Success: Half damage.
+
+== Teleport
+match: Teleportation Outcome Familiarity
+html:
+<div class="tw">
+            <table class="spelltable">
+              <caption>Teleportation outcome</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Familiarity</th><th scope="col">Mishap</th>
+                  <th scope="col">Similar area</th><th scope="col">Off target</th><th scope="col">On target</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Permanent circle</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>01&ndash;00</td></tr>
+                <tr><td>Linked object</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>01&ndash;00</td></tr>
+                <tr><td>Very familiar</td><td>01&ndash;05</td><td>06&ndash;13</td><td>14&ndash;24</td><td>25&ndash;00</td></tr>
+                <tr><td>Seen casually</td><td>01&ndash;33</td><td>34&ndash;43</td><td>44&ndash;53</td><td>54&ndash;00</td></tr>
+                <tr><td>Viewed once or described</td><td>01&ndash;43</td><td>44&ndash;53</td><td>54&ndash;73</td><td>74&ndash;00</td></tr>
+                <tr><td>False destination</td><td>01&ndash;50</td><td>51&ndash;00</td><td>&mdash;</td><td>&mdash;</td></tr>
+              </tbody>
+            </table>
+          </div>
+text: Familiarity. Here are the meanings of the terms in the table’s Familiarity column:

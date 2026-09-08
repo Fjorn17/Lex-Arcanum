@@ -1,0 +1,129 @@
+== Shillelagh
+components: V, S, M (muérdago)
+body:
+Una maza o un bastón que tengas en las manos quedan imbuidos del poder de la naturaleza. Mientras dure el conjuro puedes usar tu característica de lanzamiento de conjuros en lugar de Fuerza en las tiradas de ataque y de daño de los ataques cuerpo a cuerpo con esa arma, y el dado de daño del arma pasa a ser un d8. Si el ataque causa daño, puede ser {{Force}} o el tipo de daño normal del arma, a tu elección.
+El conjuro termina antes de tiempo si vuelves a lanzarlo o si sueltas el arma.
+**Mejora de truco.** El dado de daño cambia cuando alcanzas los niveles 5 (d10), 11 (d12) y 17 (2d6).
+
+== Shining Smite
+components: V
+casting: Acción adicional, que llevas a cabo justo después de acertar a una criatura con un arma cuerpo a cuerpo o con un ataque sin armas
+body:
+El objetivo alcanzado por el golpe recibe {{2d6|Radiant}} de daño adicional del ataque. Hasta que el conjuro termine, el objetivo emite luz brillante en un radio de 5 pies, las tiradas de ataque contra él tienen ventaja y no puede beneficiarse del estado de invisible.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 2 que tenga el espacio.
+
+== Shocking Grasp
+components: V, S
+body:
+De ti brota un relámpago hacia una criatura a la que intentas tocar. Haz un ataque de conjuro cuerpo a cuerpo contra el objetivo. Si aciertas, recibe {{1d8|Lightning}} de daño y no puede hacer ataques de oportunidad hasta el principio de su siguiente turno.
+**Mejora de truco.** El daño aumenta en 1d8 cuando alcanzas los niveles 5 (2d8), 11 (3d8) y 17 (4d8).
+
+== Silence
+components: V, S
+body:
+Mientras dure el conjuro no se puede crear ningún sonido dentro de una esfera de 20 pies de radio centrada en un punto que elijas dentro del alcance, ni ningún sonido puede atravesarla. Cualquier criatura u objeto que esté enteramente dentro de la esfera tiene inmunidad al daño {{Thunder}}, y las criaturas tienen el estado de ensordecidas mientras estén enteramente dentro. Allí es imposible lanzar un conjuro que incluya componente verbal.
+
+== Silent Image
+components: V, S, M (un poco de lana)
+body:
+Creas la imagen de un objeto, de una criatura o de algún otro fenómeno visible que no sea mayor que un cubo de 15 pies de lado. La imagen aparece en un punto dentro del alcance y dura lo que dure el conjuro. Es puramente visual: no la acompañan sonidos, olores ni otros efectos sensoriales.
+Como acción de magia puedes mover la imagen a cualquier punto dentro del alcance. Al cambiar de sitio puedes alterar su aspecto para que sus movimientos parezcan naturales. Por ejemplo, si creas la imagen de una criatura y la mueves, puedes alterarla para que parezca que camina.
+La interacción física con la imagen revela que es una ilusión, porque las cosas la atraviesan. Una criatura que lleve a cabo la acción de estudiar para examinarla puede determinar que es una ilusión si supera una prueba de Inteligencia (Investigación) contra tu CD de salvación de conjuros. Si discierne lo que es, puede ver a través de la imagen.
+
+== Simulacrum
+components: V, S, M (polvo de rubí por valor de 1.500 po o más, que el conjuro consume)
+body:
+Creas un simulacro de una bestia o de un humanoide que permanezca a 10 pies o menos de ti durante todo el lanzamiento del conjuro. Terminas el lanzamiento tocando a la vez a la criatura y un montón de hielo o de nieve del mismo tamaño que ella, y ese montón se convierte en el simulacro, que es una criatura. Usa las puntuaciones de juego que tuviera la criatura original en el momento del lanzamiento, salvo que es un constructo, sus puntos de golpe máximos son la mitad y no puede lanzar este conjuro.
+El simulacro es amistoso contigo y con las criaturas que designes. Obedece tus órdenes y actúa en tu turno en combate. No puede subir de nivel ni llevar a cabo descansos cortos ni largos.
+Si el simulacro recibe daño, la única forma de restaurar sus puntos de golpe es repararlo mientras llevas a cabo un descanso largo, durante el cual gastas componentes por valor de 100 po por cada punto de golpe restaurado. El simulacro debe permanecer a 5 pies o menos de ti durante la reparación.
+El simulacro dura hasta que sus puntos de golpe se reducen a 0, momento en el que vuelve a ser nieve y se derrite. Si vuelves a lanzar este conjuro, cualquier simulacro que hayas creado con él queda destruido al instante.
+
+== Sleep
+components: V, S, M (una pizca de arena o de pétalos de rosa)
+body:
+Cada criatura que elijas y esté en una esfera de 5 pies de radio centrada en un punto dentro del alcance hace una tirada de salvación de Sabiduría. Si la falla, tiene el estado de incapacitada hasta el final de su siguiente turno, momento en el que repite la tirada. Si falla la segunda, tiene el estado de inconsciente mientras dure el conjuro. El conjuro termina para un objetivo si recibe daño o si alguien que esté a 5 pies o menos de él lleva a cabo una acción para sacarlo del efecto.
+Las criaturas que no duermen, como los elfos, o que tienen inmunidad al estado de agotamiento superan automáticamente las tiradas contra este conjuro.
+
+== Sleet Storm
+components: V, S, M (un paraguas en miniatura)
+body:
+Hasta que el conjuro termine cae aguanieve en un cilindro de 40 pies de alto y 20 pies de radio centrado en un punto que elijas dentro del alcance. La zona está muy oscurecida y las llamas expuestas que haya allí se apagan.
+El suelo del cilindro es terreno difícil. Cuando una criatura entra en el cilindro por primera vez en un turno o empieza allí su turno, hace una tirada de salvación de Destreza; si la falla, tiene el estado de derribada y pierde la concentración.
+
+== Slow
+components: V, S, M (una gota de melaza)
+body:
+Alteras el tiempo alrededor de hasta seis criaturas que elijas y estén en un cubo de 40 pies de lado dentro del alcance. Cada objetivo hace una tirada de salvación de Sabiduría y se ve afectado por este conjuro mientras dure si la falla.
+La velocidad de un objetivo afectado se reduce a la mitad, recibe un penalizador de −2 a la CA y a las tiradas de salvación de Destreza, y no puede llevar a cabo reacciones. En sus turnos puede llevar a cabo una acción o una acción adicional, pero no ambas, y solo puede hacer un ataque si lleva a cabo la acción de atacar. Si lanza un conjuro con componente somático, hay un 25 % de probabilidades de que falle porque el objetivo hace los gestos demasiado despacio.
+Un objetivo afectado repite la tirada al final de cada uno de sus turnos y el conjuro termina para él si la supera.
+
+== Sorcerous Burst
+components: V, S
+body:
+Lanzas energía mágica contra una criatura o un objeto que estén dentro del alcance. Haz un ataque de conjuro a distancia contra el objetivo. Si aciertas, recibe 1d8 de daño de un tipo que elijas: {{Acid}}, {{Cold}}, {{Fire}}, {{Lightning}}, {{Poison}}, {{Psychic}} o {{Thunder}}.
+Si sacas un 8 en un d8 de este conjuro, puedes tirar otro d8 y sumarlo al daño. Al lanzar el conjuro, la cantidad máxima de estos d8 que puedes sumar al daño es igual a tu modificador por característica de lanzamiento de conjuros.
+**Mejora de truco.** El daño aumenta en 1d8 cuando alcanzas los niveles 5 (2d8), 11 (3d8) y 17 (4d8).
+
+== Spare the Dying
+components: V, S
+body:
+Elige a una criatura dentro del alcance que tenga 0 puntos de golpe y no esté muerta. La criatura queda estabilizada.
+**Mejora de truco.** El alcance se duplica cuando alcanzas los niveles 5 (30 pies), 11 (60 pies) y 17 (120 pies).
+
+== Speak with Animals
+components: V, S
+body:
+Mientras dure el conjuro entiendes a las bestias y puedes comunicarte verbalmente con ellas, y puedes usar con ellas cualquiera de las opciones de habilidad de la acción de influir.
+La mayoría de las bestias tienen poco que decir sobre temas que no tengan que ver con la supervivencia o con la compañía, pero como mínimo una bestia puede darte información sobre los lugares y monstruos cercanos, incluido todo lo que haya percibido en el último día.
+
+== Speak with Dead
+components: V, S, M (incienso encendido)
+body:
+Concedes la apariencia de la vida a un cadáver que elijas dentro del alcance, lo que le permite responder a las preguntas que le hagas. El cadáver debe tener boca, y este conjuro falla si la criatura fallecida era un muerto viviente al morir. También falla si el cadáver ya fue objetivo de este conjuro en los últimos 10 días.
+Hasta que el conjuro termine puedes hacerle al cadáver hasta cinco preguntas. El cadáver solo sabe lo que sabía en vida, incluidos los idiomas que conocía. Las respuestas suelen ser breves, crípticas o repetitivas, y nada obliga al cadáver a responder con la verdad si te muestras hostil con él o si te reconoce como enemigo. Este conjuro no devuelve el alma de la criatura a su cuerpo, solo su espíritu animador. Por eso el cadáver no puede aprender información nueva, no comprende nada de lo ocurrido desde su muerte y no puede especular sobre sucesos futuros.
+
+== Speak with Plants
+components: V, S
+body:
+Imbuyes a las plantas de una emanación inmóvil de 30 pies de una conciencia y una animación limitadas, lo que les da la capacidad de comunicarse contigo y de seguir tus órdenes sencillas. Puedes preguntarles por los sucesos ocurridos en la zona del conjuro en el último día y obtener información sobre las criaturas que hayan pasado, sobre el tiempo y sobre otras circunstancias.
+También puedes convertir el terreno difícil causado por el crecimiento vegetal (como matorrales y maleza) en terreno normal mientras dure el conjuro. O al revés: convertir en terreno difícil un terreno normal donde haya plantas.
+El conjuro no permite a las plantas desarraigarse y moverse, pero sí pueden mover por ti sus ramas, sus zarcillos y sus tallos.
+Si hay una criatura vegetal en la zona, puedes comunicarte con ella como si compartierais un idioma.
+
+== Spider Climb
+components: V, S, M (una gota de betún y una araña)
+body:
+Hasta que el conjuro termine, una criatura voluntaria a la que toques obtiene la capacidad de moverse hacia arriba, hacia abajo y a lo largo de superficies verticales y por los techos, con las manos libres. El objetivo obtiene además una velocidad trepando igual a su velocidad.
+**Con un espacio de conjuro de nivel superior.** Puedes hacer objetivo a una criatura más por cada nivel por encima de 2 que tenga el espacio.
+
+== Spike Growth
+components: V, S, M (siete espinas)
+body:
+Del suelo de una esfera de 20 pies de radio centrada en un punto dentro del alcance brotan púas y espinas duras. La zona se convierte en terreno difícil mientras dure el conjuro. Cuando una criatura entra en la zona o se mueve por ella, recibe {{2d4|Piercing}} de daño por cada 5 pies que recorra.
+La transformación del suelo queda camuflada para parecer natural. Cualquier criatura que no pueda ver la zona cuando se lanza el conjuro debe llevar a cabo la acción de buscar y superar una prueba de Sabiduría (Percepción o Supervivencia) contra tu CD de salvación de conjuros para reconocer el terreno como peligroso antes de entrar en él.
+
+== Spirit Guardians
+components: V, S, M (un pergamino de oraciones)
+body:
+Unos espíritus protectores revolotean a tu alrededor en una emanación de 15 pies mientras dure el conjuro. Si eres bueno o neutral, su forma espectral parece angélica o feérica (a tu elección). Si eres malvado, parece infernal.
+Al lanzar el conjuro puedes designar criaturas para que no se vean afectadas por él. La velocidad de cualquier otra criatura se reduce a la mitad dentro de la emanación y, siempre que la emanación entre en el espacio de una criatura, y siempre que una criatura entre en la emanación o termine allí su turno, hace una tirada de salvación de Sabiduría. Si la falla, recibe {{3d8|Radiant}} de daño (si eres bueno o neutral) o {{3d8|Necrotic}} de daño (si eres malvado). Si la supera, recibe la mitad del daño. Cada criatura hace la tirada una sola vez por turno.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 3 que tenga el espacio.
+
+== Spiritual Weapon
+components: V, S
+body:
+Creas una fuerza espectral y flotante con forma del arma que elijas, que dura lo que dure el conjuro. La fuerza aparece dentro del alcance en un espacio que elijas y puedes hacer de inmediato un ataque de conjuro cuerpo a cuerpo contra una criatura que esté a 5 pies o menos de ella. Si aciertas, el objetivo recibe una cantidad de {{Force}} de daño igual a 1d8 más tu modificador por característica de lanzamiento de conjuros.
+Como acción adicional en tus turnos posteriores puedes mover la fuerza hasta 20 pies y repetir el ataque contra una criatura que esté a 5 pies o menos de ella.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 2 que tenga el espacio.
+
+== Starry Wisp
+components: V, S
+body:
+Lanzas una mota de luz contra una criatura o un objeto que estén dentro del alcance. Haz un ataque de conjuro a distancia contra el objetivo. Si aciertas, recibe {{1d8|Radiant}} de daño y, hasta el final de tu siguiente turno, emite luz tenue en un radio de 10 pies y no puede beneficiarse del estado de invisible.
+**Mejora de truco.** El daño aumenta en 1d8 cuando alcanzas los niveles 5 (2d8), 11 (3d8) y 17 (4d8).
+
+== Stinking Cloud
+components: V, S, M (un huevo podrido)
+body:
+Creas una esfera de 20 pies de radio de un gas amarillo y nauseabundo centrada en un punto dentro del alcance. La nube está muy oscurecida y permanece en el aire mientras dure el conjuro o hasta que un viento fuerte (como el que crea *ráfaga de viento*) la disperse.
+Cada criatura que empiece su turno en la esfera hace una tirada de salvación de Constitución. Si la falla, tiene el estado de envenenada hasta el final del turno actual. Mientras esté envenenada así, no puede llevar a cabo ninguna acción ni acción adicional.

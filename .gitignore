@@ -19,3 +19,7 @@ $RECYCLE.BIN/
 *.tmp
 *.orig
 *.rej
+
+# Material de referencia con derechos reservados: se consulta en local, no se
+# versiona. El SRD 5.2.1 si va en el repo porque es CC BY 4.0.
+doc/Manual del Jugador 2024.pdf

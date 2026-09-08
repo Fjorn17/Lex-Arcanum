@@ -1,0 +1,124 @@
+== Hallucinatory Terrain
+components: V, S, M (una seta)
+body:
+Haces que el terreno natural de un cubo de 150 pies de lado dentro del alcance parezca otra clase de terreno natural a la vista, al oído y al olfato. Así, un campo abierto o un camino pueden parecer un pantano, una colina, una grieta o algún otro terreno difícil o infranqueable. Un estanque puede parecer un prado de hierba, un precipicio una cuesta suave o un barranco pedregoso un camino ancho y liso. Las estructuras fabricadas, el equipo y las criaturas de la zona no cambian.
+Las características táctiles del terreno no cambian, así que es probable que las criaturas que entren en la zona se den cuenta de la ilusión. Si la diferencia no es evidente al tacto, una criatura que examine la ilusión puede llevar a cabo la acción de estudiar para hacer una prueba de Inteligencia (Investigación) contra tu CD de salvación de conjuros y no creérsela. Si una criatura discierne que el terreno es ilusorio, ve una imagen difusa superpuesta al terreno real.
+
+== Harm
+components: V, S
+body:
+Desatas una magia virulenta sobre una criatura que puedas ver dentro del alcance. El objetivo hace una tirada de salvación de Constitución. Si la falla, recibe {{14d6|Necrotic}} de daño y sus puntos de golpe máximos se reducen en una cantidad igual al daño recibido. Si la supera, recibe la mitad del daño y nada más. Este conjuro no puede reducir los puntos de golpe máximos de un objetivo por debajo de 1.
+
+== Haste
+components: V, S, M (una viruta de raíz de regaliz)
+body:
+Elige a una criatura voluntaria que puedas ver dentro del alcance. Hasta que el conjuro termine, la velocidad del objetivo se duplica, obtiene un bonificador de +2 a la clase de armadura, tiene ventaja en las tiradas de salvación de Destreza y obtiene una acción adicional en cada uno de sus turnos. Esa acción solo puede usarse para llevar a cabo la acción de atacar (un solo ataque), correr, destrabarse, esconderse o utilizar.
+Cuando el conjuro termina, el objetivo tiene el estado de incapacitado y una velocidad de 0 hasta el final de su siguiente turno, por una oleada de letargo que lo invade.
+
+== Heal
+components: V, S
+body:
+Elige a una criatura que puedas ver dentro del alcance. Una energía positiva recorre al objetivo y le restaura 70 puntos de golpe. Este conjuro termina además los estados de cegada, ensordecida y envenenada del objetivo.
+**Con un espacio de conjuro de nivel superior.** La curación aumenta en 10 por cada nivel por encima de 6 que tenga el espacio.
+
+== Healing Word
+components: V
+body:
+Una criatura que elijas y puedas ver dentro del alcance recupera una cantidad de puntos de golpe igual a 2d4 más tu modificador por característica de lanzamiento de conjuros.
+**Con un espacio de conjuro de nivel superior.** La curación aumenta en 2d4 por cada nivel por encima de 1 que tenga el espacio.
+
+== Heat Metal
+components: V, S, M (un trozo de hierro y una llama)
+body:
+Elige un objeto de metal fabricado que puedas ver dentro del alcance, como un arma de metal o una armadura pesada o media de metal. Haces que el objeto se ponga al rojo vivo. Cualquier criatura que esté en contacto físico con él recibe {{2d8|Fire}} de daño cuando lanzas el conjuro. Hasta que el conjuro termine puedes llevar a cabo una acción adicional en cada uno de tus turnos posteriores para volver a causar ese daño, siempre que el objeto esté dentro del alcance.
+Si una criatura lleva o viste el objeto y recibe su daño, hace una tirada de salvación de Constitución. Si la falla, suelta el objeto si puede. Si no lo suelta, tiene desventaja en las tiradas de ataque y en las pruebas de característica hasta el principio de tu siguiente turno.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 2 que tenga el espacio.
+
+== Hellish Rebuke
+components: V, S
+casting: Reacción, que llevas a cabo en respuesta al daño que te causa una criatura que puedas ver a 60 pies o menos de ti
+body:
+La criatura que te ha causado el daño queda rodeada un instante por llamas verdes. Hace una tirada de salvación de Destreza y recibe {{2d10|Fire}} de daño si la falla, o la mitad si la supera.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d10 por cada nivel por encima de 1 que tenga el espacio.
+
+== Heroes’ Feast
+components: V, S, M (un cuenco con gemas incrustadas por valor de 1.000 po o más, que el conjuro consume)
+body:
+Conjuras un banquete que aparece sobre una superficie en un cubo sin ocupar de 10 pies de lado junto a ti. El banquete se tarda 1 hora en consumir y desaparece al final de ese tiempo; los efectos beneficiosos no llegan hasta que esa hora termina. Hasta doce criaturas pueden participar en él.
+Una criatura que participe obtiene varios beneficios que duran 24 horas: tiene resistencia al daño {{Poison}} e inmunidad a los estados de asustada y envenenada. Además, sus puntos de golpe máximos aumentan en 2d10 y obtiene esa misma cantidad de puntos de golpe.
+
+== Heroism
+components: V, S
+body:
+Una criatura voluntaria a la que toques queda imbuida de valor. Hasta que el conjuro termine, es inmune al estado de asustada y obtiene una cantidad de puntos de golpe temporales igual a tu modificador por característica de lanzamiento de conjuros al principio de cada uno de sus turnos.
+**Con un espacio de conjuro de nivel superior.** Puedes hacer objetivo a una criatura más por cada nivel por encima de 1 que tenga el espacio.
+
+== Hex
+components: V, S, M (el ojo petrificado de un tritón)
+body:
+Lanzas una maldición sobre una criatura que puedas ver dentro del alcance. Hasta que el conjuro termine, causas {{1d6|Necrotic}} de daño adicional al objetivo siempre que le aciertes con una tirada de ataque. Además, elige una característica al lanzar el conjuro: el objetivo tiene desventaja en las pruebas de característica que usen esa característica.
+Si los puntos de golpe del objetivo se reducen a 0 antes de que el conjuro termine, puedes llevar a cabo una acción adicional en un turno posterior para maldecir a una criatura nueva.
+**Con un espacio de conjuro de nivel superior.** Tu concentración puede durar más con un espacio de nivel 2 (hasta 4 horas), 3 o 4 (hasta 8 horas) o 5 o superior (24 horas).
+
+== Hideous Laughter
+components: V, S, M (una tarta y una pluma)
+body:
+Una criatura que elijas y puedas ver dentro del alcance hace una tirada de salvación de Sabiduría. Si la falla, tiene los estados de derribada e incapacitada mientras dure el conjuro. Durante ese tiempo se ríe sin control si es capaz de reírse, y no puede terminar por sí misma el estado de derribada.
+Al final de cada uno de sus turnos y cada vez que recibe daño, hace otra tirada de salvación de Sabiduría, con ventaja si la tirada la ha provocado el daño. Si la supera, el conjuro termina.
+**Con un espacio de conjuro de nivel superior.** Puedes hacer objetivo a una criatura más por cada nivel por encima de 1 que tenga el espacio.
+
+== Hold Monster
+components: V, S, M (un trozo recto de hierro)
+body:
+Elige a una criatura que puedas ver dentro del alcance. El objetivo hace una tirada de salvación de Sabiduría. Si la falla, tiene el estado de paralizado mientras dure el conjuro. Al final de cada uno de sus turnos repite la tirada y el conjuro termina para él si la supera.
+**Con un espacio de conjuro de nivel superior.** Puedes hacer objetivo a una criatura más por cada nivel por encima de 5 que tenga el espacio.
+
+== Hold Person
+components: V, S, M (un trozo recto de hierro)
+body:
+Elige a un humanoide que puedas ver dentro del alcance. El objetivo hace una tirada de salvación de Sabiduría. Si la falla, tiene el estado de paralizado mientras dure el conjuro. Al final de cada uno de sus turnos repite la tirada y el conjuro termina para él si la supera.
+**Con un espacio de conjuro de nivel superior.** Puedes hacer objetivo a un humanoide más por cada nivel por encima de 2 que tenga el espacio.
+
+== Holy Aura
+components: V, S, M (un relicario por valor de 1.000 po o más)
+body:
+Mientras dure el conjuro emites un aura en una emanación de 30 pies. Dentro del aura, las criaturas que elijas tienen ventaja en todas las tiradas de salvación y las demás criaturas tienen desventaja en las tiradas de ataque contra ellas. Además, cuando un infernal o un muerto viviente acierta a una criatura afectada con una tirada de ataque cuerpo a cuerpo, el atacante hace una tirada de salvación de Constitución; si la falla, tiene el estado de cegado hasta el final de su siguiente turno.
+
+== Hunter’s Mark
+components: V
+body:
+Marcas por medios mágicos como presa tuya a una criatura que puedas ver dentro del alcance. Hasta que el conjuro termine, causas {{1d6|Force}} de daño adicional al objetivo siempre que le aciertes con una tirada de ataque. Además, tienes ventaja en cualquier prueba de Sabiduría (Percepción o Supervivencia) que hagas para encontrarlo.
+Si los puntos de golpe del objetivo se reducen a 0 antes de que el conjuro termine, puedes llevar a cabo una acción adicional para pasar la marca a una criatura nueva que puedas ver dentro del alcance.
+**Con un espacio de conjuro de nivel superior.** Tu concentración puede durar más con un espacio de nivel 3 o 4 (hasta 8 horas) o de nivel 5 o superior (hasta 24 horas).
+
+== Hypnotic Pattern
+components: S, M (una pizca de confeti)
+body:
+Creas un patrón retorcido de colores en un cubo de 30 pies de lado dentro del alcance. El patrón aparece un instante y se desvanece. Cada criatura de la zona que pueda verlo hace una tirada de salvación de Sabiduría. Si la falla, tiene el estado de hechizada mientras dure el conjuro. Mientras lo esté, tiene el estado de incapacitada y una velocidad de 0.
+El conjuro termina para una criatura afectada si recibe cualquier daño o si otra criatura usa una acción para sacarla de su estupor.
+
+== Ice Knife
+components: S, M (una gota de agua o un trozo de hielo)
+body:
+Creas una esquirla de hielo y la arrojas contra una criatura que esté dentro del alcance. Haz un ataque de conjuro a distancia contra el objetivo. Si aciertas, recibe {{1d10|Piercing}} de daño. Aciertes o falles, la esquirla estalla a continuación: el objetivo y cada criatura que esté a 5 pies o menos de él hacen una tirada de salvación de Destreza y reciben {{2d6|Cold}} de daño si la fallan.
+**Con un espacio de conjuro de nivel superior.** El daño de frío aumenta en 1d6 por cada nivel por encima de 1 que tenga el espacio.
+
+== Ice Storm
+components: V, S, M (una manopla)
+body:
+Cae granizo en un cilindro de 20 pies de radio y 40 pies de alto centrado en un punto dentro del alcance. Cada criatura que esté en el cilindro hace una tirada de salvación de Destreza y recibe {{2d10|Bludgeoning}} de daño y {{4d6|Cold}} de daño si la falla, o la mitad si la supera.
+El granizo convierte el suelo del cilindro en terreno difícil hasta el final de tu siguiente turno.
+**Con un espacio de conjuro de nivel superior.** El daño contundente aumenta en 1d10 por cada nivel por encima de 4 que tenga el espacio.
+
+== Identify
+components: V, S, M (una perla por valor de 100 po o más)
+body:
+Tocas un objeto durante todo el lanzamiento del conjuro. Si el objeto es un objeto mágico o algún otro objeto con magia, averiguas sus propiedades y cómo usarlas, si requiere sintonización y cuántas cargas tiene, si es que tiene. Averiguas también si hay conjuros activos que lo afecten y cuáles son. Si el objeto lo creó un conjuro, averiguas el nombre de ese conjuro.
+Si en vez de eso tocas a una criatura durante todo el lanzamiento, averiguas qué conjuros activos la afectan, si es que hay alguno.
+
+== Illusory Script
+components: S, M (tinta por valor de 10 po o más, que el conjuro consume)
+body:
+Escribes sobre pergamino, papel u otro material adecuado y lo imbuyes de una ilusión que dura lo que dure el conjuro. Para ti y para las criaturas que designes al lanzarlo, el escrito parece normal, parece de tu puño y letra y transmite el significado que quisiste darle al escribirlo. Para todos los demás, parece escrito en una caligrafía desconocida o mágica que resulta ininteligible. También puedes hacer que la ilusión altere el significado, la caligrafía y el idioma del texto, aunque el idioma debe ser uno que conozcas.
+Si el conjuro se disipa, desaparecen tanto el escrito original como la ilusión.
+Una criatura con visión verdadera puede leer el mensaje oculto.

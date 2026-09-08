@@ -1,0 +1,383 @@
+# Igual que arreglos-en.txt, pero para el arbol espanol. Los "match:" apuntan a
+# las lineas que en es/*.txt se han dejado con el texto original en ingles,
+# justo para que este fichero las sustituya por la tabla ya maquetada.
+
+== Animate Objects
+match: Animated Object Huge or Smaller Construct, Unaligned
+html:
+<h3>Objeto animado</h3>
+          <p><i>Constructo Enorme o menor, sin alineamiento</i></p>
+          <div class="tw">
+            <table class="spelltable">
+              <tbody>
+                <tr><th scope="row">CA</th><td>15</td></tr>
+                <tr><th scope="row">PG</th><td>10 (Mediano o menor), 20 (Grande), 40 (Enorme)</td></tr>
+                <tr><th scope="row">Velocidad</th><td>9&nbsp;m (30&nbsp;ft)</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+match: MOD SAVE MOD SAVE MOD SAVE Str 16
+html:
+<div class="tw">
+            <table class="spelltable">
+              <thead>
+                <tr><th scope="col">Característica</th><th scope="col">Puntuación</th><th scope="col">Mod.</th><th scope="col">Salvación</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Fue</td><td>16</td><td>+3</td><td>+3</td></tr>
+                <tr><td>Des</td><td>10</td><td>+0</td><td>+0</td></tr>
+                <tr><td>Con</td><td>10</td><td>+0</td><td>+0</td></tr>
+                <tr><td>Int</td><td>3</td><td>&minus;4</td><td>&minus;4</td></tr>
+                <tr><td>Sab</td><td>3</td><td>&minus;4</td><td>&minus;4</td></tr>
+                <tr><td>Car</td><td>1</td><td>&minus;5</td><td>&minus;5</td></tr>
+              </tbody>
+            </table>
+          </div>
+text: **Inmunidades.** Veneno, psíquico; hechizado, agotamiento, asustado, paralizado, envenenado.
+text: **Sentidos.** Visión ciega 30 pies; Percepción pasiva 6.
+text: **Idiomas.** Entiende los idiomas que conoces.
+text: **VD.** Ninguno (0 PX; el bonificador por competencia es igual al tuyo).
+text: **Golpe (acción).** *Tirada de ataque cuerpo a cuerpo:* el bonificador es igual a tu modificador de ataque de conjuro, alcance 5 pies. *Impacto:* daño de fuerza igual a 1d4 + 3 (Mediano o menor), 2d6 + 3 + tu modificador por característica de lanzamiento de conjuros (Grande) o 2d12 + 3 + tu modificador por característica de lanzamiento de conjuros (Enorme).
+
+== Augury
+match: Omens Omen Weal Woe Weal and woe Indifference
+html:
+<div class="tw">
+            <table class="spelltable">
+              <caption>Augurios</caption>
+              <thead>
+                <tr><th scope="col">Augurio</th><th scope="col">Para resultados que serán&hellip;</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Fortuna</td><td>Buenos</td></tr>
+                <tr><td>Desdicha</td><td>Malos</td></tr>
+                <tr><td>Fortuna y desdicha</td><td>Buenos y malos</td></tr>
+                <tr><td>Indiferencia</td><td>Ni buenos ni malos</td></tr>
+              </tbody>
+            </table>
+          </div>
+text: El conjuro no tiene en cuenta las circunstancias, como otros conjuros, que pudieran cambiar los resultados.
+
+== Confusion
+match: 1d10 Behavior for the Turn
+html:
+<div class="tw">
+            <table class="spelltable">
+              <thead>
+                <tr><th scope="col">1d10</th><th scope="col">Comportamiento en el turno</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>El objetivo no lleva a cabo ninguna acción y usa todo su movimiento en moverse. Tira 1d4 para la dirección: 1, norte; 2, este; 3, sur; o 4, oeste.</td></tr>
+                <tr><td>2&ndash;6</td><td>El objetivo no se mueve ni lleva a cabo acciones.</td></tr>
+                <tr><td>7&ndash;8</td><td>El objetivo no se mueve y lleva a cabo la acción de atacar para hacer un ataque cuerpo a cuerpo contra una criatura al azar que tenga a su alcance. Si no hay ninguna, no lleva a cabo ninguna acción.</td></tr>
+                <tr><td>9&ndash;10</td><td>El objetivo elige su comportamiento.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+== Control Weather
+match: Precipitation Stage Condition 1 Clear
+html:
+<div class="tw">
+            <table class="spelltable">
+              <caption>Precipitaciones</caption>
+              <thead><tr><th scope="col">Grado</th><th scope="col">Condición</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>Despejado</td></tr>
+                <tr><td>2</td><td>Nubes ligeras</td></tr>
+                <tr><td>3</td><td>Cubierto o niebla a ras de suelo</td></tr>
+                <tr><td>4</td><td>Lluvia, granizo o nieve</td></tr>
+                <tr><td>5</td><td>Lluvia torrencial, granizada intensa o ventisca</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tw">
+            <table class="spelltable">
+              <caption>Temperatura</caption>
+              <thead><tr><th scope="col">Grado</th><th scope="col">Condición</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>Ola de calor</td></tr>
+                <tr><td>2</td><td>Caluroso</td></tr>
+                <tr><td>3</td><td>Templado</td></tr>
+                <tr><td>4</td><td>Fresco</td></tr>
+                <tr><td>5</td><td>Frío</td></tr>
+                <tr><td>6</td><td>Gélido</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tw">
+            <table class="spelltable">
+              <caption>Viento</caption>
+              <thead><tr><th scope="col">Grado</th><th scope="col">Condición</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>En calma</td></tr>
+                <tr><td>2</td><td>Viento moderado</td></tr>
+                <tr><td>3</td><td>Viento fuerte</td></tr>
+                <tr><td>4</td><td>Vendaval</td></tr>
+                <tr><td>5</td><td>Tormenta</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+== Creation
+match: Materials Material Vegetable matter
+html:
+<div class="tw">
+            <table class="spelltable">
+              <caption>Materiales</caption>
+              <thead><tr><th scope="col">Material</th><th scope="col">Duración</th></tr></thead>
+              <tbody>
+                <tr><td>Materia vegetal</td><td>24 horas</td></tr>
+                <tr><td>Piedra o cristal</td><td>12 horas</td></tr>
+                <tr><td>Metales preciosos</td><td>1 hora</td></tr>
+                <tr><td>Gemas</td><td>10 minutos</td></tr>
+                <tr><td>Adamantina o mithral</td><td>1 minuto</td></tr>
+              </tbody>
+            </table>
+          </div>
+text: **Con un espacio de conjuro de nivel superior.** El cubo aumenta 5 pies de lado por cada nivel por encima de 5 que tenga el espacio.
+
+== Divine Word
+match: Divine Word Effects Hit Points Effect 0–20
+html:
+<div class="tw">
+            <table class="spelltable">
+              <caption>Efectos de palabra divina</caption>
+              <thead><tr><th scope="col">Puntos de golpe</th><th scope="col">Efecto</th></tr></thead>
+              <tbody>
+                <tr><td>0&ndash;20</td><td>El objetivo muere.</td></tr>
+                <tr><td>21&ndash;30</td><td>El objetivo tiene los estados de cegado, ensordecido y aturdido durante 1 hora.</td></tr>
+                <tr><td>31&ndash;40</td><td>El objetivo tiene los estados de cegado y ensordecido durante 10 minutos.</td></tr>
+                <tr><td>41&ndash;50</td><td>El objetivo tiene el estado de ensordecido durante 1 minuto.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+== Find Steed
+match: Otherworldly Steed Large Celestial, Fey, or Fiend
+html:
+<h3>Corcel de otro mundo</h3>
+          <p><i>Celestial, feérico o infernal Grande (a tu elección), neutral</i></p>
+          <div class="tw">
+            <table class="spelltable">
+              <tbody>
+                <tr><th scope="row">CA</th><td>10 + 1 por nivel del conjuro</td></tr>
+                <tr><th scope="row">PG</th><td>5 + 10 por nivel del conjuro (el corcel tiene tantos dados de golpe [d10] como el nivel del conjuro)</td></tr>
+                <tr><th scope="row">Velocidad</th><td>18&nbsp;m (60&nbsp;ft), volando 18&nbsp;m (60&nbsp;ft) (requiere un espacio de nivel 4 o superior)</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tw">
+            <table class="spelltable">
+              <thead>
+                <tr><th scope="col">Característica</th><th scope="col">Puntuación</th><th scope="col">Mod.</th><th scope="col">Salvación</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Fue</td><td>18</td><td>+4</td><td>+4</td></tr>
+                <tr><td>Des</td><td>12</td><td>+1</td><td>+1</td></tr>
+                <tr><td>Con</td><td>14</td><td>+2</td><td>+2</td></tr>
+                <tr><td>Int</td><td>6</td><td>&minus;2</td><td>&minus;2</td></tr>
+                <tr><td>Sab</td><td>12</td><td>+1</td><td>+1</td></tr>
+                <tr><td>Car</td><td>8</td><td>&minus;1</td><td>&minus;1</td></tr>
+              </tbody>
+            </table>
+          </div>
+text: **Sentidos.** Percepción pasiva 11.
+text: **Idiomas.** Telepatía 1 milla (solo contigo).
+text: **VD.** Ninguno (0 PX; el bonificador por competencia es igual al tuyo).
+text: **Vínculo vital (rasgo).** Cuando recuperas puntos de golpe con un conjuro de nivel 1 o superior, el corcel recupera la misma cantidad si estás a 5 pies o menos de él.
+text: **Golpe de otro mundo (acción).** *Tirada de ataque cuerpo a cuerpo:* el bonificador es igual a tu modificador de ataque de conjuro, alcance 5 pies. *Impacto:* 1d8 más el nivel del conjuro de daño radiante (celestial), psíquico (feérico) o necrótico (infernal).
+text: **Mirada funesta (acción adicional; solo infernal; se recarga tras un descanso largo).** *Tirada de salvación de Sabiduría:* la CD es igual a tu CD de salvación de conjuros, una criatura que el corcel pueda ver a 60 pies o menos. *Fallo:* el objetivo tiene el estado de asustado hasta el final de tu siguiente turno.
+text: **Paso feérico (acción adicional; solo feérico; se recarga tras un descanso largo).** El corcel se teletransporta, junto con su jinete, a un espacio sin ocupar que elijas a 60 pies o menos de él.
+text: **Toque sanador (acción adicional; solo celestial; se recarga tras un descanso largo).** Una criatura que esté a 5 pies o menos del corcel recupera una cantidad de puntos de golpe igual a 2d8 más el nivel del conjuro.
+
+== Giant Insect
+match: Giant Insect Large Beast, Unaligned
+html:
+<h3>Insecto gigante</h3>
+          <p><i>Bestia Grande, sin alineamiento</i></p>
+          <div class="tw">
+            <table class="spelltable">
+              <tbody>
+                <tr><th scope="row">CA</th><td>11 + el nivel del conjuro</td></tr>
+                <tr><th scope="row">PG</th><td>30 + 10 por cada nivel del espacio por encima de 4</td></tr>
+                <tr><th scope="row">Velocidad</th><td>12&nbsp;m (40&nbsp;ft), trepando 12&nbsp;m (40&nbsp;ft), volando 12&nbsp;m (40&nbsp;ft) (solo avispa)</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tw">
+            <table class="spelltable">
+              <thead>
+                <tr><th scope="col">Característica</th><th scope="col">Puntuación</th><th scope="col">Mod.</th><th scope="col">Salvación</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Fue</td><td>17</td><td>+3</td><td>+3</td></tr>
+                <tr><td>Des</td><td>13</td><td>+1</td><td>+1</td></tr>
+                <tr><td>Con</td><td>15</td><td>+2</td><td>+2</td></tr>
+                <tr><td>Int</td><td>4</td><td>&minus;3</td><td>&minus;3</td></tr>
+                <tr><td>Sab</td><td>14</td><td>+2</td><td>+2</td></tr>
+                <tr><td>Car</td><td>3</td><td>&minus;4</td><td>&minus;4</td></tr>
+              </tbody>
+            </table>
+          </div>
+text: **Sentidos.** Visión en la oscuridad 60 pies; Percepción pasiva 12.
+text: **Idiomas.** Entiende los idiomas que conoces.
+text: **VD.** Ninguno (0 PX; el bonificador por competencia es igual al tuyo).
+text: **Trepar cual arácnido (rasgo).** El insecto puede trepar por superficies difíciles, incluso por techos, sin necesidad de hacer una prueba de característica.
+text: **Ataque múltiple (acción).** El insecto hace tantos ataques como la mitad del nivel de este conjuro (redondeando hacia abajo).
+text: **Pinchazo venenoso (acción).** *Tirada de ataque cuerpo a cuerpo:* el bonificador es igual a tu modificador de ataque de conjuro, alcance 10 pies. *Impacto:* 1d6 + 3 más el nivel del conjuro de daño perforante, más 1d4 de daño de veneno.
+text: **Disparo de tela (acción; solo araña).** *Tirada de ataque a distancia:* el bonificador es igual a tu modificador de ataque de conjuro, alcance 60 pies. *Impacto:* 1d10 + 3 más el nivel del conjuro de daño contundente, y la velocidad del objetivo se reduce a 0 hasta el principio del siguiente turno del insecto.
+text: **Vómito ponzoñoso (acción adicional; solo ciempiés).** *Tirada de salvación de Constitución:* tu CD de salvación de conjuros, una criatura que el insecto pueda ver a 10 pies o menos. *Fallo:* el objetivo tiene el estado de envenenado hasta el principio del siguiente turno del insecto.
+
+== Prismatic Spray
+match: Prismatic Rays 1d8 Ray
+html:
+<div class="tw">
+            <table class="spelltable">
+              <caption>Rayos prismáticos</caption>
+              <thead><tr><th scope="col">1d8</th><th scope="col">Rayo</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td><b>Rojo.</b> <i>Fallo:</i> 12d6 de daño de fuego. <i>Éxito:</i> la mitad del daño.</td></tr>
+                <tr><td>2</td><td><b>Naranja.</b> <i>Fallo:</i> 12d6 de daño de ácido. <i>Éxito:</i> la mitad del daño.</td></tr>
+                <tr><td>3</td><td><b>Amarillo.</b> <i>Fallo:</i> 12d6 de daño de relámpago. <i>Éxito:</i> la mitad del daño.</td></tr>
+                <tr><td>4</td><td><b>Verde.</b> <i>Fallo:</i> 12d6 de daño de veneno. <i>Éxito:</i> la mitad del daño.</td></tr>
+                <tr><td>5</td><td><b>Azul.</b> <i>Fallo:</i> 12d6 de daño de frío. <i>Éxito:</i> la mitad del daño.</td></tr>
+                <tr><td>6</td><td><b>Índigo.</b> <i>Fallo:</i> el objetivo tiene el estado de apresado y hace una tirada de salvación de Constitución al final de cada uno de sus turnos. Si supera tres, el estado termina. Si falla tres, tiene el estado de petrificado hasta que lo libere un efecto como el conjuro <i>restablecimiento mayor</i>. Los éxitos y los fallos no tienen que ser consecutivos: lleva la cuenta de ambos hasta que el objetivo acumule tres de uno de los dos.</td></tr>
+                <tr><td>7</td><td><b>Violeta.</b> <i>Fallo:</i> el objetivo tiene el estado de cegado y hace una tirada de salvación de Sabiduría al principio de tu siguiente turno. Si la supera, el estado termina. Si la falla, el estado termina y la criatura se teletransporta a otro plano de existencia (a elección del DM).</td></tr>
+                <tr><td>8</td><td><b>Especial.</b> Al objetivo lo alcanzan dos rayos. Tira dos veces y repite cualquier 8.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+== Prismatic Wall
+match: Prismatic Layers Order Effects
+html:
+<div class="tw">
+            <table class="spelltable">
+              <caption>Capas prismáticas</caption>
+              <thead><tr><th scope="col">Orden</th><th scope="col">Efectos</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td><b>Rojo.</b> <i>Fallo:</i> 12d6 de daño de fuego. <i>Éxito:</i> la mitad del daño. <i>Efectos adicionales:</i> los ataques a distancia no mágicos no pueden atravesar esta capa, que se destruye si recibe al menos 25 de daño de frío.</td></tr>
+                <tr><td>2</td><td><b>Naranja.</b> <i>Fallo:</i> 12d6 de daño de ácido. <i>Éxito:</i> la mitad del daño. <i>Efectos adicionales:</i> los ataques a distancia mágicos no pueden atravesar esta capa, que se destruye con un viento fuerte (como el que crea <i>ráfaga de viento</i>).</td></tr>
+                <tr><td>3</td><td><b>Amarillo.</b> <i>Fallo:</i> 12d6 de daño de relámpago. <i>Éxito:</i> la mitad del daño. <i>Efectos adicionales:</i> la capa se destruye si recibe al menos 60 de daño de fuerza.</td></tr>
+                <tr><td>4</td><td><b>Verde.</b> <i>Fallo:</i> 12d6 de daño de veneno. <i>Éxito:</i> la mitad del daño. <i>Efectos adicionales:</i> un conjuro de <i>pasamuros</i>, u otro de nivel igual o superior que pueda abrir un portal en una superficie sólida, destruye esta capa.</td></tr>
+                <tr><td>5</td><td><b>Azul.</b> <i>Fallo:</i> 12d6 de daño de frío. <i>Éxito:</i> la mitad del daño. <i>Efectos adicionales:</i> la capa se destruye si recibe al menos 25 de daño de fuego.</td></tr>
+                <tr><td>6</td><td><b>Índigo.</b> <i>Fallo:</i> el objetivo tiene el estado de apresado y hace una tirada de salvación de Constitución al final de cada uno de sus turnos. Si supera tres, el estado termina. Si falla tres, tiene el estado de petrificado hasta que lo libere un efecto como el conjuro <i>restablecimiento mayor</i>. Los éxitos y los fallos no tienen que ser consecutivos. <i>Efectos adicionales:</i> no se pueden lanzar conjuros a través de esta capa, que se destruye con la luz brillante que emite el conjuro <i>luz del día</i>.</td></tr>
+                <tr><td>7</td><td><b>Violeta.</b> <i>Fallo:</i> el objetivo tiene el estado de cegado y hace una tirada de salvación de Sabiduría al principio de tu siguiente turno. Si la supera, el estado termina. Si la falla, el estado termina y la criatura se teletransporta a otro plano de existencia (a elección del DM). <i>Efectos adicionales:</i> esta capa se destruye con <i>disipar magia</i>.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+== Reincarnate
+match: 1d10 Species 1 Roll again.
+html:
+<div class="tw">
+            <table class="spelltable">
+              <thead><tr><th scope="col">1d10</th><th scope="col">Especie</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>Vuelve a tirar.</td></tr>
+                <tr><td>2</td><td>Dracónido</td></tr>
+                <tr><td>3</td><td>Enano</td></tr>
+                <tr><td>4</td><td>Elfo</td></tr>
+                <tr><td>5</td><td>Gnomo</td></tr>
+                <tr><td>6</td><td>Goliat</td></tr>
+                <tr><td>7</td><td>Mediano</td></tr>
+                <tr><td>8</td><td>Humano</td></tr>
+                <tr><td>9</td><td>Orco</td></tr>
+                <tr><td>10</td><td>Tiflin</td></tr>
+              </tbody>
+            </table>
+          </div>
+text: La criatura reencarnada toma las decisiones que ofrezca la descripción de su especie y recuerda su vida anterior. Conserva las capacidades que tenía en su forma original, salvo que pierde los rasgos de su especie anterior y obtiene los de la nueva.
+
+== Scrying
+match: Your Knowledge of the Target Is
+html:
+<div class="tw">
+            <table class="spelltable">
+              <thead><tr><th scope="col">Lo que sabes del objetivo es&hellip;</th><th scope="col">Mod. a la salvación</th></tr></thead>
+              <tbody>
+                <tr><td>De oídas (has oído hablar de él)</td><td>+5</td></tr>
+                <tr><td>De primera mano (lo has conocido)</td><td>+0</td></tr>
+                <tr><td>Mucho (lo conoces bien)</td><td>&minus;5</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tw">
+            <table class="spelltable">
+              <thead><tr><th scope="col">Tienes del objetivo&hellip;</th><th scope="col">Mod. a la salvación</th></tr></thead>
+              <tbody>
+                <tr><td>Un retrato u otra imagen</td><td>&minus;2</td></tr>
+                <tr><td>Una prenda u otra pertenencia</td><td>&minus;4</td></tr>
+                <tr><td>Una parte del cuerpo, un mechón de pelo o un trozo de uña</td><td>&minus;10</td></tr>
+              </tbody>
+            </table>
+          </div>
+text: Si la supera, el objetivo no se ve afectado y no puedes volver a usar este conjuro sobre él durante 24 horas.
+
+== Summon Dragon
+match: Draconic Spirit Large Dragon, Neutral
+html:
+<h3>Espíritu dracónico</h3>
+          <p><i>Dragón Grande, neutral</i></p>
+          <div class="tw">
+            <table class="spelltable">
+              <tbody>
+                <tr><th scope="row">CA</th><td>14 + el nivel del conjuro</td></tr>
+                <tr><th scope="row">PG</th><td>50 + 10 por cada nivel del espacio por encima de 5</td></tr>
+                <tr><th scope="row">Velocidad</th><td>9&nbsp;m (30&nbsp;ft), volando 18&nbsp;m (60&nbsp;ft), nadando 9&nbsp;m (30&nbsp;ft)</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+match: MOD SAVE MOD SAVE MOD SAVE Str 19
+html:
+<div class="tw">
+            <table class="spelltable">
+              <thead>
+                <tr><th scope="col">Característica</th><th scope="col">Puntuación</th><th scope="col">Mod.</th><th scope="col">Salvación</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Fue</td><td>19</td><td>+4</td><td>+4</td></tr>
+                <tr><td>Des</td><td>14</td><td>+2</td><td>+2</td></tr>
+                <tr><td>Con</td><td>17</td><td>+3</td><td>+3</td></tr>
+                <tr><td>Int</td><td>10</td><td>+0</td><td>+0</td></tr>
+                <tr><td>Sab</td><td>14</td><td>+2</td><td>+2</td></tr>
+                <tr><td>Car</td><td>14</td><td>+2</td><td>+2</td></tr>
+              </tbody>
+            </table>
+          </div>
+text: **Resistencias.** Ácido, frío, fuego, relámpago, veneno.
+text: **Inmunidades.** Hechizado, asustado, envenenado.
+text: **Sentidos.** Visión ciega 30 pies, visión en la oscuridad 60 pies; Percepción pasiva 12.
+text: **Idiomas.** Dracónico; entiende los idiomas que conoces.
+text: **VD.** Ninguno (0 PX; el bonificador por competencia es igual al tuyo).
+text: **Resistencias compartidas (rasgo).** Cuando invocas al espíritu, elige una de sus resistencias. Tienes resistencia a ese tipo de daño hasta que el conjuro termine.
+text: **Ataque múltiple (acción).** El espíritu hace tantos ataques de desgarro como la mitad del nivel del conjuro (redondeando hacia abajo), y usa su arma de aliento.
+text: **Desgarro (acción).** *Tirada de ataque cuerpo a cuerpo:* el bonificador es igual a tu modificador de ataque de conjuro, alcance 10 pies. *Impacto:* 1d6 + 4 + el nivel del conjuro de daño perforante.
+text: **Arma de aliento (acción).** *Tirada de salvación de Destreza:* la CD es igual a tu CD de salvación de conjuros, cada criatura que esté en un cono de 30 pies. *Fallo:* 2d6 de daño de un tipo al que este espíritu tenga resistencia (a tu elección al lanzar el conjuro). *Éxito:* la mitad del daño.
+
+== Teleport
+match: Teleportation Outcome Familiarity
+html:
+<div class="tw">
+            <table class="spelltable">
+              <caption>Resultado del teletransporte</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Familiaridad</th><th scope="col">Percance</th>
+                  <th scope="col">Zona parecida</th><th scope="col">Fuera de destino</th><th scope="col">En el destino</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Círculo permanente</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>01&ndash;00</td></tr>
+                <tr><td>Objeto vinculado</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>01&ndash;00</td></tr>
+                <tr><td>Muy familiar</td><td>01&ndash;05</td><td>06&ndash;13</td><td>14&ndash;24</td><td>25&ndash;00</td></tr>
+                <tr><td>Visto de pasada</td><td>01&ndash;33</td><td>34&ndash;43</td><td>44&ndash;53</td><td>54&ndash;00</td></tr>
+                <tr><td>Visto una vez o descrito</td><td>01&ndash;43</td><td>44&ndash;53</td><td>54&ndash;73</td><td>74&ndash;00</td></tr>
+                <tr><td>Destino falso</td><td>01&ndash;50</td><td>51&ndash;00</td><td>&mdash;</td><td>&mdash;</td></tr>
+              </tbody>
+            </table>
+          </div>
+text: **Familiaridad.** Este es el significado de los términos de la columna «Familiaridad» de la tabla:

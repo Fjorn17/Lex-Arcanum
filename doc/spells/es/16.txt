@@ -1,0 +1,177 @@
+== Stone Shape
+components: V, S, M (arcilla blanda)
+body:
+Tocas un objeto de piedra de tamaño Mediano o menor, o un tramo de piedra que no mida más de 5 pies en ninguna dimensión, y le das la forma que quieras. Por ejemplo, podrías convertir una roca grande en un arma, una estatua o un cofre, o abrir un pasadizo pequeño a través de un muro de 5 pies de grosor. También podrías dar forma a una puerta de piedra o a su marco para sellarla. El objeto que crees puede tener hasta dos bisagras y un pestillo, pero no es posible un detalle mecánico más fino.
+
+== Stoneskin
+components: V, S, M (polvo de diamante por valor de 100 po o más, que el conjuro consume)
+body:
+Hasta que el conjuro termine, una criatura voluntaria a la que toques tiene resistencia al daño {{Bludgeoning}}, {{Piercing}} y {{Slashing}}.
+
+== Storm of Vengeance
+components: V, S
+body:
+Se forma una nube de tormenta agitada mientras dure el conjuro, centrada en un punto dentro del alcance y extendida hasta un radio de 300 pies. Cada criatura que esté bajo la nube cuando aparece hace una tirada de salvación de Constitución. Si la falla, recibe {{2d6|Thunder}} de daño y tiene el estado de ensordecida mientras dure el conjuro.
+Al principio de cada uno de tus turnos posteriores, la tormenta produce efectos distintos, detallados debajo.
+**Turno 2.** Cae lluvia ácida. Cada criatura y objeto que estén bajo la nube reciben {{4d6|Acid}} de daño.
+**Turno 3.** Invocas seis rayos de la nube para que alcancen a seis criaturas u objetos distintos que estén debajo. Cada objetivo hace una tirada de salvación de Destreza y recibe {{10d6|Lightning}} de daño si la falla, o la mitad si la supera.
+**Turno 4.** Cae granizo. Cada criatura que esté bajo la nube recibe {{2d6|Bludgeoning}} de daño.
+**Turnos 5 a 10.** Las ráfagas y la lluvia helada azotan la zona bajo la nube. Cada criatura que esté allí recibe {{1d6|Cold}} de daño. Hasta que el conjuro termine, la zona es terreno difícil, está muy oscurecida, no se pueden hacer ataques a distancia con armas y sopla un viento fuerte.
+
+== Suggestion
+components: V, M (una gota de miel)
+body:
+Sugieres un curso de actividad, descrito en no más de 25 palabras, a una criatura que puedas ver dentro del alcance y que pueda oírte y entenderte. La sugerencia debe sonar factible y no puede implicar nada que fuera a causar daño de forma evidente al objetivo o a sus aliados. Por ejemplo, podrías decir: «Trae la llave de la cámara del tesoro del culto y dámela». O bien: «Deja de luchar, sal de esta biblioteca por las buenas y no vuelvas».
+El objetivo hace una tirada de salvación de Sabiduría. Si la falla, tiene el estado de hechizado mientras dure el conjuro o hasta que tus aliados o tú le causéis daño. El objetivo hechizado persigue la sugerencia lo mejor que puede. La actividad sugerida puede continuar toda la duración, pero si se puede completar en menos tiempo, el conjuro termina para el objetivo al completarla.
+
+== Summon Dragon
+components: V, S, M (un objeto con la imagen de un dragón grabada, por valor de 500 po o más)
+body:
+Invocas al espíritu de un dragón. Se manifiesta en un espacio sin ocupar que puedas ver dentro del alcance y usa el perfil de espíritu dracónico. La criatura desaparece cuando sus puntos de golpe se reducen a 0 o cuando el conjuro termina.
+La criatura es aliada tuya y de tus aliados. En combate comparte tu puesto de iniciativa, pero actúa justo después de ti. Obedece tus órdenes verbales (no te requiere ninguna acción). Si no le das ninguna, lleva a cabo la acción de esquivar y usa su movimiento para evitar el peligro.
+**Con un espacio de conjuro de nivel superior.** Usa el nivel del espacio como nivel del conjuro en el perfil.
+Draconic Spirit Large Dragon, Neutral
+MOD SAVE MOD SAVE MOD SAVE Str 19
+
+== Sunbeam
+components: V, S, M (una lupa)
+body:
+Lanzas un haz de sol en una línea de 5 pies de ancho y 60 pies de largo. Cada criatura que esté en la línea hace una tirada de salvación de Constitución. Si la falla, recibe {{6d8|Radiant}} de daño y tiene el estado de cegada hasta el principio de tu siguiente turno. Si la supera, recibe la mitad del daño y nada más.
+Hasta que el conjuro termine puedes llevar a cabo una acción de magia para crear una línea de luz nueva.
+Mientras dure el conjuro, una mota de luz brillante reluce sobre ti. Emite luz brillante en un radio de 30 pies y luz tenue otros 30 pies más. Esa luz es luz solar.
+
+== Sunburst
+components: V, S, M (un trozo de piedra solar)
+body:
+Una luz solar brillante destella en una esfera de 60 pies de radio centrada en un punto que elijas dentro del alcance. Cada criatura que esté en la esfera hace una tirada de salvación de Constitución. Si la falla, recibe {{12d6|Radiant}} de daño y tiene el estado de cegada durante 1 minuto. Si la supera, recibe la mitad del daño y nada más.
+Una criatura cegada por este conjuro hace otra tirada de salvación de Constitución al final de cada uno de sus turnos y el efecto termina para ella si la supera.
+Este conjuro disipa la oscuridad de su zona que haya creado cualquier conjuro.
+
+== Symbol
+components: V, S, M (diamante en polvo por valor de 1.000 po o más, que el conjuro consume)
+body:
+Inscribes un glifo dañino sobre una superficie (como un tramo de suelo o de muro) o dentro de un objeto que se pueda cerrar (como un libro o un cofre). El glifo puede cubrir una zona de no más de 10 pies de diámetro. Si eliges un objeto, este debe permanecer donde está: si se mueve más de 10 pies del lugar donde lanzaste el conjuro, el glifo se rompe y el conjuro termina sin activarse.
+El glifo es casi imperceptible: para verlo hay que superar una prueba de Sabiduría (Percepción) contra tu CD de salvación de conjuros.
+Al inscribir el glifo fijas su disparador y eliges qué efecto lleva el símbolo: muerte, discordia, miedo, dolor, sueño o aturdimiento. Cada uno se explica debajo.
+**Fijar el disparador.** Decides qué activa el glifo al lanzar el conjuro. En los glifos inscritos sobre una superficie, los disparadores habituales son tocar el glifo o pisarlo, retirar otro objeto que lo tapara o acercarse a cierta distancia. En los glifos inscritos dentro de un objeto, los disparadores habituales son abrir ese objeto o ver el glifo.
+Puedes afinar el disparador para que solo lo activen criaturas de ciertos tipos (por ejemplo, que el glifo afecte solo a las aberraciones). También puedes fijar condiciones para las criaturas que no lo activen, como decir una contraseña.
+Una vez activado, el glifo brilla y llena de luz tenue una esfera de 60 pies de radio durante 10 minutos, tras los cuales el conjuro termina. Cada criatura que esté en la esfera cuando el glifo se activa es objetivo de su efecto, igual que la que entre en la esfera por primera vez en un turno o termine allí su turno. Cada criatura es objetivo una sola vez por turno.
+**Muerte.** Cada objetivo hace una tirada de salvación de Constitución y recibe {{10d10|Necrotic}} de daño si la falla, o la mitad si la supera.
+**Discordia.** Cada objetivo hace una tirada de salvación de Sabiduría. Si la falla, discute con las demás criaturas durante 1 minuto. Durante ese tiempo es incapaz de comunicarse con sentido y tiene desventaja en las tiradas de ataque y en las pruebas de característica.
+**Miedo.** Cada objetivo hace una tirada de salvación de Sabiduría. Si la falla, tiene el estado de asustado durante 1 minuto. Mientras lo esté, debe alejarse al menos 30 pies del glifo en cada uno de sus turnos, si puede.
+**Dolor.** Cada objetivo hace una tirada de salvación de Constitución. Si la falla, tiene el estado de incapacitado durante 1 minuto.
+**Sueño.** Cada objetivo hace una tirada de salvación de Sabiduría. Si la falla, tiene el estado de inconsciente durante 10 minutos. Una criatura despierta si recibe daño o si alguien lleva a cabo una acción para zarandearla.
+**Aturdimiento.** Cada objetivo hace una tirada de salvación de Sabiduría. Si la falla, tiene el estado de aturdido durante 1 minuto.
+
+== Telekinesis
+components: V, S
+body:
+Obtienes la capacidad de mover o manipular criaturas y objetos con el pensamiento. Al lanzar el conjuro, y como acción de magia en tus turnos posteriores antes de que el conjuro termine, puedes ejercer tu voluntad sobre una criatura o un objeto que puedas ver dentro del alcance y provocar el efecto correspondiente de los siguientes. Puedes afectar al mismo objetivo asalto tras asalto o elegir uno nuevo en cualquier momento. Si cambias de objetivo, el anterior deja de estar afectado por el conjuro.
+**Criatura.** Puedes intentar mover a una criatura de tamaño Enorme o menor. El objetivo hace una tirada de salvación de Fuerza y, si la falla, lo mueves hasta 30 pies en cualquier dirección dentro del alcance del conjuro. Hasta el final de tu siguiente turno tiene el estado de apresado y, si lo elevas en el aire, queda suspendido allí. Cae al final de tu siguiente turno salvo que vuelvas a usar esta opción sobre él y falle la tirada.
+**Objeto.** Puedes intentar mover un objeto de tamaño Enorme o menor. Si nadie lo lleva ni lo viste, lo mueves automáticamente hasta 30 pies en cualquier dirección dentro del alcance del conjuro.
+Si el objeto lo lleva o lo viste una criatura, esa criatura hace una tirada de salvación de Fuerza; si la falla, le arrebatas el objeto y lo mueves hasta 30 pies en cualquier dirección dentro del alcance.
+Puedes ejercer un control fino sobre los objetos con tu presa telequinética, como manipular una herramienta sencilla.
+
+== Telepathic Bond
+components: V, S, M (dos huevos)
+body:
+Forjas un vínculo telepático entre hasta ocho criaturas voluntarias que elijas dentro del alcance, y las enlazas psíquicamente entre sí mientras dure el conjuro. Las criaturas que no puedan comunicarse en ningún idioma no se ven afectadas por este conjuro.
+Hasta que el conjuro termine, los objetivos pueden comunicarse telepáticamente por el vínculo compartan idioma o no. La comunicación es posible a cualquier distancia, aunque no puede llegar a otros planos de existencia.
+
+== Teleport
+components: V
+body:
+Este conjuro transporta al instante a ti y a hasta ocho criaturas voluntarias que puedas ver dentro del alcance, o bien a un solo objeto que puedas ver dentro del alcance, hasta un destino que elijas. Si haces objetivo a un objeto, debe ser de tamaño Grande o menor y no puede estar en manos de una criatura no voluntaria ni llevado por ella.
+El destino que elijas debe serte conocido y estar en tu mismo plano de existencia. Lo familiar que te resulte determina si llegas bien. El DM tira 1d100 y consulta la tabla de resultado del teletransporte y las explicaciones que la siguen.
+Teleportation Outcome Familiarity
+• «Círculo permanente» es un círculo de teletransportación permanente cuya secuencia de sigilos conoces.
+• «Objeto vinculado» significa que posees un objeto sacado del destino deseado en los últimos seis meses, como un libro de la biblioteca de un mago.
+• «Muy familiar» es un lugar que has visitado a menudo, que has estudiado con cuidado o que puedes ver al lanzar el conjuro.
+• «Visto de pasada» es un lugar que has visto más de una vez pero que no te resulta muy familiar.
+• «Visto una vez o descrito» es un lugar que has visto una vez, quizá usando magia, o que conoces por la descripción de otra persona, tal vez a partir de un mapa.
+• «Destino falso» es un lugar que no existe. Quizá intentaste escudriñar el santuario de un enemigo y en su lugar viste una ilusión, o intentas teletransportarte a un lugar que ya no existe.
+**Percance.** La magia imprevisible del conjuro provoca un viaje accidentado. Cada criatura que se teletransporta (o el objeto objetivo) recibe {{3d10|Force}} de daño, y el DM vuelve a tirar en la tabla para ver dónde acabáis (pueden ocurrir varios percances, y cada uno causa daño).
+**Zona parecida.** Tu grupo y tú (o el objeto objetivo) aparecéis en otra zona visual o temáticamente parecida a la de destino. Aparecéis en el lugar parecido más cercano. Si vais a tu laboratorio, por ejemplo, podríais aparecer en el laboratorio de otra persona de la misma ciudad.
+**Fuera de destino.** Tu grupo y tú (o el objeto objetivo) aparecéis a 2d12 millas del destino en una dirección al azar. Tira 1d8 para la dirección: 1, este; 2, sureste; 3, sur; 4, suroeste; 5, oeste; 6, noroeste; 7, norte; u 8, noreste.
+**En el destino.** Tu grupo y tú (o el objeto objetivo) aparecéis donde pretendíais.
+
+== Teleportation Circle
+components: V, M (tintas raras por valor de 50 po o más, que el conjuro consume)
+body:
+Al lanzar el conjuro dibujas en el suelo un círculo de 5 pies de radio inscrito con sigilos que unen tu posición con un círculo de teletransportación permanente que elijas, cuya secuencia de sigilos conozcas y que esté en tu mismo plano de existencia. Dentro del círculo que has dibujado se abre un portal reluciente que permanece abierto hasta el final de tu siguiente turno. Cualquier criatura que entre en el portal aparece al instante a 5 pies o menos del círculo de destino, o en el espacio sin ocupar más cercano si aquel está ocupado.
+Muchos templos importantes, casas gremiales y otros lugares destacados tienen círculos de teletransportación permanentes. Cada círculo tiene una secuencia de sigilos única: una sarta de runas dispuestas en un patrón concreto.
+Cuando obtienes por primera vez la capacidad de lanzar este conjuro, aprendes las secuencias de sigilos de dos destinos del plano Material, que determina el DM. Puedes aprender más secuencias durante tus aventuras. Puedes memorizar una secuencia nueva tras estudiarla 1 minuto.
+Puedes crear un círculo de teletransportación permanente lanzando este conjuro en el mismo lugar todos los días durante 365 días.
+
+== Thaumaturgy
+components: V
+body:
+Manifiestas un prodigio menor dentro del alcance. Creas uno de los efectos siguientes dentro del alcance. Si lanzas este conjuro varias veces, puedes tener hasta tres de sus efectos de 1 minuto activos a la vez.
+**Ojos alterados.** Alteras el aspecto de tus ojos durante 1 minuto.
+**Voz atronadora.** Tu voz suena hasta tres veces más fuerte de lo normal durante 1 minuto. Mientras dure, tienes ventaja en las pruebas de Carisma (Intimidación).
+**Juego de fuego.** Haces que las llamas titilen, se aviven, se atenúen o cambien de color durante 1 minuto.
+**Mano invisible.** Haces que una puerta o una ventana sin cerrar se abran de golpe o se cierren de un portazo, al instante.
+**Sonido fantasma.** Creas un sonido instantáneo que se origina en un punto que elijas dentro del alcance, como un retumbar de truenos, el graznido de un cuervo o unos susurros siniestros.
+**Temblores.** Provocas temblores inofensivos en el suelo durante 1 minuto.
+
+== Thunderwave
+components: V, S
+body:
+Desatas una onda de energía atronadora. Cada criatura que esté en un cubo de 15 pies de lado que parta de ti hace una tirada de salvación de Constitución. Si la falla, recibe {{2d8|Thunder}} de daño y es empujada 10 pies lejos de ti. Si la supera, recibe la mitad del daño y nada más.
+Además, los objetos sueltos que estén enteramente dentro del cubo son empujados 10 pies lejos de ti, y se oye un estruendo atronador hasta a 300 pies.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 1 que tenga el espacio.
+
+== Time Stop
+components: V
+body:
+Detienes un instante el flujo del tiempo para todos menos para ti. Para las demás criaturas no pasa el tiempo, mientras que tú llevas a cabo 1d4 + 1 turnos seguidos, durante los cuales puedes usar acciones y moverte con normalidad.
+Este conjuro termina si una de las acciones que usas en ese periodo, o cualquier efecto que crees durante él, afecta a una criatura que no seas tú o a un objeto que lleve o vista alguien que no seas tú. Termina también si te desplazas a más de 1.000 pies del lugar donde lo lanzaste.
+
+== Tiny Hut
+components: V, S, M (una cuenta de cristal)
+body:
+Una emanación de 10 pies aparece a tu alrededor y permanece inmóvil mientras dure el conjuro. El conjuro falla al lanzarse si la emanación no es lo bastante grande para contener por completo a todas las criaturas de su zona.
+Las criaturas y objetos que estén dentro de la emanación al lanzar el conjuro pueden atravesarla libremente. A todas las demás criaturas y objetos se les impide el paso. Los conjuros de nivel 3 o inferior no se pueden lanzar a través de ella, y los efectos de esos conjuros no pueden extenderse a su interior.
+La atmósfera del interior es cómoda y seca, haga el tiempo que haga fuera. Hasta que el conjuro termine puedes ordenar que el interior tenga luz tenue u oscuridad (no requiere acción). La emanación es opaca desde fuera y del color que elijas, pero transparente desde dentro.
+El conjuro termina antes de tiempo si sales de la emanación o si vuelves a lanzarlo.
+
+== Tongues
+components: V, M (un zigurat en miniatura)
+body:
+Este conjuro concede a la criatura que toques la capacidad de entender cualquier idioma hablado o signado que oiga o vea. Además, cuando el objetivo se comunica hablando o signando, cualquier criatura que conozca al menos un idioma puede entenderlo si puede oírlo o ver sus signos.
+
+== Transport via Plants
+components: V, S
+body:
+Este conjuro crea un vínculo mágico entre una planta inanimada de tamaño Grande o mayor que esté dentro del alcance y otra planta, a cualquier distancia, del mismo plano de existencia. Debes haber visto o tocado la planta de destino al menos una vez antes. Mientras dure el conjuro, cualquier criatura puede entrar en la planta objetivo y salir por la planta de destino gastando 5 pies de movimiento.
+
+== Tree Stride
+components: V, S
+body:
+Obtienes la capacidad de entrar en un árbol y pasar de su interior al interior de otro árbol de la misma clase que esté a 500 pies o menos. Los dos árboles deben estar vivos y ser al menos de tu tamaño. Debes gastar 5 pies de movimiento para entrar en un árbol. Sabes al instante dónde están todos los demás árboles de la misma clase a 500 pies o menos y, como parte del movimiento usado para entrar en el árbol, puedes pasar a uno de esos árboles o salir de aquel en el que estés. Apareces en un punto que elijas a 5 pies o menos del árbol de destino, gastando otros 5 pies de movimiento. Si no te queda movimiento, apareces a 5 pies o menos del árbol por el que entraste.
+Solo puedes usar esta capacidad de transporte una vez en cada uno de tus turnos. Debes terminar cada turno fuera de un árbol.
+
+== True Polymorph
+components: V, S, M (una gota de mercurio, una pizca de goma arábiga y una voluta de humo)
+body:
+Elige una criatura o un objeto no mágico que puedas ver dentro del alcance. La criatura se transforma en otra criatura o en un objeto no mágico, o el objeto se transforma en una criatura (el objeto no puede llevarlo ni vestirlo nadie). La transformación dura lo que dure el conjuro o hasta que el objetivo muera o sea destruido; ahora bien, si mantienes la concentración en este conjuro toda su duración, el conjuro dura hasta que se disipe.
+Una criatura no voluntaria puede hacer una tirada de salvación de Sabiduría y, si la supera, no se ve afectada por este conjuro.
+**De criatura a criatura.** Si conviertes a una criatura en otra clase de criatura, la nueva forma puede ser de cualquier clase que elijas cuyo valor de desafío sea igual o inferior al valor de desafío o al nivel del objetivo. Las puntuaciones de juego del objetivo se sustituyen por el perfil de la nueva forma, pero conserva sus puntos de golpe, sus dados de golpe, su alineamiento y su personalidad.
+El objetivo obtiene una cantidad de puntos de golpe temporales igual a los puntos de golpe de la nueva forma. Esos puntos de golpe temporales desaparecen si le queda alguno cuando el conjuro termina.
+Las acciones que el objetivo puede llevar a cabo quedan limitadas por la anatomía de su nueva forma, y no puede hablar ni lanzar conjuros.
+El equipo del objetivo se funde con la nueva forma. La criatura no puede usarlo ni beneficiarse de él de ninguna manera.
+**De objeto a criatura.** Puedes convertir un objeto en cualquier clase de criatura, siempre que su tamaño no sea mayor que el del objeto y que su valor de desafío sea 9 o menor. La criatura es amistosa contigo y con tus aliados. En combate actúa justo después de ti y obedece tus órdenes.
+Si el conjuro dura más de una hora, dejas de controlar a la criatura. Puede que siga siendo amistosa contigo, según cómo la hayas tratado.
+**De criatura a objeto.** Si conviertes a una criatura en un objeto, se transforma junto con todo lo que lleve y vista, siempre que el tamaño del objeto no sea mayor que el de la criatura. Las puntuaciones de la criatura pasan a ser las del objeto, y la criatura no recuerda el tiempo pasado en esa forma cuando el conjuro termina y vuelve a la normalidad.
+
+== True Resurrection
+components: V, S, M (diamantes por valor de 25.000 po o más, que el conjuro consume)
+body:
+Tocas a una criatura que no lleve muerta más de 200 años y que muriera por cualquier motivo salvo de vieja. La criatura revive con todos sus puntos de golpe.
+Este conjuro cierra todas las heridas, neutraliza cualquier veneno, cura todos los contagios mágicos y levanta cualquier maldición que afectara a la criatura al morir. Sustituye los órganos y miembros dañados o que falten. Si la criatura era un muerto viviente, se le restaura su forma no muerta viviente.
+El conjuro puede proporcionar un cuerpo nuevo si el original ya no existe, en cuyo caso debes decir el nombre de la criatura. Esta aparece entonces en un espacio sin ocupar que elijas a 10 pies o menos de ti.
+
+== True Seeing
+components: V, S, M (polvo de setas por valor de 25 po o más, que el conjuro consume)
+body:
+Mientras dure el conjuro, la criatura voluntaria a la que toques tiene visión verdadera con un alcance de 120 pies.

@@ -1,0 +1,150 @@
+# Traduccion al espanol de los conjuros del SRD 5.2.1.
+#
+# El SRD 5.2.1 esta bajo CC BY 4.0, asi que se puede traducir y publicar con la
+# atribucion que ya lleva el pie de las paginas. Esta traduccion es propia: NO
+# se copia el texto del Manual del Jugador, que si tiene derechos reservados.
+# Del Manual salen solo los nombres y el vocabulario de reglas (nombres-es.txt
+# y doc/redaccion.md).
+#
+# Convenios del fichero:
+#   == <nombre en ingles>   clave; el nombre visible sale de nombres-es.txt
+#   components:             componentes traducidos
+#   casting:                solo cuando el tiempo de lanzamiento lleva coletilla
+#   body:                   un parrafo por linea
+#   **Subtitulo.**          subtitulo en linea (el ingles se detecta solo)
+#   {{4d4|Acid}}            dado y tipo de dano; el tipo SIEMPRE en ingles
+#   {{Acid}}                solo el tipo de dano
+#   "60 pies", "1 milla"    distancias; el generador les pone el metrico delante
+
+== Acid Arrow
+components: V, S, M (hoja de ruibarbo en polvo)
+body:
+Una flecha verde reluciente sale disparada hacia un objetivo que esté dentro del alcance y estalla en una rociada de ácido. Haz un ataque de conjuro a distancia contra el objetivo. Si aciertas, el objetivo recibe {{4d4|Acid}} de daño y otros {{2d4|Acid}} de daño al final de su siguiente turno. Si fallas, la flecha lo salpica y recibe la mitad del daño inicial, y nada más.
+**Con un espacio de conjuro de nivel superior.** El daño (tanto el inicial como el posterior) aumenta en 1d4 por cada nivel por encima de 2 que tenga el espacio.
+
+== Acid Splash
+components: V, S
+body:
+Creas una burbuja ácida en un punto dentro del alcance, donde explota en una esfera de 5 pies de radio. Cada criatura que esté en la esfera hace una tirada de salvación de Destreza. Si la falla, recibe {{1d6|Acid}} de daño.
+**Mejora de truco.** El daño aumenta en 1d6 cuando alcanzas los niveles 5 (2d6), 11 (3d6) y 17 (4d6).
+
+== Aid
+components: V, S, M (una tira de tela blanca)
+body:
+Elige hasta tres criaturas dentro del alcance. Los puntos de golpe máximos y los puntos de golpe actuales de cada objetivo aumentan en 5 mientras dure el conjuro.
+**Con un espacio de conjuro de nivel superior.** Los puntos de golpe de cada objetivo aumentan en 5 más por cada nivel por encima de 2 que tenga el espacio.
+
+== Alarm
+components: V, S, M (una campana y alambre de plata)
+body:
+Estableces una alarma contra intrusos. Elige una puerta, una ventana o una zona dentro del alcance que no sea mayor que un cubo de 20 pies de lado. Hasta que el conjuro termine, una alarma te avisa siempre que una criatura toque la zona protegida o entre en ella. Cuando lanzas el conjuro puedes designar criaturas que no la hagan saltar. También eliges si la alarma es audible o mental:
+**Alarma audible.** La alarma produce el sonido de una campanilla durante 10 segundos, audible a 60 pies o menos de la zona protegida.
+**Alarma mental.** Recibes un aviso mental si estás a 1 milla o menos de la zona protegida. Ese aviso te despierta si estás dormido.
+
+== Alter Self
+components: V, S
+body:
+Alteras tu forma física. Elige una de las opciones siguientes. Su efecto dura lo que dure el conjuro y, mientras tanto, puedes llevar a cabo una acción de magia para cambiar la opción elegida por otra.
+**Adaptación acuática.** Te salen branquias y membranas entre los dedos. Puedes respirar bajo el agua y obtienes una velocidad nadando igual a tu velocidad.
+**Cambiar el aspecto.** Alteras tu apariencia. Decides qué aspecto tienes, incluidos tu altura, tu peso, tus rasgos faciales, el sonido de tu voz, la longitud y el color de tu pelo y cualquier otro rasgo distintivo. Puedes hacerte pasar por un miembro de otra especie, aunque ninguna de tus puntuaciones cambia. No puedes aparentar ser una criatura de otro tamaño y tu forma básica no cambia: si eres bípedo, no puedes usar este conjuro para volverte cuadrúpedo. Mientras dure el conjuro puedes llevar a cabo una acción de magia para volver a cambiar tu aspecto de esta manera.
+**Armas naturales.** Te crecen garras ({{Slashing}}), colmillos ({{Piercing}}), cuernos ({{Piercing}}) o pezuñas ({{Bludgeoning}}). Cuando usas tu ataque sin armas para causar daño con lo que te ha crecido, causa 1d6 de daño del tipo indicado entre paréntesis en lugar del daño normal de tu ataque sin armas, y usas tu modificador por característica de lanzamiento de conjuros en las tiradas de ataque y de daño en vez de Fuerza.
+
+== Animal Friendship
+components: V, S, M (un bocado de comida)
+body:
+Haz objetivo a una bestia que puedas ver dentro del alcance. El objetivo hace una tirada de salvación de Sabiduría. Si la falla, tiene el estado de hechizada mientras dure el conjuro. Si tú o uno de tus aliados le causáis daño, el conjuro termina.
+**Con un espacio de conjuro de nivel superior.** Puedes hacer objetivo a una bestia más por cada nivel por encima de 1 que tenga el espacio.
+
+== Animal Messenger
+components: V, S, M (un bocado de comida)
+casting: 1 minuto
+body:
+Una bestia Diminuta que puedas ver dentro del alcance hace una tirada de salvación de Carisma. Si la falla, intenta entregar un mensaje de tu parte (si el valor de desafío del objetivo no es 0, la supera automáticamente). Indicas un lugar que hayas visitado y un destinatario que responda a una descripción general, como «una persona con el uniforme de la guardia de la ciudad» o «un enano pelirrojo con sombrero puntiagudo». También le comunicas un mensaje de hasta veinticinco palabras. La bestia viaja hacia el lugar indicado mientras dure el conjuro y recorre unas 25 millas cada 24 horas, o 50 millas si puede volar.
+Cuando llega, entrega el mensaje a la criatura que has descrito imitando tu forma de comunicarte. Si la bestia no llega a su destino antes de que el conjuro termine, el mensaje se pierde y la bestia vuelve al lugar donde lanzaste el conjuro.
+**Con un espacio de conjuro de nivel superior.** La duración del conjuro aumenta en 48 horas por cada nivel por encima de 2 que tenga el espacio.
+
+== Animal Shapes
+components: V, S
+body:
+Elige cualquier número de criaturas voluntarias que puedas ver dentro del alcance. Cada objetivo se transforma en una bestia de tamaño Grande o menor que elijas y cuyo valor de desafío sea 4 o menor. Puedes elegir una forma distinta para cada objetivo. En turnos posteriores puedes llevar a cabo una acción de magia para volver a transformarlos.
+Las puntuaciones de juego del objetivo se sustituyen por las de la bestia elegida, pero conserva su tipo de criatura, sus puntos de golpe, sus dados de golpe, su alineamiento, su capacidad de comunicarse y sus puntuaciones de Inteligencia, Sabiduría y Carisma. Las acciones del objetivo quedan limitadas por la anatomía de la forma de bestia y no puede lanzar conjuros. Su equipo se funde con la nueva forma y no puede usarlo mientras siga en ella.
+El objetivo obtiene una cantidad de puntos de golpe temporales igual a los puntos de golpe de la primera forma que adopte. Esos puntos de golpe temporales desaparecen si le queda alguno cuando el conjuro termina. La transformación dura lo que dure el conjuro o hasta que el objetivo la termine con una acción adicional.
+
+== Animate Dead
+components: V, S, M (una gota de sangre, un trozo de carne y una pizca de polvo de hueso)
+casting: 1 minuto
+body:
+Elige un montón de huesos o el cadáver de un humanoide Mediano o Pequeño que esté dentro del alcance. El objetivo se convierte en un muerto viviente: un esqueleto si has elegido los huesos o un zombi si has elegido el cadáver.
+En cada uno de tus turnos puedes llevar a cabo una acción adicional para dar una orden mental a cualquier criatura que hayas creado con este conjuro y esté a 60 pies o menos de ti (si controlas varias criaturas, puedes darles la orden a todas a la vez, y será la misma para cada una). Decides qué acción llevará a cabo la criatura y adónde se moverá en su siguiente turno, o puedes darle una orden general, como vigilar una sala o un pasillo. Si no le das ninguna orden, la criatura lleva a cabo la acción de esquivar y solo se mueve para evitar el peligro. Una vez recibe una orden, la sigue hasta terminarla.
+La criatura está bajo tu control durante 24 horas, tras las cuales deja de obedecer cualquier orden que le hayas dado. Para mantener el control durante otras 24 horas debes volver a lanzarle el conjuro antes de que termine el periodo actual. Ese lanzamiento reafirma tu control sobre hasta cuatro criaturas que hayas animado con este conjuro en lugar de animar una nueva.
+**Con un espacio de conjuro de nivel superior.** Animas o reafirmas el control sobre dos muertos vivientes más por cada nivel por encima de 3 que tenga el espacio. Cada criatura debe salir de un cadáver o de un montón de huesos distinto.
+
+== Animate Objects
+components: V, S
+body:
+Los objetos cobran vida a tu orden. Elige una cantidad de objetos no mágicos dentro del alcance que nadie lleve ni vista, que no estén fijados a una superficie y que no sean Gargantuescos. La cantidad máxima de objetos es igual a tu modificador por característica de lanzamiento de conjuros; a estos efectos, un objetivo Mediano o menor cuenta como un objeto, uno Grande cuenta como dos y uno Enorme cuenta como tres.
+Cada objetivo cobra vida, le salen patas y se convierte en un constructo que usa el perfil de objeto animado. Esa criatura está bajo tu control hasta que el conjuro termine o hasta que sus puntos de golpe se reduzcan a 0. Cada criatura que creas con este conjuro es aliada tuya y de tus aliados. En combate comparte tu puesto de iniciativa y actúa justo después de ti.
+Hasta que el conjuro termine puedes llevar a cabo una acción adicional para dar una orden mental a cualquier criatura que hayas creado con él y esté a 500 pies o menos de ti (si controlas varias criaturas, puedes darles la orden a todas a la vez, y será la misma para cada una). Si no le das ninguna orden, la criatura lleva a cabo la acción de esquivar y solo se mueve para evitar el peligro. Cuando sus puntos de golpe se reducen a 0, vuelve a su forma de objeto y el daño sobrante se traslada a esa forma.
+**Con un espacio de conjuro de nivel superior.** El daño del golpe de la criatura aumenta en 1d4 (Mediana o menor), 1d6 (Grande) o 1d12 (Enorme) por cada nivel por encima de 5 que tenga el espacio.
+Animated Object Huge or Smaller Construct, Unaligned AC 15 HP 10 (Medium or smaller), 20 (Large), 40 (Huge) Speed 30 ft.
+MOD SAVE MOD SAVE MOD SAVE Str 16 +3 +3 Dex 10 +0 +0 Con 10 +0 +0 Int 3 −4 −4 Wis 3 −4 −4 Cha 1 −5 −5 Immunities
+
+== Antilife Shell
+components: V, S
+body:
+Un aura se extiende desde ti en una emanación de 10 pies mientras dure el conjuro. El aura impide que las criaturas que no sean constructos ni muertos vivientes la atraviesen o metan las manos a través de ella. Una criatura afectada sí puede lanzar conjuros o atacar a través de la barrera con armas a distancia o de alcance.
+Si te mueves de modo que una criatura afectada se vea obligada a atravesar la barrera, el conjuro termina.
+
+== Antimagic Field
+components: V, S, M (limaduras de hierro)
+body:
+Un aura de antimagia te rodea en una emanación de 10 pies. Nadie puede lanzar conjuros, llevar a cabo acciones de magia ni crear otros efectos mágicos dentro del aura, y esas cosas no pueden hacer objetivo ni afectar de ninguna otra forma a nada que haya dentro. Las propiedades mágicas de los objetos mágicos no funcionan dentro del aura ni sobre nada que esté dentro.
+Las áreas de efecto creadas por conjuros u otra magia no pueden extenderse dentro del aura, y nadie puede teletransportarse hacia dentro o hacia fuera de ella ni viajar entre planos desde ella. Los portales se cierran temporalmente mientras estén en el aura.
+Los conjuros en curso, salvo los lanzados por un artefacto o por una deidad, quedan anulados dentro de la zona. Mientras un efecto está anulado no funciona, pero el tiempo que pasa anulado cuenta para su duración.
+*Disipar magia* no tiene efecto sobre el aura, y las auras creadas por distintos lanzamientos de *campo antimagia* no se anulan entre sí.
+
+== Antipathy/Sympathy
+components: V, S, M (una mezcla de vinagre y miel)
+casting: 1 hora
+body:
+Al lanzar el conjuro eliges si crea antipatía o simpatía y haces objetivo a una criatura o a un objeto de tamaño Enorme o menor. Después indicas un tipo de criatura, como dragones rojos, trasgos o vampiros. Una criatura del tipo elegido hace una tirada de salvación de Sabiduría cuando llega a 120 pies o menos del objetivo. Lo que le ocurre si la falla depende de si has elegido antipatía o simpatía:
+**Antipatía.** La criatura tiene el estado de asustada. Mientras lo esté, debe usar su movimiento en sus turnos para alejarse todo lo posible del objetivo por la ruta más segura.
+**Simpatía.** La criatura tiene el estado de hechizada. Mientras lo esté, debe usar su movimiento en sus turnos para acercarse todo lo posible al objetivo por la ruta más segura. Si está a 5 pies o menos del objetivo, no puede alejarse por voluntad propia. Si el objetivo causa daño a la criatura hechizada, esta puede hacer una tirada de salvación de Sabiduría para terminar el efecto, como se explica debajo.
+**Terminar el efecto.** Si la criatura asustada o hechizada termina su turno a más de 120 pies del objetivo, hace una tirada de salvación de Sabiduría. Si la supera, deja de estar afectada por el objetivo. Una criatura que supere esta tirada es inmune al efecto durante 1 minuto, tras el cual puede volver a verse afectada.
+
+== Arcane Eye
+components: V, S, M (un poco de pelo de murciélago)
+body:
+Creas dentro del alcance un ojo invisible e invulnerable que flota mientras dure el conjuro. Recibes mentalmente la información visual del ojo, que ve en todas las direcciones. Además tiene visión en la oscuridad con un alcance de 30 pies.
+Como acción adicional puedes mover el ojo hasta 30 pies en cualquier dirección. Una barrera sólida bloquea su movimiento, pero el ojo puede pasar por una abertura de tan solo 1 pulgada de diámetro.
+
+== Arcane Hand
+components: V, S, M (una cáscara de huevo y un guante)
+body:
+Creas una mano Grande de energía mágica reluciente en un espacio sin ocupar que puedas ver dentro del alcance. La mano dura lo que dure el conjuro y se mueve a tu orden, imitando los movimientos de tu propia mano.
+La mano es un objeto con CA 20 y una cantidad de puntos de golpe igual a tus puntos de golpe máximos. Si sus puntos de golpe se reducen a 0, el conjuro termina. La mano no ocupa su espacio.
+Cuando lanzas el conjuro, y como acción adicional en tus turnos posteriores, puedes mover la mano hasta 60 pies y luego provocar uno de los efectos siguientes:
+**Puño cerrado.** La mano golpea a un objetivo que esté a 5 pies o menos de ella. Haz un ataque de conjuro cuerpo a cuerpo. Si aciertas, el objetivo recibe {{5d8|Force}} de daño.
+**Mano impulsora.** La mano intenta empujar a una criatura de tamaño Enorme o menor que esté a 5 pies o menos de ella. El objetivo hace una tirada de salvación de Fuerza. Si la falla, la mano lo empuja 5 pies más una cantidad de pies igual a cinco veces tu modificador por característica de lanzamiento de conjuros. La mano se mueve con el objetivo y se mantiene a 5 pies o menos de él.
+**Mano apresadora.** La mano intenta agarrar a una criatura de tamaño Enorme o menor que esté a 5 pies o menos de ella. El objetivo hace una tirada de salvación de Destreza. Si la falla, tiene el estado de agarrado, con una CD para escapar igual a tu CD de salvación de conjuros. Mientras la mano lo tenga agarrado, puedes llevar a cabo una acción adicional para que lo aplaste y le cause una cantidad de {{Bludgeoning}} de daño igual a 4d6 más tu modificador por característica de lanzamiento de conjuros.
+**Mano interpuesta.** La mano te da cobertura media contra los ataques y otros efectos que se originen en su espacio o lo atraviesen. Además, ese espacio cuenta como terreno difícil para tus enemigos.
+**Con un espacio de conjuro de nivel superior.** El daño del puño cerrado aumenta en 2d8 y el de la mano apresadora aumenta en 2d6 por cada nivel por encima de 5 que tenga el espacio.
+
+== Arcane Lock
+components: V, S, M (polvo de oro por valor de 25 po o más, que el conjuro consume)
+body:
+Tocas una puerta, una ventana, una verja, un recipiente o una escotilla que esté cerrada y la cierras por medios mágicos mientras dure el conjuro. Este cierre no se puede abrir por ningún medio no mágico. Tú y las criaturas que designes al lanzar el conjuro podéis abrir y cerrar el objeto pese al cierre. También puedes fijar una contraseña que, dicha a 5 pies o menos del objeto, lo abra durante 1 minuto.
+
+== Arcane Sword
+components: V, S, M (una espada en miniatura por valor de 250 po o más)
+body:
+Creas una espada espectral que flota dentro del alcance. Dura lo que dure el conjuro.
+Cuando la espada aparece, haces un ataque de conjuro cuerpo a cuerpo contra un objetivo que esté a 5 pies o menos de ella. Si aciertas, el objetivo recibe una cantidad de {{Force}} de daño igual a 4d12 más tu modificador por característica de lanzamiento de conjuros.
+En tus turnos posteriores puedes llevar a cabo una acción adicional para mover la espada hasta 30 pies a un punto que puedas ver y repetir el ataque contra el mismo objetivo o contra otro.
+
+== Arcanist’s Magic Aura
+components: V, S, M (un pequeño cuadrado de seda)
+body:
+Con un toque colocas una ilusión sobre una criatura voluntaria o sobre un objeto que nadie lleve ni vista. Una criatura recibe el efecto de máscara y un objeto recibe el de aura falsa, ambos descritos debajo. El efecto dura lo que dure el conjuro. Si lanzas el conjuro sobre el mismo objetivo todos los días durante 30 días, la ilusión dura hasta que se disipe.
+**Máscara (criatura).** Elige un tipo de criatura distinto del real del objetivo. Los conjuros y demás efectos mágicos tratan al objetivo como si fuera una criatura del tipo elegido.
+**Aura falsa (objeto).** Cambias el aspecto que el objetivo presenta ante los conjuros y efectos mágicos que detectan auras mágicas, como *detectar magia*. Puedes hacer que un objeto no mágico parezca mágico, que un objeto mágico parezca no mágico o cambiar su aura para que parezca pertenecer a una escuela de magia que elijas.
