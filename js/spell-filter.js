@@ -128,17 +128,48 @@
   /* La tabla llega ordenada por nivel: se refleja en la cabecera. */
   heads[1].setAttribute("aria-sort", "ascending");
 
+  /* --- el árbol filtra la tabla --------------------------------------- */
+
+  /* Cada rama es también un enlace a su página, y eso se conserva: pinchar
+     filtra aquí mismo, y ctrl-clic o clic central abren la página como
+     siempre. Sin JavaScript solo queda el enlace, que es lo que había. */
+  var tree = document.querySelector(".disctree");
+
+  function markBranch(el) {
+    var all = tree.querySelectorAll("a.tb");
+    for (var i = 0; i < all.length; i++) all[i].classList.toggle("here", all[i] === el);
+  }
+
+  if (tree) {
+    tree.addEventListener("click", function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+      var a = e.target.closest ? e.target.closest("a.tb") : null;
+      if (!a) return;
+      e.preventDefault();
+      disc.value = a.getAttribute("data-disc") || "";
+      sub.value = a.getAttribute("data-sub") || "";
+      markBranch(a);
+      apply();
+      var t = document.getElementById("spelltable");
+      if (t) t.scrollIntoView({ block: "start", behavior: "smooth" });
+    });
+  }
+
+  /* Cambiar un desplegable a mano deshace la marca del árbol. */
+  function clearBranch() { if (tree) markBranch(null) }
+
   /* --- enganches ------------------------------------------------------ */
 
   q.addEventListener("input", apply);
   level.addEventListener("change", apply);
-  disc.addEventListener("change", apply);
-  sub.addEventListener("change", apply);
+  disc.addEventListener("change", function () { clearBranch(); apply() });
+  sub.addEventListener("change", function () { clearBranch(); apply() });
   reset.addEventListener("click", function () {
     q.value = "";
     level.value = "";
     disc.value = "";
     sub.value = "";
+    clearBranch();
     apply();
     q.focus();
   });

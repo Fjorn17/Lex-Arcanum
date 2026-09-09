@@ -805,21 +805,37 @@ sub render_index {
     }
     my $total = scalar(@all) - ($n_disc{uncatalogued} // 0);
     my $word = sub { $_[0] == 1 ? $i->{count_one} : $i->{count_many} };
+    # Cada rama del arbol es un filtro de la tabla de abajo, no solo un enlace:
+    # los data-* los lee js/spell-filter.js. Sin JavaScript siguen siendo los
+    # enlaces a la pagina de cada rama, que es lo que eran antes.
+    my $max = 0;
+    for (values %n_disc) { $max = $_ if $_ > $max }
+    for (values %n_sub)  { $max = $_ if $_ > $max }
+    $max ||= 1;
+    my $bar = sub {
+        my ($n) = @_;
+        my $pct = int(100 * $n / $max + .5);
+        return qq{<span class="tb-bar" aria-hidden="true"><i style="width:$pct%"></i></span>};
+    };
+
     my $tree = qq{<ul class="disctree">\n}
-             . qq{        <li><b><a href="./astronomy.html">}
-             . ent_es($TAXNAME{astronomy}{$lang}) . qq{</a></b> &mdash; $i->{tree_art} }
-             . qq{<i>$total @{[ $word->($total) ]}</i>\n          <ul>\n};
+             . qq{        <li><a class="tb" href="./astronomy.html" data-branch="}
+             . ent_es($lang eq 'es' ? 'Todo el cat&aacute;logo' : 'The whole catalogue')
+             . qq{"><b>} . ent_es($TAXNAME{astronomy}{$lang}) . qq{</b> &mdash; $i->{tree_art} }
+             . qq{<i>$total @{[ $word->($total) ]}</i></a>\n          <ul>\n};
     for my $g (@SUBS_OF) {
         my ($dk, $keys) = @$g;
         next if $dk eq 'uncatalogued';   # va fuera del arbol: no es del arte
         my $dn = ent_es(ucfirst $TAXNAME{$dk}{$lang});
         my $dc = $n_disc{$dk} // 0;
-        $tree .= qq{            <li><b><a href="./$dk.html">$dn</a></b> }
-               . qq{<i>$dc @{[ $word->($dc) ]}</i>\n              <ul>\n};
+        $tree .= qq{            <li><a class="tb" href="./$dk.html" data-disc="$dk" data-branch="$dn">}
+               . qq{<b>$dn</b> <i>$dc @{[ $word->($dc) ]}</i>@{[ $bar->($dc) ]}</a>\n              <ul>\n};
         for my $k (@$keys) {
             my $c = $n_sub{$k} // 0;
-            $tree .= qq{                <li><a href="./$k.html">}
-                   . ent_es($TAXNAME{$k}{$lang}) . qq{</a> <i>$c</i></li>\n};
+            my $kn = ent_es(ucfirst $TAXNAME{$k}{$lang});
+            my $z = $c ? '' : ' tb-empty';
+            $tree .= qq{                <li><a class="tb$z" href="./$k.html" data-disc="$dk" data-sub="$k" }
+                   . qq{data-branch="$dn &middot; $kn">$kn <i>$c</i>@{[ $bar->($c) ]}</a></li>\n};
         }
         $tree .= qq{              </ul>\n            </li>\n};
     }
@@ -828,13 +844,16 @@ sub render_index {
     # mismo nivel que ella, porque no son parte del arte.
     {
         my $uc = $n_disc{uncatalogued} // 0;
-        $tree .= qq{        <li class="outside"><b><a href="./uncatalogued.html">}
-               . ent_es($TAXNAME{uncatalogued}{$lang}) . qq{</a></b> &mdash; $i->{tree_unc} }
-               . qq{<i>$uc @{[ $word->($uc) ]}</i>\n          <ul>\n};
+        my $un = ent_es($TAXNAME{uncatalogued}{$lang});
+        $tree .= qq{        <li class="outside"><a class="tb" href="./uncatalogued.html" }
+               . qq{data-disc="uncatalogued" data-branch="$un"><b>$un</b> &mdash; $i->{tree_unc} }
+               . qq{<i>$uc @{[ $word->($uc) ]}</i></a>\n          <ul>\n};
         for my $b (@BUCKETS) {
             my $c = $n_sub{$b} // 0;
             next unless $c;
-            $tree .= qq{            <li>@{[ ent_es(ucfirst sub_name($b, $lang)) ]} <i>$c</i></li>\n};
+            my $bn = ent_es(ucfirst sub_name($b, $lang));
+            $tree .= qq{            <li><a class="tb" href="./uncatalogued.html" data-disc="uncatalogued" }
+                   . qq{data-sub="$b" data-branch="$un &middot; $bn">$bn <i>$c</i>@{[ $bar->($c) ]}</a></li>\n};
         }
         $tree .= qq{          </ul>\n        </li>\n};
     }

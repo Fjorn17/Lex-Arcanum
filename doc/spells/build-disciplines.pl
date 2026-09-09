@@ -119,6 +119,7 @@ my %T = (
         idx_lead => 'The four Disciplines of the art, and how the catalogue divides inside them',
         back => 'Back to the Disciplines',
         all_spells => 'Every spell, in one table',
+        toc_label => 'The doctrine', open_all => 'Open all', close_all => 'Collapse',
     },
     es => {
         title => 'Disciplinas', name_col => 'Nombre', level => 'Nivel',
@@ -134,6 +135,7 @@ my %T = (
         idx_lead => 'Las cuatro Disciplinas del arte, y c&oacute;mo se divide el cat&aacute;logo dentro de cada una',
         back => 'Volver a las Disciplinas',
         all_spells => 'Todos los conjuros, en una tabla',
+        toc_label => 'La doctrina', open_all => 'Abrir todo', close_all => 'Plegar',
     },
 );
 
@@ -164,7 +166,10 @@ sub spells_of {
             ? (lc($_->{disc}) eq $disc_of_sub && $_->{sub} eq $k)
             : (lc($_->{disc}) eq $k && ($_->{sub} eq '' || $_->{sub} eq '-'))
     } @SPELLS;
-    return sort { $a->{level} <=> $b->{level} || $a->{name}{en} cmp $b->{name}{en} } @s;
+    # ordenado y en un array: devolver un sort suelto no cuenta en contexto
+    # escalar, y eso ya ha mordido dos veces.
+    my @sorted = sort { $a->{level} <=> $b->{level} || $a->{name}{en} cmp $b->{name}{en} } @s;
+    return @sorted;
 }
 
 # Los descatalogados no van por nivel: van por el motivo de estarlo.
@@ -203,6 +208,284 @@ sub spell_count {
     my $n = scalar @own;
     $n += spell_count($_) for children($node->{key});
     return $n;
+}
+
+# ------------------------------------------------------------------ diagramas
+
+# El diagrama de contencion: un circulo que es la astronomia, tres gajos que son
+# las Disciplinas, y en el centro la region que no cruza ningun umbral. La
+# geometria es fija; los recuentos y los nombres salen de los datos.
+sub containment_svg {
+    my ($lang) = @_;
+    my $t = $T{$lang};
+
+    my $core  = scalar spells_of($NODE{astronomy});
+    my $total = scalar grep { !$_->{unc} } @SPELLS;
+    my $unc   = scalar grep { $_->{unc} } @SPELLS;
+
+    # gajo => [ etiqueta del umbral, punteado, x/y del nombre, x/y del chip ]
+    my @W = (
+      { key => 'alchemy',   arc => 'M 310 190 A 130 130 0 0 1 422.6 385',
+        wedge => 'M 310 50 A 270 270 0 0 1 543.8 455 L 422.6 385 A 130 130 0 0 0 310 190 Z',
+        nx => 483, ny => 216, cx => 423, cy => 259.5, cw => 94,
+        th => { en => 'The Crucible', es => 'El Crisol' }, dash => 0 },
+      { key => 'cosmology', arc => 'M 197.4 385 A 130 130 0 0 1 310 190',
+        wedge => 'M 76.2 455 A 270 270 0 0 1 310 50 L 310 190 A 130 130 0 0 0 197.4 385 Z',
+        nx => 137, ny => 216, cx => 197, cy => 259.5, cw => 94,
+        th => { en => 'The Abyss', es => 'El Abismo' }, dash => 0 },
+      { key => 'spiritism', arc => 'M 422.6 385 A 130 130 0 0 1 197.4 385',
+        wedge => 'M 543.8 455 A 270 270 0 0 1 76.2 455 L 197.4 385 A 130 130 0 0 0 422.6 385 Z',
+        nx => 310, ny => 524, cx => 310, cy => 454.5, cw => 112,
+        th => { en => 'Unnamed', es => 'Sin nombre' }, dash => 1 },
+    );
+
+    my $frame = $lang eq 'es'
+        ? "EL MARCO ES LA ASTRONOM&Iacute;A &middot; $total CONJUROS"
+        : "THE FRAME IS ASTRONOMY &middot; $total SPELLS";
+    my $of = $lang eq 'es' ? "de $total conjuros" : "of $total spells";
+    my $only = $lang eq 'es' ? 'SOLO ASTRONOM&Iacute;A' : 'ASTRONOMY ALONE';
+    my @gloss = $lang eq 'es'
+        ? ('luz &middot; fuerza cin&eacute;tica &middot; guardas', 'y todo lo que detecta, estorba', 'o deshace magia')
+        : ('light &middot; kinetic force &middot; wards', 'and everything that finds, hinders', 'or undoes magic');
+
+    my $alt = $lang eq 'es'
+        ? 'La astronom&iacute;a contiene las tres Disciplinas; en el centro, la regi&oacute;n que no cruza ning&uacute;n umbral'
+        : 'Astronomy contains the three Disciplines; at the centre, the region that crosses no threshold';
+
+    my $s = qq{<svg class="diagram" viewBox="0 0 620 620" role="img" aria-label="$alt">\n};
+    $s .= qq{          <circle cx="310" cy="320" r="270" class="d-frame"/>\n};
+    for my $w (@W) {
+        $s .= qq{          <a href="./$w->{key}.html"><path d="$w->{wedge}" class="d-wedge"/></a>\n};
+    }
+    $s .= qq{          <path d="M 310 190 L 310 50" class="d-spoke"/>\n}
+        . qq{          <path d="M 422.6 385 L 543.8 455" class="d-spoke"/>\n}
+        . qq{          <path d="M 197.4 385 L 76.2 455" class="d-spoke"/>\n}
+        . qq{          <text x="14" y="30" class="d-frame-label">$frame</text>\n}
+        . qq{          <circle cx="310" cy="320" r="130" class="d-core-fill"/>\n};
+    for my $w (@W) {
+        my $c = $w->{dash} ? ' d-core-dash' : '';
+        $s .= qq{          <path d="$w->{arc}" class="d-core$c"/>\n};
+    }
+    $s .= qq{          <a href="#conjuros">\n}
+        . qq{            <text x="310" y="238" class="d-core-kicker">$only</text>\n}
+        . qq{            <text x="310" y="298" class="d-core-n">$core</text>\n}
+        . qq{            <text x="310" y="320" class="d-core-of">$of</text>\n};
+    my $y = 350;
+    for my $g (@gloss) { $s .= qq{            <text x="310" y="$y" class="d-core-gloss">$g</text>\n}; $y += 18 }
+    $s .= qq{          </a>\n};
+    for my $w (@W) {
+        my $n  = spell_count($NODE{ $w->{key} });
+        my $nm = ent_es(ucfirst $NODE{ $w->{key} }{name}{$lang});
+        my $lead = $lang eq 'es'
+            ? ($w->{key} eq 'alchemy' ? 'la materia' : $w->{key} eq 'cosmology' ? 'espacio y tiempo' : 'la vida')
+            : ($w->{key} eq 'alchemy' ? 'matter' : $w->{key} eq 'cosmology' ? 'space and time' : 'life');
+        my $word = $lang eq 'es' ? ($n == 1 ? 'conjuro' : 'conjuros') : ($n == 1 ? 'spell' : 'spells');
+        my $x = $w->{cx} - $w->{cw} / 2;
+        my $dash = $w->{dash} ? ' d-chip-dash' : '';
+        my $ty = $w->{cy} - 5;
+        $s .= qq{          <rect x="$x" y="$ty" width="$w->{cw}" height="21" class="d-chip$dash"/>\n}
+            . qq{          <text x="$w->{cx}" y="$w->{cy}" class="d-chip-label">@{[ ent_es(uc $w->{th}{$lang}) ]}</text>\n}
+            . qq{          <a href="./$w->{key}.html">\n}
+            . qq{            <text x="$w->{nx}" y="$w->{ny}" class="d-disc">$nm</text>\n}
+            . qq{            <text x="$w->{nx}" y="@{[ $w->{ny} + 20 ]}" class="d-disc-sub">$n $word &middot; $lead</text>\n}
+            . qq{          </a>\n};
+    }
+    $s .= qq{        </svg>\n};
+
+    # La leyenda repite el diagrama en texto: es lo que se lee en movil y lo
+    # que hace navegable lo que el dibujo solo insinua.
+    my $L = sub {
+        my (%a) = @_;
+        my $k = $a{kicker} ? qq{<span class="dl-kicker">$a{kicker}</span>} : '';
+        return qq{          <a class="dl-row$a{cls}" href="$a{href}">$k}
+             . qq{<span class="dl-head"><b>$a{name}</b><b class="dl-n">$a{n}</b></span>}
+             . qq{<span class="dl-note">$a{note}</span></a>\n};
+    };
+    my $leg = qq{<div class="disc-legend">\n};
+    $leg .= $L->(cls => ' dl-core', href => '#conjuros', n => $core,
+        name => $lang eq 'es' ? 'Solo astronom&iacute;a' : 'Astronomy alone',
+        note => $lang eq 'es'
+            ? 'El fondo del arte: lo que se hace con el &Eacute;ter sin dirigirlo a nada. No cruza ning&uacute;n umbral.'
+            : 'The floor of the art: what is done to the Ether without aiming it anywhere. It crosses no threshold.');
+    for my $w (@W) {
+        my $n = spell_count($NODE{ $w->{key} });
+        my $kick = $w->{dash}
+            ? ($lang eq 'es' ? 'Umbral todav&iacute;a sin nombre' : 'A threshold still unnamed')
+            : ($lang eq 'es' ? "Umbral &middot; $w->{th}{es}" : "Threshold &middot; $w->{th}{en}");
+        my %note = (
+          alchemy   => { es => 'La masa se aprieta hasta cruzar a sustancia.',
+                         en => 'The mass is pressed until it crosses over into substance.' },
+          cosmology => { es => 'Se colapsa hasta pesar m&aacute;s de lo que debe.',
+                         en => 'It collapses until it weighs more than it should.' },
+          spiritism => { es => 'El umbral que sostiene vida, y la pieza de este arte que sigue sin bautizar.',
+                         en => 'The threshold that holds life, and the one piece of this art still unnamed.' },
+        );
+        $leg .= $L->(cls => $w->{dash} ? ' dl-dash' : '', href => "./$w->{key}.html", n => $n,
+            kicker => ent_es($kick), name => ent_es(ucfirst $NODE{ $w->{key} }{name}{$lang}),
+            note => $note{ $w->{key} }{$lang});
+    }
+    $leg .= $L->(cls => ' dl-outside', href => './uncatalogued.html', n => $unc,
+        kicker => $lang eq 'es' ? 'Fuera del diagrama' : 'Outside the diagram',
+        name => ent_es($NODE{uncatalogued}{name}{$lang}),
+        note => $lang eq 'es'
+            ? 'Sin Disciplina asignada. No son una regi&oacute;n del arte: son trabajo pendiente.'
+            : 'No Discipline assigned. Not a region of the art: work still to do.');
+    $leg .= qq{        </div>\n};
+
+    return qq{<div class="diagram-wrap">\n        $s        $leg      </div>\n};
+}
+
+# El pentagono de la alquimia: cinco vertices y diez cruces, que es la marca de
+# la Disciplina dibujada como catalogo. Cinco lados y cinco diagonales, y cada
+# secundario se coloca en el punto medio del segmento del que nace.
+my @PENTA = (
+  [ 'earth',     330,   100   ],
+  [ 'water',     548.7, 258.9 ],
+  [ 'fire',      465.2, 516.1 ],
+  [ 'lightning', 194.8, 516.1 ],
+  [ 'air',       111.3, 258.9 ],
+);
+my %CROSSING = (
+  mud           => [ 'earth', 'water'     ],
+  water_fire    => [ 'water', 'fire'      ],
+  incandescence => [ 'fire',  'lightning' ],
+  thunder       => [ 'air',   'lightning' ],
+  sand          => [ 'earth', 'air'       ],
+  lava          => [ 'earth', 'fire'      ],
+  metal         => [ 'earth', 'lightning' ],
+  acid          => [ 'water', 'lightning' ],
+  mist          => [ 'water', 'air'       ],
+  ash           => [ 'air',   'fire'      ],
+);
+$CROSSING{steam} = delete $CROSSING{water_fire};
+
+sub elements_svg {
+    my ($lang, $here) = @_;
+    my %P = map { $_->[0] => [ $_->[1], $_->[2] ] } @PENTA;
+    my $count = sub { my $k = shift; my @s = spells_of($NODE{$k}); return scalar @s };
+
+    my $alt = $lang eq 'es'
+        ? 'Los cinco elementos primarios y los diez cruces que nacen de sus encuentros'
+        : 'The five primary elements and the ten crossings born of their meetings';
+    my $s = qq{<svg class="diagram" viewBox="0 0 660 660" role="img" aria-label="$alt">\n};
+
+    # el pentagono y sus diagonales
+    my @v = map { $P{ $_->[0] } } @PENTA;
+    $s .= qq{          <path d="M } . join(' L ', map { "$_->[0] $_->[1]" } @v) . qq{ Z" class="p-edge"/>\n};
+    my @diag;
+    for my $i (0 .. 4) {
+        for my $j ($i + 1 .. 4) {
+            next if $j == $i + 1 || ($i == 0 && $j == 4);
+            push @diag, "M $v[$i][0] $v[$i][1] L $v[$j][0] $v[$j][1]";
+        }
+    }
+    $s .= qq{          <path d="@{[ join ' ', @diag ]}" class="p-diag"/>\n};
+
+    # los cinco primarios
+    for my $p (@PENTA) {
+        my ($k, $x, $y) = @$p;
+        my $n = $count->($k);
+        my $cur = $here && $here eq $k ? ' p-here' : '';
+        my $z = $n ? '' : ' p-empty';
+        $s .= qq{          <a href="./$k.html"><circle cx="$x" cy="$y" r="46" class="p-node$cur$z"/>}
+            . qq{<text x="$x" y="@{[ $y - 3 ]}" class="p-name">@{[ ent_es(ucfirst $NODE{$k}{name}{$lang}) ]}</text>}
+            . qq{<text x="$x" y="@{[ $y + 15 ]}" class="p-n">$n</text></a>\n};
+    }
+
+    # Los diez cruces van en el punto medio de su segmento. Los cinco de los
+    # lados tienen sitio y llevan caja de dos lineas; los cinco de las
+    # diagonales caen amontonados junto al centro, asi que van compactos.
+    my %EDGE = map { $_ => 1 } qw(mud sand steam thunder incandescence);
+    for my $k (sort keys %CROSSING) {
+        my ($a, $b) = @{ $CROSSING{$k} };
+        my $x = ($P{$a}[0] + $P{$b}[0]) / 2;
+        my $y = ($P{$a}[1] + $P{$b}[1]) / 2;
+        # el de abajo se aparta de la arista para no pisar los dos vertices
+        $y += 52 if $k eq 'incandescence';
+        my $n   = $count->($k);
+        my $nm  = ent_es(ucfirst $NODE{$k}{name}{$lang});
+        my $cur = $here && $here eq $k ? ' p-here' : '';
+        my $z   = $n ? '' : ' p-empty';
+
+        if ($EDGE{$k}) {
+            my $from = ent_es(ucfirst $NODE{$a}{name}{$lang}) . ' + ' . ent_es(lc $NODE{$b}{name}{$lang});
+            my $w = length($NODE{$k}{name}{$lang}) > 9 ? 128 : 118;
+            $s .= qq{          <a href="./$k.html">}
+                . qq{<rect x="@{[ $x - $w/2 ]}" y="@{[ $y - 18 ]}" width="$w" height="36" class="p-box$cur$z"/>}
+                . qq{<text x="$x" y="@{[ $y - 2 ]}" class="p-box-name">$nm</text>}
+                . qq{<text x="$x" y="@{[ $y + 12 ]}" class="p-box-from">$from &middot; $n</text></a>\n};
+        } else {
+            # se apartan del centro para no solaparse entre ellos
+            my $dx = $x - 330; my $dy = $y - 320;
+            my $d  = sqrt($dx * $dx + $dy * $dy) || 1;
+            $x = 330 + $dx / $d * ($d + 26);
+            $y = 320 + $dy / $d * ($d + 26);
+            my $w = 15 + 7.1 * length($NODE{$k}{name}{$lang}) + 8 * length($n);
+            $s .= qq{          <a href="./$k.html">}
+                . qq{<rect x="@{[ sprintf '%.1f', $x - $w/2 ]}" y="@{[ sprintf '%.1f', $y - 11 ]}" }
+                . qq{width="@{[ sprintf '%.1f', $w ]}" height="22" class="p-box$cur$z"/>}
+                . qq{<text x="@{[ sprintf '%.1f', $x ]}" y="@{[ sprintf '%.1f', $y + 4 ]}" }
+                . qq{class="p-box-mini">$nm &middot; $n</text></a>\n};
+        }
+    }
+    $s .= qq{        </svg>\n};
+    my $key = $lang eq 'es'
+        ? '<span class="p-key"><i class="p-key-solid"></i> con conjuros</span><span class="p-key"><i class="p-key-empty"></i> todav&iacute;a vac&iacute;o</span>'
+        : '<span class="p-key"><i class="p-key-solid"></i> has spells</span><span class="p-key"><i class="p-key-empty"></i> still empty</span>';
+    return qq{<div class="diagram-wrap solo">\n        $s        <p class="p-legend">$key</p>\n      </div>\n};
+}
+
+# Un cuerpo largo se parte por sus <h2> en secciones plegables, y de los mismos
+# titulos sale el indice lateral. Sin JavaScript sigue sirviendo: son <details>
+# abiertos de serie.
+sub slugify_es {
+    my ($s) = @_;
+    $s =~ s/&\w+;//g;
+    $s = lc $s;
+    my %a = ("\x{e1}"=>'a', "\x{e9}"=>'e', "\x{ed}"=>'i', "\x{f3}"=>'o', "\x{fa}"=>'u', "\x{f1}"=>'n');
+    $s =~ s/([\x{e1}\x{e9}\x{ed}\x{f3}\x{fa}\x{f1}])/$a{$1}/g;
+    $s =~ s/[^a-z0-9]+/-/g;
+    $s =~ s/^-|-$//g;
+    return $s;
+}
+
+sub doctrine {
+    my ($node, $lang) = @_;
+    my @paras = @{ $node->{body}{$lang} };
+    my (@lead, @secs);
+    for my $p (@paras) {
+        if ($p =~ m{^<h2>(.*?)</h2>$}) {
+            push @secs, { title => $1, id => 's-' . slugify_es($1), body => [] };
+        } elsif (@secs) { push @{ $secs[-1]{body} }, $p }
+        else { push @lead, $p }
+    }
+    return unless @secs;
+
+    my $t = $T{$lang};
+    my $toc = qq{<nav class="doctrine-toc" aria-label="$t->{toc_label}">\n}
+            . qq{          <h2>$t->{toc_label}</h2>\n          <ol>\n};
+    my $i = 0;
+    for my $s (@secs) {
+        $i++;
+        $toc .= qq{            <li><a href="#$s->{id}">$s->{title}</a></li>\n};
+    }
+    $toc .= qq{          </ol>\n}
+          . qq{          <p class="toc-all"><a href="#" data-all="open">$t->{open_all}</a>}
+          . qq{ <a href="#" data-all="close">$t->{close_all}</a></p>\n}
+          . qq{        </nav>\n};
+
+    my $out = join("\n          ", @lead) . "\n";
+    $i = 0;
+    for my $s (@secs) {
+        $i++;
+        my $n = sprintf '%02d', $i;
+        $out .= qq{          <details class="sec" id="$s->{id}" open>\n}
+              . qq{            <summary><h2>$s->{title}</h2><span class="sec-n">$n</span></summary>\n}
+              . qq{            <div class="sec-body">\n              }
+              . join("\n              ", @{ $s->{body} })
+              . qq{\n            </div>\n          </details>\n};
+    }
+    return ($toc, $out);
 }
 
 # --------------------------------------------------------------------- trozos
@@ -290,7 +573,20 @@ sub render_node {
     my $file = "$node->{key}.html";
     my $path = "pages/astronomy/$file";
 
-    my $body = join "\n          ", @{ $node->{body}{$lang} };
+    # La astronomia lleva su doctrina plegada, con indice al lado; las demas
+    # paginas son cortas y van de corrido.
+    my ($toc, $body);
+    ($toc, $body) = doctrine($node, $lang) if $node->{key} eq 'astronomy';
+    $body //= join "\n          ", @{ $node->{body}{$lang} };
+    $toc  //= '';
+
+    # el diagrama que le toque a esta pagina
+    my $diagram = '';
+    $diagram = containment_svg($lang)         if $node->{key} eq 'astronomy';
+    $diagram = elements_svg($lang)            if $node->{key} eq 'alchemy';
+    $diagram = elements_svg($lang, $node->{key})
+        if $node->{kind} eq 'sub' && $node->{parent} eq 'alchemy';
+
     my $rows = join "\n          ",
         map { qq{<div class="ibrow"><span class="ibk">} . ($lang eq 'es' ? $_->[1] : $_->[0])
             . qq{</span><span class="ibv">} . ($lang eq 'es' ? $_->[3] : $_->[2]) . qq{</span></div>} }
@@ -316,8 +612,9 @@ sub render_node {
       <h1>@{[ nm($node, $lang) ]}</h1>
       <p class="spellkind">$node->{lead}{$lang}</p>
     </header>
-
-    <div class="spellbody">
+$diagram
+    <div class="spellbody@{[ $toc ? ' withtoc' : '' ]}">
+      $toc
       <main>
         <section>
           $body
@@ -365,7 +662,8 @@ HTML
     </div>
 
 HTML
-    $out .= page_foot(up => $UP, scripts => []);
+    $out .= page_foot(up => $UP,
+                      scripts => $node->{key} eq 'astronomy' ? ['astronomy.js'] : []);
     return ($file, $out);
 }
 

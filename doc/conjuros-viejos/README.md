@@ -18,7 +18,7 @@ Dos cruzan un segundo umbral (Reglas 6.4) y van marcados con **·cruce·**.
 - [ ] [[Lightning Lure]] — *Señuelo relampagueante*
 - [ ] [[Catapult]] — *Catapulta*
 - [ ] [[Crown of Stars]] — *Corona de estrellas*
-- [ ] [[Spell Turning]] — *Reflejo de conjuro*
+- [x] [[Spell Turning]] — *Reflejo de conjuro*
 - [ ] [[Absorb Elements]] — *Absorber elementos*
 - [ ] [[Wall of Light]] — *Muro de luz*
 - [ ] [[Dawn]] — *Alba*
