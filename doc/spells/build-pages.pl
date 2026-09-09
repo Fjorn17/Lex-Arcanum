@@ -624,8 +624,12 @@ my %IDX = (
         f_search => 'Search by name', f_level => 'Any level', f_disc => 'Any Discipline',
         f_sub => 'Any subdivision',
         f_reset => 'Reset', f_sort => 'Sort',
-        f_count => 'spells shown', f_none => 'No spell matches these filters.',
+        f_count => 'spells shown', f_count_one => 'spell shown', f_none => 'No spell matches these filters.',
         f_help => 'Click a column heading to sort by it.',
+        tree_h => 'The tree', tree_all => 'The whole catalogue',
+        tree_note => 'Pick a branch and the tables keep only it. Without JavaScript, each name goes to its own page.',
+        tree_core => 'Astronomy alone', tree_core_note => 'crosses no threshold',
+        f_in => 'in',
     },
     es => {
         title => 'Conjuros',
@@ -647,8 +651,12 @@ my %IDX = (
         f_disc => 'Cualquier Disciplina',
         f_sub => 'Cualquier subdivisi&oacute;n',
         f_reset => 'Limpiar', f_sort => 'Ordenar',
-        f_count => 'conjuros a la vista', f_none => 'Ning&uacute;n conjuro encaja con estos filtros.',
+        f_count => 'conjuros a la vista', f_count_one => 'conjuro a la vista', f_none => 'Ning&uacute;n conjuro encaja con estos filtros.',
         f_help => 'Pulsa en una cabecera de columna para ordenar por ella.',
+        tree_h => 'El &aacute;rbol', tree_all => 'Todo el cat&aacute;logo',
+        tree_note => 'Elige una rama y las tablas se quedan con ella. Sin JavaScript, cada nombre lleva a su p&aacute;gina.',
+        tree_core => 'Solo astronom&iacute;a', tree_core_note => 'no cruza umbral',
+        f_in => 'en',
     },
 );
 
@@ -678,31 +686,11 @@ sub row_icon {
     return qq{<img class="ic" width="24" src="$url" alt="">};
 }
 
-sub index_table {
-    my ($lang, $rows, $id) = @_;
-    my $i = $IDX{$lang};
-    # las columnas ordenables llevan la clave por la que ordenan
-    my @keys = ('name', 'level', 'discipline', '', '', '');
-    my $head = '';
-    for my $n (0 .. $#{ $i->{cols} }) {
-        my $k = $id ? ($keys[$n] // '') : '';
-        $head .= $k
-            ? qq{<th scope="col" data-sort="$k">$i->{cols}[$n]</th>}
-            : qq{<th scope="col">$i->{cols}[$n]</th>};
-    }
-    my $tid = $id ? qq{ id="$id"} : '';
-    return qq{<div class="tw">\n        <table class="spelltable"$tid>\n}
-         . qq{          <thead>\n            <tr>$head</tr>\n          </thead>\n}
-         . qq{          <tbody>\n} . join('', @$rows) . qq{          </tbody>\n}
-         . qq{        </table>\n      </div>\n};
-}
-
-# Barra de filtros del indice. Va oculta hasta que js/spell-filter.js la activa:
-# sin JavaScript la tabla sigue completa y ordenada por nivel.
+# Barra de filtros. Va oculta hasta que js/spell-filter.js la activa: sin
+# JavaScript las tablas salen completas y agrupadas por nivel, que ya sirve.
 sub filter_bar {
     my ($lang) = @_;
     my $i = $IDX{$lang};
-    my $t = $T{$lang};
 
     my $levels = qq{<option value="">$i->{f_level}</option>};
     for my $l (0 .. 9) {
@@ -728,20 +716,18 @@ sub filter_bar {
 
     return <<"HTML";
 <div class="spellfilter" id="spellfilter" hidden>
-        <label class="vh" for="sf-q">$i->{f_search}</label>
-        <input type="search" id="sf-q" placeholder="$i->{f_search}&hellip;" autocomplete="off">
-        <label class="vh" for="sf-level">$i->{f_level}</label>
-        <select id="sf-level">$levels</select>
-        <label class="vh" for="sf-discipline">$i->{f_disc}</label>
-        <select id="sf-discipline">$discs</select>
-        <label class="vh" for="sf-sub">$i->{f_sub}</label>
-        <select id="sf-sub">$subs</select>
-        <button type="button" id="sf-reset">$i->{f_reset}</button>
-        <p class="sf-count" id="sf-count" role="status" data-label="$i->{f_count}"></p>
-        <p class="sf-help">$i->{f_help}</p>
-      </div>
-      <p class="sf-empty" id="sf-empty" hidden>$i->{f_none}</p>
-
+          <label class="vh" for="sf-q">$i->{f_search}</label>
+          <input type="search" id="sf-q" placeholder="$i->{f_search}&hellip;" autocomplete="off">
+          <label class="vh" for="sf-level">$i->{f_level}</label>
+          <select id="sf-level">$levels</select>
+          <label class="vh" for="sf-discipline">$i->{f_disc}</label>
+          <select id="sf-discipline">$discs</select>
+          <label class="vh" for="sf-sub">$i->{f_sub}</label>
+          <select id="sf-sub">$subs</select>
+          <button type="button" id="sf-reset">$i->{f_reset}</button>
+          <p class="sf-count" id="sf-count" role="status" data-label="$i->{f_count}"></p>
+        </div>
+        <p class="sf-empty" id="sf-empty" hidden>$i->{f_none}</p>
 HTML
 }
 
@@ -750,8 +736,8 @@ sub render_index {
     my $t = $T{$lang};
     my $i = $IDX{$lang};
 
-    # Una sola tabla: los conjuros propios del suplemento y los que vienen del
-    # SRD van mezclados, porque aqui ya no se distinguen.
+    # Los conjuros propios del suplemento y los que vienen del SRD van
+    # mezclados, porque aqui ya no se distinguen.
     my @all;
     for my $s (read_lex()) {
         push @all, {
@@ -778,37 +764,103 @@ sub render_index {
         };
     }
 
-    my @rows;
-    for my $s (sort { $a->{level} <=> $b->{level} || $a->{sort} cmp $b->{sort} } @all) {
-        my $disc   = ent_es(disc_name($s->{disc}, $lang, 1));
-        my $skey   = ($s->{sub} && $s->{sub} ne '-') ? $s->{sub} : '';
-        my $sn     = sub_name($skey, $lang);
-        $disc .= ' &middot; ' . ent_es($sn) if $sn;
-        my $lvltxt = $s->{level} == 0 ? $i->{cantrips} : "$i->{lvl} $s->{level}";
-        # los data-* van en ingles: son claves, no texto visible
-        push @rows, sprintf(
-            qq{            <tr data-level="%d" data-discipline="%s" data-sub="%s" data-name="%s">
-}
-          . qq{              <td>%s<a href="./%s.html">%s</a></td>\n}
-          . qq{              <td class="lvl">%s</td>\n              <td>%s</td>\n}
-          . qq{              <td>%s</td>\n              <td>%s</td>\n}
-          . qq{              <td>%s</td>\n            </tr>\n},
-            $s->{level}, lc $s->{disc}, $skey, lc plain($s->{name}),
-            row_icon($s->{icon}), $s->{slug}, ent_es($s->{name}),
-            $lvltxt, $disc, $s->{casting}, $s->{range}, $s->{duration});
-    }
-    my $table = '      ' . filter_bar($lang) . '      '
-              . index_table($lang, \@rows, 'spelltable');
-
-    # El arbol: Astronomia, las tres Disciplinas y sus subdivisiones, con
-    # cuantos conjuros cuelgan de cada rama. Se cuenta desde @all, que ya
-    # lleva la Disciplina y la subdisciplina de los 302.
     my (%n_disc, %n_sub);
     for my $s (@all) {
         $n_disc{ lc $s->{disc} }++;
         $n_sub{ $s->{sub} }++ if $s->{sub} && $s->{sub} ne '-';
     }
-    my $total = scalar(@all) - ($n_disc{uncatalogued} // 0);
+    my $total = scalar @all;
+
+    # ------------------------------------------------------- el arbol lateral
+
+    my $max = 0;
+    for (values %n_disc, values %n_sub) { $max = $_ if $_ > $max }
+    $max ||= 1;
+    my $bar = sub {
+        my ($n) = @_;
+        my $pct = int(100 * $n / $max + .5);
+        my $z = $n ? '' : ' tb-zero';
+        return qq{<span class="tb-bar$z" aria-hidden="true"><i style="width:$pct%"></i></span>};
+    };
+    # Una rama: nombre, barra y recuento. El href es la pagina de la rama, de
+    # modo que sin JavaScript el arbol sigue siendo un indice navegable.
+    my $branch = sub {
+        my (%a) = @_;
+        my $cls = 'tb';
+        $cls .= " tb-$a{kind}" if $a{kind};
+        $cls .= ' tb-empty' unless $a{n};
+        my $d = defined $a{disc} ? qq{ data-disc="$a{disc}"} : '';
+        my $s = $a{sub} ? qq{ data-sub="$a{sub}"} : '';
+        my $note = $a{note} ? qq{ <span class="tb-note">$a{note}</span>} : '';
+        return qq{        <li><a class="$cls" href="./$a{href}"$d$s data-branch="$a{label}">}
+             . qq{<span class="tb-name">$a{label}$note</span>}
+             . $bar->($a{n}) . qq{<b class="tb-n">$a{n}</b></a></li>\n};
+    };
+
+    my $tree = qq{<nav class="treepanel" aria-label="$i->{tree_h}">\n}
+             . qq{        <h2>$i->{tree_h}</h2>\n        <p class="tree-note">$i->{tree_note}</p>\n}
+             . qq{        <ul>\n};
+    $tree .= $branch->(kind => 'all', href => 'spells.html', disc => '', n => $total,
+                       label => ent_es(ucfirst $TAXNAME{astronomy}{$lang}));
+    $tree .= $branch->(kind => 'core', href => 'index.html', disc => 'astronomy',
+                       n => $n_disc{astronomy} // 0, label => $i->{tree_core},
+                       note => $i->{tree_core_note});
+    for my $g (@SUBS_OF) {
+        my ($dk, $keys) = @$g;
+        my $dn = ent_es(ucfirst $TAXNAME{$dk}{$lang});
+        my $df = $dk eq 'uncatalogued' ? 'uncatalogued.html' : "$dk.html";
+        $tree .= $branch->(kind => 'disc', href => $df, disc => $dk,
+                           n => $n_disc{$dk} // 0, label => $dn);
+        for my $k (@$keys) {
+            my $n = $n_sub{$k} // 0;
+            next if $dk eq 'uncatalogued' && !$n;
+            my $kf = $dk eq 'uncatalogued' ? 'uncatalogued.html' : "$k.html";
+            $tree .= $branch->(kind => 'sub', href => $kf, disc => $dk, sub => $k,
+                               n => $n, label => ent_es(ucfirst sub_name($k, $lang)));
+        }
+    }
+    $tree .= qq{        </ul>\n      </nav>\n};
+
+    # ------------------------------------------------ una tabla por cada nivel
+
+    my %by;
+    push @{ $by{ $_->{level} } }, $_ for @all;
+    my @levels = sort { $a <=> $b } keys %by;
+    # sin columna de nivel: la seccion entera ya es un nivel
+    my @cols = @{ $i->{cols} };
+    splice @cols, 1, 1;
+    my $cols = join '', map { qq{<th scope="col">$_</th>} } @cols;
+
+    my $tables = '';
+    for my $l (@levels) {
+        my @s = sort { $a->{sort} cmp $b->{sort} } @{ $by{$l} };
+        my $n = scalar @s;
+        my $head = $l == 0 ? $i->{cantrips} : "$i->{lvl} $l";
+        my $rows = '';
+        for my $s (@s) {
+            my $disc = ent_es(disc_name($s->{disc}, $lang, 1));
+            my $skey = ($s->{sub} && $s->{sub} ne '-') ? $s->{sub} : '';
+            my $sn   = sub_name($skey, $lang);
+            $disc .= ' &middot; ' . ent_es($sn) if $sn;
+            # los data-* van en ingles: son claves, no texto visible
+            $rows .= sprintf(
+                qq{              <tr data-discipline="%s" data-sub="%s" data-name="%s">\n}
+              . qq{                <td>%s<a href="./%s.html">%s</a></td>\n}
+              . qq{                <td>%s</td>\n                <td>%s</td>\n}
+              . qq{                <td>%s</td>\n                <td>%s</td>\n              </tr>\n},
+                lc $s->{disc}, $skey, lc plain($s->{name}),
+                row_icon($s->{icon}), $s->{slug}, ent_es($s->{name}),
+                $disc, $s->{casting}, $s->{range}, $s->{duration});
+        }
+        $tables .= qq{        <section class="lvlsec" data-level="$l">\n}
+                 . qq{          <h2>$head <span class="lvlsec-n">&middot; <b>$n</b> }
+                 . ($n == 1 ? $i->{count_one} : $i->{count_many}) . qq{</span></h2>\n}
+                 . qq{          <div class="tw">\n            <table class="spelltable">\n}
+                 . qq{              <thead><tr>$cols</tr></thead>\n}
+                 . qq{              <tbody>\n$rows              </tbody>\n}
+                 . qq{            </table>\n          </div>\n        </section>\n};
+    }
+
     my $file = 'spells.html';
     my $out = page_head(lang => $lang, path => "pages/astronomy/$file", up => '../../../',
                         title => $i->{title}, desc => plain($t->{subtitle}));
@@ -822,15 +874,22 @@ sub render_index {
       <p class="spellkind">$i->{lead}</p>
     </header>
 
-    <section>
-      <p>$i->{intro}</p>
-      <p class="pagelink"><a href="./index.html">$i->{back_to_art}</a></p>
-$table    </section>
+    <div class="spellfinder">
+      $tree
+      <main class="findermain">
+        @{[ filter_bar($lang) ]}$tables      </main>
+    </div>
+
+    <p class="pagelink"><a href="./index.html">$i->{back_to_art}</a></p>
 
 HTML
     $out .= page_foot(up => '../../../', scripts => ['wiki-api.js', 'spell-filter.js']);
     return ($file, $out);
 }
+
+# Barra de filtros del indice. Va oculta hasta que js/spell-filter.js la activa:
+# sin JavaScript la tabla sigue completa y ordenada por nivel.
+
 
 sub ent_es {
     my $s = h(shift // '');

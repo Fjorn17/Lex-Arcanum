@@ -3100,55 +3100,6 @@
         margin-bottom: 0;
     }
 
-    /* ---- el arbol como filtro (js/spell-filter.js) ---- */
-
-    ul.disctree a.tb {
-        display: flex;
-        align-items: baseline;
-        gap: 10px;
-        padding: 3px 8px 3px 6px;
-        border-left: 2px solid transparent;
-        text-decoration: none;
-        color: var(--link);
-    }
-
-    ul.disctree a.tb:hover {
-        background: var(--panel-2);
-        border-left-color: var(--rule);
-    }
-
-    ul.disctree a.tb.here {
-        background: rgba(0, 168, 232, .1);
-        border-left-color: var(--accent);
-        color: var(--head);
-    }
-
-    ul.disctree a.tb b { color: var(--white) }
-    ul.disctree a.tb.here b { color: var(--head) }
-    ul.disctree a.tb i { margin-left: auto }
-    ul.disctree a.tb.tb-empty { color: var(--muted) }
-
-    .tb-bar {
-        flex: 0 0 46px;
-        height: 4px;
-        background: var(--panel-3);
-        display: block;
-        align-self: center;
-    }
-
-    .tb-bar i {
-        display: block;
-        height: 100%;
-        background: var(--rule);
-        margin: 0;
-    }
-
-    a.tb:hover .tb-bar i,
-    a.tb.here .tb-bar i { background: var(--accent) }
-
-    @media (max-width:600px) {
-        .tb-bar { display: none }
-    }
 
     .diagram-wrap.solo {
         grid-template-columns: minmax(0, 1fr);
@@ -3161,4 +3112,169 @@
         fill: var(--text);
         font-size: 11.5px;
         text-anchor: middle;
+    }
+
+    /* ===================== el buscador: arbol + tablas por nivel ============ */
+
+    .spellfinder {
+        display: grid;
+        grid-template-columns: 268px minmax(0, 1fr);
+        gap: 28px;
+        align-items: start;
+        margin-top: 22px;
+    }
+
+    @media (max-width:900px) {
+        .spellfinder {
+            grid-template-columns: minmax(0, 1fr);
+        }
+    }
+
+    /* ---- el arbol lateral ---- */
+
+    .treepanel {
+        position: sticky;
+        top: 18px;
+        background: var(--panel);
+        border: 1px solid var(--rule);
+        border-radius: 3px;
+        padding: 14px 0 8px;
+        max-height: calc(100vh - 36px);
+        overflow-y: auto;
+    }
+
+    .treepanel h2 {
+        font-family: var(--display);
+        font-size: .72rem;
+        letter-spacing: .18em;
+        text-transform: uppercase;
+        color: var(--white);
+        margin: 0 14px 6px;
+    }
+
+    .tree-note {
+        margin: 0 14px 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--rule);
+        font-size: .78rem;
+        color: var(--muted);
+        line-height: 1.45;
+    }
+
+    .treepanel ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    a.tb {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 4px 14px 4px 11px;
+        border-left: 3px solid transparent;
+        text-decoration: none;
+        color: var(--text);
+        font-size: .88rem;
+    }
+
+    a.tb:hover { background: var(--panel-2) }
+
+    a.tb.here {
+        background: rgba(0, 168, 232, .12);
+        border-left-color: var(--accent);
+    }
+
+    .tb-name {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .tb-note {
+        display: block;
+        font-size: .74rem;
+        color: var(--muted);
+    }
+
+    .tb-n {
+        flex: 0 0 auto;
+        min-width: 1.8em;
+        text-align: right;
+        font-family: var(--display);
+        font-size: .82rem;
+        color: var(--text);
+        font-weight: 600;
+    }
+
+    /* Los tres niveles del arbol se distinguen por peso, no por sangria sola. */
+    a.tb-all,
+    a.tb-disc {
+        font-family: var(--display);
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-size: .78rem;
+        color: var(--white);
+        margin-top: 10px;
+        padding-top: 7px;
+        border-top: 1px solid var(--rule);
+    }
+
+    a.tb-all { margin-top: 0; border-top: 0 }
+    a.tb-all .tb-n, a.tb-disc .tb-n { color: var(--white) }
+    a.tb-core { padding-left: 11px }
+    a.tb-sub { padding-left: 26px }
+    a.tb-empty, a.tb-empty .tb-n { color: var(--muted) }
+    a.tb.here, a.tb.here .tb-n { color: var(--head) }
+
+    .tb-bar {
+        flex: 0 0 58px;
+        height: 3px;
+        background: var(--panel-3);
+        display: block;
+    }
+
+    .tb-bar i {
+        display: block;
+        height: 100%;
+        background: var(--rule);
+    }
+
+    a.tb:hover .tb-bar i,
+    a.tb.here .tb-bar i { background: var(--accent) }
+
+    /* un cero se dibuja punteado: se ve que la rama existe y esta vacia */
+    .tb-bar.tb-zero {
+        background: none;
+        border-bottom: 1px dotted var(--hair);
+        height: 0;
+        align-self: center;
+    }
+
+    /* ---- las tablas por nivel ---- */
+
+    .lvlsec {
+        margin: 0 0 26px;
+    }
+
+    .lvlsec h2 {
+        font-family: var(--display);
+        font-size: .78rem;
+        letter-spacing: .16em;
+        text-transform: uppercase;
+        color: var(--head);
+        margin: 0 0 8px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid var(--rule);
+    }
+
+    .lvlsec-n {
+        color: var(--muted);
+        letter-spacing: .08em;
+    }
+
+    .lvlsec-n b { color: var(--text) }
+
+    /* La barra de filtros deja de flotar sobre la tabla: encabeza la columna. */
+    .findermain .spellfilter {
+        margin-bottom: 18px;
     }
