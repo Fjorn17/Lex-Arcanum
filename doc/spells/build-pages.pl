@@ -1,10 +1,10 @@
 #!/usr/bin/perl
 # Genera las paginas de conjuro de en/pages/astronomy/ y es/pages/astronomy/, y
-# el indice de esa carpeta, que lleva el arbol de Disciplinas arriba y la tabla
-# filtrable de los 302 conjuros debajo. Las paginas de Disciplina las escribe
-# build-disciplines.pl, en esa misma carpeta.
+# spells.html, que es el buscador: la barra de filtros y la tabla entera. La
+# portada de la seccion (index.html, con el diagrama) y las paginas de
+# Disciplina las escribe build-disciplines.pl, en esa misma carpeta.
 #
-#   perl build-pages.pl            # escribe las paginas y los dos indices
+#   perl build-pages.pl            # escribe las paginas de conjuro y spells.html
 #   perl build-pages.pl --dry      # solo dice que escribiria
 #
 # Entradas (todas en este directorio):
@@ -439,14 +439,17 @@ sub disc_link {
              . ($lang eq 'es' ? 'Descatalogado' : 'Uncatalogued') . qq{</a>};
     }
     my $dkey = lc $spell->{discipline};
-    my $out  = qq{<a href="./$dkey.html">}
+    # la astronomia es la portada de la seccion, asi que su archivo es index
+    my $dfile = $dkey eq 'astronomy' ? 'index.html' : "$dkey.html";
+    my $out  = qq{<a href="./$dfile">}
              . ent_es(disc_name($spell->{discipline}, $lang, 1)) . qq{</a>};
     my $skey = $SUBOF{ $spell->{name} } // '';
     my $sn   = sub_name($skey, $lang);
     $out .= qq{ &rsaquo; <a href="./$skey.html">} . ent_es($sn) . qq{</a>} if $sn;
     # el segundo umbral, cuando lo hay
     if (my $x = $CROSS{ $spell->{name} }) {
-        $out .= ' + <a href="./' . $x . '.html">'
+        my $xf = $x eq 'astronomy' ? 'index.html' : "$x.html";
+        $out .= ' + <a href="./' . $xf . '">'
               . ent_es(disc_name(ucfirst $x, $lang)) . '</a>';
     }
     return $out;
@@ -604,8 +607,9 @@ HTML
 
 my %IDX = (
     en => {
-        title => 'Astronomy',
-        lead => 'The whole art: its Disciplines, and every spell that comes out of them',
+        title => 'Spells',
+        lead => 'Every spell of the supplement: search it, filter it, sort it',
+        back_to_art => '&larr; The art, its Disciplines and the diagram',
         tree_art => 'the Ether worked as Ether, and everything it contains.',
         all_h => 'Every spell', count_one => 'spell', count_many => 'spells',
         tree_unc => 'what hangs from no Discipline, and why.',
@@ -624,8 +628,9 @@ my %IDX = (
         f_help => 'Click a column heading to sort by it.',
     },
     es => {
-        title => 'Astronom&iacute;a',
-        lead => 'El arte entero: sus Disciplinas y todos los conjuros que salen de ellas',
+        title => 'Conjuros',
+        lead => 'Todos los conjuros del suplemento: buscar, filtrar y ordenar',
+        back_to_art => '&larr; El arte, sus Disciplinas y el diagrama',
         tree_art => 'el &Eacute;ter trabajado como &Eacute;ter, y cuanto contiene.',
         all_h => 'Todos los conjuros', count_one => 'conjuro', count_many => 'conjuros',
         tree_unc => 'lo que no cuelga de ninguna Disciplina, y por qu&eacute;.',
@@ -804,62 +809,7 @@ sub render_index {
         $n_sub{ $s->{sub} }++ if $s->{sub} && $s->{sub} ne '-';
     }
     my $total = scalar(@all) - ($n_disc{uncatalogued} // 0);
-    my $word = sub { $_[0] == 1 ? $i->{count_one} : $i->{count_many} };
-    # Cada rama del arbol es un filtro de la tabla de abajo, no solo un enlace:
-    # los data-* los lee js/spell-filter.js. Sin JavaScript siguen siendo los
-    # enlaces a la pagina de cada rama, que es lo que eran antes.
-    my $max = 0;
-    for (values %n_disc) { $max = $_ if $_ > $max }
-    for (values %n_sub)  { $max = $_ if $_ > $max }
-    $max ||= 1;
-    my $bar = sub {
-        my ($n) = @_;
-        my $pct = int(100 * $n / $max + .5);
-        return qq{<span class="tb-bar" aria-hidden="true"><i style="width:$pct%"></i></span>};
-    };
-
-    my $tree = qq{<ul class="disctree">\n}
-             . qq{        <li><a class="tb" href="./astronomy.html" data-branch="}
-             . ent_es($lang eq 'es' ? 'Todo el cat&aacute;logo' : 'The whole catalogue')
-             . qq{"><b>} . ent_es($TAXNAME{astronomy}{$lang}) . qq{</b> &mdash; $i->{tree_art} }
-             . qq{<i>$total @{[ $word->($total) ]}</i></a>\n          <ul>\n};
-    for my $g (@SUBS_OF) {
-        my ($dk, $keys) = @$g;
-        next if $dk eq 'uncatalogued';   # va fuera del arbol: no es del arte
-        my $dn = ent_es(ucfirst $TAXNAME{$dk}{$lang});
-        my $dc = $n_disc{$dk} // 0;
-        $tree .= qq{            <li><a class="tb" href="./$dk.html" data-disc="$dk" data-branch="$dn">}
-               . qq{<b>$dn</b> <i>$dc @{[ $word->($dc) ]}</i>@{[ $bar->($dc) ]}</a>\n              <ul>\n};
-        for my $k (@$keys) {
-            my $c = $n_sub{$k} // 0;
-            my $kn = ent_es(ucfirst $TAXNAME{$k}{$lang});
-            my $z = $c ? '' : ' tb-empty';
-            $tree .= qq{                <li><a class="tb$z" href="./$k.html" data-disc="$dk" data-sub="$k" }
-                   . qq{data-branch="$dn &middot; $kn">$kn <i>$c</i>@{[ $bar->($c) ]}</a></li>\n};
-        }
-        $tree .= qq{              </ul>\n            </li>\n};
-    }
-    $tree .= qq{          </ul>\n        </li>\n};
-    # Los descatalogados cuelgan del arbol pero no de la astronomia: van al
-    # mismo nivel que ella, porque no son parte del arte.
-    {
-        my $uc = $n_disc{uncatalogued} // 0;
-        my $un = ent_es($TAXNAME{uncatalogued}{$lang});
-        $tree .= qq{        <li class="outside"><a class="tb" href="./uncatalogued.html" }
-               . qq{data-disc="uncatalogued" data-branch="$un"><b>$un</b> &mdash; $i->{tree_unc} }
-               . qq{<i>$uc @{[ $word->($uc) ]}</i></a>\n          <ul>\n};
-        for my $b (@BUCKETS) {
-            my $c = $n_sub{$b} // 0;
-            next unless $c;
-            my $bn = ent_es(ucfirst sub_name($b, $lang));
-            $tree .= qq{            <li><a class="tb" href="./uncatalogued.html" data-disc="uncatalogued" }
-                   . qq{data-sub="$b" data-branch="$un &middot; $bn">$bn <i>$c</i>@{[ $bar->($c) ]}</a></li>\n};
-        }
-        $tree .= qq{          </ul>\n        </li>\n};
-    }
-    $tree .= qq{      </ul>\n};
-
-    my $file = 'index.html';
+    my $file = 'spells.html';
     my $out = page_head(lang => $lang, path => "pages/astronomy/$file", up => '../../../',
                         title => $i->{title}, desc => plain($t->{subtitle}));
     $out .= qq{\n<body>\n  <div class="spellpage">\n\n};
@@ -874,11 +824,7 @@ sub render_index {
 
     <section>
       <p>$i->{intro}</p>
-      $tree
-    </section>
-
-    <section>
-      <h2>$i->{all_h}</h2>
+      <p class="pagelink"><a href="./index.html">$i->{back_to_art}</a></p>
 $table    </section>
 
 HTML
@@ -906,9 +852,13 @@ for my $lang (qw(en es)) {
     # archivo viejo atras), sin tocar los siete escritos a mano.
     if ($CLEAN && !$DRY) {
         my %keep = map { ("$_.html" => 1) } @A_MANO;
-        $keep{'index.html'} = 1;
+        $keep{'index.html'} = 1;      # la portada: la escribe build-disciplines.pl
+        $keep{'spells.html'} = 1;
         $keep{ spell_slug($_->{name}) . '.html' } = 1 for @EN;
-        $keep{"$_->{key}.html"} = 1 for @$TAX;
+        for my $n (@$TAX) {
+            next if $n->{key} eq 'astronomy';   # esa es index.html, ya listada
+            $keep{"$n->{key}.html"} = 1;
+        }
         for my $f (glob "$dir/*.html") {
             my ($base) = $f =~ m{([^/\\]+)$};
             next if $keep{$base};
@@ -928,4 +878,5 @@ for my $lang (qw(en es)) {
     print $fh $ihtml;
     close $fh;
 }
-printf STDERR "%d conjuros x 2 idiomas, mas los dos indices\n", scalar(@EN);
+printf STDERR "%d conjuros x 2 idiomas, mas spells.html en los dos idiomas
+", scalar(@EN);

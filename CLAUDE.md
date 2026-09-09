@@ -52,8 +52,8 @@ sistema de magia, conjuros nuevos, daños fijados— y volver a pasarle `extract
 borraría todas. Trátalo como fuente, no como salida.
 
 **Las páginas de conjuros no se editan a mano: se generan.** Todo `en/pages/astronomy/*.html` y
-`es/pages/astronomy/*.html` (menos las 31 páginas de Disciplina y los siete conjuros propios) sale de
-`perl doc/spells/build-pages.pl` (con `--limpiar` para retirar los archivos que ya no genera nadie, por ejemplo tras renombrar un conjuro; nunca borres la carpeta entera, porque **los siete conjuros propios son HTML a mano y no se regeneran**). Si hay que cambiar el texto de un conjuro, se cambia el dato y se
+`es/pages/astronomy/*.html` (menos la portada, las 30 páginas de Disciplina y los siete propios) sale de
+`perl doc/spells/build-pages.pl` (que además escribe `spells.html`, el buscador; con `--limpiar` para retirar los archivos que ya no genera nadie, por ejemplo tras renombrar un conjuro; nunca borres la carpeta entera, porque **los siete conjuros propios son HTML a mano y no se regeneran**). Si hay que cambiar el texto de un conjuro, se cambia el dato y se
 vuelve a generar:
 
 | Qué cambiar | Dónde |
@@ -74,7 +74,7 @@ vuelve a generar:
 | Molde de las Disciplinas | `doc/spells/build-disciplines.pl` |
 | Cabecera, menú y pie de los dos generadores | `doc/spells/paginas.pl` |
 
-**Las páginas de Disciplina tampoco se editan a mano.** Las 30 de cada idioma salen, dentro de esa misma carpeta, de
+**Las páginas de Disciplina tampoco se editan a mano.** La portada de la sección (`index.html`, con el diagrama) y las 30 de cada idioma salen, dentro de esa misma carpeta, de
 `perl doc/spells/build-disciplines.pl`, que lee el árbol de `taxonomia.pl` y reparte los conjuros según
 `disciplinas.txt` y `subdisciplinas.txt`. La astronomía no tiene subdivisiones propias: sus subdivisiones
 **son** las otras tres Disciplinas, y por eso su página lista sus conjuros y enlaza a ellas.

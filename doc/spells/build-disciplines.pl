@@ -3,8 +3,9 @@
 # espanol: una por Disciplina y una por cada subdisciplina, con su doctrina, su
 # catalogo de Estrellas y los conjuros que le corresponden.
 #
-# El indice de esa carpeta NO lo escribe este script: lo escribe build-pages.pl,
-# porque en la misma pagina van el arbol de Disciplinas y la tabla de conjuros.
+# La portada de la seccion (index.html) es la pagina de la astronomia: el
+# diagrama, la doctrina plegada y sus conjuros. El buscador va aparte, en
+# spells.html, y lo escribe build-pages.pl.
 #
 #   perl build-disciplines.pl          # escribe
 #   perl build-disciplines.pl --dry    # solo cuenta
@@ -118,7 +119,7 @@ my %T = (
         count_one => 'spell', count_many => 'spells',
         idx_lead => 'The four Disciplines of the art, and how the catalogue divides inside them',
         back => 'Back to the Disciplines',
-        all_spells => 'Every spell, in one table',
+        all_spells => 'Search every spell &rarr;',
         toc_label => 'The doctrine', open_all => 'Open all', close_all => 'Collapse',
     },
     es => {
@@ -134,7 +135,7 @@ my %T = (
         count_one => 'conjuro', count_many => 'conjuros',
         idx_lead => 'Las cuatro Disciplinas del arte, y c&oacute;mo se divide el cat&aacute;logo dentro de cada una',
         back => 'Volver a las Disciplinas',
-        all_spells => 'Todos los conjuros, en una tabla',
+        all_spells => 'Buscar entre todos los conjuros &rarr;',
         toc_label => 'La doctrina', open_all => 'Abrir todo', close_all => 'Plegar',
     },
 );
@@ -152,6 +153,10 @@ sub nm { my ($n, $lang) = @_; return ent_es($n->{name}{$lang}) }
 # ------------------------------------------------------------------- consultas
 
 sub children { my ($key) = @_; return grep { ($_->{parent} // '') eq $key } @$TAX }
+
+# La astronomia es la portada de la seccion: la pestana del menu aterriza en
+# ella, asi que su archivo es index.html y no astronomy.html.
+sub node_file { my ($key) = @_; return $key eq 'astronomy' ? 'index.html' : "$key.html" }
 
 # Los conjuros de un nodo. Una Disciplina lista los suyos que no bajan a
 # ninguna subdivision; Astronomia lista todos los suyos, porque no tiene.
@@ -479,7 +484,9 @@ sub doctrine {
     for my $s (@secs) {
         $i++;
         my $n = sprintf '%02d', $i;
-        $out .= qq{          <details class="sec" id="$s->{id}" open>\n}
+        # cerradas de serie: la pagina es primero el diagrama, y la doctrina
+        # se abre cuando alguien la quiere
+        $out .= qq{          <details class="sec" id="$s->{id}">\n}
               . qq{            <summary><h2>$s->{title}</h2><span class="sec-n">$n</span></summary>\n}
               . qq{            <div class="sec-body">\n              }
               . join("\n              ", @{ $s->{body} })
@@ -496,8 +503,10 @@ sub crumb {
     my $p = $node->{parent};
     while ($p) { unshift @up, $NODE{$p}; $p = $NODE{$p}{parent} }
     return '' unless @up;
-    return join(' &rsaquo; ', (map { qq{<a href="./$_->{key}.html">} . nm($_, $lang) . '</a>' } @up),
-                nm($node, $lang));
+    return join(' &rsaquo; ',
+        (map { my $f = node_file($_->{key});
+               qq{<a href="./$f">} . nm($_, $lang) . '</a>' } @up),
+        nm($node, $lang));
 }
 
 # Una tabla por nivel de conjuro, no una sola tabla larga: dentro de una
@@ -559,7 +568,8 @@ sub kids_list {
     for my $c (@k) {
         my $n = spell_count($c);
         my $word = $n == 1 ? $t->{count_one} : $t->{count_many};
-        $out .= qq{            <li><b><a href="./$c->{key}.html">} . nm($c, $lang)
+        my $f = node_file($c->{key});
+        $out .= qq{            <li><b><a href="./$f">} . nm($c, $lang)
               . qq{</a></b> &mdash; $c->{lead}{$lang}. <i>$n $word</i></li>\n};
     }
     return $out . qq{          </ul>\n};
@@ -570,7 +580,7 @@ sub kids_list {
 sub render_node {
     my ($node, $lang) = @_;
     my $t = $T{$lang};
-    my $file = "$node->{key}.html";
+    my $file = node_file($node->{key});
     my $path = "pages/astronomy/$file";
 
     # La astronomia lleva su doctrina plegada, con indice al lado; las demas
@@ -642,6 +652,7 @@ HTML
         <section>
           <h2>$t->{spells}</h2>
           @{[ spell_table(\@mine, $lang) ]}
+          <p class="pagelink"><a href="./spells.html">$t->{all_spells}</a></p>
         </section>
 HTML
     }
