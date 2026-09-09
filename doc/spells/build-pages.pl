@@ -1,5 +1,8 @@
 #!/usr/bin/perl
-# Genera en/pages/spells/ y es/pages/spells/ a partir de los datos del SRD 5.2.1.
+# Genera las paginas de conjuro de en/pages/astronomy/ y es/pages/astronomy/, y
+# el indice de esa carpeta, que lleva el arbol de Disciplinas arriba y la tabla
+# filtrable de los 302 conjuros debajo. Las paginas de Disciplina las escribe
+# build-disciplines.pl, en esa misma carpeta.
 #
 #   perl build-pages.pl            # escribe las paginas y los dos indices
 #   perl build-pages.pl --dry      # solo dice que escribiria
@@ -7,10 +10,22 @@
 # Entradas (todas en este directorio):
 #   srd-en.txt       conjuros del SRD, texto original (lo saca extract-srd.pl)
 #   srd-es.txt       los mismos conjuros traducidos; puede estar incompleto
+#   disciplinas.txt  nombre SRD <TAB> Disciplina; obligatorio para todos
+#   descatalogados.txt  los que no cuelgan de ninguna Disciplina: si tienen pagina
+#   lex-conjuros.txt los conjuros propios, para el indice
 #   nombres-es.txt   glosario nombre SRD <TAB> nombre del Manual del Jugador
 #   iconos-bg3.txt   nombre SRD <TAB> URL del icono en bg3.wiki (los que hay)
 #   magister.txt     conjuros de la lista del Magistrado, uno por linea
 #   tablas/<slug>.<lang>.html   fragmentos a mano de los conjuros con tabla
+#
+# CUIDADO al limpiar pages/astronomy/: los siete conjuros propios del suplemento
+# son HTML a mano y NO se regeneran. Estan listados en @A_MANO; borrarlos sin
+# querer cuesta recuperarlos de git y volver a adaptarlos.
+#
+# Aqui ya no se distingue entre conjuros del SRD y conjuros propios: todos son
+# de Lex Arcanum, y lo que los clasifica es la Disciplina, no la escuela ni la
+# clase que los lleve. La atribucion del SRD, que la licencia CC BY exige, esta
+# en el pie legal de todas las paginas.
 #
 # El molde de pagina es el de doc/redaccion.md (7 bis). El orden de las secciones
 # y de las claves de la ficha no es opcional.
@@ -22,6 +37,8 @@ use File::Path qw(make_path);
 
 BEGIN { chdir dirname($0) or die $! }
 require './lib.pl';
+require './paginas.pl';
+load_names();
 
 binmode(STDERR, ':encoding(UTF-8)');
 my $DRY = grep { $_ eq '--dry' } @ARGV;
@@ -29,16 +46,15 @@ my $ROOT = '../..';
 
 # ---------------------------------------------------------------- vocabulario
 
-my %SCHOOL_ES = (
-    Abjuration    => 'abjuración',   Conjuration  => 'conjuración',
-    Divination    => 'adivinación',  Enchantment  => 'encantamiento',
-    Evocation     => 'evocación',    Illusion     => 'ilusionismo',
-    Necromancy    => 'nigromancia',  Transmutation=> 'transmutación',
+# Las cuatro Disciplinas sustituyen a las ocho escuelas de D&D. Astronomia no
+# es una Disciplina mas: es el Eter trabajado como Eter, el fondo del arte. Se
+# lista con las otras tres porque una ficha necesita una sola casilla.
+my %DISC_ES = (
+    Astronomy => 'astronomía', Alchemy   => 'alquimia',
+    Cosmology => 'cosmología', Spiritism => 'espiritismo',
+    Uncatalogued => 'descatalogados',
 );
-my %CLASS_ES = (
-    Bard => 'bardo', Cleric => 'clérigo', Druid => 'druida', Paladin => 'paladín',
-    Ranger => 'explorador', Sorcerer => 'hechicero', Warlock => 'brujo', Wizard => 'mago',
-);
+my @DISC_ORDER = qw(Astronomy Alchemy Cosmology Spiritism Uncatalogued);
 my %ABILITY_ES = (
     Strength => 'Fuerza', Dexterity => 'Destreza', Constitution => 'Constitución',
     Intelligence => 'Inteligencia', Wisdom => 'Sabiduría', Charisma => 'Carisma',
@@ -50,11 +66,11 @@ my $DMG_RE = join '|', @DMG;
 my %T = (
     en => {
         spells => 'Spells', spell => 'Spell', level => 'Level', cantrip => 'Cantrip',
-        school => 'School', casting => 'Casting time', range => 'Range',
-        duration => 'Duration', components => 'Components', origin => 'Origin',
+        discipline => 'Discipline', casting => 'Casting time', range => 'Range',
+        duration => 'Duration', components => 'Components',
         save => 'Saving throw', damage => 'Damage', attack => 'Attack',
         none => 'None', name_col => 'Name',
-        desc => 'Description', higher => 'At higher levels', howto => 'How to learn',
+        desc => 'Description', higher => 'At higher levels',
         notes => 'Notes', icon_ph => 'icon',
         action => 'Action', bonus => 'Bonus Action', reaction => 'Reaction',
         ritual => 'Ritual', conc => 'Concentration',
@@ -63,20 +79,15 @@ my %T = (
         instantaneous => 'Instantaneous',
         ranged_attack => 'Ranged spell attack', melee_attack => 'Melee spell attack',
         half => 'half damage on a success',
-        srd => 'SRD 5.2.1',
-        ibfoot => 'Text adapted from the System Reference Document 5.2.1, '
-                . 'licensed under CC BY 4.0.',
-        howto_lead => 'Classes whose spell list includes this spell:',
-        subtitle => 'Spells of the System Reference Document 5.2.1, plus the '
-                  . 'original spells written for Lex Arcanum.',
+        subtitle => 'Every spell of Lex Arcanum, by Discipline and level.',
     },
     es => {
         spells => 'Conjuros', spell => 'Conjuro', level => 'Nivel', cantrip => 'Truco',
-        school => 'Escuela', casting => 'Tiempo de lanzamiento', range => 'Alcance',
-        duration => 'Duración', components => 'Componentes', origin => 'Origen',
+        discipline => 'Disciplina', casting => 'Tiempo de lanzamiento', range => 'Alcance',
+        duration => 'Duración', components => 'Componentes',
         save => 'Tirada de salvación', damage => 'Daño', attack => 'Ataque',
         none => 'Ninguna', name_col => 'Nombre',
-        desc => 'Descripción', higher => 'A niveles superiores', howto => 'Cómo se aprende',
+        desc => 'Descripción', higher => 'A niveles superiores',
         notes => 'Notas', icon_ph => 'icono',
         action => 'Acción', bonus => 'Acción adicional', reaction => 'Reacción',
         ritual => 'Ritual', conc => 'Concentración',
@@ -85,12 +96,7 @@ my %T = (
         instantaneous => 'Instantáneo',
         ranged_attack => 'Ataque de conjuro a distancia', melee_attack => 'Ataque de conjuro cuerpo a cuerpo',
         half => 'mitad de daño si la supera',
-        srd => 'SRD 5.2.1',
-        ibfoot => 'Texto adaptado del System Reference Document 5.2.1, '
-                . 'con licencia CC BY 4.0.',
-        howto_lead => 'Clases que tienen este conjuro en su lista:',
-        subtitle => 'Los conjuros del System Reference Document 5.2.1 y los '
-                  . 'conjuros originales de Lex Arcanum.',
+        subtitle => 'Todos los conjuros de Lex Arcanum, por Disciplina y nivel.',
     },
 );
 
@@ -108,7 +114,49 @@ sub icon { my ($k, $w) = @_; $w //= 18;
 # ------------------------------------------------------------------- entradas
 
 # La traduccion se escribe por tandas en es/NN.txt y se junta aqui.
+my %DISC = read_map('disciplinas.txt');
+my %SUBOF = read_map('subdisciplinas.txt');
+
+# El arbol de Disciplinas, para poder enlazar la ficha con su pagina.
+my $TAX = do './taxonomia.pl';
+die "taxonomia.pl: $@ $!\n" unless ref $TAX eq 'ARRAY';
+my %TAXNAME = map { $_->{key} => $_->{name} } @$TAX;
+my @SUBS_OF;                        # subdisciplinas por Disciplina, en orden
+{
+    my %seen;
+    for my $n (@$TAX) {
+        next unless $n->{kind} eq 'sub';
+        push @{ $seen{ $n->{parent} } }, $n->{key};
+    }
+    @SUBS_OF = map { [ $_, $seen{$_} ] } grep { $seen{$_} } qw(alchemy cosmology spiritism);
+    push @SUBS_OF, [ 'uncatalogued', [ qw(none summon poison chromatic resurrection) ] ];
+}
+# Los descatalogados tienen pagina y salen en el indice: lo que no tienen es
+# Disciplina. Cada uno lleva escrito por que esta fuera.
+my %UNC;
+{
+    open(my $fh, '<:encoding(UTF-8)', 'descatalogados.txt') or die $!;
+    while (<$fh>) { s/\r?\n$//; next if /^#/ || !/\S/;
+                    my ($n, $bucket, $en, $es) = split /\t/;
+                    $UNC{$n} = { bucket => $bucket, why => { en => $en, es => $es } } }
+    close $fh;
+}
+my @BUCKETS = qw(none summon poison chromatic resurrection);
+
+# Los siete conjuros propios son HTML a mano y no salen de aqui. Se listan para
+# que --limpiar no se los lleve por delante.
+my @A_MANO = qw(arcane-thrust gravitational-pull bound-weapon chains-of-custody
+                magic-armor ravaging-cleave magic-contract);
+
+# Un conjuro puede cruzar un segundo umbral (Reglas 6.4): la cima del arte.
+my %CROSS = -e 'cruces.txt' ? read_map('cruces.txt') : ();
+
 my @EN = read_spells('srd-en.txt');
+for my $s (@EN) {
+    if (my $u = $UNC{ $s->{name} }) { $s->{unc} = $u; next }
+    $s->{discipline} = $DISC{ $s->{name} }
+        or die "sin Disciplina en disciplinas.txt: $s->{name}\n";
+}
 my @ES = map { read_spells($_) } sort glob('es/*.txt');
 my %ES  = map { $_->{key} // $_->{name} => $_ } @ES;
 my %NAME_ES = read_map('nombres-es.txt');
@@ -314,6 +362,7 @@ sub duration_html {
     my $s = $du;
     if ($lang eq 'es') {
         $s =~ s/^Concentration, up to /Concentración, hasta /;
+        $s =~ s/^Up to /Hasta /;
         $s =~ s/^Instantaneous$/Instantáneo/;
         $s =~ s/^Until dispelled$/Hasta que se disipe/;
         $s =~ s/^Until dispelled or triggered$/Hasta que se disipe o se active/;
@@ -357,131 +406,79 @@ sub damage_line {
     return join ' &middot; ', map { dmg_tag('', $_, $lang) } @types;
 }
 
+sub disc_name {
+    my ($disc, $lang, $upper) = @_;
+    my $s = $lang eq 'es' ? $DISC_ES{$disc} : lc $disc;
+    return $upper ? ucfirst $s : $s;
+}
+
+# Las tablas de descatalogados no son subdisciplinas, pero ocupan su sitio en
+# la ficha y en el filtro, asi que se nombran aqui.
+my %BUCKET_NAME = (
+    none         => { en => 'no Discipline',  es => 'sin Disciplina' },
+    summon       => { en => 'summoning',      es => 'invocaci&oacute;n' },
+    poison       => { en => 'poison',         es => 'veneno' },
+    chromatic    => { en => 'chromatic',      es => 'crom&aacute;tico' },
+    resurrection => { en => 'undoing death',  es => 'deshacer la muerte' },
+);
+
+sub sub_name {
+    my ($key, $lang) = @_;
+    return unless $key && $key ne '-';
+    return $BUCKET_NAME{$key}{$lang} if $BUCKET_NAME{$key};
+    return unless $TAXNAME{$key};
+    return $TAXNAME{$key}{$lang};
+}
+
+# La casilla de Disciplina de la ficha: enlaza a la Disciplina y, si el conjuro
+# baja a una subdisciplina, tambien a ella.
+sub disc_link {
+    my ($spell, $lang) = @_;
+    if ($spell->{unc}) {
+        return qq{<a href="./uncatalogued.html">}
+             . ($lang eq 'es' ? 'Descatalogado' : 'Uncatalogued') . qq{</a>};
+    }
+    my $dkey = lc $spell->{discipline};
+    my $out  = qq{<a href="./$dkey.html">}
+             . ent_es(disc_name($spell->{discipline}, $lang, 1)) . qq{</a>};
+    my $skey = $SUBOF{ $spell->{name} } // '';
+    my $sn   = sub_name($skey, $lang);
+    $out .= qq{ &rsaquo; <a href="./$skey.html">} . ent_es($sn) . qq{</a>} if $sn;
+    # el segundo umbral, cuando lo hay
+    if (my $x = $CROSS{ $spell->{name} }) {
+        $out .= ' + <a href="./' . $x . '.html">'
+              . ent_es(disc_name(ucfirst $x, $lang)) . '</a>';
+    }
+    return $out;
+}
+
 sub level_line {
     my ($spell, $lang) = @_;
     my $t = $T{$lang};
-    my $school = $lang eq 'es' ? $SCHOOL_ES{ $spell->{school} } : lc $spell->{school};
-    return $spell->{level} == 0 ? "$t->{cantrip}, $school" : "$spell->{level}, $school";
+    my $disc = disc_name($spell->{discipline}, $lang);
+    return $spell->{level} == 0 ? "$t->{cantrip}, $disc" : "$spell->{level}, $disc";
 }
 
 sub kind_line {
     my ($spell, $lang) = @_;
     my $t = $T{$lang};
-    my $school = $lang eq 'es' ? ucfirst $SCHOOL_ES{ $spell->{school} } : $spell->{school};
     my $lvl = $spell->{level} == 0 ? $t->{cantrip} : "$t->{level} $spell->{level}";
-    return "$lvl &middot; $school &middot; $t->{srd}";
-}
-
-sub classes_list {
-    my ($spell, $lang) = @_;
-    return map { s/^\s+|\s+$//gr } split /,/, $spell->{classes};
+    return "$lvl &middot; " . ($lang eq 'es' ? 'Descatalogado' : 'Uncatalogued')
+        if $spell->{unc};
+    my $disc = disc_name($spell->{discipline}, $lang, 1);
+    return "$lvl &middot; $disc";
 }
 
 # ------------------------------------------------------------------- plantilla
-
-my $BASE = 'https://fjorn17.github.io/Lex-Arcanum';
-
-sub head_block {
-    my (%a) = @_;
-    my $u = "$a{lang}/pages/spells/$a{file}";
-    return <<"HTML";
-<!doctype html>
-<html lang="$a{lang}">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>$a{title} &middot; Lex Arcanum</title>
-  <meta name="description" content="$a{desc}">
-  <link rel="canonical" href="$BASE/$u">
-  <link rel="alternate" hreflang="es" href="$BASE/es/pages/spells/$a{file}">
-  <link rel="alternate" hreflang="en" href="$BASE/en/pages/spells/$a{file}">
-  <link rel="alternate" hreflang="x-default" href="$BASE/en/pages/spells/$a{file}">
-  <link rel="icon" href="../../../assets/img/magister_icon_simplified.png">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Lex Arcanum">
-  <meta property="og:title" content="$a{title} &middot; Lex Arcanum">
-  <meta property="og:description" content="$a{desc}">
-  <meta property="og:url" content="$BASE/$u">
-  <meta property="og:image" content="$BASE/assets/img/magister_icon.png">
-  <meta property="og:image:width" content="594">
-  <meta property="og:image:height" content="594">
-  <meta property="og:image:alt" content="Magister class crest">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght\@500;600;700&family=Spectral:ital,wght\@0,300;0,400;0,600;1,400&display=swap">
-  <link rel="stylesheet" href="../../../css/style.css">
-</head>
-HTML
-}
-
-my %NAV = (
-    en => [ 'Magister', 'Subclasses', 'Spells', 'Items', 'Crafting' ],
-    es => [ 'Magistrado', 'Subclases', 'Conjuros', 'Objetos', 'Artesanía' ],
-);
-
-sub nav_block {
-    my ($lang, $file) = @_;
-    my @n = @{ $NAV{$lang} };
-    my $es_title = 'Ver esta p&aacute;gina en espa&ntilde;ol';
-    my $en_title = 'View this page in English';
-    my $es_cur = $lang eq 'es' ? ' aria-current="true"' : '';
-    my $en_cur = $lang eq 'en' ? ' aria-current="true"' : '';
-    return <<"HTML";
-    <nav class="sitenav" aria-label="Site">
-      <a class="brand" href="../../index.html">Lex Arcanum</a>
-      <a href="../../pages/classes/magister.html">$n[0]</a>
-      <a href="../../pages/subclasses/index.html">$n[1]</a>
-      <a class="here" aria-current="page" href="../../pages/spells/index.html">$n[2]</a>
-      <a href="../../pages/items/index.html">$n[3]</a>
-      <a href="../../pages/craft/index.html">$n[4]</a>
-      <span class="langsw">
-        <a class="lang-es"$es_cur hreflang="es" href="../../../es/pages/spells/$file" title="$es_title"><span class="vh">Espa&ntilde;ol</span></a>
-        <a class="lang-en"$en_cur hreflang="en" href="../../../en/pages/spells/$file" title="$en_title"><span class="vh">English</span></a>
-      </span>
-    </nav>
-HTML
-}
-
-sub footer_block {
-    my ($extra) = @_;
-    my $more = $extra ? qq{  <script src="../../../js/$extra"></script>\n} : '';
-    return <<"HTML" . $more . "</body>\n\n</html>\n";
-    <footer>
-      <p class="legal"><b>Unofficial fan content.</b> Not affiliated with, endorsed or sponsored by Wizards of
-        the Coast LLC or Larian Studios. Nothing on this site is final.</p>
-      <p class="legal">Unofficial Fan Content permitted under the Wizards of the Coast Fan Content Policy. Not
-        approved or endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast.
-        &copy;&nbsp;Wizards of the Coast LLC.</p>
-      <p class="legal">This work includes material from the System Reference Document 5.2 (&ldquo;SRD&nbsp;5.2&rdquo;)
-        by Wizards of the Coast LLC, available at <a href="https://www.dndbeyond.com/srd">dndbeyond.com/srd</a>.
-        The SRD&nbsp;5.2 is licensed under the Creative Commons Attribution 4.0 International License, available at
-        <a
-          href="https://creativecommons.org/licenses/by/4.0/legalcode">creativecommons.org/licenses/by/4.0/legalcode</a>.
-      </p>
-      <p class="legal">Icons are assets of <i>Baldur&rsquo;s Gate&nbsp;3</i>, property of Larian Studios, sourced
-        from <a href="https://bg3.wiki/">bg3.wiki</a> (CC&nbsp;BY-SA&nbsp;4.0) and used here for identification
-        only. Rules links also point to bg3.wiki.</p>
-      <p class="legal"><a class="backstage" href="../../../analysis/index.html">&middot; an&aacute;lisis &middot;</a></p>
-    </footer>
-
-    <script src="../../../js/lang.js"></script>
-  </div>
-
-  <script src="../../../js/wiki-api.js"></script>
-HTML
-}
 
 # ------------------------------------------------------------------- la pagina
 
 sub render_page {
     my ($en, $lang) = @_;
     my $t     = $T{$lang};
-    my $file  = slug($en->{name}) . '.html';
+    my $file  = spell_slug($en->{name}) . '.html';
     my $es    = $ES{ $en->{name} };
-    my $name  = $lang eq 'es' ? ($NAME_ES{ $en->{name} } // $en->{name}) : $en->{name};
+    my $name  = disp_name($en->{name}, $lang);
     my $src   = ($lang eq 'es' && $es) ? $es : $en;
 
     # los conjuros con tabla traen el parrafo aplastado: se sustituye
@@ -516,8 +513,8 @@ sub render_page {
         : qq{<div class="spell-icon ph" aria-hidden="true">$t->{icon_ph}</div>};
 
     my @rows = (
-        [ $t->{origin},     $t->{srd} ],
-        [ $t->{level},      h(level_line($en, $lang)) ],
+        [ $t->{level},      $en->{level} == 0 ? $t->{cantrip} : $en->{level} ],
+        [ $t->{discipline}, disc_link($en, $lang) ],
         [ $t->{components}, ent_es($lang eq 'es' && $es ? $es->{components} : $en->{components}) ],
         [ $t->{casting},    casting_html($en->{casting}, $lang,
                                          $lang eq 'es' && $es ? $es->{casting} : undef) ],
@@ -533,36 +530,35 @@ sub render_page {
     my $rows_html = join "\n          ",
         map { qq{<div class="ibrow"><span class="ibk">$_->[0]</span><span class="ibv">$_->[1]</span></div>} } @rows;
 
-    # como se aprende
-    my @li;
-    for my $c (classes_list($en, $lang)) {
-        my $label = $lang eq 'es' ? ucfirst($CLASS_ES{$c} // $c) : $c;
-        push @li, qq{<li><b><a href="https://bg3.wiki/wiki/$c">$label</a></b></li>};
-    }
-    if ($MAGISTER{ $en->{name} }) {
-        my $label = $lang eq 'es' ? 'Magistrado' : 'Magister';
-        my $note  = $lang eq 'es' ? 'lista de conjuros del suplemento' : 'supplement spell list';
-        push @li, qq{<li><img class="ic" width="32" src="../../../assets/img/magister_icon_simplified.png" alt=""><b><a href="../classes/magister.html">$label</a></b> &mdash; $note.</li>};
-    }
-    my $howto = join "\n            ", @li;
-
     my $first = @desc ? $desc[0] : $name;
     $first =~ s/^(.{0,150}?[.!?])\s.*$/$1/s;
     my $desc_meta = plain(kind_line($en, $lang) . '. ' . $first);
 
     # mientras la traduccion no este, la pagina lo dice en vez de fingir
     my $pending = '';
+    # Un descatalogado dice en su propia pagina por que lo esta.
+    if (my $u = $en->{unc}) {
+        my $h = $lang eq 'es' ? 'Descatalogado' : 'Uncatalogued';
+        my $l = $lang eq 'es'
+            ? 'No cuelga de ninguna Disciplina. Ver <a href="./uncatalogued.html">descatalogados</a>.'
+            : 'It hangs from no Discipline. See <a href="./uncatalogued.html">uncatalogued</a>.';
+        $pending .= qq{\n    <div class="warn top" role="note">\n}
+                  . qq{      <h3>$h</h3>\n}
+                  . qq{      <p>$u->{why}{$lang} $l</p>\n}
+                  . qq{    </div>\n};
+    }
     if ($lang eq 'es' && !$es) {
         $pending = qq{\n    <div class="warn top" role="note">\n}
                  . qq{      <h3>Traducci&oacute;n pendiente</h3>\n}
-                 . qq{      <p>El texto de este conjuro todav&iacute;a est&aacute; en ingl&eacute;s. Los nombres, }
-                 . qq{la ficha y las clases s&iacute; est&aacute;n en espa&ntilde;ol.</p>\n}
+                 . qq{      <p>El texto de este conjuro todav&iacute;a est&aacute; en ingl&eacute;s. El nombre, }
+                 . qq{la ficha y la Disciplina s&iacute; est&aacute;n en espa&ntilde;ol.</p>\n}
                  . qq{    </div>\n};
     }
 
-    my $out = head_block(lang => $lang, file => $file, title => h($name), desc => $desc_meta);
+    my $out = page_head(lang => $lang, path => "pages/astronomy/$file", up => '../../../',
+                        title => h($name), desc => $desc_meta);
     $out .= qq{\n<body>\n  <div class="spellpage">\n\n};
-    $out .= nav_block($lang, $file);
+    $out .= page_nav(lang => $lang, path => "pages/astronomy/$file", up => '../../../', section => 'astronomy');
     $out .= <<"HTML";
 
     <header class="spellhead">
@@ -586,14 +582,6 @@ HTML
         </section>
 HTML
     $out .= <<"HTML";
-
-        <section>
-          <h2>$t->{howto}</h2>
-          <p>$t->{howto_lead}</p>
-          <ul class="sendlist">
-            $howto
-          </ul>
-        </section>
       </main>
 
       <aside class="infobox">
@@ -604,12 +592,11 @@ HTML
         <div class="ibrows">
           $rows_html
         </div>
-        <p class="ibfoot">$t->{ibfoot}</p>
       </aside>
     </div>
 
 HTML
-    $out .= footer_block();
+    $out .= page_foot(up => '../../../', scripts => ['wiki-api.js']);
     return ($file, $out);
 }
 
@@ -617,36 +604,43 @@ HTML
 
 my %IDX = (
     en => {
-        title => 'Spells', lead => 'Every spell of the game, plus the ones written for Lex Arcanum',
-        lex_h => 'Lex Arcanum originals', srd_h => 'System Reference Document 5.2.1',
-        lex_p => 'Spells written for this supplement. They do not exist in the '
-               . 'Player&rsquo;s Handbook. Every one of them is translated from the '
-               . '<a href="https://nivel20.com/games/dnd-2024/rulebooks/2638-lex-arcanum">Lex Arcanum '
-               . 'rulebook on Nivel20</a>, where the original Spanish text lives.',
-        srd_p => 'The 339 spells of the SRD&nbsp;5.2.1, adapted to the format of '
-               . 'this site. Spells that are in the Player&rsquo;s Handbook but not '
-               . 'in the SRD have no page here: their text is not ours to publish.',
+        title => 'Astronomy',
+        lead => 'The whole art: its Disciplines, and every spell that comes out of them',
+        tree_art => 'the Ether worked as Ether, and everything it contains.',
+        all_h => 'Every spell', count_one => 'spell', count_many => 'spells',
+        tree_unc => 'what hangs from no Discipline, and why.',
+        intro => 'Magic is one art. What separates one spell from another is not '
+               . 'who taught it but how far it pushes the Ether: <b>Astronomy</b> works '
+               . 'the Ether as Ether &mdash; light, force, and everything that finds, '
+               . 'hinders or undoes magic; <b>Alchemy</b> crosses into matter; '
+               . '<b>Cosmology</b> into space, time and gravity; <b>Spiritism</b> into '
+               . 'life, the soul, the mind and what they can be made to believe.',
         cantrips => 'Cantrips', lvl => 'Level',
-        cols => [ 'Name', 'Level', 'School', 'Classes', 'Casting time', 'Range', 'Duration' ],
-        f_search => 'Search by name', f_level => 'Any level', f_school => 'Any school',
-        f_class => 'Any class', f_reset => 'Reset', f_sort => 'Sort',
+        cols => [ 'Name', 'Level', 'Discipline', 'Casting time', 'Range', 'Duration' ],
+        f_search => 'Search by name', f_level => 'Any level', f_disc => 'Any Discipline',
+        f_sub => 'Any subdivision',
+        f_reset => 'Reset', f_sort => 'Sort',
         f_count => 'spells shown', f_none => 'No spell matches these filters.',
         f_help => 'Click a column heading to sort by it.',
     },
     es => {
-        title => 'Conjuros', lead => 'Todos los conjuros del juego y los escritos para Lex Arcanum',
-        lex_h => 'Originales de Lex Arcanum', srd_h => 'System Reference Document 5.2.1',
-        lex_p => 'Conjuros escritos para este suplemento. No existen en el '
-               . '<i>Manual del Jugador</i>. El texto original est&aacute; en el '
-               . '<a href="https://nivel20.com/games/dnd-2024/rulebooks/2638-lex-arcanum">manual de '
-               . 'Lex Arcanum en Nivel20</a>.',
-        srd_p => 'Los 339 conjuros del SRD&nbsp;5.2.1, con el formato de este sitio. '
-               . 'Los conjuros que est&aacute;n en el <i>Manual del Jugador</i> pero no '
-               . 'en el SRD no tienen p&aacute;gina aqu&iacute;: su texto no es nuestro.',
+        title => 'Astronom&iacute;a',
+        lead => 'El arte entero: sus Disciplinas y todos los conjuros que salen de ellas',
+        tree_art => 'el &Eacute;ter trabajado como &Eacute;ter, y cuanto contiene.',
+        all_h => 'Todos los conjuros', count_one => 'conjuro', count_many => 'conjuros',
+        tree_unc => 'lo que no cuelga de ninguna Disciplina, y por qu&eacute;.',
+        intro => 'La magia es un solo arte. Lo que separa un conjuro de otro no es '
+               . 'qui&eacute;n lo ense&ntilde;a, sino hasta d&oacute;nde fuerza el &Eacute;ter: '
+               . 'la <b>astronom&iacute;a</b> trabaja el &Eacute;ter como &Eacute;ter &mdash; luz, '
+               . 'fuerza, y todo lo que encuentra, estorba o deshace magia&mdash;; la '
+               . '<b>alquimia</b> cruza a la materia; la <b>cosmolog&iacute;a</b>, al espacio, '
+               . 'el tiempo y la gravedad; el <b>espiritismo</b>, a la vida, el alma, la '
+               . 'mente y lo que se les puede hacer creer.',
         cantrips => 'Trucos', lvl => 'Nivel',
-        cols => [ 'Nombre', 'Nivel', 'Escuela', 'Clases', 'Tiempo de lanzamiento', 'Alcance', 'Duraci&oacute;n' ],
+        cols => [ 'Nombre', 'Nivel', 'Disciplina', 'Tiempo de lanzamiento', 'Alcance', 'Duraci&oacute;n' ],
         f_search => 'Buscar por nombre', f_level => 'Cualquier nivel',
-        f_school => 'Cualquier escuela', f_class => 'Cualquier clase',
+        f_disc => 'Cualquier Disciplina',
+        f_sub => 'Cualquier subdivisi&oacute;n',
         f_reset => 'Limpiar', f_sort => 'Ordenar',
         f_count => 'conjuros a la vista', f_none => 'Ning&uacute;n conjuro encaja con estos filtros.',
         f_help => 'Pulsa en una cabecera de columna para ordenar por ella.',
@@ -661,7 +655,7 @@ sub read_lex {
         next if /^#/ || !/\S/;
         my @f = split /\t/;
         push @out, {
-            slug => $f[0], level => $f[1], school => $f[2],
+            slug => $f[0], level => $f[1], discipline => $f[2],
             name => { en => $f[3], es => $f[4] },
             casting => { en => $f[5], es => $f[6] },
             range => { en => $f[7], es => $f[8] },
@@ -683,7 +677,7 @@ sub index_table {
     my ($lang, $rows, $id) = @_;
     my $i = $IDX{$lang};
     # las columnas ordenables llevan la clave por la que ordenan
-    my @keys = ('name', 'level', 'school', 'classes', '', '', '');
+    my @keys = ('name', 'level', 'discipline', '', '', '');
     my $head = '';
     for my $n (0 .. $#{ $i->{cols} }) {
         my $k = $id ? ($keys[$n] // '') : '';
@@ -710,15 +704,21 @@ sub filter_bar {
         my $label = $l == 0 ? $i->{cantrips} : "$i->{lvl} $l";
         $levels .= qq{<option value="$l">$label</option>};
     }
-    my $schools = qq{<option value="">$i->{f_school}</option>};
-    for my $s (sort keys %SCHOOL_ES) {
-        my $label = ent_es($lang eq 'es' ? ucfirst $SCHOOL_ES{$s} : $s);
-        $schools .= qq{<option value="@{[ lc $s ]}">$label</option>};
+    # Astronomia va la primera, no en orden alfabetico: es el fondo del arte
+    my $discs = qq{<option value="">$i->{f_disc}</option>};
+    for my $d (@DISC_ORDER) {
+        my $label = ent_es(disc_name($d, $lang, 1));
+        $discs .= qq{<option value="@{[ lc $d ]}">$label</option>};
     }
-    my $classes = qq{<option value="">$i->{f_class}</option>};
-    for my $c (sort keys %CLASS_ES) {
-        my $label = ent_es($lang eq 'es' ? ucfirst $CLASS_ES{$c} : $c);
-        $classes .= qq{<option value="@{[ lc $c ]}">$label</option>};
+    # Las subdisciplinas, agrupadas bajo su Disciplina. Astronomia no aparece:
+    # no tiene, porque sus subdivisiones son las otras tres.
+    my $subs = qq{<option value="">$i->{f_sub}</option>};
+    for my $g (@SUBS_OF) {
+        my ($disc, $keys) = @$g;
+        my $glabel = ent_es(ucfirst $TAXNAME{$disc}{$lang});
+        $subs .= qq{<optgroup label="$glabel">};
+        $subs .= qq{<option value="$_">@{[ ent_es(ucfirst sub_name($_, $lang)) ]}</option>} for @$keys;
+        $subs .= qq{</optgroup>};
     }
 
     return <<"HTML";
@@ -727,10 +727,10 @@ sub filter_bar {
         <input type="search" id="sf-q" placeholder="$i->{f_search}&hellip;" autocomplete="off">
         <label class="vh" for="sf-level">$i->{f_level}</label>
         <select id="sf-level">$levels</select>
-        <label class="vh" for="sf-school">$i->{f_school}</label>
-        <select id="sf-school">$schools</select>
-        <label class="vh" for="sf-class">$i->{f_class}</label>
-        <select id="sf-class">$classes</select>
+        <label class="vh" for="sf-discipline">$i->{f_disc}</label>
+        <select id="sf-discipline">$discs</select>
+        <label class="vh" for="sf-sub">$i->{f_sub}</label>
+        <select id="sf-sub">$subs</select>
         <button type="button" id="sf-reset">$i->{f_reset}</button>
         <p class="sf-count" id="sf-count" role="status" data-label="$i->{f_count}"></p>
         <p class="sf-help">$i->{f_help}</p>
@@ -745,62 +745,107 @@ sub render_index {
     my $t = $T{$lang};
     my $i = $IDX{$lang};
 
-    # tabla de los conjuros propios
-    my @lexrows;
-    for my $s (sort { $a->{level} <=> $b->{level} || $a->{name}{en} cmp $b->{name}{en} } read_lex()) {
-        my $school = ent_es($lang eq "es" ? ucfirst $SCHOOL_ES{ $s->{school} } : $s->{school});
-        my $lvl = $s->{level} == 0 ? $t->{cantrip} : "$t->{level} $s->{level}";
-        push @lexrows, sprintf(
-            qq{            <tr>\n}
-          . qq{              <td>%s<a href="./%s.html">%s</a></td>\n}
-          . qq{              <td class="lvl">%s</td>\n              <td>%s</td>\n}
-          . qq{              <td>%s</td>\n              <td>%s</td>\n              <td>%s</td>\n}
-          . qq{            </tr>\n},
-            row_icon($s->{icon}), $s->{slug}, ent_es($s->{name}{$lang}), $lvl, $school,
-            ent_es($s->{casting}{$lang}), ent_es($s->{range}{$lang}), ent_es($s->{duration}{$lang}));
+    # Una sola tabla: los conjuros propios del suplemento y los que vienen del
+    # SRD van mezclados, porque aqui ya no se distinguen.
+    my @all;
+    for my $s (read_lex()) {
+        push @all, {
+            level => $s->{level}, disc => $s->{discipline}, slug => $s->{slug},
+            sub   => $SUBOF{ $s->{name}{en} } // '',
+            icon  => $s->{icon},  name => $s->{name}{$lang}, sort => $s->{name}{en},
+            casting  => ent_es($s->{casting}{$lang}),
+            range    => ent_es($s->{range}{$lang}),
+            duration => ent_es($s->{duration}{$lang}),
+        };
     }
-    # la tabla propia no va agrupada por nivel, asi que lleva columna de nivel
-    # en lugar de la de clases
-    my @lexcols = @{ $i->{cols} };
-    $lexcols[2] = $i->{lvl};
-    @lexcols = ( $lexcols[0], $lexcols[2], @lexcols[ 1, 3, 4, 5 ] );
-    my $lexhead = join '', map { qq{<th scope="col">$_</th>} } @lexcols;
-    my $lextable = qq{<div class="tw">\n        <table class="spelltable">\n}
-        . qq{          <thead>\n            <tr>$lexhead</tr>\n          </thead>\n}
-        . qq{          <tbody>\n} . join('', @lexrows) . qq{          </tbody>\n}
-        . qq{        </table>\n      </div>\n};
+    for my $s (@EN) {
+        my $name = disp_name($s->{name}, $lang);
+        push @all, {
+            level => $s->{level},
+            disc  => $s->{unc} ? 'Uncatalogued' : $s->{discipline},
+            slug  => spell_slug($s->{name}),
+            sub   => $s->{unc} ? $s->{unc}{bucket} : ($SUBOF{ $s->{name} } // ''),
+            icon  => $ICON{ $s->{name} } // '', name => $name, sort => $name,
+            casting  => casting_html($s->{casting}, $lang,
+                            $lang eq 'es' && $ES{ $s->{name} } ? $ES{ $s->{name} }{casting} : undef),
+            range    => range_text($s->{range}, $lang, $s),
+            duration => duration_html($s->{duration}, $lang),
+        };
+    }
 
-    # una sola tabla con los 339, ordenable y filtrable desde js/spell-filter.js
     my @rows;
-    for my $s (sort { $a->{level} <=> $b->{level} || $a->{name} cmp $b->{name} } @EN) {
-        my $name   = $lang eq 'es' ? ($NAME_ES{ $s->{name} } // $s->{name}) : $s->{name};
-        my $school = ent_es($lang eq "es" ? ucfirst $SCHOOL_ES{ $s->{school} } : $s->{school});
-        my @cl_en  = classes_list($s, $lang);
-        my @cl     = map { $lang eq 'es' ? ($CLASS_ES{$_} // $_) : $_ } @cl_en;
+    for my $s (sort { $a->{level} <=> $b->{level} || $a->{sort} cmp $b->{sort} } @all) {
+        my $disc   = ent_es(disc_name($s->{disc}, $lang, 1));
+        my $skey   = ($s->{sub} && $s->{sub} ne '-') ? $s->{sub} : '';
+        my $sn     = sub_name($skey, $lang);
+        $disc .= ' &middot; ' . ent_es($sn) if $sn;
         my $lvltxt = $s->{level} == 0 ? $i->{cantrips} : "$i->{lvl} $s->{level}";
         # los data-* van en ingles: son claves, no texto visible
         push @rows, sprintf(
-            qq{            <tr data-level="%d" data-school="%s" data-classes="%s" data-name="%s">\n}
+            qq{            <tr data-level="%d" data-discipline="%s" data-sub="%s" data-name="%s">
+}
           . qq{              <td>%s<a href="./%s.html">%s</a></td>\n}
           . qq{              <td class="lvl">%s</td>\n              <td>%s</td>\n}
           . qq{              <td>%s</td>\n              <td>%s</td>\n}
-          . qq{              <td>%s</td>\n              <td>%s</td>\n}
-          . qq{            </tr>\n},
-            $s->{level}, lc $s->{school}, lc(join ',', @cl_en), lc plain($name),
-            row_icon($ICON{ $s->{name} }), slug($s->{name}), ent_es($name),
-            $lvltxt, $school, ent_es(join ', ', @cl),
-            casting_html($s->{casting}, $lang,
-                         $lang eq 'es' && $ES{ $s->{name} } ? $ES{ $s->{name} }{casting} : undef),
-            range_text($s->{range}, $lang, $s),
-            duration_html($s->{duration}, $lang));
+          . qq{              <td>%s</td>\n            </tr>\n},
+            $s->{level}, lc $s->{disc}, $skey, lc plain($s->{name}),
+            row_icon($s->{icon}), $s->{slug}, ent_es($s->{name}),
+            $lvltxt, $disc, $s->{casting}, $s->{range}, $s->{duration});
     }
-    my $srd = '      ' . filter_bar($lang) . '      ' . index_table($lang, \@rows, 'srdtable');
+    my $table = '      ' . filter_bar($lang) . '      '
+              . index_table($lang, \@rows, 'spelltable');
+
+    # El arbol: Astronomia, las tres Disciplinas y sus subdivisiones, con
+    # cuantos conjuros cuelgan de cada rama. Se cuenta desde @all, que ya
+    # lleva la Disciplina y la subdisciplina de los 302.
+    my (%n_disc, %n_sub);
+    for my $s (@all) {
+        $n_disc{ lc $s->{disc} }++;
+        $n_sub{ $s->{sub} }++ if $s->{sub} && $s->{sub} ne '-';
+    }
+    my $total = scalar(@all) - ($n_disc{uncatalogued} // 0);
+    my $word = sub { $_[0] == 1 ? $i->{count_one} : $i->{count_many} };
+    my $tree = qq{<ul class="disctree">\n}
+             . qq{        <li><b><a href="./astronomy.html">}
+             . ent_es($TAXNAME{astronomy}{$lang}) . qq{</a></b> &mdash; $i->{tree_art} }
+             . qq{<i>$total @{[ $word->($total) ]}</i>\n          <ul>\n};
+    for my $g (@SUBS_OF) {
+        my ($dk, $keys) = @$g;
+        next if $dk eq 'uncatalogued';   # va fuera del arbol: no es del arte
+        my $dn = ent_es(ucfirst $TAXNAME{$dk}{$lang});
+        my $dc = $n_disc{$dk} // 0;
+        $tree .= qq{            <li><b><a href="./$dk.html">$dn</a></b> }
+               . qq{<i>$dc @{[ $word->($dc) ]}</i>\n              <ul>\n};
+        for my $k (@$keys) {
+            my $c = $n_sub{$k} // 0;
+            $tree .= qq{                <li><a href="./$k.html">}
+                   . ent_es($TAXNAME{$k}{$lang}) . qq{</a> <i>$c</i></li>\n};
+        }
+        $tree .= qq{              </ul>\n            </li>\n};
+    }
+    $tree .= qq{          </ul>\n        </li>\n};
+    # Los descatalogados cuelgan del arbol pero no de la astronomia: van al
+    # mismo nivel que ella, porque no son parte del arte.
+    {
+        my $uc = $n_disc{uncatalogued} // 0;
+        $tree .= qq{        <li class="outside"><b><a href="./uncatalogued.html">}
+               . ent_es($TAXNAME{uncatalogued}{$lang}) . qq{</a></b> &mdash; $i->{tree_unc} }
+               . qq{<i>$uc @{[ $word->($uc) ]}</i>\n          <ul>\n};
+        for my $b (@BUCKETS) {
+            my $c = $n_sub{$b} // 0;
+            next unless $c;
+            $tree .= qq{            <li>@{[ ent_es(ucfirst sub_name($b, $lang)) ]} <i>$c</i></li>\n};
+        }
+        $tree .= qq{          </ul>\n        </li>\n};
+    }
+    $tree .= qq{      </ul>\n};
 
     my $file = 'index.html';
-    my $out = head_block(lang => $lang, file => $file, title => $i->{title},
-                         desc => plain($t->{subtitle}));
+    my $out = page_head(lang => $lang, path => "pages/astronomy/$file", up => '../../../',
+                        title => $i->{title}, desc => plain($t->{subtitle}));
     $out .= qq{\n<body>\n  <div class="spellpage">\n\n};
-    $out .= nav_block($lang, $file);
+    $out .= page_nav(lang => $lang, path => "pages/astronomy/$file", up => '../../../',
+                     section => 'astronomy');
     $out .= <<"HTML";
 
     <header class="spellhead">
@@ -809,18 +854,16 @@ sub render_index {
     </header>
 
     <section>
-      <h2>$i->{lex_h}</h2>
-      <p>$i->{lex_p}</p>
-      $lextable
+      <p>$i->{intro}</p>
+      $tree
     </section>
 
     <section>
-      <h2>$i->{srd_h}</h2>
-      <p>$i->{srd_p}</p>
-$srd    </section>
+      <h2>$i->{all_h}</h2>
+$table    </section>
 
 HTML
-    $out .= footer_block("spell-filter.js");
+    $out .= page_foot(up => '../../../', scripts => ['wiki-api.js', 'spell-filter.js']);
     return ($file, $out);
 }
 
@@ -835,9 +878,24 @@ sub ent_es {
 
 # --------------------------------------------------------------------- escribe
 
+my $CLEAN = grep { $_ eq '--limpiar' } @ARGV;
+
 for my $lang (qw(en es)) {
-    my $dir = "$ROOT/$lang/pages/spells";
+    my $dir = "$ROOT/$lang/pages/astronomy";
     make_path($dir) unless -d $dir;
+    # --limpiar retira lo que ya no genera nadie (un conjuro renombrado deja su
+    # archivo viejo atras), sin tocar los siete escritos a mano.
+    if ($CLEAN && !$DRY) {
+        my %keep = map { ("$_.html" => 1) } @A_MANO;
+        $keep{'index.html'} = 1;
+        $keep{ spell_slug($_->{name}) . '.html' } = 1 for @EN;
+        $keep{"$_->{key}.html"} = 1 for @$TAX;
+        for my $f (glob "$dir/*.html") {
+            my ($base) = $f =~ m{([^/\\]+)$};
+            next if $keep{$base};
+            unlink $f and print STDERR "  retirado $lang/$base\n";
+        }
+    }
     for my $s (@EN) {
         my ($file, $html) = render_page($s, $lang);
         next if $DRY;

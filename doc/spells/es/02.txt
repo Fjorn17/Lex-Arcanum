@@ -52,7 +52,7 @@ Elige cualquier número de criaturas dentro del alcance. Mientras dure el conjur
 components: V, S, M (un llavero sin llaves)
 body:
 Arrasas la mente de una criatura que puedas ver dentro del alcance. El objetivo hace una tirada de salvación de Inteligencia.
-*Fallo:* El objetivo recibe {{10d12|Psychic}} de daño y no puede lanzar conjuros ni llevar a cabo la acción de magia. Al final de cada periodo de 30 días repite la tirada y el efecto termina si la supera. El efecto también se puede terminar con los conjuros *restablecimiento mayor*, *curar* o *deseo*.
+*Fallo:* El objetivo recibe {{10d12|Psychic}} de daño y no puede lanzar conjuros ni llevar a cabo la acción de magia. Al final de cada periodo de 30 días repite la tirada y el efecto termina si la supera. El efecto también se puede terminar con los conjuros *restablecimiento mayor* o *curar*.
 *Éxito:* El objetivo recibe la mitad del daño y nada más.
 
 == Bestow Curse
@@ -79,9 +79,9 @@ Creas un muro de hojas giratorias hechas de energía mágica. El muro aparece de
 Cualquier criatura que esté en el espacio del muro hace una tirada de salvación de Destreza y recibe {{6d10|Force}} de daño si la falla, o la mitad si la supera. Una criatura hace también esa tirada si entra en el espacio del muro o termina su turno en él. Cada criatura hace la tirada una sola vez por turno.
 
 == Bless
-components: V, S, M (un símbolo sagrado por valor de 5 po o más)
+components: V, S, M (una esquirla de cristal claro por valor de 5 po o más)
 body:
-Bendices hasta a tres criaturas dentro del alcance. Siempre que un objetivo haga una tirada de ataque o una tirada de salvación antes de que el conjuro termine, le suma 1d4.
+Serenas hasta a tres criaturas dentro del alcance. Siempre que un objetivo haga una tirada de ataque o una tirada de salvación antes de que el conjuro termine, le suma 1d4.
 **Con un espacio de conjuro de nivel superior.** Puedes hacer objetivo a una criatura más por cada nivel por encima de 1 que tenga el espacio.
 
 == Blight
@@ -100,8 +100,8 @@ Una criatura que puedas ver dentro del alcance hace una tirada de salvación de 
 == Blink
 components: V, S
 body:
-Tira 1d6 al final de cada uno de tus turnos mientras dure el conjuro. Con un resultado de 4 a 6 desapareces de tu plano de existencia actual y apareces en el plano Etéreo (el conjuro termina de inmediato si ya estás en ese plano). Mientras estás en el plano Etéreo percibes el plano que has dejado, teñido de tonos grises, pero no ves nada que esté a más de 60 pies. Solo puedes afectar a otras criaturas del plano Etéreo y solo ellas pueden afectarte a ti; las criaturas del otro plano no pueden percibirte salvo que tengan alguna capacidad especial que les permita percibir cosas del plano Etéreo.
-Vuelves al otro plano al principio de tu siguiente turno, y también cuando el conjuro termina si estás en el plano Etéreo. Vuelves a un espacio sin ocupar que elijas, que puedas ver y que esté a 10 pies o menos del espacio que dejaste. Si no hay ningún espacio sin ocupar dentro de ese alcance, apareces en el espacio sin ocupar más cercano.
+Tira 1d6 al final de cada uno de tus turnos mientras dure el conjuro. Con un resultado de 4 a 6 te sales del mundo y entras en el Éter que lo atraviesa (el conjuro termina de inmediato si ya te habías salido). Mientras estás fuera percibes el mundo que has dejado, teñido de tonos grises, pero no ves nada que esté a más de 60 pies. Solo puedes afectar a quienes también se hayan salido y solo ellos pueden afectarte a ti; las criaturas del mundo no pueden percibirte salvo que tengan alguna capacidad especial que les permita percibir lo que se ha salido de él.
+Vuelves al mundo al principio de tu siguiente turno, y también cuando el conjuro termina si sigues fuera. Vuelves a un espacio sin ocupar que elijas, que puedas ver y que esté a 10 pies o menos del espacio que dejaste. Si no hay ningún espacio sin ocupar dentro de ese alcance, apareces en el espacio sin ocupar más cercano.
 
 == Blur
 components: V

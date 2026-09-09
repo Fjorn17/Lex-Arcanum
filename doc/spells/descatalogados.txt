@@ -1,0 +1,110 @@
+# Conjuros que existen pero no cuelgan de ninguna Disciplina.
+#
+#   nombre <TAB> tabla <TAB> motivo (en) <TAB> motivo (es)
+#
+# Tienen pagina y salen en el indice, pero no estan dentro de la astronomia:
+# viven en pages/astronomy/uncatalogued.html, agrupados por tabla, y cada uno
+# lleva su motivo escrito en su propia pagina.
+#
+# Tablas:
+#   none          sin Disciplina: el sistema de magia no los admite, o todavia
+#                 no se ha decidido donde van
+#   summon        invocar, conjurar y animar. En este mundo invocar es magia de
+#                 espacio, y ese catalogo esta sin escribir
+#   poison        el veneno. Probablemente acabe en espiritismo
+#   chromatic     los cromaticos: eligen su tipo de dano y no se atan a un solo
+#                 elemento
+#   resurrection  devolver la vida. La muerte es definitiva (Reglas 1.5), asi
+#                 que estan aqui por lo que fueron, no por lo que pueden ser
+
+# --------------------------------------------------------- sin Disciplina
+
+Thaumaturgy	none	A grab-bag of small marvels with no single thing behind it.	Un cajon de prodigios menores sin una sola cosa detras.
+Faerie Fire	none	Pending: light that clings to what it reveals does not sit cleanly in any Discipline yet.	Pendiente: una luz que se pega a lo que revela no encaja limpio en ninguna Disciplina todavia.
+Darkness	none	Pending: it may be an element of its own rather than the absence of light.	Pendiente: puede que sea un elemento propio y no la ausencia de luz.
+Find Traps	none	Pending: it reads the world, not the Ether.	Pendiente: lee el mundo, no el Eter.
+Protection from Energy	none	Pending: a ward tuned to one element belongs to neither cleanly.	Pendiente: una guarda afinada a un elemento no es limpiamente de ninguna.
+Black Tentacles	none	Pending: what the tentacles are made of has not been decided.	Pendiente: no se ha decidido de que estan hechos los tentaculos.
+Purify Food and Drink	none	Pending: cleansing matter without changing it fits no element.	Pendiente: limpiar materia sin cambiarla no encaja en ningun elemento.
+Create Food and Water	none	Pending: food is not an element, and making it is not one thing.	Pendiente: la comida no es un elemento, y fabricarla no es una sola cosa.
+Fire Shield	none	Pending: half ward, half element.	Pendiente: mitad guarda, mitad elemento.
+Elementalism	none	Pending: it does a little of every element and therefore none.	Pendiente: hace un poco de cada elemento y por tanto de ninguno.
+Creation	none	Pending: it makes any matter at all, so it names no element.	Pendiente: fabrica cualquier materia, asi que no nombra ningun elemento.
+Heroes’ Feast	none	Pending: a feast is not an element and its effects are not one thing.	Pendiente: un festin no es un elemento y sus efectos no son una sola cosa.
+Shapechange	none	Pending: taking any form at will overruns what a Pact allows.	Pendiente: tomar cualquier forma a voluntad desborda lo que permite un Pacto.
+True Polymorph	none	Pending: turning anything into anything overruns every Discipline at once.	Pendiente: convertir cualquier cosa en cualquier cosa desborda todas las Disciplinas a la vez.
+Astral Projection	none	The soul disperses into the Ether at death and cannot travel apart from the body.	El alma se reparte en el Eter al morir y no viaja separada del cuerpo.
+Augury	none	No deity answers, and the future is not written anywhere to be read.	Ninguna deidad responde, y el futuro no esta escrito en ninguna parte.
+Banishment	none	There is no other plane to send anything to.	No hay otro plano al que mandar nada.
+Commune	none	There is no deity on the other end of the question.	No hay deidad al otro lado de la pregunta.
+Contact Other Plane	none	There is no other plane, and no mind out there to reach.	No hay otro plano, ni mente ahi fuera a la que llegar.
+Demiplane	none	A plane cannot be made: Cosmology opens a passage, it does not create a world.	No se fabrica un plano: la cosmologia abre un paso, no crea un mundo.
+Detect Evil and Good	none	Its targets are planar categories that do not exist here.	Sus objetivos son categorias planares que aqui no existen.
+Dispel Evil and Good	none	Its targets are planar categories that do not exist here.	Sus objetivos son categorias planares que aqui no existen.
+Divination	none	No deity answers, and the future is not written anywhere to be read.	Ninguna deidad responde, y el futuro no esta escrito en ninguna parte.
+Divine Word	none	It is the utterance of a god.	Es la palabra de un dios.
+Etherealness	none	The Ethereal Plane is not a place: the Ether is here, and it is everything.	El Plano Etereo no es un lugar: el Eter esta aqui, y lo es todo.
+Forbiddance	none	Wards against planar travel and consecrates ground to a deity.	Protege contra el viaje planar y consagra el suelo a una deidad.
+Foresight	none	The future cannot be read: nothing has written it down.	El futuro no se lee: nadie lo ha escrito.
+Gate	none	There is no other plane on the far side of the portal.	No hay otro plano al otro lado del portal.
+Hallow	none	Consecrates ground to a deity and wards against planar beings.	Consagra el suelo a una deidad y protege contra seres planares.
+Holy Aura	none	Divine light, and its effects are against planar beings.	Luz divina, y sus efectos son contra seres planares.
+Imprisonment	none	Its prisons are extradimensional spaces that nobody is feeding.	Sus prisiones son espacios extradimensionales que nadie alimenta.
+Instant Summons	none	Stores the object on the Ethereal Plane.	Guarda el objeto en el Plano Etereo.
+Magic Circle	none	Its targets are planar categories that do not exist here.	Sus objetivos son categorias planares que aqui no existen.
+Magnificent Mansion	none	An extradimensional dwelling: no space exists apart from this one.	Una morada extradimensional: no hay mas espacio que este.
+Maze	none	Banishes the target to a labyrinthine demiplane.	Destierra al objetivo a un semiplano laberintico.
+Plane Shift	none	There is nowhere else to shift to.	No hay otro sitio al que cambiarse.
+Protection from Evil and Good	none	Its targets are planar categories that do not exist here.	Sus objetivos son categorias planares que aqui no existen.
+Rope Trick	none	An extradimensional space: no space exists apart from this one.	Un espacio extradimensional: no hay mas espacio que este.
+Secret Chest	none	Stores the chest on the Ethereal Plane.	Guarda el cofre en el Plano Etereo.
+Simulacrum	none	A soul is not copied, and what it makes lasts with nobody feeding it.	Un alma no se copia, y lo que fabrica dura sin que nadie lo alimente.
+Speak with Dead	none	There is no soul left in a corpse to answer.	No queda alma en un cadaver que pueda responder.
+Wish	none	The ceiling of the art is fixed: no amount of Ether rewrites the world.	El techo del arte esta fijado: ninguna cantidad de Eter reescribe el mundo.
+Word of Recall	none	Recalls the caster to a sanctuary consecrated to a deity.	Devuelve al lanzador a un santuario consagrado a una deidad.
+
+# --------------------------------------------- invocar, conjurar y animar
+
+Animate Objects	summon	Animating a thing that is not yours is summoning, and summoning is space magic here.	Animar algo que no es tuyo es invocar, y aqui invocar es magia de espacio.
+Faithful Hound	summon	Summoning, and left behind unfed besides.	Invocacion, y ademas dejada atras sin alimentar.
+Phantom Steed	summon	Summoning, not illusion: something arrives that was not there.	Invocacion, no ilusion: llega algo que no estaba.
+Unseen Servant	summon	Summoning.	Invocacion.
+Conjure Elemental	summon	Summoning.	Invocacion.
+Conjure Minor Elementals	summon	Summoning.	Invocacion.
+Summon Dragon	summon	Summoning.	Invocacion.
+Insect Plague	summon	Summoning: the swarm arrives, it is not grown.	Invocacion: el enjambre llega, no se cria.
+Conjure Animals	summon	Calls spirits from outside the world.	Llama espiritus de fuera del mundo.
+Conjure Celestial	summon	Calls a being from another plane.	Llama a un ser de otro plano.
+Conjure Fey	summon	Calls a being from another plane.	Llama a un ser de otro plano.
+Conjure Woodland Beings	summon	Calls spirits from outside the world.	Llama espiritus de fuera del mundo.
+Find Familiar	summon	The familiar is a spirit from another plane.	El familiar es un espiritu de otro plano.
+Find Steed	summon	The steed is a spirit from another plane.	La montura es un espiritu de otro plano.
+Guardian of Faith	summon	The guardian is sent by a deity.	Al guardian lo manda una deidad.
+Planar Ally	summon	Petitions a deity for one of its servants.	Pide a una deidad uno de sus servidores.
+Planar Binding	summon	Binds a being from another plane.	Vincula a un ser de otro plano.
+
+# ------------------------------------------------------------- el veneno
+
+Cloudkill	poison	Poison probably belongs to Spiritism; it is not settled yet.	El veneno probablemente sea cosa del espiritismo; no esta decidido.
+Poison Spray	poison	Poison probably belongs to Spiritism; it is not settled yet.	El veneno probablemente sea cosa del espiritismo; no esta decidido.
+Ray of Sickness	poison	Poison probably belongs to Spiritism; it is not settled yet.	El veneno probablemente sea cosa del espiritismo; no esta decidido.
+Stinking Cloud	poison	Poison probably belongs to Spiritism; it is not settled yet.	El veneno probablemente sea cosa del espiritismo; no esta decidido.
+Contagion	poison	Sickness and poison are the same open question.	La enfermedad y el veneno son la misma pregunta abierta.
+Detect Poison and Disease	poison	Sickness and poison are the same open question.	La enfermedad y el veneno son la misma pregunta abierta.
+Protection from Poison	poison	Sickness and poison are the same open question.	La enfermedad y el veneno son la misma pregunta abierta.
+
+# ---------------------------------------------------------- los cromaticos
+
+Chromatic Orb	chromatic	It picks its damage type, so it settles on no element.	Elige su tipo de dano, asi que no se ata a ningun elemento.
+Prismatic Spray	chromatic	It picks its damage type, so it settles on no element.	Elige su tipo de dano, asi que no se ata a ningun elemento.
+Prismatic Wall	chromatic	It picks its damage type, so it settles on no element.	Elige su tipo de dano, asi que no se ata a ningun elemento.
+Dragon’s Breath	chromatic	It picks its damage type, so it settles on no element.	Elige su tipo de dano, asi que no se ata a ningun elemento.
+
+# ------------------------------------------------------ devolver la vida
+
+Raise Dead	resurrection	Death is definitive: the soul has already dispersed into the Ether.	La muerte es definitiva: el alma ya se ha repartido en el Eter.
+Reincarnate	resurrection	Death is definitive: the soul has already dispersed into the Ether.	La muerte es definitiva: el alma ya se ha repartido en el Eter.
+Resurrection	resurrection	Death is definitive: the soul has already dispersed into the Ether.	La muerte es definitiva: el alma ya se ha repartido en el Eter.
+Revivify	resurrection	Death is definitive: the soul has already dispersed into the Ether.	La muerte es definitiva: el alma ya se ha repartido en el Eter.
+True Resurrection	resurrection	Death is definitive: the soul has already dispersed into the Ether.	La muerte es definitiva: el alma ya se ha repartido en el Eter.
+Clone	resurrection	Death is definitive: no body can be grown to receive a soul back.	La muerte es definitiva: no se cultiva un cuerpo para devolverle un alma.

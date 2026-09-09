@@ -1,0 +1,275 @@
+# Disciplina de cada conjuro. Sustituye a la escuela de D&D.
+#
+#   nombre del SRD <TAB> Astronomy | Alchemy | Cosmology | Spiritism
+#
+# Astronomy  el Eter trabajado como Eter: luz, fuerza cinetica, y todo lo que
+#            detecta, estorba o deshace magia. Es el fondo del arte.
+# Alchemy    materia: los elementos, las sustancias y lo que se fabrica.
+# Cosmology  espacio, tiempo y gravedad.
+# Spiritism  vida, alma, mente e ilusiones.
+#
+# Los conjuros de eliminados.txt no estan aqui.
+
+Acid Arrow	Alchemy
+Acid Splash	Alchemy
+Aid	Spiritism
+Air Bubble	Alchemy
+Alarm	Astronomy
+Alter Self	Spiritism
+Animal Friendship	Spiritism
+Animal Messenger	Spiritism
+Animal Shapes	Spiritism
+Animate Dead	Spiritism
+Antilife Shell	Spiritism
+Antimagic Field	Astronomy
+Antipathy/Sympathy	Spiritism
+Arcane Eye	Cosmology
+Arcane Hand	Astronomy
+Arcane Lock	Astronomy
+Arcane Sword	Astronomy
+Arcanist’s Magic Aura	Astronomy
+Aura of Life	Spiritism
+Awaken	Spiritism
+Bane	Spiritism
+Barkskin	Spiritism
+Beacon of Hope	Spiritism
+Befuddlement	Spiritism
+Bestow Curse	Spiritism
+Blade Barrier	Astronomy
+Bless	Spiritism
+Blight	Spiritism
+Blindness/Deafness	Spiritism
+Blink	Cosmology
+Blur	Spiritism
+Burning Hands	Alchemy
+Call Lightning	Alchemy
+Calm Emotions	Spiritism
+Chain Lightning	Alchemy
+Charm Monster	Spiritism
+Charm Person	Spiritism
+Chill Touch	Spiritism
+Circle of Death	Spiritism
+Clairvoyance	Cosmology
+Color Spray	Spiritism
+Command	Spiritism
+Commune with Nature	Spiritism
+Comprehend Languages	Spiritism
+Compulsion	Spiritism
+Cone of Cold	Alchemy
+Confusion	Spiritism
+Contingency	Astronomy
+Continual Flame	Astronomy
+Control Water	Alchemy
+Control Weather	Alchemy
+Counterspell	Astronomy
+Create Undead	Spiritism
+Create or Destroy Water	Alchemy
+Cure Wounds	Spiritism
+Dancing Lights	Astronomy
+Darkvision	Spiritism
+Daylight	Astronomy
+Death Ward	Spiritism
+Delayed Blast Fireball	Alchemy
+Detect Magic	Astronomy
+Detect Thoughts	Spiritism
+Dimension Door	Cosmology
+Disguise Self	Spiritism
+Disintegrate	Astronomy
+Dispel Magic	Astronomy
+Dissonant Whispers	Spiritism
+Divine Favor	Astronomy
+Divine Smite	Astronomy
+Dominate Beast	Spiritism
+Dominate Monster	Spiritism
+Dominate Person	Spiritism
+Dream	Spiritism
+Druidcraft	Spiritism
+Earthquake	Alchemy
+Eldritch Blast	Astronomy
+Enhance Ability	Spiritism
+Enlarge/Reduce	Cosmology
+Ensnaring Strike	Spiritism
+Entangle	Spiritism
+Enthrall	Spiritism
+Expeditious Retreat	Cosmology
+Eyebite	Spiritism
+Fabricate	Alchemy
+False Life	Spiritism
+Fear	Spiritism
+Feather Fall	Cosmology
+Find the Path	Cosmology
+Finger of Death	Spiritism
+Fire Bolt	Alchemy
+Fire Storm	Alchemy
+Fireball	Alchemy
+Flame Blade	Alchemy
+Flame Strike	Alchemy
+Flaming Sphere	Alchemy
+Flesh to Stone	Alchemy
+Floating Disk	Astronomy
+Fly	Cosmology
+Fog Cloud	Alchemy
+Forcecage	Astronomy
+Freedom of Movement	Cosmology
+Freezing Sphere	Alchemy
+Gaseous Form	Alchemy
+Geas	Spiritism
+Gentle Repose	Cosmology
+Giant Insect	Spiritism
+Glibness	Spiritism
+Globe of Invulnerability	Astronomy
+Glyph of Warding	Astronomy
+Goodberry	Spiritism
+Grease	Alchemy
+Greater Invisibility	Spiritism
+Greater Restoration	Spiritism
+Guards and Wards	Astronomy
+Guidance	Cosmology
+Guiding Bolt	Astronomy
+Gust of Wind	Alchemy
+Hallucinatory Terrain	Spiritism
+Harm	Spiritism
+Haste	Cosmology
+Heal	Spiritism
+Healing Word	Spiritism
+Heat Metal	Alchemy
+Hellish Rebuke	Alchemy
+Heroism	Spiritism
+Hex	Spiritism
+Hideous Laughter	Spiritism
+Hold Monster	Spiritism
+Hold Person	Spiritism
+Hunter’s Mark	Astronomy
+Hypnotic Pattern	Spiritism
+Ice Knife	Alchemy
+Ice Storm	Alchemy
+Identify	Astronomy
+Illusory Script	Spiritism
+Incendiary Cloud	Alchemy
+Inflict Wounds	Spiritism
+Invisibility	Spiritism
+Irresistible Dance	Spiritism
+Jump	Cosmology
+Knock	Astronomy
+Legend Lore	Spiritism
+Lesser Restoration	Spiritism
+Levitate	Cosmology
+Light	Astronomy
+Lightning Bolt	Alchemy
+Locate Animals or Plants	Cosmology
+Locate Creature	Cosmology
+Locate Object	Cosmology
+Longstrider	Cosmology
+Mage Armor	Astronomy
+Mage Hand	Astronomy
+Magic Jar	Spiritism
+Magic Missile	Astronomy
+Magic Mouth	Spiritism
+Magic Weapon	Astronomy
+Major Image	Spiritism
+Mass Cure Wounds	Spiritism
+Mass Heal	Spiritism
+Mass Healing Word	Spiritism
+Mass Suggestion	Spiritism
+Meld into Stone	Alchemy
+Mending	Cosmology
+Message	Spiritism
+Meteor Swarm	Cosmology
+Mind Blank	Spiritism
+Mind Spike	Spiritism
+Minor Illusion	Spiritism
+Mirage Arcane	Spiritism
+Mirror Image	Spiritism
+Mislead	Spiritism
+Misty Step	Cosmology
+Modify Memory	Spiritism
+Moonbeam	Astronomy
+Move Earth	Alchemy
+Nondetection	Astronomy
+Pass without Trace	Spiritism
+Passwall	Cosmology
+Phantasmal Force	Spiritism
+Phantasmal Killer	Spiritism
+Plant Growth	Spiritism
+Polymorph	Spiritism
+Power Word Heal	Spiritism
+Power Word Kill	Spiritism
+Power Word Stun	Spiritism
+Prayer of Healing	Spiritism
+Prestidigitation	Astronomy
+Private Sanctum	Astronomy
+Produce Flame	Alchemy
+Programmed Illusion	Spiritism
+Project Image	Spiritism
+Ray of Enfeeblement	Spiritism
+Ray of Frost	Alchemy
+Regenerate	Spiritism
+Remove Curse	Astronomy
+Resilient Sphere	Astronomy
+Resistance	Astronomy
+Reverse Gravity	Cosmology
+Sacred Flame	Astronomy
+Sanctuary	Spiritism
+Scorching Ray	Alchemy
+Scrying	Cosmology
+Searing Smite	Alchemy
+See Invisibility	Astronomy
+Seeming	Spiritism
+Sending	Spiritism
+Sequester	Astronomy
+Shatter	Alchemy
+Shield	Astronomy
+Shield of Faith	Astronomy
+Shillelagh	Astronomy
+Shining Smite	Astronomy
+Shocking Grasp	Alchemy
+Silence	Alchemy
+Silent Image	Spiritism
+Sleep	Spiritism
+Sleet Storm	Alchemy
+Slow	Cosmology
+Sorcerous Burst	Astronomy
+Spare the Dying	Spiritism
+Speak with Animals	Spiritism
+Speak with Plants	Spiritism
+Spider Climb	Cosmology
+Spike Growth	Spiritism
+Spirit Guardians	Spiritism
+Spiritual Weapon	Astronomy
+Starry Wisp	Astronomy
+Stone Shape	Alchemy
+Stoneskin	Alchemy
+Storm of Vengeance	Alchemy
+Suggestion	Spiritism
+Sunbeam	Astronomy
+Sunburst	Astronomy
+Symbol	Astronomy
+Telekinesis	Astronomy
+Telepathic Bond	Spiritism
+Teleport	Cosmology
+Teleportation Circle	Cosmology
+Thunderwave	Alchemy
+Time Stop	Cosmology
+Tiny Hut	Astronomy
+Tongues	Spiritism
+Transport via Plants	Cosmology
+Tree Stride	Cosmology
+True Seeing	Astronomy
+True Strike	Cosmology
+Tsunami	Alchemy
+Vampiric Touch	Spiritism
+Vicious Mockery	Spiritism
+Vitriolic Sphere	Alchemy
+Wall of Fire	Alchemy
+Wall of Force	Astronomy
+Wall of Ice	Alchemy
+Wall of Stone	Alchemy
+Wall of Thorns	Spiritism
+Warding Bond	Spiritism
+Water Breathing	Spiritism
+Water Walk	Cosmology
+Web	Alchemy
+Weird	Spiritism
+Wind Walk	Alchemy
+Wind Wall	Alchemy
+Zone of Truth	Spiritism

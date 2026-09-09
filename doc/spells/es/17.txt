@@ -50,7 +50,7 @@ Uno de los lados del muro, que eliges al lanzar el conjuro, causa {{5d8|Fire}} d
 components: V, S, M (una esquirla de vidrio)
 body:
 Un muro invisible de fuerza aparece en un punto que elijas dentro del alcance. El muro aparece con la orientación que elijas: como barrera horizontal o vertical, o en ángulo. Puede flotar libre o apoyarse sobre una superficie sólida. Puedes darle forma de cúpula hemisférica o de globo con un radio de hasta 10 pies, o bien de superficie plana compuesta por diez paneles de 10 por 10 pies. Cada panel debe ser contiguo a otro. Sea cual sea la forma, el muro tiene un cuarto de pulgada de grosor y dura lo que dure el conjuro. Si al aparecer corta el espacio de una criatura, esta es empujada a uno de los lados del muro (tú eliges cuál).
-Nada puede atravesar físicamente el muro. Es inmune a todo el daño y no se puede disipar con *disipar magia*. Ahora bien, un conjuro de *desintegrar* lo destruye al instante. El muro se extiende también al plano Etéreo y bloquea el viaje etéreo a través de él.
+Nada puede atravesar físicamente el muro. Es inmune a todo el daño y no se puede disipar con *disipar magia*. Ahora bien, un conjuro de *desintegrar* lo destruye al instante.
 
 == Wall of Ice
 components: V, S, M (un trozo de cuarzo)
@@ -88,8 +88,9 @@ El conjuro termina si tus puntos de golpe se reducen a 0 o si el objetivo y tú 
 == Water Breathing
 components: V, S, M (una caña corta)
 body:
-Este conjuro concede a hasta diez criaturas voluntarias que elijas dentro del alcance la capacidad de respirar bajo el agua hasta que el conjuro termine. Las criaturas afectadas conservan además su forma de respiración normal.
-
+Hasta cuatro criaturas voluntarias que elijas dentro del alcance desarrollan un pliegue de branquias a lo largo del cuello y pueden respirar bajo el agua con la misma facilidad que en el aire hasta que el conjuro termine. Conservan además su forma normal de respiración.
+Las branquias siguen a la vista mientras dure el conjuro, y se cierran y se desvanecen cuando termina.
+**Con un espacio de conjuro de nivel superior.** Puedes hacer objetivo a dos criaturas más por cada nivel por encima de 2 que tenga el espacio.
 == Water Walk
 components: V, S, M (un trozo de corcho)
 body:
@@ -151,3 +152,10 @@ components: V, S
 body:
 Creas una zona mágica que protege contra el engaño en una esfera de 15 pies de radio centrada en un punto dentro del alcance. Hasta que el conjuro termine, una criatura que entre en la zona por primera vez en un turno o empiece allí su turno hace una tirada de salvación de Carisma. Si la falla, no puede decir una mentira deliberada mientras esté dentro del radio. Tú sabes si una criatura supera o falla esa tirada.
 Una criatura afectada es consciente del conjuro y puede evitar responder a preguntas a las que normalmente respondería con una mentira. Esa criatura puede ser evasiva, pero debe ser sincera.
+
+== Air Bubble
+components: V, S
+body:
+Reúnes una bolsa de aire respirable alrededor de la cabeza de una criatura voluntaria a la que toques. Mientras dure el conjuro, el objetivo puede respirar con normalidad bajo el agua y en un aire demasiado enrarecido o demasiado viciado para sostenerlo, y tiene ventaja en las tiradas de salvación contra cualquier cosa que tuviera que inhalar.
+La burbuja es aire y nada más: no desvía ningún golpe, ningún calor y ninguna presión.
+**Con un espacio de conjuro de nivel superior.** Puedes tocar a una criatura más por cada nivel por encima de 2 que tenga el espacio.

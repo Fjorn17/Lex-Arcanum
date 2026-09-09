@@ -1,0 +1,234 @@
+# Subdisciplina de cada conjuro, dentro de su Disciplina.
+#
+#   nombre del conjuro <TAB> clave de la subdisciplina
+#
+# Astronomia no se subdivide: sus subdisciplinas SON las otras tres Disciplinas
+# (Reglas 6.1-6.2), asi que sus conjuros no aparecen aqui.
+#
+# Un conjuro puede no tener subdisciplina: entonces vive en la Disciplina misma.
+# Es el caso de los conjuros de Alquimia que no se atan a un elemento concreto.
+#
+#   Alquimia    los quince elementos: earth water air fire lightning
+#               mud sand lava metal mist steam acid ash thunder incandescence
+#   Espiritismo los cuatro Principios: mind nature life death
+#   Cosmologia  los seis Principios: tempo age past passage distortion gravity
+
+# ---------------------------------------------------------------- Alquimia
+
+Acid Arrow	acid
+Acid Splash	acid
+Air Bubble	air
+Burning Hands	fire
+Call Lightning	lightning
+Chain Lightning	lightning
+Cone of Cold	mist
+Control Water	water
+Control Weather	air
+Create or Destroy Water	water
+Delayed Blast Fireball	fire
+Earthquake	earth
+Fire Bolt	fire
+Fire Storm	fire
+Fireball	fire
+Flame Blade	fire
+Flame Strike	fire
+Flaming Sphere	fire
+Flesh to Stone	earth
+Fog Cloud	mist
+Freezing Sphere	mist
+Gaseous Form	air
+Grease	mud
+Gust of Wind	air
+Heat Metal	metal
+Hellish Rebuke	fire
+Ice Knife	mist
+Ice Storm	mist
+Incendiary Cloud	ash
+Lightning Bolt	lightning
+Meld into Stone	earth
+Meteor Swarm	gravity
+Move Earth	earth
+Produce Flame	fire
+Ray of Frost	mist
+Scorching Ray	fire
+Searing Smite	fire
+Shatter	thunder
+Shocking Grasp	lightning
+Silence	thunder
+Sleet Storm	mist
+Stone Shape	earth
+Stoneskin	earth
+Storm of Vengeance	-
+Thunderwave	thunder
+Tsunami	water
+Vitriolic Sphere	acid
+Wall of Fire	fire
+Wall of Ice	mist
+Wall of Stone	earth
+Web	mud
+Wind Walk	air
+Wind Wall	air
+
+# Alquimia sin elemento: no se atan a uno solo
+Fabricate	-
+
+# ------------------------------------------------------------- Espiritismo
+
+Aid	life
+Alter Self	nature
+Animal Friendship	nature
+Animal Messenger	nature
+Animal Shapes	nature
+Animate Dead	death
+Antilife Shell	life
+Antipathy/Sympathy	mind
+Aura of Life	life
+Awaken	nature
+Bane	mind
+Barkskin	nature
+Beacon of Hope	mind
+Befuddlement	mind
+Bestow Curse	mind
+Bless	mind
+Blight	death
+Blindness/Deafness	mind
+Blur	mind
+Calm Emotions	mind
+Charm Monster	mind
+Charm Person	mind
+Chill Touch	death
+Circle of Death	death
+Color Spray	mind
+Command	mind
+Commune with Nature	nature
+Comprehend Languages	mind
+Compulsion	mind
+Confusion	mind
+Create Undead	death
+Cure Wounds	life
+Darkvision	mind
+Death Ward	life
+Detect Thoughts	mind
+Disguise Self	mind
+Dissonant Whispers	mind
+Dominate Beast	mind
+Dominate Monster	mind
+Dominate Person	mind
+Dream	mind
+Druidcraft	nature
+Enhance Ability	life
+Ensnaring Strike	nature
+Entangle	nature
+Enthrall	mind
+Eyebite	mind
+False Life	death
+Fear	mind
+Finger of Death	death
+Geas	mind
+Giant Insect	nature
+Glibness	mind
+Goodberry	nature
+Greater Invisibility	mind
+Greater Restoration	life
+Guidance	presage
+Hallucinatory Terrain	mind
+Harm	death
+Heal	life
+Healing Word	life
+Heroism	mind
+Hex	mind
+Hideous Laughter	mind
+Hold Monster	mind
+Hold Person	mind
+Hypnotic Pattern	mind
+Illusory Script	mind
+Inflict Wounds	death
+Invisibility	mind
+Irresistible Dance	mind
+Legend Lore	mind
+Lesser Restoration	life
+Magic Jar	death
+Magic Mouth	mind
+Major Image	mind
+Mass Cure Wounds	life
+Mass Heal	life
+Mass Healing Word	life
+Mass Suggestion	mind
+Message	mind
+Mind Blank	mind
+Mind Spike	mind
+Minor Illusion	mind
+Mirage Arcane	mind
+Mirror Image	mind
+Mislead	mind
+Modify Memory	mind
+Pass without Trace	mind
+Phantasmal Force	mind
+Phantasmal Killer	mind
+Plant Growth	nature
+Polymorph	nature
+Power Word Heal	life
+Power Word Kill	death
+Power Word Stun	mind
+Prayer of Healing	life
+Programmed Illusion	mind
+Project Image	mind
+Ray of Enfeeblement	death
+Regenerate	life
+Sanctuary	mind
+Seeming	mind
+Sending	mind
+Silent Image	mind
+Sleep	mind
+Spare the Dying	life
+Speak with Animals	nature
+Speak with Plants	nature
+Spike Growth	nature
+Spirit Guardians	death
+Suggestion	mind
+Telepathic Bond	mind
+Tongues	mind
+Vampiric Touch	death
+Vicious Mockery	mind
+Wall of Thorns	nature
+Warding Bond	life
+Water Breathing	nature
+Weird	mind
+Zone of Truth	mind
+
+# -------------------------------------------------------------- Cosmologia
+
+Arcane Eye	passage
+Blink	passage
+Clairvoyance	passage
+Dimension Door	passage
+Enlarge/Reduce	distortion
+Expeditious Retreat	tempo
+Feather Fall	gravity
+Find the Path	passage
+Fly	gravity
+Freedom of Movement	tempo
+Gentle Repose	tempo
+Gravitational Pull	gravity
+Haste	tempo
+Jump	gravity
+Levitate	gravity
+Locate Animals or Plants	passage
+Locate Creature	passage
+Locate Object	passage
+Longstrider	tempo
+Mending	past
+Misty Step	passage
+Passwall	passage
+Reverse Gravity	gravity
+Scrying	passage
+Slow	tempo
+Spider Climb	gravity
+Teleport	passage
+Teleportation Circle	passage
+Time Stop	tempo
+True Strike	presage
+Transport via Plants	passage
+Tree Stride	passage
+Water Walk	gravity
+Bound Weapon	passage

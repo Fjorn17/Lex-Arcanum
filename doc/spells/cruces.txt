@@ -1,0 +1,9 @@
+# Conjuros que cruzan un segundo umbral.
+#
+#   nombre del SRD <TAB> clave de la segunda Disciplina
+#
+# Reglas 6.4: una Estrella admite un solo estado base, asi que llevar dos es la
+# cima del sistema y solo se consigue en una Convergencia. Aqui se marca cuando
+# un conjuro hace dos cosas que pertenecen a Disciplinas distintas.
+
+Flame Strike	astronomy

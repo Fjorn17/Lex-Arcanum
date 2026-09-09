@@ -2714,3 +2714,110 @@
             margin-left: 10px
         }
     }
+
+    /* El arbol de Astronomia: el arte, sus tres Disciplinas y las
+       subdivisiones de cada una, con cuantos conjuros cuelgan de cada rama. */
+    ul.disctree,
+    ul.disctree ul {
+        list-style: none;
+        margin: .5em 0 0;
+        padding: 0;
+    }
+
+    ul.disctree ul {
+        margin-left: 1.1em;
+        padding-left: .9em;
+        border-left: 1px solid var(--hair);
+    }
+
+    ul.disctree li {
+        margin: .35em 0;
+    }
+
+    ul.disctree i {
+        color: var(--muted);
+        font-size: .88em;
+        font-style: normal;
+        white-space: nowrap;
+    }
+
+    /* El tercer nivel es una lista larga: se reparte en columnas si cabe. */
+    ul.disctree ul ul {
+        columns: 2;
+        column-gap: 1.6em;
+        border-left: 0;
+        padding-left: .2em;
+    }
+
+    ul.disctree ul ul li {
+        break-inside: avoid;
+        margin: .2em 0;
+    }
+
+    @media (max-width:600px) {
+        ul.disctree ul ul {
+            columns: 1;
+        }
+    }
+
+    /* ---- conjuros en tablas por nivel (paginas de Disciplina) ---- */
+
+    .bylevel {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        gap: 18px 26px;
+        margin-top: 14px;
+    }
+
+    .lvlgroup h3 {
+        font-family: var(--display);
+        font-size: .72rem;
+        letter-spacing: .13em;
+        text-transform: uppercase;
+        color: var(--subhead);
+        margin: 0 0 6px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid var(--rule);
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 10px;
+    }
+
+    .lvlgroup .lvlcount {
+        color: var(--muted);
+        font-family: var(--serif);
+        letter-spacing: 0;
+        text-transform: none;
+        font-size: .8rem;
+    }
+
+    table.lvltable {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table.lvltable td {
+        padding: 3px 0;
+        border: 0;
+        vertical-align: middle;
+    }
+
+    table.lvltable .ic {
+        vertical-align: middle;
+        margin-right: 7px;
+    }
+
+    /* ---- descatalogados ---- */
+
+    table.unctable td.why {
+        color: var(--muted);
+        font-size: .86rem;
+        font-style: italic;
+    }
+
+    ul.disctree li.outside {
+        margin-top: .9em;
+        padding-top: .7em;
+        border-top: 1px dashed var(--hair);
+    }

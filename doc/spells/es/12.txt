@@ -45,7 +45,7 @@ Del mismo modo, este conjuro no afecta directamente al crecimiento de las planta
 == Nondetection
 components: V, S, M (una pizca de polvo de diamante por valor de 25 po o más, que el conjuro consume)
 body:
-Mientras dure el conjuro, ocultas de los conjuros de adivinación a un objetivo que toques. El objetivo puede ser una criatura voluntaria, o bien un lugar o un objeto que no midan más de 10 pies en ninguna dimensión. El objetivo no puede ser objetivo de ningún conjuro de adivinación ni percibirse mediante sensores mágicos de escrutinio.
+Mientras dure el conjuro, ocultas de los conjuros que localizan o escrutan a un objetivo que toques. El objetivo puede ser una criatura voluntaria, o bien un lugar o un objeto que no midan más de 10 pies en ninguna dimensión. El objetivo no puede ser objetivo de ningún conjuro que lo localice o lo escrute, ni percibirse mediante sensores mágicos de escrutinio.
 
 == Passwall
 components: V, S, M (una pizca de semillas de sésamo)
@@ -131,4 +131,4 @@ Una oleada de energía curativa envuelve a una criatura que puedas ver dentro de
 == Power Word Kill
 components: V
 body:
-Obligas a morir a una criatura que puedas ver dentro del alcance. Si el objetivo tiene 100 puntos de golpe o menos, muere. En caso contrario, recibe {{12d12|Psychic}} de daño.
+Obligas a morir a una criatura que puedas ver dentro del alcance. Si el objetivo tiene 100 puntos de golpe o menos, muere. En caso contrario, recibe {{12d12|Necrotic}} de daño.

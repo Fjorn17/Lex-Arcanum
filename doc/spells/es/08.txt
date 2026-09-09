@@ -35,14 +35,13 @@ body:
 Le das una orden verbal a una criatura que puedas ver dentro del alcance para que preste algún servicio o se abstenga de una acción o de un curso de actividad, según decidas. El objetivo hace una tirada de salvación de Sabiduría. Si la falla, tiene el estado de hechizado mientras dure el conjuro. El objetivo supera la tirada automáticamente si no entiende tu orden.
 Mientras esté hechizado, la criatura recibe {{5d10|Psychic}} de daño si actúa de forma directamente contraria a tu orden. Recibe ese daño una vez al día como mucho.
 Puedes dar cualquier orden que quieras, salvo una actividad que llevara a una muerte segura. Si das una orden suicida, el conjuro termina.
-Los conjuros *levantar maldición*, *restablecimiento mayor* o *deseo* terminan este conjuro.
+Los conjuros *levantar maldición* o *restablecimiento mayor* terminan este conjuro.
 **Con un espacio de conjuro de nivel superior.** Con un espacio de nivel 7 u 8, la duración es de 365 días. Con uno de nivel 9, el conjuro dura hasta que lo termine alguno de los conjuros mencionados arriba.
 
 == Gentle Repose
 components: V, S, M (2 piezas de cobre, que el conjuro consume)
 body:
 Tocas un cadáver u otros restos. Mientras dure el conjuro, el objetivo queda protegido de la descomposición y no puede convertirse en muerto viviente.
-El conjuro amplía además, en la práctica, el plazo para devolver la vida al objetivo, ya que los días pasados bajo su efecto no cuentan para el límite de tiempo de conjuros como *alzar a los muertos*.
 
 == Giant Insect
 components: V, S
@@ -71,7 +70,7 @@ Inscribes un glifo que más adelante desata un efecto mágico. Lo inscribes sobr
 El glifo es casi imperceptible: para verlo hay que superar una prueba de Sabiduría (Percepción) contra tu CD de salvación de conjuros.
 Al inscribir el glifo fijas su disparador y eliges si es una runa explosiva o un glifo de conjuro, según se explica debajo.
 **Fijar el disparador.** Decides qué activa el glifo al lanzar el conjuro. En los glifos inscritos sobre una superficie, los disparadores habituales son tocar el glifo o pisarlo, retirar otro objeto que lo tapara o acercarse a cierta distancia. En los glifos inscritos dentro de un objeto, los disparadores habituales son abrir ese objeto o ver el glifo. Una vez el glifo se activa, el conjuro termina.
-Puedes afinar el disparador para que solo lo activen criaturas de ciertos tipos (por ejemplo, que el glifo afecte solo a las aberraciones). También puedes fijar condiciones para las criaturas que no lo activen, como decir una contraseña.
+Puedes afinar el disparador para que solo lo activen criaturas de ciertos tipos (por ejemplo, que el glifo afecte solo a los muertos vivientes). También puedes fijar condiciones para las criaturas que no lo activen, como decir una contraseña.
 **Runa explosiva.** Al activarse, el glifo estalla en energía mágica en una esfera de 20 pies de radio centrada en él. Cada criatura que esté en la zona hace una tirada de salvación de Destreza y recibe {{5d8|Acid}}, {{5d8|Cold}}, {{5d8|Fire}}, {{5d8|Lightning}} o {{5d8|Thunder}} de daño (a tu elección al crear el glifo) si la falla, o la mitad si la supera.
 **Glifo de conjuro.** Puedes almacenar en el glifo un conjuro preparado de nivel 3 o inferior lanzándolo como parte de la creación del glifo. Ese conjuro debe hacer objetivo a una sola criatura o a una zona. El conjuro almacenado no produce ningún efecto inmediato al lanzarse así.
 Cuando el glifo se activa, el conjuro almacenado surte efecto. Si tiene objetivo, hace objetivo a la criatura que activó el glifo. Si afecta a una zona, la zona se centra en esa criatura. Si el conjuro invoca criaturas hostiles o crea objetos o trampas dañinas, aparecen lo más cerca posible del intruso y lo atacan. Si el conjuro requiere concentración, dura toda su duración completa.
@@ -84,10 +83,10 @@ Aparecen diez bayas en tu mano, imbuidas de magia mientras dure el conjuro. Una 
 Las bayas que nadie se coma desaparecen cuando el conjuro termina.
 
 == Grease
-components: V, S, M (un poco de corteza de cerdo o de mantequilla)
+components: V, S, M (una pizca de arcilla seca)
 body:
-Una grasa no inflamable cubre el suelo en un cuadrado de 10 pies de lado centrado en un punto dentro del alcance y lo convierte en terreno difícil mientras dure el conjuro.
-Cuando la grasa aparece, cada criatura que esté en su zona hace una tirada de salvación de Destreza. Si la falla, tiene el estado de derribada. Una criatura que entre en la zona o termine allí su turno hace también esa tirada y cae derribada si la falla.
+Un barro removido cubre el suelo en un cuadrado de 10 pies de lado centrado en un punto dentro del alcance y lo convierte en terreno difícil mientras dure el conjuro.
+Cuando el barro aparece, cada criatura que esté en su zona hace una tirada de salvación de Destreza. Si la falla, tiene el estado de derribada. Una criatura que entre en la zona o termine allí su turno hace también esa tirada y cae derribada si la falla.
 
 == Greater Invisibility
 components: V, S

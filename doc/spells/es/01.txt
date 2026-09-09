@@ -99,8 +99,8 @@ Si te mueves de modo que una criatura afectada se vea obligada a atravesar la ba
 components: V, S, M (limaduras de hierro)
 body:
 Un aura de antimagia te rodea en una emanación de 10 pies. Nadie puede lanzar conjuros, llevar a cabo acciones de magia ni crear otros efectos mágicos dentro del aura, y esas cosas no pueden hacer objetivo ni afectar de ninguna otra forma a nada que haya dentro. Las propiedades mágicas de los objetos mágicos no funcionan dentro del aura ni sobre nada que esté dentro.
-Las áreas de efecto creadas por conjuros u otra magia no pueden extenderse dentro del aura, y nadie puede teletransportarse hacia dentro o hacia fuera de ella ni viajar entre planos desde ella. Los portales se cierran temporalmente mientras estén en el aura.
-Los conjuros en curso, salvo los lanzados por un artefacto o por una deidad, quedan anulados dentro de la zona. Mientras un efecto está anulado no funciona, pero el tiempo que pasa anulado cuenta para su duración.
+Las áreas de efecto creadas por conjuros u otra magia no pueden extenderse dentro del aura, y nadie puede teletransportarse hacia dentro o hacia fuera de ella. Los portales se cierran temporalmente mientras estén en el aura.
+Los conjuros en curso, salvo los lanzados por un artefacto, quedan anulados dentro de la zona. Mientras un efecto está anulado no funciona, pero el tiempo que pasa anulado cuenta para su duración.
 *Disipar magia* no tiene efecto sobre el aura, y las auras creadas por distintos lanzamientos de *campo antimagia* no se anulan entre sí.
 
 == Antipathy/Sympathy

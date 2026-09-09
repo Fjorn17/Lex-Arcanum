@@ -8,7 +8,6 @@ Feather Fall
 Mage Armor
 Alarm
 Floating Disk
-Find Familiar
 Identify
 Burning Hands
 Heroism
@@ -54,13 +53,10 @@ Chains of Custody
 Magic Armor
 Ravaging Cleave
 Resilient Sphere
-Secret Chest
 Arcane Eye
 Faithful Hound
-Banishment
 Freedom of Movement
 Magic Contract
 Telekinesis
 Passwall
-Planar Binding
 Teleportation Circle

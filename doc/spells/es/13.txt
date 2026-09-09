@@ -43,10 +43,9 @@ Haces que una zona dentro del alcance quede protegida por medios mágicos. La zo
 Al lanzar el conjuro decides qué clase de protección proporciona, y eliges cualquiera de estas propiedades:
 • El sonido no puede atravesar la barrera del borde de la zona protegida.
 • La barrera de la zona protegida se ve oscura y brumosa, lo que impide la visión a través de ella (incluida la visión en la oscuridad).
-• Los sensores creados por conjuros de adivinación no pueden aparecer dentro de la zona protegida ni atravesar la barrera de su perímetro.
-• Las criaturas de la zona no pueden ser objetivo de conjuros de adivinación.
+• Los sensores creados por conjuros que localizan o escrutan no pueden aparecer dentro de la zona protegida ni atravesar la barrera de su perímetro.
+• Las criaturas de la zona no pueden ser objetivo de conjuros que las localicen o las escruten.
 • Nada puede teletransportarse dentro de la zona protegida ni fuera de ella.
-• El viaje entre planos queda bloqueado dentro de la zona protegida.
 Lanzar este conjuro en el mismo lugar todos los días durante 365 días hace que dure hasta que se disipe.
 **Con un espacio de conjuro de nivel superior.** Puedes aumentar el tamaño del cubo en 100 pies por cada nivel por encima de 4 que tenga el espacio.
 

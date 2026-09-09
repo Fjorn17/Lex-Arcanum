@@ -27,8 +27,8 @@ Otherworldly Steed Large Celestial, Fey, or Fiend
 == Find the Path
 components: V, S, M (un juego de herramientas de adivinación, como cartas o runas, por valor de 100 po o más)
 body:
-Percibes por medios mágicos la ruta física más directa hasta un lugar que nombres. Debes conocer ese lugar, y el conjuro falla si nombras un destino de otro plano de existencia, un destino que se mueva (como una fortaleza móvil) o un destino inconcreto (como «la guarida de un dragón verde»).
-Mientras dure el conjuro, y siempre que estés en el mismo plano de existencia que el destino, sabes a qué distancia está y en qué dirección. Siempre que tengas que elegir entre varios caminos, sabes cuál es el más directo.
+Percibes por medios mágicos la ruta física más directa hasta un lugar que nombres. Debes conocer ese lugar, y el conjuro falla si nombras un destino que se mueva (como una fortaleza móvil) o un destino inconcreto (como «la guarida de un dragón verde»).
+Mientras dure el conjuro sabes a qué distancia está y en qué dirección. Siempre que tengas que elegir entre varios caminos, sabes cuál es el más directo.
 
 == Find Traps
 components: V, S
@@ -130,7 +130,7 @@ body:
 Una prisión inmóvil, invisible y con forma de cubo, compuesta de fuerza mágica, aparece alrededor de una zona que elijas dentro del alcance. La prisión puede ser una jaula o una caja maciza, a tu elección.
 Una prisión con forma de jaula puede medir hasta 20 pies de lado y está hecha de barrotes de media pulgada de diámetro separados media pulgada entre sí. Una prisión con forma de caja puede medir hasta 10 pies de lado y crea una barrera maciza que impide el paso de cualquier materia y bloquea los conjuros lanzados hacia dentro o hacia fuera de la zona.
 Al lanzar el conjuro, cualquier criatura que esté completamente dentro de la zona de la jaula queda atrapada. Las criaturas que estén solo parcialmente dentro, o que sean demasiado grandes para caber, son empujadas desde el centro de la zona hasta quedar completamente fuera.
-Una criatura que esté dentro de la jaula no puede salir por medios no mágicos. Si intenta usar teletransporte o viaje entre planos para salir, antes debe hacer una tirada de salvación de Carisma. Si la supera, puede usar esa magia para salir. Si la falla, no sale y gasta el conjuro o el efecto en vano. La jaula se extiende también al plano Etéreo y bloquea el viaje etéreo.
+Una criatura que esté dentro de la jaula no puede salir por medios no mágicos. Si intenta usar teletransporte para salir, antes debe hacer una tirada de salvación de Carisma. Si la supera, puede usar esa magia para salir. Si la falla, no sale y gasta el conjuro o el efecto en vano.
 Este conjuro no se puede disipar con *disipar magia*.
 
 == Foresight

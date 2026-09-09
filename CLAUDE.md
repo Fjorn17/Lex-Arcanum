@@ -44,23 +44,40 @@ puede diferir (`forgeknight.html` es *Forgeknight* y *Caballero de la Forja*).
 (`extract-srd.pl` y sus volcados). **No es parte del sitio publicado y no se commitea sin
 preguntar**: puede haber otra sesión escribiendo ahí a la vez.
 
-Si vas a tocar `en/pages/spells/` o `es/pages/spells/`, comprueba antes si hay trabajo en curso en
+Si vas a tocar `en/pages/astronomy/` o `es/pages/astronomy/`, comprueba antes si hay trabajo en curso en
 `doc/spells/`, porque esas páginas son justo lo que se genera desde ahí.
 
-**Las páginas de conjuros del SRD no se editan a mano: se generan.** Todo `en/pages/spells/*.html` y
-`es/pages/spells/*.html` (menos los siete conjuros propios del suplemento) sale de
-`perl doc/spells/build-pages.pl`. Si hay que cambiar el texto de un conjuro, se cambia el dato y se
+**`srd-en.txt` ya no es el volcado limpio del SRD.** Lleva reescrituras propias —conjuros adaptados al
+sistema de magia, conjuros nuevos, daños fijados— y volver a pasarle `extract-srd.pl` por encima las
+borraría todas. Trátalo como fuente, no como salida.
+
+**Las páginas de conjuros no se editan a mano: se generan.** Todo `en/pages/astronomy/*.html` y
+`es/pages/astronomy/*.html` (menos las 31 páginas de Disciplina y los siete conjuros propios) sale de
+`perl doc/spells/build-pages.pl` (con `--limpiar` para retirar los archivos que ya no genera nadie, por ejemplo tras renombrar un conjuro; nunca borres la carpeta entera, porque **los siete conjuros propios son HTML a mano y no se regeneran**). Si hay que cambiar el texto de un conjuro, se cambia el dato y se
 vuelve a generar:
 
 | Qué cambiar | Dónde |
 | --- | --- |
-| Texto inglés | `doc/spells/srd-en.txt` (lo regenera `extract-srd.pl`) |
+| Disciplina de un conjuro | `doc/spells/disciplinas.txt` |
+| Que un conjuro salga del catálogo de Disciplinas | `doc/spells/descatalogados.txt` |
+| Que un conjuro cruce un segundo umbral | `doc/spells/cruces.txt` |
+| Nombre visible en inglés, y con él el slug | `doc/spells/nombres-en.txt` |
+| Texto inglés | `doc/spells/srd-en.txt` |
 | Traducción | `doc/spells/es/NN.txt` |
 | Nombre en español | `doc/spells/nombres-es.txt` |
 | Tablas y perfiles | `doc/spells/arreglos-en.txt` y `arreglos-es.txt` |
 | Iconos | `doc/spells/iconos-bg3.txt` (lo regeneran los `iconos-bg3*.sh`) |
 | Lista del Magistrado | `doc/spells/magister.txt` |
+| Subdisciplina de un conjuro | `doc/spells/subdisciplinas.txt` |
+| Texto de una Disciplina o subdisciplina | `doc/spells/taxonomia.pl` |
 | Molde de la página | `doc/spells/build-pages.pl` |
+| Molde de las Disciplinas | `doc/spells/build-disciplines.pl` |
+| Cabecera, menú y pie de los dos generadores | `doc/spells/paginas.pl` |
+
+**Las páginas de Disciplina tampoco se editan a mano.** Las 30 de cada idioma salen, dentro de esa misma carpeta, de
+`perl doc/spells/build-disciplines.pl`, que lee el árbol de `taxonomia.pl` y reparte los conjuros según
+`disciplinas.txt` y `subdisciplinas.txt`. La astronomía no tiene subdivisiones propias: sus subdivisiones
+**son** las otras tres Disciplinas, y por eso su página lista sus conjuros y enlaza a ellas.
 
 `doc/spells/listas.pl` es lo que repasa las listas `<ul class="spells">` de la clase y las subclases:
 pone el nombre del SRD en inglés, el del *Manual del Jugador* en español, el enlace a la página local

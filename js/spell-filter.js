@@ -1,17 +1,17 @@
 /* Filtro y ordenación del índice de conjuros / Spell index filter and sorting.
  *
- * La tabla del SRD sale del generador ya completa y ordenada por nivel, así que
+ * La tabla sale del generador ya completa y ordenada por nivel, así que
  * sin JavaScript la página sigue sirviendo: aquí solo se añade la posibilidad
- * de filtrar por nombre, nivel, escuela y clase, y de ordenar por columna.
+ * de filtrar por nombre, nivel, Disciplina y subdisciplina, y de ordenar por columna.
  *
  * Las claves de filtrado viajan en los data-* de cada fila y van SIEMPRE en
- * inglés (data-school="evocation", data-classes="sorcerer,wizard"), igual que
+ * inglés (data-discipline="alchemy"), igual que
  * data-type en los daños: el texto visible cambia de idioma, la clave no.
  */
 (function () {
   "use strict";
 
-  var table = document.getElementById("srdtable");
+  var table = document.getElementById("spelltable");
   var bar = document.getElementById("spellfilter");
   if (!table || !bar) return;
 
@@ -21,8 +21,8 @@
   var count = document.getElementById("sf-count");
   var q = document.getElementById("sf-q");
   var level = document.getElementById("sf-level");
-  var school = document.getElementById("sf-school");
-  var klass = document.getElementById("sf-class");
+  var disc = document.getElementById("sf-discipline");
+  var sub = document.getElementById("sf-sub");
   var reset = document.getElementById("sf-reset");
 
   /* El texto del contador se compone con la etiqueta que ya trae la página. */
@@ -32,8 +32,8 @@
 
   /* --- filtrado ------------------------------------------------------- */
 
-  /* Sin acentos y en minúscula, para que "adivinacion" encuentre
-     "Adivinación". */
+  /* Sin acentos y en minúscula, para que "alquimia" encuentre
+     "Alquimia". */
   function fold(s) {
     s = String(s).toLowerCase();
     return s.normalize ? s.normalize("NFD").replace(/[̀-ͯ]/g, "") : s;
@@ -42,8 +42,8 @@
   function apply() {
     var text = fold(q.value.trim());
     var lv = level.value;
-    var sc = school.value;
-    var cl = klass.value;
+    var dc = disc.value;
+    var sb = sub.value;
     var shown = 0;
 
     for (var i = 0; i < rows.length; i++) {
@@ -51,8 +51,8 @@
       var ok = true;
       if (text && fold(r.getAttribute("data-name")).indexOf(text) === -1) ok = false;
       if (ok && lv !== "" && r.getAttribute("data-level") !== lv) ok = false;
-      if (ok && sc !== "" && r.getAttribute("data-school") !== sc) ok = false;
-      if (ok && cl !== "" && ("," + r.getAttribute("data-classes") + ",").indexOf("," + cl + ",") === -1) ok = false;
+      if (ok && dc !== "" && r.getAttribute("data-discipline") !== dc) ok = false;
+      if (ok && sb !== "" && r.getAttribute("data-sub") !== sb) ok = false;
       r.hidden = !ok;
       if (ok) shown++;
     }
@@ -132,13 +132,13 @@
 
   q.addEventListener("input", apply);
   level.addEventListener("change", apply);
-  school.addEventListener("change", apply);
-  klass.addEventListener("change", apply);
+  disc.addEventListener("change", apply);
+  sub.addEventListener("change", apply);
   reset.addEventListener("click", function () {
     q.value = "";
     level.value = "";
-    school.value = "";
-    klass.value = "";
+    disc.value = "";
+    sub.value = "";
     apply();
     q.focus();
   });

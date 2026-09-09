@@ -1,6 +1,7 @@
 Acid Arrow	Flecha ácida
 Acid Splash	Salpicadura ácida
 Aid	Auxilio
+Air Bubble	Burbuja de aire
 Alarm	Alarma
 Alter Self	Alterar el propio aspecto
 Animal Friendship	Encantar animal
@@ -20,7 +21,7 @@ Astral Projection	Proyección astral
 Augury	Augurio
 Aura of Life	Aura de vida
 Awaken	Despertar
-Bane	Perdición
+Bane	Desánimo
 Banishment	Destierro
 Barkskin	Piel robliza
 Beacon of Hope	Señal de esperanza
@@ -28,7 +29,7 @@ Befuddlement	Ofuscación
 Bestow Curse	Imponer maldición
 Black Tentacles	Tentáculos negros
 Blade Barrier	Barrera de cuchillas
-Bless	Bendición
+Bless	Coraje
 Blight	Marchitar
 Blindness/Deafness	Sordera/ceguera
 Blink	Desplazamiento
@@ -89,8 +90,8 @@ Dispel Evil and Good	Disipar el bien y el mal
 Dispel Magic	Disipar magia
 Dissonant Whispers	Susurros discordantes
 Divination	Adivinación
-Divine Favor	Favor divino
-Divine Smite	Castigo divino
+Divine Favor	Arma estelar
+Divine Smite	Golpe radiante
 Divine Word	Palabra divina
 Dominate Beast	Dominar bestia
 Dominate Monster	Dominar monstruo
@@ -145,7 +146,7 @@ Glibness	Labia
 Globe of Invulnerability	Globo de invulnerabilidad
 Glyph of Warding	Glifo custodio
 Goodberry	Buenas bayas
-Grease	Grasa
+Grease	Charco de barro
 Greater Invisibility	Invisibilidad mejorada
 Greater Restoration	Restablecimiento mayor
 Guardian of Faith	Guardián de la fe
@@ -160,7 +161,7 @@ Haste	Acelerar
 Heal	Curar
 Healing Word	Palabra de curación
 Heat Metal	Calentar metal
-Hellish Rebuke	Reprensión infernal
+Hellish Rebuke	Reprensión abrasadora
 Heroes’ Feast	Festín de héroes
 Heroism	Heroísmo
 Hex	Maleficio
@@ -235,7 +236,7 @@ Polymorph	Polimorfar
 Power Word Heal	Palabra de poder: sanar
 Power Word Kill	Palabra de poder: matar
 Power Word Stun	Palabra de poder: aturdir
-Prayer of Healing	Plegaria de curación
+Prayer of Healing	Vigilia sanadora
 Prestidigitation	Prestidigitación
 Prismatic Spray	Rociada prismática
 Prismatic Wall	Muro prismático
@@ -260,11 +261,11 @@ Resurrection	Resurrección
 Reverse Gravity	Invertir la gravedad
 Revivify	Revivir
 Rope Trick	Truco de la cuerda
-Sacred Flame	Llama sagrada
+Sacred Flame	Llama astral
 Sanctuary	Santuario
 Scorching Ray	Rayo abrasador
 Scrying	Escudriñar
-Searing Smite	Castigo abrasador
+Searing Smite	Golpe abrasador
 Secret Chest	Cofre oculto
 See Invisibility	Ver invisibilidad
 Seeming	Apariencia
@@ -273,9 +274,9 @@ Sequester	Recluir
 Shapechange	Cambiar de forma
 Shatter	Hacer añicos
 Shield	Escudo
-Shield of Faith	Escudo de fe
+Shield of Faith	Égida
 Shillelagh	Shillelagh
-Shining Smite	Castigo brillante
+Shining Smite	Golpe fulgurante
 Shocking Grasp	Agarre electrizante
 Silence	Silencio
 Silent Image	Imagen silenciosa
@@ -328,7 +329,7 @@ Wall of Ice	Muro de hielo
 Wall of Stone	Muro de piedra
 Wall of Thorns	Muro de espinas
 Warding Bond	Vínculo protector
-Water Breathing	Respirar bajo el agua
+Water Breathing	Branquias
 Water Walk	Caminar sobre el agua
 Web	Telaraña
 Weird	Terror abyecto

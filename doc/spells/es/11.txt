@@ -13,7 +13,7 @@ Cada vez que lanzas este conjuro puedes hacer que su magia funcione en sentido i
 components: V, S, M (una gema, un cristal o un relicario por valor de 500 po o más)
 body:
 Tu cuerpo cae en estado catatónico mientras tu alma lo abandona y entra en el recipiente que has usado como componente material del conjuro. Mientras tu alma habita el recipiente, eres consciente de lo que te rodea como si estuvieras en el espacio del recipiente. No puedes moverte ni llevar a cabo reacciones. La única acción que puedes llevar a cabo es proyectar tu alma hasta 100 pies fuera del recipiente, ya sea para volver a tu cuerpo vivo (con lo que el conjuro termina) o para intentar poseer el cuerpo de un humanoide.
-Puedes intentar poseer a cualquier humanoide que puedas ver a 100 pies o menos de ti (las criaturas protegidas por *protección contra el bien y el mal* o por *círculo mágico* no pueden ser poseídas). El objetivo hace una tirada de salvación de Carisma. Si la falla, tu alma entra en su cuerpo y el alma del objetivo queda atrapada en el recipiente. Si la supera, resiste tus esfuerzos y no puedes volver a intentarlo durante 24 horas.
+Puedes intentar poseer a cualquier humanoide que puedas ver a 100 pies o menos de ti. El objetivo hace una tirada de salvación de Carisma. Si la falla, tu alma entra en su cuerpo y el alma del objetivo queda atrapada en el recipiente. Si la supera, resiste tus esfuerzos y no puedes volver a intentarlo durante 24 horas.
 Una vez posees el cuerpo de una criatura, lo controlas. Tus puntos de golpe, tus dados de golpe, tu Fuerza, tu Destreza, tu Constitución, tu velocidad y tus sentidos se sustituyen por los suyos. Por lo demás, conservas tus puntuaciones de juego.
 Mientras tanto, el alma de la criatura poseída puede percibir desde el recipiente con sus propios sentidos, pero no puede moverse y tiene el estado de incapacitada.
 Mientras posees un cuerpo, puedes llevar a cabo una acción de magia para volver del cuerpo anfitrión al recipiente si está a 100 pies o menos de ti, con lo que el alma de la criatura anfitriona vuelve a su cuerpo. Si el cuerpo anfitrión muere mientras estás en él, la criatura muere y tú haces una tirada de salvación de Carisma contra tu propia CD de lanzamiento de conjuros. Si la superas, vuelves al recipiente si está a 100 pies o menos de ti. En caso contrario, mueres.
@@ -115,12 +115,12 @@ Un objeto no mágico que nadie lleve ni vista recibe también el daño si está 
 == Mind Blank
 components: V, S
 body:
-Hasta que el conjuro termine, una criatura voluntaria a la que toques tiene inmunidad al daño {{Psychic}} y al estado de hechizada. El objetivo tampoco se ve afectado por nada que fuera a percibir sus emociones o su alineamiento, leer sus pensamientos o detectar su ubicación por medios mágicos, y ningún conjuro, ni siquiera *deseo*, puede reunir información sobre él, observarlo a distancia ni controlar su mente.
+Hasta que el conjuro termine, una criatura voluntaria a la que toques tiene inmunidad al daño {{Psychic}} y al estado de hechizada. El objetivo tampoco se ve afectado por nada que fuera a percibir sus emociones o su alineamiento, leer sus pensamientos o detectar su ubicación por medios mágicos, y ningún conjuro puede reunir información sobre él, observarlo a distancia ni controlar su mente.
 
 == Mind Spike
 components: S
 body:
-Clavas una púa de energía psiónica en la mente de una criatura que puedas ver dentro del alcance. El objetivo hace una tirada de salvación de Sabiduría y recibe {{3d8|Psychic}} de daño si la falla, o la mitad si la supera. Si la falla, además sabes siempre dónde está hasta que el conjuro termine, pero solo mientras los dos estéis en el mismo plano de existencia. Mientras lo sepas, el objetivo no puede esconderse de ti y, si tiene el estado de invisible, ese estado no le sirve de nada contra ti.
+Clavas una púa de energía psiónica en la mente de una criatura que puedas ver dentro del alcance. El objetivo hace una tirada de salvación de Sabiduría y recibe {{3d8|Psychic}} de daño si la falla, o la mitad si la supera. Si la falla, además sabes siempre dónde está hasta que el conjuro termine. Mientras lo sepas, el objetivo no puede esconderse de ti y, si tiene el estado de invisible, ese estado no le sirve de nada contra ti.
 **Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 2 que tenga el espacio.
 
 == Minor Illusion

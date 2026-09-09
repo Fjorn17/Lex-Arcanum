@@ -1,0 +1,27 @@
+# Nombre visible en ingles cuando NO es el del SRD.
+#
+#   clave del SRD <TAB> nombre visible en ingles
+#
+# La clave del SRD sigue siendo la clave de todos los demas ficheros de datos:
+# aqui solo se cambia lo que se lee, y con ello el slug de la pagina.
+#
+# Casi todos son la misma correccion: este mundo no tiene dioses que repartan
+# magia, asi que ningun conjuro puede llamarse por uno. Los que no eran nada
+# mas que su justificacion divina no se renombraron, se descatalogaron.
+
+Divine Favor	Starlit Weapon
+Divine Smite	Radiant Strike
+Searing Smite	Searing Strike
+Shining Smite	Shining Strike
+Shield of Faith	Aegis
+Sacred Flame	Astral Flame
+Prayer of Healing	Vigil of Healing
+Bless	Emboldening
+Bane	Dread
+Hellish Rebuke	Scalding Rebuke
+
+# Sin denotacion divina, pero con el mismo problema: nombran algo que el mundo
+# no tiene, o que el conjuro ya no hace.
+Grease	Mud Slick
+
+Water Breathing	Gills

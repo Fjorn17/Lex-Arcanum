@@ -111,7 +111,7 @@ La criatura está bajo tu control durante 24 horas, tras las cuales deja de obed
 == Creation
 components: V, S, M (un pincel)
 body:
-Extraes jirones de materia sombría de la Tierra de las Sombras para crear un objeto dentro del alcance. Es un objeto de materia vegetal (géneros blandos, cuerda, madera y demás) o de materia mineral (piedra, cristal, metal y demás). El objeto no puede ser mayor que un cubo de 5 pies de lado y debe tener una forma y un material que hayas visto antes.
+Extraes jirones de Éter del aire y los aprietas hasta formar un objeto dentro del alcance. Es un objeto de materia vegetal (géneros blandos, cuerda, madera y demás) o de materia mineral (piedra, cristal, metal y demás). El objeto no puede ser mayor que un cubo de 5 pies de lado y debe tener una forma y un material que hayas visto antes.
 La duración del conjuro depende del material del objeto, según la tabla de materiales. Si el objeto se compone de varios materiales, usa la duración más corta. Usar un objeto creado con este conjuro como componente material de otro conjuro hace que ese otro conjuro falle.
 Materials Material Vegetable matter
 

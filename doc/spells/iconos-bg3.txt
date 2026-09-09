@@ -14,6 +14,7 @@ Black Tentacles	https://bg3.wiki/w/images/d/d6/Evard%27s_Black_Tentacles_Icon.we
 Blade Barrier	https://bg3.wiki/w/images/b/bb/Blade_Barrier_Icon.webp
 Bless	https://bg3.wiki/w/images/c/c4/Bless_Icon.webp
 Blight	https://bg3.wiki/w/images/e/e0/Blight_Icon.webp
+Blindness/Deafness	https://bg3.wiki/w/images/1/1e/Blindness.webp
 Blink	https://bg3.wiki/w/images/b/b3/Blink_Icon.webp
 Blur	https://bg3.wiki/w/images/0/0d/Blur_Icon.webp
 Burning Hands	https://bg3.wiki/w/images/c/cf/Burning_Hands_Icon.webp
@@ -21,18 +22,22 @@ Call Lightning	https://bg3.wiki/w/images/9/99/Call_Lightning_Icon.webp
 Calm Emotions	https://bg3.wiki/w/images/d/d9/Calm_Emotions_Icon.webp
 Chain Lightning	https://bg3.wiki/w/images/c/c9/Chain_Lightning_Icon.webp
 Charm Person	https://bg3.wiki/w/images/b/bc/Charm_Person_Icon.webp
+Chill Touch	https://bg3.wiki/w/images/7/7a/Bone_Chill.webp
 Chromatic Orb	https://bg3.wiki/w/images/8/8e/Chromatic_Orb_Icon.webp
 Circle of Death	https://bg3.wiki/w/images/f/f2/Circle_of_Death_Icon.webp
 Cloudkill	https://bg3.wiki/w/images/7/74/Cloudkill_Icon.webp
 Color Spray	https://bg3.wiki/w/images/a/a8/Color_Spray_Icon.png
+Command	https://bg3.wiki/w/images/f/fa/Command_Halt.webp
 Comprehend Languages	https://bg3.wiki/w/images/9/99/Comprehend_Languages_Icon.webp
 Cone of Cold	https://bg3.wiki/w/images/e/ef/Cone_of_Cold_Icon.webp
 Confusion	https://bg3.wiki/w/images/7/7b/Confusion_Icon.webp
 Conjure Animals	https://bg3.wiki/w/images/3/35/Conjure_Animals_Icon.webp
 Conjure Elemental	https://bg3.wiki/w/images/e/e6/Conjure_Elemental_Icon.webp
+Conjure Minor Elementals	https://bg3.wiki/w/images/6/6c/Conjure_Minor_Elemental_Azer.webp
 Contagion	https://bg3.wiki/w/images/e/ef/Contagion_Icon.png
 Counterspell	https://bg3.wiki/w/images/5/50/Counterspell_Icon.webp
 Create Undead	https://bg3.wiki/w/images/d/da/Create_Undead_Icon.webp
+Create or Destroy Water	https://bg3.wiki/w/images/0/0d/Create_Water.webp
 Cure Wounds	https://bg3.wiki/w/images/4/40/Cure_Wounds_Icon.webp
 Dancing Lights	https://bg3.wiki/w/images/b/ba/Dancing_Lights_Icon.webp
 Darkness	https://bg3.wiki/w/images/b/bf/Darkness_Icon.webp
@@ -45,6 +50,7 @@ Dimension Door	https://bg3.wiki/w/images/d/da/Dimension_Door_Icon.webp
 Disguise Self	https://bg3.wiki/w/images/8/8d/Disguise_Self_Icon.webp
 Disintegrate	https://bg3.wiki/w/images/8/8a/Disintegrate_Icon.webp
 Dispel Evil and Good	https://bg3.wiki/w/images/a/a5/Dispel_Evil_And_Good_Icon.webp
+Dispel Magic	https://bg3.wiki/w/images/2/26/Unshackling_Strike.webp
 Dissonant Whispers	https://bg3.wiki/w/images/4/40/Dissonant_Whispers_Icon.webp
 Divine Favor	https://bg3.wiki/w/images/4/44/Divine_Favour_Icon.webp
 Divine Smite	https://bg3.wiki/w/images/4/4b/Divine_Smite_Icon.webp
@@ -127,6 +133,7 @@ Minor Illusion	https://bg3.wiki/w/images/9/9d/Minor_Illusion_Icon.webp
 Mirror Image	https://bg3.wiki/w/images/4/41/Mirror_Image_Icon.webp
 Misty Step	https://bg3.wiki/w/images/1/1f/Misty_Step_Icon.webp
 Moonbeam	https://bg3.wiki/w/images/8/8b/Moonbeam_Icon.webp
+Pass without Trace	https://bg3.wiki/w/images/e/eb/Pass_Without_Trace.webp
 Phantasmal Force	https://bg3.wiki/w/images/a/ac/Phantasmal_Force_Icon.webp
 Phantasmal Killer	https://bg3.wiki/w/images/d/da/Phantasmal_Killer_Icon.webp
 Planar Ally	https://bg3.wiki/w/images/f/f3/Planar_Ally_Icon.webp
@@ -157,6 +164,7 @@ Shatter	https://bg3.wiki/w/images/c/c5/Shatter_Icon.webp
 Shield	https://bg3.wiki/w/images/c/cf/Shield_spell_Icon.webp
 Shield of Faith	https://bg3.wiki/w/images/8/83/Shield_of_Faith_Icon.webp
 Shillelagh	https://bg3.wiki/w/images/6/68/Shillelagh_Icon.webp
+Shining Smite	https://bg3.wiki/w/images/7/7a/Blinding_Smite.webp
 Shocking Grasp	https://bg3.wiki/w/images/2/2f/Shocking_Grasp_Icon.webp
 Silence	https://bg3.wiki/w/images/7/78/Silence_Icon.webp
 Sleep	https://bg3.wiki/w/images/a/ae/Sleep_Icon.webp

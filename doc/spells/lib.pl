@@ -149,3 +149,26 @@ sub dist_paren {
 }
 
 1;
+
+# --- nombre visible y nombre de archivo --------------------------------------
+# La clave de todos los ficheros de datos es el nombre del SRD. Lo que se LEE, y
+# con ello el nombre del archivo, puede ser otro: nombres-en.txt lo cambia
+# (casi siempre para quitar una denotacion divina que este mundo no admite).
+
+our %DISPLAY_EN;
+our %DISPLAY_ES;
+
+sub load_names {
+    %DISPLAY_EN = -e 'nombres-en.txt' ? read_map('nombres-en.txt') : ();
+    %DISPLAY_ES = -e 'nombres-es.txt' ? read_map('nombres-es.txt') : ();
+}
+
+sub disp_name {
+    my ($key, $lang) = @_;
+    return $DISPLAY_ES{$key} // $DISPLAY_EN{$key} // $key if ($lang // '') eq 'es';
+    return $DISPLAY_EN{$key} // $key;
+}
+
+sub spell_slug { my ($key) = @_; return slug($DISPLAY_EN{$key} // $key) }
+
+1;

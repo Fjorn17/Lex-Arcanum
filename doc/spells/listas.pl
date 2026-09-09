@@ -19,6 +19,7 @@ use File::Basename qw(dirname);
 
 BEGIN { chdir dirname($0) or die $! }
 require './lib.pl';
+load_names();
 binmode(STDOUT, ':encoding(UTF-8)');
 my $DRY = grep { $_ eq '--dry' } @ARGV;
 
@@ -130,14 +131,14 @@ sub visible {
 # ---------------------------------------------------------------------- arregla
 
 my @FILES = (
-    [ 'en', '../../en/pages/classes/magister.html',        '../spells' ],
-    [ 'es', '../../es/pages/classes/magister.html',        '../spells' ],
-    [ 'en', '../../en/pages/subclasses/forgeknight.html',  '../spells' ],
-    [ 'es', '../../es/pages/subclasses/forgeknight.html',  '../spells' ],
-    [ 'en', '../../en/pages/subclasses/threadmarshal.html','../spells' ],
-    [ 'es', '../../es/pages/subclasses/threadmarshal.html','../spells' ],
-    [ 'en', '../../en/pages/subclasses/legacy/gematurge.html', '../../spells' ],
-    [ 'es', '../../es/pages/subclasses/legacy/gematurge.html', '../../spells' ],
+    [ 'en', '../../en/pages/classes/magister.html',        '../astronomy' ],
+    [ 'es', '../../es/pages/classes/magister.html',        '../astronomy' ],
+    [ 'en', '../../en/pages/subclasses/forgeknight.html',  '../astronomy' ],
+    [ 'es', '../../es/pages/subclasses/forgeknight.html',  '../astronomy' ],
+    [ 'en', '../../en/pages/subclasses/threadmarshal.html','../astronomy' ],
+    [ 'es', '../../es/pages/subclasses/threadmarshal.html','../astronomy' ],
+    [ 'en', '../../en/pages/subclasses/legacy/gematurge.html', '../../astronomy' ],
+    [ 'es', '../../es/pages/subclasses/legacy/gematurge.html', '../../astronomy' ],
 );
 
 my (%unknown, $changed, $total);
@@ -188,7 +189,7 @@ sub rewrite {
         my $ic    = $ICON{$key}
                   ? qq{<img class="ic" width="20" src="$ICON{$key}" alt="">}
                   : '';
-        return qq{<li class="phb">$ic<a href="$rel/@{[ slug($key) ]}.html">@{[ ent($label) ]}</a></li>};
+        return qq{<li class="phb">$ic<a href="$rel/@{[ spell_slug($key) ]}.html">@{[ ent($label) ]}</a></li>};
     }
 
     if (my $es = $PHB_ONLY{$key}) {

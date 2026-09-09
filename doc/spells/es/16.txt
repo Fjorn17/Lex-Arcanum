@@ -54,7 +54,7 @@ Inscribes un glifo dañino sobre una superficie (como un tramo de suelo o de mur
 El glifo es casi imperceptible: para verlo hay que superar una prueba de Sabiduría (Percepción) contra tu CD de salvación de conjuros.
 Al inscribir el glifo fijas su disparador y eliges qué efecto lleva el símbolo: muerte, discordia, miedo, dolor, sueño o aturdimiento. Cada uno se explica debajo.
 **Fijar el disparador.** Decides qué activa el glifo al lanzar el conjuro. En los glifos inscritos sobre una superficie, los disparadores habituales son tocar el glifo o pisarlo, retirar otro objeto que lo tapara o acercarse a cierta distancia. En los glifos inscritos dentro de un objeto, los disparadores habituales son abrir ese objeto o ver el glifo.
-Puedes afinar el disparador para que solo lo activen criaturas de ciertos tipos (por ejemplo, que el glifo afecte solo a las aberraciones). También puedes fijar condiciones para las criaturas que no lo activen, como decir una contraseña.
+Puedes afinar el disparador para que solo lo activen criaturas de ciertos tipos (por ejemplo, que el glifo afecte solo a los muertos vivientes). También puedes fijar condiciones para las criaturas que no lo activen, como decir una contraseña.
 Una vez activado, el glifo brilla y llena de luz tenue una esfera de 60 pies de radio durante 10 minutos, tras los cuales el conjuro termina. Cada criatura que esté en la esfera cuando el glifo se activa es objetivo de su efecto, igual que la que entre en la esfera por primera vez en un turno o termine allí su turno. Cada criatura es objetivo una sola vez por turno.
 **Muerte.** Cada objetivo hace una tirada de salvación de Constitución y recibe {{10d10|Necrotic}} de daño si la falla, o la mitad si la supera.
 **Discordia.** Cada objetivo hace una tirada de salvación de Sabiduría. Si la falla, discute con las demás criaturas durante 1 minuto. Durante ese tiempo es incapaz de comunicarse con sentido y tiene desventaja en las tiradas de ataque y en las pruebas de característica.
@@ -82,7 +82,7 @@ Hasta que el conjuro termine, los objetivos pueden comunicarse telepáticamente 
 components: V
 body:
 Este conjuro transporta al instante a ti y a hasta ocho criaturas voluntarias que puedas ver dentro del alcance, o bien a un solo objeto que puedas ver dentro del alcance, hasta un destino que elijas. Si haces objetivo a un objeto, debe ser de tamaño Grande o menor y no puede estar en manos de una criatura no voluntaria ni llevado por ella.
-El destino que elijas debe serte conocido y estar en tu mismo plano de existencia. Lo familiar que te resulte determina si llegas bien. El DM tira 1d100 y consulta la tabla de resultado del teletransporte y las explicaciones que la siguen.
+El destino que elijas debe serte conocido. Lo familiar que te resulte determina si llegas bien. El DM tira 1d100 y consulta la tabla de resultado del teletransporte y las explicaciones que la siguen.
 Teleportation Outcome Familiarity
 • «Círculo permanente» es un círculo de teletransportación permanente cuya secuencia de sigilos conoces.
 • «Objeto vinculado» significa que posees un objeto sacado del destino deseado en los últimos seis meses, como un libro de la biblioteca de un mago.
@@ -98,9 +98,9 @@ Teleportation Outcome Familiarity
 == Teleportation Circle
 components: V, M (tintas raras por valor de 50 po o más, que el conjuro consume)
 body:
-Al lanzar el conjuro dibujas en el suelo un círculo de 5 pies de radio inscrito con sigilos que unen tu posición con un círculo de teletransportación permanente que elijas, cuya secuencia de sigilos conozcas y que esté en tu mismo plano de existencia. Dentro del círculo que has dibujado se abre un portal reluciente que permanece abierto hasta el final de tu siguiente turno. Cualquier criatura que entre en el portal aparece al instante a 5 pies o menos del círculo de destino, o en el espacio sin ocupar más cercano si aquel está ocupado.
+Al lanzar el conjuro dibujas en el suelo un círculo de 5 pies de radio inscrito con sigilos que unen tu posición con un círculo de teletransportación permanente que elijas, cuya secuencia de sigilos conozcas. Dentro del círculo que has dibujado se abre un portal reluciente que permanece abierto hasta el final de tu siguiente turno. Cualquier criatura que entre en el portal aparece al instante a 5 pies o menos del círculo de destino, o en el espacio sin ocupar más cercano si aquel está ocupado.
 Muchos templos importantes, casas gremiales y otros lugares destacados tienen círculos de teletransportación permanentes. Cada círculo tiene una secuencia de sigilos única: una sarta de runas dispuestas en un patrón concreto.
-Cuando obtienes por primera vez la capacidad de lanzar este conjuro, aprendes las secuencias de sigilos de dos destinos del plano Material, que determina el DM. Puedes aprender más secuencias durante tus aventuras. Puedes memorizar una secuencia nueva tras estudiarla 1 minuto.
+Cuando obtienes por primera vez la capacidad de lanzar este conjuro, aprendes las secuencias de sigilos de dos destinos, que determina el DM. Puedes aprender más secuencias durante tus aventuras. Puedes memorizar una secuencia nueva tras estudiarla 1 minuto.
 Puedes crear un círculo de teletransportación permanente lanzando este conjuro en el mismo lugar todos los días durante 365 días.
 
 == Thaumaturgy
@@ -143,7 +143,7 @@ Este conjuro concede a la criatura que toques la capacidad de entender cualquier
 == Transport via Plants
 components: V, S
 body:
-Este conjuro crea un vínculo mágico entre una planta inanimada de tamaño Grande o mayor que esté dentro del alcance y otra planta, a cualquier distancia, del mismo plano de existencia. Debes haber visto o tocado la planta de destino al menos una vez antes. Mientras dure el conjuro, cualquier criatura puede entrar en la planta objetivo y salir por la planta de destino gastando 5 pies de movimiento.
+Este conjuro crea un vínculo mágico entre una planta inanimada de tamaño Grande o mayor que esté dentro del alcance y otra planta, a cualquier distancia. Debes haber visto o tocado la planta de destino al menos una vez antes. Mientras dure el conjuro, cualquier criatura puede entrar en la planta objetivo y salir por la planta de destino gastando 5 pies de movimiento.
 
 == Tree Stride
 components: V, S

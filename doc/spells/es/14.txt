@@ -39,7 +39,7 @@ El espacio puede albergar hasta ocho criaturas de tamaño Mediano o menor. Los a
 == Sacred Flame
 components: V, S
 body:
-Un resplandor parecido a una llama desciende sobre una criatura que puedas ver dentro del alcance. El objetivo hace una tirada de salvación de Destreza y recibe {{1d8|Radiant}} de daño si la falla. El objetivo no se beneficia de la cobertura media ni de la cobertura de tres cuartos en esta tirada.
+Un latigazo de luz reunida cae sobre una criatura que puedas ver dentro del alcance. El objetivo hace una tirada de salvación de Destreza y recibe {{1d8|Radiant}} de daño si la falla. El objetivo no se beneficia de la cobertura media ni de la cobertura de tres cuartos en esta tirada.
 **Mejora de truco.** El daño aumenta en 1d8 cuando alcanzas los niveles 5 (2d8), 11 (3d8) y 17 (4d8).
 
 == Sanctuary
@@ -56,7 +56,7 @@ Arrojas tres rayos de fuego. Puedes lanzarlos contra un solo objetivo dentro del
 == Scrying
 components: V, S, M (un foco por valor de 1.000 po o más, como una bola de cristal, un espejo o una pila llena de agua)
 body:
-Puedes ver y oír a una criatura que elijas y esté en tu mismo plano de existencia. El objetivo hace una tirada de salvación de Sabiduría, modificada (según las tablas siguientes) por lo bien que lo conozcas y por el tipo de conexión física que tengas con él. El objetivo no sabe contra qué está haciendo la tirada, solo que se siente incómodo.
+Puedes ver y oír a una criatura que elijas. El objetivo hace una tirada de salvación de Sabiduría, modificada (según las tablas siguientes) por lo bien que lo conozcas y por el tipo de conexión física que tengas con él. El objetivo no sabe contra qué está haciendo la tirada, solo que se siente incómodo.
 Your Knowledge of the Target Is
 Si la falla, el conjuro crea un sensor invisible e intangible a 10 pies o menos del objetivo. Puedes ver y oír a través de él como si estuvieras allí. El sensor se mueve con el objetivo y se mantiene a 10 pies o menos de él mientras dure el conjuro. Si algo puede ver el sensor, lo percibe como un orbe luminoso del tamaño de tu puño.
 En lugar de una criatura puedes hacer objetivo a un lugar que hayas visto. Si lo haces, el sensor aparece en ese lugar y no se mueve.
@@ -78,7 +78,7 @@ Al cabo de 60 días hay una probabilidad acumulativa del 5 % al final de cada d�
 == See Invisibility
 components: V, S, M (una pizca de talco)
 body:
-Mientras dure el conjuro ves como si fueran visibles a las criaturas y objetos que tengan el estado de invisible, y puedes ver el plano Etéreo. Las criaturas y objetos que haya allí se ven fantasmales.
+Mientras dure el conjuro ves como si fueran visibles a las criaturas y objetos que tengan el estado de invisible, y ves el Éter reunido, que se te aparece como un resplandor tenue.
 
 == Seeming
 components: V, S
@@ -92,13 +92,13 @@ Una criatura que lleve a cabo la acción de estudiar para examinar a un objetivo
 components: V, S, M (un hilo de cobre)
 body:
 Envías un mensaje corto de 25 palabras o menos a una criatura que hayas conocido, o a una que te haya descrito alguien que la conociera. El objetivo oye el mensaje en su mente, te reconoce como remitente si te conoce y puede responder de la misma manera de inmediato. El conjuro permite a los objetivos entender el significado de tu mensaje.
-Puedes enviar el mensaje a cualquier distancia, incluso a otros planos de existencia, pero si el objetivo está en un plano distinto del tuyo hay un 5 % de probabilidades de que el mensaje no llegue. Sabes si la entrega falla.
+Puedes enviar el mensaje a cualquier distancia, pero si el objetivo está a más de 1000 millas hay un 5 % de probabilidades de que el mensaje no llegue. Sabes si la entrega falla.
 Al recibir tu mensaje, una criatura puede bloquear tu capacidad de alcanzarla otra vez con este conjuro durante 8 horas. Si intentas enviarle otro mensaje en ese tiempo, sabes que estás bloqueado y el conjuro falla.
 
 == Sequester
 components: V, S, M (polvo de gemas por valor de 5.000 po o más, que el conjuro consume)
 body:
-Con un toque recluyes por medios mágicos un objeto o a una criatura voluntaria. Mientras dure el conjuro, el objetivo tiene el estado de invisible y no puede ser objetivo de conjuros de adivinación, ni detectarse por medios mágicos, ni observarse a distancia con magia.
+Con un toque recluyes por medios mágicos un objeto o a una criatura voluntaria. Mientras dure el conjuro, el objetivo tiene el estado de invisible y no puede ser objetivo de conjuros que lo localicen o lo escruten, ni detectarse por medios mágicos, ni observarse a distancia con magia.
 Si el objetivo es una criatura, entra en animación suspendida: tiene el estado de inconsciente, no envejece y no necesita comida, agua ni aire.
 Puedes fijar una condición para que el conjuro termine antes de tiempo. Puede ser cualquiera que elijas, pero debe ocurrir o ser visible a 1 milla o menos del objetivo. Por ejemplo: «dentro de 1.000 años» o «cuando la tarrasca despierte». Este conjuro termina también si el objetivo recibe cualquier daño.
 
@@ -124,6 +124,6 @@ body:
 Una barrera imperceptible de fuerza mágica te protege. Hasta el principio de tu siguiente turno tienes un bonificador de +5 a la CA, también contra el ataque que ha disparado el conjuro, y no recibes daño de *proyectil mágico*.
 
 == Shield of Faith
-components: V, S, M (un pergamino de oraciones)
+components: V, S, M (una guarda escrita)
 body:
 Un campo reluciente rodea a una criatura que elijas dentro del alcance y le concede un bonificador de +2 a la CA mientras dure el conjuro.
