@@ -97,3 +97,76 @@ de conjuro**, no en una tabla larga. Las Estrellas de cada Disciplina quedan apa
 - La lista de conjuros del Magistrado todavía incluye conjuros que ahora están descatalogados.
 
 🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+---
+
+## Añadido después (commits 0e60cd9 … 0125bbc)
+
+### El árbol tiene tres alturas
+
+Mente y Naturaleza vuelven a existir como subdisciplinas de Espiritismo, y lo que antes colgaba
+directamente de Espiritismo ahora cuelga de ellas:
+
+    Mente      → Ilusiones, Sujeción, Sentidos, Ánimo, Memoria
+    Naturaleza → Animales, Plantas, Hongos
+    Cosmología → Tiempo, Espacio, Gravedad
+
+*Sujeción* se llama así y no *control mental* a propósito: controlar sugiere una mano en una
+palanca, y lo que se impone es el acto, no la persona. *Hongos* está vacía a posta, y lo dice.
+
+Los dos generadores aprenden la tercera altura: la página de Mente lista los 71 conjuros de sus
+cinco Ramas, la ficha de un conjuro enseña la cadena entera (Espiritismo › Mente › Ilusiones), y
+en el buscador `data-sub` lleva la cadena completa, de modo que filtrar por Mente trae sus Ramas.
+
+### Una página nueva: cómo se escribe un conjuro
+
+`pages/astronomy/rules.html`, generada como las demás. Dos mitades:
+
+- **Un filtro de diez preguntas** sacadas de la doctrina. Un conjuro que falla una no llega a
+  tener números: llega a tener una línea en los descatalogados diciendo por qué.
+- **Los números**, que no son convenios inventados sino medidas sobre las fichas ya escritas:
+  mediana y techo de daño por nivel, qué salvación toca según lo que le hace a un cuerpo, tamaños
+  de área, alcances, cuánta Concentración pide cada nivel, y cómo escala el catálogo.
+
+En medio queda escrito el árbol de decisión de la clasificación, con la regla que lo gobierna:
+**lo que se pone encima de algo que ya existe es astronomía, y solo es alquimia si la materia pasa
+a ser otra cosa.**
+
+`doc/spells/audita.pl` vuelve a pasar el catálogo por ese filtro y avisa de lo que se sale.
+
+### La doctrina, reescrita
+
+El texto decía lo que tenía que decir y lo decía como un manifiesto: cada párrafo cerraba con una
+máxima en negrita. Mismos hechos, mismas diez secciones, misma fuente (las *Reglas del Sistema de
+Magia* v0.5), contado como lo contaría alguien que sabe del oficio.
+
+### Conjuros
+
+- **spellchanges.txt aplicado**: siete descatalogados con su motivo, tres movidos de sitio, la
+  runa explosiva de *glifo custodio* pasa a daño de fuerza y nada más, y *tirón gravitatorio* deja
+  de ser truco (nivel 1, 2d6, escala con el espacio).
+- **Doce conjuros recuperados de ediciones viejas**, entre ellos *devolución de conjuros*, y tres
+  nuevos —*erupción volcánica*, *tormenta de arena*, *torbellino*— que cierran el juego de
+  cataclismos de nivel 8 y llenan Lava y Arena, que estaban vacías.
+- **Once fichas dejan de ser permanentes.** Un ritual repetido ya no vuelve permanente nada:
+  mantiene algo en pie mientras alguien siga volviendo. Un círculo de teletransportación que se
+  salta un día desaparece.
+- **43 candidatos de Pathfinder** en `doc/propuestas/`, con ficha completa en los dos idiomas y
+  una lista con casillas para elegir. Escritos de cero: ni una línea de texto de Paizo.
+
+### Un arreglo visual
+
+Las etiquetas de los umbrales del diagrama tenían la línea base del texto en el borde de la caja,
+así que las mayúsculas se salían por arriba.
+
+---
+
+## Lo que sigue pendiente
+
+- La lista del Magistrado apunta a cuatro conjuros descatalogados (*siervo invisible*, *corcel
+  fantasma*, *protección contra energía*, *mastín fiel*), y ahora también a *telaraña* y
+  *telequinesis*. Quitarlos cambia el presupuesto de la clase, así que está sin tocar.
+- *Vapor* e *Incandescencia* siguen vacías y no hay nada en ninguna edición que las llene: hay que
+  escribirlas de cero.
+- `doc/spells/` se commitea, contra lo que dice CLAUDE.md, porque el sitio ya no se puede
+  regenerar sin ello.
