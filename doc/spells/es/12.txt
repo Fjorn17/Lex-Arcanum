@@ -115,6 +115,12 @@ body:
 Rocías una bruma tóxica sobre una criatura que esté dentro del alcance. Haz un ataque de conjuro a distancia contra el objetivo. Si aciertas, recibe {{1d12|Poison}} de daño.
 **Mejora de truco.** El daño aumenta en 1d12 cuando alcanzas los niveles 5 (2d12), 11 (3d12) y 17 (4d12).
 
+== Polar Ray
+components: V, S, M (una esquirla de hielo que no se derrite)
+body:
+Estiras el Éter hasta dejarlo en un hilo, lo aprietas hasta que cruza a hielo y lo mandas contra una criatura u objeto que veas dentro del alcance. Haz un ataque de conjuro a distancia. Si aciertas, el objetivo recibe {{12d8|Cold}} de daño y su velocidad se reduce en 10 pies hasta el final de tu siguiente turno.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 8 que tenga el espacio.
+
 == Polymorph
 components: V, S, M (el capullo de una oruga)
 body:

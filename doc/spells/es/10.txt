@@ -38,6 +38,14 @@ Tocas el zafiro usado en el lanzamiento y un objeto que pese 10 libras o menos y
 A partir de entonces puedes llevar a cabo una acción de magia para decir el nombre del objeto y aplastar el zafiro. El objeto aparece al instante en tu mano sea cual sea la distancia física o planar, y el conjuro termina.
 Si otra criatura tiene el objeto en las manos o lo lleva encima, aplastar el zafiro no lo transporta; en su lugar, averiguas quién es esa criatura y dónde se encuentra en ese momento.
 
+== Iron Body
+components: V, S, M (un clavo atravesando una moneda)
+body:
+Fuerzas tu propia carne más allá del Crisol, y durante el conjuro tu cuerpo es hierro vivo.
+Tienes resistencia al daño contundente, perforante y cortante, e inmunidad al daño de veneno y al estado envenenado. Tus golpes sin armas hacen {{1d10|Bludgeoning}} de daño, y puedes usar tu modificador de Fuerza para sus tiradas de ataque y de daño.
+También pesas diez veces más. Tu velocidad queda reducida a la mitad, no puedes nadar, y fallas automáticamente las pruebas de Destreza (Acrobacias) y cualquier tirada de salvación hecha para no quedar derribado.
+El cambio se deshace cuando el conjuro termina. Si termina mientras estás sumergido o enterrado, sigues donde el hierro te dejó.
+
 == Irresistible Dance
 components: V
 body:

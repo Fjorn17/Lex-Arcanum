@@ -47,6 +47,14 @@ components: V, S, M (una esquirla de vidrio de un espejo)
 body:
 Proteges a una criatura que esté dentro del alcance. Hasta que el conjuro termine, cualquier criatura que haga objetivo a la criatura protegida con una tirada de ataque o con un conjuro que cause daño hace una tirada de salvación de Sabiduría; si la falla, debe elegir un objetivo nuevo o perder el ataque o el conjuro. Este conjuro no protege a la criatura de las áreas de efecto. El conjuro termina si la criatura protegida hace una tirada de ataque, lanza un conjuro o causa daño.
 
+== Sandstorm
+components: V, S, M (un puñado de arena de un cauce seco)
+body:
+Aprietas el Éter reunido hasta dejarlo en arena y la pones a girar. Un cilindro de arena batida de 60 pies de radio y 60 pies de alto se levanta desde un punto del suelo que veas dentro del alcance.
+La zona está fuertemente oscurecida, y una tirada de ataque hecha a través de ella tiene desventaja. El sonido no la atraviesa: una criatura que esté dentro no oye nada que esté a más de 10 pies.
+Al lanzar el conjuro y al final de cada uno de tus turnos, cada criatura que esté en la zona hace una tirada de salvación de Constitución. Si la falla, recibe {{6d6|Slashing}} de daño y queda cegada hasta el principio de su siguiente turno. Si la supera, recibe solo la mitad del daño.
+Como acción adicional en tu turno, puedes mover el cilindro hasta 60 pies en cualquier dirección por el suelo.
+
 == Scorching Ray
 components: V, S
 body:

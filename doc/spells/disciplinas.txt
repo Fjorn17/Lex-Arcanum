@@ -266,3 +266,15 @@ Weird	Spiritism
 Wind Walk	Alchemy
 Wind Wall	Alchemy
 Zone of Truth	Spiritism
+Acid Fog	Alchemy
+Iron Body	Alchemy
+Polar Ray	Alchemy
+Sandstorm	Alchemy
+Soften Earth and Stone	Alchemy
+Spell Turning	Astronomy
+Spike Stones	Alchemy
+Temporal Stasis	Cosmology
+Transmute Rock and Mud	Alchemy
+Volcanic Eruption	Alchemy
+Wall of Iron	Alchemy
+Whirlwind	Alchemy

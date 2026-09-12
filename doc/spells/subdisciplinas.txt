@@ -230,3 +230,15 @@ Water Walk	gravity
 Bound Weapon	space
 Arcanist’s Magic Aura	illusion
 True Seeing	senses
+Acid Fog	acid
+Iron Body	metal
+Polar Ray	water
+Sandstorm	sand
+Soften Earth and Stone	earth
+Spell Turning	-
+Spike Stones	earth
+Temporal Stasis	time
+Transmute Rock and Mud	mud
+Volcanic Eruption	lava
+Wall of Iron	metal
+Whirlwind	air

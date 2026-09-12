@@ -103,6 +103,14 @@ Muchos templos importantes, casas gremiales y otros lugares destacados tienen c�
 Cuando obtienes por primera vez la capacidad de lanzar este conjuro, aprendes las secuencias de sigilos de dos destinos, que determina el DM. Puedes aprender más secuencias durante tus aventuras. Puedes memorizar una secuencia nueva tras estudiarla 1 minuto.
 Puedes crear un círculo de teletransportación permanente lanzando este conjuro en el mismo lugar todos los días durante 365 días.
 
+== Temporal Stasis
+components: V, S, M (un grano de polvo de un reloj de sol parado)
+body:
+Detienes a una criatura que veas dentro del alcance. Detener es lo más caro que hace esta Disciplina después de deshacer el pasado, y se paga con una mano sin soltar: en el momento en que dejas de sostenerlo, el momento vuelve a correr.
+El objetivo hace una tirada de salvación de Constitución. Si la falla, el tiempo deja de pasar para él. Queda incapacitado, no puede moverse ni hablar, no se entera de lo que ocurre a su alrededor, y tiene inmunidad a todo el daño y a todos los estados mientras dure el conjuro. No envejece, no se desangra y no se asfixia, y ningún efecto que ya estuviera corriendo sobre él avanza ni termina.
+Nada de lo que ya era peligroso deja de serlo. Una criatura detenida a media caída sigue cayendo, un fuego prendido en su ropa sigue ardiendo y un veneno en su sangre sigue trabajando, en el instante en que el conjuro termina.
+El conjuro termina antes si pierdes la concentración, y el objetivo solo sabe entonces que ha pasado tiempo.
+
 == Thaumaturgy
 components: V
 body:
@@ -139,6 +147,14 @@ El conjuro termina antes de tiempo si sales de la emanación o si vuelves a lanz
 components: V, M (un zigurat en miniatura)
 body:
 Este conjuro concede a la criatura que toques la capacidad de entender cualquier idioma hablado o signado que oiga o vea. Además, cuando el objetivo se comunica hablando o signando, cualquier criatura que conozca al menos un idioma puede entenderlo si puede oírlo o ver sus signos.
+
+== Transmute Rock and Mud
+components: V, S, M (arcilla y agua)
+body:
+Elige una extensión de piedra o de fango que veas dentro del alcance y que quepa en un cubo de 40 pies. La cambias de una de estas dos maneras.
+**De fango a piedra.** El fango o las arenas movedizas no mágicas de la zona se vuelven tan duros como la piedra corriente. Cada criatura que esté en el fango hace una tirada de salvación de Destreza. Si la falla, queda atrapada al endurecerse el fango y apresada hasta que ella u otra criatura la libere con una acción y una prueba de Fuerza (Atletismo) de CD 20.
+**De piedra a fango.** La piedra no mágica de la zona se convierte en un volumen igual de fango espeso. La zona pasa a ser terreno difícil, y una criatura que entre en ella o termine su turno ahí se hunde 1d4 pies, hasta un máximo de la mitad de su altura. Una criatura que se haya hundido al menos la mitad de su altura queda apresada y se libera como arriba.
+La piedra que esté sosteniendo una estructura cede sin llegar a soltarse, y el DJ decide qué hace la estructura al respecto. Cuando el conjuro termina, el material vuelve a ser lo que era.
 
 == Transport via Plants
 components: V, S

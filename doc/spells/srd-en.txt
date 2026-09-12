@@ -10,6 +10,19 @@ body:
 A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 Acid damage and 2d4 Acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage only.
 Using a Higher-Level Spell Slot. The damage (both initial and later) increases by 1d4 for each spell slot level above 2.
 
+== Acid Fog
+level: 6
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: 120 feet
+components: V, S, M (a pinch of powdered corrosive salt)
+duration: Concentration, up to 1 minute
+body:
+You press gathered Ether until it crosses into a caustic vapor, filling a 20-foot-radius Sphere centered on a point you choose within range. The Sphere is Heavily Obscured, and it spreads around corners. It lasts for the duration or until a strong wind disperses it, ending the spell.
+The fog is thick enough to drag on anything moving through it. A creature's Speed is halved while it is in the Sphere, and a creature that starts its turn there makes a Constitution saving throw, taking 4d6 Acid damage on a failed save or half as much damage on a successful one.
+Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 6.
+
 == Acid Splash
 level: 0
 school: Evocation
@@ -2369,6 +2382,20 @@ You touch the sapphire used in the casting and an object weighing 10 pounds or l
 Thereafter, you can take a Magic action to speak the object’s name and crush the sapphire. The object instantly appears in your hand regardless of physical or planar distances, and the spell ends.
 If another creature is holding or carrying the object, crushing the sapphire doesn’t transport it, but instead you learn who that creature is and where that creature is currently located.
 
+== Iron Body
+level: 8
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: Self
+components: V, S, M (a nail driven through a coin)
+duration: Concentration, up to 10 minutes
+body:
+You force your own flesh past the Crucible, and for the duration your body is living iron.
+You have Resistance to Bludgeoning, Piercing, and Slashing damage, and you have Immunity to Poison damage and the Poisoned condition. Your unarmed strikes deal 1d10 Bludgeoning damage, and you can use your Strength modifier for their attack and damage rolls.
+You also weigh ten times as much. Your Speed is halved, you can't swim, and you automatically fail Dexterity (Acrobatics) checks and any saving throw made to avoid falling Prone.
+The change is undone when the spell ends. If the spell ends while you are submerged or buried, you are still where the iron left you.
+
 == Irresistible Dance
 level: 6
 school: Enchantment
@@ -3033,6 +3060,18 @@ body:
 You spray toxic mist at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d12 Poison damage.
 Cantrip Upgrade. The damage increases by 1d12 when you reach levels 5 (2d12), 11 (3d12), and 17 (4d12).
 
+== Polar Ray
+level: 8
+school: Transmutation
+classes: Sorcerer, Wizard
+casting: Action
+range: 120 feet
+components: V, S, M (a sliver of ice that never melts)
+duration: Instantaneous
+body:
+You draw the Ether out into a thread and press it until it crosses into ice, then send it at one creature or object you can see within range. Make a ranged spell attack. On a hit, the target takes 12d8 Cold damage, and its Speed is reduced by 10 feet until the end of your next turn.
+Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 8.
+
 == Polymorph
 level: 4
 school: Transmutation
@@ -3434,6 +3473,20 @@ duration: 1 minute
 body:
 You ward a creature within range. Until the spell ends, any creature who targets the warded creature with an attack roll or a damaging spell must succeed on a Wisdom saving throw or either choose a new target or lose the attack or spell. This spell doesn’t protect the warded creature from areas of effect. The spell ends if the warded creature makes an attack roll, casts a spell, or deals damage.
 
+== Sandstorm
+level: 8
+school: Transmutation
+classes: Druid, Sorcerer
+casting: Action
+range: 500 feet
+components: V, S, M (a handful of sand from a dry riverbed)
+duration: Concentration, up to 1 minute
+body:
+You press gathered Ether into sand and set it turning. A 60-foot-radius, 60-foot-high Cylinder of driven sand rises from a point on the ground you can see within range.
+The area is Heavily Obscured, and an attack roll made through it has Disadvantage. Sound does not carry: a creature in the area can't hear anything more than 10 feet away.
+When you cast the spell and at the end of each of your turns, each creature in the area makes a Constitution saving throw. On a failed save, a creature takes 6d6 Slashing damage and has the Blinded condition until the start of its next turn. On a successful save, it takes half as much damage only.
+As a Bonus Action on your turn, you can move the Cylinder up to 60 feet in any direction along the ground.
+
 == Scorching Ray
 level: 2
 school: Evocation
@@ -3697,6 +3750,19 @@ You alter time around up to six creatures of your choice in a 40-foot Cube withi
 An affected target’s Speed is halved, it takes a −2 penalty to AC and Dexterity saving throws, and it can’t take Reactions. On its turns, it can take either an action or a Bonus Action, not both, and it can make only one attack if it takes the Attack action. If it casts a spell with a Somatic component, there is a 25 percent chance the spell fails as a result of the target making the spell’s gestures too slowly.
 An affected target repeats the save at the end of each of its turns, ending the spell on itself on a success.
 
+== Soften Earth and Stone
+level: 2
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: 90 feet
+components: V, S, M (a lump of wet clay)
+duration: Concentration, up to 1 minute
+body:
+You loosen the ground in a 20-foot Cube you can see within range. Earth, sand, and worked or natural stone in the area soften into a thick sludge, and the area becomes Difficult Terrain for the duration.
+Each creature standing in the area when you cast this spell, and each creature that enters it or ends its turn there, makes a Strength saving throw. On a failed save, a creature sinks to its knees and has the Restrained condition. A Restrained creature can take an action to make a Strength (Athletics) check against your spell save DC, ending the condition on itself on a success.
+The spell has no effect on stone that is holding a structure up, and no effect on a creature that is flying or that is not touching the ground.
+
 == Sorcerous Burst
 level: 0
 school: Evocation
@@ -3760,6 +3826,20 @@ You can also turn Difficult Terrain caused by plant growth (such as thickets and
 The spell doesn’t enable plants to uproot themselves and move about, but they can move their branches, tendrils, and stalks for you.
 If a Plant creature is in the area, you can communicate with it as if you shared a common language.
 
+== Spell Turning
+level: 7
+school: Abjuration
+classes: Sorcerer, Wizard
+casting: Action
+range: Self
+components: V, S, M (a mirror of polished silver worth 500+ GP)
+duration: Concentration, up to 10 minutes
+body:
+You keep a thin shell of gathered Ether around yourself and leave a hand ready to take hold of anyone else's. Astronomy reaches the Ether wherever the Ether is, including the Ether another hand is holding, and this spell does nothing more than that: it does not block a working, it takes it and hands it back.
+For the duration, when a creature you can see casts a spell of level 6 or lower that targets only you, you can take a Reaction to seize it. That creature makes a Constitution saving throw against your spell save DC. On a failed save, the spell has no effect on you and instead takes effect as though its caster had cast it targeting themself, using their own spell save DC and attack bonus. On a successful save, the spell affects you as normal.
+Once you have turned a spell of level 4 or higher in this way, this spell ends.
+Using a Higher-Level Spell Slot. You can turn a spell of level 7 or lower with a level 8 slot, or of level 8 or lower with a level 9 slot.
+
 == Spider Climb
 level: 2
 school: Transmutation
@@ -3783,6 +3863,20 @@ duration: Concentration, up to 10 minutes
 body:
 The ground in a 20-foot-radius Sphere centered on a point within range sprouts hard spikes and thorns. The area becomes Difficult Terrain for the duration. When a creature moves into or within the area, it takes 2d4 Piercing damage for every 5 feet it travels.
 The transformation of the ground is camouflaged to look natural. Any creature that can’t see the area when the spell is cast must take a Search action and succeed on a Wisdom (Perception or Survival) check against your spell save DC to recognize the terrain as hazardous before entering it.
+
+== Spike Stones
+level: 4
+school: Transmutation
+classes: Druid, Ranger, Wizard
+casting: Action
+range: 150 feet
+components: V, S, M (a sharp chip of flint)
+duration: Concentration, up to 10 minutes
+body:
+You press gathered Ether into stone and let it come up through the ground as a bed of spikes. The ground in a 20-foot-radius circle centered on a point within range is covered in them for the duration, and the area is Difficult Terrain.
+When a creature moves into or within the area, it takes 2d8 Piercing damage for every 5 feet it travels. The spikes are hard to see for what they are: a creature that can't see the area when the spell is cast must succeed on a Wisdom (Perception) check against your spell save DC to recognize it as dangerous before entering it.
+A creature that takes damage from the spikes makes a Constitution saving throw. On a failed save, its Speed is reduced by 10 feet until it regains at least 1 Hit Point or receives magical healing.
+Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 4.
 
 == Spirit Guardians
 level: 3
@@ -4014,6 +4108,20 @@ Many major temples, guildhalls, and other important places have permanent telepo
 When you first gain the ability to cast this spell, you learn the sigil sequences for two destinations, determined by the GM. You might learn additional sigil sequences during your adventures. You can commit a new sigil sequence to memory after studying it for 1 minute.
 You can create a permanent teleportation circle by casting this spell in the same location every day for 365 days.
 
+== Temporal Stasis
+level: 8
+school: Transmutation
+classes: Sorcerer, Wizard
+casting: Action
+range: 60 feet
+components: V, S, M (a grain of dust from a stopped sundial)
+duration: Concentration, up to 1 hour
+body:
+You halt one creature you can see within range. Halting is the most expensive thing this Discipline does after undoing the past, and it is paid for in an unbroken hand: the moment you stop holding it, the moment starts again.
+The target makes a Constitution saving throw. On a failed save, time does not pass for it. It has the Incapacitated condition, it can't move or speak, it is unaware of its surroundings, and it has Immunity to all damage and to every condition for the duration. It does not age, bleed, or suffocate, and any effect already running on it neither advances nor ends.
+Nothing that was already dangerous stops being dangerous. A creature halted in mid-fall resumes falling, a fire caught on its clothes resumes burning, and a poison in its blood resumes working, the instant the spell ends.
+The spell ends early if you lose Concentration, and the target is then aware only that time has passed.
+
 == Thaumaturgy
 level: 0
 school: Transmutation
@@ -4080,6 +4188,20 @@ components: V, M (a miniature ziggurat)
 duration: 1 hour
 body:
 This spell grants the creature you touch the ability to understand any spoken or signed language that it hears or sees. Moreover, when the target communicates by speaking or signing, any creature that knows at least one language can understand it if that creature can hear the speech or see the signing.
+
+== Transmute Rock and Mud
+level: 5
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: 120 feet
+components: V, S, M (clay and water)
+duration: Concentration, up to 1 hour
+body:
+Choose an area of stone or mud that you can see within range and that fits in a 40-foot Cube. You change it in one of the two following ways.
+Mud to Stone. Nonmagical mud or quicksand in the area becomes as hard as ordinary stone. Each creature in the mud makes a Dexterity saving throw. On a failed save, a creature is caught as the mud hardens and has the Restrained condition until it or another creature frees it with an action and a successful DC 20 Strength (Athletics) check.
+Stone to Mud. Nonmagical stone in the area becomes an equal volume of thick mud. The area becomes Difficult Terrain, and a creature that enters it or ends its turn there sinks 1d4 feet, to a maximum of half its height. A creature that has sunk at least half its height has the Restrained condition and escapes as above.
+Stone that is holding a structure up sags rather than gives way, and the GM decides what the structure does about it. When the spell ends, the material returns to what it was.
 
 == Transport via Plants
 level: 6
@@ -4223,6 +4345,21 @@ body:
 You point at a location within range, and a glowing, 1-foot-diameter ball of acid streaks there and explodes in a 20-foot-radius Sphere. Each creature in that area makes a Dexterity saving throw. On a failed save, a creature takes 10d4 Acid damage and another 5d4 Acid damage at the end of its next turn. On a successful save, a creature takes half the initial damage only.
 Using a Higher-Level Spell Slot. The initial damage increases by 2d4 for each spell slot level above 4.
 
+== Volcanic Eruption
+level: 8
+school: Transmutation
+classes: Druid, Sorcerer
+casting: Action
+range: 500 feet
+components: V, S, M (a shard of cooled basalt)
+duration: Concentration, up to 1 minute
+body:
+You press gathered Ether past the Crucible twice over, into stone and then past stone, and open the ground on it. A 30-foot-radius circle of ground you can see within range splits, and molten rock wells up through it for the duration. The area is Difficult Terrain, and it is filled with Bright Light out to 60 feet and Dim Light for another 60 feet.
+When you cast this spell and at the end of each of your turns, each creature in the circle makes a Dexterity saving throw, taking 8d10 Fire damage on a failed save or half as much damage on a successful one.
+Spatter. At the end of each of your turns, molten rock is thrown clear of the circle. Each creature within 60 feet of the circle's edge makes a Dexterity saving throw, taking 4d10 Fire damage on a failed save or half as much damage on a successful one.
+Structures. Any structure in contact with the ground in the circle takes 50 Fire damage when you cast the spell and at the end of each of your turns. If a structure drops to 0 Hit Points, it collapses.
+When the spell ends, the molten rock cools over the following minute into rough new stone.
+
 == Wall of Fire
 level: 4
 school: Evocation
@@ -4263,6 +4400,20 @@ If the wall cuts through a creature’s space when it appears, the creature is p
 The wall is an object that can be damaged and thus breached. It has AC 12 and 30 Hit Points per 10-foot section, and it has Immunity to Cold, Poison, and Psychic damage and Vulnerability to Fire damage. Reducing a 10-foot section of wall to 0 Hit Points destroys it and leaves behind a sheet of frigid air in the space the wall occupied.
 A creature moving through the sheet of frigid air for the first time on a turn makes a Constitution saving throw, taking 5d6 Cold damage on a failed save or half as much damage on a successful one.
 Using a Higher-Level Spell Slot. The damage the wall deals when it appears increases by 2d6 and the damage from passing through the sheet of frigid air increases by 1d6 for each spell slot level above 6.
+
+== Wall of Iron
+level: 5
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: 120 feet
+components: V, S, M (a small iron ingot)
+duration: Concentration, up to 10 minutes
+body:
+You press gathered Ether until it crosses into iron and stand it up on a solid surface you can see within range. The wall is 1 inch thick and is made of up to ten panels, each 10 feet by 10 feet. Each panel must share an edge with at least one other. Alternatively, you can make panels 10 feet by 20 feet and half an inch thick.
+If the wall appears in a creature's space, that creature is pushed to one side of the wall, your choice. A creature that would be enclosed on all sides by the wall can make a Dexterity saving throw. On a successful save, it can use its Reaction to move up to its Speed so that it is no longer enclosed.
+Each panel is an object with AC 19 and 30 Hit Points, and it has Immunity to Poison and Psychic damage. Reducing a panel to 0 Hit Points destroys it, and the GM decides whether the panels resting on it come down as well.
+The wall is gathered Ether like anything else, and it lasts only as long as you hold it. When the spell ends, the iron thins out and is gone.
 
 == Wall of Stone
 level: 5
@@ -4356,6 +4507,20 @@ duration: Concentration, up to 1 minute
 body:
 You try to create illusory terrors in others’ minds. Each creature of your choice in a 30-foot-radius Sphere centered on a point within range makes a Wisdom saving throw. On a failed save, a target takes 10d10 Psychic damage and has the Frightened condition for the duration. On a successful save, a target takes half as much damage only.
 A Frightened target makes a Wisdom saving throw at the end of each of its turns. On a failed save, it takes 5d10 Psychic damage. On a successful save, the spell ends on that target.
+
+== Whirlwind
+level: 8
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: 300 feet
+components: V, S, M (a scrap of cloth torn from a sail)
+duration: Concentration, up to 1 minute
+body:
+You press gathered Ether into air and set it spinning. A 10-foot-radius, 30-foot-high Cylinder of whirling wind appears centered on a point on the ground you can see within range.
+When the Cylinder appears, and when a creature enters it or ends its turn there, that creature makes a Strength saving throw. On a failed save, the creature takes 10d6 Bludgeoning damage and has the Restrained condition, held off the ground inside the Cylinder. On a successful save, it takes half as much damage only and is not Restrained.
+A creature Restrained by the whirlwind moves with it. At the start of each of its turns, it can repeat the save, ending the condition on itself on a success and falling to the ground, taking falling damage as normal.
+As a Bonus Action on your turn, you can move the Cylinder up to 30 feet in any direction along the ground.
 
 == Wind Walk
 level: 6

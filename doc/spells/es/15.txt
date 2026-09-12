@@ -57,6 +57,13 @@ Alteras el tiempo alrededor de hasta seis criaturas que elijas y estén en un cu
 La velocidad de un objetivo afectado se reduce a la mitad, recibe un penalizador de −2 a la CA y a las tiradas de salvación de Destreza, y no puede llevar a cabo reacciones. En sus turnos puede llevar a cabo una acción o una acción adicional, pero no ambas, y solo puede hacer un ataque si lleva a cabo la acción de atacar. Si lanza un conjuro con componente somático, hay un 25 % de probabilidades de que falle porque el objetivo hace los gestos demasiado despacio.
 Un objetivo afectado repite la tirada al final de cada uno de sus turnos y el conjuro termina para él si la supera.
 
+== Soften Earth and Stone
+components: V, S, M (un pegote de arcilla mojada)
+body:
+Aflojas el terreno en un cubo de 20 pies que veas dentro del alcance. La tierra, la arena y la piedra, labrada o natural, se ablandan hasta quedar en un lodo espeso, y la zona pasa a ser terreno difícil mientras dure el conjuro.
+Cada criatura que esté en la zona al lanzar el conjuro, y cada criatura que entre en ella o termine su turno ahí, hace una tirada de salvación de Fuerza. Si la falla, se hunde hasta las rodillas y queda apresada. Una criatura apresada puede usar una acción para hacer una prueba de Fuerza (Atletismo) contra la CD de salvación de tus conjuros y librarse si la supera.
+El conjuro no afecta a la piedra que esté sosteniendo una estructura, ni a una criatura que vuele o que no esté tocando el suelo.
+
 == Sorcerous Burst
 components: V, S
 body:
@@ -90,6 +97,14 @@ También puedes convertir el terreno difícil causado por el crecimiento vegetal
 El conjuro no permite a las plantas desarraigarse y moverse, pero sí pueden mover por ti sus ramas, sus zarcillos y sus tallos.
 Si hay una criatura vegetal en la zona, puedes comunicarte con ella como si compartierais un idioma.
 
+== Spell Turning
+components: V, S, M (un espejo de plata pulida por valor de 500 PO o más)
+body:
+Mantienes una película fina de Éter reunido a tu alrededor y dejas una mano preparada para agarrar la de otro. La astronomía alcanza el Éter esté donde esté, incluido el que otra mano está sosteniendo, y este conjuro no hace nada más que eso: no bloquea una operación, la coge y la devuelve.
+Mientras dure, cuando una criatura que veas lance un conjuro de nivel 6 o inferior que te tenga a ti como único objetivo, puedes usar una reacción para agarrarlo. Esa criatura hace una tirada de salvación de Constitución contra la CD de salvación de tus conjuros. Si la falla, el conjuro no te afecta y, en su lugar, surte efecto como si quien lo lanzó se lo hubiera lanzado a sí mismo, usando su propia CD de salvación y su propio bonificador de ataque. Si la supera, el conjuro te afecta con normalidad.
+En cuanto devuelvas de este modo un conjuro de nivel 4 o superior, este conjuro termina.
+**Con un espacio de conjuro de nivel superior.** Puedes devolver un conjuro de nivel 7 o inferior con un espacio de nivel 8, o de nivel 8 o inferior con uno de nivel 9.
+
 == Spider Climb
 components: V, S, M (una gota de betún y una araña)
 body:
@@ -101,6 +116,14 @@ components: V, S, M (siete espinas)
 body:
 Del suelo de una esfera de 20 pies de radio centrada en un punto dentro del alcance brotan púas y espinas duras. La zona se convierte en terreno difícil mientras dure el conjuro. Cuando una criatura entra en la zona o se mueve por ella, recibe {{2d4|Piercing}} de daño por cada 5 pies que recorra.
 La transformación del suelo queda camuflada para parecer natural. Cualquier criatura que no pueda ver la zona cuando se lanza el conjuro debe llevar a cabo la acción de buscar y superar una prueba de Sabiduría (Percepción o Supervivencia) contra tu CD de salvación de conjuros para reconocer el terreno como peligroso antes de entrar en él.
+
+== Spike Stones
+components: V, S, M (una lasca afilada de pedernal)
+body:
+Aprietas el Éter reunido hasta dejarlo en piedra y la dejas salir del suelo como un lecho de púas. El suelo de un círculo de 20 pies de radio centrado en un punto dentro del alcance queda cubierto de ellas mientras dure el conjuro, y la zona es terreno difícil.
+Cuando una criatura entra en la zona o se mueve dentro de ella, recibe {{2d8|Piercing}} de daño por cada 5 pies que recorra. Las púas no se reconocen fácilmente por lo que son: una criatura que no vea la zona al lanzarse el conjuro tiene que superar una prueba de Sabiduría (Percepción) contra la CD de salvación de tus conjuros para darse cuenta de que es peligrosa antes de entrar.
+Una criatura que reciba daño de las púas hace una tirada de salvación de Constitución. Si la falla, su velocidad se reduce en 10 pies hasta que recupere al menos 1 punto de golpe o reciba curación mágica.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 4 que tenga el espacio.
 
 == Spirit Guardians
 components: V, S, M (una guarda escrita)

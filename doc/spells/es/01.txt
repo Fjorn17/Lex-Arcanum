@@ -22,6 +22,13 @@ body:
 Una flecha verde reluciente sale disparada hacia un objetivo que esté dentro del alcance y estalla en una rociada de ácido. Haz un ataque de conjuro a distancia contra el objetivo. Si aciertas, el objetivo recibe {{4d4|Acid}} de daño y otros {{2d4|Acid}} de daño al final de su siguiente turno. Si fallas, la flecha lo salpica y recibe la mitad del daño inicial, y nada más.
 **Con un espacio de conjuro de nivel superior.** El daño (tanto el inicial como el posterior) aumenta en 1d4 por cada nivel por encima de 2 que tenga el espacio.
 
+== Acid Fog
+components: V, S, M (una pizca de sal corrosiva en polvo)
+body:
+Aprietas el Éter reunido hasta que cruza a vapor cáustico y llenas con él una esfera de 20 pies de radio centrada en un punto que elijas dentro del alcance. La esfera está fuertemente oscurecida y se extiende por las esquinas. Dura lo que dure el conjuro, o hasta que un viento fuerte la disperse y lo termine.
+La niebla es lo bastante espesa como para tirar de lo que la atraviesa. La velocidad de una criatura queda reducida a la mitad mientras esté en la esfera, y una criatura que empiece su turno ahí hace una tirada de salvación de Constitución: si la falla, recibe {{4d6|Acid}} de daño, y la mitad si la supera.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 6 que tenga el espacio.
+
 == Acid Splash
 components: V, S
 body:

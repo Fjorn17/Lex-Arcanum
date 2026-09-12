@@ -38,6 +38,15 @@ body:
 Señalas un lugar dentro del alcance y una bola de ácido luminosa de 1 pie de diámetro sale disparada hacia allí y estalla en una esfera de 20 pies de radio. Cada criatura que esté en esa zona hace una tirada de salvación de Destreza. Si la falla, recibe {{10d4|Acid}} de daño y otros {{5d4|Acid}} de daño al final de su siguiente turno. Si la supera, recibe la mitad del daño inicial y nada más.
 **Con un espacio de conjuro de nivel superior.** El daño inicial aumenta en 2d4 por cada nivel por encima de 4 que tenga el espacio.
 
+== Volcanic Eruption
+components: V, S, M (una esquirla de basalto frío)
+body:
+Aprietas el Éter reunido más allá del Crisol dos veces, hasta piedra y más allá de la piedra, y le abres el suelo encima. Un círculo de 30 pies de radio de suelo que veas dentro del alcance se raja, y la roca fundida sube por él mientras dure el conjuro. La zona es terreno difícil, y llena de luz brillante hasta 60 pies y de luz tenue otros 60.
+Al lanzar el conjuro y al final de cada uno de tus turnos, cada criatura que esté en el círculo hace una tirada de salvación de Destreza: si la falla, recibe {{8d10|Fire}} de daño, y la mitad si la supera.
+**Salpicadura.** Al final de cada uno de tus turnos, la roca fundida salta fuera del círculo. Cada criatura que esté a 60 pies o menos del borde hace una tirada de salvación de Destreza: si la falla, recibe {{4d10|Fire}} de daño, y la mitad si la supera.
+**Estructuras.** Toda estructura que esté en contacto con el suelo del círculo recibe 50 de daño de fuego al lanzarse el conjuro y al final de cada uno de tus turnos. Si una estructura queda a 0 puntos de golpe, se derrumba.
+Cuando el conjuro termina, la roca fundida se enfría a lo largo del minuto siguiente y queda como piedra nueva y basta.
+
 == Wall of Fire
 components: V, S, M (un trozo de carbón)
 body:
@@ -60,6 +69,14 @@ Si al aparecer corta el espacio de una criatura, esta es empujada a uno de los l
 El muro es un objeto que se puede dañar y, por tanto, abrir. Tiene CA 12 y 30 puntos de golpe por cada sección de 10 pies, e inmunidad al daño {{Cold}}, {{Poison}} y {{Psychic}}, y vulnerabilidad al daño {{Fire}}. Reducir una sección de 10 pies a 0 puntos de golpe la destruye y deja atrás una lámina de aire gélido en el espacio que ocupaba.
 Una criatura que atraviese esa lámina de aire gélido por primera vez en un turno hace una tirada de salvación de Constitución y recibe {{5d6|Cold}} de daño si la falla, o la mitad si la supera.
 **Con un espacio de conjuro de nivel superior.** El daño que causa el muro al aparecer aumenta en 2d6 y el de atravesar la lámina de aire gélido aumenta en 1d6 por cada nivel por encima de 6 que tenga el espacio.
+
+== Wall of Iron
+components: V, S, M (un lingote pequeño de hierro)
+body:
+Aprietas el Éter reunido hasta que cruza a hierro y lo levantas sobre una superficie sólida que veas dentro del alcance. El muro tiene una pulgada de grosor y está hecho de hasta diez paneles de 10 pies por 10 pies. Cada panel tiene que compartir un borde con al menos otro. También puedes hacer paneles de 10 pies por 20 con media pulgada de grosor.
+Si el muro aparece en el espacio de una criatura, esa criatura queda empujada a uno de los dos lados, a tu elección. Una criatura que fuese a quedar rodeada por el muro por todos los lados puede hacer una tirada de salvación de Destreza; si la supera, puede usar su reacción para moverse hasta su velocidad y dejar de estar rodeada.
+Cada panel es un objeto con CA 19 y 30 puntos de golpe, y tiene inmunidad al daño de veneno y psíquico. Dejar un panel a 0 puntos de golpe lo destruye, y el DJ decide si los paneles que se apoyaban en él se vienen abajo también.
+El muro es Éter reunido como cualquier otra cosa, y dura lo que lo sostengas. Cuando el conjuro termina, el hierro se reparte y desaparece.
 
 == Wall of Stone
 components: V, S, M (un cubo de granito)
@@ -111,6 +128,14 @@ components: V, S
 body:
 Intentas crear terrores ilusorios en la mente de los demás. Cada criatura que elijas y esté en una esfera de 30 pies de radio centrada en un punto dentro del alcance hace una tirada de salvación de Sabiduría. Si la falla, recibe {{10d10|Psychic}} de daño y tiene el estado de asustada mientras dure el conjuro. Si la supera, recibe la mitad del daño y nada más.
 Un objetivo asustado hace una tirada de salvación de Sabiduría al final de cada uno de sus turnos. Si la falla, recibe {{5d10|Psychic}} de daño. Si la supera, el conjuro termina para él.
+
+== Whirlwind
+components: V, S, M (un jirón de tela arrancado de una vela)
+body:
+Aprietas el Éter reunido hasta dejarlo en aire y lo pones a girar. Un cilindro de viento de 10 pies de radio y 30 pies de alto aparece centrado en un punto del suelo que veas dentro del alcance.
+Cuando el cilindro aparece, y cuando una criatura entra en él o termina su turno ahí, esa criatura hace una tirada de salvación de Fuerza. Si la falla, recibe {{10d6|Bludgeoning}} de daño y queda apresada, sostenida en el aire dentro del cilindro. Si la supera, recibe solo la mitad del daño y no queda apresada.
+Una criatura apresada por el torbellino se mueve con él. Al principio de cada uno de sus turnos puede repetir la salvación; si la supera, se libra y cae al suelo, recibiendo el daño de caída correspondiente.
+Como acción adicional en tu turno, puedes mover el cilindro hasta 30 pies en cualquier dirección por el suelo.
 
 == Wind Walk
 components: V, S, M (una vela)
