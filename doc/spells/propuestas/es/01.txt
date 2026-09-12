@@ -376,3 +376,288 @@ El metal es la Estrella más cara de la Disciplina, y este conjuro se la gasta e
 Cada criatura que no seas tú en una emanación de 20 pies hace una tirada de salvación de Destreza y recibe {{5d6|Piercing}} de daño si la falla, o la mitad si la supera.
 Una criatura que falle la salvación por 5 o más recibe {{1d6|Piercing}} de daño adicional al principio de cada uno de sus turnos hasta que ella u otra criatura use una acción en sacarle los fragmentos, o hasta que reciba cualquier curación mágica.
 **Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 3 que tenga el espacio.
+== Reading
+components: S
+body:
+El estado base se ve a partir del segundo paso, y en el oficio se aprende a buscarlo antes que ninguna otra cosa.
+Lees la operación que ha empezado la criatura que activó la reacción. Averiguas su Disciplina, si ha cruzado un umbral, y si va dirigida a ti, a otro o a un sitio. Si es un conjuro que tú tienes en tu repertorio, averiguas su nombre.
+No averiguas qué va a hacer. Leer una Constelación no basta para encenderla, y tampoco basta para adivinar cómo acaba.
+
+== Ward Against Working
+components: V, S
+body:
+La Oposición es lo que hace el Éter de uno cuando algo ajeno intenta entrar, y la tiene todo el mundo. Este conjuro no le suma nada: gasta Concentración en tu lugar para que no tenga que gastarla el cuerpo.
+Mientras dure, la criatura voluntaria a la que toques tiene ventaja en las tiradas de salvación contra conjuros y otros efectos mágicos.
+Si la criatura ya está concentrada en algo suyo, tiene desventaja en las tiradas de salvación que haga para mantener esa concentración, porque las dos cosas tiran del mismo sitio.
+**Con un espacio de conjuro de nivel superior.** Puedes tocar a una criatura más por cada nivel por encima de 2 que tenga el espacio.
+
+== Clear Air
+components: V, S, M (una pizca de sal echada por encima del hombro)
+body:
+Mantienes el Éter que te rodea fino y en movimiento, de modo que nada ajeno se asiente en él el tiempo suficiente como para creérselo.
+Mientras dure, una emanación de 20 pies se mueve contigo. Una criatura que esté dentro tiene ventaja en las tiradas de salvación contra todo lo que trabaje sobre su mente, y supera automáticamente cualquier prueba o salvación hecha para no creerse una ilusión.
+No se retira nada de lo que ya esté puesto en una mente. Una criatura que entró en la emanación creyéndose algo se lo sigue creyendo; lo que la emanación detiene es lo siguiente.
+
+== Bleed the Star
+components: V, S
+body:
+La astronomía alcanza el Éter que otra mano está sosteniendo. No hace falta quitárselo: abrirlo sale más barato, y la merma hace el resto.
+Elige una criatura que veas y que esté concentrada en un conjuro. Hace una tirada de salvación de Constitución. Si la falla, recibe {{4d8|Psychic}} de daño y su concentración termina. Si la supera, recibe la mitad del daño y tiene que hacer de inmediato una segunda tirada de salvación de Constitución contra la CD de salvación de tus conjuros para conservar la concentración.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 3 que tenga el espacio.
+
+== Unpick
+components: V, S
+body:
+Disipar desmonta una operación desde fuera y cuesta lo que costó entera. Descoser va a por un solo paso del trazado y deja el resto en pie, que sale más barato, más lento y mucho más útil a quien sepa qué está mirando.
+Elige un efecto mágico que veas dentro del alcance. No lo terminas. En su lugar, elige una de estas cosas y se la impones durante 1 minuto:
+**Embotarlo.** Todo el daño que haga el efecto se reduce a la mitad.
+**Aflojarlo.** Toda tirada de salvación hecha contra el efecto se hace con ventaja, y su CD baja en 3.
+**Encogerlo.** Toda zona que cubra el efecto se reduce a la mitad, y todo alcance que tenga, también.
+**Aquietarlo.** El efecto no puede moverse, ser movido, cambiar de forma ni cambiar de objetivo.
+Quien sostiene el efecto se entera en el instante en que ocurre y sabe qué paso le han tocado. Terminarlo del todo sigue exigiendo *disipar magia*.
+**Con un espacio de conjuro de nivel superior.** Puedes imponer una cosa más por cada nivel por encima de 4 que tenga el espacio.
+
+== Leaden Step
+components: V, S, M (una plomada de pescar)
+body:
+El Peso trabaja sobre un cuerpo: cuánto tira de él lo que hay debajo.
+Una criatura que veas dentro del alcance hace una tirada de salvación de Fuerza. Si la falla, mientras dure el conjuro todo lo suyo pesa el triple de lo que pesaba. Su velocidad se reduce a la mitad, no puede saltar, tiene desventaja en las tiradas de salvación de Destreza, y si está volando por algo que no sea magia desciende 30 pies al principio de cada uno de sus turnos.
+La criatura repite la salvación al final de cada uno de sus turnos y se libra si la supera.
+**Con un espacio de conjuro de nivel superior.** Puedes afectar a una criatura más por cada nivel por encima de 2 que tenga el espacio.
+
+== Well
+components: V, S
+body:
+El Pozo es el Principio puesto sobre su propio umbral: el Abismo hecho pequeño y colocado en algún sitio a propósito. Es el único sitio del arte entero donde un estado base se vuelve hacia fuera y se usa como efecto.
+Elige un punto que veas dentro del alcance. Mientras dure el conjuro, todo lo que esté a 30 pies o menos de él cae hacia él en lugar de hacia abajo.
+Cuando el Pozo aparece, y cuando una criatura entra en ese radio o empieza su turno ahí, hace una tirada de salvación de Fuerza. Si la falla, es arrastrada 20 pies hacia el punto y recibe {{3d10|Force}} de daño. Si la supera, es arrastrada 10 pies y recibe la mitad del daño.
+Una criatura que empiece su turno a 5 pies o menos del punto queda apresada y recibe {{3d10|Force}} de daño, y los objetos sueltos del radio son arrastrados hasta ahí y se amontonan.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d10 por cada nivel por encima de 5 que tenga el espacio.
+
+== Downward
+components: V, S
+body:
+El Campo trabaja sobre una extensión del mundo: hacia dónde cae cuanto haya dentro.
+Elige un cubo de 40 pies que veas dentro del alcance y una dirección. Mientras dure el conjuro, «abajo» dentro de ese cubo es la dirección que hayas elegido.
+Cuando el cubo aparece, y cuando una criatura entra en él o empieza su turno dentro, hace una tirada de salvación de Destreza. Si la falla, cae en la dirección nueva hasta chocar con algo, recibiendo el daño de caída correspondiente y quedando derribada contra lo que la haya parado. Si la supera, se agarra a algo y no cae, pero su velocidad se reduce a la mitad mientras siga en el cubo y tiene que repetir la salvación al principio de cada uno de sus turnos.
+Todo lo que no esté sujeto cae igual, y el cubo es terreno difícil para lo que consiga andar dentro. Cuando el conjuro termina, todo vuelve a caer hacia donde siempre cayó, con su daño de caída correspondiente.
+
+== Sidestep
+components: V
+body:
+Dos puntos del mundo puestos uno junto a otro, y nada de la preparación de costumbre, que es por lo que es tan corto y por lo que cuesta lo que cuesta a este nivel.
+Te teletransportas hasta 15 pies a un espacio desocupado que veas. El ataque que activó la reacción acierta igual y hace su daño: te has movido, no has deshecho nada.
+**Con un espacio de conjuro de nivel superior.** La distancia aumenta en 15 pies por cada nivel por encima de 1 que tenga el espacio.
+
+== Swap
+components: V, S
+body:
+Permutar es lo más limpio que hace esta Disciplina. El Éter mide únicamente la distancia que los separa, así que cambiar a un hombre por una piedra cuesta lo mismo que cambiar a dos hombres, y no hay pulso vital que se le oponga. Lo único que la esquiva es no estar donde el astrónomo creía que se estaba.
+Elige dos criaturas u objetos sin dueño que veas dentro del alcance, cada uno de tamaño Grande o menor y cada uno a 60 pies o menos del otro. Intercambian sus sitios al instante.
+Una criatura que no lo quiera hace una tirada de salvación de Carisma. Si la supera, no se mueve, y la otra tampoco. Si ninguna de las dos lo quiere, las dos tiran, y basta con que una la supere para que no ocurra nada.
+Una criatura que llegue a un sitio donde no puede estar sufre lo que haya ahí, exactamente igual que si hubiera entrado andando.
+**Con un espacio de conjuro de nivel superior.** La distancia entre las dos puede ser 60 pies mayor por cada nivel por encima de 3 que tenga el espacio.
+
+== Staunch
+components: S
+body:
+Frenar un cuerpo y frenar los procesos que lleva dentro son dos operaciones distintas, y la segunda es la más callada y la más útil.
+Tocas a una criatura que esté a 0 puntos de golpe y frenas lo que está ocurriendo dentro de ella. La criatura queda estabilizada, y tiene ventaja en la primera tirada de salvación de muerte que haga si vuelve a estar muriéndose dentro de la hora siguiente.
+También puedes tocar a una criatura que esté envenenada, sangrando o ardiendo por un efecto continuado, y ese efecto termina.
+No se ha curado nada. La herida sigue donde estaba; sencillamente está tardando más en acabar.
+
+== Halt
+components: V, S
+body:
+Detener es lo más caro que hace esta Disciplina después de deshacer el pasado, y lo detenido no deja de ser peligroso.
+Elige un objeto o un peligro en marcha que veas dentro del alcance, de tamaño Grande o menor y que no sea una criatura: una roca cayendo, una flecha disparada, un fuego que se extiende, un suelo que se hunde. Mientras dure el conjuro se queda donde está, a medio movimiento, ocupando su sitio y sosteniendo su peso.
+Lo detenido conserva lo que estuviera haciendo. Una llama suspendida a media caída sigue ardiendo y prende cuanto la toque. Una criatura que toque un peligro detenido sufre su efecto con normalidad.
+Cuando el conjuro termina, el objeto o el peligro sigue exactamente desde donde se quedó, como si no hubiera pasado el tiempo, porque no pasó.
+== Borrowed Voice
+components: V, S
+body:
+Mientras dure el conjuro, tu voz es la que tú decidas: la de otra persona, la de otra edad, otro acento, o ninguna que hayas oído nunca.
+Cualquiera que te oiga y tenga motivos para dudar hace una tirada de salvación de Sabiduría contra la CD de salvación de tus conjuros. Si la falla, oye lo que tú querías. Si la supera, te oye a ti y lo sabe.
+Quien conozca bien la voz prestada tiene ventaja en esa salvación. Nada de tu cuerpo cambia, y el conjuro termina en cuanto alguien pueda verte la boca y oírte a la vez lo bastante cerca como para comparar.
+
+== Disguise Another
+components: V, S
+body:
+La misma operación que disfrazarse uno, y más cara por un motivo: la ilusión se hace en la mente de quien mira, y hay que sostenerla ahí estando tú en otro sitio.
+Tocas a una criatura voluntaria y le cambias el aspecto: la cara, la complexión hasta un pie arriba o abajo, la ropa, la voz. No se la convierte en nada, y lo que la toque encuentra lo que hay de verdad.
+Una criatura que tenga motivos para dudar puede usar una acción en estudiarla y hacer una prueba de Inteligencia (Investigación) contra la CD de salvación de tus conjuros, viendo a través del disfraz si la supera. Esa criatura sola ve a través de él; todas las demás siguen viendo lo que pusiste.
+**Con un espacio de conjuro de nivel superior.** Puedes disfrazar a una criatura más por cada nivel por encima de 2 que tenga el espacio.
+
+== Mist of Old Griefs
+components: V, S, M (un jirón de tela de luto)
+body:
+Una bruma pálida se levanta en una esfera de 20 pies de radio centrada en un punto que elijas dentro del alcance. No está ahí. Está en la cabeza de todos los que estén dentro, y lo que cada uno ve en ella es lo suyo.
+Cuando una criatura entra en la esfera por primera vez en un turno o empieza su turno ahí, hace una tirada de salvación de Sabiduría. Si la falla, recibe {{3d6|Psychic}} de daño y tiene desventaja en las tiradas de ataque hasta el principio de su siguiente turno. Si la supera, recibe solo la mitad del daño.
+Una criatura que no pueda ser asustada, o que no tenga recuerdos con los que trabajar, no se ve afectada, y no ve nada de nada donde todos los demás se están apartando.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 3 que tenga el espacio.
+
+== Fixation
+components: V
+body:
+Un acto impuesto, y pequeño: ve hasta eso y ponle las manos encima.
+Elige una criatura que veas dentro del alcance y un objeto o criatura que esté a 60 pies o menos de ella. El objetivo hace una tirada de salvación de Sabiduría. Si la falla, mientras dure el conjuro tiene que gastar su movimiento de cada turno en llegar hasta lo que hayas elegido por el camino más directo que tenga, y usar su acción en tocarlo o sostenerlo una vez llegue.
+Se defiende con normalidad y no queda encantada con nadie. Sencillamente no puede dejar esa cosa en paz.
+El objetivo repite la salvación al final de cada uno de sus turnos, y de inmediato si recibe daño, y se libra si la supera.
+
+== Serenity
+components: V, S
+body:
+La otra cara de la Rama, y la que le devuelve las licencias a un oficio. No se obliga a nada; se quita algo de encima de la mesa.
+Una criatura que veas dentro del alcance hace una tirada de salvación de Sabiduría. Si la falla, mientras dure el conjuro no puede atacar por voluntad propia, ni lanzar un conjuro que haga daño, ni hacer ninguna otra cosa que sepa que va a dañar a otra criatura.
+Puede moverse, hablar, defenderse si la atacan y realizar cualquier otra acción que quiera. El conjuro termina de inmediato si la criatura recibe daño de quien sea, lo cual lo hace valer exactamente lo que valga la contención de los demás.
+**Con un espacio de conjuro de nivel superior.** Puedes afectar a una criatura más por cada nivel por encima de 3 que tenga el espacio.
+
+== Infatuation
+components: V, S
+body:
+Elige dos criaturas que veas dentro del alcance. La primera hace una tirada de salvación de Sabiduría. Si la falla, mientras dure el conjuro está encaprichada con la segunda: la trata como a su amistad más querida, no se aparta de su lado por voluntad propia, se pone entre ella y el peligro, y toma cualquier petición razonable suya como si viniera de alguien a quien quiere.
+No obedece una orden que sea a las claras suicida ni que dañe a alguien a quien quiera más, y se defiende si la segunda criatura la ataca, momento en el cual recibe una salvación nueva con ventaja.
+Cuando el conjuro termina, la criatura sabe exactamente lo que le han hecho y recuerda todo lo que hizo. Esta Rama es la única de la Disciplina donde eso importa tanto como lo mecánico.
+
+== Outrage
+components: V, S, M (un anillo de juramento roto)
+body:
+Una criatura que veas dentro del alcance hace una tirada de salvación de Sabiduría, con desventaja si alguna vez ha sido agraviada de verdad por la criatura que nombres. Si la falla, mientras dure el conjuro se le echa encima a una criatura que tú nombres y que ella pueda ver: tiene que usar su acción de cada turno en atacarla por los medios que tenga, moviéndose para alcanzarla si puede.
+Va por el camino más corto y le da igual lo que haya en medio. Los ataques de oportunidad, los peligros y las caídas no le merecen atención, y no se para a defenderse.
+El objetivo repite la salvación al final de cada uno de sus turnos y se libra si la supera. Tiene ventaja en esa salvación si la criatura a la que está atacando no le ha devuelto un solo golpe.
+**Con un espacio de conjuro de nivel superior.** Puedes afectar a una criatura más por cada nivel por encima de 6 que tenga el espacio.
+
+== Contempt
+components: V, S
+body:
+El ánimo no dicta actos, y este no dicta ninguno. Sencillamente hace que los demás no merezcan la molestia.
+Una criatura que veas dentro del alcance hace una tirada de salvación de Sabiduría. Si la falla, mientras dure el conjuro mira por encima del hombro a todas las demás: tiene desventaja en las tiradas de ataque contra cualquier criatura que no le haya hecho daño desde su último turno, no se la puede ayudar —rechaza la acción de ayudar y cualquier curación que le ofrezcan—, y tiene desventaja en las pruebas de característica hechas como parte de un esfuerzo en grupo.
+La criatura repite la salvación al final de cada uno de sus turnos y se libra si la supera.
+**Con un espacio de conjuro de nivel superior.** Puedes afectar a una criatura más por cada nivel por encima de 4 que tenga el espacio.
+
+== Rapture
+components: V, S
+body:
+La Rama del revés: en vez de meter un sentimiento, saca uno, lo cual cuesta lo mismo y es mucho más difícil de vender.
+Cada criatura que elijas en una emanación de 30 pies queda libre de los estados encantado y asustado y de cualquier efecto que esté trabajando sobre su ánimo, lo haya puesto quien lo haya puesto. Una criatura que estuviera incapacitada por un efecto así deja de estarlo.
+Una criatura liberada así tiene ventaja durante el minuto siguiente en las tiradas de salvación contra todo lo que trabaje sobre su ánimo, porque acaba de ver la diferencia.
+Nada de esto toca el dolor, ni la ilusión, ni la sujeción, ni la memoria. Solo lo que la criatura estaba sintiendo.
+
+== Waves of Ecstasy
+components: V, S
+body:
+Lo más que se le puede meter a un cuerpo sin tocarlo, y la razón de que esta Rama esté vigilada.
+Cada criatura que no seas tú en una emanación de 30 pies hace una tirada de salvación de Sabiduría. Si la falla, queda desbordada: queda incapacitada y con velocidad 0 hasta el final de su siguiente turno, y durante el resto del conjuro puede realizar en cada uno de sus turnos una acción o una acción adicional, pero no las dos.
+La criatura repite la salvación al final de cada uno de sus turnos y se libra del efecto entero si la supera. Una criatura que la haya superado una vez no se ve afectada por este lanzamiento.
+**Con un espacio de conjuro de nivel superior.** La emanación crece 10 pies por cada nivel por encima de 7 que tenga el espacio.
+
+== Sharpened Senses
+components: V, S
+body:
+No se añade nada. Lo que el cuerpo ya estaba recogiendo deja de tirarse antes de llegar a la parte que se entera.
+Mientras dure el conjuro, la criatura voluntaria a la que toques tiene ventaja en las pruebas de Sabiduría (Percepción) y en las de Inteligencia (Investigación) que dependan de la vista, el oído o el olfato.
+Además se entera de una cosa de la que no se habría enterado: el DJ le dice, una vez, cuál es la criatura, puerta, trampa u oído escondido más cercano a 30 pies o menos, sin decirle cuál de esas cosas es.
+**Con un espacio de conjuro de nivel superior.** Puedes tocar a una criatura más por cada nivel por encima de 1 que tenga el espacio.
+
+== Hush
+components: S
+body:
+Silencio no. El silencio es un agujero en el aire y un agujero lo nota todo el mundo. Esto trabaja sobre los oídos que lo habrían oído.
+Elige hasta tres criaturas que veas dentro del alcance. Cada una hace una tirada de salvación de Constitución. Si la falla, mientras dure el conjuro ningún sonido que haga llega a más de 5 pies: sus pasos, su voz, su armadura, la flecha que dispare.
+Una criatura afectada que lance un conjuro con componente verbal tiene que superar una tirada de salvación de Constitución contra la CD de salvación de tus conjuros o el conjuro falla y el espacio se gasta.
+La criatura sabe que pasa algo la primera vez que le habla a alguien que no se da la vuelta.
+
+== Countless Eyes
+components: V, S, M (un puñado de cuentas de vidrio)
+body:
+Se abren ojos por la piel de la criatura a la que toques: en la nuca, en los hombros, en el dorso de las manos. Son suyos, y va a tardar en dejar de dar respingos con lo que le mandan.
+Mientras dure el conjuro, la criatura no puede ser sorprendida mientras esté consciente, no puede quedar cegada por nada que le cubra solo una parte de la cabeza, y las tiradas de ataque contra ella no ganan ventaja por hacerse desde atrás o desde un ángulo que no vea.
+También tiene desventaja en las pruebas de Carisma (Persuasión) contra cualquiera que pueda verla, por motivos que nadie ha tenido nunca que explicar.
+
+== Know the Enemy
+components: V, S
+body:
+La memoria no es solo lo que has vivido. Es todo lo que entró alguna vez, incluido lo que leíste una vez y olvidaste haber leído.
+Nombra una clase de criatura, una organización o un lugar. Te sube todo lo que hayas aprendido nunca sobre ello, lo recuerdes o no, y el DJ te dice un hecho cierto y útil: una resistencia, una costumbre, una debilidad, un nombre, una manera de entrar.
+Lo que sube es lo que entró. Si todo lo que te contaron sobre ello era falso, este conjuro te lo entrega, de perfecta buena fe y con detalle.
+**Con un espacio de conjuro de nivel superior.** Averiguas un hecho más por cada nivel por encima de 2 que tenga el espacio.
+== Soothe the Fever
+components: V, S
+body:
+El pulso mismo, asentado. Es lo primero que aprende cualquiera en este Principio y lo último que dejan de pedirle.
+La criatura a la que toques deja de estar envenenada y, mientras dure el conjuro, tiene ventaja en las tiradas de salvación hechas contra enfermedades y venenos, y contra los efectos del calor o el frío extremos.
+No cura una enfermedad que la criatura ya tenga. Lo que hace es devolverle al cuerpo los días que necesitaba, que para la mayoría de la gente y en la mayoría de los sitios es la medicina entera.
+**Con un espacio de conjuro de nivel superior.** Puedes tocar a una criatura más por cada nivel por encima de 1 que tenga el espacio.
+
+== Shrug Off
+components: V
+body:
+Ni una cura ni una defensa. A un cuerpo se le puede hacer apartar una cosa un rato y que la pague después, y esto es eso.
+Elige uno de estos estados que tengas encima ahora mismo: cegado, ensordecido, asustado, paralizado, envenenado o aturdido. Queda suspendido durante 1 minuto, o hasta que termines un descanso corto, lo que antes ocurra.
+El estado no ha desaparecido y su duración sigue corriendo por debajo. Cuando la suspensión termina vuelve lo que quede de él, y quedas agotado con 1 nivel de agotamiento.
+**Con un espacio de conjuro de nivel superior.** Puedes suspender un estado más por cada nivel por encima de 2 que tenga el espacio.
+
+== Fever
+components: V, S
+body:
+El pulso empujado más allá de lo que puede llevar. Es la misma operación que asentar a alguien, corrida del revés, y por eso todas las escuelas las enseñan juntas.
+Una criatura que veas dentro del alcance hace una tirada de salvación de Constitución. Si la falla, mientras dure el conjuro arde por dentro: recibe {{4d6|Fire}} de daño de inmediato y {{2d6|Fire}} de daño al principio de cada uno de sus turnos, y tiene desventaja en las tiradas de salvación de Constitución.
+La criatura repite la salvación al final de cada uno de sus turnos y se libra si la supera. Una criatura inmune a las enfermedades tiene ventaja en todas esas salvaciones.
+**Con un espacio de conjuro de nivel superior.** El daño inicial aumenta en 1d6 por cada nivel por encima de 3 que tenga el espacio.
+
+== Unshakable Chill
+components: V, S
+body:
+El frío con el que están fríos los muertos, metido en alguien que todavía no lo es. No se extiende y no mata; sencillamente no se quita.
+Una criatura que veas dentro del alcance hace una tirada de salvación de Constitución. Si la falla, mientras dure el conjuro recibe {{1d6|Cold}} de daño al principio de cada uno de sus turnos, pierde toda resistencia o inmunidad que tenga al daño de frío, y no puede beneficiarse de un descanso corto.
+Ningún fuego la calienta mientras dure esto, y ella lo sabe, que es la mayor parte de para lo que sirve este conjuro.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 1 que tenga el espacio.
+
+== Wracking
+components: V, S
+body:
+Una criatura que veas dentro del alcance hace una tirada de salvación de Constitución. Si la falla, se le saca el cuerpo de sitio mientras dure el conjuro: los miembros se alargan, las articulaciones giran al revés, y todo lo que hace le cuesta más de lo que debería.
+Mientras esté afectada, la criatura recibe {{4d8|Necrotic}} de daño de inmediato, su velocidad se reduce a la mitad, tiene desventaja en las tiradas de ataque y en las pruebas de Fuerza y Destreza, y no puede usar ningún objeto que haya que sostener con las dos manos.
+La criatura repite la salvación al final de cada uno de sus turnos y se libra si la supera. Cualquier curación mágica lo termina también.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 4 que tenga el espacio.
+
+== The Slow Stop
+components: V, S, M (un reloj parado, que el conjuro consume)
+body:
+Todo lo que vive va camino de pararse. Esto no lo provoca; solo coge el camino largo que llevaba y lo hace corto.
+Una criatura que veas dentro del alcance hace una tirada de salvación de Constitución. Si la falla, mientras dure el conjuro recibe {{6d8|Necrotic}} de daño de inmediato y {{3d8|Necrotic}} de daño al principio de cada uno de sus turnos, y su máximo de puntos de golpe se reduce en todo el daño necrótico que haya recibido de este conjuro.
+La criatura repite la salvación al final de cada uno de sus turnos y se libra si la supera.
+La reducción del máximo de puntos de golpe dura hasta que termine un descanso largo. Una criatura muerta por este conjuro muere de causas corrientes, a la velocidad corriente, todas de golpe, y después no hay quien la distinga de una que sencillamente se paró.
+**Con un espacio de conjuro de nivel superior.** Los dos daños aumentan en 1d8 por cada nivel por encima de 6 que tenga el espacio.
+
+== Borrowed Ferocity
+components: V, S
+body:
+El Préstamo toma una facultad del vinculado y la instala en el cuerpo de quien canaliza. Este toma prestado lo que un animal pequeño tiene en lugar de tamaño.
+Tocas a una bestia con la que tengas un vínculo, o a ti mismo si tienes uno. Mientras dure el conjuro, la criatura tocada tiene ventaja en las tiradas de salvación contra quedar asustada, encantada o derribada, hace 1d6 de daño adicional con los ataques cuerpo a cuerpo, y la primera vez que caiga a 0 puntos de golpe cae a 1 en su lugar.
+El animal vinculado sabe lo que le han quitado y se queda sin ello mientras dure el conjuro, que es la parte en la que se espera que piense un druida.
+**Con un espacio de conjuro de nivel superior.** El daño adicional aumenta en 1d6 por cada nivel por encima de 2 que tenga el espacio.
+
+== Atavism
+components: V, S, M (un diente de algo extinguido)
+body:
+Todo animal es una versión acortada de algo que fue más grande y menos razonable. El Pacto te da licencia para pedir eso de vuelta, un rato.
+Tocas a una bestia con la que tengas un vínculo. Mientras dure el conjuro crece una categoría de tamaño, su Fuerza pasa a 19 si era menor, gana 2d10 puntos de golpe temporales, y sus ataques cuerpo a cuerpo hacen 1d8 de daño adicional.
+También cuesta más pararla. Mientras dure el conjuro, tarda hasta el final de su siguiente turno en obedecer cualquier petición que signifique parar.
+**Con un espacio de conjuro de nivel superior.** Los puntos de golpe temporales aumentan en 1d10 por cada nivel por encima de 3 que tenga el espacio.
+
+== Thicket
+components: V, S
+body:
+El Brote gobierna cómo crece una planta vinculada, y su uso más viejo no es un arma. Es un techo.
+Ramas, zarzas y raíces se entretejen hasta formar un refugio para ocho personas, en un sitio que elijas dentro del alcance donde estén creciendo plantas. Deja fuera la lluvia, el viento y el frío corriente, está fuertemente oscurecido desde fuera, y tiene una sola entrada que se cierra sobre sí misma.
+Una criatura que esté dentro obtiene el beneficio de un descanso corto o largo como si hubiera estado a cubierto y seca. La espesura tiene CA 12 y 40 puntos de golpe, y arde.
+Cuando el conjuro termina, las plantas vuelven a crecer como crecían, que después de ocho horas de esto no es exactamente como crecían antes.
+
+== Bough Hammer
+components: V, S
+body:
+A un árbol vinculado se le pide que mueva uno de sus propios miembros. No se le convierte en nada y no se hace nada con él: lo que gobierna el conjuro es el crecer, y una rama que crece lo bastante deprisa en una dirección es un martillo.
+Elige un árbol o una planta grande que veas dentro del alcance. Al lanzar el conjuro, y como acción adicional en cada uno de tus turnos siguientes, una de sus ramas golpea a una criatura que esté a 15 pies o menos de él. Haz un ataque de conjuro cuerpo a cuerpo. Si aciertas, el objetivo recibe {{3d8|Bludgeoning}} de daño y tiene que superar una tirada de salvación de Fuerza o queda derribado.
+El árbol no se mueve, y el conjuro termina si el árbol es destruido o si te alejas más de 60 pies de él.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 3 que tenga el espacio.

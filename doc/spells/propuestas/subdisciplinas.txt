@@ -49,3 +49,39 @@ White Brand	incandescence
 Incandescent Lance	incandescence
 White Heat	incandescence
 Shrapnel	metal
+Reading	-
+Ward Against Working	-
+Clear Air	-
+Bleed the Star	-
+Unpick	-
+Leaden Step	gravity
+Well	gravity
+Downward	gravity
+Sidestep	space
+Swap	space
+Staunch	time
+Halt	time
+Borrowed Voice	illusion
+Disguise Another	illusion
+Mist of Old Griefs	illusion
+Fixation	subjection
+Serenity	subjection
+Infatuation	subjection
+Outrage	subjection
+Contempt	mood
+Rapture	mood
+Waves of Ecstasy	mood
+Sharpened Senses	senses
+Hush	senses
+Countless Eyes	senses
+Know the Enemy	memory
+Soothe the Fever	life
+Shrug Off	life
+Fever	life
+Unshakable Chill	death
+Wracking	death
+The Slow Stop	death
+Borrowed Ferocity	animals
+Atavism	animals
+Thicket	plants
+Bough Hammer	plants

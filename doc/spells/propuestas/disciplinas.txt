@@ -49,3 +49,39 @@ White Brand	Alchemy
 Incandescent Lance	Alchemy
 White Heat	Alchemy
 Shrapnel	Alchemy
+Reading	Astronomy
+Ward Against Working	Astronomy
+Clear Air	Astronomy
+Bleed the Star	Astronomy
+Unpick	Astronomy
+Leaden Step	Cosmology
+Well	Cosmology
+Downward	Cosmology
+Sidestep	Cosmology
+Swap	Cosmology
+Staunch	Cosmology
+Halt	Cosmology
+Borrowed Voice	Spiritism
+Disguise Another	Spiritism
+Mist of Old Griefs	Spiritism
+Fixation	Spiritism
+Serenity	Spiritism
+Infatuation	Spiritism
+Outrage	Spiritism
+Contempt	Spiritism
+Rapture	Spiritism
+Waves of Ecstasy	Spiritism
+Sharpened Senses	Spiritism
+Hush	Spiritism
+Countless Eyes	Spiritism
+Know the Enemy	Spiritism
+Soothe the Fever	Spiritism
+Shrug Off	Spiritism
+Fever	Spiritism
+Unshakable Chill	Spiritism
+Wracking	Spiritism
+The Slow Stop	Spiritism
+Borrowed Ferocity	Spiritism
+Atavism	Spiritism
+Thicket	Spiritism
+Bough Hammer	Spiritism

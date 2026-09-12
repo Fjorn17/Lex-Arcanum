@@ -676,3 +676,504 @@ Metal is the most expensive Star in the Discipline, and this spell spends the lo
 Each creature other than you in a 20-foot Emanation makes a Dexterity saving throw, taking 5d6 Piercing damage on a failed save or half as much damage on a successful one.
 A creature that fails the save by 5 or more takes an extra 1d6 Piercing damage at the start of each of its turns until it or another creature takes an action to pull the fragments out, or until it receives any magical healing.
 Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 3.
+== Reading
+level: 1
+school: Divination
+classes: Bard, Cleric, Druid, Sorcerer, Wizard
+casting: Reaction, which you take when a creature you can see starts casting a spell
+range: 60 feet
+components: S
+duration: Instantaneous
+body:
+The base state shows from the second step onwards, and everybody in the trade learns to look for it before they learn anything else.
+You read the working the triggering creature has begun. You learn its Discipline, whether it has crossed a threshold, and whether it is aimed at you, at somebody else, or at a place. If the spell is one you have in your own repertoire, you learn its name.
+You do not learn what it will do. Reading a Constellation is not enough to light it, and it is not enough to guess the end of it either.
+
+== Ward Against Working
+level: 2
+school: Abjuration
+classes: Bard, Cleric, Sorcerer, Wizard
+casting: Action
+range: Touch
+components: V, S
+duration: Concentration, up to 10 minutes
+body:
+Opposition is what your own Ether does when something foreign tries to get in, and everyone has it. This spell does not add to it; it spends Concentration on your behalf so that the body does not have to.
+For the duration, the willing creature you touch has Advantage on saving throws against spells and other magical effects.
+If the creature is already Concentrating on something of its own, it has Disadvantage on the saving throws it makes to keep that Concentration, because the two draws are the same draw.
+Using a Higher-Level Spell Slot. You can touch one additional creature for each spell slot level above 2.
+
+== Clear Air
+level: 3
+school: Abjuration
+classes: Bard, Cleric, Wizard
+casting: Action
+range: Self (20-foot Emanation)
+components: V, S, M (a pinch of salt thrown over the shoulder)
+duration: Concentration, up to 10 minutes
+body:
+You keep the Ether around you thin and moving, so that nothing foreign settles in it long enough to be believed.
+For the duration, a 20-foot Emanation moves with you. A creature inside it has Advantage on saving throws against anything that works on its mind, and it automatically succeeds on any check or save made to disbelieve an illusion.
+Nothing already in a mind is removed. A creature that entered the Emanation believing something goes on believing it; what the Emanation stops is the next thing.
+
+== Bleed the Star
+level: 3
+school: Abjuration
+classes: Sorcerer, Warlock, Wizard
+casting: Action
+range: 60 feet
+components: V, S
+duration: Instantaneous
+body:
+Astronomy reaches the Ether another hand is holding. It does not have to take it away: opening it is cheaper, and the waning does the rest.
+Choose one creature you can see that is Concentrating on a spell. It makes a Constitution saving throw. On a failed save, it takes 4d8 Psychic damage and its Concentration ends. On a successful save, it takes half as much damage and must immediately make a second Constitution saving throw against your spell save DC to keep its Concentration.
+Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 3.
+
+== Unpick
+level: 4
+school: Abjuration
+classes: Bard, Cleric, Druid, Sorcerer, Wizard
+casting: Action
+range: 120 feet
+components: V, S
+duration: Instantaneous
+body:
+Dispelling takes a working apart from the outside and costs what the whole of it cost. Unpicking goes for one step of the design and leaves the rest standing, which is cheaper, slower and far more useful to somebody who knows what they are looking at.
+Choose one magical effect you can see within range. You do not end it. Instead, choose one of the following and impose it for 1 minute:
+Blunt it. Any damage the effect deals is halved.
+Loosen it. Any saving throw made against the effect is made with Advantage, and its save DC drops by 3.
+Shrink it. Any area the effect covers is halved, and any range it has is halved.
+Still it. The effect cannot move, be moved, or change shape or target.
+The effect's owner knows the instant it happens and knows which step was taken. Ending the effect outright still requires Dispel Magic.
+Using a Higher-Level Spell Slot. You can impose one additional choice for each spell slot level above 4.
+
+== Leaden Step
+level: 2
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: 60 feet
+components: V, S, M (a fishing weight)
+duration: Concentration, up to 1 minute
+body:
+Weight works on one body: how hard what is underneath pulls on it.
+One creature you can see within range makes a Strength saving throw. On a failed save, for the duration everything about it weighs three times what it did. Its Speed is halved, it can't jump, it has Disadvantage on Dexterity saving throws, and if it is flying by anything other than magic it descends 30 feet at the start of each of its turns.
+The creature repeats the save at the end of each of its turns, ending the effect on itself on a success.
+Using a Higher-Level Spell Slot. You can affect one additional creature for each spell slot level above 2.
+
+== Well
+level: 5
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: 120 feet
+components: V, S
+duration: Concentration, up to 1 minute
+body:
+The Well is the Principle standing on its own threshold: the Abyss made small and put somewhere on purpose. It is the one place in the whole art where a base state is turned outwards and used as an effect.
+Choose a point you can see within range. For the duration, everything within 30 feet of it falls towards it instead of downwards.
+When the Well appears, and when a creature enters that radius or starts its turn there, it makes a Strength saving throw. On a failed save, it is pulled 20 feet towards the point and takes 3d10 Force damage. On a successful save, it is pulled 10 feet and takes half as much damage.
+A creature that starts its turn within 5 feet of the point has the Restrained condition and takes 3d10 Force damage, and loose objects in the radius are dragged in and pile up there.
+Using a Higher-Level Spell Slot. The damage increases by 1d10 for each spell slot level above 5.
+
+== Downward
+level: 7
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: 150 feet
+components: V, S
+duration: Concentration, up to 1 minute
+body:
+Field works on a stretch of the world: which way everything inside it falls.
+Choose a 40-foot Cube you can see within range and a direction. For the duration, down inside that Cube is the direction you chose.
+When the Cube appears, and when a creature enters it or starts its turn there, it makes a Dexterity saving throw. On a failed save, it falls in the new direction until it hits something, taking the usual falling damage and landing Prone against whatever stopped it. On a successful save, it holds on to something and does not fall, but its Speed is halved while it stays in the Cube and it must repeat the save at the start of each of its turns.
+Everything not fastened down falls the same way, and the Cube is Difficult Terrain for anything that manages to walk in it. When the spell ends, everything falls back down the way it always did, and takes the appropriate falling damage for it.
+
+== Sidestep
+level: 1
+school: Conjuration
+classes: Bard, Sorcerer, Wizard
+casting: Reaction, which you take when you are hit by an attack
+range: Self
+components: V
+duration: Instantaneous
+body:
+Two points of the world set side by side, and none of the usual preparation, which is why it is so short and why it costs what it costs at this level.
+You teleport up to 15 feet to an unoccupied space you can see. The triggering attack still hits and deals its damage: you have moved, not undone anything.
+Using a Higher-Level Spell Slot. The distance increases by 15 feet for each spell slot level above 1.
+
+== Swap
+level: 3
+school: Conjuration
+classes: Bard, Sorcerer, Warlock, Wizard
+casting: Action
+range: 60 feet
+components: V, S
+duration: Instantaneous
+body:
+Swapping is the cleanest thing this Discipline does. The Ether measures only the distance between the two, so exchanging a man for a stone costs the same as exchanging two men, and there is no living pulse to resist it. The only thing that dodges it is not being where the astronomer thought you were.
+Choose two creatures or unattended objects you can see within range, each Large or smaller and each within 60 feet of the other. They instantly exchange places.
+An unwilling creature makes a Charisma saving throw. On a success, it does not move and neither does the other. If both are unwilling, both save, and one success stops the whole exchange.
+A creature that arrives somewhere it cannot stand is affected by whatever is there, exactly as if it had walked in.
+Using a Higher-Level Spell Slot. The distance between the two can be 60 feet greater for each spell slot level above 3.
+
+== Staunch
+level: 1
+school: Transmutation
+classes: Cleric, Druid, Ranger
+casting: Action
+range: Touch
+components: S
+duration: Instantaneous
+body:
+Slowing a body and slowing the processes inside it are two different workings, and the second is the quieter and the more useful.
+You touch a creature that has 0 Hit Points and slow what is happening inside it. The creature becomes Stable, and it has Advantage on the first death saving throw it makes if it starts dying again within the hour.
+Alternatively, you touch a creature that is Poisoned, bleeding or burning from an ongoing effect, and that effect ends.
+Nothing has been healed. The wound is where it was; it is simply taking longer to finish.
+
+== Halt
+level: 5
+school: Transmutation
+classes: Sorcerer, Wizard
+casting: Reaction, which you take when you can see a moving object or a hazard within range
+range: 60 feet
+components: V, S
+duration: Concentration, up to 1 minute
+body:
+Halting is the most expensive thing this Discipline does after undoing the past, and what is halted does not stop being dangerous.
+Choose one object or ongoing hazard you can see within range that is Large or smaller and is not a creature: a falling boulder, a loosed arrow, a spreading fire, a collapsing floor. For the duration it stops where it is, mid-motion, taking up its space and holding its weight.
+Anything halted keeps whatever it was doing. A flame held halfway down its fall is still burning, and it catches whatever touches it. A creature that touches a halted hazard suffers its effect as normal.
+When the spell ends, the object or hazard carries on from exactly where it stopped, as though no time had passed for it, because none did.
+== Borrowed Voice
+level: 1
+school: Illusion
+classes: Bard, Sorcerer, Wizard
+casting: Action
+range: Self
+components: V, S
+duration: Concentration, up to 1 hour
+body:
+For the duration, your voice is whatever you decide it is: another person's, another age, another accent, or no voice you have ever heard.
+Anyone who hears you and has reason to doubt makes a Wisdom saving throw against your spell save DC. On a failed save, they hear what you intended. On a success, they hear you and know it.
+Somebody who knows the borrowed voice well has Advantage on that save. Nothing about your body changes, and the spell ends the moment anyone can see your mouth and hear you at the same time closely enough to compare.
+
+== Disguise Another
+level: 2
+school: Illusion
+classes: Bard, Sorcerer, Wizard
+casting: Action
+range: Touch
+components: V, S
+duration: Concentration, up to 1 hour
+body:
+The same operation as disguising yourself, and dearer for one reason: the illusion is made in the mind of whoever looks, and you have to keep it there while standing somewhere else.
+You touch a willing creature and change how it appears: its face, its build within a foot either way, its clothing, its voice. It is not made into anything, and anything that touches it finds what is really there.
+A creature that has reason to doubt can take an action to study it and make an Intelligence (Investigation) check against your spell save DC, seeing through the disguise on a success. That creature alone sees through it; everyone else goes on seeing what you put there.
+Using a Higher-Level Spell Slot. You can disguise one additional creature for each spell slot level above 2.
+
+== Mist of Old Griefs
+level: 3
+school: Illusion
+classes: Bard, Warlock, Wizard
+casting: Action
+range: 90 feet
+components: V, S, M (a scrap of mourning cloth)
+duration: Concentration, up to 1 minute
+body:
+A pale mist rises in a 20-foot-radius Sphere centered on a point you choose within range. It is not there. It is in the heads of everyone inside it, and what each of them sees in it is their own.
+When a creature enters the Sphere for the first time on a turn or starts its turn there, it makes a Wisdom saving throw. On a failed save, it takes 3d6 Psychic damage and has Disadvantage on attack rolls until the start of its next turn. On a successful save, it takes half as much damage only.
+A creature that cannot be frightened or that has no memories to work with is unaffected, and sees nothing at all where everyone else is backing away.
+Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 3.
+
+== Fixation
+level: 2
+school: Enchantment
+classes: Bard, Sorcerer, Warlock, Wizard
+casting: Action
+range: 60 feet
+components: V
+duration: Concentration, up to 1 minute
+body:
+An act imposed, and a small one: go to that, and put your hands on it.
+Choose one creature you can see within range and one object or creature within 60 feet of it. The target makes a Wisdom saving throw. On a failed save, for the duration it must spend its movement each turn getting to the thing you chose by the most direct route available, and must use its action to touch or hold it once it arrives.
+It defends itself normally and it is not charmed towards anyone. It simply cannot leave the thing alone.
+The target repeats the save at the end of each of its turns, and at once if it takes damage, ending the effect on itself on a success.
+
+== Serenity
+level: 3
+school: Enchantment
+classes: Bard, Cleric, Druid
+casting: Action
+range: 60 feet
+components: V, S
+duration: Concentration, up to 1 minute
+body:
+The opposite face of the Branch, and the one that gets a trade its licences back. Nothing is compelled; something is taken off the table.
+One creature you can see within range makes a Wisdom saving throw. On a failed save, for the duration it cannot willingly attack, cast a spell that deals damage, or do anything else it knows will harm another creature.
+It can move, speak, defend itself when attacked, and take any other action it likes. The spell ends immediately if the creature takes damage from anyone, which makes it worth exactly as much as everyone else's restraint.
+Using a Higher-Level Spell Slot. You can affect one additional creature for each spell slot level above 3.
+
+== Infatuation
+level: 4
+school: Enchantment
+classes: Bard, Sorcerer, Warlock, Wizard
+casting: Action
+range: 60 feet
+components: V, S
+duration: Concentration, up to 1 hour
+body:
+Choose two creatures you can see within range. The first makes a Wisdom saving throw. On a failed save, for the duration it is besotted with the second: it treats that creature as its dearest friend, will not willingly leave its side, places itself between it and danger, and takes any reasonable request from it as though it came from someone it loved.
+It will not obey an order that is obviously suicidal or that harms someone it loves more, and it defends itself if the second creature attacks it — at which point it gets a new saving throw with Advantage.
+When the spell ends, the creature knows exactly what was done to it and remembers everything it did. This Branch is the only one in the Discipline where that matters as much as the mechanics do.
+
+== Outrage
+level: 6
+school: Enchantment
+classes: Bard, Cleric, Sorcerer, Warlock, Wizard
+casting: Action
+range: 60 feet
+components: V, S, M (a broken oath ring)
+duration: Concentration, up to 1 minute
+body:
+One creature you can see within range makes a Wisdom saving throw, with Disadvantage if it has ever been genuinely wronged by the creature you name. On a failed save, for the duration it is set against one creature you name that it can see: it must use its action each turn to attack that creature by any means it has, moving to reach it if it can.
+It takes the shortest route there and does not care what is in the way. Opportunity attacks, hazards and drops are all beneath its notice, and it does not stop to defend itself.
+The target repeats the save at the end of each of its turns, ending the effect on itself on a success. It gets Advantage on the save if the creature it is attacking has not fought back.
+Using a Higher-Level Spell Slot. You can affect one additional creature for each spell slot level above 6.
+
+== Contempt
+level: 4
+school: Enchantment
+classes: Bard, Cleric, Wizard
+casting: Action
+range: 60 feet
+components: V, S
+duration: Concentration, up to 1 minute
+body:
+Mood does not dictate acts, and this one dictates nothing at all. It simply makes everyone else not worth the trouble.
+One creature you can see within range makes a Wisdom saving throw. On a failed save, for the duration it holds every other creature in open contempt: it has Disadvantage on attack rolls against any creature that has not damaged it since its last turn, it cannot be helped — it refuses the Help action and any healing offered — and it has Disadvantage on ability checks made as part of a group effort.
+The creature repeats the save at the end of each of its turns, ending the effect on itself on a success.
+Using a Higher-Level Spell Slot. You can affect one additional creature for each spell slot level above 4.
+
+== Rapture
+level: 4
+school: Enchantment
+classes: Bard, Cleric, Druid
+casting: Action
+range: 30 feet
+components: V, S
+duration: Instantaneous
+body:
+The Branch turned around: instead of putting a feeling in, this takes one out, which costs the same and is much harder to sell.
+Each creature of your choice in a 30-foot Emanation is freed of the Charmed and Frightened conditions and of any effect that is working on its mood, whatever put it there. A creature that has the Incapacitated condition because of such an effect is no longer Incapacitated.
+A creature freed this way has Advantage for the next minute on saving throws against anything that works on its mood, because it has just been shown the difference.
+Nothing here touches pain, illusion, compulsion or memory. Only what the creature was feeling.
+
+== Waves of Ecstasy
+level: 7
+school: Enchantment
+classes: Bard, Sorcerer, Warlock, Wizard
+casting: Action
+range: Self (30-foot Emanation)
+components: V, S
+duration: Concentration, up to 1 minute
+body:
+The most that can be put into a body without touching it, and the reason this Branch is watched.
+Each creature other than you in a 30-foot Emanation makes a Wisdom saving throw. On a failed save, a creature is overcome: it has the Incapacitated condition and its Speed is 0 until the end of its next turn, and for the rest of the duration it can take either an action or a Bonus Action on each of its turns, not both.
+A creature repeats the save at the end of each of its turns, ending the whole effect on itself on a success. A creature that has succeeded once is unaffected by this casting.
+Using a Higher-Level Spell Slot. The Emanation grows by 10 feet for each spell slot level above 7.
+
+== Sharpened Senses
+level: 1
+school: Divination
+classes: Bard, Druid, Ranger, Wizard
+casting: Action
+range: Touch
+components: V, S
+duration: Concentration, up to 1 hour
+body:
+Nothing is added. What the body was already taking in stops being thrown away before it reaches the part that notices.
+For the duration, the willing creature you touch has Advantage on Wisdom (Perception) checks and on Intelligence (Investigation) checks that rely on sight, hearing or smell.
+It also notices one thing it would not have: the GM tells it, once, about the nearest hidden creature, door, trap or listener within 30 feet, without saying which of those it is.
+Using a Higher-Level Spell Slot. You can touch one additional creature for each spell slot level above 1.
+
+== Hush
+level: 2
+school: Enchantment
+classes: Bard, Cleric, Sorcerer, Wizard
+casting: Action
+range: 30 feet
+components: S
+duration: Concentration, up to 10 minutes
+body:
+Not silence. Silence is a hole in the air and everyone notices a hole. This works on the ears that would have heard.
+Choose up to three creatures you can see within range. Each makes a Constitution saving throw. On a failed save, for the duration no sound that creature makes carries more than 5 feet: its footsteps, its voice, its armour, the arrow it looses.
+An affected creature that casts a spell with a verbal component must succeed on a Constitution saving throw against your spell save DC or the spell fails and the slot is spent.
+The creature knows something is wrong the first time it speaks to somebody who does not turn round.
+
+== Countless Eyes
+level: 3
+school: Transmutation
+classes: Bard, Sorcerer, Wizard
+casting: Action
+range: Touch
+components: V, S, M (a handful of glass beads)
+duration: Concentration, up to 10 minutes
+body:
+Eyes open across the skin of the creature you touch: on the back of the head, the shoulders, the backs of the hands. They are its own, and it will be a while before it stops flinching at what they send it.
+For the duration, the creature cannot be surprised while conscious, it cannot have the Blinded condition imposed by anything that covers only part of its head, and attack rolls against it do not gain Advantage for being made from behind or from an unseen angle.
+It also has Disadvantage on Charisma (Persuasion) checks made against anyone who can see it, for reasons nobody has ever had to explain.
+
+== Know the Enemy
+level: 2
+school: Divination
+classes: Bard, Cleric, Ranger, Wizard
+casting: 1 minute
+range: Self
+components: V, S
+duration: Instantaneous
+body:
+Memory is not only what you lived. It is everything that ever went in, including what you read once and forgot you had read.
+Name one kind of creature, one organisation or one place. You bring up everything you have ever learned about it, whether or not you remember learning it, and the GM tells you one true and useful fact: a resistance, a habit, a weakness, a name, a way in.
+What comes up is what went in. If everything you were ever told about it was wrong, this spell hands you that, in perfect good faith and in detail.
+Using a Higher-Level Spell Slot. You learn one additional fact for each spell slot level above 2.
+== Soothe the Fever
+level: 1
+school: Abjuration
+classes: Cleric, Druid, Paladin, Ranger
+casting: Action
+range: Touch
+components: V, S
+duration: 24 hours
+body:
+The pulse itself, steadied. It is the first thing anyone in this Principle learns and the last thing they stop being asked for.
+The creature you touch is no longer Poisoned, and for the duration it has Advantage on saving throws made against disease and poison, and against the effects of extreme heat or cold.
+It does not cure a disease the creature already has. What it does is give the body back the days it needed, which for most people in most places is the whole of medicine.
+Using a Higher-Level Spell Slot. You can touch one additional creature for each spell slot level above 1.
+
+== Shrug Off
+level: 2
+school: Abjuration
+classes: Bard, Cleric, Druid, Paladin
+casting: Bonus Action
+range: Self
+components: V
+duration: Instantaneous
+body:
+Not a cure and not a defence. A body can be made to put one thing aside for a while and pay for it afterwards, and this is that.
+Choose one condition currently on you from the following: Blinded, Deafened, Frightened, Paralyzed, Poisoned or Stunned. It is suppressed for 1 minute, or until you finish a Short Rest, whichever comes first.
+The condition is not gone and its duration goes on running underneath. When the suppression ends, whatever is left of it comes back, and you have the Exhausted condition with 1 Exhaustion level.
+Using a Higher-Level Spell Slot. You can suppress one additional condition for each spell slot level above 2.
+
+== Fever
+level: 3
+school: Necromancy
+classes: Cleric, Druid, Warlock, Wizard
+casting: Action
+range: 60 feet
+components: V, S
+duration: Concentration, up to 1 minute
+body:
+The pulse driven past what it can carry. It is the same operation as steadying somebody, run the wrong way, and every school teaches them together for that reason.
+One creature you can see within range makes a Constitution saving throw. On a failed save, for the duration it burns from the inside: it takes 4d6 Fire damage immediately and 2d6 Fire damage at the start of each of its turns, and it has Disadvantage on Constitution saving throws.
+The creature repeats the save at the end of each of its turns, ending the effect on itself on a success. A creature that is immune to disease has Advantage on every one of these saves.
+Using a Higher-Level Spell Slot. The initial damage increases by 1d6 for each spell slot level above 3.
+
+== Unshakable Chill
+level: 1
+school: Necromancy
+classes: Cleric, Druid, Sorcerer, Warlock, Wizard
+casting: Action
+range: 60 feet
+components: V, S
+duration: Concentration, up to 10 minutes
+body:
+The cold that the dead are cold with, put into somebody who is not one yet. It does not spread and it does not kill; it just will not go.
+One creature you can see within range makes a Constitution saving throw. On a failed save, for the duration it takes 1d6 Cold damage at the start of each of its turns, it loses any Resistance or Immunity it has to Cold damage, and it cannot benefit from a Short Rest.
+No fire warms it while this lasts, and it knows that, which is most of what this spell is for.
+Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 1.
+
+== Wracking
+level: 4
+school: Necromancy
+classes: Cleric, Sorcerer, Warlock, Wizard
+casting: Action
+range: 30 feet
+components: V, S
+duration: Concentration, up to 1 minute
+body:
+One creature you can see within range makes a Constitution saving throw. On a failed save, its body is pulled out of true for the duration: limbs lengthen, joints turn the wrong way, and everything it does costs it more than it should.
+While affected, the creature takes 4d8 Necrotic damage immediately, its Speed is halved, it has Disadvantage on attack rolls and on Strength and Dexterity checks, and it cannot use any item that has to be held in two hands.
+The creature repeats the save at the end of each of its turns, ending the effect on itself on a success. Magical healing of any kind also ends it.
+Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 4.
+
+== The Slow Stop
+level: 6
+school: Necromancy
+classes: Cleric, Warlock, Wizard
+casting: Action
+range: 60 feet
+components: V, S, M (a stopped watch, which the spell consumes)
+duration: Concentration, up to 1 minute
+body:
+Everything that lives is on its way to stopping. This does not cause that; it only takes the long way it was going and makes it short.
+One creature you can see within range makes a Constitution saving throw. On a failed save, for the duration it takes 6d8 Necrotic damage immediately and 3d8 Necrotic damage at the start of each of its turns, and its Hit Point maximum is reduced by the total Necrotic damage it has taken from this spell.
+The creature repeats the save at the end of each of its turns, ending the effect on itself on a success.
+The reduction to its Hit Point maximum lasts until it finishes a Long Rest. A creature killed by this spell dies of ordinary causes, at the ordinary speed, all at once, and cannot be told apart afterwards from one that simply stopped.
+Using a Higher-Level Spell Slot. Both damage values increase by 1d8 for each spell slot level above 6.
+
+== Borrowed Ferocity
+level: 2
+school: Transmutation
+classes: Druid, Ranger
+casting: Bonus Action
+range: Touch
+components: V, S
+duration: Concentration, up to 1 minute
+body:
+Borrowing takes a faculty from the bonded and fits it into the caster's body. This one borrows the thing a small animal has instead of size.
+You touch a Beast you have a bond with, or yourself if you have such a bond. For the duration, the creature touched has Advantage on saving throws against being Frightened, Charmed or knocked Prone, it deals an extra 1d6 damage with melee attacks, and when it drops to 0 Hit Points it drops to 1 Hit Point instead the first time.
+The bonded animal knows what has been taken and goes without it for the duration, which is the part a druid is expected to think about.
+Using a Higher-Level Spell Slot. The extra damage increases by 1d6 for each spell slot level above 2.
+
+== Atavism
+level: 3
+school: Transmutation
+classes: Druid, Ranger
+casting: Action
+range: Touch
+components: V, S, M (a tooth from something extinct)
+duration: Concentration, up to 1 minute
+body:
+Every animal is a shortened version of something that used to be larger and less reasonable. The Pact gives you leave to ask for that back, briefly.
+You touch a Beast you have a bond with. For the duration it grows one size category, its Strength becomes 19 if it was lower, it gains 2d10 Temporary Hit Points, and its melee attacks deal an extra 1d8 damage.
+It also gets slower to call off. While the spell lasts, it takes it until the end of its next turn to obey any request that means stopping.
+Using a Higher-Level Spell Slot. The Temporary Hit Points increase by 1d10 for each spell slot level above 3.
+
+== Thicket
+level: 2
+school: Transmutation
+classes: Druid, Ranger
+casting: 1 minute
+range: 30 feet
+components: V, S
+duration: 8 hours
+body:
+Sprouting governs how a bonded plant grows, and the oldest use of it is not a weapon. It is a roof.
+Branches, brambles and roots weave themselves into a shelter big enough for eight people, in a space you choose within range where plants are growing. It keeps out rain, wind and ordinary cold, it is Heavily Obscured from outside, and it has one entrance that closes over.
+A creature inside gains the benefit of a Short or Long Rest as though sheltered and dry. The thicket has AC 12 and 40 Hit Points, and it is flammable.
+When the spell ends, the plants go back to growing the way they were, which after eight hours of this is not quite the way they were before.
+
+== Bough Hammer
+level: 3
+school: Transmutation
+classes: Druid, Ranger
+casting: Bonus Action
+range: 60 feet
+components: V, S
+duration: Concentration, up to 1 minute
+body:
+A bonded tree is asked to swing one of its own limbs. It is not made into anything and nothing is made out of it: what the spell governs is the growing, and a branch that grows fast enough in one direction is a hammer.
+Choose a tree or a large plant you can see within range. When you cast this spell, and as a Bonus Action on each of your later turns, one of its boughs swings at a creature within 15 feet of it. Make a melee spell attack. On a hit, the target takes 3d8 Bludgeoning damage and must succeed on a Strength saving throw or be knocked Prone.
+The tree does not move, and the spell ends if the tree is destroyed or if you move more than 60 feet from it.
+Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 3.

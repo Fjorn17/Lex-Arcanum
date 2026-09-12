@@ -1,0 +1,100 @@
+# Una línea por candidato, para la lista de doc/propuestas/README.md y para la
+# página de decisiones. slug <TAB> por qué está aquí.
+#
+# Los 43 primeros salen del índice de Ultimate Magic; el resto está escrito aquí.
+
+# ---- astronomía
+ether-theft	Robarle a otro un conjuro que está sosteniendo. Es §6.10 llevado a su extremo.
+dimming	Le adelgaza el Éter a alguien para que le fallen los conjuros. Muerte civil temporal.
+etheric-blow	Cono corto: daño de fuerza y empujón. El conjuro más simple del arte, con nivel.
+heave	Lanzar objetos sueltos. Cubre el hueco que dejó telequinesis sin ser mover-con-la-mente.
+catching-bands	Reacción: absorbe una caída o un impacto. Guardas, que es astronomía pura.
+reading	Lee qué está construyendo alguien, desde el segundo paso. No dice cómo acaba.
+ward-against-working	Gasta tu Concentración para que no la gaste el cuerpo del otro. Y estorba si ya estaba concentrado.
+clear-air	Nada ajeno se asienta a tu alrededor. No retira lo que ya está puesto: detiene lo siguiente.
+bleed-the-star	No le quita la Estrella a nadie: se la abre y deja que la merma haga el resto.
+unpick	Disipar cuesta lo que costó la operación entera. Esto va a por un paso y deja el resto en pie.
+
+# ---- alquimia
+corrosive-touch	Ácido a un brazo, y le estropea el metal al objetivo para siempre.
+ash-storm	Ceniza cayendo: oscurece, estorba y quema. Ceniza solo tenía un conjuro.
+white-brand	Un arma al rojo blanco. Incandescencia no tenía nada.
+incandescent-lance	Materia al rojo mandada como un hilo. Lo alcanzado queda brillando y no se esconde.
+white-heat	Todo el metal de la zona al rojo blanco. Contra soldados, no contra animales.
+cinder-rain	Lluvia de rescoldo. Lava, que estaba vacía hasta erupción volcánica.
+lightning-arc	Rayo de nivel 1 con ventaja contra el metal.
+charged-skin	Carga sostenida sobre la piel, descargable de golpe.
+steel-thread	Reacción: un hilo de la ropa cruza a acero y para el golpe.
+shrapnel	Fabrica el metal y lo lanza en el mismo aliento.
+vitriol-veil	Bruma ácida alrededor de uno. Junta bruma y ácido en el Crisol.
+pitch-ball	Truco de fango: pez caliente que además ensucia.
+scouring-wind	Cilindro de arenilla que se mueve. Arena, que estaba casi vacía.
+scald	Lo más barato que hace el vapor: llegar a un sitio que se le queda pequeño.
+boiler	Vapor en sitio cerrado. Hace más daño bajo techo que al aire libre.
+steam-vent	Línea de vapor a presión que empuja y deja el pasillo sin ver.
+wall-of-sound	Muro que no deja pasar el sonido y golpea al cruzarlo.
+piercing-shriek	Una nota entregada dentro de la cabeza. Estruendo de nivel 1.
+frostbite	Hielo de nivel 1 que además entorpece las manos. Agua tenía tres conjuros.
+ice-cage	Apresa en hielo y sigue haciendo daño. Vulnerable al fuego.
+ice-lance	Acción adicional, línea de 60 pies. Caro porque va en un solo paso.
+
+# ---- cosmología
+sands-of-time	Le carga años a un cuerpo durante una hora.
+held-years	Le quita a un viejo los penalizadores de la edad durante un día, y se los devuelve de golpe.
+anticipate-peril	Un d6 guardado para iniciativa o trampas. Porvenir como aritmética, no como profecía.
+staunch	Frena los procesos de dentro: estabiliza, corta una hemorragia. No cura nada.
+halt	Detiene una roca, una flecha o un fuego a medio movimiento. Lo detenido sigue siendo peligroso.
+shadow-step	Salto corto entre sombras, acción adicional.
+sidestep	Reacción: te has movido 15 pies, no has deshecho el golpe.
+swap	Dos cuerpos cambian de sitio. Lo más limpio que hace la Disciplina: no hay pulso que se le oponga.
+leaden-step	Pesar el triple. Gravedad no tenía ningún candidato.
+well	El Abismo hecho pequeño y puesto en un sitio a propósito. Todo cae hacia ahí.
+downward	Cambia hacia dónde es «abajo» dentro de un cubo de 40 pies.
+
+# ---- espiritismo · mente
+loathsome-veil	Ilusión repugnante que solo ven los que fallan. Enseña por qué una ilusión se hace en cada mente.
+ghostly-disguise	Pareces muerto. Se cae en cuanto alguien te toca.
+shadow-weapon	Arma de sombra que deja de funcionar contra quien la estudie.
+borrowed-voice	Tu voz es la que decidas. Se cae si te ven la boca de cerca.
+disguise-another	Disfrazar a otro sale más caro: la ilusión va en la mente de quien mira y tú estás en otro sitio.
+mist-of-old-griefs	Bruma que no está. Cada uno ve la suya, y quien no tiene recuerdos no ve nada.
+murderous-command	Un solo acto impuesto: atacar a quien tenga más cerca.
+forbid-action	Le quita una actividad de la lista. La mitad barata de la Sujeción.
+fixation	Ve hasta eso y pon las manos encima. Pequeño y difícil de explicar después.
+serenity	No puede hacer daño a nadie. Se rompe en cuanto alguien se lo hace a él.
+infatuation	Encaprichado con otro durante una hora, y lo recuerda todo al terminar.
+outrage	Se le echa encima a quien nombres y no mira por dónde va.
+overwhelming-grief	Duelo: velocidad 0 y solo esquivar. Se rompe antes si le pegas.
+oppressive-boredom	Hastío de nivel 1: deja de atacar hasta que le hagan daño.
+terrible-remorse	Se hace daño a sí mismo por algo que hizo de verdad. Lo más feo de la Rama.
+contempt	Los demás no merecen la molestia: ni los ataca bien ni se deja ayudar.
+rapture	La Rama del revés: saca el sentimiento en vez de meterlo.
+waves-of-ecstasy	Lo más que se le puede meter a un cuerpo sin tocarlo.
+echolocation	Visión ciega a 60 pies. Se cae si te ensordecen.
+steal-voice	Le quita la voz a alguien: no le quita la magia, le quita la manera fácil.
+tangled-tongue	No puede hablar ni escribir con sentido, y se entera de todo.
+sharpened-senses	No añade nada: deja de tirarse lo que el cuerpo ya recogía.
+hush	No es silencio. Trabaja sobre los oídos que lo habrían oído.
+countless-eyes	Ojos por toda la piel. No lo sorprenden, y no le compra nadie nada.
+share-memory	Entrega un recuerdo propio entero. Memoria solo tenía tres conjuros.
+interrogation	Cinco preguntas con la mano encima. Ves lo que recuerda, no lo que es verdad.
+witness	Ver una escena de hasta siete días atrás desde donde estaba un objeto.
+know-the-enemy	Sube lo que aprendiste alguna vez, aunque no recuerdes haberlo aprendido. Si era falso, te lo entrega igual.
+
+# ---- espiritismo · naturaleza, vida y muerte
+fungal-bloom	Hongos está vacía y este conjuro la abre. Crece más sobre lo que ya se detuvo.
+upright-beast	La bestia pactada se pone de pie y tiene manos. Sigue siendo igual de lista.
+borrowed-ferocity	Lo que un animal pequeño tiene en lugar de tamaño. El animal se queda sin ello.
+atavism	La bestia pactada crece y cuesta más pararla.
+burst-of-nettles	Ortigas que revientan el suelo alrededor.
+thicket	El uso más viejo del Brote no es un arma, es un techo.
+bough-hammer	A un árbol vinculado se le pide que mueva una rama muy deprisa.
+delay-pain	No cura: aplaza. Cuando termina llega todo junto como agotamiento.
+diagnose-illness	Te dice qué tiene, y nada de cómo arreglarlo.
+soothe-the-fever	Le devuelve al cuerpo los días que necesitaba, que es casi toda la medicina.
+shrug-off	Aparta un estado un rato y lo paga después.
+fever	Asentar el pulso corrido del revés. Las escuelas los enseñan juntos.
+howling-agony	Dolor sin causa: daño psíquico y media acción por turno.
+unshakable-chill	Frío que no se quita y no deja descansar. Ningún fuego lo calienta.
+wracking	El cuerpo sacado de sitio. Cualquier curación mágica lo termina.
+the-slow-stop	Coge el camino largo de todo lo que vive y lo hace corto.

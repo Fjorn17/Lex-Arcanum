@@ -48,3 +48,39 @@ White Brand	Marca blanca
 Incandescent Lance	Lanza incandescente
 White Heat	Al rojo blanco
 Shrapnel	Metralla
+Reading	Lectura
+Ward Against Working	Guarda contra operación
+Clear Air	Aire despejado
+Bleed the Star	Sangrar la Estrella
+Unpick	Descoser
+Leaden Step	Paso de plomo
+Well	Pozo
+Downward	Abajo
+Sidestep	Quite
+Swap	Permuta
+Staunch	Restañar
+Halt	Detención
+Borrowed Voice	Voz prestada
+Disguise Another	Disfrazar a otro
+Mist of Old Griefs	Bruma de duelos viejos
+Fixation	Fijación
+Serenity	Serenidad
+Infatuation	Encaprichamiento
+Outrage	Saña
+Contempt	Desprecio
+Rapture	Arrebato
+Waves of Ecstasy	Oleadas de éxtasis
+Sharpened Senses	Sentidos afilados
+Hush	Sordina
+Countless Eyes	Ojos sin cuento
+Know the Enemy	Conocer al enemigo
+Soothe the Fever	Aplacar la fiebre
+Shrug Off	Sobreponerse
+Fever	Calentura
+Unshakable Chill	Frío que no se quita
+Wracking	Descoyuntar
+The Slow Stop	La parada lenta
+Borrowed Ferocity	Fiereza prestada
+Atavism	Atavismo
+Thicket	Espesura
+Bough Hammer	Martillo de rama
