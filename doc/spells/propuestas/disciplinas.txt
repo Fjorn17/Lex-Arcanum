@@ -4,20 +4,20 @@ Dimming	Astronomy
 Etheric Blow	Astronomy
 Heave	Astronomy
 Catching Bands	Astronomy
-Ash Storm	Alchemy
-Steel Thread	Alchemy
-Vitriol Veil	Alchemy
-Frostbite	Alchemy
-Ice Cage	Alchemy
-Ice Lance	Alchemy
-Lightning Arc	Alchemy
-Charged Skin	Alchemy
-Wall of Sound	Alchemy
-Piercing Shriek	Alchemy
-Scouring Wind	Alchemy
-Pitch Ball	Alchemy
-Corrosive Touch	Alchemy
-Cinder Rain	Alchemy
+Ash Cloud	Alchemy
+Steel Weave	Alchemy
+Acid Dew	Alchemy
+Hoarfrost	Alchemy
+Ice Snare	Alchemy
+Hard Frost	Alchemy
+Spark	Alchemy
+Charge on the Skin	Alchemy
+Wall of Resonance	Alchemy
+Shriek	Alchemy
+Abrasion	Alchemy
+Clod	Alchemy
+The Bite	Alchemy
+Embers	Alchemy
 Sands of Time	Cosmology
 Held Years	Cosmology
 Anticipate Peril	Cosmology
@@ -45,10 +45,10 @@ Howling Agony	Spiritism
 Scald	Alchemy
 Boiler	Alchemy
 Steam Vent	Alchemy
-White Brand	Alchemy
-Incandescent Lance	Alchemy
+White Iron	Alchemy
+Red Thread	Alchemy
 White Heat	Alchemy
-Shrapnel	Alchemy
+Iron Hail	Alchemy
 Reading	Astronomy
 Ward Against Working	Astronomy
 Clear Air	Astronomy

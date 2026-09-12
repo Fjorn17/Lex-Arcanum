@@ -433,9 +433,9 @@ my @T = (
             [ 'Born of', 'Nace del encuentro de', 'Water and Lightning', 'Agua y Rayo' ] ],
   body => {
     en => ['<p>Acid eats metal, limestone and flesh, and does not tell apart what its maker meant to reach from what happened to be beside it &mdash; so using it under your own roof counts as recklessness, not cunning. Corrosion is the only Star in the Discipline whose work carries on after the astronomer has left the place, which is why it turns up more often in a sabotage than in a fight.</p>',
-'<p>This is also where the supplement files poison and disease that are not a matter of living tissue: what bites and what rots from outside belong to the same element.</p>'],
+'<p>This is also where the supplement files poison and disease that did not come out of anything living: a corrosion, a rot in a beam, a poison decanted from a jar. What a body makes for itself &mdash; venom, sap, spores &mdash; belongs to Nature instead.</p>'],
     es => ['<p>El &aacute;cido come el metal, la caliza y la carne, y no distingue entre lo que quien lo form&oacute; quer&iacute;a alcanzar y lo que hab&iacute;a al lado, de modo que su empleo bajo techo propio se considera imprudencia y no astucia. Corrosi&oacute;n es la &uacute;nica Estrella de la Disciplina cuyo efecto sigue trabajando despu&eacute;s de que el astr&oacute;nomo se haya marchado del sitio, y por eso es la que m&aacute;s veces aparece en un sabotaje y la que menos en un combate.</p>',
-'<p>Aqu&iacute; es tambi&eacute;n donde el suplemento coloca el veneno y la enfermedad que no son cosa de tejido vivo: lo que muerde y lo que pudre desde fuera son el mismo elemento.</p>'],
+'<p>Aqu&iacute; es tambi&eacute;n donde el suplemento coloca el veneno y la enfermedad que no salieron de nada vivo: una corrosi&oacute;n, una podredumbre en una viga, un veneno sacado de un frasco. Lo que un cuerpo fabrica por su cuenta &mdash; ponzo&ntilde;a, savia, esporas &mdash; es de la Naturaleza.</p>'],
   },
   stars => [
     { en => 'Acid', es => 'Ácido', kind => 'substance', from => 'Water + Discharge / Agua y Descarga',
@@ -655,9 +655,11 @@ my @T = (
   body => {
     en => ['<p>The Branch that is not imposed. A Pact is earned first, with dealings &mdash; shelter, food, defence, not failing &mdash; and the working only acknowledges what already exists between the two. <b>A druid has companions, not tools</b>, and this Branch grants nothing over what has not been pacted.</p>',
 '<p>From the bond come the rest: passing what you want of them without words, borrowing a faculty and fitting it into your own body &mdash; the wolf&rsquo;s nose, the hawk&rsquo;s eye, the fish&rsquo;s breath &mdash; and, at the end, taking their whole form.</p>',
+'<p>And venom, which is this Branch&rsquo;s own poison: made in a body, delivered by a body, and over quickly one way or the other. Asking a bonded animal for it is asking for something it spends and has to make again, so nobody asks twice in a day.</p>',
 '<p>Here happens the one documented meeting between two Branches of the Discipline: a beast that has been Pacted with offers no Opposition to the workings of the Mind, because it has already accepted the arrangement. A druid and a mentalist working together get from an animal what neither would get alone.</p>'],
     es => ['<p>La Rama que no se impone. Un Pacto se gana antes, con trato &mdash; abrigo, comida, defensa, no fallar &mdash; y el trazado &uacute;nicamente reconoce lo que ya existe entre los dos. <b>Un druida tiene compa&ntilde;eros, no herramientas</b>, y esta Rama no concede nada sobre lo que no se ha pactado.</p>',
 '<p>Del v&iacute;nculo sale lo dem&aacute;s: transmitirle lo que se quiere de &eacute;l sin palabras, tomarle prestada una facultad e instalarla en el cuerpo propio &mdash; el olfato del lobo, la vista del halc&oacute;n, el aliento del pez &mdash; y, al final, tomar su forma entera.</p>',
+'<p>Y la ponzo&ntilde;a, que es el veneno propio de esta Rama: hecha en un cuerpo, entregada por un cuerpo, y resuelta pronto de una manera o de otra. Ped&iacute;rsela a un animal vinculado es pedirle algo que gasta y tiene que volver a fabricar, as&iacute; que nadie la pide dos veces en un d&iacute;a.</p>',
 '<p>Aqu&iacute; ocurre el &uacute;nico encuentro documentado entre dos Ramas de la Disciplina: una bestia con la que se ha sellado un Pacto no opone Resiliencia a los trazados de la Mente, porque ya ha admitido su trato. Un druida y un mentalista trabajando juntos consiguen de un animal lo que ninguno conseguir&iacute;a por su cuenta.</p>'],
   },
   stars => [],
@@ -671,8 +673,10 @@ my @T = (
             [ 'Trade', 'Oficio', 'Druid', 'Druida' ] ],
   body => {
     en => ['<p>Governing the growing of a plant: roots that shift, branches that close over a way, a harvest that runs weeks ahead in one night. The same Pact as with a beast, made with something that cannot walk away from it.</p>',
+'<p>Its poison is in the sap, and it is a defence rather than a weapon: it is put there to be eaten and regretted, which is why almost nothing a plant makes works fast.</p>',
 '<p>It is slower than any other Branch and it is the only one whose work is still standing years later. A wall of thorns is not a wall of conjured Ether, which comes undone the moment nobody feeds it &mdash; <b>it is a real thicket that was asked to hurry</b>, and it stays a thicket. That is the whole reason the Discipline holds plants and Alchemy does not.</p>'],
     es => ['<p>Gobernar el crecer de una planta: ra&iacute;ces que se desplazan, ramas que se cierran sobre un paso, una cosecha que adelanta semanas en una noche. El mismo Pacto que con una bestia, hecho con algo que no puede marcharse de &eacute;l.</p>',
+'<p>Su veneno va en la savia, y es una defensa antes que un arma: est&aacute; puesto ah&iacute; para que se lo coman y lo lamenten, que es la raz&oacute;n de que casi nada de lo que hace una planta act&uacute;e deprisa.</p>',
 '<p>Es m&aacute;s lenta que ninguna otra Rama y es la &uacute;nica cuyo trabajo sigue en pie a&ntilde;os despu&eacute;s. Un muro de espinas no es un muro de &Eacute;ter conjurado, que se deshace en cuanto nadie lo alimenta &mdash; <b>es una zarza de verdad a la que se le ha pedido que se d&eacute; prisa</b>, y sigue siendo una zarza. Esa es toda la raz&oacute;n de que las plantas sean de esta Disciplina y no de la alquimia.</p>'],
   },
   stars => [],
@@ -686,10 +690,16 @@ my @T = (
   body => {
     en => ['<p>A branch of its own, and not a corner of Plants, because what a fungus does is not what a plant does. It does not grow towards the light; it grows through what is already dead, and it is the one living thing whose trade is decay.</p>',
 '<p>Which puts it exactly where two Branches of this Discipline meet: it belongs to Nature, and its whole business is the Principle of Death. Whether a Pact with a spread of fungus is even the same kind of Pact &mdash; there is no single body to make it with, and no obvious place where one ends and the next begins &mdash; has not been settled.</p>',
-'<p><b>No spell of the supplement lives here yet.</b> The branch is written down before it is filled on purpose: it is a hole with a shape, which is more useful than no hole at all.</p>'],
+'<p>What it makes is <b>poison</b>, and disease, and everything that works by getting inside and staying there. A spore is not thrown at anybody: it is let go where somebody is going to breathe, and then it takes its time. That patience is the whole character of the Branch, and it is why the trade has never liked it much.</p>',
+'<p>The three Branches of Nature each have a poison and they are not interchangeable. An animal&rsquo;s is <b>venom</b>: made in a body, delivered by a body, and over quickly one way or the other. A plant&rsquo;s is in the sap, and it is a defence &mdash; it waits to be eaten. A fungus&rsquo;s is neither. It is the by-product of something feeding, and it does not care at all who was in the way.</p>',
+'<p>What belongs to Acid instead is everything that bites without being alive: a corrosion, a rot in a beam, a poison decanted from a jar. The line is drawn by where it came from, not by what it does when it arrives.</p>'],
+
     es => ['<p>Una Rama propia, y no un rinc&oacute;n de Plantas, porque lo que hace un hongo no es lo que hace una planta. No crece hacia la luz: crece a trav&eacute;s de lo que ya est&aacute; muerto, y es el &uacute;nico ser vivo cuyo oficio es la descomposici&oacute;n.</p>',
 '<p>Lo cual lo coloca justo donde se tocan dos Ramas de esta Disciplina: es de la Naturaleza, y todo su negocio es el Principio de la Muerte. Si un Pacto con una extensi&oacute;n de hongo es siquiera la misma clase de Pacto &mdash; no hay un cuerpo con el que hacerlo, ni un sitio evidente donde uno acabe y empiece el siguiente &mdash; no est&aacute; decidido.</p>',
-'<p><b>Todav&iacute;a no hay ning&uacute;n conjuro del suplemento aqu&iacute;.</b> La Rama se escribe antes de llenarse a prop&oacute;sito: es un hueco con forma, que sirve m&aacute;s que ning&uacute;n hueco.</p>'],
+'<p>Lo que hace es <b>veneno</b>, y enfermedad, y todo aquello que trabaja meti&eacute;ndose dentro y qued&aacute;ndose. Una espora no se le tira a nadie: se suelta donde alguien va a respirar, y despu&eacute;s se toma su tiempo. Esa paciencia es todo el car&aacute;cter de la Rama, y es la raz&oacute;n de que nunca le haya ca&iacute;do bien al oficio.</p>',
+'<p>Las tres Ramas de la Naturaleza tienen cada una su veneno y no son intercambiables. El de un animal es <b>ponzo&ntilde;a</b>: hecha en un cuerpo, entregada por un cuerpo, y resuelta pronto de una manera o de otra. El de una planta va en la savia y es una defensa &mdash; espera a que se la coman. El de un hongo no es ninguna de las dos cosas. Es el desecho de algo que est&aacute; comiendo, y le da exactamente igual qui&eacute;n estuviera en medio.</p>',
+'<p>Lo que en cambio es del &Aacute;cido es todo lo que muerde sin estar vivo: una corrosi&oacute;n, una podredumbre en una viga, un veneno sacado de un frasco. La raya la marca de d&oacute;nde sali&oacute;, no lo que hace al llegar.</p>'],
+
   },
   stars => [],
 },

@@ -40,7 +40,7 @@ Freezing Sphere	mist
 Gaseous Form	air
 Grease	mud
 Gust of Wind	air
-Heat Metal	metal
+Heat Metal	fire
 Hellish Rebuke	fire
 Ice Knife	mist
 Ice Storm	mist
@@ -231,7 +231,7 @@ Arcanist’s Magic Aura	illusion
 True Seeing	senses
 Acid Fog	acid
 Iron Body	metal
-Polar Ray	water
+Ice Awl	mist
 Sandstorm	sand
 Soften Earth and Stone	earth
 Spell Turning	-
@@ -241,3 +241,10 @@ Transmute Rock and Mud	mud
 Volcanic Eruption	lava
 Wall of Iron	metal
 Whirlwind	air
+Cloudkill	fungi
+Contagion	fungi
+Detect Poison and Disease	life
+Poison Spray	plants
+Protection from Poison	life
+Ray of Sickness	animals
+Stinking Cloud	fungi

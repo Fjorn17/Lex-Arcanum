@@ -16,27 +16,27 @@ bleed-the-star	No le quita la Estrella a nadie: se la abre y deja que la merma h
 unpick	Disipar cuesta lo que costó la operación entera. Esto va a por un paso y deja el resto en pie.
 
 # ---- alquimia
-corrosive-touch	Ácido a un brazo, y le estropea el metal al objetivo para siempre.
-ash-storm	Ceniza cayendo: oscurece, estorba y quema. Ceniza solo tenía un conjuro.
-white-brand	Un arma al rojo blanco. Incandescencia no tenía nada.
-incandescent-lance	Materia al rojo mandada como un hilo. Lo alcanzado queda brillando y no se esconde.
+the-bite	El Crisol a un brazo de distancia, y le estropea el metal al objetivo para siempre.
+ash-cloud	Ceniza cayendo: oscurece, estorba y ahoga las llamas. Ceniza solo tenía un conjuro.
+white-iron	Un arma al rojo blanco que ya no se puede envainar. Incandescencia no tenía nada.
+red-thread	Materia al rojo estirada en un hilo. Lo alcanzado queda brillando y no se esconde.
 white-heat	Todo el metal de la zona al rojo blanco. Contra soldados, no contra animales.
-cinder-rain	Lluvia de rescoldo. Lava, que estaba vacía hasta erupción volcánica.
-lightning-arc	Rayo de nivel 1 con ventaja contra el metal.
-charged-skin	Carga sostenida sobre la piel, descargable de golpe.
-steel-thread	Reacción: un hilo de la ropa cruza a acero y para el golpe.
-shrapnel	Fabrica el metal y lo lanza en el mismo aliento.
-vitriol-veil	Bruma ácida alrededor de uno. Junta bruma y ácido en el Crisol.
-pitch-ball	Truco de fango: pez caliente que además ensucia.
-scouring-wind	Cilindro de arenilla que se mueve. Arena, que estaba casi vacía.
+embers	Rescoldo cayendo del cielo. Lava, que estaba casi vacía.
+spark	Descarga de nivel 1, con ventaja contra quien lleve metal encima.
+charge-on-the-skin	Carga sostenida sobre la piel, descargable de golpe.
+steel-weave	Reacción: un hilo de la ropa cruza a acero y para el golpe. Vuelve a ser hilo al instante.
+iron-hail	Fabrica el metal y lo lanza en el mismo aliento, que es por lo que no queda nada que recoger.
+acid-dew	Bruma no: ácido en gotas. Y sigue comiendo una hora después de que el conjuro acabe.
+clod	Tierra y agua y nada más. El cruce con el que las escuelas prueban a un alumno.
+abrasion	Cilindro de arenilla que se mueve. Desgaste, que es la Estrella de la Arena.
 scald	Lo más barato que hace el vapor: llegar a un sitio que se le queda pequeño.
 boiler	Vapor en sitio cerrado. Hace más daño bajo techo que al aire libre.
 steam-vent	Línea de vapor a presión que empuja y deja el pasillo sin ver.
-wall-of-sound	Muro que no deja pasar el sonido y golpea al cruzarlo.
-piercing-shriek	Una nota entregada dentro de la cabeza. Estruendo de nivel 1.
-frostbite	Hielo de nivel 1 que además entorpece las manos. Agua tenía tres conjuros.
-ice-cage	Apresa en hielo y sigue haciendo daño. Vulnerable al fuego.
-ice-lance	Acción adicional, línea de 60 pies. Caro porque va en un solo paso.
+wall-of-resonance	Muro que no deja pasar el sonido y golpea al cruzarlo.
+shriek	Una sola nota entregada dentro de la cabeza. Estruendo de nivel 1.
+hoarfrost	El Hielo es Estrella de la Bruma, no del Agua: cuaja lo que el aire ya llevaba.
+ice-snare	Lo que sujeta está hecho de la humedad de la sala. Una antorcha lo deshace en segundos.
+hard-frost	Linea de 60 pies en un solo compás. Con el aire seco rinde bastante menos.
 
 # ---- cosmología
 sands-of-time	Le carga años a un cuerpo durante una hora.
@@ -82,7 +82,7 @@ witness	Ver una escena de hasta siete días atrás desde donde estaba un objeto.
 know-the-enemy	Sube lo que aprendiste alguna vez, aunque no recuerdes haberlo aprendido. Si era falso, te lo entrega igual.
 
 # ---- espiritismo · naturaleza, vida y muerte
-fungal-bloom	Hongos está vacía y este conjuro la abre. Crece más sobre lo que ya se detuvo.
+fungal-bloom	Esporas que se alimentan de lo que ya se detuvo. Crece el doble sobre un cadáver.
 upright-beast	La bestia pactada se pone de pie y tiene manos. Sigue siendo igual de lista.
 borrowed-ferocity	Lo que un animal pequeño tiene en lugar de tamaño. El animal se queda sin ello.
 atavism	La bestia pactada crece y cuesta más pararla.

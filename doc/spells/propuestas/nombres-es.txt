@@ -3,20 +3,20 @@ Dimming	Empañamiento
 Etheric Blow	Golpe etéreo
 Heave	Envite
 Catching Bands	Bandas de sujeción
-Ash Storm	Tormenta de ceniza
-Steel Thread	Hilo de acero
-Vitriol Veil	Velo de vitriolo
-Frostbite	Sabañón
-Ice Cage	Jaula de hielo
-Ice Lance	Lanza de hielo
-Lightning Arc	Arco eléctrico
-Charged Skin	Piel cargada
-Wall of Sound	Muro de sonido
-Piercing Shriek	Chillido lacerante
-Scouring Wind	Viento abrasivo
-Pitch Ball	Bola de pez
-Corrosive Touch	Toque corrosivo
-Cinder Rain	Lluvia de rescoldo
+Ash Cloud	Nube de ceniza
+Steel Weave	Trama de acero
+Acid Dew	Rocío ácido
+Hoarfrost	Escarcha
+Ice Snare	Cepo de hielo
+Hard Frost	Helada
+Spark	Chispazo
+Charge on the Skin	Carga en la piel
+Wall of Resonance	Muro de resonancia
+Shriek	Chillido
+Abrasion	Lija
+Clod	Pella
+The Bite	Mordedura
+Embers	Rescoldo
 Sands of Time	Arenas del tiempo
 Held Years	Años retenidos
 Anticipate Peril	Anticipar el peligro
@@ -44,10 +44,10 @@ Howling Agony	Agonía aullante
 Scald	Escaldadura
 Boiler	Caldera
 Steam Vent	Bocanada
-White Brand	Marca blanca
-Incandescent Lance	Lanza incandescente
+White Iron	Hierro al blanco
+Red Thread	Hilo al rojo
 White Heat	Al rojo blanco
-Shrapnel	Metralla
+Iron Hail	Granizo de hierro
 Reading	Lectura
 Ward Against Working	Guarda contra operación
 Clear Air	Aire despejado

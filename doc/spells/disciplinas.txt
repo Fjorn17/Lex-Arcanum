@@ -267,7 +267,7 @@ Wind Wall	Alchemy
 Zone of Truth	Spiritism
 Acid Fog	Alchemy
 Iron Body	Alchemy
-Polar Ray	Alchemy
+Ice Awl	Alchemy
 Sandstorm	Alchemy
 Soften Earth and Stone	Alchemy
 Spell Turning	Astronomy
@@ -277,3 +277,10 @@ Transmute Rock and Mud	Alchemy
 Volcanic Eruption	Alchemy
 Wall of Iron	Alchemy
 Whirlwind	Alchemy
+Cloudkill	Spiritism
+Contagion	Spiritism
+Detect Poison and Disease	Spiritism
+Poison Spray	Spiritism
+Protection from Poison	Spiritism
+Ray of Sickness	Spiritism
+Stinking Cloud	Spiritism

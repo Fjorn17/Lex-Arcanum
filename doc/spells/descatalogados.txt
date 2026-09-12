@@ -11,7 +11,8 @@
 #                 no se ha decidido donde van
 #   summon        invocar, conjurar y animar. En este mundo invocar es magia de
 #                 espacio, y ese catalogo esta sin escribir
-#   poison        el veneno. Probablemente acabe en espiritismo
+#   (el veneno tuvo su tabla y ya no la tiene: vive en Naturaleza, repartido
+#    por de donde sale — ponzoña de animal, savia de planta, esporas de hongo)
 #   chromatic     los cromaticos: eligen su tipo de dano y no se atan a un solo
 #                 elemento
 #   resurrection  devolver la vida. La muerte es definitiva (Reglas 1.5), asi
@@ -82,16 +83,6 @@ Find Steed	summon	The steed is a spirit from another plane.	La montura es un esp
 Guardian of Faith	summon	The guardian is sent by a deity.	Al guardian lo manda una deidad.
 Planar Ally	summon	Petitions a deity for one of its servants.	Pide a una deidad uno de sus servidores.
 Planar Binding	summon	Binds a being from another plane.	Vincula a un ser de otro plano.
-
-# ------------------------------------------------------------- el veneno
-
-Cloudkill	poison	Poison probably belongs to Spiritism; it is not settled yet.	El veneno probablemente sea cosa del espiritismo; no esta decidido.
-Poison Spray	poison	Poison probably belongs to Spiritism; it is not settled yet.	El veneno probablemente sea cosa del espiritismo; no esta decidido.
-Ray of Sickness	poison	Poison probably belongs to Spiritism; it is not settled yet.	El veneno probablemente sea cosa del espiritismo; no esta decidido.
-Stinking Cloud	poison	Poison probably belongs to Spiritism; it is not settled yet.	El veneno probablemente sea cosa del espiritismo; no esta decidido.
-Contagion	poison	Sickness and poison are the same open question.	La enfermedad y el veneno son la misma pregunta abierta.
-Detect Poison and Disease	poison	Sickness and poison are the same open question.	La enfermedad y el veneno son la misma pregunta abierta.
-Protection from Poison	poison	Sickness and poison are the same open question.	La enfermedad y el veneno son la misma pregunta abierta.
 
 # ---------------------------------------------------------- los cromaticos
 

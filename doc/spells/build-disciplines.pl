@@ -65,7 +65,7 @@ my (%UNC, @UNC_ORDER);
     }
     close $fh;
 }
-my @BUCKETS = qw(none summon poison chromatic resurrection);
+my @BUCKETS = qw(none summon chromatic resurrection);
 
 # Los conjuros, con lo poco que hace falta para una fila de tabla.
 my @SPELLS;

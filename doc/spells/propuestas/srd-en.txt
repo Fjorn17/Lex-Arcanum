@@ -66,7 +66,7 @@ The triggering creature takes no damage from the fall or from being thrown into 
 The bands are nothing but gathered Ether. They catch once and are gone.
 Using a Higher-Level Spell Slot. The damage prevented increases by 15 for each spell slot level above 2.
 
-== Ash Storm
+== Ash Cloud
 level: 3
 school: Transmutation
 classes: Druid, Sorcerer, Wizard
@@ -80,7 +80,7 @@ The area is Lightly Obscured, and it is Difficult Terrain. A creature that start
 A creature in the area has Disadvantage on Wisdom (Perception) checks that rely on sight, and any open flame in the area is smothered.
 Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 3.
 
-== Steel Thread
+== Steel Weave
 level: 2
 school: Transmutation
 classes: Bard, Sorcerer, Wizard
@@ -94,7 +94,7 @@ You take half as much damage from the triggering attack, and if the attack was m
 The steel goes back to being thread the instant the blow is turned, which is why nobody has ever made armour this way.
 Using a Higher-Level Spell Slot. The damage is reduced by a further 1d10 for each spell slot level above 2.
 
-== Vitriol Veil
+== Acid Dew
 level: 4
 school: Transmutation
 classes: Druid, Sorcerer, Wizard
@@ -103,13 +103,13 @@ range: Self (15-foot Emanation)
 components: V, S, M (a drop of oil of vitriol)
 duration: Concentration, up to 10 minutes
 body:
-Mist and acid meet at the Crucible, and what comes out hangs in the air around you.
-For the duration, a 15-foot Emanation of pale, sour mist moves with you. The area is Lightly Obscured to anyone but you.
-When a creature enters the Emanation for the first time on a turn or ends its turn there, it makes a Constitution saving throw, taking 3d6 Acid damage on a failed save or half as much damage on a successful one.
-A creature that hits you with a melee attack while you are in the mist takes 2d6 Acid damage.
-Using a Higher-Level Spell Slot. The damage of both effects increases by 1d6 for each spell slot level above 4.
+Not a mist, whatever it looks like from across a room. Acid is its own crossing, of Water and Lightning, and what hangs in the air here is acid in droplets too small to fall.
+For the duration, a 15-foot Emanation moves with you. When a creature enters it for the first time on a turn or ends its turn there, it makes a Constitution saving throw, taking 3d6 Acid damage on a failed save or half as much damage on a successful one.
+A creature that hits you with a melee attack while you stand in it takes 2d6 Acid damage.
+Corrosion is the one Star in the Discipline whose work carries on after the astronomer has left, and this is no exception: everything the dew settled on goes on being eaten for an hour after the spell ends, which is why nobody casts this under their own roof and calls it cunning.
+Using a Higher-Level Spell Slot. Both damage values increase by 1d6 for each spell slot level above 4.
 
-== Frostbite
+== Hoarfrost
 level: 1
 school: Transmutation
 classes: Druid, Sorcerer, Wizard
@@ -118,10 +118,11 @@ range: 60 feet
 components: V, S
 duration: Instantaneous
 body:
-You press gathered Ether into ice in the air against somebody's skin. One creature you can see within range makes a Constitution saving throw. On a failed save, it takes 2d6 Cold damage and has Disadvantage on the next weapon attack roll it makes before the end of its next turn, as its hands stop answering.
+Ice is a Star of Mist and not of Water: nothing is poured onto anybody. What freezes is what the air was already carrying, gathered onto a body and left there, and it goes back to being water the moment any heat reaches it.
+One creature you can see within range makes a Constitution saving throw. On a failed save, it takes 2d6 Cold damage and has Disadvantage on the next attack roll it makes before the end of its next turn, because its hands have stopped answering.
 Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 1.
 
-== Ice Cage
+== Ice Snare
 level: 5
 school: Transmutation
 classes: Druid, Sorcerer, Wizard
@@ -130,12 +131,13 @@ range: 120 feet
 components: V, S, M (a chip of clear ice)
 duration: Concentration, up to 1 minute
 body:
-Ice closes around one creature you can see within range. The target makes a Dexterity saving throw. On a failed save, it takes 4d6 Cold damage and has the Restrained condition for the duration. On a successful save, it takes half as much damage only.
-A creature Restrained this way takes 2d6 Cold damage at the start of each of its turns. It can take an action to make a Strength (Athletics) check against your spell save DC, breaking the ice and ending the condition on itself on a success.
-The cage is an object with AC 15 and 30 Hit Points, and it has Vulnerability to Fire damage. Destroying it ends the condition.
+The damp in the air around one creature is gathered in and set, all at once, so that what holds it is made out of the room it was standing in.
+The target makes a Dexterity saving throw. On a failed save, it takes 4d6 Cold damage and has the Restrained condition for the duration. On a successful save, it takes half as much damage only.
+A creature Restrained this way takes 2d6 Cold damage at the start of each of its turns. It can take an action to make a Strength (Athletics) check against your spell save DC, breaking out on a success.
+The ice is an object with AC 15 and 30 Hit Points and it has Vulnerability to Fire damage. That vulnerability is not a weakness anyone chose: it is the countdown every Mist-worker is taught first, and a torch held against the snare undoes in seconds what the spell spent a level on.
 Using a Higher-Level Spell Slot. The initial damage increases by 1d6 for each spell slot level above 5.
 
-== Ice Lance
+== Hard Frost
 level: 6
 school: Transmutation
 classes: Druid, Sorcerer, Wizard
@@ -144,11 +146,12 @@ range: Self (60-foot Line)
 components: V
 duration: Instantaneous
 body:
-There is no gesture and no word: the state is put on in one step and handed over in the same beat, which is the whole reason this spell costs what it does.
-A 60-foot-long, 5-foot-wide Line of ice drives out from you. Each creature in the Line makes a Constitution saving throw, taking 10d6 Cold damage on a failed save or half as much damage on a successful one.
+No word and no gesture: the crossing is made and handed over in one beat, which is the whole reason this costs a sixth-level slot to do what a third-level slot does slowly.
+Every drop the air was holding along a 60-foot-long, 5-foot-wide Line freezes at once. Each creature in the Line makes a Constitution saving throw, taking 10d6 Cold damage on a failed save or half as much damage on a successful one.
+In dry air this spell is weaker and everybody knows it: in a desert, in a forge, or anywhere else with no damp to work on, the damage is 6d6 instead.
 Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 6.
 
-== Lightning Arc
+== Spark
 level: 1
 school: Transmutation
 classes: Druid, Sorcerer, Wizard
@@ -161,7 +164,7 @@ You press gathered Ether until it crosses into lightning and let it go at one cr
 If the target is wearing metal armour or is holding a metal object, you have Advantage on the attack roll.
 Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 1.
 
-== Charged Skin
+== Charge on the Skin
 level: 4
 school: Transmutation
 classes: Druid, Sorcerer, Wizard
@@ -175,7 +178,7 @@ When a creature within 5 feet of you hits you with a melee attack, it takes 3d8 
 As an action, you can end the spell early and discharge it all at once: each creature within 15 feet of you makes a Dexterity saving throw, taking 6d8 Lightning damage on a failed save or half as much damage on a successful one.
 Using a Higher-Level Spell Slot. Both damage values increase by 1d8 for each spell slot level above 4.
 
-== Wall of Sound
+== Wall of Resonance
 level: 5
 school: Transmutation
 classes: Bard, Sorcerer, Wizard
@@ -189,7 +192,7 @@ The wall is transparent but not silent: sound does not pass it in either directi
 When a creature enters the wall's space for the first time on a turn or ends its turn there, it makes a Constitution saving throw, taking 5d8 Thunder damage on a failed save, or half as much damage on a successful one. A creature that fails is also pushed out of the wall on the side it entered from.
 Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 5.
 
-== Piercing Shriek
+== Shriek
 level: 1
 school: Transmutation
 classes: Bard, Sorcerer, Wizard
@@ -201,7 +204,7 @@ body:
 You give the gathered Ether a single note and hand it over inside somebody's head. One creature you can see within range that can hear makes a Constitution saving throw. On a failed save, it takes 2d8 Thunder damage and its Speed is reduced by 10 feet until the end of its next turn.
 Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 1.
 
-== Scouring Wind
+== Abrasion
 level: 5
 school: Transmutation
 classes: Druid, Sorcerer
@@ -216,7 +219,7 @@ When a creature enters the area for the first time on a turn or starts its turn 
 As a Bonus Action on your turn, you can move the Cylinder up to 30 feet along the ground.
 Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 5.
 
-== Pitch Ball
+== Clod
 level: 0
 school: Transmutation
 classes: Druid, Sorcerer, Wizard
@@ -225,11 +228,12 @@ range: 60 feet
 components: V, S
 duration: Instantaneous
 body:
-A lump of hot pitch forms in your hand and is gone as soon as it is thrown, which is as long as the Ether it is made of will hold that shape.
-Make a ranged spell attack against one creature within range. On a hit, the target takes 1d6 Fire damage, and until the end of its next turn it has Disadvantage on the first attack roll it makes, from the mess.
-Cantrip Upgrade. The damage increases by 1d6 when you reach Magister levels 5 (2d6), 11 (3d6) and 17 (4d6).
+Earth and water, and nothing else asked of either. It is the first crossing anybody manages and the one every school uses to test whether a student can hold two states at once.
+Make a ranged spell attack against one creature within range. On a hit, the target takes 1d8 Bludgeoning damage, and until the end of its next turn it has Disadvantage on the first attack roll it makes and on Wisdom (Perception) checks that rely on sight.
+Mud swallows the weight that leans on it and hardens as it dries. Neither helps here: at this size it is a fistful of wet earth thrown hard, and it is on the floor a breath later.
+Cantrip Upgrade. The damage increases by 1d8 when you reach Magister levels 5 (2d8), 11 (3d8) and 17 (4d8).
 
-== Corrosive Touch
+== The Bite
 level: 1
 school: Transmutation
 classes: Sorcerer, Wizard
@@ -242,7 +246,7 @@ The Crucible is cheapest at arm's length, and this is the entry everybody learns
 Make a melee spell attack against one creature you touch. On a hit, the target takes 4d4 Acid damage, and any nonmagical metal object it is wearing or carrying of your choice takes a permanent and cumulative -1 penalty to the damage it deals or to the AC it offers, to a minimum of -3.
 Using a Higher-Level Spell Slot. The damage increases by 1d4 for each spell slot level above 1.
 
-== Cinder Rain
+== Embers
 level: 5
 school: Transmutation
 classes: Druid, Sorcerer
@@ -620,7 +624,7 @@ Each creature in the Line makes a Constitution saving throw. On a failed save, a
 The Line is Heavily Obscured until the start of your next turn, on both sides. A creature that ends its turn in that vapor takes 2d6 Fire damage.
 Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 6.
 
-== White Brand
+== White Iron
 level: 1
 school: Transmutation
 classes: Cleric, Druid, Sorcerer, Wizard
@@ -634,7 +638,7 @@ You touch a weapon, and for the duration it glows white-hot. It sheds Bright Lig
 The weapon cannot be sheathed, put in a pack or set down on anything that burns, and its wielder knows exactly where in the dark everyone else is looking.
 Using a Higher-Level Spell Slot. The extra damage increases by 1d6 for each spell slot level above 1.
 
-== Incandescent Lance
+== Red Thread
 level: 3
 school: Transmutation
 classes: Sorcerer, Wizard
@@ -663,7 +667,7 @@ Objects in the area that are not being worn or carried are damaged: metal soften
 Nothing of this reaches flesh directly. It reaches what flesh is wearing, and it is a spell against soldiers rather than against animals.
 Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 7.
 
-== Shrapnel
+== Iron Hail
 level: 3
 school: Transmutation
 classes: Sorcerer, Wizard

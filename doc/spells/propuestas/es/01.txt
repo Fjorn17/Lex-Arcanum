@@ -36,7 +36,7 @@ La criatura que ha activado la reacción no recibe daño alguno de la caída ni 
 Las bandas no son más que Éter reunido. Recogen una vez y se acabaron.
 **Con un espacio de conjuro de nivel superior.** El daño evitado aumenta en 15 por cada nivel por encima de 2 que tenga el espacio.
 
-== Ash Storm
+== Ash Cloud
 components: V, S, M (una pizca de ceniza de una pira)
 body:
 Aprietas el Éter reunido hasta que cruza a ceniza y la dejas caer. Un cilindro de 20 pies de radio y 20 pies de alto centrado en un punto que elijas dentro del alcance se llena de ceniza cayendo mientras dure el conjuro.
@@ -44,7 +44,7 @@ La zona está ligeramente oscurecida y es terreno difícil. Una criatura que emp
 Una criatura que esté en la zona tiene desventaja en las pruebas de Sabiduría (Percepción) que dependan de la vista, y toda llama descubierta que haya dentro se ahoga.
 **Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 3 que tenga el espacio.
 
-== Steel Thread
+== Steel Weave
 components: V, S, M (un hilo de seda)
 body:
 Un hilo de la ropa que llevas cruza el Crisol y sale acero, puesto en el camino del golpe.
@@ -52,44 +52,46 @@ Recibes la mitad del daño del ataque que ha activado la reacción y, si el ataq
 El acero vuelve a ser hilo en el instante en que el golpe queda desviado, que es la razón de que nadie haya fabricado nunca una armadura así.
 **Con un espacio de conjuro de nivel superior.** El daño se reduce en otros 1d10 por cada nivel por encima de 2 que tenga el espacio.
 
-== Vitriol Veil
+== Acid Dew
 components: V, S, M (una gota de aceite de vitriolo)
 body:
-La bruma y el ácido se encuentran en el Crisol, y lo que sale de ahí queda colgado en el aire a tu alrededor.
-Mientras dure el conjuro, una emanación de 15 pies de bruma pálida y agria se mueve contigo. La zona está ligeramente oscurecida para todos menos para ti.
-Cuando una criatura entra en la emanación por primera vez en un turno o termina su turno dentro, hace una tirada de salvación de Constitución: si la falla, recibe {{3d6|Acid}} de daño, y la mitad si la supera.
-Una criatura que te acierte con un ataque cuerpo a cuerpo mientras estés en la bruma recibe {{2d6|Acid}} de daño.
-**Con un espacio de conjuro de nivel superior.** El daño de los dos efectos aumenta en 1d6 por cada nivel por encima de 4 que tenga el espacio.
+Bruma no, por mucho que lo parezca desde el otro lado de una sala. El ácido es un cruce propio, de agua y rayo, y lo que queda colgado en el aire son gotas de ácido demasiado pequeñas para caer.
+Mientras dure el conjuro, una emanación de 15 pies se mueve contigo. Cuando una criatura entra en ella por primera vez en un turno o termina su turno dentro, hace una tirada de salvación de Constitución y recibe {{3d6|Acid}} de daño si la falla, o la mitad si la supera.
+Una criatura que te acierte con un ataque cuerpo a cuerpo mientras estés dentro recibe {{2d6|Acid}} de daño.
+La Corrosión es la única Estrella de la Disciplina cuyo trabajo sigue después de que el astrónomo se haya ido, y esta no es una excepción: todo aquello sobre lo que se haya posado el rocío se sigue comiendo durante una hora después de que el conjuro termine. Por eso nadie lanza esto bajo su propio techo y lo llama astucia.
 
-== Frostbite
+== Hoarfrost
 components: V, S
 body:
-Aprietas el Éter reunido hasta dejarlo en hielo en el aire, pegado a la piel de alguien. Una criatura que veas dentro del alcance hace una tirada de salvación de Constitución. Si la falla, recibe {{2d6|Cold}} de daño y tiene desventaja en la siguiente tirada de ataque con arma que haga antes del final de su siguiente turno, porque las manos dejan de responderle.
+El Hielo es una Estrella de la Bruma y no del Agua: aquí no se le echa nada a nadie encima. Lo que se congela es lo que el aire ya llevaba, reunido sobre un cuerpo y dejado ahí, y vuelve a ser agua en cuanto le llega algo de calor.
+Una criatura que veas dentro del alcance hace una tirada de salvación de Constitución. Si la falla, recibe {{2d6|Cold}} de daño y tiene desventaja en la siguiente tirada de ataque que haga antes del final de su siguiente turno, porque las manos han dejado de responderle.
 **Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 1 que tenga el espacio.
 
-== Ice Cage
+== Ice Snare
 components: V, S, M (una lasca de hielo transparente)
 body:
-El hielo se cierra sobre una criatura que veas dentro del alcance. El objetivo hace una tirada de salvación de Destreza. Si la falla, recibe {{4d6|Cold}} de daño y queda apresado mientras dure el conjuro. Si la supera, recibe solo la mitad del daño.
-Una criatura apresada así recibe {{2d6|Cold}} de daño al principio de cada uno de sus turnos. Puede usar una acción para hacer una prueba de Fuerza (Atletismo) contra la CD de salvación de tus conjuros, rompiendo el hielo y librándose si la supera.
-La jaula es un objeto con CA 15 y 30 puntos de golpe, y tiene vulnerabilidad al daño de fuego. Destruirla termina el estado.
+La humedad del aire que rodea a una criatura se recoge y se cuaja de golpe, de manera que lo que la sujeta está hecho de la sala en la que estaba de pie.
+El objetivo hace una tirada de salvación de Destreza. Si la falla, recibe {{4d6|Cold}} de daño y queda apresado mientras dure el conjuro. Si la supera, recibe solo la mitad del daño.
+Una criatura apresada así recibe {{2d6|Cold}} de daño al principio de cada uno de sus turnos. Puede usar una acción para hacer una prueba de Fuerza (Atletismo) contra la CD de salvación de tus conjuros y salir si la supera.
+El hielo es un objeto con CA 15 y 30 puntos de golpe, y tiene vulnerabilidad al daño de fuego. Esa vulnerabilidad no la ha elegido nadie: es la cuenta atrás que se le enseña primero a todo el que trabaja la Bruma, y una antorcha puesta contra el cepo deshace en segundos lo que el conjuro ha pagado con un espacio de nivel 5.
 **Con un espacio de conjuro de nivel superior.** El daño inicial aumenta en 1d6 por cada nivel por encima de 5 que tenga el espacio.
 
-== Ice Lance
+== Hard Frost
 components: V
 body:
-No hay gesto y no hay palabra: el estado se pone en un paso y se entrega en el mismo compás, que es toda la razón de que este conjuro cueste lo que cuesta.
-Una línea de hielo de 60 pies de largo y 5 de ancho sale disparada desde ti. Cada criatura que esté en la línea hace una tirada de salvación de Constitución: si la falla, recibe {{10d6|Cold}} de daño, y la mitad si la supera.
+Ni palabra ni gesto: el cruce se hace y se entrega en el mismo compás, que es toda la razón de que esto cueste un espacio de nivel 6 para hacer lo que un nivel 3 hace despacio.
+Todas las gotas que el aire llevaba a lo largo de una línea de 60 pies de largo y 5 de ancho se congelan a la vez. Cada criatura que esté en la línea hace una tirada de salvación de Constitución y recibe {{10d6|Cold}} de daño si la falla, o la mitad si la supera.
+Con el aire seco este conjuro rinde menos y todo el mundo lo sabe: en un desierto, en una fragua o en cualquier otro sitio sin humedad con la que trabajar, el daño es de {{6d6|Cold}}.
 **Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 6 que tenga el espacio.
 
-== Lightning Arc
+== Spark
 components: V, S
 body:
 Aprietas el Éter reunido hasta que cruza a rayo y lo sueltas contra una criatura u objeto que veas dentro del alcance. Haz un ataque de conjuro a distancia. Si aciertas, el objetivo recibe {{3d6|Lightning}} de daño.
 Si el objetivo lleva armadura metálica o sostiene un objeto de metal, tienes ventaja en la tirada de ataque.
 **Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 1 que tenga el espacio.
 
-== Charged Skin
+== Charge on the Skin
 components: V, S
 body:
 Mantienes una carga fina sobre tu propia piel mientras dure el conjuro. Es lo más barato que hace el rayo y lo único que se puede sostener durante minutos, porque no se le está pidiendo casi nada.
@@ -97,7 +99,7 @@ Cuando una criatura que esté a 5 pies o menos de ti te acierta con un ataque cu
 Como acción, puedes terminar el conjuro antes y descargarlo todo de golpe: cada criatura que esté a 15 pies o menos de ti hace una tirada de salvación de Destreza y recibe {{6d8|Lightning}} de daño si la falla, o la mitad si la supera.
 **Con un espacio de conjuro de nivel superior.** Los dos daños aumentan en 1d8 por cada nivel por encima de 4 que tenga el espacio.
 
-== Wall of Sound
+== Wall of Resonance
 components: V, S
 body:
 Levantas una lámina de ruido estacionario sobre una superficie sólida que veas dentro del alcance. El muro mide hasta 60 pies de largo, 20 de alto y 1 pie de grosor, y puedes darle forma de muro recto o de anillo.
@@ -105,13 +107,13 @@ El muro es transparente, pero no silencioso: el sonido no lo cruza en ninguno de
 Cuando una criatura entra en el espacio del muro por primera vez en un turno o termina su turno ahí, hace una tirada de salvación de Constitución y recibe {{5d8|Thunder}} de daño si la falla, o la mitad si la supera. Una criatura que la falle queda además empujada fuera del muro por el lado por el que entró.
 **Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 5 que tenga el espacio.
 
-== Piercing Shriek
+== Shriek
 components: V
 body:
 Le das al Éter reunido una sola nota y la entregas dentro de la cabeza de alguien. Una criatura que veas dentro del alcance y que pueda oír hace una tirada de salvación de Constitución. Si la falla, recibe {{2d8|Thunder}} de daño y su velocidad se reduce en 10 pies hasta el final de su siguiente turno.
 **Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 1 que tenga el espacio.
 
-== Scouring Wind
+== Abrasion
 components: V, S, M (una pizca de arena gruesa)
 body:
 La arena y el aire en movimiento son dos estados de la misma Estrella, juntados al final.
@@ -120,21 +122,22 @@ Cuando una criatura entra en la zona por primera vez en un turno o empieza su tu
 Como acción adicional en tu turno, puedes mover el cilindro hasta 30 pies por el suelo.
 **Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 5 que tenga el espacio.
 
-== Pitch Ball
+== Clod
 components: V, S
 body:
-Un pegote de pez caliente se forma en tu mano y desaparece en cuanto lo lanzas, que es todo lo que el Éter del que está hecho va a aguantar esa forma.
-Haz un ataque de conjuro a distancia contra una criatura que esté dentro del alcance. Si aciertas, el objetivo recibe {{1d6|Fire}} de daño y, hasta el final de su siguiente turno, tiene desventaja en la primera tirada de ataque que haga, por el estropicio.
-**Mejora de truco.** El daño aumenta en 1d6 cuando alcanzas los niveles de Magistrado 5 (2d6), 11 (3d6) y 17 (4d6).
+Tierra y agua, y nada más pedido a ninguna de las dos. Es el primer cruce que le sale a cualquiera y el que todas las escuelas usan para comprobar si un alumno sabe sostener dos estados a la vez.
+Haz un ataque de conjuro a distancia contra una criatura que esté dentro del alcance. Si aciertas, el objetivo recibe {{1d8|Bludgeoning}} de daño y, hasta el final de su siguiente turno, tiene desventaja en la primera tirada de ataque que haga y en las pruebas de Sabiduría (Percepción) que dependan de la vista.
+El fango se traga el peso que se apoya en él y endurece al secarse. Ninguna de las dos cosas sirve aquí: a este tamaño es un puñado de tierra mojada tirado con fuerza, y está en el suelo un aliento después.
+**Mejora de truco.** El daño aumenta en 1d8 cuando alcanzas los niveles de Magistrado 5 (2d8), 11 (3d8) y 17 (4d8).
 
-== Corrosive Touch
+== The Bite
 components: V, S
 body:
 El Crisol es más barato a un brazo de distancia, y esta es la ficha con la que todo el mundo lo aprende.
 Haz un ataque de conjuro cuerpo a cuerpo contra una criatura a la que toques. Si aciertas, el objetivo recibe {{4d4|Acid}} de daño, y un objeto de metal no mágico que lleve puesto o encima, a tu elección, sufre un penalizador permanente y acumulable de -1 al daño que hace o a la CA que ofrece, hasta un mínimo de -3.
 **Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d4 por cada nivel por encima de 1 que tenga el espacio.
 
-== Cinder Rain
+== Embers
 components: V, S, M (un trozo de piedra pómez)
 body:
 La roca fundida lanzada lo bastante alto vuelve a caer como lluvia, y esta es la cantidad más pequeña de ella que compensa el cruce.
@@ -344,7 +347,7 @@ Cada criatura que esté en la línea hace una tirada de salvación de Constituci
 La línea queda fuertemente oscurecida hasta el principio de tu siguiente turno, por los dos lados. Una criatura que termine su turno en ese vapor recibe {{2d6|Fire}} de daño.
 **Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 6 que tenga el espacio.
 
-== White Brand
+== White Iron
 components: V, S
 body:
 El fuego y la descarga tienen esto en común: alumbran mientras se consumen. Aquí el alumbrar se queda en el metal, que sigue siendo metal todo el rato.
@@ -352,7 +355,7 @@ Tocas un arma y, mientras dure el conjuro, queda al rojo blanco. Emite luz brill
 El arma no se puede envainar, ni guardar en un zurrón, ni dejar encima de nada que arda, y quien la lleva sabe exactamente adónde está mirando todo el mundo en la oscuridad.
 **Con un espacio de conjuro de nivel superior.** El daño adicional aumenta en 1d6 por cada nivel por encima de 1 que tenga el espacio.
 
-== Incandescent Lance
+== Red Thread
 components: V, S
 body:
 Materia que brilla por su propio calor, estirada en un hilo y mandada. No es luz, y estar en la sombra no sirve absolutamente de nada.
@@ -369,7 +372,7 @@ Los objetos de la zona que nadie lleve puestos ni encima se estropean: el metal 
 Nada de esto llega a la carne directamente. Llega a lo que la carne lleva puesto, y es un conjuro contra soldados antes que contra animales.
 **Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 7 que tenga el espacio.
 
-== Shrapnel
+== Iron Hail
 components: V, S, M (un puñado de clavos)
 body:
 El metal es la Estrella más cara de la Disciplina, y este conjuro se la gasta entera de golpe: fabrica el metal y lo lanza en el mismo aliento, que es exactamente por lo que no queda nada que recoger después.

@@ -340,7 +340,7 @@ Word of Recall	Palabra de regreso
 Zone of Truth	Zona de la verdad
 Acid Fog	Niebla ácida
 Iron Body	Cuerpo de hierro
-Polar Ray	Rayo polar
+Ice Awl	Punzón de hielo
 Sandstorm	Tormenta de arena
 Soften Earth and Stone	Ablandar tierra y piedra
 Spell Turning	Devolución de conjuros

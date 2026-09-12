@@ -52,56 +52,62 @@ Lo hago yo de una tirada en cuanto me digas cuáles.
 
 ### Alquimia › Ácido
 
-- [ ] **Toque corrosivo** · nivel 1 — Ácido a un brazo, y le estropea el metal al objetivo para siempre.  
-      *Corrosive Touch* · [ficha en inglés](en/corrosive-touch.html) · [en español](es/corrosive-touch.html)
+- [ ] **Mordedura** · nivel 1 — El Crisol a un brazo de distancia, y le estropea el metal al objetivo para siempre.  
+      *The Bite* · [ficha en inglés](en/the-bite.html) · [en español](es/the-bite.html)
+- [ ] **Rocío ácido** · nivel 4 · concentración — Bruma no: ácido en gotas. Y sigue comiendo una hora después de que el conjuro acabe.  
+      *Acid Dew* · [ficha en inglés](en/acid-dew.html) · [en español](es/acid-dew.html)
 
 ### Alquimia › Ceniza
 
-- [ ] **Tormenta de ceniza** · nivel 3 · concentración — Ceniza cayendo: oscurece, estorba y quema. Ceniza solo tenía un conjuro.  
-      *Ash Storm* · [ficha en inglés](en/ash-storm.html) · [en español](es/ash-storm.html)
+- [ ] **Nube de ceniza** · nivel 3 · concentración — Ceniza cayendo: oscurece, estorba y ahoga las llamas. Ceniza solo tenía un conjuro.  
+      *Ash Cloud* · [ficha en inglés](en/ash-cloud.html) · [en español](es/ash-cloud.html)
 
 ### Alquimia › Incandescencia
 
-- [ ] **Marca blanca** · nivel 1 · concentración — Un arma al rojo blanco. Incandescencia no tenía nada.  
-      *White Brand* · [ficha en inglés](en/white-brand.html) · [en español](es/white-brand.html)
-- [ ] **Lanza incandescente** · nivel 3 — Materia al rojo mandada como un hilo. Lo alcanzado queda brillando y no se esconde.  
-      *Incandescent Lance* · [ficha en inglés](en/incandescent-lance.html) · [en español](es/incandescent-lance.html)
+- [ ] **Hierro al blanco** · nivel 1 · concentración — Un arma al rojo blanco que ya no se puede envainar. Incandescencia no tenía nada.  
+      *White Iron* · [ficha en inglés](en/white-iron.html) · [en español](es/white-iron.html)
+- [ ] **Hilo al rojo** · nivel 3 — Materia al rojo estirada en un hilo. Lo alcanzado queda brillando y no se esconde.  
+      *Red Thread* · [ficha en inglés](en/red-thread.html) · [en español](es/red-thread.html)
 - [ ] **Al rojo blanco** · nivel 7 · concentración — Todo el metal de la zona al rojo blanco. Contra soldados, no contra animales.  
       *White Heat* · [ficha en inglés](en/white-heat.html) · [en español](es/white-heat.html)
 
 ### Alquimia › Lava
 
-- [ ] **Lluvia de rescoldo** · nivel 5 · concentración — Lluvia de rescoldo. Lava, que estaba vacía hasta erupción volcánica.  
-      *Cinder Rain* · [ficha en inglés](en/cinder-rain.html) · [en español](es/cinder-rain.html)
+- [ ] **Rescoldo** · nivel 5 · concentración — Rescoldo cayendo del cielo. Lava, que estaba casi vacía.  
+      *Embers* · [ficha en inglés](en/embers.html) · [en español](es/embers.html)
 
 ### Alquimia › Rayo
 
-- [ ] **Arco eléctrico** · nivel 1 — Rayo de nivel 1 con ventaja contra el metal.  
-      *Lightning Arc* · [ficha en inglés](en/lightning-arc.html) · [en español](es/lightning-arc.html)
-- [ ] **Piel cargada** · nivel 4 · concentración — Carga sostenida sobre la piel, descargable de golpe.  
-      *Charged Skin* · [ficha en inglés](en/charged-skin.html) · [en español](es/charged-skin.html)
+- [ ] **Chispazo** · nivel 1 — Descarga de nivel 1, con ventaja contra quien lleve metal encima.  
+      *Spark* · [ficha en inglés](en/spark.html) · [en español](es/spark.html)
+- [ ] **Carga en la piel** · nivel 4 · concentración — Carga sostenida sobre la piel, descargable de golpe.  
+      *Charge on the Skin* · [ficha en inglés](en/charge-on-the-skin.html) · [en español](es/charge-on-the-skin.html)
 
 ### Alquimia › Metal
 
-- [ ] **Hilo de acero** · nivel 2 — Reacción: un hilo de la ropa cruza a acero y para el golpe.  
-      *Steel Thread* · [ficha en inglés](en/steel-thread.html) · [en español](es/steel-thread.html)
-- [ ] **Metralla** · nivel 3 — Fabrica el metal y lo lanza en el mismo aliento.  
-      *Shrapnel* · [ficha en inglés](en/shrapnel.html) · [en español](es/shrapnel.html)
+- [ ] **Trama de acero** · nivel 2 — Reacción: un hilo de la ropa cruza a acero y para el golpe. Vuelve a ser hilo al instante.  
+      *Steel Weave* · [ficha en inglés](en/steel-weave.html) · [en español](es/steel-weave.html)
+- [ ] **Granizo de hierro** · nivel 3 — Fabrica el metal y lo lanza en el mismo aliento, que es por lo que no queda nada que recoger.  
+      *Iron Hail* · [ficha en inglés](en/iron-hail.html) · [en español](es/iron-hail.html)
 
 ### Alquimia › Bruma
 
-- [ ] **Velo de vitriolo** · nivel 4 · concentración — Bruma ácida alrededor de uno. Junta bruma y ácido en el Crisol.  
-      *Vitriol Veil* · [ficha en inglés](en/vitriol-veil.html) · [en español](es/vitriol-veil.html)
+- [ ] **Escarcha** · nivel 1 — El Hielo es Estrella de la Bruma, no del Agua: cuaja lo que el aire ya llevaba.  
+      *Hoarfrost* · [ficha en inglés](en/hoarfrost.html) · [en español](es/hoarfrost.html)
+- [ ] **Cepo de hielo** · nivel 5 · concentración — Lo que sujeta está hecho de la humedad de la sala. Una antorcha lo deshace en segundos.  
+      *Ice Snare* · [ficha en inglés](en/ice-snare.html) · [en español](es/ice-snare.html)
+- [ ] **Helada** · nivel 6 — Linea de 60 pies en un solo compás. Con el aire seco rinde bastante menos.  
+      *Hard Frost* · [ficha en inglés](en/hard-frost.html) · [en español](es/hard-frost.html)
 
 ### Alquimia › Fango
 
-- [ ] **Bola de pez** · truco — Truco de fango: pez caliente que además ensucia.  
-      *Pitch Ball* · [ficha en inglés](en/pitch-ball.html) · [en español](es/pitch-ball.html)
+- [ ] **Pella** · truco — Tierra y agua y nada más. El cruce con el que las escuelas prueban a un alumno.  
+      *Clod* · [ficha en inglés](en/clod.html) · [en español](es/clod.html)
 
 ### Alquimia › Arena
 
-- [ ] **Viento abrasivo** · nivel 5 · concentración — Cilindro de arenilla que se mueve. Arena, que estaba casi vacía.  
-      *Scouring Wind* · [ficha en inglés](en/scouring-wind.html) · [en español](es/scouring-wind.html)
+- [ ] **Lija** · nivel 5 · concentración — Cilindro de arenilla que se mueve. Desgaste, que es la Estrella de la Arena.  
+      *Abrasion* · [ficha en inglés](en/abrasion.html) · [en español](es/abrasion.html)
 
 ### Alquimia › Vapor
 
@@ -114,40 +120,31 @@ Lo hago yo de una tirada en cuanto me digas cuáles.
 
 ### Alquimia › Estruendo
 
-- [ ] **Chillido lacerante** · nivel 1 — Una nota entregada dentro de la cabeza. Estruendo de nivel 1.  
-      *Piercing Shriek* · [ficha en inglés](en/piercing-shriek.html) · [en español](es/piercing-shriek.html)
-- [ ] **Muro de sonido** · nivel 5 · concentración — Muro que no deja pasar el sonido y golpea al cruzarlo.  
-      *Wall of Sound* · [ficha en inglés](en/wall-of-sound.html) · [en español](es/wall-of-sound.html)
-
-### Alquimia › Agua
-
-- [ ] **Sabañón** · nivel 1 — Hielo de nivel 1 que además entorpece las manos. Agua tenía tres conjuros.  
-      *Frostbite* · [ficha en inglés](en/frostbite.html) · [en español](es/frostbite.html)
-- [ ] **Jaula de hielo** · nivel 5 · concentración — Apresa en hielo y sigue haciendo daño. Vulnerable al fuego.  
-      *Ice Cage* · [ficha en inglés](en/ice-cage.html) · [en español](es/ice-cage.html)
-- [ ] **Lanza de hielo** · nivel 6 — Acción adicional, línea de 60 pies. Caro porque va en un solo paso.  
-      *Ice Lance* · [ficha en inglés](en/ice-lance.html) · [en español](es/ice-lance.html)
+- [ ] **Chillido** · nivel 1 — Una sola nota entregada dentro de la cabeza. Estruendo de nivel 1.  
+      *Shriek* · [ficha en inglés](en/shriek.html) · [en español](es/shriek.html)
+- [ ] **Muro de resonancia** · nivel 5 · concentración — Muro que no deja pasar el sonido y golpea al cruzarlo.  
+      *Wall of Resonance* · [ficha en inglés](en/wall-of-resonance.html) · [en español](es/wall-of-resonance.html)
 
 ### Astronomía
 
 - [ ] **Lectura** · nivel 1 — Lee qué está construyendo alguien, desde el segundo paso. No dice cómo acaba.  
       *Reading* · [ficha en inglés](en/reading.html) · [en español](es/reading.html)
-- [ ] **Guarda contra operación** · nivel 2 · concentración — Gasta tu Concentración para que no la gaste el cuerpo del otro. Y estorba si ya estaba concentrado.  
-      *Ward Against Working* · [ficha en inglés](en/ward-against-working.html) · [en español](es/ward-against-working.html)
 - [ ] **Bandas de sujeción** · nivel 2 — Reacción: absorbe una caída o un impacto. Guardas, que es astronomía pura.  
       *Catching Bands* · [ficha en inglés](en/catching-bands.html) · [en español](es/catching-bands.html)
-- [ ] **Aire despejado** · nivel 3 · concentración — Nada ajeno se asienta a tu alrededor. No retira lo que ya está puesto: detiene lo siguiente.  
-      *Clear Air* · [ficha en inglés](en/clear-air.html) · [en español](es/clear-air.html)
+- [ ] **Guarda contra operación** · nivel 2 · concentración — Gasta tu Concentración para que no la gaste el cuerpo del otro. Y estorba si ya estaba concentrado.  
+      *Ward Against Working* · [ficha en inglés](en/ward-against-working.html) · [en español](es/ward-against-working.html)
 - [ ] **Golpe etéreo** · nivel 3 — Cono corto: daño de fuerza y empujón. El conjuro más simple del arte, con nivel.  
       *Etheric Blow* · [ficha en inglés](en/etheric-blow.html) · [en español](es/etheric-blow.html)
 - [ ] **Sangrar la Estrella** · nivel 3 — No le quita la Estrella a nadie: se la abre y deja que la merma haga el resto.  
       *Bleed the Star* · [ficha en inglés](en/bleed-the-star.html) · [en español](es/bleed-the-star.html)
+- [ ] **Aire despejado** · nivel 3 · concentración — Nada ajeno se asienta a tu alrededor. No retira lo que ya está puesto: detiene lo siguiente.  
+      *Clear Air* · [ficha en inglés](en/clear-air.html) · [en español](es/clear-air.html)
+- [ ] **Descoser** · nivel 4 — Disipar cuesta lo que costó la operación entera. Esto va a por un paso y deja el resto en pie.  
+      *Unpick* · [ficha en inglés](en/unpick.html) · [en español](es/unpick.html)
 - [ ] **Envite** · nivel 4 — Lanzar objetos sueltos. Cubre el hueco que dejó telequinesis sin ser mover-con-la-mente.  
       *Heave* · [ficha en inglés](en/heave.html) · [en español](es/heave.html)
 - [ ] **Hurto etéreo** · nivel 4 · concentración — Robarle a otro un conjuro que está sosteniendo. Es §6.10 llevado a su extremo.  
       *Ether Theft* · [ficha en inglés](en/ether-theft.html) · [en español](es/ether-theft.html)
-- [ ] **Descoser** · nivel 4 — Disipar cuesta lo que costó la operación entera. Esto va a por un paso y deja el resto en pie.  
-      *Unpick* · [ficha en inglés](en/unpick.html) · [en español](es/unpick.html)
 - [ ] **Empañamiento** · nivel 5 — Le adelgaza el Éter a alguien para que le fallen los conjuros. Muerte civil temporal.  
       *Dimming* · [ficha en inglés](en/dimming.html) · [en español](es/dimming.html)
 
@@ -164,32 +161,32 @@ Lo hago yo de una tirada en cuanto me digas cuáles.
 
 - [ ] **Quite** · nivel 1 — Reacción: te has movido 15 pies, no has deshecho el golpe.  
       *Sidestep* · [ficha en inglés](en/sidestep.html) · [en español](es/sidestep.html)
-- [ ] **Paso de sombra** · nivel 3 — Salto corto entre sombras, acción adicional.  
-      *Shadow Step* · [ficha en inglés](en/shadow-step.html) · [en español](es/shadow-step.html)
 - [ ] **Permuta** · nivel 3 — Dos cuerpos cambian de sitio. Lo más limpio que hace la Disciplina: no hay pulso que se le oponga.  
       *Swap* · [ficha en inglés](en/swap.html) · [en español](es/swap.html)
+- [ ] **Paso de sombra** · nivel 3 — Salto corto entre sombras, acción adicional.  
+      *Shadow Step* · [ficha en inglés](en/shadow-step.html) · [en español](es/shadow-step.html)
 
 ### Cosmología › Tiempo
 
-- [ ] **Anticipar el peligro** · nivel 1 — Un d6 guardado para iniciativa o trampas. Porvenir como aritmética, no como profecía.  
-      *Anticipate Peril* · [ficha en inglés](en/anticipate-peril.html) · [en español](es/anticipate-peril.html)
 - [ ] **Restañar** · nivel 1 — Frena los procesos de dentro: estabiliza, corta una hemorragia. No cura nada.  
       *Staunch* · [ficha en inglés](en/staunch.html) · [en español](es/staunch.html)
+- [ ] **Anticipar el peligro** · nivel 1 — Un d6 guardado para iniciativa o trampas. Porvenir como aritmética, no como profecía.  
+      *Anticipate Peril* · [ficha en inglés](en/anticipate-peril.html) · [en español](es/anticipate-peril.html)
 - [ ] **Arenas del tiempo** · nivel 4 — Le carga años a un cuerpo durante una hora.  
       *Sands of Time* · [ficha en inglés](en/sands-of-time.html) · [en español](es/sands-of-time.html)
-- [ ] **Años retenidos** · nivel 5 — Le quita a un viejo los penalizadores de la edad durante un día, y se los devuelve de golpe.  
-      *Held Years* · [ficha en inglés](en/held-years.html) · [en español](es/held-years.html)
 - [ ] **Detención** · nivel 5 · concentración — Detiene una roca, una flecha o un fuego a medio movimiento. Lo detenido sigue siendo peligroso.  
       *Halt* · [ficha en inglés](en/halt.html) · [en español](es/halt.html)
+- [ ] **Años retenidos** · nivel 5 — Le quita a un viejo los penalizadores de la edad durante un día, y se los devuelve de golpe.  
+      *Held Years* · [ficha en inglés](en/held-years.html) · [en español](es/held-years.html)
 
 ### Espiritismo › Animales
 
 - [ ] **Fiereza prestada** · nivel 2 · concentración — Lo que un animal pequeño tiene en lugar de tamaño. El animal se queda sin ello.  
       *Borrowed Ferocity* · [ficha en inglés](en/borrowed-ferocity.html) · [en español](es/borrowed-ferocity.html)
-- [ ] **Bestia erguida** · nivel 3 · concentración — La bestia pactada se pone de pie y tiene manos. Sigue siendo igual de lista.  
-      *Upright Beast* · [ficha en inglés](en/upright-beast.html) · [en español](es/upright-beast.html)
 - [ ] **Atavismo** · nivel 3 · concentración — La bestia pactada crece y cuesta más pararla.  
       *Atavism* · [ficha en inglés](en/atavism.html) · [en español](es/atavism.html)
+- [ ] **Bestia erguida** · nivel 3 · concentración — La bestia pactada se pone de pie y tiene manos. Sigue siendo igual de lista.  
+      *Upright Beast* · [ficha en inglés](en/upright-beast.html) · [en español](es/upright-beast.html)
 
 ### Espiritismo › Muerte
 
@@ -204,17 +201,17 @@ Lo hago yo de una tirada en cuanto me digas cuáles.
 
 ### Espiritismo › Hongos
 
-- [ ] **Florecer de hongos** · nivel 2 · concentración — Hongos está vacía y este conjuro la abre. Crece más sobre lo que ya se detuvo.  
+- [ ] **Florecer de hongos** · nivel 2 · concentración — Esporas que se alimentan de lo que ya se detuvo. Crece el doble sobre un cadáver.  
       *Fungal Bloom* · [ficha en inglés](en/fungal-bloom.html) · [en español](es/fungal-bloom.html)
 
 ### Espiritismo › Ilusiones
 
-- [ ] **Arma de sombra** · nivel 1 · concentración — Arma de sombra que deja de funcionar contra quien la estudie.  
-      *Shadow Weapon* · [ficha en inglés](en/shadow-weapon.html) · [en español](es/shadow-weapon.html)
 - [ ] **Voz prestada** · nivel 1 · concentración — Tu voz es la que decidas. Se cae si te ven la boca de cerca.  
       *Borrowed Voice* · [ficha en inglés](en/borrowed-voice.html) · [en español](es/borrowed-voice.html)
 - [ ] **Disfraz espectral** · nivel 1 · concentración — Pareces muerto. Se cae en cuanto alguien te toca.  
       *Ghostly Disguise* · [ficha en inglés](en/ghostly-disguise.html) · [en español](es/ghostly-disguise.html)
+- [ ] **Arma de sombra** · nivel 1 · concentración — Arma de sombra que deja de funcionar contra quien la estudie.  
+      *Shadow Weapon* · [ficha en inglés](en/shadow-weapon.html) · [en español](es/shadow-weapon.html)
 - [ ] **Disfrazar a otro** · nivel 2 · concentración — Disfrazar a otro sale más caro: la ilusión va en la mente de quien mira y tú estás en otro sitio.  
       *Disguise Another* · [ficha en inglés](en/disguise-another.html) · [en español](es/disguise-another.html)
 - [ ] **Velo repugnante** · nivel 3 · concentración — Ilusión repugnante que solo ven los que fallan. Enseña por qué una ilusión se hace en cada mente.  
@@ -239,10 +236,10 @@ Lo hago yo de una tirada en cuanto me digas cuáles.
 
 - [ ] **Compartir un recuerdo** · nivel 1 — Entrega un recuerdo propio entero. Memoria solo tenía tres conjuros.  
       *Share Memory* · [ficha en inglés](en/share-memory.html) · [en español](es/share-memory.html)
-- [ ] **Interrogatorio** · nivel 2 · concentración — Cinco preguntas con la mano encima. Ves lo que recuerda, no lo que es verdad.  
-      *Interrogation* · [ficha en inglés](en/interrogation.html) · [en español](es/interrogation.html)
 - [ ] **Conocer al enemigo** · nivel 2 — Sube lo que aprendiste alguna vez, aunque no recuerdes haberlo aprendido. Si era falso, te lo entrega igual.  
       *Know the Enemy* · [ficha en inglés](en/know-the-enemy.html) · [en español](es/know-the-enemy.html)
+- [ ] **Interrogatorio** · nivel 2 · concentración — Cinco preguntas con la mano encima. Ves lo que recuerda, no lo que es verdad.  
+      *Interrogation* · [ficha en inglés](en/interrogation.html) · [en español](es/interrogation.html)
 - [ ] **Testigo** · nivel 5 · concentración — Ver una escena de hasta siete días atrás desde donde estaba un objeto.  
       *Witness* · [ficha en inglés](en/witness.html) · [en español](es/witness.html)
 
@@ -250,14 +247,14 @@ Lo hago yo de una tirada en cuanto me digas cuáles.
 
 - [ ] **Hastío** · nivel 1 · concentración — Hastío de nivel 1: deja de atacar hasta que le hagan daño.  
       *Oppressive Boredom* · [ficha en inglés](en/oppressive-boredom.html) · [en español](es/oppressive-boredom.html)
-- [ ] **Desprecio** · nivel 4 · concentración — Los demás no merecen la molestia: ni los ataca bien ni se deja ayudar.  
-      *Contempt* · [ficha en inglés](en/contempt.html) · [en español](es/contempt.html)
+- [ ] **Duelo desbordante** · nivel 4 · concentración — Duelo: velocidad 0 y solo esquivar. Se rompe antes si le pegas.  
+      *Overwhelming Grief* · [ficha en inglés](en/overwhelming-grief.html) · [en español](es/overwhelming-grief.html)
 - [ ] **Remordimiento atroz** · nivel 4 · concentración — Se hace daño a sí mismo por algo que hizo de verdad. Lo más feo de la Rama.  
       *Terrible Remorse* · [ficha en inglés](en/terrible-remorse.html) · [en español](es/terrible-remorse.html)
 - [ ] **Arrebato** · nivel 4 — La Rama del revés: saca el sentimiento en vez de meterlo.  
       *Rapture* · [ficha en inglés](en/rapture.html) · [en español](es/rapture.html)
-- [ ] **Duelo desbordante** · nivel 4 · concentración — Duelo: velocidad 0 y solo esquivar. Se rompe antes si le pegas.  
-      *Overwhelming Grief* · [ficha en inglés](en/overwhelming-grief.html) · [en español](es/overwhelming-grief.html)
+- [ ] **Desprecio** · nivel 4 · concentración — Los demás no merecen la molestia: ni los ataca bien ni se deja ayudar.  
+      *Contempt* · [ficha en inglés](en/contempt.html) · [en español](es/contempt.html)
 - [ ] **Oleadas de éxtasis** · nivel 7 · concentración — Lo más que se le puede meter a un cuerpo sin tocarlo.  
       *Waves of Ecstasy* · [ficha en inglés](en/waves-of-ecstasy.html) · [en español](es/waves-of-ecstasy.html)
 
@@ -272,10 +269,10 @@ Lo hago yo de una tirada en cuanto me digas cuáles.
 
 ### Espiritismo › Sentidos
 
-- [ ] **Sentidos afilados** · nivel 1 · concentración — No añade nada: deja de tirarse lo que el cuerpo ya recogía.  
-      *Sharpened Senses* · [ficha en inglés](en/sharpened-senses.html) · [en español](es/sharpened-senses.html)
 - [ ] **Lengua trabada** · nivel 1 — No puede hablar ni escribir con sentido, y se entera de todo.  
       *Tangled Tongue* · [ficha en inglés](en/tangled-tongue.html) · [en español](es/tangled-tongue.html)
+- [ ] **Sentidos afilados** · nivel 1 · concentración — No añade nada: deja de tirarse lo que el cuerpo ya recogía.  
+      *Sharpened Senses* · [ficha en inglés](en/sharpened-senses.html) · [en español](es/sharpened-senses.html)
 - [ ] **Sordina** · nivel 2 · concentración — No es silencio. Trabaja sobre los oídos que lo habrían oído.  
       *Hush* · [ficha en inglés](en/hush.html) · [en español](es/hush.html)
 - [ ] **Robar la voz** · nivel 2 — Le quita la voz a alguien: no le quita la magia, le quita la manera fácil.  
@@ -308,34 +305,37 @@ Lo hago yo de una tirada en cuanto me digas cuáles.
 | --- | --- | --- |
 | Incandescencia | 0 | 3 |
 | Vapor | 0 | 3 |
-| Hongos | 0 | 1 |
 | Arena | 1 | 2 |
 | Ceniza | 1 | 2 |
 | Lava | 1 | 2 |
 | Fango | 2 | 3 |
+| Metal | 2 | 4 |
 | Estruendo | 3 | 5 |
+| Hongos | 3 | 4 |
 | Memoria | 3 | 7 |
-| Metal | 3 | 5 |
-| Ácido | 4 | 5 |
 | Rayo | 4 | 6 |
-| Agua | 4 | 7 |
-| Bruma | 8 | 9 |
-| Animales | 8 | 11 |
-| Ánimo | 9 | 15 |
-| Plantas | 9 | 12 |
+| Ácido | 4 | 6 |
+| Animales | 9 | 12 |
+| Bruma | 9 | 12 |
 | Gravedad | 9 | 12 |
+| Ánimo | 9 | 15 |
+| Plantas | 10 | 13 |
 | Tiempo | 11 | 16 |
 | Sentidos | 12 | 18 |
 | Espacio | 14 | 17 |
 | Muerte | 14 | 18 |
-| Vida | 19 | 24 |
+| Vida | 21 | 26 |
 | Ilusiones | 22 | 28 |
 | Sujeción | 25 | 31 |
 
-Vapor, Incandescencia y Hongos no tenían ningún conjuro, y en el índice de *Ultimate Magic* no hay
-nada que sirva para las dos primeras, así que están escritas aquí contra lo que dice de ellas la
-taxonomía: el vapor ocupa muchísimo más sitio del que ocupaba y empuja contra lo que lo encierre, y la
-incandescencia es materia que brilla por su propio calor, que no es lo mismo que Éter brillando.
+Vapor e Incandescencia no tenían ningún conjuro y siguen sin tener ninguno en el catálogo, así que sus
+tres candidatos cada una están escritos contra lo que dice de ellas la taxonomía: el vapor ocupa
+muchísimo más sitio del que ocupaba y empuja contra lo que lo encierre, y la incandescencia es materia
+que brilla por su propio calor, que no es lo mismo que Éter brillando.
+
+Hongos ya no está vacía: el veneno ha vuelto al catálogo y se ha repartido por de dónde sale, así que
+nube mortífera, nube hedionda y contagio viven ahí; rociada venenosa en Plantas y rayo de enfermedad
+en Animales. El Ácido se queda únicamente con lo que muerde sin estar vivo.
 
 Gravedad, Espacio y Tiempo tenían conjuros pero no tenían ningún candidato, y eran las Ramas con la
 doctrina más escrita y menos usada. De ahí salen el Pozo —que la taxonomía nombra y el catálogo no

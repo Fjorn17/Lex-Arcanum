@@ -156,7 +156,7 @@ my @SUBS_OF;                        # subdivisiones por Disciplina, con su altur
         push @SUBS_OF, [ $dk, \@rows ] if @rows;
     }
     push @SUBS_OF, [ 'uncatalogued',
-                     [ map { [ $_, 0 ] } qw(none summon poison chromatic resurrection) ] ];
+                     [ map { [ $_, 0 ] } qw(none summon chromatic resurrection) ] ];
 }
 # Los descatalogados tienen pagina y salen en el indice: lo que no tienen es
 # Disciplina. Cada uno lleva escrito por que esta fuera.
@@ -168,7 +168,7 @@ my %UNC;
                     $UNC{$n} = { bucket => $bucket, why => { en => $en, es => $es } } }
     close $fh;
 }
-my @BUCKETS = qw(none summon poison chromatic resurrection);
+my @BUCKETS = qw(none summon chromatic resurrection);
 
 # Los siete conjuros propios son HTML a mano y no salen de aqui. Se listan para
 # que --limpiar no se los lleve por delante.
