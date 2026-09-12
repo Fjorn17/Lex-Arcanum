@@ -123,7 +123,6 @@ False Life	death
 Fear	mood
 Finger of Death	death
 Geas	subjection
-Giant Insect	animals
 Glibness	mood
 Goodberry	plants
 Greater Invisibility	illusion

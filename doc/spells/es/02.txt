@@ -63,7 +63,7 @@ Tocas a una criatura, que hace una tirada de salvación de Sabiduría. Si la fal
 • El objetivo tiene desventaja en las tiradas de ataque contra ti.
 • En combate, el objetivo hace una tirada de salvación de Sabiduría al principio de cada uno de sus turnos. Si la falla, se ve obligado a llevar a cabo la acción de esquivar en ese turno.
 • Si causas daño al objetivo con una tirada de ataque o con un conjuro, el objetivo recibe {{1d8|Necrotic}} de daño adicional.
-**Con un espacio de conjuro de nivel superior.** Si lanzas el conjuro con un espacio de nivel 4, puedes mantener la concentración hasta 10 minutos. Con un espacio de nivel 5 o superior el conjuro no requiere concentración y su duración pasa a ser de 8 horas (espacio de nivel 5 o 6) o de 24 horas (espacio de nivel 7 u 8). Con un espacio de nivel 9, el conjuro dura hasta que se disipe.
+**Con un espacio de conjuro de nivel superior.** Si lanzas el conjuro con un espacio de nivel 4, puedes mantener la concentración hasta 10 minutos. Con un espacio de nivel 5 o superior el conjuro no requiere concentración y su duración pasa a ser de 8 horas (espacio de nivel 5 o 6) o de 24 horas (espacio de nivel 7 u 8). Con un espacio de nivel 9, la duración pasa a ser de 30 días.
 
 == Black Tentacles
 components: V, S, M (un tentáculo)

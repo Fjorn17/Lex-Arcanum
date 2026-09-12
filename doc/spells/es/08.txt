@@ -36,7 +36,7 @@ Le das una orden verbal a una criatura que puedas ver dentro del alcance para qu
 Mientras esté hechizado, la criatura recibe {{5d10|Psychic}} de daño si actúa de forma directamente contraria a tu orden. Recibe ese daño una vez al día como mucho.
 Puedes dar cualquier orden que quieras, salvo una actividad que llevara a una muerte segura. Si das una orden suicida, el conjuro termina.
 Los conjuros *levantar maldición* o *restablecimiento mayor* terminan este conjuro.
-**Con un espacio de conjuro de nivel superior.** Con un espacio de nivel 7 u 8, la duración es de 365 días. Con uno de nivel 9, el conjuro dura hasta que lo termine alguno de los conjuros mencionados arriba.
+**Con un espacio de conjuro de nivel superior.** Con un espacio de nivel 7 u 8, la duración es de 365 días. Con uno de nivel 9, la duración es de 10 años, y el conjuro sigue pudiendo terminarlo alguno de los conjuros mencionados arriba.
 
 == Gentle Repose
 components: V, S, M (2 piezas de cobre, que el conjuro consume)
@@ -114,7 +114,7 @@ components: V, S, M (una vara de plata por valor de 10 po o más)
 body:
 Creas una protección que cubre hasta 2.500 pies cuadrados de superficie. La zona protegida puede tener hasta 20 pies de alto y le das forma de un cuadrado de 50 pies de lado, de cien cuadrados contiguos de 5 pies de lado o de veinticinco cuadrados contiguos de 10 pies de lado.
 Al lanzar el conjuro puedes indicar qué individuos no se ven afectados por sus efectos. También puedes fijar una contraseña que, dicha en voz alta a 5 pies o menos de la zona protegida, haga inmune a quien la diga.
-El conjuro crea los efectos siguientes dentro de la zona protegida. *Disipar magia* no afecta a *guardas y guardias* en sí, pero sí puede disipar cada uno de los efectos siguientes. Si se disipan los cuatro, *guardas y guardias* termina. Si lanzas el conjuro todos los días durante 365 días sobre la misma zona, a partir de entonces dura hasta que se disipen todos sus efectos.
+El conjuro crea los efectos siguientes dentro de la zona protegida. *Disipar magia* no afecta a *guardas y guardias* en sí, pero sí puede disipar cada uno de los efectos siguientes. Si se disipan los cuatro, *guardas y guardias* termina. Si lanzas el conjuro todos los días durante 30 días sobre la misma zona, pasa a ser una guarda en pie: se sostiene mientras alguien siga lanzándolo ahí una vez al día, y desaparece el primer día que nadie lo haga.
 **Pasillos.** La niebla llena todos los pasillos protegidos y los deja muy oscurecidos. Además, en cada cruce o bifurcación que ofrezca elegir dirección, hay un 50 % de probabilidades de que una criatura que no seas tú crea que va en la dirección contraria a la que ha elegido.
 **Puertas.** Todas las puertas de la zona protegida quedan cerradas por medios mágicos, como si las hubiera sellado el conjuro *cerradura arcana*. Además, puedes cubrir hasta diez puertas con una ilusión para que parezcan tramos de muro liso.
 **Escaleras.** Las telarañas llenan todas las escaleras de la zona protegida de arriba abajo, como con el conjuro *telaraña*. Esas hebras vuelven a crecer en 10 minutos si se destruyen mientras dure *guardas y guardias*.

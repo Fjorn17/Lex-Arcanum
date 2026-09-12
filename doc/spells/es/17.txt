@@ -86,7 +86,7 @@ Si al aparecer corta el espacio de una criatura, esta es empujada a uno de los l
 El muro puede tener la forma que quieras, aunque no puede ocupar el mismo espacio que una criatura o un objeto. No necesita ser vertical ni descansar sobre unos cimientos firmes, pero sí debe fundirse con piedra existente y apoyarse sólidamente en ella. Así, puedes usar este conjuro para tender un puente sobre un abismo o para crear una rampa.
 Si creas un tramo de más de 20 pies de longitud, debes reducir a la mitad el tamaño de cada panel para crear apoyos. Puedes dar forma tosca al muro para crear almenas y cosas por el estilo.
 El muro es un objeto de piedra que se puede dañar y, por tanto, abrir. Cada panel tiene CA 15 y 30 puntos de golpe por pulgada de grosor, e inmunidad al daño {{Poison}} y {{Psychic}}. Reducir un panel a 0 puntos de golpe lo destruye y puede hacer que los paneles conectados se derrumben, a criterio del DM.
-Si mantienes la concentración en este conjuro toda su duración, el muro se vuelve permanente y no se puede disipar. En caso contrario, desaparece cuando el conjuro termina.
+Si mantienes la concentración en este conjuro toda su duración, el muro se sostiene solo otras 24 horas. En caso contrario, desaparece cuando el conjuro termina. De un modo o de otro es Éter reunido, y de un modo o de otro se va.
 
 == Wall of Thorns
 components: V, S, M (un puñado de espinas)
@@ -158,7 +158,7 @@ El uso básico de este conjuro es duplicar cualquier otro conjuro de nivel 8 o i
 También puedes crear uno de los efectos siguientes, a tu elección:
 **Crear un objeto.** Creas un objeto de hasta 25.000 po de valor que no sea un objeto mágico. El objeto no puede medir más de 300 pies en ninguna dimensión y aparece en un espacio sin ocupar del suelo que puedas ver.
 **Salud instantánea.** Haces que tú y hasta veinte criaturas que puedas ver recuperéis todos vuestros puntos de golpe, y les terminas todos los efectos que enumera el conjuro *restablecimiento mayor*.
-**Resistencia.** Concedes a hasta diez criaturas que puedas ver resistencia a un tipo de daño que elijas. Esa resistencia es permanente.
+**Resistencia.** Concedes a hasta diez criaturas que puedas ver resistencia a un tipo de daño que elijas. Esa resistencia dura 1 año.
 **Inmunidad a un conjuro.** Concedes a hasta diez criaturas que puedas ver inmunidad a un solo conjuro u otro efecto mágico durante 8 horas.
 **Aprendizaje súbito.** Sustituyes una de tus dotes por otra a la que puedas optar. Pierdes todos los beneficios de la dote antigua y obtienes los de la nueva. No puedes sustituir una dote que sea requisito de otra de tus dotes o rasgos.
 **Repetir una tirada.** Deshaces un suceso reciente obligando a repetir cualquier tirada de dados hecha en el último asalto (incluido tu último turno). La realidad se remodela para acomodar el nuevo resultado. Por ejemplo, un *deseo* podría deshacer la tirada de salvación fallida de un aliado o el crítico de un enemigo. Puedes obligar a que la repetición se haga con ventaja o con desventaja, y eliges si se usa la repetición o la tirada original.

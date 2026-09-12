@@ -113,7 +113,6 @@ Freezing Sphere	Alchemy
 Gaseous Form	Alchemy
 Geas	Spiritism
 Gentle Repose	Cosmology
-Giant Insect	Spiritism
 Glibness	Spiritism
 Globe of Invulnerability	Astronomy
 Glyph of Warding	Astronomy

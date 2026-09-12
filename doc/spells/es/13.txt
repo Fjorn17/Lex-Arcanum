@@ -46,7 +46,7 @@ Al lanzar el conjuro decides qué clase de protección proporciona, y eliges cua
 • Los sensores creados por conjuros que localizan o escrutan no pueden aparecer dentro de la zona protegida ni atravesar la barrera de su perímetro.
 • Las criaturas de la zona no pueden ser objetivo de conjuros que las localicen o las escruten.
 • Nada puede teletransportarse dentro de la zona protegida ni fuera de ella.
-Lanzar este conjuro en el mismo lugar todos los días durante 365 días hace que dure hasta que se disipe.
+Lanzar este conjuro en el mismo lugar todos los días durante 30 días lo convierte en un sagrario en pie: se sostiene mientras alguien siga lanzándolo ahí una vez al día, y desaparece el primer día que nadie lo haga.
 **Con un espacio de conjuro de nivel superior.** Puedes aumentar el tamaño del cubo en 100 pies por cada nivel por encima de 4 que tenga el espacio.
 
 == Produce Flame

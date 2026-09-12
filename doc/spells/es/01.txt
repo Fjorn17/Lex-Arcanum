@@ -152,6 +152,6 @@ En tus turnos posteriores puedes llevar a cabo una acción adicional para mover 
 == Arcanist’s Magic Aura
 components: V, S, M (un pequeño cuadrado de seda)
 body:
-Con un toque colocas una ilusión sobre una criatura voluntaria o sobre un objeto que nadie lleve ni vista. Una criatura recibe el efecto de máscara y un objeto recibe el de aura falsa, ambos descritos debajo. El efecto dura lo que dure el conjuro. Si lanzas el conjuro sobre el mismo objetivo todos los días durante 30 días, la ilusión dura hasta que se disipe.
+Con un toque colocas una ilusión sobre una criatura voluntaria o sobre un objeto que nadie lleve ni vista. Una criatura recibe el efecto de máscara y un objeto recibe el de aura falsa, ambos descritos debajo. El efecto dura lo que dure el conjuro. Volver a lanzar el conjuro sobre el mismo objetivo antes de que termine le añade otras 24 horas. Nunca deja de necesitar el lanzamiento siguiente.
 **Máscara (criatura).** Elige un tipo de criatura distinto del real del objetivo. Los conjuros y demás efectos mágicos tratan al objetivo como si fuera una criatura del tipo elegido.
 **Aura falsa (objeto).** Cambias el aspecto que el objetivo presenta ante los conjuros y efectos mágicos que detectan auras mágicas, como *detectar magia*. Puedes hacer que un objeto no mágico parezca mágico, que un objeto mágico parezca no mágico o cambiar su aura para que parezca pertenecer a una escuela de magia que elijas.

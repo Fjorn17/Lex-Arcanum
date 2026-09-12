@@ -54,7 +54,7 @@ body:
 Creas la imagen de un objeto, de una criatura o de algún otro fenómeno visible que no sea mayor que un cubo de 20 pies de lado. La imagen aparece en un punto que puedas ver dentro del alcance y dura lo que dure el conjuro. Parece real, con los sonidos, los olores y la temperatura propios de lo que representa, pero no puede causar daño ni provocar estados.
 Si estás dentro del alcance de la ilusión, puedes llevar a cabo una acción de magia para moverla a cualquier otro punto del alcance. Al cambiar de sitio puedes alterar su aspecto para que sus movimientos parezcan naturales. Por ejemplo, si creas la imagen de una criatura y la mueves, puedes alterarla para que parezca que camina. Del mismo modo, puedes hacer que la ilusión emita sonidos distintos en momentos distintos, e incluso que mantenga una conversación.
 La interacción física con la imagen revela que es una ilusión, porque las cosas la atraviesan. Una criatura que lleve a cabo la acción de estudiar para examinarla puede determinar que es una ilusión si supera una prueba de Inteligencia (Investigación) contra tu CD de salvación de conjuros. Si una criatura discierne lo que es, puede ver a través de la imagen y las demás cualidades sensoriales se le vuelven tenues.
-**Con un espacio de conjuro de nivel superior.** Con un espacio de nivel 4 o superior, el conjuro dura hasta que se disipe y no requiere concentración.
+**Con un espacio de conjuro de nivel superior.** Con un espacio de nivel 4 o superior, el conjuro no requiere concentración y su duración pasa a ser de 8 horas.
 
 == Mass Cure Wounds
 components: V, S

@@ -84,7 +84,7 @@ body:
 Este conjuro transporta al instante a ti y a hasta ocho criaturas voluntarias que puedas ver dentro del alcance, o bien a un solo objeto que puedas ver dentro del alcance, hasta un destino que elijas. Si haces objetivo a un objeto, debe ser de tamaño Grande o menor y no puede estar en manos de una criatura no voluntaria ni llevado por ella.
 El destino que elijas debe serte conocido. Lo familiar que te resulte determina si llegas bien. El DM tira 1d100 y consulta la tabla de resultado del teletransporte y las explicaciones que la siguen.
 Teleportation Outcome Familiarity
-• «Círculo permanente» es un círculo de teletransportación permanente cuya secuencia de sigilos conoces.
+• «Círculo en pie» es un círculo de teletransportación que alguien sigue manteniendo y cuya secuencia de sigilos conoces.
 • «Objeto vinculado» significa que posees un objeto sacado del destino deseado en los últimos seis meses, como un libro de la biblioteca de un mago.
 • «Muy familiar» es un lugar que has visitado a menudo, que has estudiado con cuidado o que puedes ver al lanzar el conjuro.
 • «Visto de pasada» es un lugar que has visto más de una vez pero que no te resulta muy familiar.
@@ -98,10 +98,10 @@ Teleportation Outcome Familiarity
 == Teleportation Circle
 components: V, M (tintas raras por valor de 50 po o más, que el conjuro consume)
 body:
-Al lanzar el conjuro dibujas en el suelo un círculo de 5 pies de radio inscrito con sigilos que unen tu posición con un círculo de teletransportación permanente que elijas, cuya secuencia de sigilos conozcas. Dentro del círculo que has dibujado se abre un portal reluciente que permanece abierto hasta el final de tu siguiente turno. Cualquier criatura que entre en el portal aparece al instante a 5 pies o menos del círculo de destino, o en el espacio sin ocupar más cercano si aquel está ocupado.
-Muchos templos importantes, casas gremiales y otros lugares destacados tienen círculos de teletransportación permanentes. Cada círculo tiene una secuencia de sigilos única: una sarta de runas dispuestas en un patrón concreto.
+Al lanzar el conjuro dibujas en el suelo un círculo de 5 pies de radio inscrito con sigilos que unen tu posición con un círculo de teletransportación en pie que elijas, cuya secuencia de sigilos conozcas. Dentro del círculo que has dibujado se abre un portal reluciente que permanece abierto hasta el final de tu siguiente turno. Cualquier criatura que entre en el portal aparece al instante a 5 pies o menos del círculo de destino, o en el espacio sin ocupar más cercano si aquel está ocupado.
+Muchos templos importantes, casas gremiales y otros lugares destacados mantienen círculos de teletransportación en pie. Cada círculo tiene una secuencia de sigilos única: una sarta de runas dispuestas en un patrón concreto.
 Cuando obtienes por primera vez la capacidad de lanzar este conjuro, aprendes las secuencias de sigilos de dos destinos, que determina el DM. Puedes aprender más secuencias durante tus aventuras. Puedes memorizar una secuencia nueva tras estudiarla 1 minuto.
-Puedes crear un círculo de teletransportación permanente lanzando este conjuro en el mismo lugar todos los días durante 365 días.
+Puedes levantar un círculo de teletransportación en pie lanzando este conjuro en el mismo lugar todos los días durante 30 días. Se sostiene mientras alguien siga lanzándolo ahí una vez al día, y un círculo que se salta un día desaparece. Las grandes casas tienen a alguien cuyo oficio entero es ese lanzamiento.
 
 == Temporal Stasis
 components: V, S, M (un grano de polvo de un reloj de sol parado)
@@ -170,7 +170,7 @@ Solo puedes usar esta capacidad de transporte una vez en cada uno de tus turnos.
 == True Polymorph
 components: V, S, M (una gota de mercurio, una pizca de goma arábiga y una voluta de humo)
 body:
-Elige una criatura o un objeto no mágico que puedas ver dentro del alcance. La criatura se transforma en otra criatura o en un objeto no mágico, o el objeto se transforma en una criatura (el objeto no puede llevarlo ni vestirlo nadie). La transformación dura lo que dure el conjuro o hasta que el objetivo muera o sea destruido; ahora bien, si mantienes la concentración en este conjuro toda su duración, el conjuro dura hasta que se disipe.
+Elige una criatura o un objeto no mágico que puedas ver dentro del alcance. La criatura se transforma en otra criatura o en un objeto no mágico, o el objeto se transforma en una criatura (el objeto no puede llevarlo ni vestirlo nadie). La transformación dura lo que dure el conjuro o hasta que el objetivo muera o sea destruido; ahora bien, si mantienes la concentración en este conjuro toda su duración, la forma nueva se sostiene otros 30 días y después se deshace.
 Una criatura no voluntaria puede hacer una tirada de salvación de Sabiduría y, si la supera, no se ve afectada por este conjuro.
 **De criatura a criatura.** Si conviertes a una criatura en otra clase de criatura, la nueva forma puede ser de cualquier clase que elijas cuyo valor de desafío sea igual o inferior al valor de desafío o al nivel del objetivo. Las puntuaciones de juego del objetivo se sustituyen por el perfil de la nueva forma, pero conserva sus puntos de golpe, sus dados de golpe, su alineamiento y su personalidad.
 El objetivo obtiene una cantidad de puntos de golpe temporales igual a los puntos de golpe de la nueva forma. Esos puntos de golpe temporales desaparecen si le queda alguno cuando el conjuro termina.
