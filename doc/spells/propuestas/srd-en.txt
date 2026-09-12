@@ -1,0 +1,580 @@
+== Ether Theft
+level: 4
+school: Abjuration
+classes: Bard, Sorcerer, Wizard
+casting: Action
+range: 60 feet
+components: V, S
+duration: Concentration, up to 1 minute
+body:
+Astronomy reaches the Ether wherever the Ether is, and that includes the Ether another hand is holding. You close your fingers on somebody else's work and pull.
+Choose one creature you can see that is maintaining Concentration on a spell of level 3 or lower. It makes a Constitution saving throw. On a failed save, its Concentration ends and you take the spell up yourself: it continues under your Concentration, with you choosing its targets where it allows a choice, for the rest of its original duration or the duration of this spell, whichever ends first.
+If the stolen spell is one you could not otherwise cast, you still hold it, but you cannot change anything it is already doing.
+Using a Higher-Level Spell Slot. You can take a spell of one level higher for each spell slot level above 4.
+
+== Dimming
+level: 5
+school: Abjuration
+classes: Bard, Cleric, Wizard
+casting: Action
+range: 60 feet
+components: V, S, M (a wick pinched out between two fingers)
+duration: 1 hour
+body:
+You thin the Ether inside a body until its own network has to work in a halo of its making. One creature you can see makes a Charisma saving throw. On a failed save, it is Dimmed for the duration.
+While Dimmed, a creature that casts a spell must first make a Constitution saving throw against your spell save DC. On a failed save, the spell fails, and the slot is spent.
+A Dimmed creature knows what has been done to it from the first time it tries to cast. It can take an action on each of its turns to repeat the Charisma save, ending the effect on itself on a success.
+
+== Etheric Blow
+level: 3
+school: Evocation
+classes: Sorcerer, Wizard
+casting: Action
+range: Self (5-foot cone)
+components: V, S
+duration: Instantaneous
+body:
+You press a gathered Star until it weighs, and hand it over into the space in front of you. Each creature in a 5-foot Cone makes a Strength saving throw. On a failed save, a creature takes 5d6 Force damage and is pushed up to 20 feet away from you and knocked Prone. On a successful save, it takes half as much damage only and is not pushed.
+A creature pushed into a solid obstacle takes an extra 1d6 Force damage and stops there.
+Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 3.
+
+== Heave
+level: 4
+school: Evocation
+classes: Bard, Sorcerer, Wizard
+casting: Action
+range: 60 feet
+components: V, S
+duration: Instantaneous
+body:
+A state of force put on the Ether does nothing at all until it is handed over. You put one on the air around a loose object and then let go.
+Choose up to three objects you can see within range that are not being worn or carried and that each weigh 50 pounds or less. Each one is hurled at a creature or point you choose within 60 feet of it. For each object thrown at a creature, make a ranged spell attack. On a hit, the target takes 3d8 Bludgeoning damage, or 3d8 Piercing or Slashing damage if the object is sharp.
+Objects thrown by this spell land where they end up. Nothing is held, carried, or moved gently: this is a push and a release, and the spell has no way to set anything down.
+Using a Higher-Level Spell Slot. You can throw one additional object for each spell slot level above 4.
+
+== Catching Bands
+level: 2
+school: Abjuration
+classes: Bard, Sorcerer, Wizard
+casting: Reaction, which you take when you or a creature within 60 feet of you falls or is pushed
+range: 60 feet
+components: V, S
+duration: Instantaneous
+body:
+You spread gathered Ether thin and let it take the shock instead of the body.
+The triggering creature takes no damage from the fall or from being thrown into an obstacle, up to a maximum of 30 damage prevented. If the creature was falling, it lands on its feet and does not have the Prone condition.
+The bands are nothing but gathered Ether. They catch once and are gone.
+Using a Higher-Level Spell Slot. The damage prevented increases by 15 for each spell slot level above 2.
+
+== Ash Storm
+level: 3
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: 120 feet
+components: V, S, M (a pinch of ash from a pyre)
+duration: Concentration, up to 1 minute
+body:
+You press gathered Ether until it crosses into ash and let it fall. A 20-foot-radius, 20-foot-high Cylinder centered on a point you choose within range fills with falling ash for the duration.
+The area is Lightly Obscured, and it is Difficult Terrain. A creature that starts its turn in the area makes a Constitution saving throw, taking 2d6 Fire damage on a failed save or half as much damage on a successful one, as the hot ash works its way in.
+A creature in the area has Disadvantage on Wisdom (Perception) checks that rely on sight, and any open flame in the area is smothered.
+Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 3.
+
+== Steel Thread
+level: 2
+school: Transmutation
+classes: Bard, Sorcerer, Wizard
+casting: Reaction, which you take when you are hit by a melee attack
+range: Self
+components: V, S, M (a length of silk thread)
+duration: Instantaneous
+body:
+One thread of the cloth you are wearing crosses the Crucible and comes out steel, held in the path of the blow.
+You take half as much damage from the triggering attack, and if the attack was made with a weapon, you can push the attacker up to 10 feet away from you.
+The steel goes back to being thread the instant the blow is turned, which is why nobody has ever made armour this way.
+Using a Higher-Level Spell Slot. The damage is reduced by a further 1d10 for each spell slot level above 2.
+
+== Vitriol Veil
+level: 4
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: Self (15-foot Emanation)
+components: V, S, M (a drop of oil of vitriol)
+duration: Concentration, up to 10 minutes
+body:
+Mist and acid meet at the Crucible, and what comes out hangs in the air around you.
+For the duration, a 15-foot Emanation of pale, sour mist moves with you. The area is Lightly Obscured to anyone but you.
+When a creature enters the Emanation for the first time on a turn or ends its turn there, it makes a Constitution saving throw, taking 3d6 Acid damage on a failed save or half as much damage on a successful one.
+A creature that hits you with a melee attack while you are in the mist takes 2d6 Acid damage.
+Using a Higher-Level Spell Slot. The damage of both effects increases by 1d6 for each spell slot level above 4.
+
+== Frostbite
+level: 1
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: 60 feet
+components: V, S
+duration: Instantaneous
+body:
+You press gathered Ether into ice in the air against somebody's skin. One creature you can see within range makes a Constitution saving throw. On a failed save, it takes 2d6 Cold damage and has Disadvantage on the next weapon attack roll it makes before the end of its next turn, as its hands stop answering.
+Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 1.
+
+== Ice Cage
+level: 5
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: 120 feet
+components: V, S, M (a chip of clear ice)
+duration: Concentration, up to 1 minute
+body:
+Ice closes around one creature you can see within range. The target makes a Dexterity saving throw. On a failed save, it takes 4d6 Cold damage and has the Restrained condition for the duration. On a successful save, it takes half as much damage only.
+A creature Restrained this way takes 2d6 Cold damage at the start of each of its turns. It can take an action to make a Strength (Athletics) check against your spell save DC, breaking the ice and ending the condition on itself on a success.
+The cage is an object with AC 15 and 30 Hit Points, and it has Vulnerability to Fire damage. Destroying it ends the condition.
+Using a Higher-Level Spell Slot. The initial damage increases by 1d6 for each spell slot level above 5.
+
+== Ice Lance
+level: 6
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Bonus Action
+range: Self (60-foot Line)
+components: V
+duration: Instantaneous
+body:
+There is no gesture and no word: the state is put on in one step and handed over in the same beat, which is the whole reason this spell costs what it does.
+A 60-foot-long, 5-foot-wide Line of ice drives out from you. Each creature in the Line makes a Constitution saving throw, taking 10d6 Cold damage on a failed save or half as much damage on a successful one.
+Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 6.
+
+== Lightning Arc
+level: 1
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: 90 feet
+components: V, S
+duration: Instantaneous
+body:
+You press gathered Ether until it crosses into lightning and let it go at one creature or object you can see within range. Make a ranged spell attack. On a hit, the target takes 3d6 Lightning damage.
+If the target is wearing metal armour or is holding a metal object, you have Advantage on the attack roll.
+Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 1.
+
+== Charged Skin
+level: 4
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: Self
+components: V, S
+duration: Concentration, up to 10 minutes
+body:
+You hold a thin charge across your own skin for the duration. It is the cheapest thing lightning does and the only one that can be kept up for minutes at a time, because almost nothing is being asked of it.
+When a creature within 5 feet of you hits you with a melee attack, it takes 3d8 Lightning damage.
+As an action, you can end the spell early and discharge it all at once: each creature within 15 feet of you makes a Dexterity saving throw, taking 6d8 Lightning damage on a failed save or half as much damage on a successful one.
+Using a Higher-Level Spell Slot. Both damage values increase by 1d8 for each spell slot level above 4.
+
+== Wall of Sound
+level: 5
+school: Transmutation
+classes: Bard, Sorcerer, Wizard
+casting: Action
+range: 120 feet
+components: V, S
+duration: Concentration, up to 10 minutes
+body:
+You stand a sheet of standing noise up on a solid surface you can see within range. The wall is up to 60 feet long, 20 feet high and 1 foot thick, and you can shape it into a straight wall or a ring.
+The wall is transparent but not silent: sound does not pass it in either direction, and a creature on one side cannot hear anything on the other.
+When a creature enters the wall's space for the first time on a turn or ends its turn there, it makes a Constitution saving throw, taking 5d8 Thunder damage on a failed save, or half as much damage on a successful one. A creature that fails is also pushed out of the wall on the side it entered from.
+Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 5.
+
+== Piercing Shriek
+level: 1
+school: Transmutation
+classes: Bard, Sorcerer, Wizard
+casting: Action
+range: 30 feet
+components: V
+duration: Instantaneous
+body:
+You give the gathered Ether a single note and hand it over inside somebody's head. One creature you can see within range that can hear makes a Constitution saving throw. On a failed save, it takes 2d8 Thunder damage and its Speed is reduced by 10 feet until the end of its next turn.
+Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 1.
+
+== Scouring Wind
+level: 5
+school: Transmutation
+classes: Druid, Sorcerer
+casting: Action
+range: 150 feet
+components: V, S, M (a pinch of coarse sand)
+duration: Concentration, up to 10 minutes
+body:
+Sand and moving air are two states of the same Star, joined at the end.
+A 30-foot-radius, 40-foot-high Cylinder of driven grit appears centered on a point you choose within range. The area is Lightly Obscured, and it is Difficult Terrain.
+When a creature enters the area for the first time on a turn or starts its turn there, it makes a Constitution saving throw, taking 4d6 Slashing damage on a failed save or half as much damage on a successful one. A creature in the area has Disadvantage on ranged attack rolls.
+As a Bonus Action on your turn, you can move the Cylinder up to 30 feet along the ground.
+Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 5.
+
+== Pitch Ball
+level: 0
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: 60 feet
+components: V, S
+duration: Instantaneous
+body:
+A lump of hot pitch forms in your hand and is gone as soon as it is thrown, which is as long as the Ether it is made of will hold that shape.
+Make a ranged spell attack against one creature within range. On a hit, the target takes 1d6 Fire damage, and until the end of its next turn it has Disadvantage on the first attack roll it makes, from the mess.
+Cantrip Upgrade. The damage increases by 1d6 when you reach Magister levels 5 (2d6), 11 (3d6) and 17 (4d6).
+
+== Corrosive Touch
+level: 1
+school: Transmutation
+classes: Sorcerer, Wizard
+casting: Action
+range: Touch
+components: V, S
+duration: Instantaneous
+body:
+The Crucible is cheapest at arm's length, and this is the entry everybody learns it on.
+Make a melee spell attack against one creature you touch. On a hit, the target takes 4d4 Acid damage, and any nonmagical metal object it is wearing or carrying of your choice takes a permanent and cumulative -1 penalty to the damage it deals or to the AC it offers, to a minimum of -3.
+Using a Higher-Level Spell Slot. The damage increases by 1d4 for each spell slot level above 1.
+
+== Cinder Rain
+level: 5
+school: Transmutation
+classes: Druid, Sorcerer
+casting: Action
+range: 150 feet
+components: V, S, M (a lump of pumice)
+duration: Concentration, up to 1 minute
+body:
+Molten rock thrown high enough comes down as rain, and this is the smallest amount of it worth the crossing.
+A 20-foot-radius, 40-foot-high Cylinder centered on a point you choose within range fills with falling cinders for the duration. The area is Lightly Obscured and is Difficult Terrain.
+When a creature enters the area for the first time on a turn or starts its turn there, it makes a Dexterity saving throw, taking 4d6 Fire damage and 2d6 Bludgeoning damage on a failed save, or half as much of both on a successful one.
+Anything flammable in the area that is not being worn or carried catches fire.
+Using a Higher-Level Spell Slot. The Fire damage increases by 1d6 for each spell slot level above 5.
+== Sands of Time
+level: 4
+school: Transmutation
+classes: Cleric, Sorcerer, Wizard
+casting: Action
+range: 60 feet
+components: V, S, M (a pinch of sand from a broken hourglass)
+duration: Instantaneous
+body:
+You pile years onto a body that has not lived them. One creature you can see within range makes a Constitution saving throw. On a failed save, it ages: for the next hour it takes a -2 penalty to Strength, Dexterity and Constitution saving throws and ability checks, its Speed is reduced by 10 feet, and it has Disadvantage on Constitution saving throws made to maintain Concentration.
+A creature that is Undead, a Construct, or otherwise ageless is unaffected.
+The years are not taken from anywhere and are not given back. When the hour is over, the body has caught up with itself and the penalty ends.
+Using a Higher-Level Spell Slot. The penalty increases by 1 for every two spell slot levels above 4.
+
+== Held Years
+level: 5
+school: Transmutation
+classes: Cleric, Druid, Wizard
+casting: 1 hour
+range: Touch
+components: V, S, M (a lock of hair the subject has not yet gone grey in)
+duration: 24 hours
+body:
+The only thing this Discipline can do about age that is not cruel, and it is not a cure: it is a hand under something that is falling.
+For the duration, the creature you touch ignores every penalty it has from old age, whether to its ability scores, its Speed or its Hit Point maximum, while keeping whatever an old body knows. It does not get younger and nothing is undone.
+When the spell ends, the years land again all at once. The creature has the Exhausted condition with 2 Exhaustion levels, and the second casting of this spell on the same creature within a week gives it 4 instead.
+
+== Anticipate Peril
+level: 1
+school: Divination
+classes: Bard, Cleric, Druid, Sorcerer, Wizard
+casting: Action
+range: Touch
+components: V, S
+duration: 8 hours
+body:
+This does not read the future. Nothing has written the future down. What it reads is the outcome of what is already in motion, done faster than a body can do it.
+The creature you touch rolls 1d6 and keeps the number. Once within the duration, it can add that number to one Initiative roll or to one saving throw made against a trap or a hidden hazard, after seeing the roll but before knowing whether it succeeded.
+Using a Higher-Level Spell Slot. The die becomes a d8 at level 3, a d10 at level 5 and a d12 at level 7.
+
+== Shadow Step
+level: 3
+school: Conjuration
+classes: Bard, Sorcerer, Warlock, Wizard
+casting: Bonus Action
+range: Self
+components: V
+duration: Instantaneous
+body:
+Two points of the world are set side by side. The dark is nothing to do with it; it is simply where the work is hardest to see, and the trade has never given the trick up.
+You teleport up to 60 feet to an unoccupied space you can see that is in Dim Light or Darkness. You must be in Dim Light or Darkness when you cast this spell. On arriving, you have Advantage on the first melee attack roll you make before the end of this turn.
+Using a Higher-Level Spell Slot. The distance increases by 30 feet for each spell slot level above 3.
+
+== Echolocation
+level: 4
+school: Divination
+classes: Bard, Druid, Ranger, Sorcerer, Wizard
+casting: Action
+range: Self
+components: V, S
+duration: Concentration, up to 10 minutes
+body:
+You are not given sight. You are given the shape of the room, which is a different thing and is enough for most of what sight is used for.
+For the duration, you have Blindsight out to 60 feet. Within that radius, you can see anything that is not behind total cover, including creatures that have the Invisible condition, and you are not hindered by Darkness or by being Blinded.
+The spell ends early if you are Deafened, and it gives you nothing at all in an area of magical silence.
+
+== Steal Voice
+level: 2
+school: Enchantment
+classes: Bard, Sorcerer, Wizard
+casting: Action
+range: 30 feet
+components: V, S
+duration: 1 hour
+body:
+The word is a handhold and never an order, so taking somebody's voice does not take their magic. It takes the easy way of reaching for it.
+One creature you can see within range makes a Constitution saving throw. On a failed save, its voice is gone for the duration: it cannot speak above a whisper that carries 5 feet, it has Disadvantage on Charisma checks made to be heard or believed, and any spell it casts that has a verbal component requires a successful Constitution saving throw against your spell save DC or the spell fails and the slot is spent.
+The creature can take an action to repeat the save, ending the effect on itself on a success.
+
+== Tangled Tongue
+level: 1
+school: Enchantment
+classes: Bard, Sorcerer, Wizard
+casting: Action
+range: 30 feet
+components: S
+duration: 1 minute
+body:
+Nothing is taken away. The words are all still there, and they will not come out in an order.
+One creature you can see within range makes a Wisdom saving throw. On a failed save, for the duration it cannot speak or write intelligibly, and it cannot cast a spell with a verbal component. It understands everything said to it perfectly well, which is most of what makes this spell unpleasant.
+The creature repeats the save at the end of each of its turns, ending the effect on itself on a success.
+
+== Share Memory
+level: 1
+school: Divination
+classes: Bard, Cleric, Sorcerer, Wizard
+casting: Action
+range: Touch
+components: V, S
+duration: Instantaneous
+body:
+One memory of yours, brought to the surface and handed over whole.
+Choose a memory of yours that covers no more than 1 minute. The willing creature you touch receives it as though it had lived it: everything you saw, heard and felt at the time, and nothing you have since decided it meant.
+The memory is a copy and not a loan. You keep yours. What the other creature does with it afterwards is not yours to take back, and this is the one operation in the Discipline that cannot be undone by the one who performed it.
+
+== Interrogation
+level: 2
+school: Divination
+classes: Bard, Cleric, Wizard
+casting: 1 minute
+range: Touch
+components: V, S
+duration: Concentration, up to 10 minutes
+body:
+You put your hand on a creature that has the Incapacitated condition, or a willing one, and ask.
+For the duration, you can ask the target up to five questions, one per minute. For each question, the target makes a Charisma saving throw. On a failed save, the memory the question reaches comes up whether the target wants it to or not, and you see it as the target saw it.
+You see what it remembers, not what is true. A memory that was wrong when it was made comes back wrong, and a creature that has been lied to hands you the lie in perfect good faith.
+The target knows afterwards what it was asked, and knows which of those questions it answered.
+Using a Higher-Level Spell Slot. You can ask two additional questions for each spell slot level above 2.
+
+== Witness
+level: 5
+school: Divination
+classes: Bard, Cleric, Wizard
+casting: Action
+range: Touch
+components: V, S, M (a coin the subject once held)
+duration: Concentration, up to 1 minute
+body:
+Looking backwards comes out far cheaper than looking forwards, and no school has ever explained why. This is as far back as the cheap direction goes.
+You touch a creature or an object and see one scene that took place within 30 feet of it, at a moment you name, up to 7 days ago. You see and hear it as though you had been standing where the touched thing was standing. You cannot move within the scene and you cannot be perceived by anyone in it.
+The scene runs for up to 1 minute and cannot be repeated: a second casting on the same subject, whoever casts it, shows nothing.
+Using a Higher-Level Spell Slot. You can reach back one additional week for each spell slot level above 5.
+
+== Overwhelming Grief
+level: 4
+school: Enchantment
+classes: Bard, Cleric, Wizard
+casting: Action
+range: 60 feet
+components: V, S
+duration: Concentration, up to 1 minute
+body:
+Mood does not dictate acts, and that uncertainty is part of what is being used. This one puts grief in, and grief does most of the work by itself.
+One creature you can see within range makes a Wisdom saving throw. On a failed save, for the duration it is overcome: it has Speed 0, it can take no action other than the Dodge action, and it has Disadvantage on ability checks and on attack rolls.
+The creature repeats the save at the end of each of its turns, ending the effect on itself on a success. It gets Advantage on that save if it took damage since its last turn, which is usually the fastest way to end this spell and rarely the kindest.
+
+== Oppressive Boredom
+level: 1
+school: Enchantment
+classes: Bard, Sorcerer, Wizard
+casting: Action
+range: 30 feet
+components: V, S
+duration: Concentration, up to 1 minute
+body:
+The smallest thing this Branch does, and the hardest one to notice being done.
+One creature you can see within range makes a Wisdom saving throw. On a failed save, for the duration it loses interest in whatever it was doing. It cannot take the Attack action or cast a spell unless it has taken damage since the end of its last turn, and it has Disadvantage on Wisdom (Perception) checks.
+The creature repeats the save at the end of each of its turns, ending the effect on itself on a success.
+
+== Terrible Remorse
+level: 4
+school: Enchantment
+classes: Bard, Cleric, Wizard
+casting: Action
+range: 30 feet
+components: V, S
+duration: Concentration, up to 1 minute
+body:
+One creature you can see within range makes a Wisdom saving throw. On a failed save, for the duration it is filled with remorse for something it has actually done, chosen by the spell and not by you.
+On each of its turns, the affected creature must use its action to harm itself: it takes 3d6 Psychic damage, or it makes one unarmed strike against itself that automatically hits and deals its normal damage, whichever is greater. It can do nothing else with that action.
+The creature repeats the save at the end of each of its turns, ending the effect on itself on a success.
+This is the Branch at its worst, and the trade knows it. Nothing has been put into the creature that was not already there.
+
+== Murderous Command
+level: 1
+school: Enchantment
+classes: Bard, Cleric, Sorcerer, Wizard
+casting: Action
+range: 30 feet
+components: V
+duration: Instantaneous
+body:
+What is imposed is the act, not the person. This one imposes a single act, and the person is left to live with it.
+One creature you can see within range makes a Wisdom saving throw. On a failed save, on its next turn it must move as far as its Speed allows towards the creature nearest to it that it can see, other than you, and make one melee attack against it if it can reach it. If it cannot reach anyone, it takes the Dash action towards the nearest creature instead.
+The creature does not choose the target and is entirely aware afterwards of what it did.
+
+== Forbid Action
+level: 1
+school: Enchantment
+classes: Bard, Cleric, Wizard
+casting: Action
+range: 30 feet
+components: V
+duration: 1 minute
+body:
+The other half of Subjection, and the cheaper half: it is easier to take one thing off the list than to put one on it.
+Choose one activity: speaking, moving, attacking, or casting a spell. One creature you can see within range that can understand you makes a Wisdom saving throw. On a failed save, it cannot do the chosen thing for the duration.
+The creature repeats the save at the end of each of its turns, ending the effect on itself on a success.
+Using a Higher-Level Spell Slot. You can affect one additional creature for each spell slot level above 1.
+
+== Loathsome Veil
+level: 3
+school: Illusion
+classes: Bard, Sorcerer, Wizard
+casting: Action
+range: 60 feet
+components: V, S
+duration: Concentration, up to 1 minute
+body:
+An illusion is not made in the air. It is made in a mind, and every mind you want it in has to be reached.
+Choose up to three creatures you can see within range. Each one makes a Wisdom saving throw. On a failed save, a creature sees a film of something revolting hanging in front of it, filling a 20-foot Cube you choose within range. For that creature only, the Cube is Heavily Obscured, and it must make a Constitution saving throw the first time it enters the Cube on a turn or takes the Poisoned condition until the end of its next turn.
+A creature that made its Wisdom save sees nothing at all and can walk through the Cube without noticing it. Two creatures standing side by side will disagree about whether anything is there.
+
+== Ghostly Disguise
+level: 1
+school: Illusion
+classes: Bard, Sorcerer, Wizard
+casting: Action
+range: Self
+components: V, S
+duration: Concentration, up to 1 hour
+body:
+For the duration, you appear to anyone who can see you as though you had been dead for some time: grey, thin, and not quite settled in the light.
+Any creature that sees you for the first time makes a Wisdom saving throw. On a failed save, it takes you for a spirit and has Disadvantage on attack rolls against you until the start of its next turn. On a successful save, it sees you as you are and is not fooled again for the duration.
+Nothing about you has changed. Anything that touches you finds a living body, and the spell ends the instant somebody does.
+
+== Shadow Weapon
+level: 1
+school: Illusion
+classes: Bard, Sorcerer, Warlock, Wizard
+casting: Bonus Action
+range: Self
+components: V, S
+duration: Concentration, up to 1 minute
+body:
+You put a weapon in your own hand and in the minds of everyone who can see you. It is not there, and it will do exactly what everyone concerned believes it will.
+For the duration, you are holding a Simple or Martial melee weapon of your choice, made of shadow. You are proficient with it, its attacks use your spellcasting ability, and it deals 1d8 Psychic damage on a hit.
+A creature that has already taken damage from the weapon can take an action to study it and make an Intelligence (Investigation) check against your spell save DC. On a success, it understands what the weapon is, and the weapon deals no damage to that creature for the rest of the duration.
+Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 1.
+
+== Fungal Bloom
+level: 2
+school: Transmutation
+classes: Druid, Ranger, Wizard
+casting: Action
+range: 60 feet
+components: V, S, M (a cap of dried mushroom)
+duration: Concentration, up to 10 minutes
+body:
+A fungus is not a plant and is not an animal, and it does not want anything, which is why this Branch has taken so long to fill. What it does is feed on what has already stopped.
+Choose a point on the ground within range. A 15-foot-radius patch of pale fungus grows there over one round and remains for the duration. The area is Difficult Terrain.
+When a creature enters the area for the first time on a turn or starts its turn there, it makes a Constitution saving throw. On a failed save, it takes 2d6 Necrotic damage and has Disadvantage on its next attack roll, as the spores get into it. On a successful save, it takes half as much damage only.
+If the patch is grown on or next to a corpse, a carcass or any dead organic matter, its radius is 30 feet instead of 15 and the damage is 3d6.
+Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 2.
+
+== Upright Beast
+level: 3
+school: Transmutation
+classes: Druid, Ranger, Wizard
+casting: Action
+range: Touch
+components: V, S
+duration: Concentration, up to 1 hour
+body:
+A Pact is earned first, with dealings, and this spell only acknowledges what is already there. It is not performed on a beast that has not agreed to it.
+You touch a Beast you have a bond with. For the duration, it stands on two legs and its forelimbs become hands. It can use objects, open doors, carry and wield anything a creature of its size could wield, and it gains proficiency with Simple weapons.
+It does not gain speech, it does not gain the ability to read, and it does not become any cleverer. It is exactly the same animal, with hands.
+
+== Burst of Nettles
+level: 2
+school: Transmutation
+classes: Druid, Ranger
+casting: Action
+range: Self (10-foot Emanation)
+components: V, S, M (a nettle leaf)
+duration: Instantaneous
+body:
+Sprouting governs how a bonded plant grows, and nothing says the growing has to be slow.
+Nettles burst out of the ground around you. Each creature other than you in a 10-foot Emanation makes a Dexterity saving throw. On a failed save, a creature takes 3d6 Piercing damage and 1d6 Poison damage, and its Speed is reduced by 10 feet until the end of its next turn. On a successful save, it takes half as much of both and its Speed is not reduced.
+The ground in the Emanation becomes Difficult Terrain for 1 minute, and then the nettles wither.
+Using a Higher-Level Spell Slot. The Piercing damage increases by 1d6 for each spell slot level above 2.
+
+== Delay Pain
+level: 2
+school: Abjuration
+classes: Bard, Cleric, Druid
+casting: Action
+range: Touch
+components: V, S
+duration: 1 hour
+body:
+Nothing is healed. The wound is exactly as bad as it was; the body has simply been talked out of reporting it for a while.
+For the duration, the willing creature you touch ignores the effects of pain: it does not have Disadvantage from an injury, it does not lose Concentration from taking damage unless it drops to 0 Hit Points, and it can act normally while at 1 Hit Point.
+When the spell ends, everything arrives at once. The creature has the Exhausted condition with 1 Exhaustion level, and 2 instead if it took more than half its Hit Point maximum in damage during the duration.
+
+== Diagnose Illness
+level: 1
+school: Divination
+classes: Cleric, Druid, Ranger
+casting: Action
+range: Touch
+components: S
+duration: Instantaneous
+body:
+You read the pulse of a creature you touch and are told what is wrong with it: every disease, poison and curse it is carrying, how long it has had each one, and how long it has left if nothing is done.
+You are told nothing about how to fix any of it.
+The reading is of the body and not of the mind: it finds a fever and a venom and misses a grief entirely.
+
+== Howling Agony
+level: 2
+school: Necromancy
+classes: Bard, Cleric, Sorcerer, Warlock, Wizard
+casting: Action
+range: 60 feet
+components: V, S
+duration: Concentration, up to 1 minute
+body:
+One creature you can see within range makes a Constitution saving throw. On a failed save, for the duration it is in pain that has no cause and no end.
+At the start of each of its turns, the creature takes 2d8 Psychic damage, and on that turn it can take either an action or a Bonus Action, not both.
+The creature repeats the save at the end of each of its turns, ending the effect on itself on a success. A creature that cannot feel pain is unaffected.
+Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 2.

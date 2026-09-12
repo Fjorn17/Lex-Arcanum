@@ -1,0 +1,43 @@
+Ether Theft	Hurto etéreo
+Dimming	Empañamiento
+Etheric Blow	Golpe etéreo
+Heave	Envite
+Catching Bands	Bandas de sujeción
+Ash Storm	Tormenta de ceniza
+Steel Thread	Hilo de acero
+Vitriol Veil	Velo de vitriolo
+Frostbite	Sabañón
+Ice Cage	Jaula de hielo
+Ice Lance	Lanza de hielo
+Lightning Arc	Arco eléctrico
+Charged Skin	Piel cargada
+Wall of Sound	Muro de sonido
+Piercing Shriek	Chillido lacerante
+Scouring Wind	Viento abrasivo
+Pitch Ball	Bola de pez
+Corrosive Touch	Toque corrosivo
+Cinder Rain	Lluvia de rescoldo
+Sands of Time	Arenas del tiempo
+Held Years	Años retenidos
+Anticipate Peril	Anticipar el peligro
+Shadow Step	Paso de sombra
+Echolocation	Ecolocalización
+Steal Voice	Robar la voz
+Tangled Tongue	Lengua trabada
+Share Memory	Compartir un recuerdo
+Interrogation	Interrogatorio
+Witness	Testigo
+Overwhelming Grief	Duelo desbordante
+Oppressive Boredom	Hastío
+Terrible Remorse	Remordimiento atroz
+Murderous Command	Orden homicida
+Forbid Action	Prohibir un acto
+Loathsome Veil	Velo repugnante
+Ghostly Disguise	Disfraz espectral
+Shadow Weapon	Arma de sombra
+Fungal Bloom	Florecer de hongos
+Upright Beast	Bestia erguida
+Burst of Nettles	Estallido de ortigas
+Delay Pain	Aplazar el dolor
+Diagnose Illness	Diagnosticar el mal
+Howling Agony	Agonía aullante

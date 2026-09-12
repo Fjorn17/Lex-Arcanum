@@ -158,9 +158,13 @@ sub dist_paren {
 our %DISPLAY_EN;
 our %DISPLAY_ES;
 
+# El prefijo permite a --propuestas leer sus propios nombres sin pisar los del
+# catalogo: load_names('propuestas/') lee propuestas/nombres-*.txt.
 sub load_names {
-    %DISPLAY_EN = -e 'nombres-en.txt' ? read_map('nombres-en.txt') : ();
-    %DISPLAY_ES = -e 'nombres-es.txt' ? read_map('nombres-es.txt') : ();
+    my ($pre) = @_;
+    $pre //= '';
+    %DISPLAY_EN = -e "${pre}nombres-en.txt" ? read_map("${pre}nombres-en.txt") : ();
+    %DISPLAY_ES = -e "${pre}nombres-es.txt" ? read_map("${pre}nombres-es.txt") : ();
 }
 
 sub disp_name {

@@ -1,0 +1,44 @@
+# Candidatos: subdivision propuesta.
+Ether Theft	-
+Dimming	-
+Etheric Blow	-
+Heave	-
+Catching Bands	-
+Ash Storm	ash
+Steel Thread	metal
+Vitriol Veil	mist
+Frostbite	water
+Ice Cage	water
+Ice Lance	water
+Lightning Arc	lightning
+Charged Skin	lightning
+Wall of Sound	thunder
+Piercing Shriek	thunder
+Scouring Wind	sand
+Pitch Ball	mud
+Corrosive Touch	acid
+Cinder Rain	lava
+Sands of Time	time
+Held Years	time
+Anticipate Peril	time
+Shadow Step	space
+Echolocation	senses
+Steal Voice	senses
+Tangled Tongue	senses
+Share Memory	memory
+Interrogation	memory
+Witness	memory
+Overwhelming Grief	mood
+Oppressive Boredom	mood
+Terrible Remorse	mood
+Murderous Command	subjection
+Forbid Action	subjection
+Loathsome Veil	illusion
+Ghostly Disguise	illusion
+Shadow Weapon	illusion
+Fungal Bloom	fungi
+Upright Beast	animals
+Burst of Nettles	plants
+Delay Pain	life
+Diagnose Illness	life
+Howling Agony	death

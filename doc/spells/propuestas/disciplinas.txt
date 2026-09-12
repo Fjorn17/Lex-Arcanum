@@ -1,0 +1,44 @@
+# Candidatos: Disciplina propuesta. Ver README.md.
+Ether Theft	Astronomy
+Dimming	Astronomy
+Etheric Blow	Astronomy
+Heave	Astronomy
+Catching Bands	Astronomy
+Ash Storm	Alchemy
+Steel Thread	Alchemy
+Vitriol Veil	Alchemy
+Frostbite	Alchemy
+Ice Cage	Alchemy
+Ice Lance	Alchemy
+Lightning Arc	Alchemy
+Charged Skin	Alchemy
+Wall of Sound	Alchemy
+Piercing Shriek	Alchemy
+Scouring Wind	Alchemy
+Pitch Ball	Alchemy
+Corrosive Touch	Alchemy
+Cinder Rain	Alchemy
+Sands of Time	Cosmology
+Held Years	Cosmology
+Anticipate Peril	Cosmology
+Shadow Step	Cosmology
+Echolocation	Spiritism
+Steal Voice	Spiritism
+Tangled Tongue	Spiritism
+Share Memory	Spiritism
+Interrogation	Spiritism
+Witness	Spiritism
+Overwhelming Grief	Spiritism
+Oppressive Boredom	Spiritism
+Terrible Remorse	Spiritism
+Murderous Command	Spiritism
+Forbid Action	Spiritism
+Loathsome Veil	Spiritism
+Ghostly Disguise	Spiritism
+Shadow Weapon	Spiritism
+Fungal Bloom	Spiritism
+Upright Beast	Spiritism
+Burst of Nettles	Spiritism
+Delay Pain	Spiritism
+Diagnose Illness	Spiritism
+Howling Agony	Spiritism

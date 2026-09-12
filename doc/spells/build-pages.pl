@@ -114,8 +114,15 @@ sub icon { my ($k, $w) = @_; $w //= 18;
 # ------------------------------------------------------------------- entradas
 
 # La traduccion se escribe por tandas en es/NN.txt y se junta aqui.
-my %DISC = read_map('disciplinas.txt');
-my %SUBOF = read_map('subdisciplinas.txt');
+# --propuestas genera fichas de candidatos en doc/propuestas/ sin tocar el
+# sitio: misma plantilla, misma profundidad de ruta, otra fuente de datos.
+my $PROP = grep { $_ eq '--propuestas' } @ARGV;
+my $PRE  = $PROP ? 'propuestas/' : '';
+
+load_names($PRE);   # los nombres visibles, ahora sabiendo de donde salen
+
+my %DISC = read_map("${PRE}disciplinas.txt");
+my %SUBOF = read_map("${PRE}subdisciplinas.txt");
 
 # El arbol de Disciplinas, para poder enlazar la ficha con su pagina.
 my $TAX = do './taxonomia.pl';
@@ -171,15 +178,15 @@ my @A_MANO = qw(arcane-thrust gravitational-pull bound-weapon chains-of-custody
 # Un conjuro puede cruzar un segundo umbral (Reglas 6.4): la cima del arte.
 my %CROSS = -e 'cruces.txt' ? read_map('cruces.txt') : ();
 
-my @EN = read_spells('srd-en.txt');
+my @EN = read_spells("${PRE}srd-en.txt");
 for my $s (@EN) {
     if (my $u = $UNC{ $s->{name} }) { $s->{unc} = $u; next }
     $s->{discipline} = $DISC{ $s->{name} }
         or die "sin Disciplina en disciplinas.txt: $s->{name}\n";
 }
-my @ES = map { read_spells($_) } sort glob('es/*.txt');
+my @ES = map { read_spells($_) } sort glob("${PRE}es/*.txt");
 my %ES  = map { $_->{key} // $_->{name} => $_ } @ES;
-my %NAME_ES = read_map('nombres-es.txt');
+my %NAME_ES = read_map("${PRE}nombres-es.txt");
 my %FIX = (
     en => { read_fixes('arreglos-en.txt') },
     es => { read_fixes('arreglos-es.txt') },
@@ -951,10 +958,10 @@ sub ent_es {
 
 # --------------------------------------------------------------------- escribe
 
-my $CLEAN = grep { $_ eq '--limpiar' } @ARGV;
+my $CLEAN = (grep { $_ eq '--limpiar' } @ARGV) && !$PROP;
 
 for my $lang (qw(en es)) {
-    my $dir = "$ROOT/$lang/pages/astronomy";
+    my $dir = $PROP ? "$ROOT/doc/propuestas/$lang" : "$ROOT/$lang/pages/astronomy";
     make_path($dir) unless -d $dir;
     # --limpiar retira lo que ya no genera nadie (un conjuro renombrado deja su
     # archivo viejo atras), sin tocar los siete escritos a mano.
@@ -981,6 +988,7 @@ for my $lang (qw(en es)) {
         print $fh $html;
         close $fh;
     }
+    next if $PROP;      # las propuestas no llevan indice: no son el catalogo
     my ($ifile, $ihtml) = render_index($lang);
     next if $DRY;
     open(my $fh, '>:encoding(UTF-8)', "$dir/$ifile") or die $!;
