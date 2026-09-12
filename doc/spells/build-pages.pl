@@ -962,6 +962,7 @@ for my $lang (qw(en es)) {
         my %keep = map { ("$_.html" => 1) } @A_MANO;
         $keep{'index.html'} = 1;      # la portada: la escribe build-disciplines.pl
         $keep{'spells.html'} = 1;
+        $keep{'rules.html'} = 1;    # tambien la escribe build-disciplines.pl
         $keep{ spell_slug($_->{name}) . '.html' } = 1 for @EN;
         for my $n (@$TAX) {
             next if $n->{key} eq 'astronomy';   # esa es index.html, ya listada

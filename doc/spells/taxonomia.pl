@@ -816,6 +816,169 @@ my @T = (
 # conjuros que el sistema todavia no coloca. Su contenido sale de
 # descatalogados.txt, agrupado en tablas.
 {
+  key => 'rules', kind => 'doc', parent => undef,
+  name => { en => 'Writing a spell', es => 'Cómo se escribe un conjuro' },
+  lead => { en => 'What may exist, where it goes, and what the numbers have to be',
+            es => 'Qu&eacute; puede existir, d&oacute;nde va, y qu&eacute; n&uacute;meros le tocan' },
+  info => [
+    [ 'What it is', 'Qu&eacute; es', 'Working rules for the catalogue', 'Reglas de trabajo del cat&aacute;logo' ],
+    [ 'Drawn from', 'Sacadas de', 'The 347 entries already written', 'Las 347 fichas ya escritas' ],
+    [ 'Binding on', 'Obligan a', 'Every new or adapted spell', 'Todo conjuro nuevo o adaptado' ],
+    [ 'Wording', 'Redacci&oacute;n', 'Player&rsquo;s Handbook 2024', 'Manual del Jugador 2024' ],
+  ],
+  body => {
+    en => [
+'<p>This page is the filter every entry in the catalogue has to pass. The first half asks whether a spell can exist at all in this world, which is a question about the magic system and has nothing to do with balance. The second half asks what its numbers should be, and that part is not invented: it is measured off the 347 entries already written.</p>',
+'<p>It is written for three jobs: adapting a spell from an older edition, importing one from somewhere else, and writing one from scratch. The order matters. A spell that fails the filter does not get numbers &mdash; it gets a line in the uncatalogued list saying why.</p>',
+
+'<h2>1. The filter</h2>',
+'<p>Ten questions, and a single no is enough. Each one comes straight out of the doctrine; the reference in brackets is the section of the Astronomy page it comes from.</p>',
+'<ol class="ruleset">',
+'<li><b>Is it something done to the Ether?</b> Every spell is Gathering, Transforming, Splitting, Joining or Handing over, and nothing else. If the effect cannot be told as one of those five, it is not a spell &mdash; it is a wish with a casting time. <i>(The five operations)</i></li>',
+'<li><b>Does it make something out of nothing?</b> Only the Crucible turns Ether into substance, and only Alchemy holds the Crucible. Nothing conjures a creature, an ally or a servant: what is not there cannot be called, because there is nowhere to call it from. <i>(The three thresholds)</i></li>',
+'<li><b>Does it need somewhere that is not here?</b> There are no other planes, no pocket spaces and no elsewhere to store or step through. Space can be crossed; it cannot be manufactured. <i>(Cosmology &rsaquo; Space)</i></li>',
+'<li><b>Does it undo a death?</b> A soul scatters into the Ether when the body stops. There is nothing left to call back, and no amount of Ether reassembles it. <i>(The Ether)</i></li>',
+'<li><b>Does it read what has not happened?</b> Nothing has written the future down. A probable outcome of what is already in motion is arithmetic and is allowed; asking a god what is coming is not. <i>(Cosmology &rsaquo; Time)</i></li>',
+'<li><b>Does it last on its own?</b> Nothing does. A long duration means somebody is holding it with a hand on it, or it is a concession the game makes and the fiction does not. Permanent effects, enchanted objects and traps left armed for years do not exist. <i>(Nothing lasts by itself)</i></li>',
+'<li><b>Is the illusion made in the air or in a mind?</b> In a mind, always. So an illusion reaches whoever it was aimed at and nobody else, and a second onlooker has to be reached separately or sees nothing at all. <i>(Spiritism &rsaquo; Mind)</i></li>',
+'<li><b>Does it act on the world or on the Ether?</b> Astronomy on its own acts on Ether wherever Ether is, including the Ether inside a body and the Ether another hand is holding. It forges no matter and closes no wound. If an effect works on the world without crossing a threshold, it is in the wrong Discipline. <i>(What Astronomy does)</i></li>',
+'<li><b>Does it rely on a gesture, a sigil or an object being magical?</b> Transformations are done with the mind. The word helps and never commands; the paper conducts nothing. Components stay in the entry because the game uses them, but nothing in the fiction hangs off them. <i>(The Constellation)</i></li>',
+'<li><b>Could you say what it costs?</b> Every spell is paid in Concentration, Mental Fatigue or Intoxication, and the entry should be recognisable as one of those three. An effect that costs nothing and risks nothing is Asterism, not a spell. <i>(What it costs)</i></li>',
+'</ol>',
+'<p>Two of these are softer than they look. Rules 3 and 4 are absolute and always have been. Rule 6 is the one the catalogue openly breaks: the entries keep the game&rsquo;s durations, so a ward on the page still lasts an hour. Where the two disagree, the entry is what you play.</p>',
+
+'<h2>2. Where it goes</h2>',
+'<p>A spell that passes the filter has to be placed, and placing it is the part that goes wrong most often. The decision is made in this order, and the first rule settles most of the arguments on its own.</p>',
+'<p><b>What is laid on top of something that already exists is Astronomy. It is only Alchemy if the matter becomes something else.</b> A blade wrapped in Ether is Astronomy, because the blade is still a blade. A blade turned to glass is Alchemy. This one rule is what moved magic weapon, magic armour and the whole family of coatings out of Alchemy, and it is worth applying before anything else.</p>',
+'<ol class="ruleset">',
+'<li><b>Does it cross a threshold at all?</b> If the Ether is still Ether when the spell ends &mdash; light, force, wards, anything that detects, hinders or undoes magic &mdash; it is Astronomy and it stops there. This is the largest single bucket in the catalogue and the default answer.</li>',
+'<li><b>Does matter become other matter?</b> Alchemy, and then the element it becomes. Fifteen elements, and the compounds are reached by joining two: mud is earth and water, steam is water and fire.</li>',
+'<li><b>Does it work on when, on where, or on weight?</b> Cosmology, and then Time, Space or Gravity. Seeing at a distance is Space, because a remote sensor is two points set side by side.</li>',
+'<li><b>Does it work on something alive?</b> Spiritism, and then which part of it. On what somebody perceives, feels, remembers, decides or is made to do: Mind, and then one of its five Branches. On something alive without speech: Nature, and then animal, plant or fungus. On the pulse itself: Life or Death.</li>',
+'<li><b>Does it cross a second threshold?</b> Only in a Convergence, only at the summit of the art, and it must be written in <code>cruces.txt</code> rather than by changing the Discipline. There is exactly one in the catalogue.</li>',
+'</ol>',
+'<p>When two answers seem right, prefer the shallower one. A spell that could be Astronomy or a Discipline is Astronomy; a spell that could be a subdivision or its parent goes to the parent. The tree is there to describe the catalogue, not to make it tidy.</p>',
+
+'<h2>3. The numbers</h2>',
+'<p>These are not conventions somebody decided. They are what the catalogue already does, measured across all 340 imported entries, and a new spell that sits far outside them needs a reason.</p>',
+'<p><b>Damage.</b> The figure is the average of the largest damage die in the entry, at its base level, before any upcasting. The median is the spell you should be writing; the ceiling is what the outliers reach, and every one of them buys that ceiling with a cost &mdash; a saving throw that ends it, a single target, a component that is consumed.</p>',
+'<table class="ruletable"><thead><tr><th>Level</th><th>Median</th><th>Ceiling</th><th>The one at the ceiling</th></tr></thead><tbody>'
+. '<tr><td>Cantrip</td><td>4.5</td><td>6.5</td><td>Poison Spray</td></tr>'
+. '<tr><td>1</td><td>9</td><td>14</td><td>Guiding Bolt</td></tr>'
+. '<tr><td>2</td><td>7</td><td>13.5</td><td>Mind Spike</td></tr>'
+. '<tr><td>3</td><td>16.5</td><td>28</td><td>Fireball</td></tr>'
+. '<tr><td>4</td><td>14</td><td>36</td><td>Blight</td></tr>'
+. '<tr><td>5</td><td>22.5</td><td>49.5</td><td>Contagion</td></tr>'
+. '<tr><td>6</td><td>33</td><td>49</td><td>Harm</td></tr>'
+. '<tr><td>7</td><td>39</td><td>55</td><td>Symbol</td></tr>'
+. '<tr><td>8</td><td>42</td><td>65</td><td>Befuddlement</td></tr>'
+. '<tr><td>9</td><td>27.5</td><td>78</td><td>Power Word Kill</td></tr>'
+. '</tbody></table>',
+'<p>Two things to read off it. The curve is not smooth &mdash; level 2 dips below level 1 and level 9 has a low median, because at both of those levels the catalogue is buying something other than damage. And the ceiling is roughly double the median everywhere, which is the room an exceptional spell has.</p>',
+'<p><b>The saving throw.</b> Pick it from what the spell actually does to a body, and the catalogue is consistent about this: Dexterity for anything you could get out of the way of, Constitution for anything that has to be endured, Wisdom for anything aimed at a mind. Strength appears where something is moved bodily. Intelligence and Charisma are rare and should stay rare: across the whole catalogue there are three Intelligence saves and seventeen Charisma ones.</p>',
+'<p><b>Areas.</b> The 20-foot-radius Sphere is the standard for a level 3 area and appears more than any other shape at any level. Cones run 15 feet at low level and 60 at high. Emanations are 10 to 30 feet and belong to spells centred on the caster. A new area that is not one of those sizes should have a reason.</p>',
+'<p><b>Range.</b> Four ranges cover three quarters of the catalogue: Self (72 entries), Touch (67), 60 feet (65) and 30 feet (47). 120 feet is the long reach; anything past 150 feet is a handful of entries and is almost always a spell that does not deal damage.</p>',
+'<p><b>Duration and Concentration.</b> Roughly half of everything from level 2 upwards takes Concentration, and that is the price of anything that goes on happening. Below that, level 1 sits at a third and cantrips at a tenth. A spell that lasts and does not take Concentration is claiming something, and the entry should show what it paid.</p>',
+'<p><b>Upcasting.</b> 111 of the 340 entries scale. The overwhelming convention is <i>increases by 1d6</i> or <i>1d8 for each spell slot level above N</i>, with the die matching the one the spell already rolls. Anything that scales by more than one die per level, or that adds a second effect on upcasting, is exceptional.</p>',
+
+'<h2>4. The shape of the entry</h2>',
+'<p>The wording rules live in <code>doc/redaccion.md</code> and follow the 2024 <i>Player&rsquo;s Handbook</i> exactly. The three that get broken most often:</p>',
+'<ol class="ruleset">',
+'<li><b>English capitalises game terms; Spanish does not.</b> <i>Force damage</i> and <i>Dexterity saving throw</i>, but <i>da&ntilde;o de fuerza</i> and <i>tirada de salvaci&oacute;n de Destreza</i>. This is the manual&rsquo;s own convention in each language, not a choice.</li>',
+'<li><b>The damage type attribute is never translated.</b> <code>data-type</code> is the key the icon service is asked with, and it stays in English in both trees.</li>',
+'<li><b>Saving throws and uses have fixed formulas.</b> Do not improvise them; copy the shape from an entry that already has one.</li>',
+'</ol>',
+
+'<h2>5. The checklist</h2>',
+'<p>Before an entry is considered finished:</p>',
+'<ol class="ruleset">',
+'<li>It passes all ten questions of the filter, or it is in <code>descatalogados.txt</code> with a reason written in both languages.</li>',
+'<li>It has a Discipline in <code>disciplinas.txt</code> and, if it goes deeper, a subdivision in <code>subdisciplinas.txt</code>.</li>',
+'<li>Its damage sits between the median and the ceiling for its level, or the entry says what it gave up.</li>',
+'<li>Its saving throw matches what it does to a body.</li>',
+'<li>It scales the way the catalogue scales, or it does not scale at all.</li>',
+'<li>It exists in both languages, at the same path, with the display name set in <code>nombres-en.txt</code> and <code>nombres-es.txt</code>.</li>',
+'<li>It was generated, not hand-edited. Nothing in this section is written by hand except the seven original spells.</li>',
+'</ol>',
+    ],
+    es => [
+'<p>Esta p&aacute;gina es el filtro por el que tiene que pasar toda ficha del cat&aacute;logo. La primera mitad pregunta si un conjuro puede existir siquiera en este mundo, que es una pregunta sobre el sistema de magia y no tiene nada que ver con el equilibrio. La segunda mitad pregunta qu&eacute; n&uacute;meros le tocan, y esa parte no se inventa: est&aacute; medida sobre las 347 fichas ya escritas.</p>',
+'<p>Est&aacute; pensada para tres trabajos: adaptar un conjuro de una edici&oacute;n vieja, importar uno de otro sitio y escribir uno de cero. El orden importa. Un conjuro que no pasa el filtro no llega a tener n&uacute;meros &mdash; llega a tener una l&iacute;nea en los descatalogados diciendo por qu&eacute;.</p>',
+
+'<h2>1. El filtro</h2>',
+'<p>Diez preguntas, y con un solo no basta. Cada una sale directamente de la doctrina; la referencia entre par&eacute;ntesis es la secci&oacute;n de la p&aacute;gina de Astronom&iacute;a de la que viene.</p>',
+'<ol class="ruleset">',
+'<li><b>&iquest;Es algo que se le hace al &Eacute;ter?</b> Todo conjuro es reunir, transformar, partir, juntar o entregar, y nada m&aacute;s. Si el efecto no se puede contar como una de esas cinco cosas, no es un conjuro: es un deseo con tiempo de lanzamiento. <i>(Las cinco operaciones)</i></li>',
+'<li><b>&iquest;Fabrica algo de la nada?</b> Solo el Crisol convierte &Eacute;ter en sustancia, y solo la alquimia tiene el Crisol. Nada invoca a una criatura, a un aliado ni a un siervo: lo que no est&aacute; no se puede llamar, porque no hay sitio desde el que llamarlo. <i>(Los tres umbrales)</i></li>',
+'<li><b>&iquest;Necesita un sitio que no sea este?</b> No hay otros planos, ni bolsillos, ni un m&aacute;s all&aacute; donde guardar cosas o por donde pasar. El espacio se cruza; no se fabrica. <i>(Cosmolog&iacute;a &rsaquo; Espacio)</i></li>',
+'<li><b>&iquest;Deshace una muerte?</b> Un alma se reparte en el &Eacute;ter cuando el cuerpo se para. No queda nada que traer de vuelta, y ninguna cantidad de &Eacute;ter la vuelve a juntar. <i>(El &Eacute;ter)</i></li>',
+'<li><b>&iquest;Lee lo que todav&iacute;a no ha ocurrido?</b> Nadie ha escrito el futuro. Un desenlace probable de lo que ya est&aacute; en marcha es una cuenta y se admite; preguntarle a un dios qu&eacute; viene, no. <i>(Cosmolog&iacute;a &rsaquo; Tiempo)</i></li>',
+'<li><b>&iquest;Dura solo?</b> Nada dura solo. Una duraci&oacute;n larga significa que hay alguien sosteni&eacute;ndolo con la mano puesta, o es una concesi&oacute;n que hace el juego y no la ficci&oacute;n. No existen los efectos permanentes, ni los objetos encantados, ni las trampas que siguen armadas al cabo de los a&ntilde;os. <i>(Nada dura solo)</i></li>',
+'<li><b>&iquest;La ilusi&oacute;n se hace en el aire o en una mente?</b> En una mente, siempre. As&iacute; que una ilusi&oacute;n alcanza a quien iba dirigida y a nadie m&aacute;s, y al que mira al lado hay que alcanzarlo aparte o no ve nada. <i>(Espiritismo &rsaquo; Mente)</i></li>',
+'<li><b>&iquest;Act&uacute;a sobre el mundo o sobre el &Eacute;ter?</b> La astronom&iacute;a sola act&uacute;a sobre el &Eacute;ter est&eacute; donde est&eacute;, incluido el que corre dentro de un cuerpo y el que otra mano sostiene. No forja materia y no cierra heridas. Si un efecto trabaja sobre el mundo sin cruzar un umbral, est&aacute; en la Disciplina equivocada. <i>(Lo que hace la astronom&iacute;a)</i></li>',
+'<li><b>&iquest;Depende de un gesto, de un sello o de que un objeto sea m&aacute;gico?</b> Las Transformaciones se hacen con la mente. La palabra ayuda y nunca manda; el papel no conduce nada. Los componentes se quedan en la ficha porque el juego los usa, pero de ellos no cuelga nada de la ficci&oacute;n. <i>(La Constelaci&oacute;n)</i></li>',
+'<li><b>&iquest;Sabr&iacute;as decir qu&eacute; cuesta?</b> Todo conjuro se paga en Concentraci&oacute;n, Fatiga Mental o Intoxicaci&oacute;n, y la ficha deber&iacute;a dejar reconocer cu&aacute;l de las tres. Un efecto que no cuesta nada y no arriesga nada es Asterismo, no un conjuro. <i>(Lo que cuesta)</i></li>',
+'</ol>',
+'<p>Dos de estas son m&aacute;s blandas de lo que parecen. La 3 y la 4 son absolutas y lo han sido siempre. La 6 es la que el cat&aacute;logo incumple a la vista de todos: las fichas conservan las duraciones del juego, as&iacute; que una guarda escrita aqu&iacute; sigue durando una hora. Donde las dos cosas no coincidan, la ficha es lo que se juega.</p>',
+
+'<h2>2. D&oacute;nde cae</h2>',
+'<p>Un conjuro que pasa el filtro hay que colocarlo, y colocarlo es la parte que m&aacute;s veces sale mal. La decisi&oacute;n se toma en este orden, y la primera regla resuelve sola casi todas las discusiones.</p>',
+'<p><b>Lo que se pone encima de algo que ya existe es astronom&iacute;a. Solo es alquimia si la materia pasa a ser otra cosa.</b> Un filo envuelto en &Eacute;ter es astronom&iacute;a, porque el filo sigue siendo un filo. Un filo convertido en vidrio es alquimia. Esta regla sola es la que sac&oacute; de la alquimia a <i>arma m&aacute;gica</i>, a <i>armadura m&aacute;gica</i> y a toda la familia de los recubrimientos, y conviene aplicarla antes que ninguna otra.</p>',
+'<ol class="ruleset">',
+'<li><b>&iquest;Cruza alg&uacute;n umbral?</b> Si el &Eacute;ter sigue siendo &Eacute;ter cuando el conjuro termina &mdash; luz, fuerza, guardas, y todo lo que detecta, estorba o deshace magia &mdash;, es astronom&iacute;a y ah&iacute; se queda. Es el grupo m&aacute;s grande del cat&aacute;logo y la respuesta por defecto.</li>',
+'<li><b>&iquest;La materia pasa a ser otra materia?</b> Alquimia, y despu&eacute;s el elemento en el que se convierte. Quince elementos, y los compuestos se alcanzan juntando dos: el fango es tierra y agua, el vapor es agua y fuego.</li>',
+'<li><b>&iquest;Trabaja sobre el cu&aacute;ndo, sobre el d&oacute;nde o sobre el peso?</b> Cosmolog&iacute;a, y despu&eacute;s Tiempo, Espacio o Gravedad. Ver a distancia es Espacio, porque un sensor remoto son dos puntos puestos uno junto a otro.</li>',
+'<li><b>&iquest;Trabaja sobre algo vivo?</b> Espiritismo, y despu&eacute;s sobre qu&eacute; parte. Sobre lo que alguien percibe, siente, recuerda, decide o se ve obligado a hacer: Mente, y una de sus cinco Ramas. Sobre algo vivo sin palabra: Naturaleza, y animal, planta u hongo. Sobre el pulso mismo: Vida o Muerte.</li>',
+'<li><b>&iquest;Cruza un segundo umbral?</b> Solo en una Convergencia, solo en la cima del arte, y se escribe en <code>cruces.txt</code> en vez de cambi&aacute;ndole la Disciplina. En el cat&aacute;logo hay exactamente uno.</li>',
+'</ol>',
+'<p>Cuando dos respuestas parecen buenas, gana la menos profunda. Un conjuro que podr&iacute;a ser astronom&iacute;a o una Disciplina es astronom&iacute;a; uno que podr&iacute;a ser una subdivisi&oacute;n o su madre va a la madre. El &aacute;rbol est&aacute; para describir el cat&aacute;logo, no para dejarlo ordenado.</p>',
+
+'<h2>3. Los n&uacute;meros</h2>',
+'<p>Esto no son convenios que decidiera nadie. Es lo que el cat&aacute;logo ya hace, medido sobre las 340 fichas importadas, y un conjuro nuevo que se salga mucho necesita una raz&oacute;n.</p>',
+'<p><b>Da&ntilde;o.</b> La cifra es la media del dado de da&ntilde;o mayor de la ficha, a su nivel base y antes de subirlo de espacio. La mediana es el conjuro que deber&iacute;as estar escribiendo; el techo es lo que alcanzan los casos raros, y todos ellos compran ese techo con algo &mdash; una salvaci&oacute;n que lo corta, un solo objetivo, un componente que se consume.</p>',
+'<table class="ruletable"><thead><tr><th>Nivel</th><th>Mediana</th><th>Techo</th><th>El que est&aacute; en el techo</th></tr></thead><tbody>'
+. '<tr><td>Truco</td><td>4,5</td><td>6,5</td><td>Rociada venenosa</td></tr>'
+. '<tr><td>1</td><td>9</td><td>14</td><td>Proyectil gu&iacute;a</td></tr>'
+. '<tr><td>2</td><td>7</td><td>13,5</td><td>Pica mental</td></tr>'
+. '<tr><td>3</td><td>16,5</td><td>28</td><td>Bola de fuego</td></tr>'
+. '<tr><td>4</td><td>14</td><td>36</td><td>Marchitar</td></tr>'
+. '<tr><td>5</td><td>22,5</td><td>49,5</td><td>Contagio</td></tr>'
+. '<tr><td>6</td><td>33</td><td>49</td><td>Da&ntilde;ar</td></tr>'
+. '<tr><td>7</td><td>39</td><td>55</td><td>S&iacute;mbolo</td></tr>'
+. '<tr><td>8</td><td>42</td><td>65</td><td>Aturdimiento</td></tr>'
+. '<tr><td>9</td><td>27,5</td><td>78</td><td>Palabra de poder: matar</td></tr>'
+. '</tbody></table>',
+'<p>Hay dos cosas que leer ah&iacute;. La curva no es lisa &mdash; el nivel 2 baja por debajo del 1 y el nivel 9 tiene una mediana peque&ntilde;a, porque en esos dos niveles el cat&aacute;logo est&aacute; comprando otra cosa que no es da&ntilde;o. Y el techo est&aacute; en torno al doble de la mediana en todas partes, que es el margen que tiene un conjuro excepcional.</p>',
+'<p><b>La salvaci&oacute;n.</b> Se elige por lo que el conjuro le hace a un cuerpo, y en esto el cat&aacute;logo es coherente: Destreza para todo aquello de lo que uno podr&iacute;a apartarse, Constituci&oacute;n para lo que hay que aguantar, Sabidur&iacute;a para lo que va dirigido a una mente. Fuerza aparece donde algo mueve un cuerpo a la fuerza. Inteligencia y Carisma son raras y deben seguir si&eacute;ndolo: en todo el cat&aacute;logo hay tres salvaciones de Inteligencia y diecisiete de Carisma.</p>',
+'<p><b>&Aacute;reas.</b> La esfera de 20 pies de radio es el patr&oacute;n del &aacute;rea de nivel 3 y aparece m&aacute;s veces que ninguna otra forma en ning&uacute;n nivel. Los conos van de 15 pies abajo a 60 arriba. Las emanaciones van de 10 a 30 pies y son de los conjuros centrados en quien canaliza. Un &aacute;rea nueva que no tenga una de esas medidas deber&iacute;a tener un motivo.</p>',
+'<p><b>Alcance.</b> Cuatro alcances cubren tres cuartas partes del cat&aacute;logo: personal (72 fichas), toque (67), 60 pies (65) y 30 pies (47). 120 pies es el alcance largo; de 150 para arriba hay un pu&ntilde;ado de fichas y casi ninguna hace da&ntilde;o.</p>',
+'<p><b>Duraci&oacute;n y Concentraci&oacute;n.</b> Alrededor de la mitad de todo lo que hay de nivel 2 para arriba pide Concentraci&oacute;n, y ese es el precio de cualquier cosa que siga ocurriendo. Por debajo, el nivel 1 se queda en un tercio y los trucos en un d&eacute;cimo. Un conjuro que dura y no pide Concentraci&oacute;n est&aacute; reclamando algo, y la ficha deber&iacute;a ense&ntilde;ar con qu&eacute; lo pag&oacute;.</p>',
+'<p><b>Subirlo de espacio.</b> 111 de las 340 fichas escalan. El convenio abrumador es <i>aumenta en 1d6</i> o <i>en 1d8 por cada nivel por encima de N</i>, con el dado que el conjuro ya tira. Todo lo que escale m&aacute;s de un dado por nivel, o que a&ntilde;ada un efecto nuevo al subirlo, es excepcional.</p>',
+
+'<h2>4. La forma de la ficha</h2>',
+'<p>Las reglas de redacci&oacute;n viven en <code>doc/redaccion.md</code> y siguen al pie de la letra el <i>Manual del Jugador</i> de 2024. Las tres que m&aacute;s se incumplen:</p>',
+'<ol class="ruleset">',
+'<li><b>El ingl&eacute;s capitaliza los t&eacute;rminos de juego; el espa&ntilde;ol no.</b> <i>Force damage</i> y <i>Dexterity saving throw</i>, pero <i>da&ntilde;o de fuerza</i> y <i>tirada de salvaci&oacute;n de Destreza</i>. Es el convenio del propio manual en cada idioma, no una elecci&oacute;n.</li>',
+'<li><b>El atributo del tipo de da&ntilde;o no se traduce nunca.</b> <code>data-type</code> es la clave con la que se le piden los iconos al servicio, y va en ingl&eacute;s en los dos &aacute;rboles.</li>',
+'<li><b>Las salvaciones y los usos tienen f&oacute;rmulas fijas.</b> No se improvisan: se copia la forma de una ficha que ya la tenga.</li>',
+'</ol>',
+
+'<h2>5. La lista de comprobaci&oacute;n</h2>',
+'<p>Antes de dar una ficha por terminada:</p>',
+'<ol class="ruleset">',
+'<li>Pasa las diez preguntas del filtro, o est&aacute; en <code>descatalogados.txt</code> con su motivo escrito en los dos idiomas.</li>',
+'<li>Tiene Disciplina en <code>disciplinas.txt</code> y, si baja m&aacute;s, subdivisi&oacute;n en <code>subdisciplinas.txt</code>.</li>',
+'<li>Su da&ntilde;o cae entre la mediana y el techo de su nivel, o la ficha dice a qu&eacute; renunci&oacute;.</li>',
+'<li>Su salvaci&oacute;n se corresponde con lo que le hace a un cuerpo.</li>',
+'<li>Escala como escala el cat&aacute;logo, o no escala en absoluto.</li>',
+'<li>Existe en los dos idiomas, en la misma ruta, con el nombre visible puesto en <code>nombres-en.txt</code> y <code>nombres-es.txt</code>.</li>',
+'<li>Se ha generado, no editado a mano. Aqu&iacute; no hay nada escrito a mano salvo los siete conjuros propios.</li>',
+'</ol>',
+    ],
+  },
+  stars => [],
+},
+{
   key => 'uncatalogued', kind => 'limbo', parent => undef,
   name => { en => 'Uncatalogued', es => 'Descatalogados' },
   lead => { en => 'Spells that hang from no Discipline, and why',

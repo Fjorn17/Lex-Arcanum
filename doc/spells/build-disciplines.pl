@@ -359,6 +359,12 @@ sub containment_svg {
         note => $lang eq 'es'
             ? 'Sin Disciplina asignada. No son una regi&oacute;n del arte: son trabajo pendiente.'
             : 'No Discipline assigned. Not a region of the art: work still to do.');
+    $leg .= $L->(cls => ' dl-doc', href => './rules.html', n => '',
+        kicker => $lang eq 'es' ? 'C&oacute;mo se hace' : 'How it is made',
+        name => ent_es($NODE{rules}{name}{$lang}),
+        note => $lang eq 'es'
+            ? 'El filtro que pasa toda ficha: qu&eacute; puede existir, d&oacute;nde cae y qu&eacute; n&uacute;meros le tocan.'
+            : 'The filter every entry passes: what may exist, where it goes and what its numbers have to be.');
     $leg .= qq{        </div>\n};
 
     return qq{<div class="diagram-wrap">\n        $s        $leg      </div>\n};
@@ -610,7 +616,8 @@ sub render_node {
     # La astronomia lleva su doctrina plegada, con indice al lado; las demas
     # paginas son cortas y van de corrido.
     my ($toc, $body);
-    ($toc, $body) = doctrine($node, $lang) if $node->{key} eq 'astronomy';
+    ($toc, $body) = doctrine($node, $lang)
+        if $node->{key} eq 'astronomy' || $node->{kind} eq 'doc';
     $body //= join "\n          ", @{ $node->{body}{$lang} };
     $toc  //= '';
 
@@ -668,7 +675,9 @@ HTML
           $stars
         </section>
 HTML
-    if ($node->{kind} eq 'limbo') {
+    if ($node->{kind} eq 'doc') {
+        # una pagina de documentacion no tiene conjuros que listar
+    } elsif ($node->{kind} eq 'limbo') {
         $out .= uncatalogued_sections($lang);
     } else {
         $out .= <<"HTML";
@@ -698,7 +707,8 @@ HTML
 
 HTML
     $out .= page_foot(up => $UP,
-                      scripts => $node->{key} eq 'astronomy' ? ['astronomy.js'] : []);
+                      scripts => ($node->{key} eq 'astronomy' || $node->{kind} eq 'doc')
+                                    ? ['astronomy.js'] : []);
     return ($file, $out);
 }
 

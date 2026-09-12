@@ -3279,3 +3279,65 @@
     .findermain .spellfilter {
         margin-bottom: 18px;
     }
+
+    /* ---- la pagina de reglas de escritura: listas numeradas y tablas ---- */
+
+    ol.ruleset {
+        margin: 14px 0 18px;
+        padding-left: 0;
+        list-style: none;
+        counter-reset: rule;
+    }
+
+    ol.ruleset li {
+        position: relative;
+        counter-increment: rule;
+        margin: 0 0 12px;
+        padding: 10px 14px 10px 44px;
+        background: var(--panel-2);
+        border-left: 2px solid var(--rule);
+        line-height: 1.55;
+    }
+
+    ol.ruleset li::before {
+        content: counter(rule, decimal-leading-zero);
+        position: absolute;
+        left: 13px;
+        top: 11px;
+        font-family: var(--display);
+        font-size: .82rem;
+        letter-spacing: .5px;
+        color: var(--accent);
+    }
+
+    ol.ruleset li i { color: var(--muted) }
+
+    table.ruletable {
+        width: 100%;
+        margin: 14px 0 18px;
+        border-collapse: collapse;
+        font-size: .93rem;
+    }
+
+    table.ruletable th,
+    table.ruletable td {
+        padding: 6px 10px;
+        border-bottom: 1px solid var(--hair);
+        text-align: left;
+    }
+
+    table.ruletable thead th {
+        font-family: var(--display);
+        font-size: .78rem;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: var(--subhead);
+        border-bottom: 1px solid var(--rule);
+    }
+
+    table.ruletable td:nth-child(2),
+    table.ruletable td:nth-child(3) { font-variant-numeric: tabular-nums }
+    table.ruletable td:nth-child(4) { color: var(--muted) }
+
+    .dl-row.dl-doc { border-left-color: var(--accent) }
+    .dl-row.dl-doc .dl-n { display: none }
