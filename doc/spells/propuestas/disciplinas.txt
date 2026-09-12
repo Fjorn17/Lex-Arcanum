@@ -42,3 +42,10 @@ Burst of Nettles	Spiritism
 Delay Pain	Spiritism
 Diagnose Illness	Spiritism
 Howling Agony	Spiritism
+Scald	Alchemy
+Boiler	Alchemy
+Steam Vent	Alchemy
+White Brand	Alchemy
+Incandescent Lance	Alchemy
+White Heat	Alchemy
+Shrapnel	Alchemy

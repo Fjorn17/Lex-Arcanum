@@ -1,7 +1,8 @@
-# Candidatos de Pathfinder · Ultimate Magic
+# Candidatos
 
-43 conjuros sacados del índice de *Ultimate Magic* y **reescritos de cero** para este
-sistema. Marca los que quieras quedarte y dime; moverlos al catálogo es un paso mecánico
+50 candidatos: 43 sacados del indice de *Ultimate Magic* de Pathfinder y **reescritos de cero**
+para este sistema, y 7 escritos aquí desde cero para llenar las Ramas que no tenían nada (Vapor,
+Incandescencia y Metal). Marca los que quieras quedarte y dime; moverlos al catálogo es un paso mecánico
 (está explicado abajo).
 
 ## Antes de nada, lo legal
@@ -58,6 +59,15 @@ Lo hago yo de una tirada en cuanto me digas cuáles.
 - [ ] **Tormenta de ceniza** · nivel 3 · concentración — Ceniza cayendo: oscurece, estorba y quema. Ceniza solo tenía un conjuro.  
       *Ash Storm* · [ficha en inglés](en/ash-storm.html) · [en español](es/ash-storm.html)
 
+### Alquimia › Incandescencia
+
+- [ ] **Marca blanca** · nivel 1 · concentración —   
+      *White Brand* · [ficha en inglés](en/white-brand.html) · [en español](es/white-brand.html)
+- [ ] **Lanza incandescente** · nivel 3 —   
+      *Incandescent Lance* · [ficha en inglés](en/incandescent-lance.html) · [en español](es/incandescent-lance.html)
+- [ ] **Al rojo blanco** · nivel 7 · concentración —   
+      *White Heat* · [ficha en inglés](en/white-heat.html) · [en español](es/white-heat.html)
+
 ### Alquimia › Lava
 
 - [ ] **Lluvia de rescoldo** · nivel 5 · concentración — Lluvia de rescoldo. Lava, que estaba vacía hasta erupción volcánica.  
@@ -74,6 +84,8 @@ Lo hago yo de una tirada en cuanto me digas cuáles.
 
 - [ ] **Hilo de acero** · nivel 2 — Reacción: un hilo de la ropa cruza a acero y para el golpe. Metal.  
       *Steel Thread* · [ficha en inglés](en/steel-thread.html) · [en español](es/steel-thread.html)
+- [ ] **Metralla** · nivel 3 —   
+      *Shrapnel* · [ficha en inglés](en/shrapnel.html) · [en español](es/shrapnel.html)
 
 ### Alquimia › Bruma
 
@@ -89,6 +101,15 @@ Lo hago yo de una tirada en cuanto me digas cuáles.
 
 - [ ] **Viento abrasivo** · nivel 5 · concentración — Cilindro de arenilla que se mueve. Arena, que estaba casi vacía.  
       *Scouring Wind* · [ficha en inglés](en/scouring-wind.html) · [en español](es/scouring-wind.html)
+
+### Alquimia › Vapor
+
+- [ ] **Escaldadura** · nivel 1 —   
+      *Scald* · [ficha en inglés](en/scald.html) · [en español](es/scald.html)
+- [ ] **Caldera** · nivel 4 —   
+      *Boiler* · [ficha en inglés](en/boiler.html) · [en español](es/boiler.html)
+- [ ] **Bocanada** · nivel 6 —   
+      *Steam Vent* · [ficha en inglés](en/steam-vent.html) · [en español](es/steam-vent.html)
 
 ### Alquimia › Estruendo
 
@@ -150,10 +171,10 @@ Lo hago yo de una tirada en cuanto me digas cuáles.
 
 ### Espiritismo › Ilusiones
 
-- [ ] **Arma de sombra** · nivel 1 · concentración — Arma de sombra que deja de funcionar contra quien la estudie.  
-      *Shadow Weapon* · [ficha en inglés](en/shadow-weapon.html) · [en español](es/shadow-weapon.html)
 - [ ] **Disfraz espectral** · nivel 1 · concentración — Pareces muerto. Se cae en cuanto alguien te toca.  
       *Ghostly Disguise* · [ficha en inglés](en/ghostly-disguise.html) · [en español](es/ghostly-disguise.html)
+- [ ] **Arma de sombra** · nivel 1 · concentración — Arma de sombra que deja de funcionar contra quien la estudie.  
+      *Shadow Weapon* · [ficha en inglés](en/shadow-weapon.html) · [en español](es/shadow-weapon.html)
 - [ ] **Velo repugnante** · nivel 3 · concentración — Ilusión repugnante que solo ven los que fallan. Enseña por qué una ilusión se hace en cada mente.  
       *Loathsome Veil* · [ficha en inglés](en/loathsome-veil.html) · [en español](es/loathsome-veil.html)
 
@@ -198,10 +219,10 @@ Lo hago yo de una tirada en cuanto me digas cuáles.
 
 ### Espiritismo › Sujeción
 
-- [ ] **Prohibir un acto** · nivel 1 — Le quita una actividad de la lista. La mitad barata de la Sujeción.  
-      *Forbid Action* · [ficha en inglés](en/forbid-action.html) · [en español](es/forbid-action.html)
 - [ ] **Orden homicida** · nivel 1 — Un solo acto impuesto: atacar a quien tenga más cerca.  
       *Murderous Command* · [ficha en inglés](en/murderous-command.html) · [en español](es/murderous-command.html)
+- [ ] **Prohibir un acto** · nivel 1 — Le quita una actividad de la lista. La mitad barata de la Sujeción.  
+      *Forbid Action* · [ficha en inglés](en/forbid-action.html) · [en español](es/forbid-action.html)
 
 ---
 
@@ -209,16 +230,20 @@ Lo hago yo de una tirada en cuanto me digas cuáles.
 
 | Rama | Tenía | Tendría |
 | --- | --- | --- |
+| Vapor | 0 | 3 |
+| Incandescencia | 0 | 3 |
 | Hongos | 0 | 1 |
 | Arena | 1 | 2 |
 | Lava | 1 | 2 |
 | Ceniza | 1 | 2 |
-| Metal | 3 | 4 |
+| Metal | 3 | 5 |
 | Memoria | 3 | 6 |
 | Agua | 3 | 6 |
 | Estruendo | 3 | 5 |
 | Rayo | 4 | 6 |
 | Ánimo | 9 | 12 |
 
-Siguen vacías **Vapor** e **Incandescencia**, y en el índice de *Ultimate Magic* no hay nada
-que sirva para ninguna de las dos. Habrá que escribirlas de cero.
+Vapor e Incandescencia no tenían nada y en el índice de *Ultimate Magic* no hay nada que sirva para
+ninguna de las dos, así que sus tres conjuros cada una están escritos aquí contra lo que dice de ellas
+la taxonomía: el vapor ocupa muchísimo más sitio del que ocupaba y empuja contra lo que lo encierre,
+y la incandescencia es materia que brilla por su propio calor, que no es lo mismo que Éter brillando.

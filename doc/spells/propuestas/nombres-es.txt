@@ -41,3 +41,10 @@ Burst of Nettles	Estallido de ortigas
 Delay Pain	Aplazar el dolor
 Diagnose Illness	Diagnosticar el mal
 Howling Agony	Agonía aullante
+Scald	Escaldadura
+Boiler	Caldera
+Steam Vent	Bocanada
+White Brand	Marca blanca
+Incandescent Lance	Lanza incandescente
+White Heat	Al rojo blanco
+Shrapnel	Metralla

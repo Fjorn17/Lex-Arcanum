@@ -578,3 +578,101 @@ One creature you can see within range makes a Constitution saving throw. On a fa
 At the start of each of its turns, the creature takes 2d8 Psychic damage, and on that turn it can take either an action or a Bonus Action, not both.
 The creature repeats the save at the end of each of its turns, ending the effect on itself on a success. A creature that cannot feel pain is unaffected.
 Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 2.
+== Scald
+level: 1
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: Self (15-foot cone)
+components: V, S
+duration: Instantaneous
+body:
+Water and fire meet at the Crucible and what comes out takes up far more room than it did. The cheapest thing this element does is simply to arrive somewhere too small for it.
+Each creature in a 15-foot Cone makes a Dexterity saving throw. On a failed save, a creature takes 3d6 Fire damage and has the Blinded condition until the end of its next turn. On a successful save, it takes half as much damage only and is not Blinded.
+Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 1.
+
+== Boiler
+level: 4
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: 60 feet
+components: V, S, M (a drop of water on a hot stone)
+duration: Instantaneous
+body:
+Steam shoves hard at whatever encloses the space it appears in, and the whole point of this spell is choosing a space that encloses something.
+Choose a point you can see within range. Steam fills a 20-foot-radius Sphere centered on it. Each creature in the Sphere makes a Constitution saving throw, taking 6d6 Fire damage on a failed save or half as much damage on a successful one.
+If the Sphere is wholly or mostly enclosed — a room, a cellar, a corridor, the inside of anything — the damage is 8d6 instead, and a creature that fails its save is also pushed 15 feet towards the nearest wall and knocked Prone.
+Anything in the area that could be fogged, soaked or warped is, and the air stays unbreathable for one round after the spell ends.
+Using a Higher-Level Spell Slot. Both damage values increase by 1d6 for each spell slot level above 4.
+
+== Steam Vent
+level: 6
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: Self (60-foot Line)
+components: V, S
+duration: Instantaneous
+body:
+A 60-foot-long, 10-foot-wide Line of scalding vapor drives out from you under its own pressure.
+Each creature in the Line makes a Constitution saving throw. On a failed save, a creature takes 12d6 Fire damage and is pushed 20 feet away from you. On a successful save, it takes half as much damage only and is not pushed.
+The Line is Heavily Obscured until the start of your next turn, on both sides. A creature that ends its turn in that vapor takes 2d6 Fire damage.
+Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 6.
+
+== White Brand
+level: 1
+school: Transmutation
+classes: Cleric, Druid, Sorcerer, Wizard
+casting: Bonus Action
+range: Touch
+components: V, S
+duration: Concentration, up to 1 minute
+body:
+Fire and discharge have this in common: they shine while they are consumed. Here the shining is left in the metal, which goes on being metal the whole time.
+You touch a weapon, and for the duration it glows white-hot. It sheds Bright Light in a 20-foot radius and Dim Light for another 20 feet, and its attacks deal an extra 1d6 Fire damage on a hit.
+The weapon cannot be sheathed, put in a pack or set down on anything that burns, and its wielder knows exactly where in the dark everyone else is looking.
+Using a Higher-Level Spell Slot. The extra damage increases by 1d6 for each spell slot level above 1.
+
+== Incandescent Lance
+level: 3
+school: Transmutation
+classes: Sorcerer, Wizard
+casting: Action
+range: 90 feet
+components: V, S
+duration: Instantaneous
+body:
+Matter shining from its own heat, drawn out into a thread and sent. It is not light, and being in shadow is no help at all.
+Make a ranged spell attack against one creature or object you can see within range. On a hit, the target takes 7d6 Fire damage.
+On a hit against a creature, the target also glows: until the end of your next turn it sheds Dim Light in a 10-foot radius, it cannot benefit from the Invisible condition or from Heavily Obscured terrain, and attack rolls against it have Advantage.
+Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 3.
+
+== White Heat
+level: 7
+school: Transmutation
+classes: Druid, Sorcerer, Wizard
+casting: Action
+range: 120 feet
+components: V, S, M (a pinch of iron filings)
+duration: Concentration, up to 1 minute
+body:
+Every piece of metal and stone in a 30-foot-radius Sphere centered on a point you can see within range is brought to white heat and held there.
+When the Sphere appears, and when a creature enters it or ends its turn there, that creature makes a Constitution saving throw, taking 8d6 Fire damage on a failed save or half as much damage on a successful one. A creature wearing metal armour or carrying a significant amount of metal has Disadvantage on that save.
+Objects in the area that are not being worn or carried are damaged: metal softens and warps, stone cracks, and anything that can burn does. The area is Bright Light for its radius and Dim Light for a further 60 feet.
+Nothing of this reaches flesh directly. It reaches what flesh is wearing, and it is a spell against soldiers rather than against animals.
+Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 7.
+
+== Shrapnel
+level: 3
+school: Transmutation
+classes: Sorcerer, Wizard
+casting: Action
+range: Self (20-foot Emanation)
+components: V, S, M (a handful of nails)
+duration: Instantaneous
+body:
+Metal is the most expensive Star in the Discipline, and this spell spends the lot of it at once: it makes the metal and throws it in the same breath, which is exactly why nothing is left behind to pick up.
+Each creature other than you in a 20-foot Emanation makes a Dexterity saving throw, taking 5d6 Piercing damage on a failed save or half as much damage on a successful one.
+A creature that fails the save by 5 or more takes an extra 1d6 Piercing damage at the start of each of its turns until it or another creature takes an action to pull the fragments out, or until it receives any magical healing.
+Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 3.

@@ -320,3 +320,59 @@ Una criatura que veas dentro del alcance hace una tirada de salvación de Consti
 Al principio de cada uno de sus turnos, la criatura recibe {{2d8|Psychic}} de daño, y en ese turno puede realizar una acción o una acción adicional, pero no las dos.
 La criatura repite la salvación al final de cada uno de sus turnos y se libra si la supera. Una criatura que no pueda sentir dolor no se ve afectada.
 **Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d8 por cada nivel por encima de 2 que tenga el espacio.
+== Scald
+components: V, S
+body:
+El agua y el fuego se encuentran en el Crisol y lo que sale ocupa muchísimo más sitio del que ocupaba. Lo más barato que hace este elemento es sencillamente llegar a un sitio que se le queda pequeño.
+Cada criatura en un cono de 15 pies hace una tirada de salvación de Destreza. Si la falla, recibe {{3d6|Fire}} de daño y queda cegada hasta el final de su siguiente turno. Si la supera, recibe solo la mitad del daño y no queda cegada.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 1 que tenga el espacio.
+
+== Boiler
+components: V, S, M (una gota de agua sobre una piedra caliente)
+body:
+El vapor empuja con fuerza contra lo que encierre el espacio en el que aparece, y todo el sentido de este conjuro está en elegir un espacio que encierre algo.
+Elige un punto que veas dentro del alcance. El vapor llena una esfera de 20 pies de radio centrada en él. Cada criatura que esté en la esfera hace una tirada de salvación de Constitución y recibe {{6d6|Fire}} de daño si la falla, o la mitad si la supera.
+Si la esfera está encerrada del todo o casi del todo —una sala, un sótano, un pasillo, el interior de cualquier cosa—, el daño es de {{8d6|Fire}} en lugar de eso, y una criatura que falle la salvación queda además empujada 15 pies hacia la pared más cercana y derribada.
+Todo lo que haya en la zona y pueda empañarse, calarse o alabearse lo hace, y el aire sigue sin poder respirarse durante un asalto más después de que el conjuro termine.
+**Con un espacio de conjuro de nivel superior.** Los dos daños aumentan en 1d6 por cada nivel por encima de 4 que tenga el espacio.
+
+== Steam Vent
+components: V, S
+body:
+Una línea de vapor hirviendo de 60 pies de largo y 10 de ancho sale disparada desde ti por su propia presión.
+Cada criatura que esté en la línea hace una tirada de salvación de Constitución. Si la falla, recibe {{12d6|Fire}} de daño y queda empujada 20 pies. Si la supera, recibe solo la mitad del daño y no la empujan.
+La línea queda fuertemente oscurecida hasta el principio de tu siguiente turno, por los dos lados. Una criatura que termine su turno en ese vapor recibe {{2d6|Fire}} de daño.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 6 que tenga el espacio.
+
+== White Brand
+components: V, S
+body:
+El fuego y la descarga tienen esto en común: alumbran mientras se consumen. Aquí el alumbrar se queda en el metal, que sigue siendo metal todo el rato.
+Tocas un arma y, mientras dure el conjuro, queda al rojo blanco. Emite luz brillante en un radio de 20 pies y luz tenue otros 20, y sus ataques hacen {{1d6|Fire}} de daño adicional cuando aciertan.
+El arma no se puede envainar, ni guardar en un zurrón, ni dejar encima de nada que arda, y quien la lleva sabe exactamente adónde está mirando todo el mundo en la oscuridad.
+**Con un espacio de conjuro de nivel superior.** El daño adicional aumenta en 1d6 por cada nivel por encima de 1 que tenga el espacio.
+
+== Incandescent Lance
+components: V, S
+body:
+Materia que brilla por su propio calor, estirada en un hilo y mandada. No es luz, y estar en la sombra no sirve absolutamente de nada.
+Haz un ataque de conjuro a distancia contra una criatura u objeto que veas dentro del alcance. Si aciertas, el objetivo recibe {{7d6|Fire}} de daño.
+Si aciertas a una criatura, el objetivo además queda al rojo: hasta el final de tu siguiente turno emite luz tenue en un radio de 10 pies, no puede aprovechar el estado invisible ni el terreno fuertemente oscurecido, y las tiradas de ataque contra él tienen ventaja.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 3 que tenga el espacio.
+
+== White Heat
+components: V, S, M (una pizca de limaduras de hierro)
+body:
+Todo el metal y toda la piedra que haya en una esfera de 30 pies de radio centrada en un punto que veas dentro del alcance se ponen al rojo blanco y se quedan ahí.
+Cuando la esfera aparece, y cuando una criatura entra en ella o termina su turno dentro, esa criatura hace una tirada de salvación de Constitución y recibe {{8d6|Fire}} de daño si la falla, o la mitad si la supera. Una criatura que lleve armadura metálica o una cantidad apreciable de metal encima tiene desventaja en esa salvación.
+Los objetos de la zona que nadie lleve puestos ni encima se estropean: el metal se ablanda y se alabea, la piedra se raja, y lo que pueda arder arde. La zona tiene luz brillante en todo su radio y luz tenue otros 60 pies.
+Nada de esto llega a la carne directamente. Llega a lo que la carne lleva puesto, y es un conjuro contra soldados antes que contra animales.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 7 que tenga el espacio.
+
+== Shrapnel
+components: V, S, M (un puñado de clavos)
+body:
+El metal es la Estrella más cara de la Disciplina, y este conjuro se la gasta entera de golpe: fabrica el metal y lo lanza en el mismo aliento, que es exactamente por lo que no queda nada que recoger después.
+Cada criatura que no seas tú en una emanación de 20 pies hace una tirada de salvación de Destreza y recibe {{5d6|Piercing}} de daño si la falla, o la mitad si la supera.
+Una criatura que falle la salvación por 5 o más recibe {{1d6|Piercing}} de daño adicional al principio de cada uno de sus turnos hasta que ella u otra criatura use una acción en sacarle los fragmentos, o hasta que reciba cualquier curación mágica.
+**Con un espacio de conjuro de nivel superior.** El daño aumenta en 1d6 por cada nivel por encima de 3 que tenga el espacio.

@@ -42,3 +42,10 @@ Burst of Nettles	plants
 Delay Pain	life
 Diagnose Illness	life
 Howling Agony	death
+Scald	steam
+Boiler	steam
+Steam Vent	steam
+White Brand	incandescence
+Incandescent Lance	incandescence
+White Heat	incandescence
+Shrapnel	metal
