@@ -121,15 +121,35 @@ my %SUBOF = read_map('subdisciplinas.txt');
 my $TAX = do './taxonomia.pl';
 die "taxonomia.pl: $@ $!\n" unless ref $TAX eq 'ARRAY';
 my %TAXNAME = map { $_->{key} => $_->{name} } @$TAX;
-my @SUBS_OF;                        # subdisciplinas por Disciplina, en orden
+my %NODE = map { $_->{key} => $_ } @$TAX;
+my %KIDS;                           # clave => hijos, en el orden del arbol
+push @{ $KIDS{ $_->{parent} } }, $_->{key} for grep { $_->{parent} } @$TAX;
+
+# La clave de un nodo y las de todo lo que cuelga de el. Un conjuro marcado
+# en una Rama cuenta tambien para su subdisciplina.
+sub descend { my ($k) = @_; return ($k, map { descend($_) } @{ $KIDS{$k} || [] }) }
+
+# La Disciplina de la que cuelga una subdivision, subiendo lo que haga falta.
+sub disc_of_sub {
+    my ($k) = @_;
+    my $n = $NODE{$k} or return '';
+    $n = $NODE{ $n->{parent} } while $n && $n->{parent} && $n->{kind} ne 'discipline';
+    return ($n && $n->{kind} eq 'discipline') ? $n->{key} : '';
+}
+
+my @SUBS_OF;                        # subdivisiones por Disciplina, con su altura
 {
     my %seen;
-    for my $n (@$TAX) {
-        next unless $n->{kind} eq 'sub';
-        push @{ $seen{ $n->{parent} } }, $n->{key};
+    for my $dk (qw(alchemy cosmology spiritism)) {
+        my @rows;
+        for my $k (@{ $KIDS{$dk} || [] }) {
+            push @rows, [ $k, 0 ];
+            push @rows, [ $_, 1 ] for @{ $KIDS{$k} || [] };
+        }
+        push @SUBS_OF, [ $dk, \@rows ] if @rows;
     }
-    @SUBS_OF = map { [ $_, $seen{$_} ] } grep { $seen{$_} } qw(alchemy cosmology spiritism);
-    push @SUBS_OF, [ 'uncatalogued', [ qw(none summon poison chromatic resurrection) ] ];
+    push @SUBS_OF, [ 'uncatalogued',
+                     [ map { [ $_, 0 ] } qw(none summon poison chromatic resurrection) ] ];
 }
 # Los descatalogados tienen pagina y salen en el indice: lo que no tienen es
 # Disciplina. Cada uno lleva escrito por que esta fuera.
@@ -432,6 +452,19 @@ sub sub_name {
 
 # La casilla de Disciplina de la ficha: enlaza a la Disciplina y, si el conjuro
 # baja a una subdisciplina, tambien a ella.
+# La cadena de subdivisiones a la que pertenece una clave, de la mas ancha a la
+# mas fina: 'illusion' devuelve ('mind','illusion'). Es lo que necesitan tanto
+# la ficha como el buscador, porque filtrar por Mente tiene que traer sus Ramas.
+sub sub_chain {
+    my ($k) = @_;
+    my @c;
+    while ($k && $NODE{$k} && ($NODE{$k}{kind} eq 'leaf' || $NODE{$k}{kind} eq 'sub')) {
+        unshift @c, $k;
+        $k = $NODE{$k}{parent};
+    }
+    return @c;
+}
+
 sub disc_link {
     my ($spell, $lang) = @_;
     if ($spell->{unc}) {
@@ -443,9 +476,10 @@ sub disc_link {
     my $dfile = $dkey eq 'astronomy' ? 'index.html' : "$dkey.html";
     my $out  = qq{<a href="./$dfile">}
              . ent_es(disc_name($spell->{discipline}, $lang, 1)) . qq{</a>};
-    my $skey = $SUBOF{ $spell->{name} } // '';
-    my $sn   = sub_name($skey, $lang);
-    $out .= qq{ &rsaquo; <a href="./$skey.html">} . ent_es($sn) . qq{</a>} if $sn;
+    for my $sk (sub_chain($SUBOF{ $spell->{name} } // '')) {
+        my $sn = sub_name($sk, $lang) or next;
+        $out .= qq{ &rsaquo; <a href="./$sk.html">} . ent_es($sn) . qq{</a>};
+    }
     # el segundo umbral, cuando lo hay
     if (my $x = $CROSS{ $spell->{name} }) {
         my $xf = $x eq 'astronomy' ? 'index.html' : "$x.html";
@@ -710,7 +744,11 @@ sub filter_bar {
         my ($disc, $keys) = @$g;
         my $glabel = ent_es(ucfirst $TAXNAME{$disc}{$lang});
         $subs .= qq{<optgroup label="$glabel">};
-        $subs .= qq{<option value="$_">@{[ ent_es(ucfirst sub_name($_, $lang)) ]}</option>} for @$keys;
+        for my $r (@$keys) {
+            my ($k, $depth) = @$r;
+            my $pad = $depth ? '&nbsp;&nbsp;&middot; ' : '';
+            $subs .= qq{<option value="$k">$pad@{[ ent_es(ucfirst sub_name($k, $lang)) ]}</option>};
+        }
         $subs .= qq{</optgroup>};
     }
 
@@ -767,7 +805,11 @@ sub render_index {
     my (%n_disc, %n_sub);
     for my $s (@all) {
         $n_disc{ lc $s->{disc} }++;
-        $n_sub{ $s->{sub} }++ if $s->{sub} && $s->{sub} ne '-';
+        next unless $s->{sub} && $s->{sub} ne '-';
+        # sube por el arbol: lo que esta en una Rama cuenta en su subdisciplina
+        my $k = $s->{sub};
+        while ($k) { $n_sub{$k}++; my $p = $NODE{$k} or last;
+                     $k = ($p->{kind} eq 'leaf') ? $p->{parent} : undef }
     }
     my $total = scalar @all;
 
@@ -811,11 +853,13 @@ sub render_index {
         my $df = $dk eq 'uncatalogued' ? 'uncatalogued.html' : "$dk.html";
         $tree .= $branch->(kind => 'disc', href => $df, disc => $dk,
                            n => $n_disc{$dk} // 0, label => $dn);
-        for my $k (@$keys) {
+        for my $r (@$keys) {
+            my ($k, $depth) = @$r;
             my $n = $n_sub{$k} // 0;
             next if $dk eq 'uncatalogued' && !$n;
             my $kf = $dk eq 'uncatalogued' ? 'uncatalogued.html' : "$k.html";
-            $tree .= $branch->(kind => 'sub', href => $kf, disc => $dk, sub => $k,
+            $tree .= $branch->(kind => $depth ? 'leaf' : 'sub', href => $kf,
+                               disc => $dk, sub => $k,
                                n => $n, label => ent_es(ucfirst sub_name($k, $lang)));
         }
     }
@@ -839,9 +883,14 @@ sub render_index {
         my $rows = '';
         for my $s (@s) {
             my $disc = ent_es(disc_name($s->{disc}, $lang, 1));
-            my $skey = ($s->{sub} && $s->{sub} ne '-') ? $s->{sub} : '';
-            my $sn   = sub_name($skey, $lang);
-            $disc .= ' &middot; ' . ent_es($sn) if $sn;
+            my @chain = ($s->{sub} && $s->{sub} ne '-') ? sub_chain($s->{sub}) : ();
+            # descatalogados: el 'sub' es el motivo, no un nodo del arbol
+            @chain = ($s->{sub}) if !@chain && $s->{sub} && $s->{sub} ne '-';
+            my $skey  = join ' ', @chain;
+            for my $sk (@chain) {
+                my $sn = sub_name($sk, $lang) or next;
+                $disc .= ' &middot; ' . ent_es($sn);
+            }
             # los data-* van en ingles: son claves, no texto visible
             $rows .= sprintf(
                 qq{              <tr data-discipline="%s" data-sub="%s" data-name="%s">\n}

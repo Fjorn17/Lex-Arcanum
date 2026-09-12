@@ -10,8 +10,9 @@
 #
 #   Alquimia    los quince elementos: earth water air fire lightning
 #               mud sand lava metal mist steam acid ash thunder incandescence
-#   Espiritismo los cuatro Principios: mind nature life death
-#   Cosmologia  los seis Principios: tempo age past passage distortion gravity
+#   Espiritismo la Mente en cinco (illusion subjection senses mood memory),
+#               la Naturaleza en tres (animals plants fungi), y life death
+#   Cosmologia  tres: time space gravity
 
 # ---------------------------------------------------------------- Alquimia
 
@@ -75,160 +76,160 @@ Fabricate	-
 # ------------------------------------------------------------- Espiritismo
 
 Aid	life
-Alter Self	nature
-Animal Friendship	nature
-Animal Messenger	nature
-Animal Shapes	nature
+Alter Self	animals
+Animal Friendship	animals
+Animal Messenger	animals
+Animal Shapes	animals
 Animate Dead	death
 Antilife Shell	life
-Antipathy/Sympathy	mind
+Antipathy/Sympathy	subjection
 Aura of Life	life
-Awaken	nature
-Bane	mind
-Barkskin	nature
-Beacon of Hope	mind
-Befuddlement	mind
-Bestow Curse	mind
-Bless	mind
+Awaken	animals
+Bane	mood
+Barkskin	plants
+Beacon of Hope	mood
+Befuddlement	subjection
+Bestow Curse	subjection
+Bless	mood
 Blight	death
-Blindness/Deafness	mind
-Blur	mind
-Calm Emotions	mind
-Charm Monster	mind
-Charm Person	mind
+Blindness/Deafness	senses
+Blur	illusion
+Calm Emotions	mood
+Charm Monster	subjection
+Charm Person	subjection
 Chill Touch	death
 Circle of Death	death
-Color Spray	mind
-Command	mind
-Commune with Nature	nature
-Comprehend Languages	mind
-Compulsion	mind
-Confusion	mind
+Color Spray	illusion
+Command	subjection
+Commune with Nature	plants
+Comprehend Languages	senses
+Compulsion	subjection
+Confusion	subjection
 Create Undead	death
 Cure Wounds	life
-Darkvision	mind
+Darkvision	senses
 Death Ward	life
-Detect Thoughts	mind
-Disguise Self	mind
-Dissonant Whispers	mind
-Dominate Beast	mind
-Dominate Monster	mind
-Dominate Person	mind
-Dream	mind
-Druidcraft	nature
+Detect Thoughts	senses
+Disguise Self	illusion
+Dissonant Whispers	mood
+Dominate Beast	subjection
+Dominate Monster	subjection
+Dominate Person	subjection
+Dream	memory
+Druidcraft	plants
 Enhance Ability	life
-Ensnaring Strike	nature
-Entangle	nature
-Enthrall	mind
-Eyebite	mind
+Ensnaring Strike	plants
+Entangle	plants
+Enthrall	subjection
+Eyebite	subjection
 False Life	death
-Fear	mind
+Fear	mood
 Finger of Death	death
-Geas	mind
-Giant Insect	nature
-Glibness	mind
-Goodberry	nature
-Greater Invisibility	mind
+Geas	subjection
+Giant Insect	animals
+Glibness	mood
+Goodberry	plants
+Greater Invisibility	illusion
 Greater Restoration	life
-Guidance	presage
-Hallucinatory Terrain	mind
+Guidance	time
+Hallucinatory Terrain	illusion
 Harm	death
 Heal	life
 Healing Word	life
-Heroism	mind
-Hex	mind
-Hideous Laughter	mind
-Hold Monster	mind
-Hold Person	mind
-Hypnotic Pattern	mind
-Illusory Script	mind
+Heroism	mood
+Hex	subjection
+Hideous Laughter	subjection
+Hold Monster	subjection
+Hold Person	subjection
+Hypnotic Pattern	subjection
+Illusory Script	illusion
 Inflict Wounds	death
-Invisibility	mind
-Irresistible Dance	mind
-Legend Lore	mind
+Invisibility	illusion
+Irresistible Dance	subjection
+Legend Lore	memory
 Lesser Restoration	life
 Magic Jar	death
-Magic Mouth	mind
-Major Image	mind
+Magic Mouth	illusion
+Major Image	illusion
 Mass Cure Wounds	life
 Mass Heal	life
 Mass Healing Word	life
-Mass Suggestion	mind
-Message	mind
-Mind Blank	mind
-Mind Spike	mind
-Minor Illusion	mind
-Mirage Arcane	mind
-Mirror Image	mind
-Mislead	mind
-Modify Memory	mind
-Pass without Trace	mind
-Phantasmal Force	mind
-Phantasmal Killer	mind
-Plant Growth	nature
-Polymorph	nature
+Mass Suggestion	subjection
+Message	senses
+Mind Blank	senses
+Mind Spike	senses
+Minor Illusion	illusion
+Mirage Arcane	illusion
+Mirror Image	illusion
+Mislead	illusion
+Modify Memory	memory
+Pass without Trace	illusion
+Phantasmal Force	illusion
+Phantasmal Killer	illusion
+Plant Growth	plants
+Polymorph	animals
 Power Word Heal	life
 Power Word Kill	death
-Power Word Stun	mind
+Power Word Stun	subjection
 Prayer of Healing	life
-Programmed Illusion	mind
-Project Image	mind
+Programmed Illusion	illusion
+Project Image	illusion
 Ray of Enfeeblement	death
 Regenerate	life
-Sanctuary	mind
-Seeming	mind
-Sending	mind
-Silent Image	mind
-Sleep	mind
+Sanctuary	subjection
+Seeming	illusion
+Sending	senses
+Silent Image	illusion
+Sleep	subjection
 Spare the Dying	life
-Speak with Animals	nature
-Speak with Plants	nature
-Spike Growth	nature
+Speak with Animals	animals
+Speak with Plants	plants
+Spike Growth	plants
 Spirit Guardians	death
-Suggestion	mind
-Telepathic Bond	mind
-Tongues	mind
+Suggestion	subjection
+Telepathic Bond	senses
+Tongues	senses
 Vampiric Touch	death
-Vicious Mockery	mind
-Wall of Thorns	nature
+Vicious Mockery	mood
+Wall of Thorns	plants
 Warding Bond	life
-Water Breathing	nature
-Weird	mind
-Zone of Truth	mind
+Water Breathing	animals
+Weird	illusion
+Zone of Truth	senses
 
 # -------------------------------------------------------------- Cosmologia
 
-Arcane Eye	passage
-Blink	passage
-Clairvoyance	passage
-Dimension Door	passage
-Enlarge/Reduce	distortion
-Expeditious Retreat	tempo
+Arcane Eye	space
+Blink	space
+Clairvoyance	space
+Dimension Door	space
+Enlarge/Reduce	space
+Expeditious Retreat	time
 Feather Fall	gravity
-Find the Path	passage
+Find the Path	space
 Fly	gravity
-Freedom of Movement	tempo
-Gentle Repose	tempo
+Freedom of Movement	time
+Gentle Repose	time
 Gravitational Pull	gravity
-Haste	tempo
+Haste	time
 Jump	gravity
 Levitate	gravity
-Locate Animals or Plants	passage
-Locate Creature	passage
-Locate Object	passage
-Longstrider	tempo
-Mending	past
-Misty Step	passage
-Passwall	passage
+Locate Animals or Plants	space
+Locate Creature	space
+Locate Object	space
+Longstrider	time
+Mending	time
+Misty Step	space
+Passwall	space
 Reverse Gravity	gravity
-Scrying	passage
-Slow	tempo
+Scrying	space
+Slow	time
 Spider Climb	gravity
-Teleport	passage
-Teleportation Circle	passage
-Time Stop	tempo
-True Strike	presage
-Transport via Plants	passage
-Tree Stride	passage
+Teleport	space
+Teleportation Circle	space
+Time Stop	time
+True Strike	time
+Transport via Plants	space
+Tree Stride	space
 Water Walk	gravity
-Bound Weapon	passage
+Bound Weapon	space

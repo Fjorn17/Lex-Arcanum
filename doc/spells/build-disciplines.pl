@@ -160,15 +160,33 @@ sub node_file { my ($key) = @_; return $key eq 'astronomy' ? 'index.html' : "$ke
 
 # Los conjuros de un nodo. Una Disciplina lista los suyos que no bajan a
 # ninguna subdivision; Astronomia lista todos los suyos, porque no tiene.
+# El arbol tiene tres alturas: Disciplina > subdisciplina > Rama. Una Rama
+# ('leaf') cuelga de una subdisciplina, y su Disciplina es la del abuelo.
+sub disc_of_node {
+    my ($key) = @_;
+    my $n = $NODE{$key} or return '';
+    $n = $NODE{ $n->{parent} } while $n->{parent} && $n->{kind} ne 'discipline';
+    return $n->{kind} eq 'discipline' ? $n->{key} : '';
+}
+# La clave del nodo y las de todo lo que cuelga de el.
+sub with_descendants {
+    my ($key) = @_;
+    my @out = ($key);
+    push @out, with_descendants($_->{key}) for children($key);
+    return @out;
+}
+
 sub spells_of {
     my ($node) = @_;
     my $k = $node->{key};
     return grep { $_->{unc} } @SPELLS if $node->{kind} eq 'limbo';
-    my $disc_of_sub = $node->{kind} eq 'sub' ? $node->{parent} : undef;
+    my $leafy = $node->{kind} eq 'sub' || $node->{kind} eq 'leaf';
+    my %want  = map { $_ => 1 } with_descendants($k);
+    my $disc  = $leafy ? disc_of_node($k) : '';
     my @s = grep {
         $_->{unc} ? 0
-        : $node->{kind} eq 'sub'
-            ? (lc($_->{disc}) eq $disc_of_sub && $_->{sub} eq $k)
+        : $leafy
+            ? (lc($_->{disc}) eq $disc && $want{ $_->{sub} })
             : (lc($_->{disc}) eq $k && ($_->{sub} eq '' || $_->{sub} eq '-'))
     } @SPELLS;
     # ordenado y en un array: devolver un sort suelto no cuenta en contexto
@@ -211,6 +229,8 @@ sub spell_count {
     my ($node) = @_;
     my @own = spells_of($node);          # sort en contexto escalar no cuenta
     my $n = scalar @own;
+    # spells_of ya es inclusivo para sub y leaf: recursar ahi contaria dos veces
+    return $n if $node->{kind} eq q{sub} || $node->{kind} eq q{leaf};
     $n += spell_count($_) for children($node->{key});
     return $n;
 }

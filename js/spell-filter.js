@@ -54,6 +54,15 @@
     var text = fold(q.value.trim());
     var lv = level.value;
     var dc = disc.value;
+  // data-sub lleva la cadena entera ("mind illusion"): filtrar por Mente
+  // tiene que traer tambien lo que cuelga de ella.
+  function inSub(attr, want) {
+    if (!attr) return false;
+    var parts = attr.split(" ");
+    for (var i = 0; i < parts.length; i++) if (parts[i] === want) return true;
+    return false;
+  }
+
     var sb = sub.value;
     var shown = 0;
 
@@ -69,7 +78,7 @@
         var ok = true;
         if (text && fold(r.getAttribute("data-name")).indexOf(text) === -1) ok = false;
         if (ok && dc !== "" && r.getAttribute("data-discipline") !== dc) ok = false;
-        if (ok && sb !== "" && r.getAttribute("data-sub") !== sb) ok = false;
+        if (ok && sb !== "" && !inSub(r.getAttribute("data-sub"), sb)) ok = false;
         r.hidden = !ok;
         if (ok) here++;
       }

@@ -3223,6 +3223,7 @@
     a.tb-all .tb-n, a.tb-disc .tb-n { color: var(--white) }
     a.tb-core { padding-left: 11px }
     a.tb-sub { padding-left: 26px }
+    a.tb-leaf { padding-left: 40px; font-size: .82rem }
     a.tb-empty, a.tb-empty .tb-n { color: var(--muted) }
     a.tb.here, a.tb.here .tb-n { color: var(--head) }
 
