@@ -1,0 +1,22 @@
+3.5
+
+Wall of Iron https://www.d20srd.org/srd/spells/wallOfIron.htm
+Acid Fog https://www.d20srd.org/srd/spells/acidFog.htm
+Spell Turning https://www.d20srd.org/srd/spells/spellTurning.htm
+Polar Ray https://www.d20srd.org/srd/spells/polarRay.htm
+Iron Body https://www.d20srd.org/srd/spells/ironBody.htm
+Temporal Stasis https://www.d20srd.org/srd/spells/temporalStasis.htm
+
+Transmute Mud to Rock: Transforms two 10-ft. cubes per level.
+Transmute Rock to Mud: Transforms two 10-ft. cubes per level. Junta estos dos en 1
+
+
+Soften Earth and Stone https://www.d20srd.org/srd/spells/softenEarthAndStone.htm
+Stone Shape https://www.d20srd.org/srd/spells/stoneShape.htm
+Spike Stones https://www.d20srd.org/srd/spells/spikeStones.htm
+
+Whirlwind https://www.d20srd.org/srd/spells/whirlwind.htm  (Nivel 8 de viento, equilibralo con Terremoto y tsunami y añade Erupción Volcánica de nivel 8 también, y tormenta de arena)
+
+
+
+Incandescence-> Plasma? (Fire+Lightning)

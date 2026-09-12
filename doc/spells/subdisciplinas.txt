@@ -66,12 +66,10 @@ Vitriolic Sphere	acid
 Wall of Fire	fire
 Wall of Ice	mist
 Wall of Stone	earth
-Web	mud
 Wind Walk	air
 Wind Wall	air
 
 # Alquimia sin elemento: no se atan a uno solo
-Fabricate	-
 
 # ------------------------------------------------------------- Espiritismo
 
@@ -116,7 +114,6 @@ Dominate Beast	subjection
 Dominate Monster	subjection
 Dominate Person	subjection
 Dream	memory
-Druidcraft	plants
 Enhance Ability	life
 Ensnaring Strike	plants
 Entangle	plants
@@ -214,8 +211,7 @@ Gravitational Pull	gravity
 Haste	time
 Jump	gravity
 Levitate	gravity
-Locate Animals or Plants	space
-Locate Creature	space
+Locate Creature	life
 Locate Object	space
 Longstrider	time
 Mending	time
@@ -230,6 +226,7 @@ Teleportation Circle	space
 Time Stop	time
 True Strike	time
 Transport via Plants	space
-Tree Stride	space
 Water Walk	gravity
 Bound Weapon	space
+Arcanist’s Magic Aura	illusion
+True Seeing	senses

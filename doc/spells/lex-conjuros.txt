@@ -6,7 +6,7 @@
 #
 # El nivel 0 es truco. El icono puede ir vacio.
 arcane-thrust	0	Astronomy	Arcane Thrust	Estocada arcana	Action	Acción	Self (your reach, +1.5 m / 5 ft)	Personal (tu alcance, +1,5 m / 5 ft)	Instantaneous	Instantáneo
-gravitational-pull	0	Cosmology	Gravitational Pull	Tirón gravitatorio	Action	Acción	Self (4.5 m / 15 ft cone)	Personal (cono de 4,5 m / 15 ft)	Instantaneous	Instantáneo	../../../assets/img/spells/gravitational_pull.png
+gravitational-pull	1	Cosmology	Gravitational Pull	Tirón gravitatorio	Action	Acción	Self (4.5 m / 15 ft cone)	Personal (cono de 4,5 m / 15 ft)	Instantaneous	Instantáneo	../../../assets/img/spells/gravitational_pull.png
 bound-weapon	1	Cosmology	Bound Weapon	Arma vinculada	Action or Ritual	Acción o ritual	Touch	Toque	8 hours or Permanent	8 horas o permanente	https://bg3.wiki/w/images/2/24/Weapon_Bond_Icon.webp
 chains-of-custody	3	Astronomy	Chains of Custody	Cadenas de custodia	Action	Acción	18 m / 60 ft	18 m / 60 ft	Concentration, up to 10 minutes	Concentración, hasta 10 minutos
 magic-armor	3	Astronomy	Magic Armor	Armadura mágica	Action	Acción	Touch	Toque	Concentration, up to 1 hour	Concentración, hasta 1 hora

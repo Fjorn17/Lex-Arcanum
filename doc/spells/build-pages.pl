@@ -436,9 +436,9 @@ sub disc_name {
 # la ficha y en el filtro, asi que se nombran aqui.
 my %BUCKET_NAME = (
     none         => { en => 'no Discipline',  es => 'sin Disciplina' },
-    summon       => { en => 'summoning',      es => 'invocaci&oacute;n' },
+    summon       => { en => 'summoning',      es => 'invocación' },
     poison       => { en => 'poison',         es => 'veneno' },
-    chromatic    => { en => 'chromatic',      es => 'crom&aacute;tico' },
+    chromatic    => { en => 'chromatic',      es => 'cromático' },
     resurrection => { en => 'undoing death',  es => 'deshacer la muerte' },
 );
 

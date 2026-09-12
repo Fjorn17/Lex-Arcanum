@@ -27,7 +27,7 @@ Arcane Eye	Cosmology
 Arcane Hand	Astronomy
 Arcane Lock	Astronomy
 Arcane Sword	Astronomy
-Arcanist’s Magic Aura	Astronomy
+Arcanist’s Magic Aura	Spiritism
 Aura of Life	Spiritism
 Awaken	Spiritism
 Bane	Spiritism
@@ -83,7 +83,6 @@ Dominate Beast	Spiritism
 Dominate Monster	Spiritism
 Dominate Person	Spiritism
 Dream	Spiritism
-Druidcraft	Spiritism
 Earthquake	Alchemy
 Eldritch Blast	Astronomy
 Enhance Ability	Spiritism
@@ -93,7 +92,6 @@ Entangle	Spiritism
 Enthrall	Spiritism
 Expeditious Retreat	Cosmology
 Eyebite	Spiritism
-Fabricate	Alchemy
 False Life	Spiritism
 Fear	Spiritism
 Feather Fall	Cosmology
@@ -156,8 +154,7 @@ Lesser Restoration	Spiritism
 Levitate	Cosmology
 Light	Astronomy
 Lightning Bolt	Alchemy
-Locate Animals or Plants	Cosmology
-Locate Creature	Cosmology
+Locate Creature	Spiritism
 Locate Object	Cosmology
 Longstrider	Cosmology
 Mage Armor	Astronomy
@@ -196,7 +193,6 @@ Power Word Heal	Spiritism
 Power Word Kill	Spiritism
 Power Word Stun	Spiritism
 Prayer of Healing	Spiritism
-Prestidigitation	Astronomy
 Private Sanctum	Astronomy
 Produce Flame	Alchemy
 Programmed Illusion	Spiritism
@@ -244,7 +240,6 @@ Suggestion	Spiritism
 Sunbeam	Astronomy
 Sunburst	Astronomy
 Symbol	Astronomy
-Telekinesis	Astronomy
 Telepathic Bond	Spiritism
 Teleport	Cosmology
 Teleportation Circle	Cosmology
@@ -253,8 +248,7 @@ Time Stop	Cosmology
 Tiny Hut	Astronomy
 Tongues	Spiritism
 Transport via Plants	Cosmology
-Tree Stride	Cosmology
-True Seeing	Astronomy
+True Seeing	Spiritism
 True Strike	Cosmology
 Tsunami	Alchemy
 Vampiric Touch	Spiritism
@@ -268,7 +262,6 @@ Wall of Thorns	Spiritism
 Warding Bond	Spiritism
 Water Breathing	Spiritism
 Water Walk	Cosmology
-Web	Alchemy
 Weird	Spiritism
 Wind Walk	Alchemy
 Wind Wall	Alchemy

@@ -307,9 +307,13 @@ sub containment_svg {
         my $word = $lang eq 'es' ? ($n == 1 ? 'conjuro' : 'conjuros') : ($n == 1 ? 'spell' : 'spells');
         my $x = $w->{cx} - $w->{cw} / 2;
         my $dash = $w->{dash} ? ' d-chip-dash' : '';
-        my $ty = $w->{cy} - 5;
+        # cy es donde el recuadro corta el circulo. La linea base del texto va
+        # al centro del recuadro, no a su borde: puesta en cy las mayusculas
+        # se salian por arriba de la caja.
+        my $ty  = $w->{cy} - 5;
+        my $lty = $ty + 14.7;
         $s .= qq{          <rect x="$x" y="$ty" width="$w->{cw}" height="21" class="d-chip$dash"/>\n}
-            . qq{          <text x="$w->{cx}" y="$w->{cy}" class="d-chip-label">@{[ ent_es(uc $w->{th}{$lang}) ]}</text>\n}
+            . qq{          <text x="$w->{cx}" y="$lty" class="d-chip-label">@{[ ent_es(uc $w->{th}{$lang}) ]}</text>\n}
             . qq{          <a href="./$w->{key}.html">\n}
             . qq{            <text x="$w->{nx}" y="$w->{ny}" class="d-disc">$nm</text>\n}
             . qq{            <text x="$w->{nx}" y="@{[ $w->{ny} + 20 ]}" class="d-disc-sub">$n $word &middot; $lead</text>\n}
